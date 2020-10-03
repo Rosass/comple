@@ -1,0 +1,245 @@
+CRITICAL - 2020-09-19 15:32:22 --> Call to a member function login() on null
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 15:32:56 --> Undefined property: App\Controllers\UsuarioController::$authService
+#0 C:\xampp\htdocs\complementarias\app\Controllers\UsuarioController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 15:34:13 --> Undefined property: App\Controllers\UsuarioController::$authService
+#0 C:\xampp\htdocs\complementarias\app\Controllers\UsuarioController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 15:35:09 --> Undefined property: App\Controllers\UsuarioController::$authService
+#0 C:\xampp\htdocs\complementarias\app\Controllers\UsuarioController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 15:35:21 --> Undefined variable: usuario
+#0 C:\xampp\htdocs\complementarias\app\Controllers\UsuarioController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 15:35:38 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\complementarias\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\complementarias\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\complementarias\app\Models\UsuarioModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\complementarias\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('admon_pochutla')
+#4 C:\xampp\htdocs\complementarias\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('admon_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-19 15:35:38 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\complementarias\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\complementarias\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\UsuarioController), true)
+#2 C:\xampp\htdocs\complementarias\system\Debug\Exceptions.php(308): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\complementarias\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-19 15:37:58 --> Undefined property: stdClass::$estatus
+#0 C:\xampp\htdocs\complementarias\app\Services\UsuarioService.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('div_pochutla', 'admin2020')
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-19 15:38:32 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:39:02 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:39:03 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:39:04 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:39:04 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:39:05 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:39:05 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:39:06 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:40:10 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:40:10 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:40:11 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:40:11 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:40:35 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:40:36 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:40:37 --> Undefined property: stdClass::$amaterno_jefe
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:40:55 --> Undefined variable: activo
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(9): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 15:46:57 --> Undefined property: App\Controllers\UsuarioController::$authService
+#0 C:\xampp\htdocs\complementarias\app\Controllers\UsuarioController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\UsuarioController->logout()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 15:52:14 --> Undefined variable: usuario_aux
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 16:03:14 --> Trying to get property 'id_tipo_usuario' of non-object
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

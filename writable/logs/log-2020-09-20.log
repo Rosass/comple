@@ -1,0 +1,635 @@
+CRITICAL - 2020-09-20 12:39:05 --> Archivo inválido: Responsables/listar.php
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/li...')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/li...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\ResponsableController.php(20): view('Responsables/li...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\ResponsableController->getResponsables()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 12:39:45 --> Archivo inválido: Responsables/listar.php
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/li...')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/li...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\ResponsableController.php(20): view('Responsables/li...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\ResponsableController->getResponsables()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 12:39:47 --> Archivo inválido: Responsables/listar.php
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/li...')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/li...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\ResponsableController.php(20): view('Responsables/li...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\ResponsableController->getResponsables()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 12:39:48 --> Archivo inválido: Responsables/listar.php
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/li...')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/li...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\ResponsableController.php(20): view('Responsables/li...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\ResponsableController->getResponsables()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 12:43:53 --> Undefined variable: activo
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\navbar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/navbar', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\ResponsableController.php(19): view('Division/navbar')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\ResponsableController->getResponsables()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 12:52:01 --> Archivo inválido: Division/index.php
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Division/index....')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/index', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(12): view('Division/index')
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 18:12:52 --> Class 'App\Controllers\Division\BaseController' not found
+#0 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-20 18:13:11 --> Class 'App\Controllers\Division\App\Controllers\BaseController' not found
+#0 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-20 18:13:13 --> Class 'App\Controllers\Division\App\Controllers\BaseController' not found
+#0 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-20 18:13:14 --> Class 'App\Controllers\Division\App\Controllers\BaseController' not found
+#0 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-20 18:13:14 --> Class 'App\Controllers\Division\App\Controllers\BaseController' not found
+#0 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-20 18:25:04 --> Archivo inválido: Division/Inscripciones/listar.php
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Division/Inscri...')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(12): view('Division/Inscri...')
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 19:07:22 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 19:07:34 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 19:07:55 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 19:07:57 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 19:08:48 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 19:08:56 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 19:09:08 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 19:10:02 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 19:10:04 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 19:24:29 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:25:14 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:26:54 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:30:00 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:30:00 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 19:34:16 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-20 20:10:11 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(24): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:11:27 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:13:03 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:13:06 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:13:09 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:13:37 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(24): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:49 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:50 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:51 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:51 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:52 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:52 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:52 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:53 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:53 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:15:54 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:16:28 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:17:27 --> syntax error, unexpected '?>', expecting ')'
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 20:17:42 --> syntax error, unexpected '?>', expecting ')'
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 20:17:43 --> syntax error, unexpected '?>', expecting ')'
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 20:18:06 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 20:18:08 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 20:18:08 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 20:18:35 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 20:18:37 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-20 20:20:36 --> Undefined variable: validation
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:21:04 --> Archivo inválido: division/responsables.php
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('division/respon...')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('division/respon...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(41): view('division/respon...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 20:22:19 --> Undefined variable: responsables
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(41): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:23:46 --> Call to undefined function App\Controllers\Division\redirec()
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-20 20:23:53 --> 
+#0 C:\xampp\htdocs\complementarias\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(43): redirect('Division/Respon...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 20:24:39 --> 
+#0 C:\xampp\htdocs\complementarias\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(42): redirect('Division/Respon...')
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 20:24:55 --> 
+#0 C:\xampp\htdocs\complementarias\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(42): redirect('Division/Respon...')
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 20:26:54 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 20:27:28 --> Call to undefined method CodeIgniter\Validation\Validation::getErorr()
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 20:28:23 --> Call to a member function getErorr() on array
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 20:28:36 --> Call to a member function listErrors() on array
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 20:28:56 --> Array to string conversion
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(23): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:37:55 --> Undefined property: App\Controllers\Division\ResponsableController::$validation
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-20 20:38:07 --> Call to a member function getRuleGroup() on null
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-20 20:38:32 --> Call to a member function getRuleGroup() on null
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-20 20:47:04 -->  no es una regla de validación válida.
+#0 C:\xampp\htdocs\complementarias\system\Validation\Validation.php(333): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 C:\xampp\htdocs\complementarias\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('confirmar_clave', 'confirmar_clave', 'admin2020SS', Array, Array)
+#2 C:\xampp\htdocs\complementarias\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(36): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-20 20:49:25 --> Archivo inválido: division/responsables.php
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('division/respon...')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('division/respon...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(44): view('division/respon...')
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->guardarResponsable()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-20 21:28:45 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\editar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\listar.php(63): view('Division/Respon...')
+#4 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#6 C:\xampp\htdocs\complementarias\app\Controllers\Division\ResponsableController.php(21): view('Division/Respon...', Array)
+#7 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->index()
+#8 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#9 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

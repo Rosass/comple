@@ -1,0 +1,116 @@
+CRITICAL - 2020-09-22 00:02:24 --> Undefined property: stdClass::$nombre
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Actividades\agregar.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 57, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Views\Division\Actividades\listar.php(78): view('Division/Activi...')
+#4 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#6 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(35): view('Division/Activi...', Array)
+#7 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#8 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#9 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-22 00:36:47 --> Call to undefined method App\Models\Division\ActividadModel::getActividades
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\ActividadService.php(20): CodeIgniter\Model->__call('getActividades', Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(26): App\Services\Division\ActividadService->getActividades()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-22 00:55:20 --> Undefined property: stdClass::$estatus
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Actividades\listar.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(39): view('Division/Activi...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-22 00:55:44 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Actividades\listar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(39): view('Division/Activi...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-22 00:59:15 --> Undefined variable: session
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Actividades\listar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(39): view('Division/Activi...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-22 01:08:23 --> Call to undefined method App\Models\Division\ActividadModel::getActividadPorId
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\ActividadService.php(56): CodeIgniter\Model->__call('getActividadPor...', Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(94): App\Services\Division\ActividadService->cambiarEstatus('2')
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->cambiarEstatus()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-22 01:08:44 --> Call to undefined method App\Services\Division\ActividadService::actualizar()
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(94): App\Services\Division\ActividadService->cambiarEstatus('2')
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->cambiarEstatus()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-22 01:23:15 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\editar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(112): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->editar()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-22 01:24:27 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Responsables\editar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Respon...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(112): view('Division/Respon...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->editar()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-22 01:25:37 --> Undefined property: stdClass::$dictamen
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Actividades\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(112): view('Division/Activi...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->editar()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-22 01:28:59 --> Undefined property: stdClass::$horas
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Actividades\editar.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(112): view('Division/Activi...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->editar()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-22 01:29:27 --> Undefined property: stdClass::$horas
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Actividades\editar.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\ActividadController.php(112): view('Division/Activi...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->editar()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

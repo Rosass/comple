@@ -1,0 +1,123 @@
+/* Generales */
+/*body{
+    background-image: url("../img/fondo.jpg");
+    background-size: 75%;
+}
+
+@media(min-width: 576px){
+    body{
+        background-size: 25%;
+    }
+}*/
+
+/* Colores oficiales TecNM campus Pochutla*/
+
+:root {
+    --color-tec-red: #741c3b;
+    --color-tec-blue:  #1b396a;
+  }
+
+.bg-color-tec-red{
+    background-color: var(--color-tec-red)
+}
+
+.bg-color-tec-blue{
+    background-color: var(--color-tec-blue);
+}
+
+.text-color-tec-red{
+    color:  var(--color-tec-red)
+}
+
+.text-color-tec-blue{
+    color:  var(--color-tec-blue);
+}
+
+/* Página principal */
+
+.contenedor-index .card{
+    border-radius: 50px;
+}
+
+.contenedor-index .navbar{
+    justify-content: center !important;
+}
+
+@media(min-width: 768px){
+    .contenedor-index .navbar{
+        justify-content: space-between !important;
+    }
+}
+
+.nav-item
+{
+    padding: 5px;
+}
+
+
+.border-top-tec{
+    border-top: 3px solid #741c3b !important;
+}
+
+.active{
+    font-weight: 600 !important;
+    background-color:  var(--color-tec-blue);
+    border-radius: 20px;
+}
+
+/* Tablas */
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table td, table th {
+    vertical-align: middle !important;
+}
+
+/* Datatables */
+
+
+.dataTables_filter label{
+    display: flex;
+    
+}
+
+.dataTables_filter label input{
+    width: 100% !important;
+}
+
+.dataTables_length label{
+    display: flex;
+    
+    column-gap: 3px;
+}
+
+
+.dataTables_length label select{
+    width: 100% !important;
+    margin-left: 2px;
+}
+
+@media(min-width: 768px){
+    .dataTables_length label{
+        display: flex;
+    }
+    .dataTables_length label select{
+        width: 25% !important;
+    }
+}
+
+.pagination, .dataTables_info{
+    font-size: 12px !important;
+    text-align: left;
+    
+}
+
+.paginate_button.page-item.active .page-link{
+    color: #fff;
+    background-color: var(--color-tec-blue) !important;
+    border-color:  var(--color-tec-blue) !important;
+}

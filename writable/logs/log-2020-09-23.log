@@ -1,0 +1,451 @@
+CRITICAL - 2020-09-23 06:45:33 --> Call to a member function getFlashdata() on null
+#0 C:\xampp\htdocs\complementarias\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(21): view('Division/Inscri...', Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 06:45:47 --> Undefined variable: session
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(21): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 06:46:00 --> Undefined property: stdClass::$no_control
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(21): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 06:46:43 --> Undefined variable: tipo
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(21): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 07:08:00 --> Call to undefined method App\Models\Division\ActividadModel::getActividadesPorEstatus
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\ActividadService.php(29): CodeIgniter\Model->__call('getActividadesP...', Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\ActividadService->getActividadesPorEstatus(true)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 07:23:54 --> Undefined variable: true
+#0 C:\xampp\htdocs\complementarias\app\Models\Division\InscripcionModel.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(30): App\Models\Division\InscripcionModel->getInscripcionPorNoControlYPeriodo('151160223', '20203')
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(54): App\Services\Division\InscripcionService->guardar(Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->guardar()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 07:24:22 --> Undefined index: nombre_actividad
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(54): App\Services\Division\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->guardar()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:03:24 --> Call to undefined method App\Models\AlumnoModel::getAlumnoPorNoControl
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(32): CodeIgniter\Model->__call('getAlumnoPorNoC...', Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(54): App\Services\Division\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->guardar()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:13:26 --> Undefined property: App\Controllers\Division\InscripcionController::$alumnoModel
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(25): App\Controllers\Division\InscripcionController->unirArrays(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:14:35 --> Class 'App\Services\AlumnoService' not found
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(890): App\Controllers\Division\InscripcionController->__construct()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-23 08:15:14 --> Class 'App\Services\AlumnoModel' not found
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(890): App\Controllers\Division\InscripcionController->__construct()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-23 08:15:25 --> Use of undefined constant r - assumed 'r' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Controllers\Division\InscripcionController->unirArrays(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:15:48 --> Undefined variable: inscripciones
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Controllers\Division\InscripcionController->unirArrays(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:16:18 --> array_merge(): Expected parameter 1 to be an array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(51): array_merge(Object(stdClass), Object(stdClass))
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Controllers\Division\InscripcionController->unirArrays(Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 08:17:52 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(51): array_merge('151160223', Object(stdClass))
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Controllers\Division\InscripcionController->unirArrays(Array)
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 08:21:55 --> array_merge(): Expected parameter 1 to be an array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(29): array_merge(Object(stdClass), Object(stdClass))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:22:08 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(29): array_merge('151160223', Object(stdClass))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:22:09 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(29): array_merge('151160223', Object(stdClass))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:22:10 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(29): array_merge('151160223', Object(stdClass))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:25:06 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\complementarias\system\Database\Query.php(443): strtr('SELECT *\nFROM `...', Array)
+#1 C:\xampp\htdocs\complementarias\system\Database\Query.php(404): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#2 C:\xampp\htdocs\complementarias\system\Database\Query.php(197): CodeIgniter\Database\Query->compileBinds()
+#3 C:\xampp\htdocs\complementarias\system\Database\BaseConnection.php(669): CodeIgniter\Database\Query->getQuery()
+#4 C:\xampp\htdocs\complementarias\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\complementarias\app\Models\AlumnoModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(30): App\Models\AlumnoModel->getAlumnoPorNoControl(Object(stdClass))
+#7 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#8 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#9 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-23 08:25:38 --> syntax error, unexpected 'print_r' (T_STRING), expecting ';' or ','
+#0 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\complementarias\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 08:26:07 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-23 08:31:46 --> print_r() expects parameter 2 to be bool, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r() expec...', 'C:\\xampp\\htdocs...', 32, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(32): print_r(Array, Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:32:02 --> print_r() expects parameter 2 to be bool, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r() expec...', 'C:\\xampp\\htdocs...', 32, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(32): print_r(Array, Object(stdClass))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:37:36 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 08:38:51 --> Undefined offset: 0
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 08:43:15 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-23 08:50:09 --> array_merge(): Expected parameter 2 to be an array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(44): array_merge(Array, Object(stdClass))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 08:54:09 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-23 08:54:22 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#1 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-23 08:58:16 --> Trying to get property 'ap_materno' of non-object
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(31): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 08:59:12 --> Trying to get property 'ap_materno' of non-object
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(31): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 08:59:13 --> Trying to get property 'ap_materno' of non-object
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(31): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 10:02:14 --> 
+#0 C:\xampp\htdocs\complementarias\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(151): redirect('division/inscri...')
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->actualizar()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 10:03:06 --> 
+#0 C:\xampp\htdocs\complementarias\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(151): redirect('division/inscri...')
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->actualizar()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 10:14:08 --> 
+#0 C:\xampp\htdocs\complementarias\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\complementarias\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(151): redirect('division/inscri...')
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->actualizar()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 10:18:59 --> Undefined variable: array_merge
+#0 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Controllers\Division\InscripcionController->unirArrays(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 10:21:21 --> Undefined variable: array_merge
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 117, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Services\Division\InscripcionService->unirRegistros(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 10:22:00 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(31): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 10:22:12 --> Use of undefined constant object - assumed 'object' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 111, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Services\Division\InscripcionService->unirRegistros(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 10:22:26 --> Undefined variable: array_merge
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 117, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Services\Division\InscripcionService->unirRegistros(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 10:22:55 --> Undefined variable: array_merge
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 117, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Services\Division\InscripcionService->unirRegistros(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 10:22:56 --> Undefined variable: array_merge
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 117, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Services\Division\InscripcionService->unirRegistros(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 10:22:57 --> Undefined variable: array_merge
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 117, Array)
+#1 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(27): App\Services\Division\InscripcionService->unirRegistros(Array)
+#2 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 10:23:25 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(31): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 10:25:45 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(31): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 10:27:55 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\complementarias\app\Views\Division\Inscripciones\listar.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\complementarias\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\complementarias\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(31): view('Division/Inscri...', Array)
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#6 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 10:34:00 --> Undefined index: periodo
+#0 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\complementarias\app\Services\Division\InscripcionService.php(95): App\Services\Division\InscripcionService->actualizar('11', Array)
+#2 C:\xampp\htdocs\complementarias\app\Controllers\Division\InscripcionController.php(144): App\Services\Division\InscripcionService->cambiarEstatus('11')
+#3 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#4 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\complementarias\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\complementarias\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 10:57:04 --> Class 'App\Models\Division\periodoModel' not found
+#0 /home/acitp/public_html/app/Controllers/Division/ActividadController.php(17): App\Services\Division\PeriodoService->__construct()
+#1 /home/acitp/public_html/system/CodeIgniter.php(890): App\Controllers\Division\ActividadController->__construct()
+#2 /home/acitp/public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 /home/acitp/public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/acitp/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 10:57:40 --> Unknown column 'i.num_control' in 'field list'
+#0 /home/acitp/public_html/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT `i`.`id_...')
+#1 /home/acitp/public_html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`id_...')
+#2 /home/acitp/public_html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`id_...')
+#3 /home/acitp/public_html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#4 /home/acitp/public_html/app/Models/Division/InscripcionModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/acitp/public_html/app/Services/Division/InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripcionesPorEstatus(true)
+#6 /home/acitp/public_html/app/Controllers/Division/InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripcionesPorEstatus(true)
+#7 /home/acitp/public_html/system/CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#8 /home/acitp/public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#9 /home/acitp/public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/acitp/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-23 10:58:09 --> Unknown column 'i.num_control' in 'field list'
+#0 /home/acitp/public_html/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT `i`.`id_...')
+#1 /home/acitp/public_html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`id_...')
+#2 /home/acitp/public_html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`id_...')
+#3 /home/acitp/public_html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#4 /home/acitp/public_html/app/Models/Division/InscripcionModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/acitp/public_html/app/Services/Division/InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripcionesPorEstatus(true)
+#6 /home/acitp/public_html/app/Controllers/Division/InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripcionesPorEstatus(true)
+#7 /home/acitp/public_html/system/CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#8 /home/acitp/public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#9 /home/acitp/public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/acitp/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-23 11:01:34 --> Unknown column 'i.estatus' in 'where clause'
+#0 /home/acitp/public_html/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT `i`.`id_...')
+#1 /home/acitp/public_html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`id_...')
+#2 /home/acitp/public_html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`id_...')
+#3 /home/acitp/public_html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#4 /home/acitp/public_html/app/Models/Division/InscripcionModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/acitp/public_html/app/Services/Division/InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripcionesPorEstatus(true)
+#6 /home/acitp/public_html/app/Controllers/Division/InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripcionesPorEstatus(true)
+#7 /home/acitp/public_html/system/CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#8 /home/acitp/public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#9 /home/acitp/public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/acitp/public_html/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

@@ -1,0 +1,10 @@
+__ci_last_regenerate|i:1600911186;_ci_previous_url|s:49:"https://ac.pochutla.tecnm.mx/division/actividades";usuario|s:12:"dep_pochutla";login|b:1;usuario_logueado|O:8:"stdClass":9:{s:7:"usuario";s:12:"dep_pochutla";s:5:"clave";s:60:"$2y$10$eYvzY.4zl53L9xywbJz3RO.Inboi6hofqEqxYK4oQDupTwWkX.hAm";s:15:"id_tipo_usuario";s:1:"1";s:7:"estatus";s:1:"1";s:11:"nombre_area";N;s:8:"rfc_jefe";N;s:11:"nombre_jefe";N;s:13:"apaterno_jefe";N;s:13:"amaterno_jefe";N;}error|s:334:"	<div class="errors" role="alert">
+		<ul>
+					<li>El campo creditos debe contener solo números.</li>
+					<li>El campo capacidad debe contener solo números.</li>
+					<li>El campo id_area es obligatorio.</li>
+					<li>El campo periodo es obligatorio.</li>
+					<li>El campo id_tipo_actividad es obligatorio.</li>
+				</ul>
+	</div>
+";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:6:{s:6:"nombre";s:2:"sw";s:8:"dictamen";s:10:"2222222223";s:8:"creditos";s:3:"wwq";s:9:"capacidad";s:5:"wqqwe";s:5:"horas";s:3:"343";s:7:"horario";s:0:"";}}_ci_validation_errors|s:329:"a:5:{s:8:"creditos";s:46:"El campo creditos debe contener solo números.";s:9:"capacidad";s:47:"El campo capacidad debe contener solo números.";s:7:"id_area";s:32:"El campo id_area es obligatorio.";s:7:"periodo";s:32:"El campo periodo es obligatorio.";s:17:"id_tipo_actividad";s:42:"El campo id_tipo_actividad es obligatorio.";}";
