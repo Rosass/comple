@@ -12,7 +12,7 @@
             <a href="<?= base_url('alumno/login') ?>" class="text-decoration-none text-color-tec-red" target=”_blank”>
                 <div class="card shadow p-2">
                     <div class="card-body d-flex justify-content-between align-items-center h5 mb-0 border-0">
-                        <span><i class="fas fa-user-graduate"></i> ALUMNO</span>
+                        <span><i class="fas fa-user-graduate"></i> JOSE LUIS DORMILON</span>
                          <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
