@@ -36,10 +36,15 @@ class UsuarioService
             {
                 return ['exito' => true, 'redirigir_a' => 'division/inscripciones'];
             }
-            else if($usuario_aux->id_tipo_usuario == USUARIO_DIVISION)
+            else if($usuario_aux->id_tipo_usuario == USUARIO_AREA)
             {
                 return ['exito' => true, 'redirigir_a' => 'area/inicio'];
             }
+            else if($usuario_aux->id_tipo_usuario == USUARIO_ADMIN)
+            {
+                return ['exito' => true, 'redirigir_a' => 'admin/jefes'];
+            }
+
             else
             {
                 return ['exito' => false, 'msj' => 'Acceso denegado.', 'redirigir_a' => 'login'];
