@@ -77,12 +77,57 @@ class Validation
 		'num_control'     => 'required|numeric|min_length[8]|max_length[9]',
 		'periodo'     => 'required|numeric',
 		'id_actividad'     => 'required|numeric',
+		'telefono'     => 'required|min_length[10]|max_length[15]',
 	];
 
 	public $editarInscripcionReglas = [
 		'id_inscripcion'     => 'required|numeric',
 		'periodo'     => 'required|numeric',
 		'id_actividad'     => 'required|numeric',
+		'telefono'     => 'required|min_length[10]|max_length[15]',
+	];
+
+	public $jefeReglas = [
+		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
+		'nombre_jefe'     => 'required',
+		'apaterno_jefe'     => 'required',
+		'amaterno_jefe'     => 'required',
+		'telefono_jefe'     => 'min_length[10]',
+        'correo_jefe'        => 'valid_email'
+	];
+
+	public $editarJefeReglas = [
+		'nombre_jefe'     => 'required',
+		'apaterno_jefe'     => 'required',
+		'amaterno_jefe'     => 'required',
+		'telefono_jefe'     => 'min_length[10]',
+        'correo_jefe'        => 'valid_email'
+	];
+
+	public $areaReglas = [
+		'nombre_area'     => 'required',
+		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
+	];
+	
+	public $editarAreaReglas = [
+		'nombre_area'     => 'required',
+		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
+	];
+
+	public $usuarioReglas = [
+		'usuario' => 'required',
+        'clave'     => 'required|min_length[8]',
+		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
+		'id_tipo_usuario' => 'required|numeric',
+		'id_area' => 'required|numeric',
+	];
+
+	public $editarUsuarioReglas = [
+		'usuario' => 'required',
+		'clave'     => 'required|min_length[8]',
+		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
+		'id_tipo_usuario' => 'required|numeric',
+		'id_area' => 'required|numeric',
 	];
 	
 }

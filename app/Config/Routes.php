@@ -93,3 +93,32 @@ $routes->post('division/tipos-actividades/agregar', 'Division/TipoActividadContr
 $routes->get('division/tipos-actividades/editar/(:any)', 'Division/TipoActividadController::editar');
 $routes->post('division/tipos-actividades/editar', 'Division/TipoActividadController::actualizar');
 $routes->post('division/tipos-actividades/cambiar-estatus', 'Division/TipoActividadController::cambiarEstatus');
+
+// Rutas [ADMIN-Jefes]
+$routes->get('admin/jefes', 'Admin/JefeController::index');
+$routes->post('admin/jefes/agregar', 'Admin/JefeController::guardar');
+$routes->get('admin/jefes/editar/(:any)', 'Admin/JefeController::editar');
+$routes->post('admin/jefes/editar', 'Admin/JefeController::actualizar');
+$routes->post('admin/jefes/cambiar-estatus', 'Admin/JefeController::cambiarEstatus');
+
+// Rutas [ADMIN-Area]
+$routes->get('admin/areas', 'Admin/AreaController::index');
+$routes->post('admin/areas/agregar', 'Admin/AreaController::guardar');
+$routes->get('admin/areas/editar/(:any)', 'Admin/AreaController::editar');
+$routes->post('admin/areas/editar', 'Admin/AreaController::actualizar');
+$routes->post('admin/areas/cambiar-estatus', 'Admin/AreaController::cambiarEstatus');
+
+// Rutas [ADMIN-TIPOS-USUARIOS]
+$routes->get('admin/tipos-usuarios', 'Admin/TipoUsuarioController::index');
+$routes->post('admin/tipos-usuarios/agregar', 'Admin/TipoUsuarioController::guardar');
+$routes->get('admin/tipos-usuarios/editar/(:any)', 'Admin/TipoUsuarioController::editar');
+$routes->post('admin/tipos-usuarios/editar', 'Admin/TipoUsuarioController::actualizar');
+$routes->post('admin/tipos-usuarios/cambiar-estatus', 'Admin/TipoUsuarioController::cambiarEstatus');
+
+// Rutas [ADMIN-USUARIOS]
+$routes->get('admin/usuarios', 'Admin/UsuarioController::index');
+$routes->post('admin/usuarios/agregar', 'Admin/UsuarioController::guardar');
+$routes->get('admin/usuarios/editar/(:any)', 'Admin/UsuarioController::editar');
+$routes->post('admin/usuarios/editar', 'Admin/UsuarioController::actualizar');
+$routes->post('admin/usuarios/editar-clave', 'Admin/UsuarioController::actualizarClave');
+$routes->post('admin/usuarios/cambiar-estatus', 'Admin/UsuarioController::cambiarEstatus');
