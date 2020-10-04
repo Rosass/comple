@@ -18,19 +18,19 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="nombre_jefe">NOMBRE (*)</label>
+									<label for="nombre">NOMBRE (*)</label>
 									<input type="text" class="form-control text-uppercase" name="nombre_jefe" required value="<?= $jefe->nombre_jefe ?>">
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="apaterno_jefe">APELLIDO PATERNO (*)</label>
+									<label for="apaterno">APELLIDO PATERNO (*)</label>
 									<input type="text" class="form-control text-uppercase" name="apaterno_jefe" required value="<?= $jefe->apaterno_jefe ?>">
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="amaterno_jefe">APELLIDO MATERNO (*)</label>
+									<label for="amaterno">APELLIDO MATERNO (*)</label>
 									<input type="text" class="form-control text-uppercase" name="amaterno_jefe" required value="<?= $jefe->amaterno_jefe ?>">
 								</div>
 							</div>
@@ -38,19 +38,19 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="rfc_jefe">RFC (*)</label>
-									<input type="text" class="form-control disabled" name="rfc" value="<?= $jefe->rfc_jefe ?>">
+									<label for="rfc">RFC (*)</label>
+									<input type="text" class="form-control disabled" name="rfc_jefe" value="<?= $jefe->rfc_jefe ?>">
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="telefono_jefe">TELEFONO</label>
+									<label for="telefono">TELEFONO</label>
 									<input type="number" class="form-control" name="telefono_jefe" value="<?= $jefe->telefono_jefe ?>">
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="correo_jefe">CORREO</label>
+									<label for="correo">CORREO</label>
 									<input type="email" class="form-control" name="correo_jefe" value="<?= $jefe->correo_jefe ?>">
 								</div>
 							</div>
@@ -66,6 +66,7 @@
 			</form>
 		</div>
 	</div>
+    
 <script>
     const btnEnviarFormulario = document.querySelectorAll(".btnEnviarFormulario");
 

@@ -1,4 +1,4 @@
-<?php namespace App\Controllers\Admin;
+<?php namespace App\Controllers\Admin;;
 use App\Controllers\BaseController;
 
 class JefeController extends BaseController
@@ -100,7 +100,7 @@ class JefeController extends BaseController
         }
         else
         {   
-            $rfc_jefe = $this->request->getPost("rfc");
+            $rfc_jefe = $this->request->getPost("rfc_jefe");
 
             $datos = [
                 "nombre_jefe" => mb_strtoupper($this->request->getPost("nombre_jefe"), 'utf-8'),
@@ -125,11 +125,10 @@ class JefeController extends BaseController
         }
     }
 
-
     public function cambiarEstatus()
     {
        
-        $rfc_jefe = $this->request->getPost('rfc');
+        $rfc_jefe = $this->request->getPost('rfc_jefe');
         $respuesta = $this->jefeService->cambiarEstatus($rfc_jefe);
 
         if($respuesta['exito'])
