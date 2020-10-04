@@ -17,13 +17,13 @@
                 </div>
             <?php endif ?>
             <div class="text-right">
-                <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevoAreaModal"><i class="fas fa-plus"></i> Nueva Area</button>
+                <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevoAreaModal"><i class="fas fa-plus"></i> Nueva Área</button>
             </div>
             <div class="table-responsive-sm text-center">
 			<table class="table table-hover table-light table-striped shadow-lg" id="tablaAreas">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
                         <tr>
-                            <th scope="col" colspan="13" class="border-top-0 p-3"><h3 class="mb-0">AREAS</h3></th>
+                            <th scope="col" colspan="13" class="border-top-0 p-3"><h3 class="mb-0">ÁREAS</h3></th>
                         </tr>
                         <tr>
                             <th scope="col" class="border-top-0">#</th>

@@ -3,7 +3,7 @@
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header bg-color-tec-blue text-white text-uppercase">
-        <h5 class="modal-title" id="nuevoAreaModalLabel">Nueva area</h5>
+        <h5 class="modal-title" id="nuevoAreaModalLabel">Nueva área</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-white">&times;</span>
         </button>
@@ -24,13 +24,18 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="form-group">
-						            <label for="rfc_jefe">RFC (*)</label>
-                        <input type="text" class="form-control text-uppercase" id="rfc_jefe" name="rfc_jefe" required value="<?= old("rfc_jefe") ?>">
+                        <label for="rfc_jefe">RFC (*)</label>
+                        <select class="custom-select" name="rfc_jefe" required>
+                            <option selected disabled value="">Elige un jefe</option>
+                            <?php foreach($jefes as $key => $jefe) : ?>
+                                <option value="<?= $jefe->rfc_jefe ?>"><?= $jefe->rfc_jefe ?> : <?= $jefe->nombre_jefe . " " . $jefe->apaterno_jefe ?></option>
+                            <?php endforeach ?>
+                        </select>
                         <div class="invalid-feedback">
-				                Por favor, rellena este campo
-				            </div>
-                  </div>
-              </div>
+                            Por favor, rellena este campo
+                        </div>
+                    </div>
+                </div>
             </div>
             <small>Los campos marcados con (*) son obligatorios.</small>
             <div class="modal-footer">

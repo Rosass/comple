@@ -19,7 +19,7 @@
         					<a class="nav-link" href="<?= base_url('admin/jefes') ?>">Jefes</a>
 						</li>
 						<li class="nav-item <?= ($activo == 'areas') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('admin/areas') ?>">Areas</a>
+        					<a class="nav-link" href="<?= base_url('admin/areas') ?>">Áreas</a>
 						</li>
 						<li class="nav-item <?= ($activo == 'tipos-usuarios') ? 'active' : '' ?>">
         					<a class="nav-link" href="<?= base_url('admin/tipos-usuarios') ?>">Tipos usuarios</a>
