@@ -140,7 +140,7 @@ class UsuarioController extends BaseController
 
     public function actualizarClave()
     {
-        $reglas = $this->validation->getRuleGroup('editarClaveReglas');
+        $reglas = $this->validation->getRuleGroup('editar1ClaveReglas');
 
         if (!$this->validate($reglas))
         {

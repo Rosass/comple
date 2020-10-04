@@ -54,9 +54,9 @@
 							<td><?= $jefe->correo_jefe ?></td>						
 							<td>
 								<?php if($jefe->estatus == true) : ?>
-								    <span class="bg-success p-1 rounded small">Activo</span>
+								    <span class="bg-success p-1 rounded small text-white">Activo</span>
 								<?php else : ?>
-								    <span class="bg-danger p-1 rounded small">Inactivo</span>
+								    <span class="bg-danger p-1 rounded small text-white">Inactivo</span>
 								<?php endif ?>
 							</td>
 							<td style="width:12%;">

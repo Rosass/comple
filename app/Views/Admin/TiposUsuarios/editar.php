@@ -9,33 +9,33 @@
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
 			<?php endif ?>
-            <form action="<?= base_url("admin/tipos-usuarios/editar") ?>" method="POST">
-                <div class="card border-0 shadow-lg">
+			<form action="<?= base_url("admin/tipos-usuarios/editar") ?>" method="POST">
+				<div class="card border-0 shadow-lg">
 					<div class="card-header bg-color-tec-blue text-white">
-                        <i class="fas fa-pen"></i>  EDICIÓN DE TIPO DE USUARIO
+                        <i class="fas fa-pen"></i>  EDICIÓN DE TIPO USUARIO
 					</div>
 					<div class="card-body">
-                        <div class="row justify-content-center">
-                        <input type="hidden" class="form-control disabled" id="id_tipo_usuario" name="id_tipo_usuario" value="<?= $tipo_usuario->id_tipo_usuario ?>">
-                        <div class="col-md-8">
-                        <div class="form-group">
-                            <label for="nombre_tipo">NOMBRE DEL USUARIO(*)</label>
-                            <input type="text" class="form-control text-uppercase" id="nombre_tipo" name="nombre_tipo" required value="<?= $tipo_usuario->nombre_tipo ?>">
-                        </div>
-                        <small>Los campos marcados con (*) son obligatorios.</small>
-                        <div class="text-center">
-                            <div class="dropdown-divider"></div>
+						<div class="row justify-content-center">
+                            <input type="hidden" class="form-control disabled" id="id_tipo_usuario" name="id_tipo_usuario" value="<?= $tipo_usuario->id_tipo_usuario ?>">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="nombre_tipo">NOMBRE DEL USUARIO(*)</label>
+                                        <input type="text" class="form-control text-uppercase" id="nombre_tipo" name="nombre_tipo" required value="<?= $tipo_usuario->nombre_tipo ?>">
+                                    </div>
+                                </div>                                
+						</div>
+						
+						<small>Los campos marcados con (*) son obligatorios.</small>
+						<div class="text-center">
+							<div class="dropdown-divider"></div>
 							<a href="<?= base_url("admin/tipos-usuarios") ?>" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
-                            <button type="submit" class="btn bg-color-tec-blue text-white btnEnviarFormulario"><i class="fas fa-check"></i> Guardar</button>
-                        </div>
+							<button type="submit" class="btn bg-color-tec-blue text-white btnEnviarFormulario"><i class="fas fa-check"></i> Guardar</button>
+						</div>
 					</div>
 				</div>
-				
 			</form>
 		</div>
 	</div>
-</div>
-
 
 <script>
     const btnEnviarFormulario = document.querySelectorAll(".btnEnviarFormulario");

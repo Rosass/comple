@@ -124,10 +124,11 @@ class Validation
 
 	public $editarUsuarioReglas = [
 		'usuario' => 'required',
-		'clave'     => 'required|min_length[8]',
-		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
-		'id_tipo_usuario' => 'required|numeric',
 		'id_area' => 'required|numeric',
 	];
 	
+	public $editar1ClaveReglas = [
+		'clave'     => 'required|min_length[8]',
+		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
+	];
 }

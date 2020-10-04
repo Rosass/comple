@@ -22,16 +22,6 @@
 									<input type="text" class="form-control text-uppercase" name="usuario" required value="<?= $usuario->usuario ?>">
 								</div>
 							</div>
-							<div class="col-md-5">
-								<div class="form-group">
-									<label for="clave">TIPO (*)</label>
-									<select class="custom-select" name="id_tipo_usuario" required>
-										<?php foreach($tipos_usuarios as $key => $tipo) : ?>
-										<option value="<?= $tipo->id_tipo_usuario ?>" <?= ($tipo->id_tipo_usuario == $usuario->id_tipo_usuario) ? 'selected' : '' ?>><?= $tipo->nombre_tipo ?></option>
-										<?php endforeach ?>
-									</select>
-								</div>
-							</div>
 						</div>
 						<div class="row justify-content-center">
 						<div class="col-md-5">
