@@ -9,7 +9,7 @@
         </button>
       </div>
       <div class="modal-body pb-0 text-center">
-        <form action="<?= base_url("admin/jefes/agregar") ?>" method="POST" class="needs-validation" novalidate>
+        <form action="<?= base_url("Admin/Jefes/agregar") ?>" method="POST" class="needs-validation" novalidate>
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
