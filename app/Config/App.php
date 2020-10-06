@@ -23,7 +23,7 @@ class App extends BaseConfig
 	*/
 	// public $baseURL = 'https://ac.pochutla.tecnm.mx/';
 	//public $baseURL = 'https://ac.pochutla.tecnm.mx/';
-	public $baseURL = 'http://localhost/comple/';
+	public $baseURL = 'http://localhost/complecc/';
 
 	/*
 	|--------------------------------------------------------------------------
