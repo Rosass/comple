@@ -46,7 +46,7 @@
            <a href="<?= base_url('profesor/login') ?>" class="text-decoration-none text-color-tec-red">
                 <div class="card shadow p-2">
                     <div class="card-body d-flex justify-content-between align-items-center h5 mb-0">
-                        <span><i class="fas fa-chalkboard-teacher"></i> RESPONSABLE</span> <i class="fas fa-chevron-right"></i>
+                        <span><i class="fas fa-chalkboard-teacher"></i> RESPONSABLE1</span> <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
            </a>
