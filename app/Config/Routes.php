@@ -122,3 +122,10 @@ $routes->get('admin/usuarios/editar/(:any)', 'Admin/UsuarioController::editar');
 $routes->post('admin/usuarios/editar', 'Admin/UsuarioController::actualizar');
 $routes->post('admin/usuarios/editar-clave', 'Admin/UsuarioController::actualizarClave');
 $routes->post('admin/usuarios/cambiar-estatus', 'Admin/UsuarioController::cambiarEstatus');
+
+// Rutas [AUTH]
+$routes->get('responsable/login', 'ResponsableLoginController::index');
+$routes->post('responsable/login', 'ResponsableLoginController::login');
+$routes->post('responsable/logout', 'ResponsableLoginController::logout');
+
+$routes->get('responsables/inicio', 'Responsable/InicioController::index');
