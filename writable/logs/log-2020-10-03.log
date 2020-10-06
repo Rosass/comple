@@ -1,0 +1,44 @@
+CRITICAL - 2020-10-03 22:27:18 --> Class 'App\Models\ResponsableModel' not found
+#0 C:\xampp\htdocs\comple\app\Controllers\ResponsableLoginController.php(10): App\Services\ResponsableService->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\ResponsableLoginController->__construct()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-03 22:27:23 --> Class 'App\Models\ResponsableModel' not found
+#0 C:\xampp\htdocs\comple\app\Controllers\ResponsableLoginController.php(10): App\Services\ResponsableService->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\ResponsableLoginController->__construct()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-03 22:27:28 --> Class 'App\Models\ResponsableModel' not found
+#0 C:\xampp\htdocs\comple\app\Controllers\ResponsableLoginController.php(10): App\Services\ResponsableService->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\ResponsableLoginController->__construct()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-03 22:27:43 --> Class 'App\Models\ResponsableModel' not found
+#0 C:\xampp\htdocs\comple\app\Controllers\ResponsableLoginController.php(10): App\Services\ResponsableService->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\ResponsableLoginController->__construct()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-03 22:28:13 --> Class 'App\Models\ResponsableModel' not found
+#0 C:\xampp\htdocs\comple\app\Controllers\ResponsableLoginController.php(10): App\Services\ResponsableService->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\ResponsableLoginController->__construct()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-03 22:41:58 --> 
+#0 C:\xampp\htdocs\comple\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\comple\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\comple\app\Controllers\ResponsableLoginController.php(37): redirect('admin/inicio')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\ResponsableLoginController->login()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResponsableLoginController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
