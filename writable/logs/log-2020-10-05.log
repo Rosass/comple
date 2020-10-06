@@ -1,0 +1,12 @@
+CRITICAL - 2020-10-05 22:35:02 --> Archivo inválido: admin/jefe/agregar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/jefe/agre...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('admin/jefe/agre...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Views\Admin\Jefes\listar.php(89): view('admin/jefe/agre...')
+#3 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Admin/Jefes/lis...', Array, true)
+#5 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(21): view('Admin/Jefes/lis...', Array)
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
