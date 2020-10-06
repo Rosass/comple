@@ -39,30 +39,34 @@
                             <tr>
                                 <th scope="row"><?= $key + 1 ?></th>
                                 <td><?= $usuario->usuario ?></td>
-                                <td><?= $usuario->tipo_usuario ?></td>
+                                <td><?= $usuario->tipo_usuario ?> </td>
                                 <td><?= $usuario->nombre_area ?></td>
                                 <td>
-                                    <?php if($usuario->estatus == true) : ?>
+                                    <?php if( $usuario->estatus ) : ?>
                                         <span class="bg-success p-1 rounded small text-white">Activo</span>
                                     <?php else : ?>
                                         <span class="bg-danger p-1 rounded small text-white">Inactivo</span>
                                     <?php endif ?>
+                                
                                 </td>
                                 <td style="width:8%;">
                                 <div class="d-flex flex-column">
-								  	<!--  Editar responsable-->
-									<a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("admin/usuarios/editar/".$usuario->usuario) ?>"><i class="fas fa-pen"></i> Editar</a>
-									<?php if($usuario->estatus == true) : ?>
-									    <form action="<?= base_url('admin/usuarios/cambiar-estatus') ?>" method="POST">
-											<input type="hidden" name="usuario" value="<?= $usuario->usuario ?>">
-											<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Inhabilitar</button>
-										</form>
-									<?php else : ?>
-										<form action="<?= base_url('admin/usuarios/cambiar-estatus') ?>" method="POST">
-											<input type="hidden" name="usuario" value="<?= $usuario->usuario ?>">
-											<button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
-										</form>
-									<?php endif ?>
+                                      <!--  Editar responsable-->
+                                    <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("admin/usuarios/editar/".$usuario->usuario) ?>"><i class="fas fa-pen"></i> Editar</a>
+                                    <!-- Se podra¡ inhabilitar siempre que el tipo de usuario no sea ADMINISTRADOR -->
+                                    <?php if ( $usuario->tipo_usuario !== 'ADMINISTRADOR' ):?>
+                                        <?php if ( $usuario->estatus ) : ?>
+                                            <form action="<?= base_url('admin/usuarios/cambiar-estatus') ?>" method="POST">
+                                                <input type="hidden" name="usuario" value="<?= $usuario->usuario ?>">
+                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Inhabilitar</button>
+                                            </form>
+                                        <?php else : ?>
+                                            <form action="<?= base_url('admin/usuarios/cambiar-estatus') ?>" method="POST">
+                                                <input type="hidden" name="usuario" value="<?= $usuario->usuario ?>">
+                                                <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
+                                            </form>
+                                        <?php endif ?>
+                                    <?php endif;?>
 								</div>
 							    </td>
                             </tr>
