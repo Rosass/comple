@@ -23,7 +23,7 @@
 						  </li> 
 						  </li> 
 						<li class="nav-item <?= ($activo == 'alumnos') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsables/alumno') ?>">Alumnos</a>
+        					<a class="nav-link" href="<?= base_url('responsables/alumno') ?>">Alumnows</a>
       					</li>
 					</ul>
 					<span class="navbar-text">
