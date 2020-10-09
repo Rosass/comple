@@ -86,4 +86,4 @@
 </div>
 
 <!-- Modal Agregar Jefe-->
-<?= view("admin/jefes/agregar"); ?>
+<?= view("Admin/Jefes/agregar"); ?>
