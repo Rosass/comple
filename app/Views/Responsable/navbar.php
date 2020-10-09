@@ -19,11 +19,11 @@
         					<a class="nav-link" href="<?= base_url('responsables/inicio') ?>">Actividades</a>
 						</li> 
 						<li class="nav-item <?= ($activo == 'evaluar') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsables/evaluar') ?>">Evaluars</a>
+        					<a class="nav-link" href="<?= base_url('responsables/evaluar') ?>">Evaluar</a>
 						  </li> 
 						  </li> 
 						<li class="nav-item <?= ($activo == 'alumnos') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsables/alumno') ?>">Alumnows</a>
+        					<a class="nav-link" href="<?= base_url('responsables/alumno') ?>">Alumnos</a>
       					</li>
 					</ul>
 					<span class="navbar-text">
