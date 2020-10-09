@@ -19,7 +19,7 @@
         					<a class="nav-link" href="<?= base_url('responsables/inicio') ?>">Actividades</a>
 						</li> 
 						<li class="nav-item <?= ($activo == 'evaluar') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsables/evaluar') ?>">Evaluar</a>
+        					<a class="nav-link" href="<?= base_url('responsables/evaluar') ?>">Evaluars</a>
 						  </li> 
 						  </li> 
 						<li class="nav-item <?= ($activo == 'alumnos') ? 'active' : '' ?>">
