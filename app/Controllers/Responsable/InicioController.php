@@ -11,7 +11,7 @@ class InicioController extends BaseController
 		
 
             echo view('Includes/header');
-            echo view('Responsable/navbar');
+            echo view('Responsable/navbar', ["activo" => "actividades"]);
             echo view('Responsable/Actividades/listar');
             echo view('Includes/footer');
 		}

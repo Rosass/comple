@@ -15,14 +15,14 @@
 				</button>
 				<div class="collapse navbar-collapse text-center" id="navbarText">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item <?= ($activo == 'periodos') ? 'active' : '' ?>">
+					<li class="nav-item <?= ($activo == 'actividades') ? 'active' : '' ?>">
         					<a class="nav-link" href="<?= base_url('responsables/inicio') ?>">Actividades</a>
-      					</li> 
-						<li class="nav-item <?= ($activo == 'tipos-actividades') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsable/evaluar') ?>">Evaluar</a>
+						</li> 
+						<li class="nav-item <?= ($activo == 'evaluar') ? 'active' : '' ?>">
+        					<a class="nav-link" href="<?= base_url('responsables/evaluar') ?>">Evaluar</a>
 						  </li> 
 						  </li> 
-						<li class="nav-item <?= ($activo == 'tipos-actividades') ? 'active' : '' ?>">
+						<li class="nav-item <?= ($activo == 'alumnos') ? 'active' : '' ?>">
         					<a class="nav-link" href="<?= base_url('responsables/alumno') ?>">Alumnos</a>
       					</li>
 					</ul>

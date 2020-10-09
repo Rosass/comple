@@ -11,7 +11,7 @@ class AlumnoController extends BaseController
 		
 
             echo view('Includes/header');
-            echo view('Responsable/navbar');
+            echo view('Responsable/navbar',  ["activo" => "alumnos"]);
             echo view('Responsable/Alumnos/listar');
             echo view('Includes/footer');
 		}
