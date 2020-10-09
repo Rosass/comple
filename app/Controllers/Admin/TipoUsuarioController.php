@@ -89,7 +89,7 @@ class TipoUsuarioController extends BaseController
 		if ($this->request->getPost("id_tipo_usuario") == NULL || $this->request->getPost("nombre_tipo")  == NULL)
         {
             $this->session->setFlashData("error", "Todos los campos son requeridos.");
-            return redirect('admin/tipos-usuarios')->withInput();
+            return redirect()->back()->withInput();
         }
         else
         {   

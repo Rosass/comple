@@ -107,7 +107,7 @@ class AreaController extends BaseController
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('admin/areas')->withInput();
+            return redirect()->back()->withInput();
         }
         else
         {   

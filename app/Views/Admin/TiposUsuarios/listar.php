@@ -48,16 +48,19 @@
                                     <div class="d-flex flex-column">
                                         <!--  Editar tipo-->
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("admin/tipos-usuarios/editar/".$tipo->id_tipo_usuario) ?>"><i class="fas fa-pen"></i> Editar</a>
-                                        <?php if($tipo->estatus == true) : ?>
-                                            <form action="<?= base_url('admin/tipos-usuarios/cambiar-estatus') ?>" method="POST">
-                                                <input type="hidden" name="id_tipo_usuario" value="<?= $tipo->id_tipo_usuario ?>">
-                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Inhabilitar</button>
-                                            </form>
-                                        <?php else : ?>
-                                            <form action="<?= base_url('admin/tipos-usuarios/cambiar-estatus') ?>" method="POST">
-                                                <input type="hidden" name="id_tipo_usuario" value="<?= $tipo->id_tipo_usuario ?>">
-                                                <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
-                                            </form>
+                                            <!--  Mostrar botones si el tipo no es administrador  ( usando constante )-->                                       
+                                        <?php if($tipo->id_tipo_usuario != USUARIO_ADMIN ) : ?>
+                                            <?php if($tipo->estatus == true) : ?>
+                                                <form action="<?= base_url('admin/tipos-usuarios/cambiar-estatus') ?>" method="POST">
+                                                    <input type="hidden" name="id_tipo_usuario" value="<?= $tipo->id_tipo_usuario ?>">
+                                                    <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Inhabilitar</button>
+                                                </form>
+                                            <?php else : ?>
+                                                <form action="<?= base_url('admin/tipos-usuarios/cambiar-estatus') ?>" method="POST">
+                                                    <input type="hidden" name="id_tipo_usuario" value="<?= $tipo->id_tipo_usuario ?>">
+                                                    <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
+                                                </form>
+                                            <?php endif ?>
                                         <?php endif ?>
 								    </div>
                                 </td>

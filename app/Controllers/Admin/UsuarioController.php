@@ -111,7 +111,7 @@ class UsuarioController extends BaseController
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('admin/usuarios')->withInput();
+            return redirect()->back()->withInput();
         }
         else
         {   

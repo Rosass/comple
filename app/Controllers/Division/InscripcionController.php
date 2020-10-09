@@ -125,7 +125,7 @@ class InscripcionController extends BaseController
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('division/inscripciones')->withInput();
+            return redirect()->back()->withInput();
         }
         else	
         {   

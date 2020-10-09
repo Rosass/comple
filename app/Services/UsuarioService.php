@@ -25,8 +25,14 @@ class UsuarioService
         {
             return ['exito' => false, 'msj' => 'Usuario o clave inválidos.', 'redirigir_a' => 'login'];
         }
+        // si el usuario esta desactivado su estatus no dejara loguearse
+        if ( $usuario_aux->estatus_area == 0 )
+        {
+            return ['exito' => false, 'msj' => 'Acceso denegado [USUARIO INHABILITADO].', 'redirigir_a' => 'login'];
+        }
 
         if (password_verify($clave, $usuario_aux->clave) && $usuario_aux->estatus == true)
+         
         {
             // Se crea la sesión
             $datos_sesion = ['usuario' => $usuario, 'login' => true, 'usuario_logueado' => $usuario_aux];
@@ -44,7 +50,6 @@ class UsuarioService
             {
                 return ['exito' => true, 'redirigir_a' => 'admin/jefes'];
             }
-
             else
             {
                 return ['exito' => false, 'msj' => 'Acceso denegado.', 'redirigir_a' => 'login'];

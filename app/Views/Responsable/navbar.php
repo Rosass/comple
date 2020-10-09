@@ -19,8 +19,12 @@
         					<a class="nav-link" href="<?= base_url('responsables/inicio') ?>">Actividades</a>
       					</li> 
 						<li class="nav-item <?= ($activo == 'tipos-actividades') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('division/tipos-actividades') ?>">Evaluar</a>
-      					</li> 
+        					<a class="nav-link" href="<?= base_url('responsable/evaluar') ?>">Evaluar</a>
+						  </li> 
+						  </li> 
+						<li class="nav-item <?= ($activo == 'tipos-actividades') ? 'active' : '' ?>">
+        					<a class="nav-link" href="<?= base_url('responsables/alumno') ?>">Alumnos</a>
+      					</li>
 					</ul>
 					<span class="navbar-text">
 						<form action="<?= base_url("logout") ?>" method="POST">

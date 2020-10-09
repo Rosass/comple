@@ -97,7 +97,7 @@ class ResponsableController extends BaseController
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('division/responsables')->withInput();
+            return redirect()->back()->withInput();
         }
         else
         {   

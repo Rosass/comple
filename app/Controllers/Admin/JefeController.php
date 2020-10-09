@@ -41,7 +41,7 @@ class JefeController extends BaseController
         else
         {   
             $datos = [
-                "rfc_jefe" => strtoupper($this->request->getPost("rfc_jefe")),
+                "rfc_jefe" => mb_strtoupper($this->request->getPost("rfc_jefe")),
                 "nombre_jefe" => mb_strtoupper($this->request->getPost("nombre_jefe"), 'utf-8'),
                 "apaterno_jefe" => mb_strtoupper($this->request->getPost("apaterno_jefe"), 'utf-8'),
                 "amaterno_jefe" => mb_strtoupper($this->request->getPost("amaterno_jefe"),'utf-8'),
@@ -96,13 +96,14 @@ class JefeController extends BaseController
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('admin/jefes')->withInput();
+            return redirect()->back()->withInput();
         }
         else
         {   
             $rfc_jefe = $this->request->getPost("rfc_jefe");
 
             $datos = [
+                "rfc_jefe" => mb_strtoupper($this->request->getPost("rfc_jefe")),
                 "nombre_jefe" => mb_strtoupper($this->request->getPost("nombre_jefe"), 'utf-8'),
                 "apaterno_jefe" => mb_strtoupper($this->request->getPost("apaterno_jefe"), 'utf-8'),
                 "amaterno_jefe" => mb_strtoupper($this->request->getPost("amaterno_jefe"),'utf-8'),

@@ -92,15 +92,16 @@ class Validation
 		'nombre_jefe'     => 'required',
 		'apaterno_jefe'     => 'required',
 		'amaterno_jefe'     => 'required',
-		'telefono_jefe'     => 'min_length[10]',
+		'telefono_jefe'     => 'min_length[10]|max_length[10]',
         'correo_jefe'        => 'valid_email'
 	];
 
 	public $editarJefeReglas = [
+		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
 		'nombre_jefe'     => 'required',
 		'apaterno_jefe'     => 'required',
 		'amaterno_jefe'     => 'required',
-		'telefono_jefe'     => 'min_length[10]',
+		'telefono_jefe'     => 'min_length[10]|max_length[10]',
         'correo_jefe'        => 'valid_email'
 	];
 
