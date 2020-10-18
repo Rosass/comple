@@ -1,0 +1,57 @@
+CRITICAL - 2020-10-16 23:04:49 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`rfc...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\ResponsableLoginModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\ResponsableLoginService.php(22): App\Models\ResponsableLoginModel->getResponsablePorUsuario('zzzzzzzzzzzzz')
+#4 C:\xampp\htdocs\comple\app\Controllers\ResponsableLoginController.php(33): App\Services\ResponsableLoginService->login('zzzzzzzzzzzzz', '12345678')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\ResponsableLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResponsableLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-10-16 23:19:49 --> Call to undefined method App\Models\Responsable\InicioModel::getResponsable
+#0 C:\xampp\htdocs\comple\app\Services\Responsable\InicioService.php(20): CodeIgniter\Model->__call('getResponsable', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(22): App\Services\Responsable\InicioService->getResponsable(true)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-16 23:34:38 --> Call to undefined method App\Models\Responsable\InicioModel::getResponsable
+#0 C:\xampp\htdocs\comple\app\Services\Responsable\InicioService.php(20): CodeIgniter\Model->__call('getResponsable', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(22): App\Services\Responsable\InicioService->getResponsable(true)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-16 23:45:06 --> Call to undefined method App\Services\Responsable\InicioService::getResponsablePorEstatus()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-10-16 23:45:51 --> Call to undefined method App\Models\Responsable\InicioModel::getInicio
+#0 C:\xampp\htdocs\comple\app\Services\Responsable\InicioService.php(20): CodeIgniter\Model->__call('getInicio', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(22): App\Services\Responsable\InicioService->getInicio(true)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-16 23:45:54 --> Call to undefined method App\Models\Responsable\InicioModel::getInicio
+#0 C:\xampp\htdocs\comple\app\Services\Responsable\InicioService.php(20): CodeIgniter\Model->__call('getInicio', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(22): App\Services\Responsable\InicioService->getInicio(true)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-16 23:46:45 --> Call to undefined method App\Models\Responsable\ActividadModel::getActividades
+#0 C:\xampp\htdocs\comple\app\Services\Responsable\ActividadService.php(20): CodeIgniter\Model->__call('getActividades', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(23): App\Services\Responsable\ActividadService->getActividades()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

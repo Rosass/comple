@@ -133,4 +133,4 @@ $routes->get('responsables/inicio', 'Responsable/InicioController::index');
 
 
 // Rutas [Alumnos]
-$routes->get('responsables/alumno', 'Responsable/AlumnoController::index');
+$routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');

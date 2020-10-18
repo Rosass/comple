@@ -23,6 +23,7 @@ class ActividadController extends BaseController
 	{
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_DIVISION)
         {
+            
 			$actividades = $this->actividadService->getActividades();
 			$areas = $this->areaService->getAreasPorEstatus(true);
 			$periodos = $this->periodoService->getPeriodosPorEstatus(true);

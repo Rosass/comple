@@ -43,7 +43,7 @@ class ResponsableLoginService
         }
         else 
         {
-            return ['exito' => false, 'msj' => 'RFCC o clave inválidos.', 'redirigir_a' => 'loginresponsable'];
+            return ['exito' => false, 'msj' => 'RFC o clave inválidos.', 'redirigir_a' => 'loginresponsable'];
         }
     }
 
