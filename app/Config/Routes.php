@@ -123,14 +123,22 @@ $routes->post('admin/usuarios/editar', 'Admin/UsuarioController::actualizar');
 $routes->post('admin/usuarios/editar-clave', 'Admin/UsuarioController::actualizarClave');
 $routes->post('admin/usuarios/cambiar-estatus', 'Admin/UsuarioController::cambiarEstatus');
 
-// Rutas [AUTH]
+// Rutas [AUTH-Responsablr]
 $routes->get('responsable/login', 'ResponsableLoginController::index');
 $routes->post('responsable/login', 'ResponsableLoginController::login');
 $routes->post('responsable/logout', 'ResponsableLoginController::logout');
 
 // Rutas [Responsables]
 $routes->get('responsables/inicio', 'Responsable/InicioController::index');
-
-
 // Rutas [Alumnos]
 $routes->get('responsables/alumno', 'Responsable/AlumnoController::index');
+
+// Rutas [AUTH-ALUMNO]
+$routes->get('alumno/login', 'AlumnoLoginController::index');
+$routes->post('alumno/login', 'AlumnoLoginController::login');
+$routes->post('alumno/logout', 'AlumnoLoginController::logout');
+
+// Rutas [Responsables]
+$routes->get('alumno/inicio', function (){
+	return 'Alumno!';
+});
