@@ -1,3 +1,37 @@
+<<<<<<< HEAD
+CRITICAL - 2020-10-15 11:49:25 --> syntax error, unexpected ','
+#0 C:\xampp\htdocs\comple\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\comple\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Services\\Al...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Services\\Al...')
+#3 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(10): spl_autoload_call('App\\Services\\Al...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\AlumnoLoginController->__construct()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-15 12:08:52 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(19): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#4 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(33): App\Services\AlumnoLoginService->login('161160163', '3663')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-10-15 12:32:25 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `num_con...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(19): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#4 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(33): App\Services\AlumnoLoginService->login('161160163', '3663')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+=======
 CRITICAL - 2020-10-15 01:33:33 --> Trying to get property 'rfc_responsable' of non-object
 #0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
 #1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -78,3 +112,4 @@ CRITICAL - 2020-10-15 20:01:24 --> Trying to get property 'rfc_responsable' of n
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+>>>>>>> 125bcc0fd01d6f622ed4a9a50da2971fc2b9d4a1

@@ -1,0 +1,69 @@
+CRITICAL - 2020-10-12 17:05:08 --> Table 'acitp_complementarias.alumnos' doesn't exist
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(22): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#6 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(33): App\Services\AlumnoLoginService->login('161160163', '6336')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-12 17:45:55 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(22): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#1 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(33): App\Services\AlumnoLoginService->login('161160163', '6336')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-12 17:48:04 --> Table 'acitp_complementarias.alumnos' doesn't exist
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(22): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#6 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(33): App\Services\AlumnoLoginService->login('161160163', '6336')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-12 17:49:31 --> Call to undefined method App\Models\AlumnoLoginModel::getAlumnoPorUsuario
+#0 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(22): CodeIgniter\Model->__call('getAlumnoPorUsu...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(33): App\Services\AlumnoLoginService->login('161160163', '6336')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-12 17:58:07 --> Undefined property: stdClass::$nip
+#0 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(33): App\Services\AlumnoLoginService->login('161160163', '6336')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-12 18:04:16 --> almnitp_alumnos is not a valid database connection group.
+#0 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(15): CodeIgniter\Database\Config::connect('almnitp_alumnos')
+#1 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(12): App\Models\AlumnoLoginModel->__construct()
+#2 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(10): App\Services\AlumnoLoginService->__construct()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\AlumnoLoginController->__construct()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-12 20:46:23 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\comple\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\comple\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Services\\Al...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Services\\Al...')
+#3 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(10): spl_autoload_call('App\\Services\\Al...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\AlumnoLoginController->__construct()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

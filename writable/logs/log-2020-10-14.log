@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+CRITICAL - 2020-10-14 14:51:44 --> unlink(C:\xampp\htdocs\comple\writable\debugbar/debugbar_1602560740.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 106, Array)
+#1 C:\xampp\htdocs\comple\system\Debug\Toolbar\Collectors\History.php(106): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Debug\Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1602705104, 20)
+#3 C:\xampp\htdocs\comple\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\comple\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\comple\system\Events\Events.php(188): call_user_func(Object(Closure))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+=======
 CRITICAL - 2020-10-14 19:21:08 --> Trying to get property 'rfc_responsable' of non-object
 #0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
 #1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -295,3 +308,4 @@ CRITICAL - 2020-10-14 23:22:30 --> Archivo inválido: Responsable/Cambiar-Clave/
 #5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #7 {main}
+>>>>>>> 125bcc0fd01d6f622ed4a9a50da2971fc2b9d4a1
