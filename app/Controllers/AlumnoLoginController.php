@@ -10,7 +10,6 @@ class AlumnoLoginController extends BaseController
         $this->alumnoService =  new \App\Services\AlumnoLoginService();
         $this->validation = \Config\Services::validation();
     }
-
 	public function index()
 	{
         echo view('Includes/header');
@@ -18,9 +17,7 @@ class AlumnoLoginController extends BaseController
 		echo view('Auth/loginalumno');
 		echo view('Includes/footer');
 	}
-
 	//--------------------------------------------------------------------
-
     /**
      * Recibe los datos de acceso al sistema
      * @return view
@@ -43,7 +40,6 @@ class AlumnoLoginController extends BaseController
             return redirect()->back()->withInput();
         }
     }
-
     /**
      * Este metodo cierra la sesion
      * @return sesion data

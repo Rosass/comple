@@ -22,7 +22,7 @@ class AlumnoLoginService
         {
             return ['exito' => false, 'msj' => 'N. Control o nulo inválidos.', 'redirigir_a' => 'loginalumno'];
         }
-
+        
         if ($alumno_aux->nip)
         {
             // Se crea la sesión

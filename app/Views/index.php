@@ -9,7 +9,11 @@
 
     <div class="row justify-content-center">
         <div class="col-md-4 mt-3 mb-3">
+<<<<<<< HEAD
             <a href="<?= base_url('alumno/login') ?>" class="text-decoration-none text-color-tec-red" target=”_blank”>
+=======
+            <a href="<?= base_url('login') ?>" class="text-decoration-none text-color-tec-red" target=”_blank”>
+>>>>>>> 125bcc0fd01d6f622ed4a9a50da2971fc2b9d4a1
                 <div class="card shadow p-2">
                     <div class="card-body d-flex justify-content-between align-items-center h5 mb-0 border-0">
                         <span><i class="fas fa-user-graduate"></i> ALUMNOS</span>

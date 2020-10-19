@@ -15,16 +15,13 @@
 				</button>
 				<div class="collapse navbar-collapse text-center" id="navbarText">
 					<ul class="navbar-nav mr-auto">
-					<li class="nav-item <?= ($activo == 'actividades') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsables/inicio') ?>">Actividades</a>
-						</li> 
-						<li class="nav-item <?= ($activo == 'evaluar') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsables/evaluar') ?>">Evalua</a>
+						<li class="nav-item <?= ($activo == 'actividades') ? 'active' : '' ?>">
+        					<a class="nav-link" href="<?= base_url('responsables/inicio') ?>">Inicio</a>
 						  </li> 
-						  </li> 
-						<li class="nav-item <?= ($activo == 'alumnos') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsables/alumno') ?>">Alumnos</a>
-      					</li>
+						  <li class="nav-item <?= ($activo == 'cambiar clave') ? 'active' : '' ?>">
+        					<a class="nav-link" href="<?= base_url('responsables/cambiar-clave') ?>">Cambiar Clave</a>
+      					</li> 
+						
 					</ul>
 					<span class="navbar-text">
 						<form action="<?= base_url("logout") ?>" method="POST">
