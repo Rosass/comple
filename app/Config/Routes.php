@@ -130,8 +130,12 @@ $routes->post('responsable/logout', 'ResponsableLoginController::logout');
 
 // Rutas [Responsables]
 $routes->get('responsables/inicio', 'Responsable/InicioController::index');
+
+$routes->get('responsables/calificaciones', 'Responsable/CalificacionController::index');
+
 // Rutas [Alumnos]
 $routes->get('responsables/alumno', 'Responsable/AlumnoController::index');
+
 
 // Rutas [AUTH-ALUMNO]
 $routes->get('alumno/login', 'AlumnoLoginController::index');

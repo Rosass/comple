@@ -23,7 +23,6 @@ class InscripcionController extends BaseController
 			$inscripciones = $this->inscripcionService->getInscripcionesPorEstatus(true);
 			$periodos = $this->periodoService->getPeriodosPorEstatus(true);
 			$actividades = $this->actividadService->getActividadesPorEstatus(true);
-
 			$inscripciones_aux = $this->inscripcionService->unirRegistros($inscripciones);
 
 			echo view('Includes/header');
