@@ -142,9 +142,7 @@ $routes->get('alumno/login', 'AlumnoLoginController::index');
 $routes->post('alumno/login', 'AlumnoLoginController::login');
 $routes->post('alumno/logout', 'AlumnoLoginController::logout');
 
-$routes->get('alumno/inicio', function (){
-	return 'Alumno!';
-});
+$routes->get('alumno/inicio', 'Alumno/InicioController::index');
 
 // Rutas [Alumnos]
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');

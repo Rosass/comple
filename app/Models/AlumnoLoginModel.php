@@ -18,7 +18,7 @@ class AlumnoLoginModel extends Model
   public function getAlumnoPorUsuario($alumno)
   {
       return $this->db_alumno->table($this->table)
-          ->select('num_control, nip, nombre, ap_paterno, ap_materno')
+          ->select('num_control, nip, nombre, ap_paterno, ap_materno, carrera')
           ->where('num_control', $alumno)
           ->get()->getRow();
   }
