@@ -1,0 +1,11 @@
+CRITICAL - 2020-10-21 20:04:16 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`rfc...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\ResponsableLoginModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\ResponsableLoginService.php(22): App\Models\ResponsableLoginModel->getResponsablePorUsuario('SSADG123GH12E')
+#4 C:\xampp\htdocs\comple\app\Controllers\ResponsableLoginController.php(33): App\Services\ResponsableLoginService->login('SSADG123GH12E', 'sanchezasr')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\ResponsableLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResponsableLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
