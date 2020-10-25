@@ -17,7 +17,7 @@
                 </div>
 			<?php endif ?>
             <div class="table-responsive-sm text-center">
-                <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
+                <table class="table table-hover table-light table-striped shadow-lg">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
                         <tr>
                             <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">ACTIVIDADES</h3></th>
@@ -33,11 +33,14 @@
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
-                      
+                        <?php foreach($actividades as $key => $actividad) : ?>
                             <tr>
-                           
+                            <th scope="row"><?= $key + 1 ?></th>
+                                <td><?= $actividad->periodo_descripcion ?></td>
+                                <td><?= $actividad->actividad ?></td>
+                             
                             </tr>
-                      
+                            <?php endforeach ?>
                     </tbody>
                 </table>
             </div>
