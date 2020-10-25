@@ -3,21 +3,21 @@ namespace App\Services\Responsable;
 
 class CalificacionService
 {
-
+    protected $calificacionModel;
     protected $alumnoModel;
 
     function __construct()
     {
-        $this->inicioModel = new \App\Models\Responsable\CalificacionModel();
+       // $this->inicioModel = new \App\Models\Responsable\CalificacionModel();
     }
 
     /**
      * Obtiene las actividades de la BD
      * @return object
      */
-    public function getResponsablePorRfc($responsable)
+    public function getAlumnos($num_control)
 	{   
-       return $this->inicioModel->getResponsablePorRfc($responsable);
+       return $this->inicioModel->getAlumnos($num_control);
     }
 
     
@@ -27,21 +27,21 @@ class CalificacionService
      * @param $array2
      * @return array
      */
-   /*  function unirRegistros($responsable)
+     function unirRegistros($alumnos)
     {
-        if(count($responsable) > 0)
+        if(count($alumnos) > 0)
         {
-            for($r = 0; $r < count($responsable); $r++)
+            for($r = 0; $r < count($alumnos); $r++)
             {
-                $array1 = (array) $this->alumnoModel->getAlumnoPorNoControl($responsable[$r]->num_control);
-                $array2 = (array) $responsable[$r];
+                $array1 = (array) $this->alumnoModel->getAlumnoPorNum_Control($alumnos[$r]->num_control);
+                $array2 = (array) $alumnos[$r];
                 $array_merge[$r] = (object) array_merge($array1, $array2);
             }
             return $array_merge;
         }
         else
         {
-            return $responsable;
+            return $alumnos;
         }
-    } */
+    } 
 }

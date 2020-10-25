@@ -1,1 +1,0 @@
-__ci_last_regenerate|i:1602257737;_ci_previous_url|s:29:"http://localhost/comple/login";error|s:39:"Acceso denegado [USUARIO INHABILITADO].";__ci_vars|a:2:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:7:"usuario";s:12:"dep_pochutla";s:5:"clave";s:9:"admin2020";}}

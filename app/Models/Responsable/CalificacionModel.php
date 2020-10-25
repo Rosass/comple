@@ -3,34 +3,27 @@
 use CodeIgniter\Model;
 
 /**
- * Capa de datos para el modulo [ACTIVIDADES]
+ * Capa de datos para el modulo [INSCRIPCIÓN]
  */
 class CalificacionModel extends Model
 {
 
     protected $returnType   = 'object';
     protected $table = 'alumnos';
-    
 
-    public function getResponsable()
+    public function get_inscripciones()
 	{   
-        
+        return $this->db->table('inscripcion')
+                ->select('*')
+                ->get()->getResult();
     }
 
-    public function getResponsablePorRfc( $responsable )
-    {
-        return $this->db->table('responsable r')
-                        ->select('r.rfc_responsable ')
-                        ->where('rfc_responsable', $responsable)
-                        ->get()->getResult();
-    }
-    public function getAlumnosPorRfc_responsable($num_control, $rfc_responsable )
-    {
-        return $this->db->table($this->table)
-        ->select("*")
-        ->where("num_control", $num_control)
-        ->where("rfc_responsable", $rfc_responsable)
+
+    public function getAlumnos()
+	{   
+        return $this->db->table('alumnos')
+        ->select('*')
         ->get()->getResult();
     }
-
+    
 }

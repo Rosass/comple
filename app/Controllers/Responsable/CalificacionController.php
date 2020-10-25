@@ -1,35 +1,43 @@
-<?php namespace App\Controllers\Responsable;;
+<?php namespace App\Controllers\Responsable;
 use App\Controllers\BaseController;
 
 class CalificacionController extends BaseController
 {
-    protected $calificacionService;  
-    protected $alumnoModel;
-    
-        function __construct()
-        {
-            $this->calificacionService = new \App\Services\Responsable\CalificacionService();
-            $this->alumnoModel =  new \App\Models\AlumnoModel();
-        }
+    protected $calificacionService;
+    protected $inscripcionService;
+	protected $alumnoModel;
+    //protected $inscripcionModel;
+    protected $calificacionModel;
+
+    function __construct()
+    {
+        $this->calificacionService = new \App\Services\Responsable\CalificacionService();
+        //$this->inscripcionModel = new \App\Models\Responsable\CalificacionModel();
+       // $this->calificacionModel = new \App\Models\Responsable\CalificacionModel();
+        $this->inicioModel = new \App\Models\Responsable\CalificacionModel();
+	}
 
 	public function index()
-	{  
-       
-        {
-            $rfc_responsable = $this->calificacionService->getResponsablePorRfc(true);
-           // $alumnos = $this->alumnoService->getAlumnosPorNum_control(true);
-			
-			
-		
+	{
+        echo "<h1>Hey</h1>";
+        //$insc = $this->inscripcionModel->get_inscripciones();
+         $alumno = $this->calificacionModel->getAlumnos();
+        echo '<pre>';
+        var_dump($alumno);
+        echo '</pre>';
 
-            echo view('Includes/header');
-            echo view('Responsable/navbar',  ["activo" => "actividades"]);
-            echo view('Responsable/calificaciones/listar', [				
-                'rfc_responsable' => $rfc_responsable,	
-                //'alumnos' => $alumnos,			           			
-                ]);
-            echo view('Includes/footer');
-		}
-        
-    }
+        $actividades = $this->inicioService->getActividadesPorResponsable(  ); 
+
+        echo view('Includes/header');
+        echo view('Responsable/navbar', ["activo" => "actividades"]);
+        echo view('Responsable/Calificacion/listar', [				
+            'actividades' => $actividades,				           			
+            ]);
+        echo view('Includes/footer');
+	}
+	
+
+
+	//--------------------------------------------------------------------
+	
 }

@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1602378125;_ci_previous_url|s:35:"http://localhost/comple/admin/jefes";usuario|s:5:"admin";login|b:1;usuario_logueado|O:8:"stdClass":11:{s:7:"usuario";s:5:"ADMIN";s:5:"clave";s:60:"$2y$10$VuB2hWLZcSN1LSut4f2WCOXgPUeUY/UfSfCO1EZSZC1S/bibd.Cyy";s:15:"id_tipo_usuario";s:1:"0";s:7:"estatus";s:1:"1";s:11:"nombre_area";s:13:"ADMINISTRADOR";s:8:"rfc_jefe";s:13:"AAAAAAAAAAAAA";s:11:"nombre_jefe";s:9:"ALEJANDRO";s:13:"apaterno_jefe";s:4:"BAEZ";s:13:"amaterno_jefe";s:6:"IBARRA";s:11:"nombre_tipo";s:13:"ADMINISTRADOR";s:20:"estatus_tipo_usuario";s:1:"1";}error|s:285:"<!-- DEBUG-VIEW START 1 SYSTEMPATH//Validation/Views/list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>El campo telefono_jefe debe tener al menos 10 caracteres de longitud.</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH//Validation/Views/list.php -->
-";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:5:{s:11:"nombre_jefe";s:6:"alvaro";s:13:"apaterno_jefe";s:7:"sanchez";s:13:"amaterno_jefe";s:7:"ramirez";s:8:"rfc_jefe";s:13:"XAXX00000hj54";s:11:"correo_jefe";s:19:"correo1@correo1.com";}}_ci_validation_errors|s:104:"a:1:{s:13:"telefono_jefe";s:69:"El campo telefono_jefe debe tener al menos 10 caracteres de longitud.";}";

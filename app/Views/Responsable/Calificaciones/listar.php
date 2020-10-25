@@ -24,17 +24,14 @@
                         </tr>
                         <tr>
                             <th scope="col" class="border-top-0">No</th>
-                            <th scope="col" class="border-top-0">Nombre</th>
                             <th scope="col" class="border-top-0">No.Control</th>
+                            <th scope="col" class="border-top-0">Nombre</th>
                             <th scope="col" class="border-top-0">Carrera</th>
                             <th scope="col" class="border-top-0">Semestre</th>
-                            <th scope="col" class="border-top-0">Calificaciones</th>
-                            <th scope="col" class="border-top-0"></th>
+                            <th scope="col" class="border-top-0">Calificaciones</th>                           
                         </tr>
                     </thead>
-                    
-                        
-                    
+                    <!--  -->
                 </table>
             </div>
         </div>
