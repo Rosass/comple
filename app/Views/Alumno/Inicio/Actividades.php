@@ -27,9 +27,10 @@
                             <th scope="col" class="border-top-0">PERIODO</th>
                             <th scope="col" class="border-top-0">ACTIVIDAD</th>
                             <th scope="col" class="border-top-0">CREDITOS</th>
-                            <th scope="col" class="border-top-0">CALIFICACION</th>
+                            <th scope="col" class="border-top-0">FECHA DE INSCRIPCION</th>
                             <th scope="col" class="border-top-0">RESPONSABLE</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
+                            <th scope="col" class="border-top-0">CALIFICACION</th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
@@ -38,7 +39,11 @@
                             <th scope="row"><?= $key + 1 ?></th>
                                 <td><?= $actividad->periodo_descripcion ?></td>
                                 <td><?= $actividad->actividad ?></td>
-                             
+                                <td><?= $actividad->credito ?></td>
+                                <td><?= $actividad->fecha_inscripcion?></td>
+                                <td><?= $actividad->responsable ?></td>
+                                <td><?= $actividad->horario ?></td>
+                                <td><?= $actividad->calificacion ?></td>
                             </tr>
                             <?php endforeach ?>
                     </tbody>

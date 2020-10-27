@@ -16,7 +16,7 @@ class InicioController extends BaseController
 	{  
         if($alumno = $this->session->usuario_logueado->num_control)
         {
-            $actividades = $this->inicioService->getActividadesPorAlumno( $alumno ); 
+            $actividades = $this->inicioService->getActividadesPorAlumno( $alumno); 
 
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "actividades"]);
