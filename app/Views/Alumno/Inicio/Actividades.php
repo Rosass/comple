@@ -20,7 +20,7 @@
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
                         <tr>
-                            <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">TUS ACTIVIDADES</h3></th>
+                            <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">MIS ACTIVIDADES</h3></th>
                         </tr>
                         <tr>
                             <th scope="col" class="border-top-0">#</th>
