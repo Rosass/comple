@@ -18,7 +18,7 @@
 					<li class="nav-item <?= ($activo == 'actividades') ? 'active' : '' ?>">
         					<a class="nav-link" href="<?= base_url('alumno/inicio') ?>">Actividades</a>
 						  </li> 
-						  <li class="nav-item <?= ($activo == 'inscripcion') ? 'active' : '' ?>">
+						  <li class="nav-item <?= ($activo == 'inscripciones') ? 'active' : '' ?>">
         					<a class="nav-link" href="<?= base_url('alumno/inscripcion') ?>">Inscripción</a>
 						  </li> 
 					</ul>

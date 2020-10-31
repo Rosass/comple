@@ -1,26 +1,26 @@
 <?php namespace App\Controllers\Alumno;
 use App\Controllers\BaseController;
 
-class InicioController extends BaseController
+class InscripcionController extends BaseController
 {
-    protected $inicioService;
+    protected $inscripcionService;
 	
     
     
     function __construct()
     {      
-		$this->inicioService =  new \App\Services\Alumno\ActividadesService();	
+		$this->inscripcionService =  new \App\Services\Alumno\InscripcionService();	
 	}
 
     public function index()
 	{  
         if($alumno = $this->session->usuario_logueado->num_control)
         {
-            $actividades = $this->inicioService->getActividadesPorAlumno( $alumno); 
+            $actividades = $this->inscripcionService->getActividadesPorAlumno(true);
 
             echo view('Includes/header');
-            echo view('Alumno/navbar', ["activo" => "actividades"]);
-            echo view('Alumno/Inicio/Actividades', [				
+            echo view('Alumno/navbar', ["activo" => "inscripciones"]);
+            echo view('Alumno/Inscripcion/listar', [				
                 'actividades' => $actividades,				           			
                 ]);
             echo view('Includes/footer');
