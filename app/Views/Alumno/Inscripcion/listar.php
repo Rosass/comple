@@ -15,6 +15,7 @@
                     <?= $session->getFlashdata('success') ?>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
+                
 			<?php endif ?>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
@@ -56,3 +57,4 @@
         </div>
     </div>
 </div>
+<?= view("Alumno/Inscripcion/agregar"); ?>
