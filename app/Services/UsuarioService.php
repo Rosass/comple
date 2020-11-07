@@ -44,7 +44,7 @@ class UsuarioService
             }
             else if($usuario_aux->id_tipo_usuario == USUARIO_AREA)
             {
-                return ['exito' => true, 'redirigir_a' => 'area/inicio'];
+                return ['exito' => true, 'redirigir_a' => 'jefes/inicio'];
             }
             else if($usuario_aux->id_tipo_usuario == USUARIO_ADMIN)
             {
