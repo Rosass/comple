@@ -1,0 +1,377 @@
+CRITICAL - 2020-11-09 02:07:24 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 02:08:06 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(22): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 02:08:11 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 02:37:50 --> Call to undefined method App\Models\Responsable\EvaluacionModel::get_inscripciones
+#0 C:\xampp\htdocs\comple\app\Models\Responsable\EvaluacionModel.php(34): CodeIgniter\Model->__call('get_inscripcion...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(16): App\Models\Responsable\EvaluacionModel->get_evaluacion_alumno('')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-09 02:38:48 --> Call to undefined method App\Models\Responsable\EvaluacionModel::get_inscripcion
+#0 C:\xampp\htdocs\comple\app\Models\Responsable\EvaluacionModel.php(34): CodeIgniter\Model->__call('get_inscripcion', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(16): App\Models\Responsable\EvaluacionModel->get_evaluacion_alumno('')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-09 02:39:51 --> Call to undefined method App\Models\Responsable\EvaluacionModel::get_inscripcion
+#0 C:\xampp\htdocs\comple\app\Models\Responsable\EvaluacionModel.php(34): CodeIgniter\Model->__call('get_inscripcion', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(16): App\Models\Responsable\EvaluacionModel->get_evaluacion_alumno('')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-09 02:40:50 --> Call to undefined method App\Models\Responsable\EvaluacionModel::get_evaluacion_alumno
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(16): CodeIgniter\Model->__call('get_evaluacion_...', Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 02:41:29 --> Call to undefined method App\Models\Responsable\EvaluacionModel::get_evaluacion_alumno
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(16): CodeIgniter\Model->__call('get_evaluacion_...', Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 02:43:43 --> Call to undefined method App\Models\Responsable\EvaluacionModel::get_evaluacion_alumno
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(16): CodeIgniter\Model->__call('get_evaluacion_...', Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 02:44:14 --> Unknown column 'act.id_inscripcion' in 'where clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `ed`.`id...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ed`.`id...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ed`.`id...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `ed`.`id...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Responsable\EvaluacionModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(16): App\Models\Responsable\EvaluacionModel->get_Evaluacion_Alumno('')
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-11-09 02:45:10 --> Unknown column 'act.num_control' in 'where clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `ed`.`id...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ed`.`id...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ed`.`id...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `ed`.`id...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Responsable\EvaluacionModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(16): App\Models\Responsable\EvaluacionModel->get_Evaluacion_Alumno('')
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-11-09 21:28:16 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(51): App\Models\Responsable\CalificacionModel->get_inscripciones('6')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Models\Responsable\CalificacionModel->get_actividad_alumno('6')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 21:34:40 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(22): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 21:34:47 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(22): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 21:34:56 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 21:34:59 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(14): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 21:35:37 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(22): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 21:35:51 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(22): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 21:35:53 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 21:35:58 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(22): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 21:36:01 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(22): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 21:36:05 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 21:36:09 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\EvaluacionController.php(22): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\EvaluacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\EvaluacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 21:36:12 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(22): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 21:36:14 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 22:18:45 --> Class 'App\Services\Responsable\EvaluacionService' not found
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\Responsable\EvaluacionController->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-09 22:35:24 --> Undefined variable: inscripcion
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(24): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 22:38:20 --> Undefined variable: evaluacion_desempenio
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(24): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 22:51:45 --> Undefined variable: evaluacion_desempenio
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(24): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 22:55:25 --> Undefined variable: evaluacion_desempenio
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(24): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 22:56:10 --> Undefined variable: evaluacion_desempenio
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(24): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 22:57:09 --> Undefined variable: evaluacion_desempenio
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(24): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 22:58:10 --> Undefined variable: evaluacion_desempenio
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(24): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 23:07:54 --> Undefined variable: evaluacion_desempenio
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(24): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-09 23:22:03 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(51): App\Models\Responsable\CalificacionModel->get_inscripciones('6')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Models\Responsable\CalificacionModel->get_actividad_alumno('6')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-09 23:22:26 --> Undefined property: App\Controllers\Alumno\InicioController::$tipoActividadService
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 23:33:57 --> Undefined property: App\Controllers\Alumno\HistorialController::$inicioService
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 23:34:50 --> Undefined property: App\Controllers\Alumno\HistorialController::$historialService
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-09 23:35:37 --> Undefined property: App\Services\Alumno\HistorialService::$alumnoModel
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorAlumno('161160176 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-09 23:36:07 --> Archivo inválido: Alumno/Historial/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Alumno/Historia...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Historia...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(35): view('Alumno/Historia...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 23:36:26 --> Archivo inválido: Alumno/Historial/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Alumno/Historia...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Historia...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(35): view('Alumno/Historia...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-09 23:54:08 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`per...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Alumno\ActividadesModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Alumno\ActividadesService.php(20): App\Models\Alumno\ActividadesModel->getActividadesPorAlumno('161160176 ')
+#4 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(24): App\Services\Alumno\ActividadesService->getActividadesPorAlumno('161160176 ')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

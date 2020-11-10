@@ -25,23 +25,12 @@
             <a href="<?= base_url('login') ?>" class="text-decoration-none text-color-tec-red">
                 <div class="card shadow p-2">
                     <div class="card-body d-flex justify-content-between align-items-center h5 mb-0">
-                        <span><i class="far fa-building"></i> DIVISIÓN</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 mt-3 mb-3">
-            <a href="<?= base_url('login') ?>" class="text-decoration-none text-color-tec-red">
-                <div class="card shadow p-2">
-                    <div class="card-body d-flex justify-content-between align-items-center h5 mb-0">
                         <span><i class="far fa-building"></i> ÁREA</span> <i class="fas fa-chevron-right"></i>
                     </div>
                  </div>
             </a>
         </div>
-    </div>
-    <div class="row justify-content-center">
+   
         <div class="col-md-4 mt-3 mb-3">
            <a href="<?= base_url('responsable/login') ?>" class="text-decoration-none text-color-tec-red">
                 <div class="card shadow p-2">

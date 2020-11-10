@@ -7,7 +7,7 @@ use CodeIgniter\Model;
  */
 class AlumnoLoginModel extends Model
 {
-  protected $table = 'alumnos';
+  protected $table = 'alumnos a';
   protected $db_alumno;
 
   public function __construct()
@@ -18,8 +18,8 @@ class AlumnoLoginModel extends Model
   public function getAlumnoPorUsuario($alumno)
   {
       return $this->db_alumno->table($this->table)
-          ->select('num_control, nip, nombre, ap_paterno, ap_materno, carrera')
-          ->where('num_control', $alumno)
+          ->select('a.num_control, a.nip, a.nombre, a.ap_paterno, a.ap_materno, a.carrera')
+          ->where('a.num_control', $alumno)
           ->get()->getRow();
   }
 

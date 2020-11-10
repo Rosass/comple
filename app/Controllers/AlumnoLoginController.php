@@ -24,10 +24,10 @@ class AlumnoLoginController extends BaseController
      */
     public function login()
     {
-        $alumno = $this->request->getPost("num_control");
+        $num_control = $this->request->getPost("num_control");
         $nip = $this->request->getPost("nip");
 
-        $respuesta = $this->alumnoService->login($alumno, $nip);
+        $respuesta = $this->alumnoService->login($num_control, $nip);
 
         if($respuesta['exito'])
         {

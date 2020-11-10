@@ -20,24 +20,31 @@
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
                         <tr>
-                            <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">ACTIVIDADES</h3></th>
+                            <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">MIS ACTIVIDADES</h3></th>
                         </tr>
                         <tr>
                             <th scope="col" class="border-top-0">#</th>
                             <th scope="col" class="border-top-0">PERIODO</th>
                             <th scope="col" class="border-top-0">ACTIVIDAD</th>
+                            <th scope="col" class="border-top-0">TIPO DE ACTIVIDAD</th>
                             <th scope="col" class="border-top-0">CREDITOS</th>
-                            <th scope="col" class="border-top-0">CALIFICACION</th>
                             <th scope="col" class="border-top-0">RESPONSABLE</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
+                            <th scope="col" class="border-top-0">ESTATUS</th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
-                      
+                        <?php foreach($actividades as $key => $actividad) : ?>
                             <tr>
-                           
+                            <th scope="row"><?= $key + 1 ?></th>
+                                <td><?= $actividad->periodo_descripcion ?></td>
+                                <td><?= $actividad->actividad ?></td>
+                                <td><?= $actividad->tipo_actividad ?></td>
+                                <td><?= $actividad->credito ?></td>
+                                <td><?= $actividad->nombre . " " . $actividad->apaterno . " " . $actividad->amaterno ?></td>
+                                <td><?= $actividad->horario ?></td>
                             </tr>
-                      
+                            <?php endforeach ?>
                     </tbody>
                 </table>
             </div>

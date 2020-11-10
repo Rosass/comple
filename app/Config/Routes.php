@@ -146,3 +146,13 @@ $routes->get('jefes/inicio', 'Jefes/InicioController::index');
 $routes->get('alumno/login', 'AlumnoLoginController::index');
 $routes->post('alumno/login', 'AlumnoLoginController::login');
 $routes->post('alumno/logout', 'AlumnoLoginController::logout');
+
+
+$routes->get('alumno/inicio', 'Alumno/InicioController::index');
+$routes->get('alumno/historial', 'Alumno/HistorialController::index');
+$routes->get('alumno/inscripcion', 'Alumno/InscripcionController::index');
+$routes->post('alumno/inscripcion/agregar', 'Alumno/InscripcionController::guardar');
+
+// Rutas [Alumnos]
+$routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
+

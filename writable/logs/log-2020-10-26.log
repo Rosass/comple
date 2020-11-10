@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2020-10-26 17:12:27 --> Trying to get property 'rfc_responsable' of non-object
 #0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
 #1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -89,3 +90,22 @@ CRITICAL - 2020-10-26 17:13:18 --> Call to undefined method App\Services\Respons
 #2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 {main}
+=======
+CRITICAL - 2020-10-26 20:52:38 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-26 23:31:03 --> Undefined property: stdClass::$nombre_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(24): view('Alumno/Inicio/A...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+>>>>>>> d08daf75d7aeab386eaa11ec7c19bc8bbf49d2ce

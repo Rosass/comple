@@ -14,19 +14,20 @@ class AlumnoLoginService
      * Este metodo valida las credenciales del usuario
      * @return array
      */
-    public function login($alumno, $nip)
+    public function login($num_control, $nip)
     {
-        $alumno_aux = $this->alumnoModel->getAlumnoPorUsuario($alumno);
+        $alumno_aux = $this->alumnoModel->getAlumnoPorUsuario($num_control);
 
         if($alumno_aux == null)
         {
-            return ['exito' => false, 'msj' => 'N. Control o nulo inválidos.', 'redirigir_a' => 'loginalumno'];
+            return ['exito' => false, 'msj' => 'N. Control o nip inválidos.', 'redirigir_a' => 'loginalumno'];
         }
         
         if ($alumno_aux->nip)
+        
         {
             // Se crea la sesión
-            $datos_sesion = ['num_control' => $alumno, 'loginalumno' => true, 'usuario_logueado' => $alumno_aux];
+            $datos_sesion = ['num_control' => $num_control, 'loginalumno' => true, 'usuario_logueado' => $alumno_aux];
             $this->session->set($datos_sesion);
 
             if($alumno_aux)
@@ -40,7 +41,7 @@ class AlumnoLoginService
         }
         else 
         {
-            return ['exito' => false, 'msj' => 'N. Control o nipp inválidos.', 'redirigir_a' => 'loginalumno'];
+            return ['exito' => false, 'msj' => 'N. Control o nip inválidos.', 'redirigir_a' => 'loginalumno'];
         }
     }
     /**

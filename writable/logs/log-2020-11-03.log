@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2020-11-03 13:39:24 --> Trying to get property 'rfc_responsable' of non-object
 #0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
 #1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -73,3 +74,33 @@ CRITICAL - 2020-11-03 17:53:43 --> Call to undefined method App\Services\Respons
 #2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 {main}
+=======
+CRITICAL - 2020-11-03 22:22:37 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-03 22:22:40 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-03 22:22:41 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-03 22:22:41 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+>>>>>>> d08daf75d7aeab386eaa11ec7c19bc8bbf49d2ce

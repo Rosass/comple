@@ -15,8 +15,17 @@ class EvaluacionService
      * Obtiene las actividades de la BD
      * @return object
      */
-    public function get_ponderacion()
+    public function getEvaluacio_desempenio()
 	{   
-      // return $this->actividadModel->getActividades();
+       return $this->evaluacionModel->getEvaluacio_desempenio();
+    }
+
+    /**
+     * Obtiene las actividades por estatus de la BD
+     * @return object
+     */
+    public function getEvaluacion_desempenioPorId($id_inscripcion)
+	{   
+       return $this->evaluacionModel-> getEvaluacion_desempenioPorId($id_inscripcion);
     }
 }

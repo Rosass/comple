@@ -1,0 +1,233 @@
+CRITICAL - 2020-11-10 00:23:24 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 00:23:24 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 00:23:25 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 00:23:25 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 00:23:25 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 00:31:51 --> Undefined variable: evaluacion_desempenio
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(24): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-10 01:31:11 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(51): App\Models\Responsable\CalificacionModel->get_inscripciones('6')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Models\Responsable\CalificacionModel->get_actividad_alumno('6')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 01:31:34 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(51): App\Models\Responsable\CalificacionModel->get_inscripciones('6')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Models\Responsable\CalificacionModel->get_actividad_alumno('6')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 01:47:39 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 01:47:57 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 01:48:16 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 01:48:33 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 01:54:57 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 01:55:14 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 01:55:49 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 02:01:12 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 02:15:15 --> Undefined variable: alumno
+#0 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(30): App\Services\AlumnoLoginService->login('161160176', '')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-10 02:30:16 --> Undefined property: stdClass::$clave
+#0 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(30): App\Services\AlumnoLoginService->login('161160176', '')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-10 15:50:57 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\InicioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Responsable\InicioService.php(20): App\Models\Responsable\InicioModel->getActividadesPorResponsable('SSADG123GH12E')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(19): App\Services\Responsable\InicioService->getActividadesPorResponsable('SSADG123GH12E')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 15:51:14 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\InicioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Responsable\InicioService.php(20): App\Models\Responsable\InicioModel->getActividadesPorResponsable('SSADG123GH12E')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(19): App\Services\Responsable\InicioService->getActividadesPorResponsable('SSADG123GH12E')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 16:03:26 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(20): App\Models\Alumno\InscripcionModel->getActividadesPorAlumno('201160074 ')
+#4 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(19): App\Services\Alumno\InscripcionService->getActividadesPorAlumno('201160074 ')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-10 16:22:42 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:42 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:42 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:42 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:22:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-10 16:24:33 --> unlink(C:\xampp\htdocs\comple\writable\session/ci_sessioniuldhbr1bldpsf2veoqqjvber2iuhijm): Resource temporarily unavailable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 325, Array)
+#1 C:\xampp\htdocs\comple\system\Session\Handlers\FileHandler.php(325): unlink('C:\\xampp\\htdocs...')
+#2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->destroy('iuldhbr1bldpsf2...')
+#3 C:\xampp\htdocs\comple\system\Session\Session.php(444): session_destroy()
+#4 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(76): CodeIgniter\Session\Session->destroy()
+#5 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(53): App\Services\UsuarioService->logout()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->logout()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
