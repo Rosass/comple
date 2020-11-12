@@ -15,7 +15,6 @@ class CalificacionModel extends Model
         return $this->db->table('inscripcion insc')
         ->select('insc.num_control, act.nombre_actividad')
         ->join('actividad act', 'act.id_actividad = insc.id_actividad', 'INNER')
-        //->join('evaluacion_desempenio e', 'e.id_inscripcion = insc.id_inscripcion', 'LEFT')
         ->where('act.id_actividad', $id_actividad)
         ->get()->getResult();
     }
