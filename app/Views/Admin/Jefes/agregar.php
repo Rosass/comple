@@ -32,7 +32,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="amaterno_jefe">APELLIDO MATERNO (*)</label>
-                        <input type="text" class="form-control text-uppercase" id="amaterno_jefe" name="amaterno_jefe" required value="<?= old("amaterno_jefe") ?>">
+                        <input type="text" class="form-control text-uppercase" id="amaterno_jefe" name="amaterno_jefe"  value="<?= old("amaterno_jefe") ?>">
                         <div class="invalid-feedback">
 				            Por favor, rellena este campo
 				        </div>
@@ -52,7 +52,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="telefono_jefe">TELEFONO</label>
-                        <input type="text" class="form-control" id="telefono_jefe" name="telefono_jefe" value="<?= old("telefono_jefe") ?>">
+                        <input type="number" class="form-control" id="telefono_jefe" name="telefono_jefe" value="<?= old("telefono_jefe") ?>">
                     </div>
                 </div>
                 <div class="col-md-4">

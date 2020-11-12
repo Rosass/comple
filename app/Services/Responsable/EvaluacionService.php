@@ -3,8 +3,8 @@ namespace App\Services\Responsable;
 
 class EvaluacionService
 {
-
     protected $evaluacionModel;
+
 
     function __construct()
     {
@@ -15,17 +15,24 @@ class EvaluacionService
      * Obtiene las actividades de la BD
      * @return object
      */
-    public function getEvaluacio_desempenio()
-	{   
-       return $this->evaluacionModel->getEvaluacio_desempenio();
+    public function getAlumnos($num_control)
+	{
+        return $this->evaluacionModel->getAlumnos($num_control);
     }
 
     /**
-     * Obtiene las actividades por estatus de la BD
-     * @return object
-     */
-    public function getEvaluacion_desempenioPorId($id_inscripcion)
-	{   
-       return $this->evaluacionModel-> getEvaluacion_desempenioPorId($id_inscripcion);
+     *
+    */
+    public function guardar($datos)
+    {
+        if ( $this->evaluacionModel->esta_calificado( $datos['id_inscripcion'] ) ) {
+            return ["exito" => false, "msj" => "El alumno ya tiene una calificación."];
+        }
+
+        if ($this->evaluacionModel->guardar($datos))
+            return ["exito" => true, "msj" => "Calificación asignada exitosamente."];
+        else
+            return ["exito" => false, "msj" => "Algo salio mal, intentalo de nuevo."];
     }
+
 }

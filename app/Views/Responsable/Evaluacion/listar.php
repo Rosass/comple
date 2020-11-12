@@ -17,13 +17,27 @@
                 </div>
 			<?php endif ?>
                 <!-- Formulario para enviar al servidor -->
-                <form action="" method="post">
+                <form action="<?= base_url("responsables/evaluacion/agregar") ?>" method="post">
                     <div class="table-responsive-sm text-center">
+                        <table class="table     table-striped " id="tablaEvaluacion">
+                            <thead class="justifi text-center">
+                                <tr>
+                                    <th scope="col" class="border-top-0">Nombre del Estudiante</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center table-sm">
+                        <?php foreach($alumno as $a) : ?>
+                            <tr>
+                                <td><?= $a->nombre?> <?= $a->ap_materno?> <?= $a->ap_paterno?></td>
+                            </tr>
+                        <?php endforeach ?>
+                        <input type="hidden" name="id_inscripcion" value="<?= $id_inscripcion ?>">
+                        <input type="hidden" name="id_actividad" value="<?= $id_actividad ?>">
+                    </tbody>
+
+                        </table>
                         <table class="table table-hover  table-bordered table-light table-striped shadow-lg" id="tablaEvaluacion">
                             <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
-
-                                <h4>Nombre del estudiante:</h4>
-
                                 <tr>
                                     <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">Evaluacion de desempeño del criterio</h3></th>
                                 </tr>
@@ -46,31 +60,31 @@
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio1" value="insuficiente">
+                                            <input type="radio" name="radio1" value="insuficiente" <?= old('radio1') == 'insuficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio1" value="suficiente">
+                                            <input type="radio" name="radio1" value="suficiente" <?= old('radio1') == 'suficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio1" value="bueno">
+                                            <input type="radio" name="radio1" value="bueno" <?= old('radio1') == 'bueno' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio1" value="notable">
+                                            <input type="radio" name="radio1" value="notable" <?= old('radio1') == 'notable' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio1" value="excelente">
+                                            <input type="radio" name="radio1" value="excelente" <?= old('radio1') == 'excelente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
@@ -82,31 +96,31 @@
                                     <td >Trabaja en equipo y se adapta a nuevas situaciones.</td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio2" value="insuficiente">
+                                            <input type="radio" name="radio2" value="insuficiente" <?= old('radio2') == 'insuficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio2" value="suficiente">
+                                            <input type="radio" name="radio2" value="suficiente" <?= old('radio2') == 'suficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio2" value="bueno">
+                                            <input type="radio" name="radio2" value="bueno" <?= old('radio2') == 'bueno' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio2" value="notable">
+                                            <input type="radio" name="radio2" value="notable" <?= old('radio2') == 'notable' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio2" value="excelente">
+                                            <input type="radio" name="radio2" value="excelente" <?= old('radio2') == 'excelente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
@@ -118,31 +132,31 @@
                                     <td > Muestra liderazgo en las actividades encomendadas.</td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio3" value="insuficiente">
+                                            <input type="radio" name="radio3" value="insuficiente" <?= old('radio3') == 'insuficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio3" value="suficiente">
+                                            <input type="radio" name="radio3" value="suficiente" <?= old('radio3') == 'suficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio3" value="bueno">
+                                            <input type="radio" name="radio3" value="bueno" <?= old('radio3') == 'bueno' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio3" value="notable">
+                                            <input type="radio" name="radio3" value="notable" <?= old('radio3') == 'notable' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio3" value="excelente">
+                                            <input type="radio" name="radio3" value="excelente" <?= old('radio3') == 'excelente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
@@ -154,31 +168,31 @@
                                     <td >Organiza su tiempo y trabaja de manera proactiva.</td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio4" value="insuficiente">
+                                            <input type="radio" name="radio4" value="insuficiente" <?= old('radio5') == 'insuficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio4" value="suficiente">
+                                            <input type="radio" name="radio4" value="suficiente" <?= old('radio5') == 'suficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio4" value="bueno">
+                                            <input type="radio" name="radio4" value="bueno" <?= old('radio5') == 'bueno' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio4" value="notable">
+                                            <input type="radio" name="radio4" value="notable" <?= old('radio5') == 'notable' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio4" value="excelente">
+                                            <input type="radio" name="radio4" value="excelente" <?= old('radio5') == 'excelente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
@@ -190,31 +204,31 @@
                                     <td >Interpreta la realidad y se sensibiliza aportando soluciones a <p> la problemática con la actividad Cultural y/o Deportiva.</p></td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio5" value="insuficiente">
+                                            <input type="radio" name="radio5" value="insuficiente" <?= old('radio5') == 'insuficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio5" value="suficiente">
+                                            <input type="radio" name="radio5" value="suficiente" <?= old('radio5') == 'suficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio5" value="bueno">
+                                            <input type="radio" name="radio5" value="bueno" <?= old('radio5') == 'bueno' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio5" value="notable">
+                                            <input type="radio" name="radio5" value="notable" <?= old('radio5') == 'notable' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio5" value="excelente">
+                                            <input type="radio" name="radio5" value="excelente" <?= old('radio5') == 'excelente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
@@ -226,31 +240,31 @@
                                     <td >Realiza sugerencias innovadoras para beneficio o <p>mejora del programa en el que participa.</p></td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio6" value="insuficiente">
+                                            <input type="radio" name="radio6" value="insuficiente" <?= old('radio6') == 'insuficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio6" value="suficiente">
+                                            <input type="radio" name="radio6" value="suficiente" <?= old('radio6') == 'suficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio6" value="bueno">
+                                            <input type="radio" name="radio6" value="bueno" <?= old('radio6') == 'bueno' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio6" value="notable">
+                                            <input type="radio" name="radio6" value="notable" <?= old('radio6') == 'notable' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio6" value="excelente">
+                                            <input type="radio" name="radio6" value="excelente" <?= old('radio6') == 'excelente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
@@ -262,31 +276,31 @@
                                     <td>Tiene iniciativa para ayudar en las actividades<p>encomendadas y muestra espiritu de servicio.</p></td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio7" value="insuficiente">
+                                            <input type="radio" name="radio7" value="insuficiente"  <?= old('radio7') == 'insuficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio7" value="suficiente">
+                                            <input type="radio" name="radio7" value="suficiente"  <?= old('radio7') == 'suficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio7" value="bueno">
+                                            <input type="radio" name="radio7" value="bueno"  <?= old('radio7') == 'bueno' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio7" value="notable">
+                                            <input type="radio" name="radio7" value="notable"  <?= old('radio7') == 'notable' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="container">
-                                            <input type="radio" name="radio7" value="excelente">
+                                            <input type="radio" name="radio7" value="excelente" <?= old('radio7') == 'excelente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
                                             <span class="checkmark"></span>
                                         </label>
                                     </td>
@@ -299,12 +313,28 @@
                     </div>
                     <div class="form-group">
                         <label for="observaciónes">Observaciónes</label>
-                        <textarea class="form-control" id="observaciónes" name="observaciónes" rows="3"></textarea>
+                        <textarea class="form-control" id="observaciones" name="observaciones" rows="3"><?= old("observaciones") ?></textarea>
                     </div>
                     <p id="calificacion">Calificación: </p>
                     <p id="nivel-desempeno">Nivel de desempeño alcanzado de la actividad: </p>
-                    
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                    <button type="submit" class="btn btn-success">Enviar</button>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                        Ver ayuda
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="ayuda">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -340,7 +370,7 @@
                 let clase = ( calificacion < 1 ) ? 'text-danger' : 'text-success';
 
                 const spanCalificacion = document.createElement('span');
-                spanCalificacion.classList.add( clase, 'span-calificacion' );
+                spanCalificacion.classList.add( clase, 'span-calificacion');
                 spanCalificacion.textContent = ( calificacion / 7 ).toFixed(2);
                 calificacionHTML.appendChild( spanCalificacion );
                 nivelDesempeno();

@@ -14,16 +14,14 @@ class CalificacionController extends BaseController
 	{
         $id_actividad = urldecode($this->request->uri->getSegment(3));
         $alumnos = $this->calificacionModel->get_actividad_alumno( $id_actividad );
-        
-
-
 
         echo view('Includes/header');
         echo view('Responsable/navbar', ["activo" => "actividades"]);
-        echo view('Responsable/Calificaciones/listar', [				
-            'alumnos' => $alumnos,				           			
+        echo view('Responsable/Calificaciones/listar', [
+            'alumnos' => $alumnos,
+            'id_actividad' => $id_actividad
             ]);
         echo view('Includes/footer');
 	}
-	
+
 }

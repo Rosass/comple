@@ -31,7 +31,7 @@
 							<div class="col-md-4">
 								<div class="form-group">
 									<label for="amaterno">APELLIDO MATERNO (*)</label>
-									<input type="text" class="form-control text-uppercase" name="amaterno_jefe" required value="<?= $jefe->amaterno_jefe ?>">
+									<input type="text" class="form-control text-uppercase" name="amaterno_jefe"  value="<?= $jefe->amaterno_jefe ?>">
 								</div>
 							</div>
 						</div>

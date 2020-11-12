@@ -91,18 +91,16 @@ class Validation
 		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
 		'nombre_jefe'     => 'required',
 		'apaterno_jefe'     => 'required',
-		'amaterno_jefe'     => 'required',
 		'telefono_jefe'     => 'min_length[10]|max_length[10]',
-        'correo_jefe'        => 'valid_email'
+        
 	];
 
 	public $editarJefeReglas = [
 		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
 		'nombre_jefe'     => 'required',
 		'apaterno_jefe'     => 'required',
-		'amaterno_jefe'     => 'required',
 		'telefono_jefe'     => 'min_length[10]|max_length[10]',
-        'correo_jefe'        => 'valid_email'
+       
 	];
 
 	public $areaReglas = [
@@ -131,5 +129,15 @@ class Validation
 	public $editar1ClaveReglas = [
 		'clave'     => 'required|min_length[8]',
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
+	];
+	public $evaluacionRules = [
+		'radio1' => 'required',
+		'radio2' => 'required',
+		'radio3' => 'required',
+		'radio4' => 'required',
+		'radio5' => 'required',
+		'radio6' => 'required',
+		'radio7' => 'required',
+		
 	];
 }
