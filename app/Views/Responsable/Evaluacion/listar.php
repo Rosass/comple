@@ -19,11 +19,25 @@
                 <!-- Formulario para enviar al servidor -->
                 <form action="" method="post">
                     <div class="table-responsive-sm text-center">
+                        <table class="table     table-striped " id="tablaEvaluacion">
+                            <thead class="justifi text-center">
+                                <tr>
+                                    <th scope="col" class="border-top-0">Nombre del Estudiante</th>
+                                </tr>
+                            </thead>     
+                            <tbody class="text-center table-sm">
+                        <?php foreach($alumnos as $key => $alumno) : ?>
+                            <tr>
+                                <th scope="row"><?= $key + 1 ?></th>
+                                <td><?= $alumno['nombre'] . ' ' . $alumno['ap_materno'] .' '. $alumno['ap_paterno']?></td>                                                          
+                                
+                            </tr>
+                        <?php endforeach ?>
+                    </tbody>      
+
+                        </table>
                         <table class="table table-hover  table-bordered table-light table-striped shadow-lg" id="tablaEvaluacion">
                             <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
-
-                                <h4>Nombre del estudiante:</h4>
-
                                 <tr>
                                     <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">Evaluacion de desempeño del criterio</h3></th>
                                 </tr>
