@@ -15,9 +15,8 @@ class HistorialService
      * Obtiene las actividades de la BD
      * @return object
      */
-    public function getActividadesPorAlumno($alumnos)
+    public function getActividadesPorCalificacion($alumnos)
 	{   
-       return $this->historialModel->getActividadesPorAlumno($alumnos);
+       return $this->historialModel->getActividadesPorCalificacion($alumnos);
     }
-
 }
