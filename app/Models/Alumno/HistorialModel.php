@@ -11,7 +11,7 @@ class HistorialModel extends Model
     protected $returnType   = 'object';
     protected $table = 'inscripcion';
 
-    public function getActividadesPorAlumno( $alumnos )
+    public function getActividadesPorCalificacion( $alumnos )
     {
         return $this->db->table('inscripcion a')
                         ->select('a.periodo, a.fecha_inscripcion, a.id_inscripcion, a.id_actividad, p.descripcion as periodo_descripcion, 
@@ -22,9 +22,12 @@ class HistorialModel extends Model
                         ->join('responsable r' , 'r.rfc_responsable = ta.rfc_responsable','LEFT')
                         ->join('tipo_actividad tac', 'tac.id_tipo_actividad = ta.id_tipo_actividad', 'LEFT')
                         ->join('evaluacion_desempenio e', 'e.id_inscripcion = a.id_inscripcion', 'LEFT')
-                        ->where('num_control', $alumnos)
+                        ->where('num_control',$alumnos)
                         ->get()->getResult();
     }
   
+
+   
+
 
 }

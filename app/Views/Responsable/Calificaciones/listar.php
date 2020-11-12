@@ -46,7 +46,7 @@
                                 <td></td> 
                                 <td style="width:8%;">
                                     <div class="d-flex flex-column">
-                                    <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/evaluacion/$alumno[num_control]/$alumno[id_inscripcion]/$id_actividad") ?>"><i class="fas fa-file-alt"></i> Evaluacion Desempeño</a>
+                                        <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/evaluacion/$alumno[num_control]/$alumno[id_inscripcion]/$id_actividad") ?>"><i class="fas fa-file-alt"></i> Evaluacion Desempeño</a>                                   
                                     </div>
                                 </td>
                             </tr>

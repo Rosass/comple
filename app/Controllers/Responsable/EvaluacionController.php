@@ -1,4 +1,4 @@
-<?php namespace App\Controllers\Responsable;;
+<?php namespace App\Controllers\Responsable;
 use App\Controllers\BaseController;
 
 class EvaluacionController extends BaseController
@@ -11,9 +11,11 @@ class EvaluacionController extends BaseController
 		$this->evaluacionModel   =  new \App\Models\Responsable\EvaluacionModel();
 		$this->evaluacionService =  new \App\Services\Responsable\EvaluacionService();
 	}
+   
 
 
     public function index()
+
 	{
 
         $num_control = urldecode($this->request->uri->getSegment(3));
@@ -105,7 +107,9 @@ class EvaluacionController extends BaseController
                 break;
         }
         return $valor;
-    }
+
+	
 
 	//--------------------------------------------------------------------
+    }
 }

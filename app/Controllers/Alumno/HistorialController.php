@@ -23,7 +23,7 @@ class HistorialController extends BaseController
 	{  
         if($alumno = $this->session->usuario_logueado->num_control)
         {
-            $actividades = $this->HistorialService->getActividadesPorAlumno($alumno); 
+            $actividades = $this->HistorialService->getActividadesPorCalificacion($alumno); 
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
 			$responsables = $this->responsableService->getResponsablesPorEstatus(true);
 
