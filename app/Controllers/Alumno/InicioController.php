@@ -4,6 +4,7 @@ use App\Controllers\BaseController;
 class InicioController extends BaseController
 {
     protected $inicioService;
+    protected $HistorialService;
     protected $tipoActividadService;
     protected $responsableService;
     
@@ -12,6 +13,7 @@ class InicioController extends BaseController
     
     function __construct()
     {      
+        $this->HistorialService =  new \App\Services\Alumno\HistorialService();
         $this->inicioService =  new \App\Services\Alumno\ActividadesService();	
         $this->tipoActividadService =  new \App\Services\Division\TipoActividadService();
 		$this->responsableService =  new \App\Services\Division\ResponsableService();
@@ -21,7 +23,9 @@ class InicioController extends BaseController
 	{  
         if($alumno = $this->session->usuario_logueado->num_control)
         {
-            $actividades = $this->inicioService->getActividadesPorAlumno($alumno); 
+              
+            $actividades = $this->HistorialService->getActividades_no_calificadas($alumno); 
+            //var_dump($actividades);
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
 			$responsables = $this->responsableService->getResponsablesPorEstatus(true);
 

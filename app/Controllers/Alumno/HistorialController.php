@@ -24,6 +24,8 @@ class HistorialController extends BaseController
         if($alumno = $this->session->usuario_logueado->num_control)
         {
             $actividades = $this->HistorialService->getActividadesPorCalificacion($alumno); 
+            $actividadesNoCalificadas = $this->HistorialService->getActividades_no_calificadas($alumno); 
+            //var_dump( $actividadesNoCalificadas );
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
 			$responsables = $this->responsableService->getResponsablesPorEstatus(true);
 
@@ -31,10 +33,11 @@ class HistorialController extends BaseController
             echo view('Alumno/navbar', ["activo" => "Historial"]);
             echo view('Alumno/Historial/listar', [				
                 'actividades' => $actividades,
+                'actividadesnocalificadas' => $actividadesNoCalificadas,
                 'tipos_actividades' => $tipos_actividades,
 				'responsables' => $responsables				           			
                 ]);
-            echo view('Includes/footer');
+            echo view('Includes/footer'); 
 		
         }
        else

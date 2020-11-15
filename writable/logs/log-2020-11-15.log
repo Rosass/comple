@@ -1,0 +1,365 @@
+CRITICAL - 2020-11-15 00:01:26 --> Undefined property: stdClass::$alumno
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 00:02:27 --> Undefined property: stdClass::$alumnos
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 00:03:35 --> Call to undefined method App\Models\Alumno\InscripcionModel::getAlumnoPorNum_control
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): CodeIgniter\Model->__call('getAlumnoPorNum...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('201160074 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:05:58 --> Table 'acitp_complementarias.alumno' doesn't exist
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getAlumnoPorNum_control('201160074 ')
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('201160074 ')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:07:12 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getAlumnoPorNum_control('201160074 ')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('201160074 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:09:01 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `num_con...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `num_con...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `num_con...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `num_con...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getAlumnoPorNum_control('201160074 ')
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('201160074 ')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:11:00 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `num_con...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `num_con...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `num_con...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `num_con...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getAlumnoPorNum_control('201160074 ')
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('201160074 ')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:11:56 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `num_con...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `num_con...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `num_con...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `num_con...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getAlumnoPorNum_control('201160074 ')
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('201160074 ')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:12:40 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `num_con...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `num_con...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `num_con...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `num_con...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getAlumnoPorNum_control('201160074 ')
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('201160074 ')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:12:56 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `num_con...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `num_con...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `num_con...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `num_con...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getAlumnoPorNum_control('201160074 ')
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('201160074 ')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:14:01 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `num_con...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `num_con...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `num_con...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `num_con...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getAlumnoPorNum_control('201160074 ')
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('201160074 ')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:15:27 --> inscripciones1Reglas no es un grupo de reglas de validación.
+#0 C:\xampp\htdocs\comple\system\Validation\Validation.php(501): CodeIgniter\Validation\Exceptions\ValidationException::forGroupNotFound('inscripciones1R...')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(44): CodeIgniter\Validation\Validation->getRuleGroup('inscripciones1R...')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:18:58 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(42): App\Models\Alumno\InscripcionModel->getAlumnoPorNoControl('')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(60): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:21:00 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(42): App\Models\Alumno\InscripcionModel->getAlumnoPorNoControl('')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(60): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:21:30 --> Call to undefined method App\Models\Alumno\InscripcionModel::getAlumnoPorNoControl
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(42): CodeIgniter\Model->__call('getAlumnoPorNoC...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(60): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:22:25 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(42): App\Models\Alumno\InscripcionModel->getAlumnoPorNoControl('')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(60): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:23:20 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(42): App\Models\Alumno\InscripcionModel->getAlumnoPorNoControl('')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(60): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:40:47 --> Call to undefined method App\Models\Alumno\InscripcionModel::getAlumnoPorNoControl
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(42): CodeIgniter\Model->__call('getAlumnoPorNoC...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(60): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:44:20 --> Undefined property: App\Services\Alumno\InscripcionService::$alumnoModel
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 42, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(60): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:49:52 --> Call to undefined method App\Models\Alumno\InscripcionModel::getAlumnoPorNum_control
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): CodeIgniter\Model->__call('getAlumnoPorNum...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('161160176 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:50:00 --> Call to undefined method App\Models\Alumno\InscripcionModel::getAlumnoPorNum_control
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): CodeIgniter\Model->__call('getAlumnoPorNum...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('161160176 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:53:18 --> Undefined property: App\Services\Alumno\InscripcionService::$alumnoModel
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:53:55 --> Call to undefined method App\Models\Alumno\InscripcionModel::getAlumnoPorNoControl
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(45): CodeIgniter\Model->__call('getAlumnoPorNoC...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 00:55:12 --> Unknown column 'num_control' in 'where clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(49): App\Models\Alumno\InscripcionModel->getInscripcionPorNoControlPeriodoYActividad('', NULL, '12')
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:56:38 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ac...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(53): App\Models\Alumno\InscripcionModel->guardar(Array)
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:57:34 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ac...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(53): App\Models\Alumno\InscripcionModel->guardar(Array)
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 00:58:45 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ac...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(53): App\Models\Alumno\InscripcionModel->guardar(Array)
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 01:00:14 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ac...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(53): App\Models\Alumno\InscripcionModel->guardar(Array)
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 01:01:03 --> Unknown column 'num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ac...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(53): App\Models\Alumno\InscripcionModel->guardar(Array)
+#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-15 01:33:16 --> Call to undefined method App\Models\Alumno\InscripcionModel::getAlumnoPorNum_control
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): CodeIgniter\Model->__call('getAlumnoPorNum...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getAlumnoPorNum_control('161160176 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 01:33:46 --> Call to undefined method App\Services\Alumno\InscripcionService::getAlumnoPorNum_control()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-15 01:36:57 --> Call to undefined method App\Models\Alumno\InscripcionModel::getInscripcionPorNoControlPeriodoYActividad
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(49): CodeIgniter\Model->__call('getInscripcionP...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 01:43:53 --> Call to undefined method App\Models\Alumno\InscripcionModel::getAlumnoPorNoControl
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(45): CodeIgniter\Model->__call('getAlumnoPorNoC...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 01:45:41 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getInscripcionPorAlumno('161160176 ')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getInscripcionPorAlumno('161160176 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 01:45:46 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getInscripcionPorAlumno('161160176 ')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getInscripcionPorAlumno('161160176 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 01:45:48 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getInscripcionPorAlumno('161160176 ')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getInscripcionPorAlumno('161160176 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 01:45:49 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(16): App\Models\Alumno\InscripcionModel->getInscripcionPorAlumno('161160176 ')
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): App\Services\Alumno\InscripcionService->getInscripcionPorAlumno('161160176 ')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 03:13:13 --> Undefined index: num_control
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(61): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

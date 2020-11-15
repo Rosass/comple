@@ -22,8 +22,8 @@
         					<a class="nav-link" href="<?= base_url('alumno/historial') ?>">Historial</a>
 						  </li> 
 						  <li class="nav-item <?= ($activo == 'inscripciones') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('alumno/inscripcion') ?>">Inscripción</a>
-						  </li> 
+        					<a class="nav-link" href="<?= base_url('alumno/inscripciones') ?>">Inscripcion</a>
+      					</li>
 					</ul>
 					<span class="navbar-text">
 						<form action="<?= base_url("logout") ?>" method="POST">

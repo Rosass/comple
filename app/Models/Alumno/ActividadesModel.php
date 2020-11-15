@@ -20,7 +20,7 @@ class ActividadesModel extends Model
                         ->join('actividad ta', 'ta.id_actividad = a.id_actividad', 'LEFT')
                         ->join('responsable r' , 'r.rfc_responsable = ta.rfc_responsable','LEFT')
                         ->join('tipo_actividad tac', 'tac.id_tipo_actividad = ta.id_tipo_actividad', 'LEFT')
-                        ->where('num_control', $alumnos)
+                        ->where('num_control', $alumnos)                      
                         ->get()->getResult();
     }
   
