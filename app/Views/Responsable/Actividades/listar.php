@@ -28,7 +28,7 @@
                             <th scope="col" class="border-top-0">DICTAMEN</th>
                             <th scope="col" class="border-top-0">CREDITOS</th>
                             <th scope="col" class="border-top-0">PERIODO</th>
-                            <th scope="col" class="border-top-0">TIPO</th>
+                            <th scope="col" class="border-top-0">TIPO D</th>
                             <th scope="col" class="border-top-0">HORAS</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
