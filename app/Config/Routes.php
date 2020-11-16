@@ -134,29 +134,34 @@ $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionCont
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
 
+<<<<<<< HEAD
 $routes->get('responsable/asistencia/listar', 'Responsable/AsistenciaController::index');
-
-
-// Rutas [Alumnos]
-$routes->get('responsables/alumno', 'Responsable/AlumnoController::index');
-$routes->get('alumno/inicio', 'Alumno/InicioController::index');
-// Rutas [Alumnos]
+=======
+//cambiar clave responsable
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
+$routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::editar');
+//$routes->get('responsables/cambiar-clave/editar/(:any)', 'Responsable/AlumnoController::editar');
+$routes->post('responsables/cambiar-clave/editar-clave', 'Responsable/AlumnoController::actualizarClave');
+>>>>>>> 94f467e4fac982fa1cf82ce1b56e46fa0099749d
 
 
-//Rutas [Jefes]
-$routes->get('jefes/inicio', 'Jefes/InicioController::index');
+
+// Rutas [RAlumnos]
+//$routes->get('responsables/alumno', 'Responsable/AlumnoController::index');
+
 // Rutas [AUTH-ALUMNO]
 $routes->get('alumno/login', 'AlumnoLoginController::index');
 $routes->post('alumno/login', 'AlumnoLoginController::login');
 $routes->post('alumno/logout', 'AlumnoLoginController::logout');
-
-
+//Ruta [alumno modulo]
 $routes->get('alumno/inicio', 'Alumno/InicioController::index');
 $routes->get('alumno/historial', 'Alumno/HistorialController::index');
-$routes->get('alumno/inscripcion', 'Alumno/InscripcionController::index');
-$routes->post('alumno/inscripcion/agregar', 'Alumno/InscripcionController::guardar');
+//Ruta [alumno inscripcion]
+$routes->get('alumno/inscripciones', 'Alumno/InscripcionController::index');
+$routes->post('alumno/inscripciones', 'Alumno/InscripcionController::getInscripcionesPorActividadYEstatus');
+$routes->post('alumno/inscripciones/agregar', 'Alumno/InscripcionController::guardar');
+$routes->post('alumno/inscripciones/cambiar-estatus', 'Alumno/InscripcionController::cambiarEstatus');
 
-// Rutas [Alumnos]
-$routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
+//Rutas [Jefes]
+$routes->get('jefes/inicio', 'Jefes/InicioController::index');
 

@@ -65,7 +65,7 @@ class EvaluacionController extends BaseController
         
         $promedio = ( $radio1 + $radio2 + $radio3 + $radio4 + $radio5 + $radio6 + $radio7 ) / 7;
         
-        
+        //round(0.2234, 2); // devolvería el valor numérico 0.22
         $data = [
             'id_inscripcion' => $id_inscripcion,
             'criterio1'      => $radio1,

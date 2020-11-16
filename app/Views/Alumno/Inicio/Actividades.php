@@ -34,15 +34,17 @@
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
-                        <?php foreach($actividades as $key => $actividad) : ?>
+                        <?php $i = 1; foreach($actividades as $ey => $actividad) : ?>
                             <tr>
-                            <th scope="row"><?= $key + 1 ?></th>
-                                <td><?= $actividad->periodo_descripcion ?></td>
-                                <td><?= $actividad->actividad ?></td>
-                                <td><?= $actividad->tipo_actividad ?></td>
-                                <td><?= $actividad->credito ?></td>
-                                <td><?= $actividad->nombre . " " . $actividad->apaterno . " " . $actividad->amaterno ?></td>
-                                <td><?= $actividad->horario ?></td>
+                            <th scope="row"><?= $i ++?></th>
+                                <td><?= $actividad['periodo'] ?></td>
+                                <td><?= $actividad['actividad'] ?></td>
+                                <td><?= $actividad['tipo_actividad'] ?></td>
+                                <td><?= $actividad['credito'] ?></td>
+                                <td><?= $actividad['nombre']. " " . $actividad['apaterno'] . " " . $actividad['amaterno']  ?></td>
+                                <td><?= $actividad['horario'] ?></td>
+                                <td></td>
+                            
                             </tr>
                             <?php endforeach ?>
                     </tbody>

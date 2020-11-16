@@ -140,4 +140,14 @@ class Validation
 		'radio7' => 'required',
 		
 	];
+
+	public $inscripcionesReglas = [
+		'id_actividad'     => 'required|numeric',
+		'telefono'     => 'required|min_length[10]|max_length[15]',
+	];
+
+	public $editarClave1Reglas = [
+		'clave'     => 'required|min_length[8]',
+		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
+	];
 }

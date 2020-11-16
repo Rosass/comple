@@ -9,19 +9,26 @@ class InscripcionController extends BaseController
     
     function __construct()
     {      
-		$this->inscripcionService =  new \App\Services\Alumno\InscripcionService();	
+        $this->inscripcionService =  new \App\Services\Alumno\InscripcionService();
+        $this->periodoService =  new \App\Services\Division\PeriodoService();	
 	}
 
     public function index()
 	{  
-        if($alumno = $this->session->usuario_logueado->num_control)
+        if($num_control = $this->session->usuario_logueado->num_control)
         {
-            $actividades = $this->inscripcionService->getActividadesPorAlumno($alumno);
+            $num_control = $this->inscripcionService->getInscripcionPorAlumno($num_control);
+            $actividades = $this->inscripcionService->getActividadesPorAlumno(true);           
+            $periodos = $this->periodoService->getPeriodosPorEstatus(true);
+           
+			
 
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "inscripciones"]);
-            echo view('Alumno/Inscripcion/listar', [				
-                'actividades' => $actividades,				           			
+            echo view('Alumno/Inscripciones/listar', [
+                'alumnos' => $num_control,				
+                'actividades' => $actividades,	
+                "periodos" => $periodos		           			
                 ]);
             echo view('Includes/footer');
 		
@@ -32,6 +39,41 @@ class InscripcionController extends BaseController
          return redirect("/");
        }
     }
+
+    public function guardar()
+    {
+        $reglas = $this->validation->getRuleGroup('inscripcionesReglas');
+
+        if (!$this->validate($reglas))
+        {
+            $this->session->setFlashData("error", $this->validator->listErrors());
+            return redirect('alumno/inscripciones')->withInput();
+        }
+        else
+        {   
+            $datos = [
+                "num_control" => mb_strtoupper($this->request->getPost("num_control"), 'utf-8'),
+                "periodo" => $this->request->getPost("periodo"),
+                "id_actividad" => $this->request->getPost("id_actividad"),
+                "telefono" => $this->request->getPost("telefono") 
+            ];
+
+            $respuesta =  $this->inscripcionService->guardar($datos);
+
+            if($respuesta["exito"])
+            {
+                $this->session->setFlashData("success", $respuesta["msj"]);
+                return redirect('alumno/inscripciones');
+            }
+            else
+            {
+                $this->session->setFlashData("error", $respuesta["msj"]);
+                return redirect('alumno/inscripciones')->withInput();;
+            }
+        }
+    }
+    
+    
 
 
     
