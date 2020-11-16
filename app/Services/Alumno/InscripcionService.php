@@ -55,7 +55,7 @@ class InscripcionService
             if($inscripcion == NULL)
             {
                 if ($this->inscripcionModel->guardar($datos))
-                    return ["exito" => true, "msj" => "Inscripción agregada con exito."];
+                    return ["exito" => true, "msj" => "Inscripción agregada con exitoo."];
                 else
                     return ["exito" => false, "msj" => "Algo salio mal, intentalo de nuevo."];
             }
