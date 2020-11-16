@@ -15,7 +15,7 @@ class EvaluacionModel extends Model
 	{
 
         return $this->db->table("evaluacion_desempenio ed")
-            ->select("ed.id_inscripcion, ed.criterio1, ed.criterio2, ed.criterio3, ed.criterio4, ed.criterio5, ed.criterio6, ed.criterio7, ed.observaciones, ed.valor_numerico")
+            ->select("ed.id_inscripcion, ed.criterio1, ed.criterio2, ed.criterio3, ed.criterio4, ed.criterio5, ed.criterio6, ed.criterio7, ed.observaciones, ed.valor_numerico, ed.nivel_desempenio")
             ->join('inscripcion i', 'i.id_inscripcion = ed.id_inscripcion', 'INNER')
             ->where('i.id_inscripcion', $id_inscripcion)
             ->get()->getResult();

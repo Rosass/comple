@@ -132,9 +132,9 @@ $routes->post('responsable/logout', 'ResponsableLoginController::logout');
 $routes->get('responsables/inicio', 'Responsable/InicioController::index');
 $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionController::index');
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
-
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
 
+$routes->get('responsable/asistencia/listar', 'Responsable/AsistenciaController::index');
 
 
 // Rutas [Alumnos]

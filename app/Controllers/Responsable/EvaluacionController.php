@@ -61,8 +61,11 @@ class EvaluacionController extends BaseController
 
         $observaciones = $this->request->getPost("observaciones");
 
+        //$nivel = $this->request->getPost("nivel-desempeno");
+        
         $promedio = ( $radio1 + $radio2 + $radio3 + $radio4 + $radio5 + $radio6 + $radio7 ) / 7;
-
+        
+        
         $data = [
             'id_inscripcion' => $id_inscripcion,
             'criterio1'      => $radio1,
@@ -74,6 +77,7 @@ class EvaluacionController extends BaseController
             'criterio7'      => $radio7,
             'observaciones'  => $observaciones,
             'valor_numerico' => $promedio,
+            //'nivel_desempenio'=>$nivel,
         ];
         $respuesta = $this->evaluacionService->guardar( $data );
 

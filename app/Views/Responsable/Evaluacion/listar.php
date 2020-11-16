@@ -20,6 +20,21 @@
                 <form action="<?= base_url("responsables/evaluacion/agregar") ?>" method="post">
                     <div class="table-responsive-sm text-center">
                         <table class="table     table-striped " id="tablaEvaluacion">
+
+                             <!-- Button trigger modal -->
+                    <button type="button"  class="btn btn float-right  btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                        Ver ayuda para calificar
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="<?= base_url('public/img/FORMATO DE EVALUACION AL DESEMPEÑO.jpg') ?>" alt="ayuda">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                             <thead class="justifi text-center">
                                 <tr>
                                     <th scope="col" class="border-top-0">Nombre del Estudiante</th>
@@ -34,7 +49,6 @@
                         <input type="hidden" name="id_inscripcion" value="<?= $id_inscripcion ?>">
                         <input type="hidden" name="id_actividad" value="<?= $id_actividad ?>">
                     </tbody>
-
                         </table>
                         <table class="table table-hover  table-bordered table-light table-striped shadow-lg" id="tablaEvaluacion">
                             <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
@@ -319,22 +333,6 @@
                     <p id="nivel-desempeno">Nivel de desempeño alcanzado de la actividad: </p>
 
                     <button type="submit" class="btn btn-success">Enviar</button>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-                        Ver ayuda
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="ayuda">
-                            </div>
-                        </div>
-                    </div>
-                    </div>
                 </form>
             </div>
         </div>
