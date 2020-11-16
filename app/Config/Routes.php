@@ -133,11 +133,17 @@ $routes->get('responsables/inicio', 'Responsable/InicioController::index');
 $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionController::index');
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
+
+//cambiar clave responsable
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
+$routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::editar');
+//$routes->get('responsables/cambiar-clave/editar/(:any)', 'Responsable/AlumnoController::editar');
+$routes->post('responsables/cambiar-clave/editar-clave', 'Responsable/AlumnoController::actualizarClave');
+
 
 
 // Rutas [RAlumnos]
-$routes->get('responsables/alumno', 'Responsable/AlumnoController::index');
+//$routes->get('responsables/alumno', 'Responsable/AlumnoController::index');
 
 // Rutas [AUTH-ALUMNO]
 $routes->get('alumno/login', 'AlumnoLoginController::index');

@@ -11,9 +11,9 @@ class InscripcionService
         $this->inscripcionModel = new \App\Models\Alumno\InscripcionModel();
     }
 
-    public function getInscripcionPorAlumno($alumnos)
+    public function getInscripcionPorAlumno($num_control)
 	{   
-       return $this->inscripcionModel->getInscripcionPorAlumno($alumnos);
+       return $this->inscripcionModel->getInscripcionPorAlumno($num_control);
     }
     
     /**

@@ -363,3 +363,280 @@ CRITICAL - 2020-11-15 03:13:13 --> Undefined index: num_control
 #4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2020-11-15 19:51:46 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Cambiar-Clave\actualizarClave.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(15): view('Responsable/Cam...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-15 19:54:33 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Cambiar-Clave\actualizarClave.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(15): view('Responsable/Cam...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-15 19:55:09 --> Undefined variable: responsables
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Cambiar-Clave\actualizarClave.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(15): view('Responsable/Cam...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-15 19:58:27 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Cambiar-Clave\actualizarClave.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(15): view('Responsable/Cam...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-15 20:46:59 --> Archivo inválido: Responsable/Cambiar-Clave.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsable/Cam...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(15): view('Responsable/Cam...')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-15 20:48:39 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Cambiar-Clave\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(15): view('Responsable/Cam...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-15 20:49:42 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Cambiar-Clave\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(15): view('Responsable/Cam...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-15 20:53:09 --> El segmento de solicitud de URI está fuera de rango: 3
+#0 C:\xampp\htdocs\comple\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(11): CodeIgniter\HTTP\URI->getSegment(3)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 20:53:49 --> Undefined property: App\Controllers\Responsable\AlumnoController::$responsableService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 20:54:34 --> Undefined property: App\Controllers\Responsable\AlumnoController::$alumnoService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 21:14:27 --> Undefined property: App\Controllers\Responsable\AlumnoController::$alumnoService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 21:14:57 --> Undefined property: App\Controllers\Responsable\AlumnoController::$responsableService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 21:16:00 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Cambiar-Clave\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(15): view('Responsable/Cam...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-15 21:16:51 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Cambiar-Clave\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(15): view('Responsable/Cam...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-15 21:36:53 --> 
+#0 C:\xampp\htdocs\comple\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\comple\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(31): redirect('responsable/cam...')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-15 21:37:18 --> Undefined property: App\Controllers\Responsable\AlumnoController::$responsableService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 21:39:30 --> 
+#0 C:\xampp\htdocs\comple\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\comple\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(31): redirect('responsable/cam...')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-15 21:39:50 --> Undefined property: App\Controllers\Responsable\AlumnoController::$responsableService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 21:46:39 --> Undefined property: App\Controllers\Responsable\AlumnoController::$alumnoService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 21:52:26 --> El segmento de solicitud de URI está fuera de rango: 3
+#0 C:\xampp\htdocs\comple\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(11): CodeIgniter\HTTP\URI->getSegment(3)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 21:52:27 --> El segmento de solicitud de URI está fuera de rango: 3
+#0 C:\xampp\htdocs\comple\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(11): CodeIgniter\HTTP\URI->getSegment(3)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 21:52:28 --> El segmento de solicitud de URI está fuera de rango: 3
+#0 C:\xampp\htdocs\comple\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(11): CodeIgniter\HTTP\URI->getSegment(3)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 21:52:30 --> El segmento de solicitud de URI está fuera de rango: 3
+#0 C:\xampp\htdocs\comple\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(11): CodeIgniter\HTTP\URI->getSegment(3)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 21:52:31 --> El segmento de solicitud de URI está fuera de rango: 3
+#0 C:\xampp\htdocs\comple\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(11): CodeIgniter\HTTP\URI->getSegment(3)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 21:52:39 --> El segmento de solicitud de URI está fuera de rango: 3
+#0 C:\xampp\htdocs\comple\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(3)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(11): CodeIgniter\HTTP\URI->getSegment(3)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-15 21:52:59 --> Undefined property: App\Controllers\Responsable\AlumnoController::$alumnoService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 21:53:28 --> Undefined property: App\Controllers\Responsable\AlumnoController::$alumnoService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 21:53:56 --> Undefined property: App\Controllers\Responsable\AlumnoController::$responsableService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->editar()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 21:54:40 --> Undefined property: App\Controllers\Responsable\AlumnoController::$responsableService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-15 22:10:45 --> Archivo inválido: Responsable/Cambiar-Clave/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsable/Cam...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(22): view('Responsable/Cam...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-15 22:11:10 --> Archivo inválido: Responsable/Cambiar-Clave.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsable/Cam...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(22): view('Responsable/Cam...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-15 22:11:25 --> Archivo inválido: Responsable/Cambiar-Clave/.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsable/Cam...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(22): view('Responsable/Cam...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-15 22:14:22 --> Undefined variable: responsable
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Cambiar-Clave\editar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cam...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(22): view('Responsable/Cam...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

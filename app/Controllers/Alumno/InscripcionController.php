@@ -17,7 +17,7 @@ class InscripcionController extends BaseController
 	{  
         if($num_control = $this->session->usuario_logueado->num_control)
         {
-            $alumno = $this->inscripcionService->getInscripcionPorAlumno($num_control);
+            $num_control = $this->inscripcionService->getInscripcionPorAlumno($num_control);
             $actividades = $this->inscripcionService->getActividadesPorAlumno(true);           
             $periodos = $this->periodoService->getPeriodosPorEstatus(true);
            
@@ -26,7 +26,7 @@ class InscripcionController extends BaseController
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "inscripciones"]);
             echo view('Alumno/Inscripciones/listar', [
-                'alumnos' => $alumno,				
+                'alumnos' => $num_control,				
                 'actividades' => $actividades,	
                 "periodos" => $periodos		           			
                 ]);
