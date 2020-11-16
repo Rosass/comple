@@ -133,7 +133,8 @@ $routes->get('responsables/inicio', 'Responsable/InicioController::index');
 $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionController::index');
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
-
+//Asistencia responsable
+$routes->get('responsables/asistencia/listar', 'Responsable/AsistenciaController::index');
 //cambiar clave responsable
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::editar');
