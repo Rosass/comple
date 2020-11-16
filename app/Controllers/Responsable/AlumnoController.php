@@ -1,55 +1,37 @@
-<?php namespace App\Controllers\Responsable;
+<?php namespace App\Controllers\Responsable;;
 use App\Controllers\BaseController;
 
 class AlumnoController extends BaseController
 {
-
-    protected $responsableService;
+    protected $alumnoService;
 
     function __construct()
     {
-        $this->responsableService =  new \App\Services\Division\ResponsableService();
+        $this->alumnoService =  new \App\Services\Responsable\AlumnoService();
     }
 
 	public function index()
 	{  
-        //if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_DIVISION)
+        if($rfc_responsable = $this->session->usuario_logueado->rfc_responsable)
         {
-			$responsables = $this->responsableService->getResponsables();
-
-            echo view('Includes/header');
-            echo view('Responsable/navbar', ["activo" => "cambiar clave"]);
-            echo view('Responsable/Cambiar-Clave/editar', ["responsables" => $responsables]);
-            echo view('Includes/footer');
-		}
-       
-	}
-
-	public function editar()
-	{  
-     
-        {
-           
+            $responsable = $this->alumnoService->getResponsablePorRfc( $rfc_responsable ); 
 
             echo view('Includes/header');
             echo view('Responsable/navbar',  ["activo" => "cambiar clave"]);
-            echo view('Responsable/Cambiar-Clave/editar');
+            echo view('Responsable/Cambiar-Clave/editar', ["responsable" => $responsable]);
             echo view('Includes/footer');
 		}
     
     }
     
-    
-
-    //--------------------------------------------------------------------
     public function actualizarClave()
     {
-        $reglas = $this->validation->getRuleGroup('editarClave1Reglas');
+        $reglas = $this->validation->getRuleGroup('editarClave12Reglas');
 
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('responsable/cambiar-clave')->withInput();
+            return redirect('responsables/cambiar-clave')->withInput();
         }
         else
         {   
@@ -59,7 +41,23 @@ class AlumnoController extends BaseController
                 "clave" => password_hash($this->request->getPost("clave") , PASSWORD_DEFAULT, ['cost' => 10]),
             ];
 
-           
+            $respuesta =  $this->alumnoService->actualizar($rfc_responsable, $datos);
+
+            if($respuesta["exito"])
+            {
+                $this->session->setFlashData("success", $respuesta["msj"]);
+                return redirect('responsables/cambiar-clave');
+            }
+            else
+            {
+                $this->session->setFlashData("error", $respuesta["msj"]);
+                return redirect()->back()->withInput();;
+            }
         }
     }
+
+
+    //--------------------------------------------------------------------
+
 }
+

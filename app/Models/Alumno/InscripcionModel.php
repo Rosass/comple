@@ -21,6 +21,14 @@ class InscripcionModel extends Model
                         ->get()->getResult();
     }
 
+    public function get_periodo_activo()
+    {
+        return $this->table('periodo')
+        ->select('*')
+                ->where('estatus', 1)
+                ->get()->getResult();
+    }
+
     public function getInscripcionPorAlumno($estatus)
 	{   
        

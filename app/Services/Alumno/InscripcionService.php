@@ -33,6 +33,11 @@ class InscripcionService
        return $this->periodoModel->getPeriodosPorEstatus($estatus);
     }
 
+    public function periodo_activo()
+	{   
+       return $this->inscripcionModel->get_periodo_activo();
+    }
+
 
 
     /**
@@ -43,11 +48,10 @@ class InscripcionService
     public function guardar($datos)
     {
         $alumno = $this->inscripcionModel->getInscripcionPorAlumno($datos['num_control']);
-
         if($alumno != NULL)
         {
+            
             $inscripcion = $this->inscripcionModel->getInscripcionPorAlumno( $datos['num_control'], $datos['periodo'], $datos['id_actividad']);
-
             if($inscripcion == NULL)
             {
                 if ($this->inscripcionModel->guardar($datos))

@@ -8,7 +8,7 @@
 				</button>
 			</div>
 			<div class="modal-body pb-0 text-muted">
-				<form action="<?= base_url("responsable/cambiar-clave/editar-clave") ?>" method="POST">
+				<form action="<?= base_url("responsables/cambiar-clave/editar-clave") ?>" method="POST">
 					<div class="row">
 						<input type="hidden" class="form-control disabled" id="rfc" name="rfc" value="<?= $responsable->rfc_responsable ?>">
 						<div class="col">

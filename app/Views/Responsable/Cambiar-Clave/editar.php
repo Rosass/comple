@@ -9,14 +9,14 @@
 	<?php endif ?>
 	<div class="row mt-5">
 		<div class="col-md-12">
-			<form action="<?= base_url("division/responsables/editar-clave") ?>" method="POST">
+			<form action="<?= base_url("responsables/cambiar-clave/editar-clave") ?>" method="POST">
                 <div class="card border-0 shadow-lg">
 					<div class="card-header bg-color-tec-blue text-white">
                         <i class="fas fa-pen"></i>  ACTUALIZACIÓN DE CLAVE
 					</div>
 					<div class="card-body">
                         <div class="row">
-                            <input type="hidden" class="form-control disabled" id="rfc" name="rfc" >
+                            <input type="hidden" class="form-control disabled" id="rfc" name="rfc" value="<?= $responsable->rfc_responsable ?>" >
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="clave">NUEVA CLAVE (*)</label>
@@ -33,7 +33,7 @@
                         <small>Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">
                             <div class="dropdown-divider"></div>
-							<a href="<?= base_url("division/responsables") ?>" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
+							<a href="<?= base_url("responsables/cambiar-clave") ?>" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
                             <button type="submit" class="btn bg-color-tec-blue text-white btnEnviarFormulario"><i class="fas fa-check"></i> Guardar</button>
                         </div>
 					</div>

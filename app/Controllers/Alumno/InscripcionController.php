@@ -43,6 +43,9 @@ class InscripcionController extends BaseController
     public function guardar()
     {
         $reglas = $this->validation->getRuleGroup('inscripcionesReglas');
+        // $n = mb_strtoupper($this->request->getPost("num_control"), 'utf-8');
+        // echo $n;
+        // return ;
 
         if (!$this->validate($reglas))
         {
@@ -51,13 +54,20 @@ class InscripcionController extends BaseController
         }
         else
         {   
+            $periodo = $this->inscripcionService->periodo_activo();
             $datos = [
-                "num_control" => mb_strtoupper($this->request->getPost("num_control"), 'utf-8'),
-                "periodo" => $this->request->getPost("periodo"),
+                // "num_control" => mb_strtoupper($this->request->getPost("num_control"), 'utf-8'),
+                "num_control" => mb_strtoupper($this->session->usuario_logueado->num_control, 'utf-8'),
+                "periodo" => 20203,
                 "id_actividad" => $this->request->getPost("id_actividad"),
                 "telefono" => $this->request->getPost("telefono") 
             ];
 
+            // var_dump($datos);
+            // echo '<pre>';
+            // var_dump($periodo);
+            // echo '</pre>';
+            // return;
             $respuesta =  $this->inscripcionService->guardar($datos);
 
             if($respuesta["exito"])

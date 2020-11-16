@@ -8,10 +8,10 @@
           <span aria-hidden="true" class="text-white">&times;</span>
         </button>
       </div>
-      <div class="modal-body pb-0 text-center">
+      <div class="modal-body pb-0 justifi text-center">
         <form action="<?= base_url("alumno/inscripciones/agregar") ?>" method="POST" class="needs-validation" novalidate>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="form-group">
                         <label for="id_actividad">ACTIVIDAD (*)</label>
                         <select class="custom-select" name="id_actividad" required>
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="form-group">
                         <label for="telefono">TELEFONO</label>
                         <input type="text" class="form-control" id="telefono" name="telefono" value="<?= old("telefono") ?>">

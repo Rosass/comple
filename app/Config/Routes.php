@@ -134,20 +134,13 @@ $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionCont
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
 
-<<<<<<< HEAD
 $routes->get('responsable/asistencia/listar', 'Responsable/AsistenciaController::index');
-=======
-//cambiar clave responsable
-$routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
-$routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::editar');
-//$routes->get('responsables/cambiar-clave/editar/(:any)', 'Responsable/AlumnoController::editar');
-$routes->post('responsables/cambiar-clave/editar-clave', 'Responsable/AlumnoController::actualizarClave');
->>>>>>> 94f467e4fac982fa1cf82ce1b56e46fa0099749d
-
 
 
 // Rutas [RAlumnos]
-//$routes->get('responsables/alumno', 'Responsable/AlumnoController::index');
+$routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
+$routes->get('responsables/cambiar-clave/editar/(:any)', 'Responsable/AlumnoController::editar');
+$routes->post('responsables/cambiar-clave/editar-clave', 'Responsable/AlumnoController::actualizarClave');
 
 // Rutas [AUTH-ALUMNO]
 $routes->get('alumno/login', 'AlumnoLoginController::index');
