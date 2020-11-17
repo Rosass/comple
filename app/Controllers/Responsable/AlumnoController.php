@@ -42,14 +42,15 @@ class AlumnoController extends BaseController
     
 
     //--------------------------------------------------------------------
+
     public function actualizarClave()
     {
-        $reglas = $this->validation->getRuleGroup('editarClave1Reglas');
+        $reglas = $this->validation->getRuleGroup('editarClaveReglas');
 
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('responsable/cambiar-clave')->withInput();
+            return redirect('division/responsables')->withInput();
         }
         else
         {   
@@ -59,7 +60,19 @@ class AlumnoController extends BaseController
                 "clave" => password_hash($this->request->getPost("clave") , PASSWORD_DEFAULT, ['cost' => 10]),
             ];
 
-           
+            $respuesta =  $this->responsableService->actualizar($rfc_responsable, $datos);
+
+            if($respuesta["exito"])
+            {
+                $this->session->setFlashData("success", $respuesta["msj"]);
+                return redirect('responsables/login');
+            }
+            else
+            {
+                $this->session->setFlashData("error", $respuesta["msj"]);
+                return redirect()->back()->withInput();;
+            }
         }
     }
+
 }
