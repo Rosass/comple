@@ -37,6 +37,6 @@ td {
                             </tr>
                         <?php endforeach ?>
 </tbody>
-</table>
+</table><!--  -->
 </body>
 </html>
