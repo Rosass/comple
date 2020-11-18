@@ -19,10 +19,8 @@ class InscripcionController extends BaseController
         {
             $num_control = $this->inscripcionService->getInscripcionPorAlumno($num_control);
             $actividades = $this->inscripcionService->getActividadesPorAlumno(true);           
-            $periodos = $this->periodoService->getPeriodosPorEstatus(true);
+            $periodos = $this->inscripcionService->getPeriodosPorEstatus(true);
            
-			
-
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "inscripciones"]);
             echo view('Alumno/Inscripciones/listar', [
@@ -43,6 +41,8 @@ class InscripcionController extends BaseController
     public function guardar()
     {
         $reglas = $this->validation->getRuleGroup('inscripcionesReglas');
+        $periodo_activo = $this->inscripcionService->getPeriodosPorEstatus(true);
+        
 
         if (!$this->validate($reglas))
         {
@@ -52,12 +52,13 @@ class InscripcionController extends BaseController
         else
         {   
             $datos = [
-                "num_control" => mb_strtoupper($this->request->getPost("num_control"), 'utf-8'),
-                "periodo" => $this->request->getPost("periodo"),
+                // "num_control" => mb_strtoupper($this->request->getPost("num_control"), 'utf-8'),
+                "num_control" => $this->session->usuario_logueado->num_control,
+                "periodo" => $periodo_activo->periodo,
                 "id_actividad" => $this->request->getPost("id_actividad"),
                 "telefono" => $this->request->getPost("telefono") 
             ];
-
+ 
             $respuesta =  $this->inscripcionService->guardar($datos);
 
             if($respuesta["exito"])
@@ -71,12 +72,5 @@ class InscripcionController extends BaseController
                 return redirect('alumno/inscripciones')->withInput();;
             }
         }
-    }
-    
-    
-
-
-    
-	
-
-}
+	}           
+}                

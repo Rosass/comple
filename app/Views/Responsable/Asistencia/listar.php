@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Lista Asistencia </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de asistencia</title>
 </head>
 <style type="text/css">
 table ,th,td{
@@ -17,6 +18,15 @@ td {
 }
 </style>
 <body>
+
+    <div class="container box">
+    <h3 align="center">Lista de Asistencia</h3>
+
+
+<div class="container box">
+<h3 align="center">Lista de ASSsistencia</h3>
+
+
     <h2>Lista de Asistencia</h2>
     <table style="width:100%">
     <thead>
@@ -38,5 +48,6 @@ td {
                         <?php endforeach ?>
 </tbody>
 </table><!--  -->
+
 </body>
 </html>

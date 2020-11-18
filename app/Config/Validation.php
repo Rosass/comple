@@ -146,7 +146,7 @@ class Validation
 		'telefono'     => 'required|min_length[10]|max_length[15]',
 	];
 
-	public $editarClave1Reglas = [
+	public $editarClave12Reglas = [
 		'clave'     => 'required|min_length[8]',
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
 	];
