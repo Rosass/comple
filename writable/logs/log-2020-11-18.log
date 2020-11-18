@@ -1,0 +1,191 @@
+CRITICAL - 2020-11-18 01:08:04 --> Class 'App\Services\Responsable\AsistenciaModel' not found
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\Responsable\AsistenciaController->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-18 02:11:20 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): CodeIgniter\Model->__call('get_actividad_a...', Array)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 02:12:00 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): CodeIgniter\Model->__call('get_actividad_a...', Array)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 02:12:01 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): CodeIgniter\Model->__call('get_actividad_a...', Array)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 02:12:06 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): CodeIgniter\Model->__call('get_actividad_a...', Array)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 02:13:07 --> Call to undefined method App\Services\Responsable\AsistenciaService::get_alumno()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-18 02:13:15 --> Call to undefined method App\Services\Responsable\AsistenciaService::get_alumno()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-18 02:13:41 --> Call to undefined method App\Services\Responsable\AsistenciaService::get_alumno()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-18 02:13:43 --> Call to undefined method App\Services\Responsable\AsistenciaService::get_alumno()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-18 02:15:00 --> Call to undefined method App\Services\Responsable\AsistenciaService::get_alumno()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-18 02:16:03 --> Call to undefined method App\Services\Responsable\AsistenciaService::get_alumno()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-18 02:16:08 --> Call to undefined method App\Services\Responsable\AsistenciaService::get_alumno()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-18 02:31:07 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): CodeIgniter\Model->__call('get_actividad_a...', Array)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 03:15:47 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-18 03:16:17 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-18 03:16:20 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-18 03:16:28 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-18 03:30:56 --> Undefined variable: actividads
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Actividades\listar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 60, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 03:31:20 --> Undefined variable: alumno
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Actividades\listar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 60, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 03:57:14 --> Undefined variable: activida
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Actividades\listar.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 03:57:18 --> Undefined variable: activida
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Actividades\listar.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 03:57:54 --> Undefined variable: activida
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Actividades\listar.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-18 04:31:27 --> Undefined variable: grupo
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
