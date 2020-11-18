@@ -139,7 +139,7 @@ $routes->get('responsable/asistencia/listar', 'Responsable/AsistenciaController:
 
 // Rutas [RAlumnos]
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
-$routes->get('responsables/cambiar-clave/editar/(:any)', 'Responsable/AlumnoController::editar');
+$routes->get('responsables/cambiar-clave/editar(:any)', 'Responsable/AlumnoController::editar');
 $routes->post('responsables/cambiar-clave/editar-clave', 'Responsable/AlumnoController::actualizarClave');
 
 // Rutas [AUTH-ALUMNO]

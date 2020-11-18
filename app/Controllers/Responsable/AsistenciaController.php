@@ -1,7 +1,8 @@
 <?php namespace App\Controllers\Responsable;
 Use App\Services\Responsable\AsistenciaService;
-use App\Controllers\BaseController;
+
 use Vendor\autoload;
+use App\Controllers\BaseController;
 use Dompdf\Dompdf;
 
 
