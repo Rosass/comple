@@ -28,7 +28,7 @@
                             <th scope="col" class="border-top-0">DICTAMEN</th>
                             <th scope="col" class="border-top-0">CREDITOS</th>
                             <th scope="col" class="border-top-0">PERIODO</th>
-                            <th scope="col" class="border-top-0">TIPO</th>
+                            <th scope="col" class="border-top-0">TIPO D</th>
                             <th scope="col" class="border-top-0">HORAS</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
@@ -57,8 +57,8 @@
                                 <td style="width:8%;">  
                                     <div class="d-flex flex-column">
                                     <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/calificaciones/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i> Asignar calificaciones</a>
-                                    <a class="btn btn-warning btn-sm btn-block mb-0" href="<?= base_url("responsable/asistencia/listar") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de asistencia</a>
-                                    <a class="btn btn-secondary btn-sm btn-block mb-0" href="<?= base_url("responsable/alumnos/listas/") ?>"><i class="fas fa-file-alt"></i> Acta de calificaciones</a>
+                                    <a class="btn btn-warning btn-sm btn-block mb-0" href="<?= base_url("responsables/asistencia/listar") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de asistencia</a>
+                                    <a class="btn btn-secondary btn-sm btn-block mb-0" href="<?= base_url("responsables/alumnos/listas/") ?>"><i class="fas fa-file-alt"></i> Acta de calificaciones</a>
                                     </div>
                                 </td>
                             </tr>

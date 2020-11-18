@@ -19,10 +19,8 @@ class InscripcionController extends BaseController
         {
             $num_control = $this->inscripcionService->getInscripcionPorAlumno($num_control);
             $actividades = $this->inscripcionService->getActividadesPorAlumno(true);           
-            $periodos = $this->periodoService->getPeriodosPorEstatus(true);
+            $periodos = $this->inscripcionService->getPeriodosPorEstatus(true);
            
-			
-
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "inscripciones"]);
             echo view('Alumno/Inscripciones/listar', [
@@ -43,9 +41,8 @@ class InscripcionController extends BaseController
     public function guardar()
     {
         $reglas = $this->validation->getRuleGroup('inscripcionesReglas');
-        // $n = mb_strtoupper($this->request->getPost("num_control"), 'utf-8');
-        // echo $n;
-        // return ;
+        $periodo_activo = $this->inscripcionService->getPeriodosPorEstatus(true);
+        
 
         if (!$this->validate($reglas))
         {
@@ -54,20 +51,14 @@ class InscripcionController extends BaseController
         }
         else
         {   
-            $periodo = $this->inscripcionService->periodo_activo();
             $datos = [
                 // "num_control" => mb_strtoupper($this->request->getPost("num_control"), 'utf-8'),
-                "num_control" => mb_strtoupper($this->session->usuario_logueado->num_control, 'utf-8'),
-                "periodo" => 20203,
+                "num_control" => $this->session->usuario_logueado->num_control,
+                "periodo" => $periodo_activo->periodo,
                 "id_actividad" => $this->request->getPost("id_actividad"),
                 "telefono" => $this->request->getPost("telefono") 
             ];
-
-            // var_dump($datos);
-            // echo '<pre>';
-            // var_dump($periodo);
-            // echo '</pre>';
-            // return;
+ 
             $respuesta =  $this->inscripcionService->guardar($datos);
 
             if($respuesta["exito"])
@@ -81,12 +72,5 @@ class InscripcionController extends BaseController
                 return redirect('alumno/inscripciones')->withInput();;
             }
         }
-    }
-    
-    
-
-
-    
-	
-
-}
+	}           
+}                

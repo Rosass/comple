@@ -215,7 +215,7 @@
 
                                 <tr id="radio5">
                                     <th scope="row">5</th>
-                                    <td >Interpreta la realidad y se sensibiliza aportando soluciones a <p> la problemática con la actividad Cultural y/o Deportiva.</p></td>
+                                    <td >InterpretaA la realidad y se sensibiliza aportando soluciones a <p> la problemática con la actividad Cultural y/o Deportiva.</p></td>
                                     <td>
                                         <label class="container">
                                             <input type="radio" name="radio5" value="insuficiente" <?= old('radio5') == 'insuficiente' ? 'checked='.'"'.'checked'.'"' : '' ?> >
