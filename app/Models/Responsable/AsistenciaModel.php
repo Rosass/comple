@@ -36,7 +36,7 @@ class AsistenciaModel extends Model
      * *5.- calificacion pero este lo jalare despues por que me falta hacer esta vista
      * 
     */
-    public function get_alumno( $num_control )
+    public function get_actividad_alumno ( $num_control )
     {
         $db_alumnos = db_connect('alumnos_db');
         return $db_alumnos->table('alumnos')
@@ -45,13 +45,4 @@ class AsistenciaModel extends Model
                     ->get()->getResult();
     }
 
-    public function get_actividad_alumno( $id_actividad)
-    {
-        $newArray = array();
-        $actividad = $this->get_inscripciones( $id_actividad );
-        return $newArray;
-    }
-
-
-    
 }
