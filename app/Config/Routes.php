@@ -134,7 +134,8 @@ $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionCont
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
 
-$routes->get('responsables/asistencia/(:any)', 'Responsable/AsistenciaController::index');
+$routes->get('responsables/lista-asistencia/(:any)', 'Responsable/AsistenciaController::listaAsistencia');
+$routes->get('responsables/lista-calificacion/(:any)', 'Responsable/AsistenciaController::listaCalificacion');
 
 
 // Rutas [RAlumnos]
