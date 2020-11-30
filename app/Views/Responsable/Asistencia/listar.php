@@ -1,3 +1,7 @@
+
+
+<!-- Modal Agregar Responsable-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,34 +22,26 @@ td {
 }
 </style>
 <body>
-
-    <div class="container box">
-    <h3 align="center">Lista de Asistencia</h3>
-
-
-<div class="container box">
-<h3 align="center">Lista de ASSsistencia</h3>
-
-
     <h2>Lista de Asistencia</h2>
     <table style="width:100%">
     <thead>
     <tr> 
         <th>No</th>
         <th>No. CONTROL</th>
-        <th>CARRERA</th>
         <th>NOMBRE DEL ALUMNO</th>
+        <th>CARRERA</th>
     </tr>
 </thead>
 <tbody>
-<?php foreach($alumnos as $key => $lista) : ?>
-                            <tr>
+
+            <?php foreach($alumnos as $key => $alumno) : ?>                            <tr>
                                 <th scope="row"><?= $key + 1 ?></th>
-                                <td><?= $lista->num_control ?></td>
-                                <td><?= $lista->carrera ?></td>
-                               
+                                <td><?= $alumno['num_control'] ?></td>
+                                <td><?= $alumno['nombre'] . ' ' . $alumno['ap_paterno'] .' '. $alumno['ap_materno']?></td>
+                                <td><?= $alumno['carrera'] ?></td>
+                              
                             </tr>
-                        <?php endforeach ?>
+            <?php endforeach ?>
 </tbody>
 </table><!--  -->
 

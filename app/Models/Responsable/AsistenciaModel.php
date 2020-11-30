@@ -36,7 +36,7 @@ class AsistenciaModel extends Model
      * *5.- calificacion pero este lo jalare despues por que me falta hacer esta vista
      * 
     */
-    public function get_actividad_alumno ( $num_control )
+    public function get_alumno( $num_control )
     {
         $db_alumnos = db_connect('alumnos_db');
         return $db_alumnos->table('alumnos')
@@ -45,4 +45,35 @@ class AsistenciaModel extends Model
                     ->get()->getResult();
     }
 
+    public function get_actividad_alumno( $id_actividad)
+    {
+        $newArray = array();
+        $actividad = $this->get_inscripciones( $id_actividad );
+        foreach( $actividad as $act ) {
+            $num_control = $act->num_control;
+            $id_inscripcion = $act->id_inscripcion;
+
+            $alumno = $this->get_alumno( $num_control );
+            foreach( $alumno as $alm ) {
+                $resp = array(
+                    'id_inscripcion' => $id_inscripcion,
+                    'actividad' => $act->nombre_actividad,
+                    'num_control' => $num_control,
+                    'nombre' => $alm->nombre,
+                    'ap_paterno' => $alm->ap_paterno,
+                    'ap_materno' => $alm->ap_materno,
+                    'carrera' => $alm->carrera,
+                    'semestre' => $alm->semestre,
+                    'valor_numerico' =>$act->valor_numerico,
+                    
+                   
+                );
+                array_push($newArray, $resp);
+            }
+        }
+        return $newArray;
+    }
+
+
+    
 }

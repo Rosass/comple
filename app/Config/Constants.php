@@ -79,8 +79,8 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 define('USUARIO_ADMIN', 0);
 define('USUARIO_DIVISION', 1);
 define('USUARIO_AREA', 2);
-/* define('USUARIO_PROFESOR', 3);
-define('USUARIO_ALUMNO', 4); */
+define('USUARIO_ESCOLARES', 3);
+//define('USUARIO_ALUMNO', 4); 
 
 define('ENE_JUN', date('Y') . '1');
 define('VERANO', date('Y') . '2');

@@ -9,17 +9,17 @@
 				ÁREA: <span class="font-weight-bold"> <?= $session->usuario_logueado->nombre_area ?></span>
 			</div>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom shadow-lg">
-				<a class="navbar-brand text-wrap text-light" href="<?= base_url('jefes/Inicio') ?>" style="font-size:15px !important;"><img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="" style="max-width: 30px;"> Sistema de Gestión de Actividades Complementarias</a>
+				<a class="navbar-brand text-wrap text-light" href="<?= base_url('jefes/Actividades') ?>" style="font-size:15px !important;"><img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="" style="max-width: 30px;"> Sistema de Gestión de Actividades Complementarias</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse text-center" id="navbarText">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item <?= ($activo == 'Inicio') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('jefes/inicio') ?>">Inicio</a>
+						<li class="nav-item <?= ($activo == 'actividades') ? 'active' : '' ?>">
+        					<a class="nav-link" href="<?= base_url('jefes/actividades') ?>">Actividades</a>
       					</li> 
-						<li class="nav-item <?= ($activo == 'responsable') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('jefe/responsable') ?>">Responsables</a>
+						<li class="nav-item <?= ($activo == 'responsables') ? 'active' : '' ?>">
+        					<a class="nav-link" href="<?= base_url('jefes/responsables') ?>">Responsables</a>
       					</li> 
       					
 					</ul>

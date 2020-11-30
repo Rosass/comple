@@ -15,7 +15,10 @@
                     <?= $session->getFlashdata('success') ?>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
-			<?php endif ?>
+            <?php endif ?>
+            <div class="form-group text-left mt-0 mb-3">
+                 <a href="<?= base_url('responsables/inicio') ?>" class="btn btn-primary" class="text-muted text-decoration-none"><i class="far fa-arrow-alt-circle-left"></i> Regresar</a>
+            </div>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaAlumnos">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
@@ -29,6 +32,7 @@
                             <th scope="col" class="border-top-0">Carrera</th>
                             <th scope="col" class="border-top-0">Semestre</th>
                             <th scope="col" class="border-top-0">Calificacion</th>
+                            <th scope="col" class="border-top-0">Nivel Desempeño</th>
                             <th scope="col" class="border-top-0">Accion</th>
 
                         </tr>
@@ -38,10 +42,11 @@
                             <tr>
                                 <th scope="row"><?= $key + 1 ?></th>
                                 <td><?= $alumno['num_control'] ?></td>
-                                <td><?= $alumno['nombre'] . ' ' . $alumno['ap_materno'] .' '. $alumno['ap_paterno']?></td>
+                                <td><?= $alumno['nombre'] . ' ' . $alumno['ap_paterno'] .' '. $alumno['ap_materno']?></td>
                                 <td><?= $alumno['carrera'] ?></td>
                                 <td><?= $alumno['semestre'] ?></td>
                                 <td><?= $alumno['valor_numerico'] ?></td> 
+                                <td><?= $alumno['nivel_desempeno'] ?></td> 
                                 <td style="width:8%;">
                                     <div class="d-flex flex-column">
                                         <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/evaluacion/$alumno[num_control]/$alumno[id_inscripcion]/$id_actividad") ?>"><i class="fas fa-file-alt"></i> Evaluacion Desempeño</a>                                   

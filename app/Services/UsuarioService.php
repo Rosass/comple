@@ -44,11 +44,15 @@ class UsuarioService
             }
             else if($usuario_aux->id_tipo_usuario == USUARIO_AREA)
             {
-                return ['exito' => true, 'redirigir_a' => 'jefes/inicio'];
+                return ['exito' => true, 'redirigir_a' => 'jefes/actividades'];
             }
             else if($usuario_aux->id_tipo_usuario == USUARIO_ADMIN)
             {
                 return ['exito' => true, 'redirigir_a' => 'admin/jefes'];
+            }
+            else if($usuario_aux->id_tipo_usuario == USUARIO_ESCOLARES)
+            {
+                return ['exito' => true, 'redirigir_a' => 'escolares/inicio'];
             }
             else
             {

@@ -61,11 +61,10 @@ class EvaluacionController extends BaseController
 
         $observaciones = $this->request->getPost("observaciones");
 
-        //$nivel = $this->request->getPost("nivel-desempeno");
-        
         $promedio = ( $radio1 + $radio2 + $radio3 + $radio4 + $radio5 + $radio6 + $radio7 ) / 7;
-        
-        //round(0.2234, 2); // devolvería el valor numérico 0.22
+
+        $promedio = round($promedio, 2);
+
         $data = [
             'id_inscripcion' => $id_inscripcion,
             'criterio1'      => $radio1,
@@ -77,7 +76,7 @@ class EvaluacionController extends BaseController
             'criterio7'      => $radio7,
             'observaciones'  => $observaciones,
             'valor_numerico' => $promedio,
-            //'nivel_desempenio'=>$nivel,
+            'nivel_desempeno' => $this->Calcular_nivel_desempeno($promedio)
         ];
         $respuesta = $this->evaluacionService->guardar( $data );
 
@@ -111,9 +110,24 @@ class EvaluacionController extends BaseController
                 break;
         }
         return $valor;
-
-	
-
-	//--------------------------------------------------------------------
     }
+     
+    protected function Calcular_nivel_desempeno( $calificacion )
+    { $desempeno = '';
+        if($calificacion<1){
+            $desempeno = 'Insuficiente';
+        }else if ($calificacion>1 && $calificacion < 1.50){
+            $desempeno = 'Suficiente';
+        }else if($calificacion >= 1.50 && $calificacion<2.50){
+            $desempeno = 'Bueno';
+        }else if($calificacion >= 2.50 && $calificacion<3.50){
+            $desempeno = 'Notable';
+        }else if ($calificacion >=2.50 && $calificacion <=4){
+            $desempeno = 'Excelente';
+        }else{
+            $desempeno = 'Algo salio mal';
+        }
+        return $desempeno;
+    }
+
 }

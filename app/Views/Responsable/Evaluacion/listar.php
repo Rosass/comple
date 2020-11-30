@@ -15,16 +15,18 @@
                     <?= $session->getFlashdata('success') ?>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
-			<?php endif ?>
+            <?php endif ?>
                 <!-- Formulario para enviar al servidor -->
                 <form action="<?= base_url("responsables/evaluacion/agregar") ?>" method="post">
                     <div class="table-responsive-sm text-center">
                         <table class="table     table-striped " id="tablaEvaluacion">
-
-                             <!-- Button trigger modal -->
-                    <button type="button"  class="btn btn float-right  btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-                        Ver ayuda para calificar
-                    </button>
+                            <!-- Button trigger modal -->
+                            <button type="button"  class="btn btn float-right  btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                                Ver ayuda para calificar
+                            </button>
+                             <div class=" text-left mt-0 mb-0">
+                                 <a href="<?= base_url("responsables/calificaciones/$id_actividad") ?>" class="btn btn-primary" class="text-muted text-decoration-none"><i class="far fa-arrow-alt-circle-left"></i> Regresar</a>
+                            </div>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
@@ -43,7 +45,7 @@
                             <tbody class="text-center table-sm">
                         <?php foreach($alumno as $a) : ?>
                             <tr>
-                                <td><?= $a->nombre?> <?= $a->ap_materno?> <?= $a->ap_paterno?></td>
+                                <td><?= $a->nombre?> <?= $a->ap_paterno?> <?= $a->ap_materno?></td>
                             </tr>
                         <?php endforeach ?>
                         <input type="hidden" name="id_inscripcion" value="<?= $id_inscripcion ?>">

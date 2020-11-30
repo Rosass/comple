@@ -24,6 +24,8 @@
 	<!-- SweetAlert2 CDN -->
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="<?= base_url("public/js/script.js") ?>"></script>
+    <script src="<?= base_url("public/js/buscar.js") ?>"></script>
     <script src="<?= base_url("public/js/validateForms.js") ?>"></script>
+    
 </body>
 </html>

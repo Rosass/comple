@@ -31,7 +31,7 @@ class AlumnoController extends BaseController
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('responsables/cambiar-clave')->withInput();
+            return redirect()->back()->withInput();
         }
         else
         {   
