@@ -22,7 +22,7 @@ class ActividadService
         }
         else
         {
-            return ['data' => "Alumno no encontrado!"];
+            return ['error' => "Alumno no encontrado!"];
         }
         
     }
@@ -35,7 +35,7 @@ class ActividadService
         }
         else
         {
-            return ["data" => 'No Hay actividades'];
+            return ["error" => 'No Hay actividades'];
         }
         
     }

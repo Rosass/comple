@@ -17,15 +17,16 @@
                 </div>
             <?php endif ?>
             <div class="row ">
-                <div class="col-md-5">
+                <div class="col-md-12">
                     <form id="formulario-buscar-alumno">
-                        <div class="input-group mb-2">
+                        <div class="input-group mb-2 col-md-5">
                             <input type="text" class="form-control" id="inputNoControl" placeholder="No control">
                             <div class="input-group-append">
                             <button class="input-group-text btn bg-success"  id="btnBuscar"><i class="fas fa-search"></i>Buscar</button>
                             </div>
                         </div>
                     </form>
+                    <div class="row justify-content-center my-3"><div class="col-3" id="loading"></div></div>
                 </div>
             </div>
             <div id="datos-alumno"></div>
@@ -40,6 +41,7 @@
                             <th scope="col" class="border-top-0">Periodo</th>
                             <th scope="col" class="border-top-0">Nombre Actividad</th>
                             <th scope="col" class="border-top-0">Tipo Actividad</th>
+                            <th scope="col" class="border-top-0">Creditos</th>
                             <th scope="col" class="border-top-0">Horas</th>
                             <th scope="col" class="border-top-0">Horario</th>
                             <th scope="col" class="border-top-0">Responsable</th>
@@ -56,3 +58,59 @@
     </div>
 </div>
 
+<!-- Button trigger modal -->
+
+<!-- oviamente tendras que ver si la constancia es parcial o de liberacion y si es necesario haz otro de estos modal -->
+<!-- Modal -->
+<!-- el modal se realciona con el boton a travez del  id  -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-color-tec-blue text-white ">
+        <h5 class="modal-title" id="exampleModalLabel">Generación de constancia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+             </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- y aca codigo javascrip para enviar el formulario al controlador y traer los datos y generar la onstancia  -->
+
+
+<div class="modal fade" id="examplesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-color-tec-blue text-white text-uppercase">
+        <h5 class="modal-title" id="exampleModalLabel">Generación de constancia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

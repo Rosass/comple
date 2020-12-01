@@ -133,16 +133,7 @@ $routes->get('responsables/inicio', 'Responsable/InicioController::index');
 $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionController::index');
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
-<<<<<<< HEAD
 $routes->get('responsables/asistencia/(:any)', 'Responsable/AsistenciaController::index');
-=======
-
-$routes->get('responsables/lista-asistencia/(:any)', 'Responsable/AsistenciaController::listaAsistencia');
-$routes->get('responsables/lista-calificacion/(:any)', 'Responsable/AsistenciaController::listaCalificacion');
-
-
-// Rutas [RAlumnos]
->>>>>>> 020a33498c9603c27732385c65d9263f99101b3f
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
 $routes->get('responsables/cambiar-clave/editar(:any)', 'Responsable/AlumnoController::editar');
 $routes->post('responsables/cambiar-clave/editar-clave', 'Responsable/AlumnoController::actualizarClave');
