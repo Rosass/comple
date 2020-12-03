@@ -10,7 +10,7 @@
       border:1.5px solid black;
       border-collapse:collapse;
       }
-      h4{
+      h3{
       text-align: center;
       }
       td, th {
@@ -22,16 +22,63 @@
       th{
       font-size:85%;
       }
+      p, i.a{
+      font-style: Arial;
+      }
+
+      p{
+      font-size:85%";
+      }
    </style>
    <body>
-            <div>
-                <img src="/public/img/sepp.jpg" />
-                <img id="logo" src="/public/img/sepp.jpg" width="50" alt="Logo">
-                <img src="<?php echo $_SERVER["DOCUMENT_ROOT"].'C:\xampp\htdocs\comple\public\img'?>"/>
-            </div>
+         <div>
+                     <?php
+                     $path = 'public/img/sepp.jpg'; 
+                     $type = pathinfo($path, PATHINFO_EXTENSION);
+                     $data = file_get_contents($path);
+                     $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                     ?>
+                     <img " style="width:35%;"  src="<?= $base64 ?>">
+                  
+                     <?php
+                     $path = 'public/img/logo_tecnm.gif';
+                     $type = pathinfo($path, PATHINFO_EXTENSION);
+                     $data = file_get_contents($path);
+                     $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                     ?>
+                     <img  style="width:37%; margin-left: 40px;" src="<?= $base64 ?>">
+                  
+                  
+                     <?php
+                     $path = 'public/img/logotec.png';
+                     $type = pathinfo($path, PATHINFO_EXTENSION);
+                     $data = file_get_contents($path);
+                     $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                     ?>
+                     <img  style="width:10%; margin-left:8%;" src="<?= $base64 ?>">
+         </div>
 
-      <h4>INSTITUTO TECNOLÓGICO DE POCHUTLA</h4>
-      <h5>ACTIVIDAD:</h5>
+      
+      <h3>INSTITUTO TECNOLÓGICO DE POCHUTLA</h3>
+      <p>
+      <strong> LISTA DE ASISTENCIA </strong> <br>
+
+      <strong>ACTIVIDAD: </strong> <?php foreach($actividad as $a) : ?> 
+         <?= $a->nombre_actividad?>
+         <?php endforeach ?>
+      <i class="a" style="float:right">  <strong>PERIODO: </strong>  <?php foreach($actividad as $a) : ?> 
+         <?= $a->descripcion?> </i>
+         <?php endforeach ?> <br>
+      <strong>RESPONSABLE: </strong> <?php foreach($responsable as $b) : ?> 
+         <?= $b->nombre?> <?= $b->apaterno?> <?= $b->amaterno?>
+         <?php endforeach ?>
+      <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS: </strong>  
+
+       </i>
+        
+      </p>
+<div>    
+</div>  
    
       <table style="width:100%">
          <thead>

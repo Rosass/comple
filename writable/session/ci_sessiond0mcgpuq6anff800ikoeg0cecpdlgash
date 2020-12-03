@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1605677446;_ci_previous_url|s:50:"http://localhost/comple/responsables/cambiar-clave";rfc_responsable|s:13:"SSADG123GH12E";loginresponsable|b:1;usuario_logueado|O:8:"stdClass":8:{s:15:"rfc_responsable";s:13:"SSADG123GH12E";s:6:"nombre";s:6:"ALVARO";s:8:"apaterno";s:7:"SANCHEZ";s:8:"amaterno";s:7:"RAMIREZ";s:5:"clave";s:60:"$2y$10$4tqeyFXdL/WVVthbLJxpL.x.oVISvtgIzDW1XxJaVQv.y4ee3AAki";s:8:"telefono";s:10:"9581174679";s:6:"correo";s:24:"21librasanchez@gmail.com";s:14:"fecha_registro";s:19:"2020-10-17 00:19:35";}error|s:256:"<!-- DEBUG-VIEW START 1 SYSTEMPATH//Validation/Views/list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>El campo confirmar_clave es obligatorio.</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH//Validation/Views/list.php -->
-";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:3:"rfc";s:13:"SSADG123GH12E";s:5:"clave";s:8:"12345667";s:15:"confirmar_clave";s:0:"";}}_ci_validation_errors|s:77:"a:1:{s:15:"confirmar_clave";s:40:"El campo confirmar_clave es obligatorio.";}";

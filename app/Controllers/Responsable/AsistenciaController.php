@@ -19,18 +19,24 @@ class AsistenciaController extends BaseController
 		{
         $id_actividad = urldecode($this->request->uri->getSegment(3));
 		$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad );
+		$actividad = $this->asistenciaModel->get_actividad( $id_actividad );
+		$responsable = $this->asistenciaModel->get_responsable( $rfc_responsable );
+		//$contar = $this->asistenciaModel->get_inscripcion( $id_actividad );
 		
-
+		
 		if(count($alumnos) > 0)
 
 		{
 
         $dompdf = new Dompdf();
-        
-    
+		
+
         $dompdf->loadHtml (view('Responsable/Lista-Asistencia/listar', [
-            'alumnos' => $alumnos,
-           
+			'alumnos' => $alumnos,
+			'id_actividad' => $id_actividad,
+			'actividad' => $actividad,
+			'responsable' => $responsable,
+			//'contar' => $contar,    
             ]));
 
         $dompdf->setPaper('letter', 'portrait');
@@ -61,7 +67,6 @@ class AsistenciaController extends BaseController
 	{
 		return redirect('/');
 	}
-
 }
 
 
@@ -73,6 +78,8 @@ public function listaCalificacion()
 	{
 	$id_actividad = urldecode($this->request->uri->getSegment(3));
 	$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad );
+	$actividad = $this->asistenciaModel->get_actividad( $id_actividad );
+	$responsable = $this->asistenciaModel->get_responsable( $rfc_responsable );
 
 	
 
@@ -85,6 +92,8 @@ public function listaCalificacion()
 
 	$dompdf->loadHtml (view('Responsable/Lista-calificacion/listar', [
 		'alumnos' => $alumnos,
+		'actividad' => $actividad,
+		'responsable' => $responsable,
 		
 		]));
 
