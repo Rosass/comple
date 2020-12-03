@@ -13,7 +13,7 @@ class CalificacionModel extends Model
     public function get_inscripciones( $id_actividad)
 	{   
         return $this->db->table('inscripcion insc')
-        ->select('insc.num_control, insc.id_inscripcion, act.nombre_actividad, e.valor_numerico as valor_numerico')
+        ->select('insc.num_control, insc.id_inscripcion, act.nombre_actividad, e.valor_numerico as valor_numerico, e.nivel_desempeno as nivel_desempeno')
         ->join('actividad act', 'act.id_actividad = insc.id_actividad', 'INNER')
         ->join('evaluacion_desempenio e', 'e.id_inscripcion = insc.id_inscripcion', 'LEFT')
         ->where('act.id_actividad', $id_actividad)
@@ -65,6 +65,7 @@ class CalificacionModel extends Model
                     'carrera' => $alm->carrera,
                     'semestre' => $alm->semestre,
                     'valor_numerico' =>$act->valor_numerico,
+                    'nivel_desempeno' =>$act->nivel_desempeno,
                     
                    
                 );

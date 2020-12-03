@@ -34,8 +34,6 @@
 							<th scope="col" class="border-top-0">#</th>
 							<th scope="col" class="border-top-0">RFC</th>
                             <th scope="col" class="border-top-0">NOMBRE</th>
-                            <th scope="col" class="border-top-0">APATERNO</th>
-                            <th scope="col" class="border-top-0">AMATERNO</th>
 							<th scope="col" class="border-top-0">TELÉFONO</th>
 							<th scope="col" class="border-top-0">CORREO</th>
 							<th scope="col" class="border-top-0">ESTATUS</th>
@@ -47,9 +45,7 @@
 						<tr>
 							<th scope="row"><?= $key + 1 ?></th>
 							<td><?= $jefe->rfc_jefe ?></td>
-							<td><?= $jefe->nombre_jefe ?></td>
-                            <td><?= $jefe->apaterno_jefe ?></td>
-                            <td><?= $jefe->amaterno_jefe ?></td>
+							<td><?= mb_strtoupper($jefe->nombre_jefe . " " . $jefe->apaterno_jefe . " " . $jefe->amaterno_jefe,'utf-8'); ?></td>
 							<td><?= $jefe->telefono_jefe ?></td>
 							<td><?= $jefe->correo_jefe ?></td>						
 							<td>

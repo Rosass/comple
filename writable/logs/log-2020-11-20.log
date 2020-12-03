@@ -1,3 +1,492 @@
+<<<<<<< HEAD
+CRITICAL - 2020-11-20 01:15:46 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('admin')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('admin', '12345678')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-20 01:19:33 --> Undefined property: stdClass::$nombre
+#0 C:\xampp\htdocs\comple\app\Views\Admin\Jefes\listar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Admin/Jefes/lis...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(21): view('Admin/Jefes/lis...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 01:22:34 --> Table 'acitp_complementarias.alumnos' doesn't exist
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\InicioModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\InicioService.php(20): App\Models\Escolares\InicioModel->getAlumnosPorNum_control(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\InicioController.php(21): App\Services\Escolares\InicioService->getAlumnosPorNum_control(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\InicioController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\InicioController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 01:27:48 --> Table 'acitp_complementarias.alumnos' doesn't exist
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\InicioModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\InicioService.php(20): App\Models\Escolares\InicioModel->getAlumnosPorNum_control(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\InicioController.php(21): App\Services\Escolares\InicioService->getAlumnosPorNum_control(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\InicioController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\InicioController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:22:34 --> Unknown column 'i.nombre_actividad' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`id_...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`id_...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`id_...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(21): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:24:33 --> Unknown column 'i.creditos' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`id_...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`id_...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`id_...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(21): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:26:19 --> Unknown column 'a.id_tipo_actividad' in 'on clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`id_...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`id_...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`id_...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(21): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:27:07 --> Unknown column 'i.id_tipo_actividad' in 'on clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`id_...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`id_...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`id_...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(21): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:27:28 --> Undefined variable: inscripciones
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(26): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 03:39:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`creditos`
+FROM `inscripcion` `i`
+INNER JOIN `tipo_actividad` `ta` ON `ta`.`id_' at line 1
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(21): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:40:08 --> Unknown column 'i.actividad' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(21): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:46:16 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(34): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 03:48:16 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 03:49:22 --> Unknown column 'i.id_tipo_actividad' in 'on clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(28): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:50:08 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 03:50:54 --> Unknown column 'act.nombre' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(28): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:52:35 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 03:53:03 --> Undefined property: stdClass::$nombre
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 03:54:40 --> Unknown column 'ta.tipo_actividad' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(28): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:55:04 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 03:56:19 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 03:56:45 --> Unknown column 'i.id_tipo_actividad' in 'on clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(28): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 03:58:55 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 03:59:44 --> Undefined property: stdClass::$nombre
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 04:00:41 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 04:01:53 --> Unknown column 'i.id_tipo_actividad' in 'on clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(28): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 04:02:10 --> Unknown column 'i.tipo_actividad' in 'on clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(28): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 04:03:37 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 04:34:56 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 04:37:20 --> Unknown column 'num_control' in 'where clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`id_...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`id_...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`id_...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(28): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 04:37:59 --> Unknown column 'a.num_control' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`num...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`num...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`num...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Escolares\ActividadModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Escolares\ActividadService.php(20): App\Models\Escolares\ActividadModel->getActividadesPorAlumno(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(28): App\Services\Escolares\ActividadService->getActividadesPorAlumno(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 04:38:44 --> Undefined property: stdClass::$tipo_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 04:39:44 --> Undefined variable: actividades
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Actividades\listar.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/Activ...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(38): view('Escolares/Activ...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 04:57:26 --> Undefined property: App\Controllers\Escolares\ActividadController::$actividadService
+#0 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-20 04:59:22 --> Undefined property: App\Controllers\Escolares\ActividadController::$actividadService
+#0 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-20 04:59:52 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\TipoActividadModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\TipoActividadService.php(29): App\Models\Division\TipoActividadModel->getTiposPorEstatus(true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(29): App\Services\Division\TipoActividadService->getTiposPorEstatus(true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-20 05:00:08 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\TipoActividadModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\TipoActividadService.php(29): App\Models\Division\TipoActividadModel->getTiposPorEstatus(true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(29): App\Services\Division\TipoActividadService->getTiposPorEstatus(true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-20 05:00:18 --> Undefined property: stdClass::$num_control
+#0 C:\xampp\htdocs\comple\app\Views\Alumno\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/navbar', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(33): view('Alumno/navbar', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 05:00:39 --> Undefined property: stdClass::$num_control
+#0 C:\xampp\htdocs\comple\app\Views\Alumno\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/navbar', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(33): view('Alumno/navbar', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 05:02:04 --> Undefined property: stdClass::$num_control
+#0 C:\xampp\htdocs\comple\app\Views\Alumno\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/navbar', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(33): view('Alumno/navbar', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 05:10:35 --> Call to a member function getActividadesPorAlumno() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 05:11:03 --> Call to a member function getActividadesPorAlumno() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 05:13:36 --> Call to a member function getActividadesPorAlumno() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 05:14:36 --> Undefined property: stdClass::$num_control
+#0 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-20 05:15:07 --> Call to a member function getActividadesPorAlumno() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 05:17:18 --> Call to a member function getActividadesPorAlumno() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 05:18:07 --> Call to a member function getActividadesPorAlumno() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+=======
 CRITICAL - 2020-11-20 02:03:30 --> Undefined property: stdClass::$nombre_actividad
 #0 C:\xampp\htdocs\comple\app\Models\Responsable\AsistenciaModel.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 60, Array)
 #1 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(20): App\Models\Responsable\AsistenciaModel->get_actividad_alumno('11')
@@ -403,6 +892,7 @@ CRITICAL - 2020-11-20 04:45:52 --> Class 'App\Controllers\Responsable\Options' n
 CRITICAL - 2020-11-20 04:46:31 --> Class 'App\Controllers\Responsable\Options' not found
 #0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
 #1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+>>>>>>> 020a33498c9603c27732385c65d9263f99101b3f
 #2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 {main}

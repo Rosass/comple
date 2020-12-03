@@ -24,29 +24,39 @@
                         </tr>
                         <tr>
                             <th scope="col" class="border-top-0">#</th>
-                            <th scope="col" class="border-top-0">NOMBRE</th>                          
-                            <th scope="col" class="border-top-0">TIPO</th>
-                            <th scope="col" class="border-top-0">RFC RESPONSABLE</th> 
-                            <th scope="col" class="border-top-0">ESTATUS</th>                          
+                            <th scope="col" class="border-top-0">NOMBRE</th>
+                            <th scope="col" class="border-top-0">DICTAMEN</th>
+                            <th scope="col" class="border-top-0">CREDITOS</th>
+                            <th scope="col" class="border-top-0">PERIODO</th>
+                            <th scope="col" class="border-top-0">TIPO ACTIVIDAD</th>
+                            <th scope="col" class="border-top-0">RESPONSABLE</th>
+                            <th scope="col" class="border-top-0">HORAS</th>
+                            <th scope="col" class="border-top-0">HORARIO</th>
+                            <th scope="col" class="border-top-0">ESTATUS</th>
+                            
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
                         <?php foreach($actividades as $key => $actividad) : ?>
                             <tr>
                                 <th scope="row"><?= $key + 1 ?></th>
-                                <td><?= $actividad->nombre_actividad ?></td>                               
-                                <td><?= $actividad->tipo_actividad ?></td>
-                                <td><?= $actividad->rfc_responsable ?></td>                                                          
+                                <td><?= $actividad->nombre_actividad ?></td>
+                                <td><?= $actividad->numero_dictamen ?></td>
+                                <td><?= $actividad->creditos ?></td>                             
+                                <td><?= $actividad->periodo_descripcion ?></td>  
+                                <td><?= $actividad->tipo_actividad ?></td>  
+                                <td><?= $actividad->rfc_responsable ?></td>                                                         
+                                <td><?= $actividad->horas ?></td>
+                                <td><?= $actividad->horario ?></td>
                                 <td class="text-white">
                                     <?php if($actividad->estatus == true) : ?>
-                                        <span class="bg-success p-1 rounded small">Activo</span>
-                                    <?php else : ?>
-                                        <span class="bg-danger p-1 rounded small">Inactivo</span>
+                                        <span class="bg-success p-1 rounded small">Autorizado</span>
                                     <?php endif ?>
-                                </td>
-                               
+                                </td> 
+                                
                             </tr>
                         <?php endforeach ?>
+                    
                     </tbody>
                 </table>
             </div>

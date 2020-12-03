@@ -1,5 +1,4 @@
 <?php $session = session();?>
-
 <div class="container-fluid">
     <div class="row pt-3">
 		<div class="col-md-12">

@@ -133,14 +133,9 @@ $routes->get('responsables/inicio', 'Responsable/InicioController::index');
 $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionController::index');
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
-
-$routes->get('responsables/lista-asistencia/(:any)', 'Responsable/AsistenciaController::listaAsistencia');
-$routes->get('responsables/lista-calificacion/(:any)', 'Responsable/AsistenciaController::listaCalificacion');
-
-
-// Rutas [RAlumnos]
+$routes->get('responsables/asistencia/(:any)', 'Responsable/AsistenciaController::index');
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
-$routes->get('responsables/cambiar-clave/editar/(:any)', 'Responsable/AlumnoController::editar');
+$routes->get('responsables/cambiar-clave/editar(:any)', 'Responsable/AlumnoController::editar');
 $routes->post('responsables/cambiar-clave/editar-clave', 'Responsable/AlumnoController::actualizarClave');
 
 // Rutas [AUTH-ALUMNO]
@@ -150,12 +145,22 @@ $routes->post('alumno/logout', 'AlumnoLoginController::logout');
 //Ruta [alumno modulo]
 $routes->get('alumno/inicio', 'Alumno/InicioController::index');
 $routes->get('alumno/historial', 'Alumno/HistorialController::index');
-//Ruta [alumno inscripcion]
 $routes->get('alumno/inscripciones', 'Alumno/InscripcionController::index');
 $routes->post('alumno/inscripciones', 'Alumno/InscripcionController::getInscripcionesPorActividadYEstatus');
 $routes->post('alumno/inscripciones/agregar', 'Alumno/InscripcionController::guardar');
 $routes->post('alumno/inscripciones/cambiar-estatus', 'Alumno/InscripcionController::cambiarEstatus');
 
-//Rutas [Jefes]
-$routes->get('jefes/inicio', 'Jefes/InicioController::index');
+//Rutas [Jefes Area actividades]
+$routes->get('jefes/actividades', 'Jefes/ActividadController::index');
 
+//Rutas [Jefes Area responsables]
+$routes->get('jefes/responsables', 'Jefes/ResponsableController::index');
+$routes->post('jefes/responsables/agregar', 'Jefes/ResponsableController::guardar');
+$routes->get('jefes/responsables/editar/(:any)', 'Jefes/ResponsableController::editar');
+$routes->post('jefes/responsables/editar', 'Jefes/ResponsableController::actualizar');
+$routes->post('jefes/responsables/editar-clave', 'Jefes/ResponsableController::actualizarClave');
+$routes->post('jefes/responsables/cambiar-estatus', 'Jefes/ResponsableController::cambiarEstatus'); 
+
+//Rutas [Escolares]
+$routes->get('escolares/inicio', 'Escolares/ActividadController::index');
+$routes->post('/buscar', 'Escolares/ActividadController::buscar');

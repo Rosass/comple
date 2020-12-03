@@ -150,4 +150,28 @@ class Validation
 		'clave'     => 'required|min_length[8]',
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
 	];
+
+	public $responsable1Reglas = [
+		'rfc'     => 'required|min_length[13]|max_length[13]',
+		'nombre'     => 'required',
+		'apaterno'     => 'required',
+		'amaterno'     => 'required',
+        'clave'     => 'required|min_length[8]',
+		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
+		'telefono'     => 'min_length[9]',
+        'correo'        => 'valid_email'
+	];
+
+	public $editarResponsable1Reglas = [
+		'nombre'     => 'required',
+		'apaterno'     => 'required',
+		'amaterno'     => 'required',
+		'telefono'     => 'min_length[9]',
+        'correo'        => 'valid_email'
+	];
+
+	public $editarClave1Reglas = [
+		'clave'     => 'required|min_length[8]',
+		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
+	];
 }

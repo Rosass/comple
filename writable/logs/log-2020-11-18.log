@@ -1,3 +1,39 @@
+<<<<<<< HEAD
+CRITICAL - 2020-11-18 00:45:33 --> Undefined property: App\Controllers\Responsable\CalificacionController::$calificacionService
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-18 00:48:15 --> Undefined property: App\Services\Responsable\CalificacionService::$inicioModel
+#0 C:\xampp\htdocs\comple\app\Services\Responsable\CalificacionService.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Services\Responsable\CalificacionService->get_actividad_alumno('6')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-18 01:49:37 --> Class 'App\Models\Responsable\AsistenciaModel' not found
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(13): App\Services\Responsable\AsistenciaService->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\Responsable\AsistenciaController->__construct()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-18 01:50:35 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-18 01:56:14 --> Undefined variable: alumnos
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Asistencia\listar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Asi...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(33): view('Responsable/Asi...', Array)
+=======
 CRITICAL - 2020-11-18 01:08:04 --> Class 'App\Services\Responsable\AsistenciaModel' not found
 #0 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\Responsable\AsistenciaController->__construct()
 #1 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
@@ -9,41 +45,132 @@ CRITICAL - 2020-11-18 02:11:20 --> You must set the database table to be used wi
 #1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
 #2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): CodeIgniter\Model->__call('get_actividad_a...', Array)
 #3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+>>>>>>> 00af515dcde7b931f85c3cb4decc71fbd89b7e21
 #4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
 #5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
+CRITICAL - 2020-11-18 02:21:19 --> Unknown column 'act.id_actividad' in 'where clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `insc`.`...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `insc`.`...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `insc`.`...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Responsable\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Models\Responsable\AsistenciaModel.php(51): App\Models\Responsable\AsistenciaModel->get_inscripciones('SSADG123GH12E')
+#6 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): App\Models\Responsable\AsistenciaModel->obtenerAlumnoPorIdActividadYResponsable('SSADG123GH12E')
+#7 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(26): App\Services\Responsable\AsistenciaService->obtenerAlumnoPorIdActividadYResponsable('SSADG123GH12E')
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#10 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-18 02:26:42 --> Undefined property: App\Services\Responsable\AsistenciaService::$calificacionModel
+#0 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(16): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-18 02:27:07 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(25): CodeIgniter\Model->__call('get_actividad_a...', Array)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(16): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+=======
 CRITICAL - 2020-11-18 02:12:00 --> You must set the database table to be used with your query.
 #0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
 #1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
 #2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): CodeIgniter\Model->__call('get_actividad_a...', Array)
 #3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+>>>>>>> 00af515dcde7b931f85c3cb4decc71fbd89b7e21
 #4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
 #5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
+CRITICAL - 2020-11-18 02:28:38 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(25): CodeIgniter\Model->__call('get_actividad_a...', Array)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(16): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+=======
 CRITICAL - 2020-11-18 02:12:01 --> You must set the database table to be used with your query.
 #0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
 #1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
 #2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): CodeIgniter\Model->__call('get_actividad_a...', Array)
 #3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+>>>>>>> 00af515dcde7b931f85c3cb4decc71fbd89b7e21
 #4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
 #5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
+CRITICAL - 2020-11-18 02:29:31 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(25): CodeIgniter\Model->__call('get_actividad_a...', Array)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(16): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+=======
 CRITICAL - 2020-11-18 02:12:06 --> You must set the database table to be used with your query.
 #0 C:\xampp\htdocs\comple\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
 #1 C:\xampp\htdocs\comple\system\Model.php(1816): CodeIgniter\Model->builder()
 #2 C:\xampp\htdocs\comple\app\Services\Responsable\AsistenciaService.php(20): CodeIgniter\Model->__call('get_actividad_a...', Array)
 #3 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): App\Services\Responsable\AsistenciaService->get_actividad_alumno('listar')
+>>>>>>> 00af515dcde7b931f85c3cb4decc71fbd89b7e21
 #4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
 #5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+<<<<<<< HEAD
+CRITICAL - 2020-11-18 02:30:53 --> Class 'App\Models\Responsable\AsistenciaModel' not found
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(10): App\Services\Responsable\AsistenciaService->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\Responsable\AsistenciaController->__construct()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-18 03:31:24 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\InicioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Responsable\InicioService.php(20): App\Models\Responsable\InicioModel->getActividadesPorResponsable('SSADG123GH12E')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(19): App\Services\Responsable\InicioService->getActividadesPorResponsable('SSADG123GH12E')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 03:32:47 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\InicioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Responsable\InicioService.php(20): App\Models\Responsable\InicioModel->getActividadesPorResponsable('SSADG123GH12E')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(19): App\Services\Responsable\InicioService->getActividadesPorResponsable('SSADG123GH12E')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 03:47:12 --> Class 'App\Models\Responsable\AsistenciaModel' not found
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(12): App\Services\Responsable\AsistenciaService->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\Responsable\AsistenciaController->__construct()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-18 03:49:30 --> Class 'App\Services\Responsable\AsistenciaService' not found
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\Responsable\AsistenciaController->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+=======
 CRITICAL - 2020-11-18 02:13:07 --> Call to undefined method App\Services\Responsable\AsistenciaService::get_alumno()
 #0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->index()
 #1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
@@ -189,3 +316,164 @@ CRITICAL - 2020-11-18 04:31:27 --> Undefined variable: grupo
 #3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
+>>>>>>> 00af515dcde7b931f85c3cb4decc71fbd89b7e21
+CRITICAL - 2020-11-18 14:27:48 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-18 14:30:34 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\AlumnoModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Responsable\AlumnoService.php(43): App\Models\Responsable\AlumnoModel->getResponsablePorRfc('SSADG123GH12E')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(17): App\Services\Responsable\AlumnoService->getResponsablePorRfc('SSADG123GH12E')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 14:31:14 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\AlumnoModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Responsable\AlumnoService.php(43): App\Models\Responsable\AlumnoModel->getResponsablePorRfc('SSADG123GH12E')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(17): App\Services\Responsable\AlumnoService->getResponsablePorRfc('SSADG123GH12E')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 15:06:46 --> 
+#0 C:\xampp\htdocs\comple\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\comple\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(49): redirect('responsable/cam...')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-18 15:35:20 --> 
+#0 C:\xampp\htdocs\comple\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\comple\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(49): redirect('responsables/Ca...')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-18 15:35:57 --> 
+#0 C:\xampp\htdocs\comple\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\comple\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(49): redirect('responsables/ca...')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-18 16:26:02 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `respons...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\AlumnoModel.php(17): CodeIgniter\Database\BaseBuilder->update(Array)
+#3 C:\xampp\htdocs\comple\app\Services\Responsable\AlumnoService.php(31): App\Models\Responsable\AlumnoModel->actualizar('SSADG123GH12E', Array)
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(44): App\Services\Responsable\AlumnoService->actualizar('SSADG123GH12E', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->actualizarClave()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 16:26:06 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\AlumnoModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Responsable\AlumnoService.php(43): App\Models\Responsable\AlumnoModel->getResponsablePorRfc('SSADG123GH12E')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(17): App\Services\Responsable\AlumnoService->getResponsablePorRfc('SSADG123GH12E')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 16:26:21 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\AlumnoModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Responsable\AlumnoService.php(43): App\Models\Responsable\AlumnoModel->getResponsablePorRfc('SSADG123GH12E')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\AlumnoController.php(17): App\Services\Responsable\AlumnoService->getResponsablePorRfc('SSADG123GH12E')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AlumnoController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AlumnoController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 16:39:07 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(56): App\Models\Responsable\CalificacionModel->get_alumno('201160074')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Models\Responsable\CalificacionModel->get_actividad_alumno('12')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 16:39:42 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(51): App\Models\Responsable\CalificacionModel->get_inscripciones('12')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Models\Responsable\CalificacionModel->get_actividad_alumno('12')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 16:40:01 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(51): App\Models\Responsable\CalificacionModel->get_inscripciones('12')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Models\Responsable\CalificacionModel->get_actividad_alumno('12')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 16:44:44 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(33): App\Models\Alumno\InscripcionModel->getPeriodosPorEstatus(true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(44): App\Services\Alumno\InscripcionService->getPeriodosPorEstatus(true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 16:44:58 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(33): App\Models\Alumno\InscripcionModel->getPeriodosPorEstatus(true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(44): App\Services\Alumno\InscripcionService->getPeriodosPorEstatus(true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-11-18 17:57:00 --> Undefined property: stdClass::$nivel_desempenio
+#0 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Models\Responsable\CalificacionModel->get_actividad_alumno('12')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-18 18:10:38 --> Undefined property: stdClass::$nivel_desempenio
+#0 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(16): App\Models\Responsable\CalificacionModel->get_actividad_alumno('6')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
