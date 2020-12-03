@@ -69,8 +69,8 @@
       <i class="a" style="float:right">  <strong>PERIODO: </strong>  <?php foreach($actividad as $a) : ?> 
          <?= $a->descripcion?> </i>
          <?php endforeach ?> <br>
-      <strong>RESPONSABLE: </strong> <?php foreach($responsable as $b) : ?> 
-         <?= $b->nombre?> <?= $b->apaterno?> <?= $b->amaterno?>
+      <strong>RESPONSABLE: </strong> <?php foreach($responsable as $r) : ?> 
+         <?= $r->nombre?> <?= $r->apaterno?> <?= $r->amaterno?>
          <?php endforeach ?>
       <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS: </strong>  
 
