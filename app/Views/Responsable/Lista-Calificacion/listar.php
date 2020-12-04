@@ -33,15 +33,15 @@
    <body>
 
    <div>
-                     <?php
-                     $path = 'public/img/sepp.jpg'; 
-                     $type = pathinfo($path, PATHINFO_EXTENSION);
-                     $data = file_get_contents($path);
-                     $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-                     ?>
-                     <img " style="width:35%;"  src="<?= $base64 ?>">
+      <?php
+      $path = 'public/img/sepp.jpg'; 
+      $type = pathinfo($path, PATHINFO_EXTENSION);
+      $data = file_get_contents($path);
+      $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+      ?>
+      <img " style="width:35%;"  src="<?= $base64 ?>">
                   
-                     <?php
+      <?php
                      $path = 'public/img/logo_tecnm.gif';
                      $type = pathinfo($path, PATHINFO_EXTENSION);
                      $data = file_get_contents($path);

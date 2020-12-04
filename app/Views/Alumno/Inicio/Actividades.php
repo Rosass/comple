@@ -43,7 +43,13 @@
                                 <td><?= $actividad['credito'] ?></td>
                                 <td><?= $actividad['nombre']. " " . $actividad['apaterno'] . " " . $actividad['amaterno']  ?></td>
                                 <td><?= $actividad['horario'] ?></td>
-                                <td></td>
+                                <td class="text-white">
+								<?php if($actividad['estatus'] == true) : ?>
+								    <span class="bg-danger p-1 rounded small">Solicitada</span>
+								<?php else : ?>
+								    <span class="bg-success p-1 rounded small">Aceptada</span>
+								<?php endif ?>
+							</td>
                             
                             </tr>
                             <?php endforeach ?>

@@ -39,6 +39,7 @@ class HistorialService
                             'apaterno' => $actividad->apaterno,
                             'amaterno' => $actividad->amaterno,
                             'horario' => $actividad->horario,
+                            'estatus' => $actividad->estatus,
                         );
                         array_push( $no_calificados, $nuevo );
                     }
@@ -59,6 +60,7 @@ class HistorialService
                     'apaterno' => $actividad->apaterno,
                     'amaterno' => $actividad->amaterno,
                     'horario' => $actividad->horario,
+                    'estatus' => $actividad->estatus,
                 );
                 array_push( $no_calificados, $nuevo );
             }
