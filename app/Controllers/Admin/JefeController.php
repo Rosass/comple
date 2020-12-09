@@ -129,7 +129,7 @@ class JefeController extends BaseController
     public function cambiarEstatus()
     {
        
-        $rfc_jefe = $this->request->getPost('rfc_jefe');
+        $rfc_jefe = $this->request->getPost('rfc');
         $respuesta = $this->jefeService->cambiarEstatus($rfc_jefe);
 
         if($respuesta['exito'])

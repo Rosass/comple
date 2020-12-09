@@ -1,0 +1,173 @@
+CRITICAL - 2020-12-06 00:28:14 --> Call to a member function getActividadPorIdarea() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-06 00:29:21 --> Object of class App\Controllers\Jefes\AreaController could not be converted to string
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-06 00:29:46 --> Undefined property: stdClass::$valor_a_obtener
+#0 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-06 00:30:01 --> Call to a member function getActividadPorIdarea() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-06 00:30:39 --> Call to a member function getActividadPorIdarea() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-06 00:33:10 --> Call to a member function getActividadPorIdarea() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-06 01:39:54 --> Call to a member function getActividadPorIdarea() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-06 01:39:57 --> Call to a member function getActividadPorIdarea() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-06 01:40:22 --> Call to a member function getActividadPorIdarea() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-06 01:41:01 --> Call to a member function getActividadPorIdarea() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-06 01:41:43 --> Call to undefined method App\Models\Jefes\AreaModel::getActividadPorIdarea
+#0 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): CodeIgniter\Model->__call('getActividadPor...', Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(22): App\Services\Jefes\AreaService->getActividadPorIdarea(Object(stdClass))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-06 01:43:33 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\comple\system\Database\Query.php(443): strtr('SELECT `u`.`usu...', Array)
+#1 C:\xampp\htdocs\comple\system\Database\Query.php(404): CodeIgniter\Database\Query->matchNamedBinds('SELECT `u`.`usu...', Array)
+#2 C:\xampp\htdocs\comple\system\Database\Query.php(197): CodeIgniter\Database\Query->compileBinds()
+#3 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\Query->getQuery()
+#4 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#5 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea(Object(stdClass))
+#7 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(22): App\Services\Jefes\AreaService->getActividadPorIdarea(Object(stdClass))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#10 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-06 01:44:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`estatus`
+FROM `usuario` `u`
+INNER JOIN `area` `ar` ON `ar`.`id_area` = `ar`.`i' at line 1
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `u`.`usu...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`usu...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`usu...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(22): App\Services\Jefes\AreaService->getActividadPorIdarea(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-06 01:46:05 --> Undefined property: stdClass::$descripcion
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Actividades\listar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Actividad...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(28): view('Jefes/Actividad...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-06 01:47:27 --> Column 'id_area' in where clause is ambiguous
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `u`.`usu...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`usu...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`usu...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(22): App\Services\Jefes\AreaService->getActividadPorIdarea(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-06 01:49:02 --> Column 'id_area' in where clause is ambiguous
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `u`.`id_...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`id_...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`id_...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`id_...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(22): App\Services\Jefes\AreaService->getActividadPorIdarea(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-06 01:49:32 --> Column 'id_area' in where clause is ambiguous
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `u`.`usu...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`usu...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`usu...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(22): App\Services\Jefes\AreaService->getActividadPorIdarea(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-06 01:51:47 --> Column 'id_area' in where clause is ambiguous
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `u`.`usu...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`usu...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`usu...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(22): App\Services\Jefes\AreaService->getActividadPorIdarea(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-06 01:56:06 --> Column 'id_area' in where clause is ambiguous
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `u`.`usu...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`usu...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`usu...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea(true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(22): App\Services\Jefes\AreaService->getActividadPorIdarea(true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

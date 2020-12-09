@@ -1,6 +1,5 @@
 <?php namespace App\Controllers\Responsable;
 Use App\Services\Responsable\AsistenciaService;
-
 use Vendor\autoload;
 use App\Controllers\BaseController;
 use Dompdf\Dompdf;
@@ -22,6 +21,7 @@ class AsistenciaController extends BaseController
         $id_actividad = urldecode($this->request->uri->getSegment(3));
 		$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad );
 		
+		
 
 		if(count($alumnos) > 0)
 
@@ -31,7 +31,8 @@ class AsistenciaController extends BaseController
         
     
         $dompdf->loadHtml (view('Responsable/Lista-Asistencia/listar', [
-            'alumnos' => $alumnos,
+			'alumnos' => $alumnos,
+			
            
             ]));
 

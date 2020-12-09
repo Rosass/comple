@@ -133,7 +133,7 @@ $routes->get('responsables/inicio', 'Responsable/InicioController::index');
 $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionController::index');
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
-$routes->get('responsables/asistencia/(:any)', 'Responsable/AsistenciaController::index');
+$routes->get('responsables/lista-asistencia/(:any)', 'Responsable/AsistenciaController::listaAsistencia');
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
 $routes->get('responsables/cambiar-clave/editar(:any)', 'Responsable/AlumnoController::editar');
 $routes->post('responsables/cambiar-clave/editar-clave', 'Responsable/AlumnoController::actualizarClave');
@@ -151,7 +151,7 @@ $routes->post('alumno/inscripciones/agregar', 'Alumno/InscripcionController::gua
 $routes->post('alumno/inscripciones/cambiar-estatus', 'Alumno/InscripcionController::cambiarEstatus');
 
 //Rutas [Jefes Area actividades]
-$routes->get('jefes/actividades', 'Jefes/ActividadController::index');
+$routes->get('jefes/actividades', 'Jefes/AreaController::index');
 
 //Rutas [Jefes Area responsables]
 $routes->get('jefes/responsables', 'Jefes/ResponsableController::index');
@@ -164,3 +164,8 @@ $routes->post('jefes/responsables/cambiar-estatus', 'Jefes/ResponsableController
 //Rutas [Escolares]
 $routes->get('escolares/inicio', 'Escolares/ActividadController::index');
 $routes->post('/buscar', 'Escolares/ActividadController::buscar');
+$routes->post('escolares/generar-parcial', 'Escolares/GenerarController::constanciaParcial');
+$routes->post('/escolares/generar-liberacion', 'Escolares/GenerarController::constanciaLiberacion');
+$routes->get('/escolares/generar-liberacion', 'Escolares/GenerarController::constanciaLiberacion');
+
+

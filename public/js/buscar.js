@@ -72,9 +72,22 @@ const imprimirAlumno = alumno => {
 		<p>Carrera: <span class="font-weight-bold">${ carrera }</span></p>
 		<p>Creditos: <span class="font-weight-bold">${ promedioAlumno }</span></p>
 		<p>
-		${promedioAlumno < 5 ? '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-file-pdf"></i>Generar Constancia Parcial</button>' : '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#examplesModal"> <i class="fas fa-file-pdf"> </i> Generar Constancia de Liberación</button>'} </P>
 	`;
+
+	
+	if ( promedioAlumno > 0 && promedioAlumno < 5 ) {
+		divAlerta.appendChild( botonModal( num_control.trim(), 'Contancia Parcial' ) );
+		datosAlimno.appendChild( modal( num_control.trim(), 'escolares/generar-parcial' ) );
+		validaCampos();
+	} else if ( promedioAlumno >= 5 ) {
+		divAlerta.appendChild( botonModal( num_control.trim(), 'Contancia De Liberación' ) );
+		datosAlimno.appendChild( modal( num_control.trim(), 'escolares/generar-liberacion' ) );
+		validaCampos();
+
+	}
 	datosAlimno.appendChild( divAlerta );
+
+	// eventoFormularioModal();
 }
 // IMRPIMIR DATOS DE ACTIVIDADES EN HTML 
 const imprimirActividades = actividades => {
@@ -115,6 +128,7 @@ const consultaFetch = async (data) => {
 	}
 }
 
+
 const limpiarHTML = elemento => {
 	while ( elemento.firstChild ) {
 		elemento.removeChild( elemento.firstChild );
@@ -134,8 +148,174 @@ const alertaError = mensaje => {
 	}, 2000);
 } 
 
-// Constancia parcial o liberacion
-// const calcular
+// Scripting MODAL
+
+// Boton
+const botonModal = (noControl, texto ) => {
+    const boton = document.createElement('button');
+    boton.textContent = texto;
+    boton.classList.add('btn', 'btn-primary');
+    boton.setAttribute('type', 'button');
+    boton.setAttribute('data-toggle', 'modal');
+    boton.setAttribute('data-target',  `#xx-${noControl}`);
+    console.log( boton );
+    return boton;
+}
+
+// Modal
+const modal = ( noControl, ruta ) => {
+    // Pimer  div
+    const modal = document.createElement('div');
+    modal.classList.add('modal', 'fade');
+    modal.id = `xx-${noControl}`;
+    modal.setAttribute('tabindex', '-1');
+    modal.setAttribute('role', 'document');
+    modal.setAttribute('aria-hidden', 'true');
+
+    // Segundo div
+    const modalDialog = document.createElement('div');
+    modalDialog.classList.add('modal-dialog');
+    modalDialog.setAttribute('role', 'dialog');
+    // Tercer div
+    const modalContent = document.createElement('div');
+	modalContent.classList.add('modal-content');
+	
+	const formulario = document.createElement('form');
+	formulario.id = 'formulario-modal';
+	formulario.setAttribute('method', 'POST')
+	formulario.setAttribute('action', BASE_URL + ruta);
+
+    // Header del modal
+    const modalHeader = document.createElement('div');
+    modalHeader.classList.add('modal-header');
+
+    const tituloModal = document.createElement('h5');
+    tituloModal.classList.add('modal-title');
+    tituloModal.textContent = 'Constancia';
+    modalHeader.appendChild( tituloModal );
+    const botonCerrar = document.createElement('button');
+    botonCerrar.classList.add('close');
+    botonCerrar.setAttribute('type', 'button');
+    botonCerrar.setAttribute('data-dismiss', 'modal');
+    botonCerrar.setAttribute('aria-label', 'Close');
+    botonCerrar.innerHTML = `<span aria-hidden="true">&times;</span>`;
+    modalHeader.appendChild( botonCerrar );
+
+    // BOdy del modal
+    
+    // Footer del modal
+    const modalFooter = document.createElement('div');
+    modalFooter.classList.add('modal-footer');
+    const botonCancelar = document.createElement('button');
+    botonCancelar.textContent = 'Cancelar';
+    botonCancelar.classList.add('btn', 'btn-secondary');
+    botonCancelar.setAttribute('type', 'button');
+    botonCancelar.setAttribute('data-dismiss', 'modal');
+    modalFooter.appendChild( botonCancelar );
+
+    const botonAceptar = document.createElement('button');
+    botonAceptar.textContent = 'Generar PDF';
+	botonAceptar.classList.add('btn', 'btn-primary');
+	botonAceptar.id = 'btn-generar-pdf'
+    botonAceptar.setAttribute('type', 'submit');
+    //botonAceptar.setAttribute('disabled', true);
+    modalFooter.appendChild( botonAceptar );
+
+    formulario.appendChild( modalHeader );
+    formulario.appendChild( modalBody(noControl) );
+	formulario.appendChild( modalFooter );
+	modalContent.appendChild( formulario );
+    modalDialog.appendChild( modalContent);
+    modal.appendChild( modalDialog );
+
+    return modal;
+}
+
+const validaCampos = () => {
+	document.querySelector('#folio').addEventListener('blur', function() {
+		if ( this.value !== '') {
+			document.querySelector('#btn-generar-pdf').removeAttribute('disabled');
+		}
+		if ( this.value === '') {
+			document.querySelector('#btn-generar-pdf').setAttribute('disabled', true);
+		}
+		
+	})
+}
+
+const modalBody = ( noControl ) => {
+	const modalBody = document.createElement('div');
+    modalBody.classList.add('modal-body');
+	
+
+    const divControl = document.createElement('div');
+    divControl.classList.add('form-group');
+    const labelControl = label('* N° control', 'control');
+    const inputControl = input('control', 'control', true, '', noControl);
+    divControl.appendChild( labelControl );
+    divControl.appendChild( inputControl );
+    modalBody.appendChild( divControl );
+
+    const divFolio = document.createElement('div');
+    divFolio.classList.add('form-group');
+    const labelFolio = label('* Agrega el folio', 'folio');
+    const inputFolio = input('folio', 'folio', false, 'FOLIO AQUI..');
+    divFolio.appendChild( labelFolio );
+    divFolio.appendChild( inputFolio );
+    modalBody.appendChild( divFolio );
+
+    return modalBody;
+}
+
+const label = (texto, f ) => {
+    const label = document.createElement('label');
+    label.setAttribute('for', f );
+    label.textContent = texto;
+    return label;
+}
+const input = (id, name, status, placeholder, noControl) => {
+    const input = document.createElement('input');
+    input.classList.add('form-control');
+    input.id = id;
+    input.setAttribute('type', 'text' );
+    input.setAttribute('name', name );
+    (noControl) && input.setAttribute('value', noControl );
+    (status) &&  input.setAttribute('readonly', status );
+    input.setAttribute('placeholder',placeholder);
+    return input;
+}
+
+// 
+// HACER Enviar a GENERAR PDF
+// const postGeneratPDF = async (data) => {
+// 	try {
+// 		const resp = await fetch(BASE_URL + 'escolares/generar',{
+// 			method: "POST", 
+// 			headers:{"X-Requested-With": "XMLHttpRequest"},
+// 			body: data
+// 		});
+// 		return await resp.json();
+// 	} catch (error) {
+// 		console.log( error );
+// 	}
+// }
+
+// const eventoFormularioModal = () => {
+// 	document.querySelector('#btn-generar-pdf').addEventListener('click', async (e) => {
+// 		e.preventDefault();
+// 		const noControl = document.querySelector('#control').value;
+// 		const folio = document.querySelector('#folio').value;
+// 		const data = new FormData();
+// 		data.append('no_control', noControl);
+// 		data.append('folio', folio);
+// 		console.log(noControl);
+// 		console.log(folio);
+// 		console.log( [...data] );
+// 		const resp = await postGeneratPDF(data);
+// 		// await postGeneratPDF(data);
+// 		console.log(resp);
+// 	});
+// }
 
 // EVENTO SUBMIT BUSCAR ALEMUNO
 formularioBuscarAalumno.addEventListener('submit', buscarAlumno );
