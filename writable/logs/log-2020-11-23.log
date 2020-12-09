@@ -1,3 +1,112 @@
+<<<<<<< HEAD
+CRITICAL - 2020-11-23 02:03:50 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\TableCell->reflow(Object(Dompdf\FrameDecorator\Block))
+#1 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#2 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(NULL)
+#3 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Page.php(141): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#4 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Page->reflow(NULL)
+#5 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\Dompdf.php(815): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(38): Dompdf\Dompdf->render()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-23 02:18:48 --> Undefined variable: aData
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-11-23 02:22:28 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\TableCell->reflow(Object(Dompdf\FrameDecorator\Block))
+#1 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#2 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(NULL)
+#5 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Page.php(141): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Page->reflow(NULL)
+#7 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\Dompdf.php(815): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(40): Dompdf\Dompdf->render()
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#10 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#11 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-11-23 02:24:57 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\TableCell->reflow(Object(Dompdf\FrameDecorator\Block))
+#1 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#2 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(NULL)
+#5 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Page.php(141): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Page->reflow(NULL)
+#7 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\Dompdf.php(815): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(40): Dompdf\Dompdf->render()
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#10 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#11 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-11-23 02:25:26 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\TableCell->reflow(Object(Dompdf\FrameDecorator\Block))
+#1 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#2 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(NULL)
+#5 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Page.php(141): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Page->reflow(NULL)
+#7 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\Dompdf.php(815): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(40): Dompdf\Dompdf->render()
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#10 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#11 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-11-23 02:26:32 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\TableCell->reflow(Object(Dompdf\FrameDecorator\Block))
+#1 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#2 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(NULL)
+#5 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Page.php(141): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Page->reflow(NULL)
+#7 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\Dompdf.php(815): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(40): Dompdf\Dompdf->render()
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#10 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#11 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-11-23 02:31:25 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\TableCell->reflow(Object(Dompdf\FrameDecorator\Block))
+#1 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#2 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Block.php(845): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Block->reflow(NULL)
+#5 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameReflower\Page.php(141): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(895): Dompdf\FrameReflower\Page->reflow(NULL)
+#7 C:\xampp\htdocs\comple\vendor\dompdf\dompdf\src\Dompdf.php(815): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(40): Dompdf\Dompdf->render()
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#10 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#11 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-11-23 02:48:46 --> Call to undefined method Dompdf\Dompdf::def()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-23 02:49:49 --> Call to undefined function App\Controllers\Responsable\def()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+=======
 CRITICAL - 2020-11-23 00:53:11 --> Trying to get property 'usuario' of non-object
 #0 C:\xampp\htdocs\comple\app\Views\Escolares\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
 #1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -94,3 +203,4 @@ CRITICAL - 2020-11-23 03:52:19 --> Undefined index: search
 #4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #6 {main}
+>>>>>>> 3611fb1c059feee080f46a94208ed723350a29db

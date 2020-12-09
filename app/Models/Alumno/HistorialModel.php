@@ -14,7 +14,7 @@ class HistorialModel extends Model
     public function getActividadesPorCalificacion( $alumnos )
     {
         return $this->db->table('inscripcion a')
-                        ->select('a.periodo, a.fecha_inscripcion, a.id_inscripcion, a.id_actividad, p.descripcion as periodo_descripcion, 
+                        ->select('a.periodo, a.estatus, a.fecha_inscripcion, a.id_inscripcion, a.id_actividad, p.descripcion as periodo_descripcion, 
                         ta.nombre_actividad as actividad, ta.creditos as credito, tac.nombre AS tipo_actividad, r.nombre as nombre, r.apaterno as apaterno, r.amaterno as amaterno, ta.horario as horario, 
                         e.valor_numerico as calificacion')
                         ->join('periodo p', 'p.periodo = a.periodo', 'LEFT')
@@ -30,7 +30,7 @@ class HistorialModel extends Model
     public function getActividadesPorAlumno( $alumnos )
     {
         return $this->db->table('inscripcion a')
-                        ->select('a.periodo, a.id_inscripcion, a.id_actividad, p.descripcion as periodo_descripcion, 
+                        ->select('a.periodo,  a.estatus, a.id_inscripcion, a.id_actividad, p.descripcion as periodo_descripcion, 
                         ta.nombre_actividad as actividad, ta.creditos as credito, tac.nombre AS tipo_actividad, r.nombre as nombre, r.apaterno as apaterno, r.amaterno as amaterno, ta.horario as horario')
                         ->join('periodo p', 'p.periodo = a.periodo', 'LEFT')
                         ->join('actividad ta', 'ta.id_actividad = a.id_actividad', 'LEFT')

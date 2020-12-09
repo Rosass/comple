@@ -64,15 +64,28 @@
                                 <td><?= $inscripcion->nombre_actividad ?></td>
                                 <td><?= $inscripcion->telefono ?></td>
                                 <td><?= $inscripcion->fecha_inscripcion ?></td>
-                                <td style="width:15%;">
+                                <td style="width:20%;">
                                     <div class="d-flex flex-column">
                                         <!--  Editar inscripción -->
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/inscripciones/editar/".$inscripcion->id_inscripcion) ?>"><i class="fas fa-pen"></i> Editar</a>
-                                         <!-- Eliminar inscripción -->
-                                        <form action="<?= base_url('division/inscripciones/cambiar-estatus') ?>" method="POST">
-                                            <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
-                                            <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-trash"></i> Eliminar</button>
-                                        </form>
+                                        <!-- Eliminar inscripción -->
+                                        <?php if($inscripcion->estatus == true) : ?>
+                                            <form action="<?= base_url('division/inscripcion/cambiar-estatus') ?>" method="POST">
+                                                <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
+                                                <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check fa-ban"></i> Aceptar</button>
+                                            </form>
+                                        <?php else : ?>
+                                            <form action="<?= base_url('division/inscripcion/cambiar-estatus') ?>" method="POST">
+                                                <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
+                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Rechazar</button>
+                                            </form>
+                                        <?php endif ?>
+                                            <!-- <form action="<?= base_url('division/inscripciones/cambiar-estatus') ?>" method="POST">
+                                                <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
+                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-trash"></i> Eliminar</button>
+                                            </form>   -->                               
+                                    
+                                    </div>
                                 </td>
                             </tr>
                         <?php endforeach ?>
