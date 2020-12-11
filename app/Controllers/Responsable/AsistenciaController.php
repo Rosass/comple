@@ -1,6 +1,6 @@
 <?php namespace App\Controllers\Responsable;
 use App\Controllers\BaseController;
-Use App\Services\Responsable\AsistenciaService;
+Use App\Models\Responsable\AsistenciaModel;
 use Vendor\autoload;
 use Dompdf\Dompdf;
 
@@ -26,6 +26,31 @@ class AsistenciaController extends BaseController
 			$responsable = $this->asistenciaModel->get_responsable( $rfc_responsable );
 			//$contar = $this->asistenciaModel->get_inscripcion( $id_actividad );
 		
+		
+
+		if(count($alumnos) > 0)
+
+		{
+
+        $dompdf = new Dompdf();
+        
+    
+        $dompdf->loadHtml (view('Responsable/Lista-Asistencia/listar', [
+			'alumnos' => $alumnos,
+			
+            ]));
+
+        $dompdf->setPaper('letter', 'portrait');
+		// Se renderiza el HTML como PDF
+		$dompdf->render();
+		// Se muestra el PDF generado en el Browser
+
+        $id_actividad = date("dmyhi");    
+        
+        header('Content-type: application/pdf');
+		header('Content-Disposition: inline; filename="document.pdf"');
+		header('Content-Transfer-Encoding: binary');
+
 		
 			if(count($alumnos) > 0)
 			{
@@ -65,6 +90,7 @@ class AsistenciaController extends BaseController
 			return redirect('/');
 		}
 	}
+}
 
 
 
@@ -103,7 +129,7 @@ class AsistenciaController extends BaseController
 				$dompdf->stream("Lista Asistencia - ".$id_actividad.".pdf", array("Attachment" => false));
 				exit();
 			}
-	 		else
+	 	    else
 			{
 				$this->session->setFlashdata('error', 'Ningun Alumno Inscrito En Esta Actividad');
 				return redirect('responsables/inicio');

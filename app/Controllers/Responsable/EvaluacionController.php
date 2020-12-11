@@ -11,7 +11,6 @@ class EvaluacionController extends BaseController
 		$this->evaluacionModel   =  new \App\Models\Responsable\EvaluacionModel();
 		$this->evaluacionService =  new \App\Services\Responsable\EvaluacionService();
 	}
-   
 
 
     public function index()

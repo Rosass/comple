@@ -70,6 +70,7 @@ class JefeService
      * Obtiene los datos de un jefes mediante su RFC
      * @return object
      */
+
     public function getJefePorRfc($rfc)
     {
         return $this->jefeModel->getJefePorRfc($rfc);
