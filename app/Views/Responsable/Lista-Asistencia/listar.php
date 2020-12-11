@@ -75,8 +75,14 @@
       <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS: </strong> 
 </i>       
       </p>
-<div>    
-</div>  
+      <div>
+      <?php 
+      date_default_timezone_set('America/Mexico_City');
+      $fecha=date("l F Y");
+      ?>
+
+      <?= $fecha ?>
+</div>   
    
       <table style="width:100%">
          <thead>
