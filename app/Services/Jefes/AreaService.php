@@ -15,9 +15,9 @@ class AreaService
      * Obtiene las actividades de la BD
      * @return object
      */
-    public function getActividadPorIdarea($usuario)
+    public function getActividadPorIdarea($id_area)
 	{   
-       return $this->areaModel->getActividadPorIdarea($usuario);
+       return $this->areaModel->getActividadPorIdarea($id_area);
     }
 
 }

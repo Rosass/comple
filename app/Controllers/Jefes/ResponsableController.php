@@ -14,7 +14,8 @@ class ResponsableController extends BaseController
 	{  
         if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
         {
-			$responsables = $this->responsableService->getResponsables();
+			$id_area  = $this->session->usuario_logueado->id_area;
+			$responsables = $this->responsableService->getResponsables($id_area);
 
             echo view('Includes/header');
             echo view('Jefes/navbar', ["activo" => "responsables"]);

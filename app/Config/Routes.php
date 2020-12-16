@@ -150,10 +150,21 @@ $routes->get('alumno/historial', 'Alumno/HistorialController::index');
 $routes->get('alumno/inscripciones', 'Alumno/InscripcionController::index');
 $routes->post('alumno/inscripciones', 'Alumno/InscripcionController::getInscripcionesPorActividadYEstatus');
 $routes->post('alumno/inscripciones/agregar', 'Alumno/InscripcionController::guardar');
-$routes->post('alumno/inscripciones/cambiar-estatus', 'Alumno/InscripcionController::cambiarEstatus');
+$routes->post('alumno/inscripciones/cambiar-estatus', 'Alumno/InscripcionController::cambiarEstatus'); 
+
+//Rutas [Escolares]
+$routes->get('escolares/inicio', 'Escolares/ActividadController::index');
+$routes->post('/buscar', 'Escolares/ActividadController::buscar');
+$routes->post('escolares/generar-parcial', 'Escolares/GenerarController::constanciaParcial');
+$routes->post('/escolares/generar-liberacion', 'Escolares/GenerarController::constanciaLiberacion');
+
 
 //Rutas [Jefes Area actividades]
 $routes->get('jefes/actividades', 'Jefes/AreaController::index');
+$routes->get('jefes/alumnos/(:any)', 'Jefes/AlumnoController::index');
+$routes->post('jefes/constancia', 'Jefes/ConstanciaController::constancia');
+
+
 
 //Rutas [Jefes Area responsables]
 $routes->get('jefes/responsables', 'Jefes/ResponsableController::index');
@@ -161,13 +172,6 @@ $routes->post('jefes/responsables/agregar', 'Jefes/ResponsableController::guarda
 $routes->get('jefes/responsables/editar/(:any)', 'Jefes/ResponsableController::editar');
 $routes->post('jefes/responsables/editar', 'Jefes/ResponsableController::actualizar');
 $routes->post('jefes/responsables/editar-clave', 'Jefes/ResponsableController::actualizarClave');
-$routes->post('jefes/responsables/cambiar-estatus', 'Jefes/ResponsableController::cambiarEstatus'); 
-
-//Rutas [Escolares]
-$routes->get('escolares/inicio', 'Escolares/ActividadController::index');
-$routes->post('/buscar', 'Escolares/ActividadController::buscar');
-$routes->post('escolares/generar-parcial', 'Escolares/GenerarController::constanciaParcial');
-$routes->post('/escolares/generar-liberacion', 'Escolares/GenerarController::constanciaLiberacion');
-$routes->get('/escolares/generar-liberacion', 'Escolares/GenerarController::constanciaLiberacion');
+$routes->post('jefes/responsables/cambiar-estatus', 'Jefes/ResponsableController::cambiarEstatus');
 
 

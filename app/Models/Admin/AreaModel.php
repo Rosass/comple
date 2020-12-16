@@ -13,13 +13,6 @@ class AreaModel extends Model
 
     public function getAreas()
 	{   
-        /*SELECT a.id_actividad, a.nombre_actividad, a.numero_dictamen, a.creditos, a.capacidad, ar.nombre_area, p.descripcion AS 'periodo_descripcion', ta.nombre AS 'tipo_actividad',
-		 a.rfc_responsable, r.nombre AS 'nombre_responsable', r.apaterno AS 'apaterno_responsable', a.horas, a.horario
-        FROM actividad a
-        INNER JOIN area ar ON ar.id_area = a.id_area
-        inner JOIN periodo p ON p.periodo = a.periodo
-        INNER JOIN tipo_actividad ta ON ta.id_tipo_actividad = a.id_tipo_actividad
-        INNER JOIN responsable r ON r.rfc_responsable = a.rfc_responsable;*/
         return $this->db->table("area a")
             ->select("a.id_area, a.nombre_area, 
                       a.rfc_jefe, j.nombre_jefe AS 'nombre_jefe', j.apaterno_jefe AS 'apaterno_jefe', a.estatus")

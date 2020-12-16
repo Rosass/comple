@@ -5,7 +5,7 @@
 		<div class="col-md-12">
 			<div class="bg-color-tec-red p-3 rounded-top text-white small">
 				NO. CONTROL: <span class="font-weight-bold"> <?= $session->usuario_logueado->num_control?></span><br>
-				ALUMNO: <span class="font-weight-bold"> <?= $session->usuario_logueado->nombre . " " . $session->usuario_logueado->ap_paterno . " " . $session->usuario_logueado->ap_materno?></span><br>
+				ALUMNO: <span class="font-weight-bold"> <?= $session->usuario_logueado->nombre. " " .$session->usuario_logueado->ap_paterno. " " .$session->usuario_logueado->ap_materno?></span><br>
 				CARRERA: <span class="font-weight-bold"> <?= $session->usuario_logueado->carrera?></span><br>
 			</div>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom shadow-lg">
@@ -16,14 +16,14 @@
 				<div class="collapse navbar-collapse text-center" id="navbarText">
 					<ul class="navbar-nav mr-auto">
 					<li class="nav-item <?= ($activo == 'actividades') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('alumno/inicio') ?>">Actividades</a>
-						  </li> 
-						  <li class="nav-item <?= ($activo == 'Historial') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('alumno/historial') ?>">Historial</a>
-						  </li> 
-						  <li class="nav-item <?= ($activo == 'inscripciones') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('alumno/inscripciones') ?>">Inscripcion</a>
-      					</li>
+        			<a class="nav-link" href="<?= base_url('alumno/inicio') ?>">Actividades</a>
+					</li> 
+					<li class="nav-item <?= ($activo == 'Historial') ? 'active' : '' ?>">
+        			<a class="nav-link" href="<?= base_url('alumno/historial') ?>">Historial</a>
+					</li> 
+					<li class="nav-item <?= ($activo == 'inscripciones') ? 'active' : '' ?>">
+        			<a class="nav-link" href="<?= base_url('alumno/inscripciones') ?>">Inscripcion</a>
+      				</li>
 					</ul>
 					<span class="navbar-text">
 						<form action="<?= base_url("logout") ?>" method="POST">

@@ -17,9 +17,8 @@ class AreaController extends BaseController
 	{
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
         {
-			$id_area = $this->session->usuario_logueado;
-			//$id_area = $this->areaService->getActividadPorIdarea($usuario);
-		    $actividades = $this->areaService->getActividadPorIdarea(true);
+			$id_area = $this->session->usuario_logueado->id_area;
+		    $actividades = $this->areaService->getActividadPorIdarea($id_area);
 
 			echo view('Includes/header');
 			echo view('Jefes/navbar', ["activo" => "actividades"]);

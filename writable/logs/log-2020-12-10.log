@@ -1,3 +1,351 @@
+<<<<<<< HEAD
+CRITICAL - 2020-12-10 00:12:35 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Escolares\GenerarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Escolares\GenerarService.php(16): App\Models\Escolares\GenerarModel->getAlumnoPorNoControl('161160176')
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(55): App\Services\Escolares\GenerarService->getAlumnoPorNoControl('161160176')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 00:38:35 --> Call to undefined method stdClass::obtenerNombreCarrera()
+#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(64): view('escolares/gener...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-10 00:38:50 --> strpos() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expect...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(6): strpos(Array, 'ISC')
+#2 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\listar.php(40): obtenerNombreCarrera()
+#3 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#5 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(64): view('escolares/gener...', Array)
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-10 00:40:50 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(15): helper(Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\Escolares\GenerarController->__construct()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 00:41:24 --> Trying to get property 'usuario' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/navba...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(17): view('Escolares/navba...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-10 00:48:07 --> strpos() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expect...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(6): strpos(Array, 'ISC')
+#2 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#3 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#5 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-10 00:53:31 --> Undefined index: carrera
+#0 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 00:54:30 --> Undefined index: ISC, ICI, IGE
+#0 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 00:55:16 --> Undefined index: carrera
+#0 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 00:55:57 --> strpos() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expect...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(7): strpos(Array, 'ISC')
+#2 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#3 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#5 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-10 01:18:20 --> Function name must be a string
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-10 01:19:10 --> Undefined index: carrera
+#0 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 01:19:53 --> Undefined index: $carrera
+#0 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 01:21:46 --> Undefined index: HTTP_carrera
+#0 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 01:22:05 --> Undefined index: 
+#0 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 01:23:36 --> strpos() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expect...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(7): strpos(Array, 'ISC')
+#2 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#3 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#5 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-10 01:24:46 --> strpos() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expect...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(7): strpos(Array, 'ISC')
+#2 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#3 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#5 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-10 01:36:12 --> strpos() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expect...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\app\Helpers\utilerias_helper.php(7): strpos(Array, 'ISC')
+#2 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\index.php(56): obtenerNombreCarrera()
+#3 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#5 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(36): view('escolares/gener...', Array)
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaParcial()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-12-10 03:39:48 --> Undefined property: stdClass::$nivel_desempeno
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\listar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(64): view('escolares/gener...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-10 03:40:19 --> Undefined property: stdClass::$valor_numerico
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\Generar\listar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(64): view('escolares/gener...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-10 15:56:58 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Escolares\GenerarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Escolares\GenerarService.php(16): App\Models\Escolares\GenerarModel->getAlumnoPorNoControl('161160176')
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(55): App\Services\Escolares\GenerarService->getAlumnoPorNoControl('161160176')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 15:57:03 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Escolares\GenerarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Escolares\GenerarService.php(16): App\Models\Escolares\GenerarModel->getAlumnoPorNoControl('161160176')
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(55): App\Services\Escolares\GenerarService->getAlumnoPorNoControl('161160176')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 15:57:06 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Escolares\GenerarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Escolares\GenerarService.php(16): App\Models\Escolares\GenerarModel->getAlumnoPorNoControl('161160176')
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(55): App\Services\Escolares\GenerarService->getAlumnoPorNoControl('161160176')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 15:57:10 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Escolares\GenerarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Escolares\GenerarService.php(16): App\Models\Escolares\GenerarModel->getAlumnoPorNoControl('161160176')
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(55): App\Services\Escolares\GenerarService->getAlumnoPorNoControl('161160176')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 15:57:13 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Escolares\GenerarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Escolares\GenerarService.php(16): App\Models\Escolares\GenerarModel->getAlumnoPorNoControl('161160176')
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(55): App\Services\Escolares\GenerarService->getAlumnoPorNoControl('161160176')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 16:04:09 --> Trying to get property 'usuario' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/navba...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(17): view('Escolares/navba...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-10 19:34:17 --> Trying to get property 'usuario' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Escolares\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Escolares/navba...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\ActividadController.php(17): view('Escolares/navba...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\ActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-10 20:16:32 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Escolares\GenerarModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Escolares\GenerarService.php(16): App\Models\Escolares\GenerarModel->getAlumnoPorNoControl('161160176')
+#4 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(55): App\Services\Escolares\GenerarService->getAlumnoPorNoControl('161160176')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 20:17:15 --> Array to string conversion
+#0 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 60, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 20:18:35 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-10 21:16:41 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-10 21:23:01 --> Object of class stdClass could not be converted to int
+#0 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 22:01:55 --> Wrong parameter count for number_format()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Wrong parameter...', 'C:\\xampp\\htdocs...', 63, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(63): number_format(3.4653571248055, 2, '.')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 22:11:18 --> Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+#0 C:\xampp\htdocs\comple\system\View\View.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Unparenthesized...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include()
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('escolares/gener...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Escolares\GenerarController.php(70): view('escolares/gener...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Escolares\GenerarController->constanciaLiberacion()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Escolares\GenerarController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+=======
 CRITICAL - 2020-12-10 00:07:44 --> Trying to get property 'estatus' of non-object
 #0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 162, Array)
 #1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus(NULL)
@@ -395,3 +743,4 @@ CRITICAL - 2020-12-10 19:39:30 --> Undefined property: stdClass::$num_control
 #3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
+>>>>>>> ec0105451e71a30165ecedb7df5608f0f93554a0

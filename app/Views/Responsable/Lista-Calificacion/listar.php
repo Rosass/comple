@@ -72,7 +72,7 @@
       <strong>RESPONSABLE: </strong> <?php foreach($responsable as $r) : ?> 
          <?= $r->nombre?> <?= $r->apaterno?> <?= $r->amaterno?>
          <?php endforeach ?>
-      <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS: </strong>  
+      <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS:</strong> <strong><?= Count($alumnos) ?></strong> 
 
        </i>
         

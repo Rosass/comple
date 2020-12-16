@@ -285,37 +285,6 @@ const input = (id, name, status, placeholder, noControl) => {
     return input;
 }
 
-// 
-// HACER Enviar a GENERAR PDF
-// const postGeneratPDF = async (data) => {
-// 	try {
-// 		const resp = await fetch(BASE_URL + 'escolares/generar',{
-// 			method: "POST", 
-// 			headers:{"X-Requested-With": "XMLHttpRequest"},
-// 			body: data
-// 		});
-// 		return await resp.json();
-// 	} catch (error) {
-// 		console.log( error );
-// 	}
-// }
-
-// const eventoFormularioModal = () => {
-// 	document.querySelector('#btn-generar-pdf').addEventListener('click', async (e) => {
-// 		e.preventDefault();
-// 		const noControl = document.querySelector('#control').value;
-// 		const folio = document.querySelector('#folio').value;
-// 		const data = new FormData();
-// 		data.append('no_control', noControl);
-// 		data.append('folio', folio);
-// 		console.log(noControl);
-// 		console.log(folio);
-// 		console.log( [...data] );
-// 		const resp = await postGeneratPDF(data);
-// 		// await postGeneratPDF(data);
-// 		console.log(resp);
-// 	});
-// }
 
 // EVENTO SUBMIT BUSCAR ALEMUNO
 formularioBuscarAalumno.addEventListener('submit', buscarAlumno );

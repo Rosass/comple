@@ -85,3 +85,4 @@ define('USUARIO_ESCOLARES', 3);
 define('ENE_JUN', date('Y') . '1');
 define('VERANO', date('Y') . '2');
 define('AGO_DIC', date('Y') . '3');
+

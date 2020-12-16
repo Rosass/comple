@@ -4,8 +4,6 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Lista de asistencia</title>
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
    </head>
    <style type="text/css">
       table ,th,td{
@@ -31,11 +29,6 @@
       p{
       font-size:85%";
       }
-
-   h3{
-   font-family: 'Montserrat', sans-serif;
-   font-size:20px;
-   }
    </style>
 
 </head>
@@ -72,8 +65,8 @@
       <p>
       <strong> LISTA DE ASISTENCIA </strong> <br>
 
-      <i class="a"><strong>ACTIVIDAD: </strong> <?php foreach($actividad as $a) : ?> 
-         <?= $a->nombre_actividad?> </i>
+      <strong>ACTIVIDAD: </strong> <?php foreach($actividad as  $a) : ?> 
+         <?= $a->nombre_actividad?>
          <?php endforeach ?>
       <i class="a" style="float:right"> <strong>PERIODO: </strong>  <?php foreach($actividad as $a) : ?> 
          <?= $a->descripcion?> </i>
@@ -81,8 +74,7 @@
       <i class="a"><strong>RESPONSABLE: </strong> <?php foreach($responsable as $r) : ?> 
          <?= $r->nombre?> <?= $r->apaterno?> <?= $r->amaterno?> </i>
          <?php endforeach ?>
-      <i class="a" style="float:right; margin-right: 80px;">  <strong>ALUMNOS:</strong> <?= Count($alumnos) ?> </i>       
-      </p>
+      <i class="a" style="float:right; margin-right: 80px;"> <strong>ALUMNOS: </strong><?= Count($alumnos)?> </i> </p>
       <table style="width:100%">
          <thead>
             <tr>

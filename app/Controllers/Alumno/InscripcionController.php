@@ -20,7 +20,7 @@ class InscripcionController extends BaseController
             $num_control = $this->inscripcionService->getInscripcionPorAlumno($num_control);
             $actividades = $this->inscripcionService->getActividadesPorAlumno(true);           
             $periodos = $this->inscripcionService->getPeriodosPorEstatus(true);
-           
+
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "inscripciones"]);
             echo view('Alumno/Inscripciones/listar', [
@@ -31,11 +31,10 @@ class InscripcionController extends BaseController
             echo view('Includes/footer');
 		
         }
-       else
-
-       {
-         return redirect("/");
-       }
+    else
+    {
+        return redirect("/");
+    }
     }
 
     public function guardar()
@@ -52,8 +51,7 @@ class InscripcionController extends BaseController
         else
         {   
             $datos = [
-                // "num_control" => mb_strtoupper($this->request->getPost("num_control"), 'utf-8'),
-                "num_control" => $this->session->usuario_logueado->num_control,
+                "num_control" => trim($this->session->usuario_logueado->num_control),
                 "periodo" => $periodo_activo->periodo,
                 "id_actividad" => $this->request->getPost("id_actividad"),
                 "telefono" => $this->request->getPost("telefono") 
