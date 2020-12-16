@@ -23,20 +23,14 @@ class AlumnoLoginService
             return ['exito' => false, 'msj' => 'N. Control o nip inválidos.', 'redirigir_a' => 'loginalumno'];
         }
         
-        if ($alumno_aux->nip)
+        if($nip == $alumno_aux->nip )
         
         {
             // Se crea la sesión
             $datos_sesion = ['num_control' => $num_control, 'loginalumno' => true, 'usuario_logueado' => $alumno_aux];
             $this->session->set($datos_sesion);
-
-            if($alumno_aux)
             {
                 return ['exito' => true, 'redirigir_a' => 'alumno/inicio'];
-            }    
-            else
-            {
-                return ['exito' => false, 'msj' => 'Acceso denegado.', 'redirigir_a' => 'loginalumno'];
             }
         }
         else 

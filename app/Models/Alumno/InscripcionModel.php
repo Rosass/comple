@@ -66,7 +66,16 @@ class InscripcionModel extends Model
                         ->where('estatus', 1)
                         ->get()->getResult();
     }
-
+/* 
+    public function get_inscripcion_por_fecha( $fecha_inicio_inscripcion, $fecha_final_inscripcion )
+    {
+        return $this->db->table('inscripcion i')
+                        ->select('p.fecha_inicio_inscripcion, p.fecha_final_inscripcion')
+                        ->join('periodo p', 'p.id_periodo = i.periodo', 'INNER')
+                        ->where('p.', $fecha_inicio_inscripcion)
+                        ->where('p.', $fecha_final_inscripcion)
+                        ->get()->getRow();
+    } */
     //* NI IDEA VLV
     public function get_creditos_actividad_inscripcion( $num_control, $periodo )
     {

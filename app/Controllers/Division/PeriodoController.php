@@ -52,7 +52,9 @@ class PeriodoController extends BaseController
 				"periodo" => strtoupper($this->request->getPost("periodo")),
 				"descripcion" => $descripcion,
 				"fecha_inicio" => $this->request->getPost("fecha_inicio"),
-				"fecha_final" => $this->request->getPost("fecha_final")
+                "fecha_final" => $this->request->getPost("fecha_final"),
+                "fecha_inicio_inscripcion" => $this->request->getPost("fecha_inicio_inscripcion"),
+                "fecha_final_inscripcion" => $this->request->getPost("fecha_final_inscripcion")
 			];
 
             $respuesta =  $this->periodoService->guardar($datos);
@@ -110,7 +112,9 @@ class PeriodoController extends BaseController
 
 			$datos = [
 				"fecha_inicio" => $this->request->getPost("fecha_inicio"),
-				"fecha_final" => $this->request->getPost("fecha_final")
+                "fecha_final" => $this->request->getPost("fecha_final"),
+                "fecha_inicio_inscripcion" => $this->request->getPost("fecha_inicio_inscripcion"),
+                "fecha_final_inscripcion" => $this->request->getPost("fecha_final_inscripcion")
 			];
 
             $respuesta =  $this->periodoService->actualizar($periodo, $datos);

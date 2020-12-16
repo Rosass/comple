@@ -27,10 +27,10 @@ class ResponsableLoginController extends BaseController
      */
     public function login()
     {
-        $responsable = $this->request->getPost("rfc_responsable");
+        $rfc_responsable = $this->request->getPost("rfc_responsable");
         $clave = $this->request->getPost("clave");
 
-        $respuesta = $this->responsableService->login($responsable, $clave);
+        $respuesta = $this->responsableService->login($rfc_responsable, $clave);
 
         if($respuesta['exito'])
         {

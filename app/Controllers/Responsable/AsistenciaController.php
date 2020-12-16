@@ -21,36 +21,10 @@ class AsistenciaController extends BaseController
 		if($rfc_responsable = $this->session->usuario_logueado->rfc_responsable)
 		{
 			$id_actividad = urldecode($this->request->uri->getSegment(3));
-			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad );
+			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad, 1);
 			$actividad = $this->asistenciaModel->get_actividad( $id_actividad );
 			$responsable = $this->asistenciaModel->get_responsable( $rfc_responsable );
 			//$contar = $this->asistenciaModel->get_inscripcion( $id_actividad );
-		
-		
-
-		if(count($alumnos) > 0)
-
-		{
-
-        $dompdf = new Dompdf();
-        
-    
-        $dompdf->loadHtml (view('Responsable/Lista-Asistencia/listar', [
-			'alumnos' => $alumnos,
-			
-            ]));
-
-        $dompdf->setPaper('letter', 'portrait');
-		// Se renderiza el HTML como PDF
-		$dompdf->render();
-		// Se muestra el PDF generado en el Browser
-
-        $id_actividad = date("dmyhi");    
-        
-        header('Content-type: application/pdf');
-		header('Content-Disposition: inline; filename="document.pdf"');
-		header('Content-Transfer-Encoding: binary');
-
 		
 			if(count($alumnos) > 0)
 			{
@@ -90,7 +64,7 @@ class AsistenciaController extends BaseController
 			return redirect('/');
 		}
 	}
-}
+
 
 
 

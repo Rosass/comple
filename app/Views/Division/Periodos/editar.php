@@ -35,10 +35,18 @@
                             <label for="fecha_final">FECHA FINAL (*)</label>
                             <input type="date" name="fecha_final" id="fecha_final" class="form-control" required value="<?= $periodo->fecha_final ?>">
                         </div>
+                        <div class="form-group">
+                            <label for="fecha_inicio">FECHA INICIO INSCRIPCION (*)</label>
+                            <input type="date" name="fecha_inicio_inscripcion" id="fecha_inicio_inscripcion" class="form-control" required value="<?= $periodo->fecha_inicio_inscripcion ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha_final">FECHA FINAL INSCRIPCION (*)</label>
+                            <input type="date" name="fecha_final_inscripcion" id="fecha_final_inscripcion" class="form-control" required value="<?= $periodo->fecha_final_inscripcion ?>">
+                        </div>
                         <small class="text-center">Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">
                             <div class="dropdown-divider"></div>
-                            <a href="<?= base_url("division/tipos-actividades") ?>" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
+                            <a href="<?= base_url("division/periodos") ?>" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
                             <button type="submit" class="btn bg-color-tec-blue text-white btnEnviarFormulario"><i class="fas fa-check"></i> Guardar</button>
                         </div>
 					</div>

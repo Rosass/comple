@@ -135,6 +135,7 @@ $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionCont
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
 $routes->get('responsables/lista-asistencia/(:any)', 'Responsable/AsistenciaController::listaAsistencia');
+$routes->get('responsables/lista-calificacion/(:any)', 'Responsable/AsistenciaController::listaCalificacion');
 $routes->get('responsables/cambiar-clave', 'Responsable/AlumnoController::index');
 $routes->get('responsables/cambiar-clave/editar(:any)', 'Responsable/AlumnoController::editar');
 $routes->post('responsables/cambiar-clave/editar-clave', 'Responsable/AlumnoController::actualizarClave');

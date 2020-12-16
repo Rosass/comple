@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Lista de asistencia</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
    </head>
    <style type="text/css">
       table ,th,td{
@@ -29,7 +31,14 @@
       p{
       font-size:85%";
       }
+
+   h3{
+   font-family: 'Montserrat', sans-serif;
+   font-size:20px;
+   }
    </style>
+
+</head>
    <body>
          <div>
                      <?php
@@ -63,27 +72,17 @@
       <p>
       <strong> LISTA DE ASISTENCIA </strong> <br>
 
-      <strong>ACTIVIDAD: </strong> <?php foreach($actividad as $a) : ?> 
-         <?= $a->nombre_actividad?>
+      <i class="a"><strong>ACTIVIDAD: </strong> <?php foreach($actividad as $a) : ?> 
+         <?= $a->nombre_actividad?> </i>
          <?php endforeach ?>
-      <i class="a" style="float:right">  <strong>PERIODO: </strong>  <?php foreach($actividad as $a) : ?> 
+      <i class="a" style="float:right"> <strong>PERIODO: </strong>  <?php foreach($actividad as $a) : ?> 
          <?= $a->descripcion?> </i>
          <?php endforeach ?> <br>
-      <strong>RESPONSABLE: </strong> <?php foreach($responsable as $r) : ?> 
-         <?= $r->nombre?> <?= $r->apaterno?> <?= $r->amaterno?>
+      <i class="a"><strong>RESPONSABLE: </strong> <?php foreach($responsable as $r) : ?> 
+         <?= $r->nombre?> <?= $r->apaterno?> <?= $r->amaterno?> </i>
          <?php endforeach ?>
-      <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS: </strong> 
-</i>       
+      <i class="a" style="float:right; margin-right: 80px;">  <strong>ALUMNOS:</strong> <?= Count($alumnos) ?> </i>       
       </p>
-      <div>
-      <?php 
-      date_default_timezone_set('America/Mexico_City');
-      $fecha=date("l F Y");
-      ?>
-
-      <?= $fecha ?>
-</div>   
-   
       <table style="width:100%">
          <thead>
             <tr>

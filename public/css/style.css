@@ -49,6 +49,19 @@
     }
 }
 
+
+
+/* @font-face {
+
+    font-family: myFirstFont;
+    src: url("C:/xampp/htdocs/comple/public/Fuentes/Montserrat/Montserrat-Bold.ttf");
+   } */
+
+/*    @font-face {
+    font-family: myFirstFont;
+    src: url("../fonts/font.ttf");
+} */
+
 .nav-item
 {
     padding: 5px;
