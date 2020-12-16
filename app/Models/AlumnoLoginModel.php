@@ -15,11 +15,11 @@ class AlumnoLoginModel extends Model
       $this->db_alumno = \Config\Database::connect('alumnos_db');
   }
 
-  public function getAlumnoPorUsuario($alumno)
+  public function getAlumnoPorUsuario($num_control)
   {
       return $this->db_alumno->table($this->table)
           ->select('a.num_control, a.nip, a.nombre, a.ap_paterno, a.ap_materno, a.carrera')
-          ->where('a.num_control', $alumno)
+          ->where('a.num_control', $num_control)
           ->get()->getRow();
   }
 

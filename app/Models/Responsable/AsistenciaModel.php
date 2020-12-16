@@ -10,13 +10,14 @@ class AsistenciaModel extends Model
 
     protected $returnType   = 'object';
 
-    public function get_inscripciones( $id_actividad)
+    public function get_inscripciones( $id_actividad, $estatus)
 	{   
         return $this->db->table('inscripcion insc')
-        ->select('insc.num_control, insc.id_inscripcion, insc.telefono, act.id_actividad, act.nombre_actividad, e.valor_numerico as valor_numerico, e.nivel_desempeno as nivel_desempeno')
+        ->select('insc.num_control, insc.estatus, insc.id_inscripcion, insc.telefono, act.id_actividad, act.nombre_actividad, e.valor_numerico as valor_numerico, e.nivel_desempeno as nivel_desempeno')
         ->join('actividad act', 'act.id_actividad = insc.id_actividad', 'INNER')
         ->join('evaluacion_desempenio e', 'e.id_inscripcion = insc.id_inscripcion', 'LEFT')
         ->where('act.id_actividad', $id_actividad)
+        ->where('insc.estatus', $estatus)
         ->get()->getResult();
     }
 
@@ -46,13 +47,14 @@ class AsistenciaModel extends Model
                     ->get()->getResult();
     }
 
-    public function get_actividad_alumno( $id_actividad)
+    public function get_actividad_alumno( $id_actividad, $estatus)
     {
         $newArray = array();
-        $actividad = $this->get_inscripciones( $id_actividad );
+        $actividad = $this->get_inscripciones( $id_actividad,$estatus );
         foreach( $actividad as $act ) {
             $num_control = $act->num_control;
             $id_inscripcion = $act->id_inscripcion;
+            $estatus=$act->estatus;
 
             $alumno = $this->get_alumno( $num_control );
             foreach( $alumno as $alm ) {
@@ -68,6 +70,7 @@ class AsistenciaModel extends Model
                     'valor_numerico' =>$act->valor_numerico,
                     'nivel_desempeno' =>$act->nivel_desempeno,
                     'telefono' =>$act->telefono,
+                    'estatus'=>$act->estatus,
                                 
                     
                 );

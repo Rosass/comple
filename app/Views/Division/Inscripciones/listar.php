@@ -79,7 +79,9 @@
                                 <td style="width:12%;">
                                     <div class="d-flex flex-column">
                                         <!--  Editar inscripción -->
+                                        <?php if($inscripcion->estatus == true) : ?>
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/inscripciones/editar/".$inscripcion->id_inscripcion) ?>"><i class="fas fa-pen"></i> Editar</a>
+                                        <?php endif ?>
                                         <!-- Aceptar inscripción -->
                                         <?php if($inscripcion->estatus == 1) : ?>
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-aceptar') ?>" method="POST">

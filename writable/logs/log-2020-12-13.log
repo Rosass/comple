@@ -1,3 +1,35 @@
+<<<<<<< HEAD
+CRITICAL - 2020-12-13 02:20:59 --> Undefined index: estatus
+#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(37): view('Alumno/Inicio/A...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-13 02:23:27 --> Undefined index: estatus
+#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(37): view('Alumno/Inicio/A...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-13 03:24:23 --> Unknown column 'a.nombre_actividad' in 'order clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `i`.`id_...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`id_...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`id_...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#6 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+=======
 CRITICAL - 2020-12-13 02:20:04 --> Unknown column 'a.rfc_jefe' in 'on clause'
 #0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`per...')
 #1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`per...')
@@ -704,6 +736,7 @@ CRITICAL - 2020-12-13 21:56:53 --> Column 'id_actividad' in where clause is ambi
 #6 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(25): App\Services\Jefes\ConstanciaService->getActividad('161160176', '12')
 #7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia()
 #8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+>>>>>>> bda95cbc645214c86bb1c569ed45e25f9d6f44e5
 #9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}

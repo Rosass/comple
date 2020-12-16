@@ -154,9 +154,9 @@ $routes->post('alumno/inscripciones/cambiar-estatus', 'Alumno/InscripcionControl
 
 //Rutas [Escolares]
 $routes->get('escolares/inicio', 'Escolares/ActividadController::index');
-$routes->post('/buscar', 'Escolares/ActividadController::buscar');
+$routes->post('buscar', 'Escolares/ActividadController::buscar');
 $routes->post('escolares/generar-parcial', 'Escolares/GenerarController::constanciaParcial');
-$routes->post('/escolares/generar-liberacion', 'Escolares/GenerarController::constanciaLiberacion');
+$routes->post('escolares/generar-liberacion', 'Escolares/GenerarController::constanciaLiberacion');
 
 
 //Rutas [Jefes Area actividades]

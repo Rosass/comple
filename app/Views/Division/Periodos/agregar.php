@@ -36,6 +36,20 @@
 					Por favor, rellena este campo
 				</div>
             </div>
+            <div class="form-group">
+                <label for="fecha_final">FECHA INICIO INSCRIPCION (*)</label>
+                <input type="date" name="fecha_final" id="fecha_inicio_inscripcion" class="form-control" required>
+                <div class="invalid-feedback">
+					Por favor, rellena este campo
+				</div>
+            </div>
+            <div class="form-group">
+                <label for="fecha_final">FECHA FINAL INSCRIPCION (*)</label>
+                <input type="date" name="fecha_final" id="fecha_final_inscripcion" class="form-control" required>
+                <div class="invalid-feedback">
+					Por favor, rellena este campo
+				</div>
+            </div>
             <small class="text-center">Los campos marcados con (*) son obligatorios.</small>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

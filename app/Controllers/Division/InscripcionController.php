@@ -20,7 +20,7 @@ class InscripcionController extends BaseController
 	{
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_DIVISION)
         {
-			$inscripciones = $this->inscripcionService->getInscripciones(true);
+			$inscripciones = $this->inscripcionService->getInscripciones();
 			$periodos = $this->periodoService->getPeriodosPorEstatus(true);
 			$actividades = $this->actividadService->getActividadesPorEstatus(true);
 			$inscripciones_aux = $this->inscripcionService->unirRegistros($inscripciones);

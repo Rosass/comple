@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +30,8 @@
       font-size:85%";
       }
    </style>
+
+</head>
    <body>
          <div>
                      <?php
@@ -66,30 +68,13 @@
       <strong>ACTIVIDAD: </strong> <?php foreach($actividad as  $a) : ?> 
          <?= $a->nombre_actividad?>
          <?php endforeach ?>
-      <i class="a" style="float:right">  <strong>PERIODO: </strong>  <?php foreach($actividad as $a) : ?> 
+      <i class="a" style="float:right"> <strong>PERIODO: </strong>  <?php foreach($actividad as $a) : ?> 
          <?= $a->descripcion?> </i>
          <?php endforeach ?> <br>
-      <strong>RESPONSABLE: </strong> <?php foreach($responsable as $r) : ?> 
-         <?= $r->nombre?> <?= $r->apaterno?> <?= $r->amaterno?>
+      <i class="a"><strong>RESPONSABLE: </strong> <?php foreach($responsable as $r) : ?> 
+         <?= $r->nombre?> <?= $r->apaterno?> <?= $r->amaterno?> </i>
          <?php endforeach ?>
-<<<<<<< HEAD
-         <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS:</strong> <strong><?= Count($alumnos) ?></strong></i>
-<div>    
-</div>  
-=======
-      <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS: </strong> 
-</i>       
-      </p>
-      <div>
-      <?php 
-      date_default_timezone_set('America/Mexico_City');
-      $fecha=date("l F Y");
-      ?>
-
-      <?= $fecha ?>
-</div>   
->>>>>>> ec0105451e71a30165ecedb7df5608f0f93554a0
-   
+      <i class="a" style="float:right; margin-right: 80px;"> <strong>ALUMNOS: </strong><?= Count($alumnos)?> </i> </p>
       <table style="width:100%">
          <thead>
             <tr>

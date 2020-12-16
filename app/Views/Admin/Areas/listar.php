@@ -50,6 +50,7 @@
                                     <div class="d-flex flex-column">
                                         <!--  Editar tipo-->
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("admin/areas/editar/".$area->id_area) ?>"><i class="fas fa-pen"></i> Editar</a>
+                                        <?php if ( $area->nombre_area !== 'ADMINISTRADOR' ):?>
                                         <?php if($area->estatus == true) : ?>
                                             <form action="<?= base_url('admin/areas/cambiar-estatus') ?>" method="POST">
                                                 <input type="hidden" name="id_area" value="<?= $area->id_area ?>">
@@ -60,6 +61,7 @@
                                                 <input type="hidden" name="id_area" value="<?= $area->id_area ?>">
                                                 <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
                                             </form>
+                                        <?php endif ?>
                                         <?php endif ?>
 								    </div>
                                 </td>

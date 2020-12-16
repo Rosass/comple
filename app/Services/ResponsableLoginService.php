@@ -17,28 +17,29 @@ class ResponsableLoginService
      * Este metodo valida las credenciales del usuario
      * @return array
      */
-    public function login($responsable, $clave)
+    public function login($rfc_responsable, $clave)
     {
-        $responsable_aux = $this->responsableModel->getResponsablePorUsuario($responsable);
+        $responsable_aux = $this->responsableModel->getResponsablePorResponsable($rfc_responsable);
 
         if($responsable_aux == null)
         {
             return ['exito' => false, 'msj' => 'RFC o clave inválidos.', 'redirigir_a' => 'loginresponsable'];
         }
 
-        if (password_verify($clave, $responsable_aux->clave))
+        if ( $responsable_aux->estatus == 0 )
+        {
+            return ['exito' => false, 'msj' => 'Acceso denegado [RESPONSABLE INHABILITADO].', 'redirigir_a' => 'login'];
+        }
+
+        if (password_verify($clave, $responsable_aux->clave) && $responsable_aux->estatus == true)
         {
             // Se crea la sesión
-            $datos_sesion = ['rfc_responsable' => $responsable, 'loginresponsable' => true, 'usuario_logueado' => $responsable_aux];
+            $datos_sesion = ['rfc_responsable' => $rfc_responsable, 'loginresponsable' => true, 'usuario_logueado' => $responsable_aux];
             $this->session->set($datos_sesion);
-
-            if($responsable_aux)
+   
+            
             {
                 return ['exito' => true, 'redirigir_a' => 'responsables/inicio'];
-            }    
-            else
-            {
-                return ['exito' => false, 'msj' => 'Acceso denegado.', 'redirigir_a' => 'loginresponsable'];
             }
         }
         else 

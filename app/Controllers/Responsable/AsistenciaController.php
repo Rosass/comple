@@ -21,7 +21,7 @@ class AsistenciaController extends BaseController
 		if($rfc_responsable = $this->session->usuario_logueado->rfc_responsable)
 		{
 			$id_actividad = urldecode($this->request->uri->getSegment(3));
-			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad );
+			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad, 1);
 			$actividad = $this->asistenciaModel->get_actividad( $id_actividad );
 			$responsable = $this->asistenciaModel->get_responsable( $rfc_responsable );
 			//$contar = $this->asistenciaModel->get_inscripcion( $id_actividad );
@@ -74,7 +74,7 @@ class AsistenciaController extends BaseController
 		if($rfc_responsable = $this->session->usuario_logueado->rfc_responsable)
 		{
 			$id_actividad = urldecode($this->request->uri->getSegment(3));
-			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad );
+			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad, 1 );
 			$actividad = $this->asistenciaModel->get_actividad( $id_actividad );
 			$responsable = $this->asistenciaModel->get_responsable( $rfc_responsable );
 
@@ -82,7 +82,7 @@ class AsistenciaController extends BaseController
 			{
 				$dompdf = new Dompdf();
 				
-				$dompdf->loadHtml (view('Responsable/Lista-calificacion/listar', [
+				$dompdf->loadHtml (view('Responsable/Lista-Calificacion/listar', [
 					'alumnos' => $alumnos,
 					'actividad' => $actividad,
 					'responsable' => $responsable,

@@ -29,7 +29,7 @@ class GenerarController extends BaseController
 
         $dompdf = new Dompdf();
     
-        $dompdf->loadHtml (view('escolares/generar/index', [
+        $dompdf->loadHtml (view('Escolares/Generar/index', [
             'alumno' => $alumno,
             'folio' => $folio,
             'control' => $control,
@@ -76,7 +76,7 @@ class GenerarController extends BaseController
     
             $dompdf = new Dompdf();
         
-            $dompdf->loadHtml (view('escolares/generar/listar', [
+            $dompdf->loadHtml (view('Escolares/Generar/listar', [
                 'alumno' => $alumno,
                 'folio' => $folio,
                 'control' => $control,
