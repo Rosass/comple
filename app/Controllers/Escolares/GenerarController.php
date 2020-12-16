@@ -29,7 +29,7 @@ class GenerarController extends BaseController
 
         $dompdf = new Dompdf();
     
-        $dompdf->loadHtml (view('Responsable/Lista-Asistencia/listarc', [
+        $dompdf->loadHtml (view('Escolares/Generar/index', [
             'alumno' => $alumno,
             'folio' => $folio,
             'control' => $control,

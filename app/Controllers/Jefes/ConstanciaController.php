@@ -32,7 +32,7 @@ class ConstanciaController extends BaseController
 
         $dompdf = new Dompdf();
     
-        $dompdf->loadHtml (view('jefes/constancia/listar', [
+        $dompdf->loadHtml (view('Jefes/Constancia/listar', [
             'alumno' => $alumno,
             'folio' => $folio,
             'frase' => $frase,
