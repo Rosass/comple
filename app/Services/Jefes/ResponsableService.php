@@ -16,9 +16,9 @@ class ResponsableService
      * Obtiene los responsables de la BD
      * @return object
      */
-    public function getResponsables()
+    public function getResponsables($id_area)
 	{   
-       return $this->responsableModel->getResponsables();
+       return $this->responsableModel->getResponsables($id_area);
     }
 
     /**

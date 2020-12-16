@@ -63,7 +63,7 @@
       <p>
       <strong> LISTA DE ASISTENCIA </strong> <br>
 
-      <strong>ACTIVIDAD: </strong> <?php foreach($actividad as $a) : ?> 
+      <strong>ACTIVIDAD: </strong> <?php foreach($actividad as  $a) : ?> 
          <?= $a->nombre_actividad?>
          <?php endforeach ?>
       <i class="a" style="float:right">  <strong>PERIODO: </strong>  <?php foreach($actividad as $a) : ?> 
@@ -72,9 +72,7 @@
       <strong>RESPONSABLE: </strong> <?php foreach($responsable as $r) : ?> 
          <?= $r->nombre?> <?= $r->apaterno?> <?= $r->amaterno?>
          <?php endforeach ?>
-      <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS: </strong> 
-</i>       
-      </p>
+         <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS:</strong> <strong><?= Count($alumnos) ?></strong></i>
 <div>    
 </div>  
    

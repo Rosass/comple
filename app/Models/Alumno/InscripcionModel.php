@@ -30,7 +30,7 @@ class InscripcionModel extends Model
     }
 
     public function getInscripcionPorAlumno($estatus)
-	{    //* Que ahce esto
+	{    
        
         return $this->db->table("inscripcion i")
         ->select("i.id_inscripcion, i.num_control, i.periodo, p.descripcion AS 'descripcion_periodo', i.telefono, i.fecha_inscripcion,
@@ -52,7 +52,7 @@ class InscripcionModel extends Model
         $db_alumnos = db_connect('alumnos_db');
         return $db_alumnos->table('alumnos')
                     ->select('*')
-                    ->where('num_control', $num_control )
+                    ->where('num_control', $num_control)
                     ->get()->getResult();
     }
 
@@ -67,7 +67,6 @@ class InscripcionModel extends Model
                         ->get()->getResult();
     }
 
-    //* NI IDEA VLV
     public function get_creditos_actividad_inscripcion( $num_control, $periodo )
     {
         return $this->db->table('inscripcion i')
@@ -85,11 +84,36 @@ class InscripcionModel extends Model
                         ->where('id_actividad', $id_actividad)
                         ->get()->getRow();
     }
+    
+    public function get_id_tipo_actividad( $id_actividad )
+    {
+        return $this->db->table('actividad')
+                        ->select('id_tipo_actividad')
+                        ->where('id_actividad', $id_actividad)
+                        ->get()->getRow();
+    }
 
-    
-    
-    
-
+    public function get_actividad_alumno_cultura_deportiva( $num_control, $periodo)
+    {
+        return $this->db->table('inscripcion i')
+                        ->select('ta.id_tipo_actividad, ta.nombre')
+                        ->join('actividad act', 'act.id_actividad = i.id_actividad', 'INNER')
+                        ->join('tipo_actividad ta', 'act.id_tipo_actividad = ta.id_tipo_actividad', 'INNER')
+                        ->where('i.num_control', $num_control)
+                        ->where('i.periodo', $periodo)
+                        ->where('(act.id_tipo_actividad = 2 OR act.id_tipo_actividad = 3)')
+                        ->get()->getResult();
+    }
 
 
 }
+
+/**
+ * SELECT ta.id_tipo_actividad, ta.nombre FROM inscripcion ins
+ *  INNER JOIN actividad act
+ *  ON ins.id_actividad = act.id_actividad
+ *  INNER JOIN tipo_actividad ta
+ *  ON act.id_tipo_actividad = ta.id_tipo_actividad
+ *  WHERE ins.num_control = 161160014 
+ *  AND ins.periodo = 20203 AND (act.id_tipo_actividad = 2 OR act.id_tipo_actividad = 3)
+ */

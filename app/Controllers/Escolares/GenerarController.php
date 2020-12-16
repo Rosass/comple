@@ -11,6 +11,8 @@ class GenerarController extends BaseController
      function __construct()
     {
         $this->generarService = new \App\Services\Escolares\GenerarService();
+        //parent::__construct();
+        helper('utilerias_helper');
     }  
 
 
@@ -36,13 +38,28 @@ class GenerarController extends BaseController
         $dompdf->setPaper('letter', 'portrait');
 		// Se renderiza el HTML como PDF
 		$dompdf->render();
-		// Se muestra el PDF generado en el Browser
+        // Se muestra el PDF generado en el Browser
+        $canvas = $dompdf->getCanvas();
+
+        $w = $canvas->get_width();
+        $h = $canvas->get_height();
+
+        $imageURL = 'public/img/estado.png';
+        $imgWidth = 450;
+        $imgHeight = 450;
+
+        $canvas->set_opacity(0.09);
+
+        $x = (($w-$imgWidth)/2);
+        $y = (($h-$imgHeight)/2);
+
+        $canvas->image($imageURL,$x,$y,$imgWidth,$imgHeight);
     
         header('Content-type: application/pdf');
         header('Content-Disposition: inline; filename="document.pdf"');
         header('Content-Transfer-Encoding: binary');
 
-        $dompdf->stream("Constancia Parcial -  ".$control." .pdf", array("Attachment" => false));
+        $dompdf->stream("Constancia Parcial -  ".$control." .pdf", array("Attachment" => 0));
 
 	}
 	public function constanciaLiberacion()
@@ -51,7 +68,11 @@ class GenerarController extends BaseController
         $control = $this->request->getPost('control');
         $folio = $this->request->getPost('folio');
         $alumno = $this->generarService->getAlumnoPorNoControl($control);
-        $actividades = $this->generarService->getActividad($control);
+        // $actividades = $this->generarService->getActividad($control);
+        $calificacion = $this->generarService->calificacion($control);
+        $calificacionRows = $this->generarService->calificacionRows($control);
+        $promedio = round(((float)$calificacion->valor_numerico / (float)$calificacionRows->valor_numerico), 2);
+        $nivel_desempenio = $this->Calcular_nivel_desempeno( $promedio );
     
             $dompdf = new Dompdf();
         
@@ -59,21 +80,56 @@ class GenerarController extends BaseController
                 'alumno' => $alumno,
                 'folio' => $folio,
                 'control' => $control,
-                'actividades' => $actividades,
-               
-                ]));
+                // 'actividades' => $actividades,
+                'calificacion' => $promedio,
+                'nivelDesempenio' => $nivel_desempenio
+            ]));
             $dompdf->setPaper('letter', 'portrait');
             // Se renderiza el HTML como PDF
             $dompdf->render();
             // Se muestra el PDF generado en el Browser
+            $canvas = $dompdf->getCanvas();
+
+            $w = $canvas->get_width();
+            $h = $canvas->get_height();
+
+            $imageURL = 'public/img/estado.png';
+            $imgWidth = 450;
+            $imgHeight = 450;
+
+            $canvas->set_opacity(0.09);
+
+            $x = (($w-$imgWidth)/2);
+            $y = (($h-$imgHeight)/2);
+
+            $canvas->image($imageURL,$x,$y,$imgWidth,$imgHeight);
+
         
             header('Content-type: application/pdf');
             header('Content-Disposition: inline; filename="document.pdf"');
             header('Content-Transfer-Encoding: binary');
+
     
-            $dompdf->stream("Constancia liberacion- ".$control." .pdf", array("Attachment" => false));
+            $dompdf->stream("Constancia liberacion- ".$control." .pdf", array("Attachment" => 0));
         
 
+    }
+    protected function Calcular_nivel_desempeno( $calificacion )
+    { $desempeno = '';
+        if($calificacion<1){
+            $desempeno = 'Insuficiente';
+        }else if ($calificacion>1 && $calificacion < 1.50){
+            $desempeno = 'Suficiente';
+        }else if($calificacion >= 1.50 && $calificacion<2.50){
+            $desempeno = 'Bueno';
+        }else if($calificacion >= 2.50 && $calificacion<3.50){
+            $desempeno = 'Notable';
+        }else if ($calificacion >=2.50 && $calificacion <=4){
+            $desempeno = 'Excelente';
+        }else{
+            $desempeno = 'Algo salio mal';
+        }
+        return $desempeno;
     }
     
 

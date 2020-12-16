@@ -9,16 +9,16 @@ class AreaModel extends Model
 {
 
     protected $returnType   = 'object';
-    protected $table = 'usuario';
+    protected $table = 'actividad';
 
-    public function getActividadPorIdarea($usuario)
+    public function getActividadPorIdarea($id_area)
 	{   
-        return $this->db->table("usuario u")
-            ->select("u.usuario,u.id_area, a.nombre_actividad, u.estatus")
-            ->join('area ar', 'ar.id_area = u.id_area', 'INNER')
-            ->join('actividad a','a.id_actividad = a.id_actividad', 'INNER')
-            ->Where('u.id_area', $usuario)
-            ->get()->getResult();
+        return $this->db->table('actividad a')
+        ->select('a.id_area,a.id_actividad, a.nombre_actividad, a.numero_dictamen, a.creditos, a.periodo, a.horas, a.horario, a.estatus, p.descripcion as periodo_descripcion ,ta.nombre as tipo_actividad')
+        ->join('tipo_actividad ta', 'ta.id_tipo_actividad = a.id_tipo_actividad', 'INNER')
+        ->join('periodo p', 'p.periodo = a.periodo', 'INNER')
+        ->where('id_area', $id_area)
+        ->get()->getResult();
     }
 
 }

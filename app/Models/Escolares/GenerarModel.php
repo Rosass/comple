@@ -20,6 +20,28 @@ class GenerarModel extends Model
     } 
 
    
+    public function calificacion( $control )
+    {
+        return $this->db->table('inscripcion a')
+                        ->selectSum('e.valor_numerico')
+                        ->join('evaluacion_desempenio e', 'e.id_inscripcion = a.id_inscripcion', 'LEFT')
+                        ->where('num_control',$control)
+                        ->where('valor_numerico >= 0')
+                        ->get()->getRow();
+    }
+
+   
+    public function calificacionRows( $control )
+    {
+        return $this->db->table('inscripcion a')
+                        ->selectCount('e.valor_numerico')
+                        ->join('evaluacion_desempenio e', 'e.id_inscripcion = a.id_inscripcion', 'LEFT')
+                        ->where('num_control',$control)
+                        ->where('valor_numerico >= 0')
+                        ->get()->getRow();
+    }
+    
+   
     public function getActividad( $control )
     {
         return $this->db->table('inscripcion a')
@@ -28,13 +50,19 @@ class GenerarModel extends Model
                         e.valor_numerico as calificacion, e.nivel_desempeno as nivel')
                         ->join('periodo p', 'p.periodo = a.periodo', 'LEFT')
                         ->join('actividad ta', 'ta.id_actividad = a.id_actividad', 'LEFT')
-                        //->join('responsable r' , 'r.rfc_responsable = ta.rfc_responsable','LEFT')
                         ->join('tipo_actividad tac', 'tac.id_tipo_actividad = ta.id_tipo_actividad', 'LEFT')
                         ->join('evaluacion_desempenio e', 'e.id_inscripcion = a.id_inscripcion', 'LEFT')
                         ->where('num_control',$control)
                         ->where('valor_numerico > 0')
                         ->get()->getResult();
-    } 
+    }
+
+
+   /*  public function guardar($datos)
+    {
+        $this->db->table($this->table)->insert($datos);
+        return $this->db->affectedRows();
+    } */
 
     
     

@@ -15,7 +15,7 @@
                     <?= $session->getFlashdata('success') ?>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
-			<?php endif ?>
+            <?php endif ?>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
@@ -26,26 +26,38 @@
                             <th scope="col" class="border-top-0">#</th>
                             <th scope="col" class="border-top-0">PERIODO</th>
                             <th scope="col" class="border-top-0">NOMBRE</th>
+                            <th scope="col" class="border-top-0">TIPO</th>
                             <th scope="col" class="border-top-0">DICTAMEN</th>
                             <th scope="col" class="border-top-0">CREDITOS</th>
                             <th scope="col" class="border-top-0">HORAS</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
+                            <th scope="col" class="border-top-0">ACCION</th>
+
                             
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
-                        <?php foreach($actividades as $key => $area) : ?>
+                        <?php foreach($actividades as $key => $actividad) : ?>
                             <tr>
                                 <th scope="row"><?= $key + 1 ?></th>
-                                
-                                <td><?= $area->nombre_actividad ?></td>
-                                
+                                <td><?= $actividad->periodo_descripcion ?></td>
+                                <td><?= $actividad->nombre_actividad ?></td>
+                                <td><?= $actividad->tipo_actividad ?></td>
+                                <td><?= $actividad->numero_dictamen ?></td>
+                                <td><?= $actividad->creditos ?></td>
+                                <td><?= $actividad->horas ?></td>
+                                <td><?= $actividad->horario ?></td>
                                 <td class="text-white">
-                                    <?php if($area->estatus == true) : ?>
+                                    <?php if($actividad->estatus == true) : ?>
                                         <span class="bg-success p-1 rounded small">Autorizado</span>
-                                    <?php endif ?>
+                                        <?php endif ?>
                                 </td> 
+                                <td style="width:8%;">  
+                                    <div class="d-flex flex-column">
+                                    <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("jefes/alumnos/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i>Alumnos Registrados</a>
+                                    </div>
+                                </td>
                                 
                             </tr>
                         <?php endforeach ?>

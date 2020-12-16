@@ -34,5 +34,25 @@ class GenerarService
 	{   
        return $this->generarModel->getActividad($control);
     }
+    public function calificacion($control)
+	{   
+       return $this->generarModel->calificacion($control);
+    }
+    public function calificacionRows($control)
+	{   
+       return $this->generarModel->calificacionRows($control);
+    }
+
+    public function guardar($datos)
+    {
+        if ( $this->generarModel->esta_calificado( $datos['id_inscripcion'] ) ) {
+            return ["exito" => false, "msj" => "El alumno ya tiene una calificación."];
+        }
+
+        if ($this->generarModel->guardar($datos))
+            return ["exito" => true, "msj" => "Calificación asignada exitosamente."];
+        else
+            return ["exito" => false, "msj" => "Algo salio mal, intentalo de nuevo."];
+    }
 
 } 
