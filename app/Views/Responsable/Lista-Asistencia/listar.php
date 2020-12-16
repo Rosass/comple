@@ -72,9 +72,23 @@
       <strong>RESPONSABLE: </strong> <?php foreach($responsable as $r) : ?> 
          <?= $r->nombre?> <?= $r->apaterno?> <?= $r->amaterno?>
          <?php endforeach ?>
+<<<<<<< HEAD
          <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS:</strong> <strong><?= Count($alumnos) ?></strong></i>
 <div>    
 </div>  
+=======
+      <i class="a" style="margin-left: 278px;">  <strong>ALUMNOS: </strong> 
+</i>       
+      </p>
+      <div>
+      <?php 
+      date_default_timezone_set('America/Mexico_City');
+      $fecha=date("l F Y");
+      ?>
+
+      <?= $fecha ?>
+</div>   
+>>>>>>> ec0105451e71a30165ecedb7df5608f0f93554a0
    
       <table style="width:100%">
          <thead>

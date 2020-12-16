@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2020-12-10 00:12:35 --> Unable to connect to the database.
 #0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
 #1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
@@ -344,3 +345,402 @@ CRITICAL - 2020-12-10 22:11:18 --> Unparenthesized `a ? b : c ? d : e` is deprec
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+=======
+CRITICAL - 2020-12-10 00:07:44 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 162, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus(NULL)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 00:09:31 --> Undefined index: id_actividad
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 126, Array)
+#1 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(165): App\Services\Division\InscripcionService->actualizar('216', Array)
+#2 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus(Object(stdClass))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-10 00:13:06 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `num_con...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(176): App\Models\AlumnoModel->getAlumnoPorNoControl('161160176')
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(26): App\Services\Division\InscripcionService->unirRegistros(Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 00:15:08 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 150, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus(NULL)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 00:16:45 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 144, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus(NULL)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 00:28:40 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 138, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus(NULL)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 00:30:31 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 138, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus(NULL)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 00:45:54 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 162, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(158): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 00:47:06 --> Undefined index: id_actividad
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 126, Array)
+#1 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(164): App\Services\Division\InscripcionService->actualizar('216', Array)
+#2 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(158): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-10 00:50:54 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 162, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(158): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 00:53:13 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 162, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(158): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 00:59:34 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 162, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(158): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 01:41:07 --> date_default_timezone_get() expects exactly 0 parameters, 1 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_default_ti...', 'C:\\xampp\\htdocs...', 80, Array)
+#1 C:\xampp\htdocs\comple\app\Views\Responsable\Lista-Asistencia\listar.php(80): date_default_timezone_get('America/Mexico_...')
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Lis...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(40): view('Responsable/Lis...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 01:47:36 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\AsistenciaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Responsable\AsistenciaModel.php(57): App\Models\Responsable\AsistenciaModel->get_alumno('201160132')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(24): App\Models\Responsable\AsistenciaModel->get_actividad_alumno('11')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 01:47:58 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Responsable\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Responsable\AsistenciaModel.php(52): App\Models\Responsable\AsistenciaModel->get_inscripciones('11')
+#4 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(24): App\Models\Responsable\AsistenciaModel->get_actividad_alumno('11')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-10 02:04:15 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:17 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:19 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:20 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:21 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:22 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\PeriodoController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\PeriodoController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\PeriodoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:23 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\PeriodoController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\PeriodoController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\PeriodoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:24 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\PeriodoController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\PeriodoController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\PeriodoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:24 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:25 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:26 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 02:04:58 --> Undefined property: stdClass::$rfc_responsable
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 12:30:32 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\AsistenciaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 12:30:59 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 12:31:00 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 16:38:03 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 162, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 16:42:50 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 162, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 16:47:41 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 162, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 17:41:47 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 163, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 17:43:20 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 163, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 17:43:52 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 163, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 17:44:55 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 154, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 17:47:33 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 154, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('217')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 17:51:09 --> Trying to get property 'estatus' of non-object
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 154, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-10 17:57:31 --> Undefined index: id_actividad
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 118, Array)
+#1 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(157): App\Services\Division\InscripcionService->actualizar('216', Array)
+#2 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(159): App\Services\Division\InscripcionService->cambiarEstatus('216')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->cambiarEstatus()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-10 18:05:47 --> Undefined property: stdClass::$num_control
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 18:06:16 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 18:06:19 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 18:06:21 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 19:30:13 --> Undefined property: stdClass::$num_control
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 19:31:26 --> Undefined property: stdClass::$num_control
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 19:33:16 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 19:33:18 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 19:33:20 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 19:36:52 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-10 19:39:30 --> Undefined property: stdClass::$num_control
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+>>>>>>> ec0105451e71a30165ecedb7df5608f0f93554a0

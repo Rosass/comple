@@ -1,3 +1,75 @@
+<<<<<<< HEAD
+CRITICAL - 2020-12-08 20:29:21 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`per...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Alumno\HistorialModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): App\Models\Alumno\HistorialModel->getActividadesPorCalificacion('161160176 ')
+#4 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas('161160176 ')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-08 20:29:36 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`per...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Alumno\HistorialModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): App\Models\Alumno\HistorialModel->getActividadesPorCalificacion('161160176 ')
+#4 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas('161160176 ')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-08 23:17:03 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-08 23:24:55 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(30): view('Division/Inscri...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-08 23:25:47 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(30): view('Division/Inscri...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-08 23:32:19 --> Undefined property: stdClass::$num_control
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-08 23:35:29 --> Undefined property: stdClass::$id_tipo_usuario
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-08 23:35:57 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(30): view('Division/Inscri...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+=======
 CRITICAL - 2020-12-08 19:40:35 --> Unable to connect to the database.
 #0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
 #1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
@@ -751,3 +823,4 @@ CRITICAL - 2020-12-08 23:46:39 --> Unable to connect to the database.
 #7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #9 {main}
+>>>>>>> 82b6a08f622a3f0c4b32709cc6a8ce417f031ee2

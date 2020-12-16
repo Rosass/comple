@@ -70,7 +70,8 @@ $routes->post('division/inscripciones', 'Division/InscripcionController::getInsc
 $routes->post('division/inscripciones/agregar', 'Division/InscripcionController::guardar');
 $routes->get('division/inscripciones/editar/(:any)', 'Division/InscripcionController::editar');
 $routes->post('division/inscripciones/editar', 'Division/InscripcionController::actualizar');
-$routes->post('division/inscripciones/cambiar-estatus', 'Division/InscripcionController::cambiarEstatus');
+$routes->post('division/inscripciones/cambiar-estatus-aceptar', 'Division/InscripcionController::cambiarEstatusAceptar');
+$routes->post('division/inscripciones/cambiar-estatus-rechazar', 'Division/InscripcionController::cambiarEstatusRechazar');
 
 // Rutas [DIVISION-PERIODOS]
 $routes->get('division/periodos', 'Division/PeriodoController::index');

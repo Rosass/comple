@@ -44,13 +44,16 @@
                                 <td><?= $actividad['nombre']. " " . $actividad['apaterno'] . " " . $actividad['amaterno']  ?></td>
                                 <td><?= $actividad['horario'] ?></td>
                                 <td class="text-white">
-								<?php if($actividad['estatus'] == true) : ?>
-								    <span class="bg-danger p-1 rounded small">Solicitada</span>
-								<?php else : ?>
-								    <span class="bg-success p-1 rounded small">Aceptada</span>
-								<?php endif ?>
-							</td>
-                            
+								<?php if($actividad['estatus'] == 1) : ?>
+								<span class="bg-warning p-1 rounded small">Solicitada</span>
+                                    <?php endif ?>
+                                <?php if($actividad['estatus'] == 2) : ?>
+								<span class="bg-success p-1 rounded small">Aceptada</span>
+                                    <?php endif ?>
+                                <?php if($actividad['estatus'] == 0) : ?>
+								<span class="bg-danger p-1 rounded small">Rechasada</span>
+								    <?php endif ?>                                
+						    	</td>
                             </tr>
                             <?php endforeach ?>
                     </tbody>

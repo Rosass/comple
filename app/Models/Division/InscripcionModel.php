@@ -11,19 +11,14 @@ class InscripcionModel extends Model
     protected $returnType   = 'object';
     protected $table = 'inscripcion';
 
-    public function getInscripciones()
-	{   
-        
-    }
 
-    public function getInscripcionesPorEstatus($estatus)
+    public function getInscripciones()
 	{   
         return $this->db->table("inscripcion i")
         ->select("i.id_inscripcion, i.estatus, i.num_control, i.periodo, p.descripcion AS 'descripcion_periodo', i.telefono, i.fecha_inscripcion,
                   i.id_actividad, act.nombre_actividad")
         ->join("periodo p", "p.periodo = i.periodo")
         ->join("actividad act", "act.id_actividad = i.id_actividad")
-        ->where("i.estatus", $estatus)
         ->get()->getResult();
     }
     

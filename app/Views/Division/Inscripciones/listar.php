@@ -49,6 +49,7 @@
                             <th scope="col" class="border-top-0">ACTIVIDAD</th>
                             <th scope="col" class="border-top-0">TELEFONO</th>
                             <th scope="col" class="border-top-0">FECHA DE INSCRIPCIÓN</th>
+                            <th scope="col" class="border-top-0">ESTATUS</th>
                             <th scope="col" class="border-top-0"></th>
                         </tr>
                     </thead>
@@ -64,27 +65,35 @@
                                 <td><?= $inscripcion->nombre_actividad ?></td>
                                 <td><?= $inscripcion->telefono ?></td>
                                 <td><?= $inscripcion->fecha_inscripcion ?></td>
-                                <td style="width:20%;">
+                                <td class="text-white">
+								<?php if($inscripcion->estatus == 1) : ?>
+								<span class="bg-warning p-1 rounded small">Solicitada</span>
+                                    <?php endif ?>
+                                <?php if($inscripcion->estatus == 2) : ?>
+								<span class="bg-success p-1 rounded small">Aceptada</span>
+                                    <?php endif ?>
+                                <?php if($inscripcion->estatus == 0) : ?>
+								<span class="bg-danger p-1 rounded small">Rechasada</span>
+								<?php endif ?>                                 
+							</td>
+                                <td style="width:12%;">
                                     <div class="d-flex flex-column">
                                         <!--  Editar inscripción -->
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/inscripciones/editar/".$inscripcion->id_inscripcion) ?>"><i class="fas fa-pen"></i> Editar</a>
-                                        <!-- Eliminar inscripción -->
-                                        <?php if($inscripcion->estatus == true) : ?>
-                                            <form action="<?= base_url('division/inscripcion/cambiar-estatus') ?>" method="POST">
+                                        <!-- Aceptar inscripción -->
+                                        <?php if($inscripcion->estatus == 1) : ?>
+                                            <form action="<?= base_url('division/inscripciones/cambiar-estatus-aceptar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
-                                                <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check fa-ban"></i> Aceptar</button>
+                                                <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Aceptar</button>
                                             </form>
-                                        <?php else : ?>
-                                            <form action="<?= base_url('division/inscripcion/cambiar-estatus') ?>" method="POST">
+                                        <?php endif ?>
+                                        <!-- Rechazar inscripción -->
+                                        <?php if($inscripcion->estatus == 1) : ?>
+                                            <form action="<?= base_url('division/inscripciones/cambiar-estatus-rechazar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
                                                 <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Rechazar</button>
                                             </form>
                                         <?php endif ?>
-                                            <!-- <form action="<?= base_url('division/inscripciones/cambiar-estatus') ?>" method="POST">
-                                                <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
-                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-trash"></i> Eliminar</button>
-                                            </form>   -->                               
-                                    
                                     </div>
                                 </td>
                             </tr>
@@ -96,5 +105,5 @@
     </div>
 </div>
 
-<!-- Modal para agregar tipo de actividad-->
+<!-- Modal para agregar Inscripcion-->
 <?= view("Division/Inscripciones/agregar"); ?>

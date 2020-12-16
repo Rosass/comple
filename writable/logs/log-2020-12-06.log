@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+CRITICAL - 2020-12-06 19:39:40 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+=======
 CRITICAL - 2020-12-06 00:28:14 --> Call to a member function getActividadPorIdarea() on null
 #0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
 #1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
@@ -171,3 +180,4 @@ CRITICAL - 2020-12-06 01:56:06 --> Column 'id_area' in where clause is ambiguous
 #9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}
+>>>>>>> 82b6a08f622a3f0c4b32709cc6a8ce417f031ee2

@@ -20,7 +20,7 @@ class InscripcionController extends BaseController
 	{
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_DIVISION)
         {
-			$inscripciones = $this->inscripcionService->getInscripcionesPorEstatus(true);
+			$inscripciones = $this->inscripcionService->getInscripciones(true);
 			$periodos = $this->periodoService->getPeriodosPorEstatus(true);
 			$actividades = $this->actividadService->getActividadesPorEstatus(true);
 			$inscripciones_aux = $this->inscripcionService->unirRegistros($inscripciones);
@@ -151,12 +151,30 @@ class InscripcionController extends BaseController
         }
     }
 
-	public function cambiarEstatus()
+	public function cambiarEstatusAceptar()
     {
        
 		$id_inscripcion = $this->request->getPost('id_inscripcion');
 		
-       	$respuesta = $this->inscripcionService->cambiarEstatus($id_inscripcion);
+       	$respuesta = $this->inscripcionService->cambiarEstatusAceptar($id_inscripcion);
+
+        if($respuesta['exito'])
+        {
+            $this->session->setFlashdata('success', $respuesta['msj']);
+        }
+        else
+        {
+             $this->session->setFlashdata('error', $respuesta['msj']);
+        }
+        return redirect('division/inscripciones');
+    }
+
+	public function cambiarEstatusRechazar()
+    {
+       
+		$id_inscripcion = $this->request->getPost('id_inscripcion');
+		
+       	$respuesta = $this->inscripcionService->cambiarEstatusRechazar ($id_inscripcion);
 
         if($respuesta['exito'])
         {
