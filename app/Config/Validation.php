@@ -46,6 +46,7 @@ class Validation
 	];
 
 	public $editarResponsableReglas = [
+		'rfc_responsable' => 'required',
 		'nombre'     => 'required',
 		'apaterno'     => 'required',
 		'amaterno'     => 'required',
@@ -91,12 +92,12 @@ class Validation
 		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
 		'nombre_jefe'     => 'required',
 		'apaterno_jefe'     => 'required',
-		'telefono_jefe'     => 'min_length[10]|max_length[10]',
+		//'telefono_jefe'     => 'min_length[10]|max_length[10]',
         
 	];
 
 	public $editarJefeReglas = [
-		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
+		'rfc_jefe'     => 'min_length[13]|max_length[13]',
 		'nombre_jefe'     => 'required',
 		'apaterno_jefe'     => 'required',
 		'telefono_jefe'     => 'min_length[10]|max_length[10]',

@@ -20,3 +20,29 @@ CRITICAL - 2020-12-16 03:25:54 --> Unable to connect to the database.
 #7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2020-12-16 05:18:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0 = 'AAAAAAAAAAAAo', `rfc_jefe` = 'AAAAAAAAAAAAo', `nombre_jefe` = 'DR. ALEJANDR' at line 1
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `jefe` S...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `jefe` S...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `jefe` S...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `jefe` S...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Admin\JefeModel.php(32): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\comple\app\Services\Admin\JefeService.php(63): App\Models\Admin\JefeModel->actualizar('AAAAAAAAAAAAo', Array)
+#6 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(114): App\Services\Admin\JefeService->actualizar('AAAAAAAAAAAAo', Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->actualizar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-16 05:19:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0 = 'AAAAAAAAAAAAo', `rfc_jefe` = 'AAAAAAAAAAAAo', `nombre_jefe` = 'DR. ALEJANDR' at line 1
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `jefe` S...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `jefe` S...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `jefe` S...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `jefe` S...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Admin\JefeModel.php(32): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\comple\app\Services\Admin\JefeService.php(63): App\Models\Admin\JefeModel->actualizar('AAAAAAAAAAAAo', Array)
+#6 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(114): App\Services\Admin\JefeService->actualizar('AAAAAAAAAAAAo', Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->actualizar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
