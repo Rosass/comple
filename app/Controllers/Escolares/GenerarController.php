@@ -60,6 +60,7 @@ class GenerarController extends BaseController
         header('Content-Transfer-Encoding: binary');
 
         $dompdf->stream("Constancia Parcial -  ".$control." .pdf", array("Attachment" => 0));
+        exit();
 
 	}
 	public function constanciaLiberacion()
@@ -111,6 +112,7 @@ class GenerarController extends BaseController
 
     
             $dompdf->stream("Constancia liberacion- ".$control." .pdf", array("Attachment" => 0));
+            exit();
         
 
     }

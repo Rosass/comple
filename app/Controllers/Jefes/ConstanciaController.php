@@ -67,6 +67,7 @@ class ConstanciaController extends BaseController
         header('Content-Transfer-Encoding: binary');
 
         $dompdf->stream("Constancia Parcial -  ".$control." .pdf", array("Attachment" => 0));
+        exit();
 
 	}
 
