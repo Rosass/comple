@@ -1,5 +1,6 @@
 const inputNoControl = document.getElementById("inputNoControl");
 const BASE_URL = "http://localhost/comple/";
+//const URL_BASE = 'https://ac.pochutla.tecnm.mx/';
 const tbodyResult = document.getElementById("tbodyResult");
 
 
