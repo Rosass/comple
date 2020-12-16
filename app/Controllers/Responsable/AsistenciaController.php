@@ -82,7 +82,7 @@ class AsistenciaController extends BaseController
 			{
 				$dompdf = new Dompdf();
 				
-				$dompdf->loadHtml (view('Responsable/Lista-calificacion/listar', [
+				$dompdf->loadHtml (view('Responsable/Lista-Calificacion/listar', [
 					'alumnos' => $alumnos,
 					'actividad' => $actividad,
 					'responsable' => $responsable,
