@@ -17,9 +17,19 @@ class InscripcionController extends BaseController
 	{  
         if($num_control = $this->session->usuario_logueado->num_control)
         {
+        // $fecha = '2020-01-13';
+        // $newFecha = array();
+        // // 2020-01-13
+        // $dia = substr( $fecha, 8, 2);
+        // $mes = substr( $fecha, 5, 2);
+        // $anio = substr( $fecha, 0, 4);
+        // array_push( $newFecha, $anio, $mes, $dia);
+        // var_dump( $newFecha);
+        // return $newFecha;
             $num_control = $this->inscripcionService->getInscripcionPorAlumno($num_control);
             $actividades = $this->inscripcionService->getActividadesPorAlumno(true);           
             $periodos = $this->inscripcionService->getPeriodosPorEstatus(true);
+
 
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "inscripciones"]);
@@ -56,7 +66,7 @@ class InscripcionController extends BaseController
                 "id_actividad" => $this->request->getPost("id_actividad"),
                 "telefono" => $this->request->getPost("telefono") 
             ];
- 
+
             $respuesta =  $this->inscripcionService->guardar($datos);
 
             if($respuesta["exito"])

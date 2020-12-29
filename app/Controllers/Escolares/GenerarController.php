@@ -69,7 +69,7 @@ class GenerarController extends BaseController
         $control = $this->request->getPost('control');
         $folio = $this->request->getPost('folio');
         $alumno = $this->generarService->getAlumnoPorNoControl($control);
-        // $actividades = $this->generarService->getActividad($control);
+        $actividades = $this->generarService->getActividad($control);
         $calificacion = $this->generarService->calificacion($control);
         $calificacionRows = $this->generarService->calificacionRows($control);
         $promedio = round(((float)$calificacion->valor_numerico / (float)$calificacionRows->valor_numerico), 2);
@@ -81,7 +81,7 @@ class GenerarController extends BaseController
                 'alumno' => $alumno,
                 'folio' => $folio,
                 'control' => $control,
-                // 'actividades' => $actividades,
+                'actividades' => $actividades,
                 'calificacion' => $promedio,
                 'nivelDesempenio' => $nivel_desempenio
             ]));

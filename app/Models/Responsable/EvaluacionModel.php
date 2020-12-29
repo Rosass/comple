@@ -29,6 +29,14 @@ class EvaluacionModel extends Model
                     ->where('num_control', $num_control )
                     ->get()->getResult();
     }
+    public function get_actividad( $id_actividad )
+    {
+        return $this->db->table('actividad a')
+                    ->select('*')
+                    ->where('id_actividad', $id_actividad )
+                    ->get()->getResult();
+    }
+
 
     public function get_evaluacion_alumno( $num_control)
     {
@@ -44,7 +52,7 @@ class EvaluacionModel extends Model
                     'nombre' => $alm->nombre,
                     'ap_paterno' => $alm->ap_paterno,
                     'ap_materno' => $alm->ap_materno,
-                    //'valor_numerico' =>$act->valor_numerico
+                    
                 );
                 array_push($newArray, $resp);
             }

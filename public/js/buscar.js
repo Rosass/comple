@@ -77,14 +77,14 @@ const imprimirAlumno = alumno => {
 
 	
 	if ( promedioAlumno > 0 && promedioAlumno < 5 ) {
-		divAlerta.appendChild( botonModal( num_control.trim(), 'Contancia Parcial' ) );
+		divAlerta.appendChild( botonModal( num_control.trim(),  'Contancia Parcial' ) );
 		datosAlimno.appendChild( modal( num_control.trim(), 'escolares/generar-parcial' ) );
 		validaCampos();
 	} else if ( promedioAlumno >= 5 ) {
 		divAlerta.appendChild( botonModal( num_control.trim(), 'Contancia De Liberación' ) );
 		datosAlimno.appendChild( modal( num_control.trim(), 'escolares/generar-liberacion' ) );
 		validaCampos();
-
+		
 	}
 	datosAlimno.appendChild( divAlerta );
 

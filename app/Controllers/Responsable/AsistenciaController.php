@@ -24,6 +24,7 @@ class AsistenciaController extends BaseController
 			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad, 1);
 			$actividad = $this->asistenciaModel->get_actividad( $id_actividad );
 			$responsable = $this->asistenciaModel->get_responsable( $rfc_responsable );
+			//$area = $this->asistenciaModel->getArea($id_area);
 			//$contar = $this->asistenciaModel->get_inscripcion( $id_actividad );
 		
 			if(count($alumnos) > 0)
@@ -37,7 +38,7 @@ class AsistenciaController extends BaseController
 					'id_actividad' => $id_actividad,
 					'actividad' => $actividad,
 					'responsable' => $responsable,
-					//'contar' => $contar,    
+					//'areas' => $area,    
 					]));
 				// Se define el tamaño de la hoja para el ticket
 				$dompdf->setPaper('letter', 'portrait');

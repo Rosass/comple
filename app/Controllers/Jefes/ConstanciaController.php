@@ -21,7 +21,6 @@ class ConstanciaController extends BaseController
         
         $control = $this->request->getPost("ncontrol");
         $folio = $this->request->getPost('folio');
-        $frase = $this->request->getPost('frase');
         $id_actividad = $this->request->getPost('id_actividad');
         $actividades = $this->constanciaService->getActividad($control, $id_actividad);
         $alumno = $this->constanciaService->getAlumnoPorNoControl($control);
@@ -35,7 +34,6 @@ class ConstanciaController extends BaseController
         $dompdf->loadHtml (view('Jefes/Constancia/listar', [
             'alumno' => $alumno,
             'folio' => $folio,
-            'frase' => $frase,
             'control' => $control,
             'actividad' => $actividades,
             'id_actividad' => $id_actividad,

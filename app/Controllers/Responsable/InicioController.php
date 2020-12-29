@@ -16,7 +16,7 @@ class InicioController extends BaseController
 	{  
         if($rfc_responsable = $this->session->usuario_logueado->rfc_responsable)
         {
-            $actividades = $this->inicioService->getActividadesPorResponsable( $rfc_responsable ); 
+            $actividades = $this->inicioService->getActividadesPorResponsable( $rfc_responsable, true ); 
 
             echo view('Includes/header');
             echo view('Responsable/navbar', ["activo" => "actividades"]);

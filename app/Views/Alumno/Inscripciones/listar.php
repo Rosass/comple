@@ -35,6 +35,8 @@
                             <th scope="col" class="border-top-0">HORAS</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
                             <th scope="col" class="border-top-0">RESPONSABLE</th>
+        
+                            
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm" id="tbodyTablaInscripciones">

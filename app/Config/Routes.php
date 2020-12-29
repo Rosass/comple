@@ -161,6 +161,8 @@ $routes->post('escolares/generar-liberacion', 'Escolares/GenerarController::cons
 
 //Rutas [Jefes Area actividades]
 $routes->get('jefes/actividades', 'Jefes/AreaController::index');
+$routes->get('jefes/lista-asistencia/(:any)', 'Jefes/AsistenciaController::listaAsistencia');
+$routes->get('jefes/lista-calificacion/(:any)', 'Jefes/AsistenciaController::listaCalificacion');
 $routes->get('jefes/alumnos/(:any)', 'Jefes/AlumnoController::index');
 $routes->post('jefes/constancia', 'Jefes/ConstanciaController::constancia');
 

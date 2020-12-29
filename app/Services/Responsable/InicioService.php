@@ -15,9 +15,9 @@ class InicioService
      * Obtiene las actividades de la BD
      * @return object
      */
-    public function getActividadesPorResponsable($responsable)
+    public function getActividadesPorResponsable($responsable, $true)
 	{   
-       return $this->inicioModel->getActividadesPorResponsable($responsable);
+       return $this->inicioModel->getActividadesPorResponsable($responsable, $true);
     }
 
 }

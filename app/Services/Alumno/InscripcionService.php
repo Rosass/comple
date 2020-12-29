@@ -13,7 +13,7 @@ class InscripcionService
 
     public function getInscripcionPorAlumno($num_control)
 	{   
-       return $this->inscripcionModel->getInscripcionPorAlumno($num_control);
+    return $this->inscripcionModel->getInscripcionPorAlumno($num_control);
     }
     
     /**
@@ -22,7 +22,7 @@ class InscripcionService
      */
     public function getActividadesPorAlumno($alumnos)
 	{   
-       return $this->inscripcionModel->getActividadesPorAlumno($alumnos);
+    return $this->inscripcionModel->getActividadesPorAlumno($alumnos);
     }
     /**
      * Obtiene los periodos por estatus de la BD
@@ -46,10 +46,16 @@ class InscripcionService
      */
     public function guardar($datos)
     {
+        $periodo = $this->inscripcionModel->getPeriodosPorEstatus(true);
+
+        if ( !$this->valida_fecha( $periodo->fecha_inicio_inscripcion, $periodo->fecha_final_inscripcion) )
+        {
+            return ["exito" => false, "msj" => "Usted no puede inscribirse! La fecha de inscripciones expiró."];
+        }
+
         //* Esta validacion es para comprovar si existe el alumno para poder insertar
         $alumno = $this->inscripcionModel->get_alumno($datos['num_control']);
-        
-        
+
         if($alumno != NULL)
         {
             //* comprovar que no existe la inscripcion para despues poder insertar
@@ -109,4 +115,48 @@ class InscripcionService
         }
     }
 
+    /**
+     * *RETORNA TRUE SI ES POSIBLE LA INSCRIPCION - RESPETANDO EL RANGO DE FECHAS INICIO Y FIN DE LA INSCRIPCION
+     */
+
+    protected function valida_fecha( $fecha_inicio, $fecha_fin )
+    {
+        date_default_timezone_set('America/Mexico_City');
+        $fecha = getdate();
+        $mesServer = $fecha['mon'];
+        $anioServer = $fecha['year'];
+        $diaServer = $fecha['mday'];
+
+        // fecha in array = [0] = año, [1] = mes, [2] = dia
+        $fecha_incripcion_inicio = $this->sub_string_fecha( $fecha_inicio);
+        $fecha_incripcion_fin = $this->sub_string_fecha( $fecha_fin);
+
+
+        if ( ( $anioServer >= $fecha_incripcion_inicio[0] ) && ( $anioServer <= $fecha_incripcion_fin[0] ) )
+        {
+            if ( $anioServer < $fecha_incripcion_fin[0])
+            {
+                return true;
+            }
+            if ( ( $mesServer >= $fecha_incripcion_inicio[1] ) && ( $mesServer <= $fecha_incripcion_fin[1] ) )
+            {
+                if ( ( $diaServer >= $fecha_incripcion_inicio[2] ) && ( $diaServer <= $fecha_incripcion_fin[2] ) )
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    protected function sub_string_fecha( $fecha )
+    {
+        $newFecha = array();
+        $dia = substr( $fecha, 8, 2);
+        $mes = substr( $fecha, 5, 2);
+        $anio = substr( $fecha, 0, 4);
+        array_push( $newFecha, $anio, $mes, $dia);
+        return $newFecha;
+    }
 }

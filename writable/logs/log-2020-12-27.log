@@ -1,0 +1,51 @@
+CRITICAL - 2020-12-27 19:40:24 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(19): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160176')
+#4 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(30): App\Services\AlumnoLoginService->login('161160176', '6968')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-27 22:25:03 --> Trying to get property 'num_control' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-27 22:25:36 --> Undefined property: stdClass::$fecha
+#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inscripciones\listar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inscripc...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(29): view('Alumno/Inscripc...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-27 22:39:09 --> date_default_timezone_get() expects exactly 0 parameters, 1 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_default_ti...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(20): date_default_timezone_get('America/Mexico_...')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-27 23:30:08 --> Undefined property: App\Services\Alumno\InscripcionService::$inscripcionService
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(70): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-27 23:30:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 72, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

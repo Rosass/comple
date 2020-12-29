@@ -1,4 +1,8 @@
-<?php $session = session(); ?>
+<?php
+
+use PHPUnit\Framework\Constraint\Count;
+
+$session = session(); ?>
 <div class="container-fluid">
     <div class="row mt-5">
         <div class="col-md-12">
@@ -17,7 +21,7 @@
                 </div>
             <?php endif ?>
             <div class="form-group text-left mt-0 mb-3">
-              <a href="<?= base_url('jefes/actividades') ?>" class="btn btn-primary" class="text-muted text-decoration-none"><i class="far fa-arrow-alt-circle-left"></i> Regresar</a>
+            <a href="<?= base_url('jefes/actividades') ?>" class="btn btn-primary" class="text-muted text-decoration-none"><i class="far fa-arrow-alt-circle-left"></i> Regresar</a>
             </div>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
@@ -47,7 +51,9 @@
                                 <td><?= $alumno['valor_numerico'] ?></td> 
                                 <td><?= $alumno['nivel_desempeno'] ?></td> 
                                 <td style="width:8%;">  
-                                <?php if ( $alumno['valor_numerico'] ):?>
+                                <?php 
+                                if ( $alumno['valor_numerico'] >= 1)
+                                    :?>
                                     <div class="d-flex flex-column">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-<?=$alumno['num_control']?>">(PDF) Constancia</button>
                                     </div>
@@ -70,10 +76,6 @@
                                                             <label for="message-text" class="col-form-label">*Agrega el folio</label>
                                                             <input type="text" class="form-control" id="folio" name="folio" placeholder="FOLIO AQUI...">
                                                         </div>
-                                                        <div class="form-group">
-                                                            <label for="message-text" class="col-form-label">*Agrega la frase</label>
-                                                            <input type="text" class="form-control" id="frase" name="frase" placeholder="FRASE AQUI...">
-                                                        </div>
                                                         <input type="hidden" name="id_actividad" value="<?= $id_actividad?>">
                                                     </div>
                                                     <div class="modal-footer">
@@ -85,7 +87,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                <?php endif;?>
+                                <?php endif;?> 
+                                <?php 
+                                if ( $alumno['nivel_desempeno'] == 'Insuficiente') echo "<strong style='color: red;'>No Acreditado</strong>";
+                                ?>
+                                
                                 </td>
                             </tr>
                         <?php endforeach ?>

@@ -10,7 +10,7 @@ class AreaController extends BaseController
     function __construct()
     {
 		$this->areaService =  new \App\Services\Jefes\AreaService();
-		//$this->actividadService =  new \App\Services\Division\ActividadService();
+
 	}
 	
 	public function index()
@@ -18,7 +18,9 @@ class AreaController extends BaseController
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
         {
 			$id_area = $this->session->usuario_logueado->id_area;
-		    $actividades = $this->areaService->getActividadPorIdarea($id_area);
+			$actividades = $this->areaService->getActividadPorIdarea($id_area,true);
+			
+			
 
 			echo view('Includes/header');
 			echo view('Jefes/navbar', ["activo" => "actividades"]);
