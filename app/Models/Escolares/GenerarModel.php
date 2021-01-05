@@ -30,7 +30,6 @@ class GenerarModel extends Model
                         ->get()->getRow();
     }
 
-   
     public function calificacionRows( $control )
     {
         return $this->db->table('inscripcion a')
