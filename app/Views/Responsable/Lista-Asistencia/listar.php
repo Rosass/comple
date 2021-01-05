@@ -44,7 +44,7 @@
          <table  style="width:100%">
             <tr>
                <th><?php
-               $path = 'public/img/ISO.PNG'; 
+               $path = 'public/img/ISO.png'; 
                $type = pathinfo($path, PATHINFO_EXTENSION);
                $data = file_get_contents($path);
                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);

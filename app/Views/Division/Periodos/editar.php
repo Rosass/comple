@@ -43,10 +43,6 @@
                             <label for="fecha_final">FECHA FINAL INSCRIPCION (*)</label>
                             <input type="date" name="fecha_final_inscripcion" id="fecha_final_inscripcion" class="form-control" required value="<?= $periodo->fecha_final_inscripcion ?>">
                         </div>
-                        <div class="form-group">
-							<label for="frase_decreto">FRASE DECRETO(*)</label>
-							<input type="text" class="form-control " id="frase_decreto" name="frase_decreto" required value="<?= $periodo->frase_decreto ?>">
-						</div>
                         <small class="text-center">Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">
                             <div class="dropdown-divider"></div>
