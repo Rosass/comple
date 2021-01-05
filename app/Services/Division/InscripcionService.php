@@ -19,7 +19,7 @@ class InscripcionService
      */
     public function getInscripciones()
 	{   
-       return $this->inscripcionModel->getInscripciones();
+    return $this->inscripcionModel->getInscripciones();
     }
     
     /**
@@ -152,7 +152,7 @@ class InscripcionService
         {
             return ["exito" => false, "msj" => "Id de actividad no válido!."];
         }
-       
+    
     }
 
     public function cambiarEstatusAceptar($id_inscripcion)

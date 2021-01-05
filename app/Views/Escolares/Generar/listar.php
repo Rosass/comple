@@ -194,7 +194,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 <p>A petición del interesado y para los efectos a que haya lugar, se extiende la presente en la ciudad de San Pedro Pochutla, Oaxaca, a los <?=$date?> dias del mes de  <?php echo $meses[date('n')-1];?> del  <?=$date1?>.</p><br/>
 <P style="font-size:80%;"><strong>ATENTAMENTE</strong><br/>
 <strong> EXCELENCIA EN EDUCACIÓN TECNOLÓGICA</strong><br/>
-<strong>"Tecnologia y Ciencia como medios de independencia"</strong></P><br/><br/>
+<strong>"Tecnologia y Ciencia como medios de independencia"</strong></P><br/>
 <p style="font-size:80%;"><strong> ING.ALBERTO SALINAS SÁNCHEZ</strong><br/>
 <strong>JEFE DEL DEPTO. DE SERVICIOS ESCOLARES</strong></p>
 
