@@ -41,7 +41,7 @@ class InscripcionService
         else
         {
             // Se obtienen las inscripciones
-            $inscripciones = $this->inscripcionModel->getInscripcionesPorActividadYEstatus($id_actividad, $estatus, $periodo);
+            $inscripciones = $this->inscripcionModel->getInscripcionesPorActividadYEstatus($id_actividad, $estatus);
         }
         
         // Se unen las inscripciones con los datos del alumno obtenidos de la BD "alumnos"
