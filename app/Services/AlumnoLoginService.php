@@ -20,7 +20,7 @@ class AlumnoLoginService
 
         if($alumno_aux == null)
         {
-            return ['exito' => false, 'msj' => 'N. Control o nip inválidos.', 'redirigir_a' => 'loginalumno'];
+            return ['exito' => false, 'msj' => 'N. Control o NIP inválidos.', 'redirigir_a' => 'loginalumno'];
         }
         
         if($nip == $alumno_aux->nip )
@@ -35,7 +35,7 @@ class AlumnoLoginService
         }
         else 
         {
-            return ['exito' => false, 'msj' => 'N. Control o nip inválidos.', 'redirigir_a' => 'loginalumno'];
+            return ['exito' => false, 'msj' => 'N. Control o NIP inválidos.', 'redirigir_a' => 'loginalumno'];
         }
     }
     /**

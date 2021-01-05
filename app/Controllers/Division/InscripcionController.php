@@ -41,7 +41,7 @@ class InscripcionController extends BaseController
      * 
      * @return json
      */
-    public function getInscripcionesPorActividadYEstatus()
+    public function getInscripcionesPorActividadYEstatus($id_actividad, $estatus)
     {
         $id_actividad = $this->request->getPost("id_actividad");
         $inscripciones = $this->inscripcionService->getInscripcionesPorActividadYEstatus($id_actividad, true);
@@ -67,7 +67,8 @@ class InscripcionController extends BaseController
                 "num_control" => mb_strtoupper($this->request->getPost("num_control"), 'utf-8'),
                 "periodo" => $this->request->getPost("periodo"),
                 "id_actividad" => $this->request->getPost("id_actividad"),
-                "telefono" => $this->request->getPost("telefono") 
+                "telefono" => $this->request->getPost("telefono"),
+                "nota" => $this->request->getPost("nota") 
             ];
 
             $respuesta =  $this->inscripcionService->guardar($datos);
@@ -133,7 +134,7 @@ class InscripcionController extends BaseController
             $datos = [
                 "periodo" => $this->request->getPost("periodo"),
                 "id_actividad" => $this->request->getPost("id_actividad"),
-                 "telefono" => $this->request->getPost("telefono")
+                 "telefono" => $this->request->getPost("telefono"),
             ];
 
             $respuesta =  $this->inscripcionService->actualizar($id_inscripcion, $datos);

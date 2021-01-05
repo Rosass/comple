@@ -94,3 +94,48 @@ CRITICAL - 2020-12-16 06:42:34 --> Undefined variable: actividad
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2020-12-16 16:21:19 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Alumno\InscripcionModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(33): App\Models\Alumno\InscripcionModel->getPeriodosPorEstatus(true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(43): App\Services\Alumno\InscripcionService->getPeriodosPorEstatus(true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-16 16:21:43 --> Use of undefined constant fecha - assumed 'fecha' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InscripcionController.php(60): App\Services\Alumno\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-16 18:04:38 --> Column 'fecha_inicio_inscripcion' cannot be null
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `pe...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Division\PeriodoModel.php(31): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\comple\app\Services\Division\PeriodoService.php(49): App\Models\Division\PeriodoModel->guardar(Array)
+#6 C:\xampp\htdocs\comple\app\Controllers\Division\PeriodoController.php(60): App\Services\Division\PeriodoService->guardar(Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\PeriodoController->guardar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\PeriodoController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-16 18:10:21 --> Column 'fecha_inicio_inscripcion' cannot be null
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `pe...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Division\PeriodoModel.php(31): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\comple\app\Services\Division\PeriodoService.php(49): App\Models\Division\PeriodoModel->guardar(Array)
+#6 C:\xampp\htdocs\comple\app\Controllers\Division\PeriodoController.php(60): App\Services\Division\PeriodoService->guardar(Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\PeriodoController->guardar()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\PeriodoController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

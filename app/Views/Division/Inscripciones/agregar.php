@@ -14,7 +14,7 @@
                 <div class="col-md-3">
                     <div class="form-group">
                         <label for="num_control">NO CONTROL (*)</label>
-                        <input type="number" class="form-control text-uppercase" id="num_control" name="num_control" required value="<?= old("num_control") ?>" required>
+                        <input type="text" class="form-control text-uppercase" id="num_control" name="num_control" required value="<?= old("num_control") ?>" required>
                         <div class="invalid-feedback">
                             Por favor, rellena este campo
                         </div>
@@ -23,8 +23,8 @@
                 <div class="col-md-3">
                     <div class="form-group">
                         <label for="periodo">PERIODO (*)</label>
-                        <select class="custom-select" name="periodo" required>
-                            <option selected disabled value="">Elige un periodo</option>
+                        <select class="custom-select" name="periodo"  required>
+                            <option selected disabled zise="1">Elige un periodo</option>
                             <?php foreach($periodos as $key => $periodo) : ?>
                                 <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
                             <?php endforeach ?>
@@ -56,8 +56,12 @@
                     <div class="invalid-feedback">
                             Por favor, rellena este campo
                     </div>
-                </div>
+                </div>     
             </div>
+                    <div class="form-group" >
+                        <label for="nota">NOTA</label>
+                        <textarea class="form-control" id="nota" name="nota" rows="3" value="<?= old("nota") ?>"></textarea>
+                    </div>
             <small>Los campos marcados con (*) son obligatorios.</small>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

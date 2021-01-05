@@ -97,7 +97,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row justify-content-center">
+			<!-- 		<div class="row justify-content-center">
 						<div class="col-md-4">
 							<div class="form-group">
 								<label for="confirmar_clave">RESPONSABLE</label>
@@ -108,11 +108,11 @@
 									<?php endforeach ?>
 								</select>
 							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="form-group">
+						</div> -->
+						<div class="form-row justify-content-center">
+							<div class="form-group col-md-8">
 								<label for="horario">HORARIO</label>
-								<input type="horario" class="form-control text-uppercase" id="horario" name="horario"  value="<?= old("horario") ?>">
+								<input type="horario" placeholder="LUNES 09:00 A 10:OO AM; MIERCOLOES 15:00 A 17:00 PM; VIERNES 11:00 A 14:00 PM" class="form-control text-uppercase" id="horario" name="horario"  value="<?= old("horario") ?>">
 								<small>Los horarios debes separarlos por punto y coma ';'.</small>
 							</div>
 						</div>

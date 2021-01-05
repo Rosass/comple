@@ -1,0 +1,54 @@
+CRITICAL - 2021-01-03 01:00:06 --> Undefined variable: num_control
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(199): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 199, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->listaAlumnos()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-03 01:01:54 --> Too few arguments to function App\Models\Division\ActividadModel::get_telefono(), 0 passed in C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php on line 199 and exactly 1 expected
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(199): App\Models\Division\ActividadModel->get_telefono()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->listaAlumnos()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-03 01:03:17 --> Undefined variable: num_control
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(199): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 199, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->listaAlumnos()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-03 01:03:38 --> Too few arguments to function App\Models\Division\ActividadModel::get_telefono(), 0 passed in C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php on line 199 and exactly 1 expected
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(199): App\Models\Division\ActividadModel->get_telefono()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->listaAlumnos()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-03 01:11:04 --> Undefined variable: key
+#0 C:\xampp\htdocs\comple\app\Views\Division\Lista-Alumnos\listar.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 93, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Lista-...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(211): view('Division/Lista-...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->listaAlumnos()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-03 01:24:27 --> Undefined variable: tel
+#0 C:\xampp\htdocs\comple\app\Models\Division\ActividadModel.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 123, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(197): App\Models\Division\ActividadModel->get_actividad_alumno('11', '1')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->listaAlumnos()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-03 01:33:17 --> Undefined variable: newArray3
+#0 C:\xampp\htdocs\comple\app\Models\Division\ActividadModel.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(197): App\Models\Division\ActividadModel->get_actividad_alumno('11', '1')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->listaAlumnos()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

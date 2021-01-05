@@ -1,0 +1,66 @@
+CRITICAL - 2021-01-05 00:36:04 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Views\Division\Actividades\listar.php(87): view('Division/Activi...')
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(45): view('Division/Activi...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-05 00:36:15 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Views\Division\Actividades\listar.php(87): view('Division/Activi...')
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(45): view('Division/Activi...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-05 00:36:25 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Views\Division\Actividades\listar.php(87): view('Division/Activi...')
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(45): view('Division/Activi...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-05 00:36:37 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Views\Division\Actividades\listar.php(87): view('Division/Activi...')
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(45): view('Division/Activi...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-05 00:36:43 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Views\Division\Actividades\listar.php(87): view('Division/Activi...')
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(45): view('Division/Activi...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-05 00:39:28 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Views\Division\Actividades\listar.php(87): view('Division/Activi...')
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(45): view('Division/Activi...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

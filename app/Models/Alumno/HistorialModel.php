@@ -24,6 +24,8 @@ class HistorialModel extends Model
                         ->join('evaluacion_desempenio e', 'e.id_inscripcion = a.id_inscripcion', 'LEFT')
                         ->where('num_control',$alumnos)
                         ->where('valor_numerico > 0')
+                        ->orderBy("p.fecha_inicio", "ASC")
+                        ->orderBy("ta.nombre_actividad","ASC")
                         ->get()->getResult();
     }
 
@@ -36,7 +38,9 @@ class HistorialModel extends Model
                         ->join('actividad ta', 'ta.id_actividad = a.id_actividad', 'LEFT')
                         ->join('responsable r' , 'r.rfc_responsable = ta.rfc_responsable','LEFT')
                         ->join('tipo_actividad tac', 'tac.id_tipo_actividad = ta.id_tipo_actividad', 'LEFT')
-                        ->where('num_control', $alumnos)                      
+                        ->where('num_control', $alumnos)     
+                        ->orderBy("p.fecha_inicio", "ASC")
+                        ->orderBy("ta.nombre_actividad","ASC")                 
                         ->get()->getResult();
     }
 
