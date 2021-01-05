@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 CRITICAL - 2020-12-16 03:13:35 --> Trying to get property 'rfc_responsable' of non-object
 #0 C:\xampp\htdocs\comple\app\Controllers\Responsable\AsistenciaController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 21, Array)
 #1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\AsistenciaController->listaAsistencia()
@@ -43,35 +43,6 @@ CRITICAL - 2020-12-16 03:25:54 --> Unable to connect to the database.
 #7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #9 {main}
-<<<<<<< HEAD
-CRITICAL - 2020-12-16 05:18:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0 = 'AAAAAAAAAAAAo', `rfc_jefe` = 'AAAAAAAAAAAAo', `nombre_jefe` = 'DR. ALEJANDR' at line 1
-#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `jefe` S...')
-#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `jefe` S...')
-#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `jefe` S...')
-#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `jefe` S...', Array, false)
-#4 C:\xampp\htdocs\comple\app\Models\Admin\JefeModel.php(32): CodeIgniter\Database\BaseBuilder->update(Array)
-#5 C:\xampp\htdocs\comple\app\Services\Admin\JefeService.php(63): App\Models\Admin\JefeModel->actualizar('AAAAAAAAAAAAo', Array)
-#6 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(114): App\Services\Admin\JefeService->actualizar('AAAAAAAAAAAAo', Array)
-#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->actualizar()
-#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#11 {main}
-CRITICAL - 2020-12-16 05:19:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0 = 'AAAAAAAAAAAAo', `rfc_jefe` = 'AAAAAAAAAAAAo', `nombre_jefe` = 'DR. ALEJANDR' at line 1
-#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `jefe` S...')
-#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `jefe` S...')
-#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `jefe` S...')
-#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `jefe` S...', Array, false)
-#4 C:\xampp\htdocs\comple\app\Models\Admin\JefeModel.php(32): CodeIgniter\Database\BaseBuilder->update(Array)
-#5 C:\xampp\htdocs\comple\app\Services\Admin\JefeService.php(63): App\Models\Admin\JefeModel->actualizar('AAAAAAAAAAAAo', Array)
-#6 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(114): App\Services\Admin\JefeService->actualizar('AAAAAAAAAAAAo', Array)
-#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->actualizar()
-#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#11 {main}
-=======
->>>>>>> bda95cbc645214c86bb1c569ed45e25f9d6f44e5
 CRITICAL - 2020-12-16 04:27:20 --> Use of undefined constant ADMINISTRADOR - assumed 'ADMINISTRADOR' (this will throw an Error in a future version of PHP)
 #0 C:\xampp\htdocs\comple\app\Views\Admin\Areas\listar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 53, Array)
 #1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -122,7 +93,6 @@ CRITICAL - 2020-12-16 06:42:34 --> Undefined variable: actividad
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
->>>>>>> 6030f04605fd9c155ac549489ce7097618e8a827
 CRITICAL - 2020-12-16 12:34:02 --> Object of class stdClass could not be converted to string
 #0 C:\xampp\htdocs\comple\app\Controllers\Jefes\ResponsableController.php(19): array_unique(Array)
 #1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ResponsableController->index()
@@ -169,6 +139,7 @@ CRITICAL - 2020-12-16 13:13:33 --> Trying to get property 'rfc_responsable' of n
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
 CRITICAL - 2020-12-16 17:55:45 --> Column 'fecha_inicio_inscripcion' cannot be null
+>>>>>>> 246bc49fd5bcdc0d511749e88493fb610d69ce76
 #0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `pe...')
 #1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
 #2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
@@ -194,6 +165,8 @@ CRITICAL - 2020-12-16 17:56:22 --> Column 'fecha_inicio_inscripcion' cannot be n
 #9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}
+<<<<<<< HEAD
+=======
 CRITICAL - 2020-12-16 17:57:54 --> Column 'fecha_inicio_inscripcion' cannot be null
 #0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `pe...')
 #1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
@@ -220,3 +193,4 @@ CRITICAL - 2020-12-16 19:03:23 --> You have an error in your SQL syntax; check t
 #9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}
+

@@ -41,7 +41,7 @@ class InscripcionService
         else
         {
             // Se obtienen las inscripciones
-            $inscripciones = $this->inscripcionModel->getInscripcionesPorActividadYEstatus($id_actividad, $estatus);
+            $inscripciones = $this->inscripcionModel->getInscripcionesPorActividadYEstatus($id_actividad, $estatus, $periodo);
         }
         
         // Se unen las inscripciones con los datos del alumno obtenidos de la BD "alumnos"
@@ -159,7 +159,7 @@ class InscripcionService
     {
         $inscripcion = $this->inscripcionModel->getInscripcionPorId($id_inscripcion);
 
-        $nuevo_estatus = ($inscripcion->estatus == 1) ? 2 : 1;
+        $nuevo_estatus = ($inscripcion->estatus == 1) ? 2 : 2;
         $datos = [ 'estatus' => $nuevo_estatus ];
         return $this->actualizar($inscripcion->id_inscripcion, $datos);  
     }
@@ -168,7 +168,7 @@ class InscripcionService
     {
         $inscripcion = $this->inscripcionModel->getInscripcionPorId($id_inscripcion);
 
-        $nuevo_estatus = ($inscripcion->estatus == 1) ? 0 : 1;
+        $nuevo_estatus = ($inscripcion->estatus == 1) ? 0 : 0;
         $datos = [ 'estatus' => $nuevo_estatus ];
         return $this->actualizar($inscripcion->id_inscripcion, $datos);  
     }

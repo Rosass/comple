@@ -30,13 +30,14 @@ class InscripcionService
      */
     public function getPeriodosPorEstatus($true)
 	{   
-        return $this->inscripcionModel->getPeriodosPorEstatus($true);
+       return $this->inscripcionModel->getPeriodosPorEstatus($true);
     }
 
     /* public function periodo_activo()
 	{   
-        return $this->inscripcionModel->get_periodo_activo();
+       return $this->inscripcionModel->get_periodo_activo();
     } */
+
 
 
     /**
@@ -59,7 +60,7 @@ class InscripcionService
         if($alumno != NULL)
         {
             //* comprovar que no existe la inscripcion para despues poder insertar
-            $inscripcion = $this->inscripcionModel->get_inscripcion( $datos['num_control'],$datos['periodo'], $datos['id_actividad']);
+            $inscripcion = $this->inscripcionModel->get_inscripcion( $datos['num_control'], $datos['periodo'], $datos['id_actividad']);
             if($inscripcion == NULL)
             {
                 $creditos_inscripcion = $this->inscripcionModel->get_creditos_actividad_inscripcion($datos['num_control'], $datos['periodo']);
@@ -67,8 +68,6 @@ class InscripcionService
 
                 if ( $this->creditos_es_mayor_2( $creditos_actividad->creditos, $creditos_inscripcion->creditos ) ) 
                     return ["exito" => false, "msj" => "No puedes reunir más de dos creditos por semestre."];
-                if ( $this->esta_incrito_en_cultural_o_deportiva( $datos['num_control'], $datos['periodo'], $datos['id_actividad']) )
-                    return ["exito" => false, "msj" => "Es posible que el alumno ya está inscrito en una actividad CULTURAL o DEPORTIVA."];
                 if ($this->inscripcionModel->guardar($datos))
                     return ["exito" => true, "msj" => "Inscripción agregada con exito."];
                 else

@@ -13,7 +13,9 @@ class PeriodoModel extends Model
 
     public function getPeriodos()
 	{   
-        return $this->db->table($this->table)->select("*")->get()->getResult();
+        return $this->db->table($this->table)->select("*")
+        ->orderBy("fecha_inicio" , "ASC")
+        ->get()->getResult();
     }
 
     public function getPeriodosPorEstatus($estatus)

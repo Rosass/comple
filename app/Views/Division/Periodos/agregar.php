@@ -37,15 +37,15 @@
 				</div>
             </div>
             <div class="form-group">
-                <label for="fecha_final">FECHA INICIO INSCRIPCION (*)</label>
-                <input type="date" name="fecha_final" id="fecha_inicio_inscripcion" class="form-control" required>
+                <label for="fecha_inicio_inscripcion">FECHA INICIO INSCRIPCION (*)</label>
+                <input type="date" name="fecha_inicio_inscripcion" id="fecha_inicio_inscripcion" class="form-control" required>
                 <div class="invalid-feedback">
 					Por favor, rellena este campo
 				</div>
             </div>
             <div class="form-group">
-                <label for="fecha_final">FECHA FINAL INSCRIPCION (*)</label>
-                <input type="date" name="fecha_final" id="fecha_final_inscripcion" class="form-control" required>
+                <label for="fecha_final_inscripcion">FECHA FINAL INSCRIPCION (*)</label>
+                <input type="date" name="fecha_final_inscripcion" id="fecha_final_inscripcion" class="form-control" required>
                 <div class="invalid-feedback">
 					Por favor, rellena este campo
         </div>

@@ -37,7 +37,7 @@
                             <th scope="col" class="border-top-0">RESPONSABLE</th>
                             <th scope="col" class="border-top-0">HORAS</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
-                            <th scope="col" class="border-top-0">ESTATUS</th>
+                          
                             <th scope="col" class="border-top-0"></th>
                         </tr>
                     </thead>
@@ -55,15 +55,10 @@
                                 <td><?= $actividad->rfc_responsable ?></td>
                                 <td><?= $actividad->horas ?></td>
                                 <td><?= $actividad->horario ?></td>
-                                <td class="text-white">
-                                    <?php if($actividad->estatus == true) : ?>
-                                        <span class="bg-success p-1 rounded small">Activo</span>
-                                    <?php else : ?>
-                                        <span class="bg-danger p-1 rounded small">Inactivo</span>
-                                    <?php endif ?>
-                                </td>
-                                <td style="width:8%;">
+                               
+                                <td style="width:9%;">
                                     <div class="d-flex flex-column">
+                                    <a class="btn btn-info btn-sm btn-block mb-0"  href="<?= base_url("division/lista-alumnos/$actividad->id_actividad") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de Alumnos</a>
                                         <!--  Editar responsable-->
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/actividades/editar/".$actividad->id_actividad) ?>"><i class="fas fa-pen"></i> Editar</a>
                                         <?php if($actividad->estatus == true) : ?>
@@ -71,12 +66,12 @@
                                                 <input type="hidden" name="id_actividad" value="<?= $actividad->id_actividad ?>">
                                                 <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Inhabilitar</button>
                                             </form>
-                                        <?php else : ?>
+                                        <?php else : ?> 
                                             <form action="<?= base_url('division/actividades/cambiar-estatus') ?>" method="POST">
                                                 <input type="hidden" name="id_actividad" value="<?= $actividad->id_actividad ?>">
                                                 <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
                                             </form>
-                                        <?php endif ?>
+                                        <?php endif ?> 
                                     </div>
 							    </td>
                             </tr>

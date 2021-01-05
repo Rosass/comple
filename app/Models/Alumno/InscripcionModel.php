@@ -18,7 +18,8 @@ class InscripcionModel extends Model
                         ->join("periodo p", "p.periodo = a.periodo")
                         ->join('tipo_actividad t' , 't.id_tipo_actividad = a.id_tipo_actividad','LEFT')
                         ->join('responsable r' , 'r.rfc_responsable = a.rfc_responsable','LEFT')
-                        ->where('p.estatus', $true)
+                        ->where("p.estatus", true)
+                        ->orderBy("nombre_actividad", "ASC")
                         ->get()->getResult();
     }
 

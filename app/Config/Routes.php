@@ -63,6 +63,7 @@ $routes->post('division/actividades/agregar', 'Division/ActividadController::gua
 $routes->get('division/actividades/editar/(:any)', 'Division/ActividadController::editar');
 $routes->post('division/actividades/editar', 'Division/ActividadController::actualizar');
 $routes->post('division/actividades/cambiar-estatus', 'Division/ActividadController::cambiarEstatus');
+$routes->get('division/lista-alumnos/(:any)', 'Division/ActividadController::listaAlumnos');
 
 // Rutas [DIVISION-INSCRIPCIONES]
 $routes->get('division/inscripciones', 'Division/InscripcionController::index');

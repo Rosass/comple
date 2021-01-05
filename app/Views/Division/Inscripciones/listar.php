@@ -1,5 +1,5 @@
 <?php $session = session(); ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row mt-5">
         <div class="col-md-12">
             <!-- Mensajes de error -->
@@ -19,7 +19,6 @@
             <div class="text-right">
                 <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevaInscripcionModal"><i class="fas fa-plus"></i> Nueva inscripción</button>
             </div> 
-    
             <div class="row mb-3 mt-2 justify-content-end">
                 <div class="col-md-5 text-right d-flex align-items-center">
                     <span class="mr-2">Filtro </span>
@@ -49,6 +48,7 @@
                             <th scope="col" class="border-top-0">ACTIVIDAD</th>
                             <th scope="col" class="border-top-0">TELEFONO</th>
                             <th scope="col" class="border-top-0">FECHA DE INSCRIPCIÓN</th>
+                            <th scope="col" class="border-top-0">OBSERVACION</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
                             <th scope="col" class="border-top-0"></th>
                         </tr>
@@ -58,13 +58,14 @@
                             <tr>
                                 <th scope="row"><?= $key +1 ?></th>
                                 <td><?= $inscripcion->num_control ?></td>
-                                <td style="width:30%;"><?= $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno ?></td>
+                                <td style="width:15%;"><?= $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno ?></td>
                                 <td><?= $inscripcion->carrera?></td>
                                 <td><?= $inscripcion->semestre?></td>
                                 <td><?= $inscripcion->descripcion_periodo?></td>
                                 <td><?= $inscripcion->nombre_actividad ?></td>
                                 <td><?= $inscripcion->telefono ?></td>
                                 <td><?= $inscripcion->fecha_inscripcion ?></td>
+                                <td><?= $inscripcion->nota ?></td>
                                 <td class="text-white">
 								<?php if($inscripcion->estatus == 1) : ?>
 								<span class="bg-warning p-1 rounded small">Solicitada</span>
@@ -75,27 +76,27 @@
                                 <?php if($inscripcion->estatus == 0) : ?>
 								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
-							</td>
-                                <td style="width:12%;">
+							    </td>
+                                <td style="width:20%;">
                                     <div class="d-flex flex-column">
                                         <!--  Editar inscripción -->
                                         <?php if($inscripcion->estatus == true) : ?>
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/inscripciones/editar/".$inscripcion->id_inscripcion) ?>"><i class="fas fa-pen"></i> Editar</a>
                                         <?php endif ?>
                                         <!-- Aceptar inscripción -->
-                                        <?php if($inscripcion->estatus == 1) : ?>
+                                        
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-aceptar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
                                                 <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Aceptar</button>
                                             </form>
-                                        <?php endif ?>
+                                          
                                         <!-- Rechazar inscripción -->
-                                        <?php if($inscripcion->estatus == 1) : ?>
+                                       
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-rechazar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
                                                 <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Rechazar</button>
                                             </form>
-                                        <?php endif ?>
+                                            
                                     </div>
                                 </td>
                             </tr>
