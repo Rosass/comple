@@ -21,8 +21,8 @@ class InicioController extends BaseController
             $periodo = $this->inicioService->getPeriodo(); 
 
             echo view('Includes/header');
-            echo view('responsable/navbar', ["activo" => "actividades"]);
-            echo view('responsable/Actividades/listar', [				
+            echo view('Responsable/navbar', ["activo" => "actividades"]);
+            echo view('Responsable/Actividades/listar', [				
                 'actividades' => $actividades,	
                 'periodos' => $periodo			           			
                 ]);
@@ -50,8 +50,8 @@ class InicioController extends BaseController
 		$periodo = $this->inicioService->getPeriodo();
 		
 		echo view('Includes/header');
-		echo view('responsable/navbar', ["activo" => "actividades"]);
-		echo view('responsable/Actividades/listar', [				
+		echo view('Responsable/navbar', ["activo" => "actividades"]);
+		echo view('Responsable/Actividades/listar', [				
 			'actividades' => $actividades,
 			'responsables' => $rfc_responsable,
 			'periodos' => $periodo
