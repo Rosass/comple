@@ -21,10 +21,26 @@
     th{
     font-size:90%;
     }
+    #watermar{
+        position: fixed;
+
+        bottom: 18cm;
+        left: 1.5cm;
+        
+        width: 850px;
+        height: 70;
+        opacity: 0.09;
+        
+
+        z-index: -1000;
+
+    }
+
 </style>
 </head>
-<body>
+<body >
 <div>
+
 <?php
     $path = 'public/img/sepp.jpg'; 
     $type = pathinfo($path, PATHINFO_EXTENSION);
@@ -48,8 +64,18 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 ?>
 
     <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br/>
-    <p style="text-align:right; margin-top:1px;">Instituto Tecnológico de Pochutla</p><br/>
+    <p style="text-align:right; margin-top:1px;">Instituto Tecnológico de Pochutla</p>
     <p style=" margin-left:420px;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?> <strong>Folio:</strong> <?php echo $folio ?></p>
+</div>
+<div id="watermar">
+<?php
+    $path = 'public/img/estado.png'; 
+    $type = pathinfo($path, PATHINFO_EXTENSION);
+    $data = file_get_contents($path);
+    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+?>
+<img " style="width:70%;" src="<?= $base64 ?>"> 
+
 </div>
     <h5><strong>A QUIEN CORRESPONDA:</strong></h5>
     <P>Por este medio se hace constar que según documentos que existen en el archivo del Instituto Tecnólogico de Pochutla, clave 20DIT0011V el (la) C.</P>
@@ -78,7 +104,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 <p style="font-size:80%;"><strong> ING.ALBERTO SALINAS SÁNCHEZ</strong><br/>
 <strong>JEFE DEL DEPTO. DE SERVICIOS ESCOLARES</strong></p>
 
-    <p>c.c.p. Archivo.</p><br/><br/></br></br><br/>
+    <p>c.c.p. Archivo.</p><br/><br>
 
     <?php
         $path = 'public/img/logotec.png';
@@ -86,7 +112,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
         $data = file_get_contents($path);
         $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
     ?>
-    <img  style="width:10%;" align="left" src="<?= $base64 ?>"><br/><br/></br><br/>
+    <img  style="width:10%;" align="left" src="<?= $base64 ?>"><br/><br/><br>
     <p style="margin-left:130px; text-align:center;">k.m 5.35 Carretera San Pedro Pochutla-Puerto Ángel, Localidad El Colorado, C.P. 70902, San Pedro Pochutla, Oaxaca. E-mail: se_pochutla@tecnm.mx<br/>www.itpochutla.edu.mx</p>
 
 <!-- constancia parcial -->
@@ -112,7 +138,7 @@ $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
 $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
 
 ?>
-    <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br/>
+     <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br>
     <p style="text-align:right; margin-top:1px;">Instituto Tecnológico de Pochutla</p>
     <p style=" margin-left:428px;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?>  <strong> Folio:</strong> <?php echo $folio ?></p>
 </div>
@@ -172,7 +198,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 <p style="font-size:80%;"><strong> ING.ALBERTO SALINAS SÁNCHEZ</strong><br/>
 <strong>JEFE DEL DEPTO. DE SERVICIOS ESCOLARES</strong></p>
 
-    <p>c.c.p. Archivo.</p>
+    <p>c.c.p. Archivo.</p><br>
 <div>
 
     <?php

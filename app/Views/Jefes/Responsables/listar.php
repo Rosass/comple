@@ -23,7 +23,7 @@
 				</button>
 			</div>
 			<div class="table-responsive-sm text-center">
-				<table class="table table-hover table-light table-striped shadow-lg" id="tablaResponsables">
+				<table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
 					<thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
 						<tr>
 							<th scope="col" colspan="13" class="border-top-0">

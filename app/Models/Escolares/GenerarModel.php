@@ -41,7 +41,6 @@ class GenerarModel extends Model
                         ->get()->getRow();
     }
     
-   
     public function getActividad( $control )
     {
         return $this->db->table('inscripcion a')
@@ -53,17 +52,9 @@ class GenerarModel extends Model
                         ->join('tipo_actividad tac', 'tac.id_tipo_actividad = ta.id_tipo_actividad', 'LEFT')
                         ->join('evaluacion_desempenio e', 'e.id_inscripcion = a.id_inscripcion', 'LEFT')
                         ->where('num_control',$control)
-                        ->where('valor_numerico > 0')
+                        ->where('valor_numerico >= 1')
                         ->get()->getResult();
     }
 
-
-   /*  public function guardar($datos)
-    {
-        $this->db->table($this->table)->insert($datos);
-        return $this->db->affectedRows();
-    } */
-
-    
     
 } 

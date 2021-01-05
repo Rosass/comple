@@ -45,7 +45,7 @@ class InscripcionController extends BaseController
     {
         $id_actividad = $this->request->getPost("id_actividad");
         $inscripciones = $this->inscripcionService->getInscripcionesPorActividadYEstatus($id_actividad, true);
-       
+    
 		// Se devuelve el resultado en formato JSON
 		return json_encode($inscripciones);
     }
@@ -133,7 +133,7 @@ class InscripcionController extends BaseController
             $datos = [
                 "periodo" => $this->request->getPost("periodo"),
                 "id_actividad" => $this->request->getPost("id_actividad"),
-                 "telefono" => $this->request->getPost("telefono")
+                "telefono" => $this->request->getPost("telefono")
             ];
 
             $respuesta =  $this->inscripcionService->actualizar($id_inscripcion, $datos);

@@ -88,7 +88,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
                 <td > <?=$ac->actividad?></td>
                 <td > <?=$ac->tipo_actividad?></td>
                 <td ><?=$ac->credito?></td>
-                <td ><?=$ac->calificacion?></td>
+                <td ><?=$ac->calificacion ?></td>
                 <td ><?=$ac->nivel?></td>
             </tr>
         <?php endforeach ?>

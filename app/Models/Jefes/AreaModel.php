@@ -23,6 +23,49 @@ class AreaModel extends Model
         ->get()->getResult();
     }
 
+    public function getActividadPorIdareaPeriodo($id_area, $periodo)
+	{   
+        return $this->db->table('actividad a')
+        ->select('a.id_area,a.id_actividad, a.nombre_actividad, a.rfc_responsable, a.numero_dictamen, a.creditos, a.periodo, a.horas, a.horario, a.estatus, p.descripcion as periodo_descripcion , ta.nombre as tipo_actividad, r.nombre as nombre_responsable, r.apaterno as apaterno, r.amaterno as amaterno')
+        ->join('tipo_actividad ta', 'ta.id_tipo_actividad = a.id_tipo_actividad', 'INNER')
+        ->join('periodo p', 'p.periodo = a.periodo', 'INNER')
+        ->join('responsable r', 'r.rfc_responsable = a.rfc_responsable', 'LEFT')
+        ->where('id_area', $id_area)
+        ->where('a.periodo', $periodo)
+        ->get()->getResult();
+    }
+    public function get_responsable_area_y_sin_asignar($id_area)
+	{   
+        return $this->db->table('responsable res')
+                        ->select('rfc_responsable, nombre, apaterno, amaterno')
+                        ->where('estatus', 1)
+                        ->where("res.rfc_responsable NOT IN(SELECT rfc_responsable FROM actividad WHERE id_area != $id_area AND rfc_responsable !='')", null, false)
+                        ->get()->getResult();
+    }
+
+    public function actualizar( $id_actividad, $datos)
+    {
+        $this->db->table('actividad')->where("id_actividad", $id_actividad)->update($datos);
+        return $this->db->affectedRows();
+    }
+
+    public function getActividadPorId($id_actividad, $id_area)
+	{   
+        return $this->db->table('actividad')
+                        ->select("*")
+                        ->where("id_actividad", $id_actividad)
+                        ->where("id_area", $id_area)
+                        ->get()
+                        ->getRow();
+    }
+
+    public function getPeriodo()
+    {
+        return $this->db->table('periodo')
+        ->select("*")
+        ->orderBy("periodo", "ASC")
+        ->get()->getResult();
+    }
     
 
 }

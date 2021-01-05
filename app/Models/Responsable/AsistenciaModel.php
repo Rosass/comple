@@ -33,8 +33,9 @@ class AsistenciaModel extends Model
     public function get_actividad( $id_actividad )
     {
         return $this->db->table('actividad a')
-                    ->select('a.id_actividad,a.id_area,a.nombre_actividad, p.descripcion as descripcion, ta.nombre as tipo_actividad, ar.nombre_area as nombre_area')
+                    ->select('a.id_actividad,a.id_area,a.nombre_actividad, a.rfc_responsable, p.descripcion as descripcion, ta.nombre as tipo_actividad, ar.nombre_area as nombre_area, j.nombre_jefe as nombre_jefe, j.apaterno_jefe as apaterno_jefe, j.amaterno_jefe as amaterno_jefe')
                     ->join('area ar', 'ar.id_area = a.id_area', 'INNER')
+                    ->join('jefe j', 'j.rfc_jefe = ar.rfc_jefe', 'INNER')
                     ->join('tipo_actividad ta', 'ta.id_tipo_actividad = a.id_tipo_actividad', 'INNER')
                     ->join('periodo p', 'p.periodo = a.periodo', 'INNER')
                     ->where('id_actividad', $id_actividad )
@@ -48,17 +49,6 @@ class AsistenciaModel extends Model
                     ->where('rfc_responsable', $rfc_responsable )
                     ->get()->getResult();
     }
-
-  /*   public function getArea($id_area)
-	{   
-        return $this->db->table("area a")
-            ->select("a.id_area, a.nombre_area, a.rfc_jefe, j.nombre_jefe AS 'nombre_jefe', j.apaterno_jefe AS 'apaterno_jefe',j.amaterno_jefe AS 'amaterno_jefe', a.estatus")
-            ->join('jefe j', 'j.rfc_jefe = a.rfc_jefe', 'LEFT')
-            ->where("id_area", $id_area)
-            ->get()->getResult();
-    }
- */
-
 
     public function get_actividad_alumno( $id_actividad, $estatus)
     {

@@ -48,6 +48,12 @@
                 <input type="date" name="fecha_final" id="fecha_final_inscripcion" class="form-control" required>
                 <div class="invalid-feedback">
 					Por favor, rellena este campo
+        </div>
+        <div class="form-group">
+                <label for="frase_decreto">FRASE DECRETO (*)</label>
+                <input type="text" name="frase_decreto" id="frase_decreto" class="form-control" required>
+                <div class="invalid-feedback">
+					Por favor, rellena este campo
 				</div>
             </div>
             <small class="text-center">Los campos marcados con (*) son obligatorios.</small>

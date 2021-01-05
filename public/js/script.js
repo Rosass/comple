@@ -5,6 +5,7 @@ $(document).ready(function(){
 	const selectActividad = document.getElementById('selectActividad');
 	const tbodyTablaInscripciones = document.getElementById('tbodyTablaInscripciones');
 	
+	
     const traduccion_datatable_esp = {
 		"sProcessing": "Procesando...",
 		"sLengthMenu": "Mostrar _MENU_",
@@ -39,12 +40,12 @@ $(document).ready(function(){
 		$('#tablaInscripciones').DataTable().clear().destroy();
 
 		// Se añade el spinner de cargando
-		tbodyTablaInscripciones.innerHTML = `<tr>
-												<td colspan="9">
-													<div class="text-center"><div class="spinner-border text-primary" role="status"></div></div>
-												</td>
-                            				</tr>`;
-                            				
+		tbodyTablaInscripciones.innerHTML = 
+		`<tr>
+			<td colspan="9">
+			<div class="text-center"><div class="spinner-border text-primary" role="status"></div></div>
+			</td>
+        </tr>`;
         // Se hace la consulta al servidor mediante Fetch
 		fetch(URL_BASE + 'division/inscripciones',{method: "POST", headers:{"X-Requested-With": "XMLHttpRequest"}, body: data})
 		.then(function (response)
@@ -62,5 +63,7 @@ $(document).ready(function(){
 		})
 		.catch(error => console.log(error));
 	});
+
+	
 })
 

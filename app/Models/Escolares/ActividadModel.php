@@ -31,7 +31,7 @@ class ActividadModel extends Model
                         ->join('tipo_actividad tac', 'tac.id_tipo_actividad = ta.id_tipo_actividad', 'LEFT')
                         ->join('evaluacion_desempenio e', 'e.id_inscripcion = a.id_inscripcion', 'LEFT')
                         ->where('num_control',$no_control)
-                        ->where('valor_numerico > 0')
+                        ->where('valor_numerico >= 1')
                         ->get()->getResult();
     } 
     

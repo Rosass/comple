@@ -1,0 +1,389 @@
+CRITICAL - 2021-01-04 13:02:27 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('201160074', '12')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(25): App\Services\Jefes\ConstanciaService->getActividad('201160074', '12')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 13:03:53 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('201160074', '12')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(25): App\Services\Jefes\ConstanciaService->getActividad('201160074', '12')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 13:04:20 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('201160074', '12')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(25): App\Services\Jefes\ConstanciaService->getActividad('201160074', '12')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 13:05:43 --> Trying to get property 'id_area' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-04 13:26:47 --> Undefined variable: peridos
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Actividades\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Actividad...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(32): view('Jefes/Actividad...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 15:45:06 --> 
+#0 C:\xampp\htdocs\comple\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\comple\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(46): redirect('efes/actividade...')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->periodo()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 16:20:52 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea('2', true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(21): App\Services\Jefes\AreaService->getActividadPorIdarea('2', true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 16:28:04 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea('2', true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(21): App\Services\Jefes\AreaService->getActividadPorIdarea('2', true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 16:28:12 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea('2', true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(21): App\Services\Jefes\AreaService->getActividadPorIdarea('2', true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 16:28:46 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea('2', true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(21): App\Services\Jefes\AreaService->getActividadPorIdarea('2', true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 16:29:07 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea('2', true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(21): App\Services\Jefes\AreaService->getActividadPorIdarea('2', true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 16:29:11 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea('2', true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(21): App\Services\Jefes\AreaService->getActividadPorIdarea('2', true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 16:29:36 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea('2', true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(21): App\Services\Jefes\AreaService->getActividadPorIdarea('2', true)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 17:56:39 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\comple\app\Views\Division\Actividades\agregar.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Views\Jefes\Actividades\listar.php(115): view('Division/Activi...')
+#4 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Actividad...', Array, true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(62): view('Jefes/Actividad...', Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->periodo()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-04 17:58:17 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\comple\app\Views\Division\Actividades\agregar.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Activi...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Views\Jefes\Actividades\listar.php(113): view('Division/Activi...')
+#4 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Actividad...', Array, true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(62): view('Jefes/Actividad...', Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->periodo()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-04 18:21:43 --> Undefined variable: periodos
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Actividades\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Actividad...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(31): view('Jefes/Actividad...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 18:23:02 --> Undefined variable: periodos
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Actividades\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Actividad...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(31): view('Jefes/Actividad...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 18:23:17 --> Undefined variable: periodos
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Actividades\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Actividad...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(31): view('Jefes/Actividad...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 18:32:02 --> Undefined variable: periodo
+#0 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-04 18:32:21 --> Undefined variable: periodo
+#0 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-04 18:34:04 --> Call to undefined method App\Services\Jefes\AreaService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-04 18:34:44 --> Undefined variable: periodos
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Actividades\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Actividad...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(31): view('Jefes/Actividad...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 18:38:11 --> Undefined variable: periodos
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Actividades\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Actividad...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(61): view('Jefes/Actividad...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->periodo()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 18:54:40 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('201160074', '12')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(25): App\Services\Jefes\ConstanciaService->getActividad('201160074', '12')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-04 21:01:45 --> Undefined variable: periodos
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Actividades\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Act...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(24): view('Responsable/Act...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 21:14:45 --> Undefined property: stdClass::$id_area
+#0 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->periodo()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-04 21:16:59 --> Undefined property: stdClass::$usuario
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/navbar', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(51): view('Jefes/navbar', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->periodo()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 21:18:52 --> Undefined property: stdClass::$usuario
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/navbar', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(52): view('Jefes/navbar', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->periodo()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 21:26:25 --> Undefined property: stdClass::$usuario
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/navbar', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(52): view('Jefes/navbar', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->periodo()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-04 21:47:15 --> 
+#0 C:\xampp\htdocs\comple\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\comple\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(46): redirect('responsable/ini...')
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->periodo()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:48:43 --> Archivo inválido: Responsables/navbar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/na...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/na...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(53): view('Responsables/na...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->periodo()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:48:58 --> Archivo inválido: Responsables/navbar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/na...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/na...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(53): view('Responsables/na...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->periodo()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:49:15 --> Archivo inválido: Responsables/Actividades/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/Ac...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/Ac...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(57): view('Responsables/Ac...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->periodo()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:51:34 --> Archivo inválido: responsables/actividades/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('responsables/ac...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('responsables/ac...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(27): view('responsables/ac...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:51:47 --> Archivo inválido: responsables/Actividades/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('responsables/Ac...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('responsables/Ac...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(27): view('responsables/Ac...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:52:00 --> Archivo inválido: Responsables/Actividades/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/Ac...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/Ac...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(27): view('Responsables/Ac...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:52:17 --> Archivo inválido: Responsables/Actividades/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/Ac...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/Ac...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(27): view('Responsables/Ac...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:52:43 --> Archivo inválido: Responsables/Actividades/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/Ac...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/Ac...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(27): view('Responsables/Ac...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:53:54 --> Archivo inválido: responsables/actividades/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('responsables/ac...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('responsables/ac...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(27): view('responsables/ac...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-04 21:54:29 --> Archivo inválido: Responsables/Actividades/listar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Responsables/Ac...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsables/Ac...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(27): view('Responsables/Ac...', Array)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

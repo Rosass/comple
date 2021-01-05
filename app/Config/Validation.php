@@ -62,7 +62,8 @@ class Validation
 	public $periodoReglas = [
 		'periodo'     => 'required|numeric',
 		'fecha_inicio'     => 'required|valid_date',
-		'fecha_final'     => 'required|valid_date'
+		'fecha_final'     => 'required|valid_date',
+		'frase_decreto'     => 'required',
 	];
 
 	public $actividadReglas = [

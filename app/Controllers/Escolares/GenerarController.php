@@ -19,13 +19,11 @@ class GenerarController extends BaseController
 	public function constanciaParcial()
 	{
         
-       
         $control = $this->request->getPost("control");
         $folio = $this->request->getPost('folio');
         $alumno = $this->generarService->getAlumnoPorNoControl($control);
         $actividades = $this->generarService->getActividad($control);
 
-       
 
         $dompdf = new Dompdf();
     
@@ -46,7 +44,7 @@ class GenerarController extends BaseController
 
         $imageURL = 'public/img/estado.png';
         $imgWidth = 450;
-        $imgHeight = 450;
+        $imgHeight = 440;
 
         $canvas->set_opacity(0.09);
 
@@ -85,27 +83,12 @@ class GenerarController extends BaseController
                 'calificacion' => $promedio,
                 'nivelDesempenio' => $nivel_desempenio
             ]));
+            
             $dompdf->setPaper('letter', 'portrait');
             // Se renderiza el HTML como PDF
             $dompdf->render();
             // Se muestra el PDF generado en el Browser
-            $canvas = $dompdf->getCanvas();
-
-            $w = $canvas->get_width();
-            $h = $canvas->get_height();
-
-            $imageURL = 'public/img/estado.png';
-            $imgWidth = 450;
-            $imgHeight = 450;
-
-            $canvas->set_opacity(0.09);
-
-            $x = (($w-$imgWidth)/2);
-            $y = (($h-$imgHeight)/2);
-
-            $canvas->image($imageURL,$x,$y,$imgWidth,$imgHeight);
-
-        
+                    
             header('Content-type: application/pdf');
             header('Content-Disposition: inline; filename="document.pdf"');
             header('Content-Transfer-Encoding: binary');

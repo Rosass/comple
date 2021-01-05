@@ -73,7 +73,7 @@
 								<span class="bg-success p-1 rounded small">Aceptada</span>
                                     <?php endif ?>
                                 <?php if($inscripcion->estatus == 0) : ?>
-								<span class="bg-danger p-1 rounded small">Rechasada</span>
+								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
 							</td>
                                 <td style="width:12%;">

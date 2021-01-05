@@ -131,6 +131,7 @@ $routes->post('responsable/logout', 'ResponsableLoginController::logout');
 
 // Rutas [Responsables]
 $routes->get('responsables/inicio', 'Responsable/InicioController::index');
+$routes->post('responsables/inicio/periodo', 'Responsable/InicioController::periodo');
 $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionController::index');
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
@@ -161,6 +162,8 @@ $routes->post('escolares/generar-liberacion', 'Escolares/GenerarController::cons
 
 //Rutas [Jefes Area actividades]
 $routes->get('jefes/actividades', 'Jefes/AreaController::index');
+$routes->post('jefes/actividades/periodo', 'Jefes/AreaController::periodo');
+$routes->post('jefes/actividades/agregar', 'Jefes/AreaController::guardar');
 $routes->get('jefes/lista-asistencia/(:any)', 'Jefes/AsistenciaController::listaAsistencia');
 $routes->get('jefes/lista-calificacion/(:any)', 'Jefes/AsistenciaController::listaCalificacion');
 $routes->get('jefes/alumnos/(:any)', 'Jefes/AlumnoController::index');

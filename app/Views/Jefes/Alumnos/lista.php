@@ -1,7 +1,4 @@
 <?php
-
-use PHPUnit\Framework\Constraint\Count;
-
 $session = session(); ?>
 <div class="container-fluid">
     <div class="row mt-5">
@@ -22,6 +19,10 @@ $session = session(); ?>
             <?php endif ?>
             <div class="form-group text-left mt-0 mb-3">
             <a href="<?= base_url('jefes/actividades') ?>" class="btn btn-primary" class="text-muted text-decoration-none"><i class="far fa-arrow-alt-circle-left"></i> Regresar</a>
+            </div>
+            <div class="alert alert-success">
+                <p>Hombres: <span class="font-weight-bold"><?= $hombres?></span></p>
+                <p>Mujeres: <span class="font-weight-bold"><?= $mujeres?></span></p>
             </div>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
@@ -60,13 +61,13 @@ $session = session(); ?>
                                     <div class="modal fade" id="modal-<?=$alumno['num_control']?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header bg-color-tec-blue text-white">
                                                     <h5 class="modal-title" id="exampleModalLabel">Constancia</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                <form action="<?= base_url("jefes/constancia") ?>" method="POST">
+                                                <form action="<?= base_url("jefes/constancia") ?>" method="POST" target="_blank">
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label for="recipient-name" class="col-form-label">* N° control</label>
@@ -80,8 +81,8 @@ $session = session(); ?>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                                        <button type="submit" class="btn btn-primary">PDF</button>
-                                                        <!-- <a type="button" class="btn btn-"  target="_blank" href=""><i class="fas fa-file-pdf"></i>Generar PDF</a> -->
+                                                        <button type="submit"  target="_blank" href="" class="btn btn-primary"><i class="fas fa-file-pdf"></i>PDF</button>
+                                                        <!-- <a type="button" class="btn btn-"  target="_blank" href=""><i class="fas fa-file-pdf"></i>Generar PDF</a>  -->
                                                     </div>
                                                 </form>
                                             </div>

@@ -33,6 +33,7 @@
                             <th scope="col" class="border-top-0">FECHA FIN</th>
                             <th scope="col" class="border-top-0">FECHA INICIO INSCRIPCION</th>
                             <th scope="col" class="border-top-0">FECHA FINAL INSCRIPCION</th>
+                            <th scope="col" class="border-top-0">FRASE DECRETO</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
                             <th scope="col" class="border-top-0"></th>
                         </tr>
@@ -47,13 +48,14 @@
                                 <td><?= $periodo->fecha_final ?></td>
                                 <td><?= $periodo->fecha_inicio_inscripcion ?></td>
                                 <td><?= $periodo->fecha_final_inscripcion ?></td>
+                                <td><?= $periodo->frase_decreto ?></td>
                                 <td class="text-white">
                                     <?php if($periodo->estatus == true) : ?>
                                         <span class="bg-success p-1 rounded small">Activo</span>
                                     <?php else : ?>
                                         <span class="bg-danger p-1 rounded small">Inactivo</span>
                                     <?php endif ?>
-							    </td>
+							</td>
                                 <td style="width:12%;">
                                     <div class="d-flex flex-column">
                                         <!--  Editar tipo-->

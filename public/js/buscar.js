@@ -86,6 +86,7 @@ const imprimirAlumno = alumno => {
 		validaCampos();
 		
 	}
+	
 	datosAlimno.appendChild( divAlerta );
 
 	// eventoFormularioModal();
@@ -96,18 +97,18 @@ const imprimirActividades = actividades => {
 	let index = 1;
 	actividades.data.forEach( activ => {
 		const tr = document.createElement('tr');
-		const { credito, actividad, nombre, apaterno, amaterno, calificacion, horario, tipo_actividad, periodo, hora} = activ;
+		const { credito, actividad, nombre, apaterno, amaterno, calificacion, horario, tipo_actividad, periodo_descripcion, hora} = activ;
 		promedioAlumno += Number(credito);
 		tr.innerHTML = `
 			<td>${ index }</td>
-			<td>${ periodo }</td>
+			<td>${ periodo_descripcion }</td>
 			<td>${ actividad }</td>
 			<td>${tipo_actividad }</td>
 			<td>${credito }</td>
 			<td>${hora}</td>
 			<td>${ horario }</td>
 			<td>${ nombre } ${ apaterno} ${ amaterno }</td>
-			<td>${ calificacion}</td>
+			<td>${ ( calificacion >= 1 ) ? calificacion : "" }</td>
 		`;
 		tbodyResult.appendChild( tr );
 		index++;
@@ -185,6 +186,7 @@ const modal = ( noControl, ruta ) => {
 	formulario.id = 'formulario-modal';
 	formulario.setAttribute('method', 'POST')
 	formulario.setAttribute('action', BASE_URL + ruta);
+	formulario.setAttribute('target', '_blank');
 
     // Header del modal
     const modalHeader = document.createElement('div');
