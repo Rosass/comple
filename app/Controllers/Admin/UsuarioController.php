@@ -118,7 +118,7 @@ class UsuarioController extends BaseController
             $usuario = $this->request->getPost("usuario");
 
             $datos = [
-                "usuario" => strtoupper($this->request->getPost("usuario")),
+                "usuario" => ($this->request->getPost("usuario")),
                 "id_tipo_usuario" => $this->request->getPost("id_tipo_usuario"),
                 "id_area" => $this->request->getPost("id_area"),
             ];

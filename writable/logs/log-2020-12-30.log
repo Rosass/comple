@@ -1,0 +1,32 @@
+CRITICAL - 2020-12-30 01:57:13 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('201160074', '12')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(25): App\Services\Jefes\ConstanciaService->getActividad('201160074', '12')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-30 01:57:28 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('201160074', '12')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(25): App\Services\Jefes\ConstanciaService->getActividad('201160074', '12')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-30 13:45:53 --> Undefined variable: fecha
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Lista-Asistencia\listar.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 94, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Lista-Asi...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(40): view('Jefes/Lista-Asi...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

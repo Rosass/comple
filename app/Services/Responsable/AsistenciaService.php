@@ -15,9 +15,27 @@ class AsistenciaService
      * Obtiene las actividades de la BD
      * @return object
      */
-    public function getAlumnos($num_control)
+    public function get_actividad_alumno($id_actividad, $true)
 	{   
-       return $this->inicioModel->getAlumnos($num_control);
+       return $this->asistenciaModel->get_actividad_alumno($id_actividad, $true);
+    }
+
+     /**
+     * Obtiene las actividades de la BD
+     * @return object
+     */
+    public function get_actividad($id_actividad)
+	{   
+    return $this->asistenciaModel->get_actividad($id_actividad);
+    }
+
+    /**
+     * Obtiene las actividades de la BD
+     * @return object
+     */
+    public function get_responsable($rfc_responsable)
+	{   
+    return $this->asistenciaModel->get_responsable($rfc_responsable);
     }
 
     

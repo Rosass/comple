@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Constancia Parcial</title>
     <style type="text/css">
     table ,th,td{
@@ -89,7 +88,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
                 <td > <?=$ac->actividad?></td>
                 <td > <?=$ac->tipo_actividad?></td>
                 <td ><?=$ac->credito?></td>
-                <td ><?=$ac->calificacion?></td>
+                <td ><?=$ac->calificacion ?></td>
                 <td ><?=$ac->nivel?></td>
             </tr>
         <?php endforeach ?>

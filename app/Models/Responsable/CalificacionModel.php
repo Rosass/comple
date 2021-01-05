@@ -64,6 +64,7 @@ class CalificacionModel extends Model
                     'ap_materno' => $alm->ap_materno,
                     'carrera' => $alm->carrera,
                     'semestre' => $alm->semestre,
+                    'sexo' => $alm->sexo,
                     'valor_numerico' =>$act->valor_numerico,
                     'nivel_desempeno' =>$act->nivel_desempeno,
                     

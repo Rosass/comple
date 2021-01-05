@@ -19,23 +19,7 @@ class AlumnoModel extends Model
         ->where('act.id_actividad', $id_actividad)
         ->get()->getResult();
     }
-    /** 
-     * * 1- Obtener alumno con parametro  num_control
-     * * 2. Crear nuevo metodo - Inicializar arreglo vacio
-     * * 3.- Iterar sobre las incripciones 
-     * * 4.- crear variable num_control
-     * * 5.- Invocar get_alumnos con prametro num_control
-     * * 6.- iterar sobre alumno
-     * * 7.- cuardar datos de alumnos 
-     * * 8.- Retornar nuevo arreglo
-     * datos a jalar
-     * *1.- num_control
-     * *2.- Nombre y apellidos del alumno
-     * *3.- carrera
-     * *4.- semestre
-     * *5.- calificacion pero este lo jalare despues por que me falta hacer esta vista
-     * 
-    */
+    
     public function get_alumno( $num_control )
     {
         $db_alumnos = db_connect('alumnos_db');
@@ -64,10 +48,10 @@ class AlumnoModel extends Model
                     'ap_materno' => $alm->ap_materno,
                     'carrera' => $alm->carrera,
                     'semestre' => $alm->semestre,
+                    'sexo' =>$alm->sexo,
                     'valor_numerico' =>$act->valor_numerico,
                     'nivel_desempeno' =>$act->nivel_desempeno,
-                    
-                   
+                
                 );
                 array_push($newArray, $resp);
             }
@@ -75,6 +59,4 @@ class AlumnoModel extends Model
         return $newArray;
     }
 
-
-    
 }

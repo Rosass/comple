@@ -13,15 +13,14 @@
 				<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse text-center" id="navbarText">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item <?= ($activo == 'actividades') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsables/inicio') ?>">Inicio</a>
-						  </li> 
-						  <li class="nav-item <?= ($activo == 'cambiar clave') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('responsables/cambiar-clave') ?>">Cambiar Clave</a>
-      					</li> 
-						
-					</ul>
+				<ul class="navbar-nav mr-auto">
+				<li class="nav-item <?= ($activo == 'actividades') ? 'active' : '' ?>">
+                     <a class="nav-link" href="<?= base_url('responsables/inicio') ?>">Inicio</a>
+				</li> 
+					<li class="nav-item <?= ($activo == 'cambiar clave') ? 'active' : '' ?>">
+        			<a class="nav-link" href="<?= base_url('responsables/cambiar-clave') ?>">Cambiar Clave</a>
+      	            </li> 						
+				</ul>
 					<span class="navbar-text">
 						<form action="<?= base_url("logout") ?>" method="POST">
 							<button type="submit" class="dropdown-itembtn btn btn-danger text-white border-0" style="border-radius: 25px;"><i class="fas fa-power-off small"></i> Cerrar sesión</button>

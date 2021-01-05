@@ -100,10 +100,10 @@ class JefeController extends BaseController
         }
         else
         {   
-            $rfc_jefe = $this->request->getPost("rfc_jefe");
+            $jefe = $this->request->getPost("rfc_jefe");
 
             $datos = [
-                "rfc_jefe" => mb_strtoupper($this->request->getPost("rfc_jefe")),
+                "rfc_jefe" => ($this->request->getPost("rfc_jefe")),
                 "nombre_jefe" => mb_strtoupper($this->request->getPost("nombre_jefe"), 'utf-8'),
                 "apaterno_jefe" => mb_strtoupper($this->request->getPost("apaterno_jefe"), 'utf-8'),
                 "amaterno_jefe" => mb_strtoupper($this->request->getPost("amaterno_jefe"),'utf-8'),
@@ -111,7 +111,7 @@ class JefeController extends BaseController
                 "correo_jefe" => $this->request->getPost("correo_jefe")
             ];
 
-            $respuesta =  $this->jefeService->actualizar($rfc_jefe, $datos);
+            $respuesta =  $this->jefeService->actualizar($jefe, $datos);
 
             if($respuesta["exito"])
             {

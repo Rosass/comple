@@ -18,7 +18,7 @@
 						<div class="row justify-content-center">
 							<div class="col-md-5">
 								<div class="form-group">
-									<label for="nombre">USUARIO (*)</label>
+									<label for="usuario">USUARIO (*)</label>
 									<input type="text" class="form-control text-uppercase" name="usuario" required value="<?= $usuario->usuario ?>">
 								</div>
 							</div>

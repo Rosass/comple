@@ -16,6 +16,21 @@
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
             <?php endif ?>
+            <form method="POST" action="<?= base_url("jefes/actividades/periodo") ?>">
+                <div class="row mb-3 mt-2 justify-content-end">
+                    <div class="col-md-5 text-right d-flex align-items-center">
+                        <span class="mr-2">Filtro </span>
+                        <select class="custom-select"  name="periodo">
+                            <option selected disabled value="">Elige el periodo</option>
+                            <option value="0">ACTIVO</option>
+                            <?php foreach($periodos as $key => $periodo) : ?>
+                                <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
+                            <?php endforeach ?>
+                        </select>
+                    </div>
+                    <button type="submit"  class="btn bg-color-tec-blue text-white"><i class="fas fa-check"></i>buscar</button>
+                </div>
+            </form>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
@@ -29,15 +44,14 @@
                             <th scope="col" class="border-top-0">TIPO</th>
                             <th scope="col" class="border-top-0">DICTAMEN</th>
                             <th scope="col" class="border-top-0">CREDITOS</th>
+                            <th scope="col" class="border-top-0">RESPONSABLE</th>
                             <th scope="col" class="border-top-0">HORAS</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
-                            <th scope="col" class="border-top-0">ACCION</th>
-
-                            
+                            <th scope="col" class="border-top-0">ACCION</th>                
                         </tr>
                     </thead>
-                    <tbody class="text-center table-sm">
+                    <tbody class="text-center table-sm" >
                         <?php foreach($actividades as $key => $actividad) : ?>
                             <tr>
                                 <th scope="row"><?= $key + 1 ?></th>
@@ -46,6 +60,45 @@
                                 <td><?= $actividad->tipo_actividad ?></td>
                                 <td><?= $actividad->numero_dictamen ?></td>
                                 <td><?= $actividad->creditos ?></td>
+                                <?php if ( $actividad->nombre_responsable ) :?>
+                                    <td><?= $actividad->nombre_responsable. " " .$actividad->apaterno. " " .$actividad->amaterno ?></td>
+                                <?php else:?>
+                                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#actividad-<?=$actividad->id_actividad?>">Asignar</button></td>
+                                    <!-- Modal -->
+                                        <div class="modal fade" id="actividad-<?=$actividad->id_actividad?>" tabindex="-1" aria-labelledby="nuevaActividadModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-color-tec-blue text-white text-uppercase">
+                                                        <h5 class="modal-title" id="nuevaActividadModalLabel">ASIGNAR RESPONSABLE</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true" class="text-white">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body pb-0 text-center">
+                                                        <form action="<?= base_url("jefes/actividades/agregar") ?>" method="POST" class="needs-validation" novalidate>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="confirmar_clave">RESPONSABLE</label>
+                                                                    <select class="custom-select" name="rfc_responsable">
+                                                                        <option selected disabled>Elige un responsable</option>
+                                                                        <?php foreach($responsables as $key => $responsable) : ?>
+                                                                        <option value="<?= $responsable->rfc_responsable ?>"><?= $responsable->nombre . " " . $responsable->apaterno . " (". $responsable->rfc_responsable . ")" ?></option>
+                                                                        <?php endforeach ?>
+                                                                    </select>
+                                                                    <input type="hidden" name="id_actividad" value="<?=$actividad->id_actividad?>">
+                                                                </div>
+                                                            </div>
+                                                            <small>Los campos marcados con (*) son obligatorios.</small>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                <button type="submit" class="btn bg-color-tec-blue text-white" id="btnGuardar"><i class="fas fa-check"></i> Guardar</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <?php endif;?>
                                 <td><?= $actividad->horas ?></td>
                                 <td><?= $actividad->horario ?></td>
                                 <td class="text-white">
@@ -56,6 +109,8 @@
                                 <td style="width:8%;">  
                                     <div class="d-flex flex-column">
                                     <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("jefes/alumnos/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i>Alumnos Registrados</a>
+                                    <a class="btn btn-warning btn-sm btn-block mb-0"  href="<?= base_url("jefes/lista-asistencia/$actividad->id_actividad") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de asistencia</a>
+                                    <a class="btn btn-secondary btn-sm btn-block mb-0"  href="<?= base_url("jefes/lista-calificacion/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i> Acta de calificaciones</a>
                                     </div>
                                 </td>
                                 
@@ -68,6 +123,3 @@
         </div>
     </div>
 </div>
-
-<!-- Modal Agregar Responsable-->
-

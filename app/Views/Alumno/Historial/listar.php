@@ -45,7 +45,10 @@
                                 <td><?= $actividad->fecha_inscripcion?></td>
                                 <td><?= $actividad->nombre . " " . $actividad->apaterno . " " . $actividad->amaterno ?></td>
                                 <td><?= $actividad->horario ?></td>
-                                <td><?= $actividad->calificacion ?></td>
+                                <td> <?php
+                                if ( $actividad->calificacion >= '1') echo 'ACREDITADO';
+                                if ( $actividad->calificacion < '1') echo 'NO ACREDITADO';
+                                ?></td>
                             </tr>
                             <?php endforeach ?>
                     </tbody>

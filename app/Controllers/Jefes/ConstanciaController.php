@@ -21,7 +21,6 @@ class ConstanciaController extends BaseController
         
         $control = $this->request->getPost("ncontrol");
         $folio = $this->request->getPost('folio');
-        $frase = $this->request->getPost('frase');
         $id_actividad = $this->request->getPost('id_actividad');
         $actividades = $this->constanciaService->getActividad($control, $id_actividad);
         $alumno = $this->constanciaService->getAlumnoPorNoControl($control);
@@ -35,7 +34,6 @@ class ConstanciaController extends BaseController
         $dompdf->loadHtml (view('Jefes/Constancia/listar', [
             'alumno' => $alumno,
             'folio' => $folio,
-            'frase' => $frase,
             'control' => $control,
             'actividad' => $actividades,
             'id_actividad' => $id_actividad,
@@ -46,27 +44,13 @@ class ConstanciaController extends BaseController
 		// Se renderiza el HTML como PDF
 		$dompdf->render();
         // Se muestra el PDF generado en el Browser
-        $canvas = $dompdf->getCanvas();
-
-        $w = $canvas->get_width();
-        $h = $canvas->get_height();
-
-        $imageURL = 'public/img/image.png';
-        $imgWidth = 480;
-        $imgHeight = 1500;
-
-        $canvas->set_opacity(0.08);
-
-        $x = (($w-$imgWidth)/-5);
-        $y = (($h-$imgHeight)/5);
-
-        $canvas->image($imageURL,$x,$y,$imgWidth,$imgHeight);
     
         header('Content-type: application/pdf');
         header('Content-Disposition: inline; filename="document.pdf"');
         header('Content-Transfer-Encoding: binary');
 
         $dompdf->stream("Constancia Parcial -  ".$control." .pdf", array("Attachment" => 0));
+        exit();
 
 	}
 

@@ -20,8 +20,8 @@ class InscripcionModel extends Model
         INNER JOIN periodo p ON p.periodo = i.periodo
         INNER JOIN actividad act ON act.id_actividad = i.id_actividad;*/
         return $this->db->table("inscripcion i")
-        ->select("i.id_inscripcion, i.estatus, i.num_control, i.periodo, p.descripcion AS 'descripcion_periodo', i.telefono, i.fecha_inscripcion, i.nota,
-                  i.id_actividad, act.nombre_actividad, p.estatus")
+        ->select("i.id_inscripcion, i.estatus, i.num_control, i.periodo, p.descripcion AS 'descripcion_periodo', i.telefono, i.fecha_inscripcion,
+                i.id_actividad, act.nombre_actividad")
         ->join("periodo p", "p.periodo = i.periodo")
         ->join("actividad act", "act.id_actividad = i.id_actividad")
         ->orderBy("p.fecha_inicio", "ASC")

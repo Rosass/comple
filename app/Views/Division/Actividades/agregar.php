@@ -60,13 +60,13 @@
 								<select class="custom-select" name="id_area" required id="area">
 									<option selected disabled value="">Elige una área</option>
 									<?php foreach($areas as $key => $area) : ?>
-									<option value="<?= $area->id_area ?>"><?= $area->nombre_area ?></option>
+									<option value="<?php if ($area->id_area == 5) continue; if ($area->id_area == 6)continue ?> "><?php if($area->nombre_area == 'DEPARTAMENTO DE INGENIERÍAS') echo 'DEPARTAMENTO DE INGENIERÍAS'; if($area->nombre_area == 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'; if($area->nombre_area == 'DEPARTAMENTO DE DESARROLLO ACADÉMICO') echo 'DEPARTAMENTO DE DESARROLLO ACADÉMICO'; if($area->nombre_area == 'CENTRO DE INNOVACIÓN E INCUBACIÓN EMPRESARIAL') echo 'CENTRO DE INNOVACIÓN E INCUBACIÓN EMPRESARIAL'; ?></option>
 									<?php endforeach ?>
 								</select>
-								<div class="invalid-feedback">
-									Por favor, rellena este campo
-								</div>
 							</div>
+								<div class="invalid-feedback">
+								Por favor, rellena este campo
+								</div>
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">

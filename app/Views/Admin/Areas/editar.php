@@ -34,7 +34,7 @@
                                             <option selected disabled>Elige un jefe</option>
                                         <?php endif ?>
                                         <?php foreach($jefes as $key => $jefe) : ?>
-										    <option value="<?= $jefe->rfc_jefe ?>" <?= ($jefe->rfc_jefe == $area->rfc_jefe) ? 'selected' : '' ?>><?= $jefe->nombre_jefe . " " . $jefe->apaterno_jefe . " (". $jefe->rfc_jefe . ")" ?></option>
+										    <option value="<?= $jefe->rfc_jefe ?>" <?= ($jefe->rfc_jefe == $area->rfc_jefe) ? 'selected' : '' ?>><?= $jefe->nombre_jefe . " " . $jefe->apaterno_jefe . " ". $jefe->amaterno_jefe . "" ?></option>
 										<?php endforeach ?>
 									</select>
 								</div>

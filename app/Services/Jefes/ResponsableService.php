@@ -18,7 +18,16 @@ class ResponsableService
      */
     public function getResponsables($id_area)
 	{   
-       return $this->responsableModel->getResponsables($id_area);
+        $responsables = $this->responsableModel->getResponsables($id_area);
+        $newResponsable = array();
+            foreach( $responsables as $key => $responsable )
+            {
+                if ( !in_array($responsable, $newResponsable))
+                {
+                    array_push($newResponsable, $responsable);
+                }
+            }
+        return $newResponsable;
     }
 
     /**

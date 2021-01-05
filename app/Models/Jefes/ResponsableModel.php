@@ -16,8 +16,7 @@ class ResponsableModel extends Model
         return $this->db->table('actividad a')
         ->select('a.id_area, r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
         ->join('responsable r', 'r.rfc_responsable = a.rfc_responsable', 'INNER')
-        ->where('a.id_area', $id_area)
-        ->get()->getResult();
+        ->where('a.id_area', $id_area)->get()->getResultArray();
     }
 
     /* public function getResponsables()

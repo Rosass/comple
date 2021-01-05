@@ -13,7 +13,7 @@ class AsistenciaModel extends Model
     public function get_inscripciones( $id_actividad, $estatus)
 	{   
         return $this->db->table('inscripcion insc')
-        ->select('insc.num_control, insc.estatus, insc.id_inscripcion, insc.telefono, act.id_actividad, act.nombre_actividad, e.valor_numerico as valor_numerico, e.nivel_desempeno as nivel_desempeno')
+        ->select('insc.num_control, insc.estatus, insc.id_inscripcion, insc.telefono, act.id_actividad, e.valor_numerico as valor_numerico, e.nivel_desempeno as nivel_desempeno')
         ->join('actividad act', 'act.id_actividad = insc.id_actividad', 'INNER')
         ->join('evaluacion_desempenio e', 'e.id_inscripcion = insc.id_inscripcion', 'LEFT')
         ->where('act.id_actividad', $id_actividad)
@@ -33,7 +33,10 @@ class AsistenciaModel extends Model
     public function get_actividad( $id_actividad )
     {
         return $this->db->table('actividad a')
-                    ->select('a.id_actividad,a.nombre_actividad, p.descripcion as descripcion')
+                    ->select('a.id_actividad,a.id_area,a.nombre_actividad, a.rfc_responsable, p.descripcion as descripcion, ta.nombre as tipo_actividad, ar.nombre_area as nombre_area, j.nombre_jefe as nombre_jefe, j.apaterno_jefe as apaterno_jefe, j.amaterno_jefe as amaterno_jefe')
+                    ->join('area ar', 'ar.id_area = a.id_area', 'INNER')
+                    ->join('jefe j', 'j.rfc_jefe = ar.rfc_jefe', 'INNER')
+                    ->join('tipo_actividad ta', 'ta.id_tipo_actividad = a.id_tipo_actividad', 'INNER')
                     ->join('periodo p', 'p.periodo = a.periodo', 'INNER')
                     ->where('id_actividad', $id_actividad )
                     ->get()->getResult();
@@ -60,7 +63,6 @@ class AsistenciaModel extends Model
             foreach( $alumno as $alm ) {
                 $resp = array(
                     'id_inscripcion' => $id_inscripcion,
-                    'actividad' => $act->nombre_actividad,
                     'num_control' => $num_control,
                     'nombre' => $alm->nombre,
                     'ap_paterno' => $alm->ap_paterno,

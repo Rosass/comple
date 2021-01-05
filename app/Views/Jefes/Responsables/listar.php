@@ -23,7 +23,7 @@
 				</button>
 			</div>
 			<div class="table-responsive-sm text-center">
-				<table class="table table-hover table-light table-striped shadow-lg" id="tablaResponsables">
+				<table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
 					<thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
 						<tr>
 							<th scope="col" colspan="13" class="border-top-0">
@@ -45,13 +45,13 @@
 						<?php foreach($responsables as $key => $responsable) : ?>
 						<tr>
 							<th scope="row"><?= $key + 1 ?></th>
-							<td><?= $responsable->rfc_responsable ?></td>
-							<td><?= mb_strtoupper($responsable->nombre . " " . $responsable->apaterno . " " . $responsable->amaterno,'utf-8'); ?></td>
-							<td><?= $responsable->telefono ?></td>
-							<td><?= $responsable->correo ?></td>
-							<td><?= $responsable->fecha_registro ?></td>
+							<td><?= $responsable['rfc_responsable'] ?></td>
+							<td><?= mb_strtoupper($responsable['nombre'] . " " . $responsable['apaterno'] . " " . $responsable['amaterno'],'utf-8'); ?></td> 
+							<td><?= $responsable['telefono']  ?></td>
+							<td><?= $responsable['correo'] ?></td>
+							<td><?= $responsable['fecha_registro'] ?></td>
 							<td class="text-white">
-								<?php if($responsable->estatus == true) : ?>
+								<?php if($responsable['estatus'] == true) : ?>
 								    <span class="bg-success p-1 rounded small">Activo</span>
 								<?php else : ?>
 								    <span class="bg-danger p-1 rounded small">Inactivo</span>
@@ -60,15 +60,15 @@
 							<td style="width:12%;">
 								<div class="d-flex flex-column">
 								  	<!--  Editar responsable-->
-									<a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("jefes/responsables/editar/".$responsable->rfc_responsable) ?>"><i class="fas fa-pen"></i> Editar</a>
-									<?php if($responsable->estatus == true) : ?>
+									<a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("jefes/responsables/editar/".$responsable['rfc_responsable']) ?>"><i class="fas fa-pen"></i> Editar</a>
+									<?php if($responsable['estatus'] == true) : ?>
 									    <form action="<?= base_url('jefes/responsables/cambiar-estatus') ?>" method="POST">
-											<input type="hidden" name="rfc" value="<?= $responsable->rfc_responsable ?>">
+											<input type="hidden" name="rfc" value="<?= $responsable['rfc_responsable'] ?>">
 											<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Inhabilitar</button>
 										</form>
 									<?php else : ?>
 										<form action="<?= base_url('jefes/responsables/cambiar-estatus') ?>" method="POST">
-											<input type="hidden" name="rfc" value="<?= $responsable->rfc_responsable ?>">
+											<input type="hidden" name="rfc" value="<?= $responsable['rfc_responsable'] ?>">
 											<button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
 										</form>
 									<?php endif ?>

@@ -24,8 +24,8 @@
                             <button type="button"  class="btn btn float-right  btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
                                 Ver ayuda para calificar
                             </button>
-                             <div class=" text-left mt-0 mb-0">
-                                 <a href="<?= base_url("responsables/calificaciones/$id_actividad") ?>" class="btn btn-primary" class="text-muted text-decoration-none"><i class="far fa-arrow-alt-circle-left"></i> Regresar</a>
+                            <div class=" text-left mt-0 mb-0">
+                                <a href="<?= base_url("responsables/calificaciones/$id_actividad") ?>" class="btn btn-primary" class="text-muted text-decoration-none"><i class="far fa-arrow-alt-circle-left"></i> Regresar</a>
                             </div>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -38,6 +38,11 @@
                     </div>
                     </div>
                             <thead class="justifi text-center">
+                            <?php foreach($actividad as $a) : ?>
+                                <div>
+                                    <p><strong> Actividad:</strong> <?= $a->nombre_actividad?></p>
+                                </div>
+                                <?php endforeach ?>
                                 <tr>
                                     <th scope="col" class="border-top-0">Nombre del Estudiante</th>
                                 </tr>

@@ -26,21 +26,21 @@ class GenerarService
         }
         
     }
-     /**
+    /**
      * Obtiene las actividades de la BD
      * @return object
      */
     public function getActividad($control)
 	{   
-       return $this->generarModel->getActividad($control);
+    return $this->generarModel->getActividad($control);
     }
     public function calificacion($control)
 	{   
-       return $this->generarModel->calificacion($control);
+    return $this->generarModel->calificacion($control);
     }
     public function calificacionRows($control)
 	{   
-       return $this->generarModel->calificacionRows($control);
+    return $this->generarModel->calificacionRows($control);
     }
 
     public function guardar($datos)
