@@ -63,6 +63,8 @@ class InscripcionService
                                         '<td>' . $inscripcion->nombre_actividad . '</td>' .
                                         '<td>' . $inscripcion->telefono . '</td>' .
                                         '<td>' . $inscripcion->fecha_inscripcion . '</td>' .
+                                        '<td>' . $inscripcion->nota . '</td>' .
+                                        '<td>' . $inscripcion->estatus . '</td>' .
                                         '<td style="width:15%;">' .
                                             '<div class="d-flex flex-column">' .
                                                 '<!--  Editar inscripción -->' .
