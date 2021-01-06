@@ -8,8 +8,8 @@
 				NOMBRE USUARIO: <span class="font-weight-bold"> <?= $session->usuario_logueado->nombre_jefe . " " . $session->usuario_logueado->apaterno_jefe . " " . $session->usuario_logueado->amaterno_jefe?></span><br>
 				ÁREA: <span class="font-weight-bold"> <?= $session->usuario_logueado->nombre_area ?></span>
 			</div>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom shadow">
-				<a class="navbar-brand text-wrap text-light" href="<?= base_url('admin/areas') ?>" style="font-size:15px !important;"><img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="" style="max-width: 30px;"> Sistema de Gestión de Actividades Complementarias</a>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+				<p class="navbar-brand text-wrap text-light" href="<?= base_url('admin/jefes') ?>" style="font-size:15px !important;"><img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="" style="max-width: 35px;"> Sistema de Gestión de Actividades Complementarias</p>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
