@@ -60,13 +60,13 @@
 								<select class="custom-select" name="id_area" required id="area">
 									<option selected disabled value="">Elige una área</option>
 									<?php foreach($areas as $key => $area) : ?>
-									<option value="<?php if ($area->id_area == 5) continue; if ($area->id_area == 6)continue ?> "><?php if($area->nombre_area == 'DEPARTAMENTO DE INGENIERÍAS') echo 'DEPARTAMENTO DE INGENIERÍAS'; if($area->nombre_area == 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'; if($area->nombre_area == 'DEPARTAMENTO DE DESARROLLO ACADÉMICO') echo 'DEPARTAMENTO DE DESARROLLO ACADÉMICO'; if($area->nombre_area == 'CENTRO DE INNOVACIÓN E INCUBACIÓN EMPRESARIAL') echo 'CENTRO DE INNOVACIÓN E INCUBACIÓN EMPRESARIAL'; ?></option>
+									<option value="<?= $area->id_area ?>"><?= $area->nombre_area ?></option>
 									<?php endforeach ?>
 								</select>
-							</div>
 								<div class="invalid-feedback">
-								Por favor, rellena este campo
+									Por favor, rellena este campo
 								</div>
+							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
@@ -97,7 +97,7 @@
 							</div>
 						</div>
 					</div>
-			<!-- 		<div class="row justify-content-center">
+					<div class="row justify-content-center">
 						<div class="col-md-4">
 							<div class="form-group">
 								<label for="confirmar_clave">RESPONSABLE</label>
@@ -108,11 +108,11 @@
 									<?php endforeach ?>
 								</select>
 							</div>
-						</div> -->
-						<div class="form-row justify-content-center">
-							<div class="form-group col-md-8">
+						</div>
+						<div class="col-md-8">
+							<div class="form-group">
 								<label for="horario">HORARIO</label>
-								<input type="horario" placeholder="LUNES 09:00 A 10:OO AM; MIERCOLOES 15:00 A 17:00 PM; VIERNES 11:00 A 14:00 PM" class="form-control text-uppercase" id="horario" name="horario"  value="<?= old("horario") ?>">
+								<input type="horario" class="form-control text-uppercase" id="horario" name="horario"  value="<?= old("horario") ?>">
 								<small>Los horarios debes separarlos por punto y coma ';'.</small>
 							</div>
 						</div>

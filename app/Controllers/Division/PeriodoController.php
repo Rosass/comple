@@ -136,7 +136,7 @@ class PeriodoController extends BaseController
 	
 	public function cambiarEstatus()
     {
-       
+    
         $periodo = $this->request->getPost('periodo');
         $respuesta = $this->periodoService->cambiarEstatus($periodo);
 
@@ -146,7 +146,7 @@ class PeriodoController extends BaseController
         }
         else
         {
-             $this->session->setFlashdata('error', $respuesta['msj']);
+            $this->session->setFlashdata('error', $respuesta['msj']);
         }
         return redirect('division/periodos');
     }

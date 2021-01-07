@@ -116,16 +116,17 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
                     if ( $a->carrera == 'ICI') echo 'INGENIERIA CIVIL';
                     if ( $a->carrera == 'IGE') echo 'INGENIERIA EN GESTION EMPRESARIAL';
                 ?></u></strong>, <?php endforeach; ?> ha cumplido su actividad  <?php foreach($actividad as $act) : ?> <strong><u><?= $act->tipo_actividad ?></u></strong>: <strong><u><?= $act->actividad ?></u></strong> con el nivel de desempeño<strong>
-            <u><?= $act->nivel ?></u></strong> y un valor numérico de <strong><u><?= $act->valor_numerico ?></u></strong> durante el periodo escolar <strong><u><?= $act->periodo_descripcion ?></u></strong> con un valor curricular de <strong><u><?= $act->credito ?></u></strong> crédito.</P>
+            <u><?= $act->nivel ?></u></strong> y un valor numérico de <strong><u><?= $act->valor_numerico ?></u></strong> durante el periodo escolar <strong><u><?= $act->periodo_descripcion ?></u></strong> con un valor curricular de <strong><u><?= $act->credito ?></u></strong> crédito.</P> <br>
+
+            
+                <?php endforeach ?>
+                <?php date_default_timezone_set('America/Mexico_city');
+                $date = date("d");
+                $date1 = date("Y")
+                ?>
+
+            <p >Se extiende la presente en la <strong><u>Cd. De San Pedro Pochutla</u></strong> a los<strong><u> <?=$date?> </u></strong> dias del mes de  <strong><u><?php echo $meses[date('n')-1];?></u></strong> del <?=$date1?>.</p></div><br/><br><br><br><br>
         </div>
-
-    <?php endforeach ?>
-<?php date_default_timezone_set('America/Mexico_city');
-    $date = date("d");
-    $date1 = date("Y")
-?>
-
-<p >Se extiende la presente en la <strong><u>Cd. De San Pedro Pochutla</u></strong> a los<strong><u> <?=$date?> </u></strong> dias del mes de  <strong><u><?php echo $meses[date('n')-1];?></u></strong> del <?=$date1?>.</p></div><br/><br><br><br><br>
 <P style=" text-align:center;  font-family: Montserrat; font-weight:800; font-size:10pt;"><strong>A T E N T A M E N T E</strong><br/>
 <strong style =" font-family: Montserrat; font-weight:200; font-style:italic; font-size:9pt;">Excelencia en Educación Tecnológica</strong><br/></P><br/><br><br>
 
@@ -133,7 +134,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     <p style="font-family: Montserrat; font-weight:800; font-size:10pt; text-align:center; margin-right:430px;  margin-top:58px; "><strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?><hr color="black" size="2.3"></strong>
     NOMBRE Y FIRMA DEL (DE LA) RESPONSABLE</p>
     <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-left:430px; text-align:center; margin-top:-99px; "><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?><hr color="black" size="2.3"></strong>JEFE(A) DEL <?=  $ar->nombre_area ?></p>
-</div><br><br><br><br>
+</div><br><br><br>
 
 <p style=" font-family: Montserrat; font-weight:500; font-size:8pt;">C.c.p. Jefe (a) de Departamento Correspondiente <br> estudiante.</p><br>
 <footer id="piedepagina">

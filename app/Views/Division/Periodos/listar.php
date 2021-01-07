@@ -55,7 +55,7 @@
                                     <?php else : ?>
                                         <span class="bg-danger p-1 rounded small">Inactivo</span>
                                     <?php endif ?>
-							</td>
+                                </td>
                                 <td style="width:12%;">
                                     <div class="d-flex flex-column">
                                         <!--  Editar tipo-->
@@ -71,7 +71,7 @@
                                                 <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
                                             </form>
                                         <?php endif ?>
-								    </div>
+                                    </div>
                                 </td>
                             </tr>
                         <?php endforeach ?>

@@ -59,6 +59,7 @@ $routes->post('logout', 'UsuarioController::logout');
 
 // Rutas [DIVISION-ACTIVIDADES]
 $routes->get('division/actividades', 'Division/ActividadController::index');
+$routes->post('division/actividades/periodo', 'Division/ActividadController::periodo');
 $routes->post('division/actividades/agregar', 'Division/ActividadController::guardar');
 $routes->get('division/actividades/editar/(:any)', 'Division/ActividadController::editar');
 $routes->post('division/actividades/editar', 'Division/ActividadController::actualizar');
