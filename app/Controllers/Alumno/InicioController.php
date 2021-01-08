@@ -21,28 +21,41 @@ class InicioController extends BaseController
 
     public function index()
 	{  
-        if($alumno = $this->session->usuario_logueado->num_control)
+
+        if($this->session->loginalumno && $this->session->usuario_logueado)
         {
+
+            if($alumno = $this->session->usuario_logueado->num_control)
+            {
               
-            $actividades = $this->HistorialService->getActividades_no_calificadas($alumno); 
+            $actividades = $this->HistorialService->getActividades_no_calificadas($alumno);
+            $act = $this->HistorialService->getActividades($alumno); 
+            $alumnos = $this->HistorialService->get_actividad_alumno( $alumno, true); 
             //var_dump($actividades);
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
-			$responsables = $this->responsableService->getResponsablesPorEstatus(true);
+            $responsables = $this->responsableService->getResponsablesPorEstatus(true);
+            
+           
 
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "actividades"]);
             echo view('Alumno/Inicio/Actividades', [				
                 'actividades' => $actividades,
+                'act' => $act,
                 'tipos_actividades' => $tipos_actividades,
 				'responsables' => $responsables				           			
                 ]);
             echo view('Includes/footer');
 		
+            }
+            else
+            {
+                return redirect("/");
+            }
+        }   
+        else
+        {
+        return redirect("/");
         }
-       else
-
-       {
-         return redirect("/");
-       }
     }
 }

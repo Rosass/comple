@@ -20,6 +20,16 @@ class HistorialService
         return $this->historialModel->getActividadesPorCalificacion($alumnos); // este muestra los calificados
     }
 
+      public function get_actividad_alumno($id_actividad, $true)
+	{   
+       return $this->historialModel->get_actividad_alumno($id_actividad, $true);
+    }
+
+    public function getActividades($alumnos)
+	{
+        return $this->historialModel->getActividades($alumnos); // este muestra los calificados
+    }
+
     public function getActividades_no_calificadas($alumnos) // no calificados
 	{
         $calificados = $this->historialModel->getActividadesPorCalificacion($alumnos);
@@ -36,6 +46,7 @@ class HistorialService
                 'amaterno' => $actividad->amaterno,
                 'horario' => $actividad->horario,
                 'estatus' => $actividad->estatus,
+                
             );
             array_push( $no_calificados, $nuevo );
         }

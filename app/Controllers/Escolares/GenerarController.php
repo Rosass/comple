@@ -18,6 +18,8 @@ class GenerarController extends BaseController
 
 	public function constanciaParcial()
 	{
+        if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_ESCOLARES)
+        {
         
         $control = $this->request->getPost("control");
         $folio = $this->request->getPost('folio');
@@ -60,9 +62,18 @@ class GenerarController extends BaseController
         $dompdf->stream("Constancia Parcial -  ".$control." .pdf", array("Attachment" => 0));
         exit();
 
-	}
+        }
+        else
+        {
+            return redirect("/");
+        }
+
+    }
+    
 	public function constanciaLiberacion()
 	{
+        if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_ESCOLARES)
+        {
         
         $control = $this->request->getPost('control');
         $folio = $this->request->getPost('folio');
@@ -96,9 +107,13 @@ class GenerarController extends BaseController
     
             $dompdf->stream("Constancia liberacion- ".$control." .pdf", array("Attachment" => 0));
             exit();
-        
-
+        }
+		else
+		{
+			return redirect("/");
+		}
     }
+    
     protected function Calcular_nivel_desempeno( $calificacion )
     { $desempeno = '';
         if($calificacion<1){

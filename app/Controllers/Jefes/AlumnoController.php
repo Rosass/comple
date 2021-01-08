@@ -13,6 +13,9 @@ class AlumnoController extends BaseController
 
 	public function index()
 	{
+        if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
+        {
+
         $id_actividad = urldecode($this->request->uri->getSegment(3));
         $alumnos = $this->alumnoService->get_actividad_alumno( $id_actividad );
         $HM = $this->alumnoService->total_hombres_mujeres( $id_actividad );
@@ -26,6 +29,12 @@ class AlumnoController extends BaseController
             'mujeres' => $HM['mujeres'],
             ]);
         echo view('Includes/footer');
-	}
+
+        }
+        else
+        {
+            return redirect("/");
+        }
+    }
 
 }

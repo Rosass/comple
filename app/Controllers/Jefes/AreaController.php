@@ -41,6 +41,9 @@ class AreaController extends BaseController
 
 	public function periodo()
 	{
+		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
+    		{
+	             
 		$periodoPost =  $this->request->getPost("periodo");
 
 		// if ( empty($periodoPost)
@@ -62,7 +65,16 @@ class AreaController extends BaseController
 			'periodos' => $periodo
 		]);
 		echo view('Includes/footer');
-	}
+	
+			}
+			else
+			{
+				return 
+				redirect('/');
+				
+			}
+
+    }
 
 
 	public function guardar()
