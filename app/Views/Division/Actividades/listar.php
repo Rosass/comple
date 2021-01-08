@@ -19,6 +19,21 @@
             <div class="text-right">
                 <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevaActividadModal"><i class="fas fa-plus"></i> Nueva actividad</button>
             </div>
+            <form method="POST" action="<?= base_url("division/actividades/periodo") ?>">
+                <div class="row mb-3 mt-2 justify-content-end">
+                    <div class="col-md-5 text-right d-flex align-items-center">
+                        <span class="mr-2">Filtro </span>
+                        <select class="custom-select"  name="periodo">
+                            <option selected disabled value="">Elige el periodo</option>
+                            <option value="0">ACTIVO</option>
+                            <?php foreach($periodo as $key => $periodo) : ?>
+                                <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
+                            <?php endforeach ?>
+                        </select>
+                    </div>
+                    <button type="submit"  class="btn bg-color-tec-blue text-white"><i class="fas fa-check"></i>buscar</button>
+                </div>
+            </form>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">

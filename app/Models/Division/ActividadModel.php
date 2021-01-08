@@ -16,7 +16,7 @@ class ActividadModel extends Model
         
         return $this->db->table("actividad a")
             ->select("a.id_actividad, a.nombre_actividad, a.numero_dictamen, a.creditos, a.capacidad, ar.nombre_area, p.descripcion AS 'periodo_descripcion', p.estatus, ta.nombre AS 'tipo_actividad',
-                      a.rfc_responsable, r.nombre AS 'nombre_responsable', r.apaterno AS 'apaterno_responsable', a.horas, a.horario, a.estatus")
+                    a.rfc_responsable, r.nombre AS 'nombre_responsable', r.apaterno AS 'apaterno_responsable', a.horas, a.horario, a.estatus")
             ->join('area ar', 'ar.id_area = a.id_area', 'LEFT')
             ->join('periodo p', 'p.periodo = a.periodo', 'LEFT')
             ->join('tipo_actividad ta', 'ta.id_tipo_actividad = a.id_tipo_actividad', 'LEFT')
@@ -27,6 +27,30 @@ class ActividadModel extends Model
             ->get()->getResult();
     }
 
+    public function getActividadPorIdareaPeriodo($periodo)
+	{   
+        
+        return $this->db->table("actividad a")
+            ->select("a.id_actividad, a.nombre_actividad, a.numero_dictamen, a.creditos, a.capacidad, ar.nombre_area, p.descripcion AS 'periodo_descripcion', p.estatus, ta.nombre AS 'tipo_actividad',
+                    a.rfc_responsable, r.nombre AS 'nombre_responsable', r.apaterno AS 'apaterno_responsable', a.horas, a.horario, a.estatus")
+            ->join('area ar', 'ar.id_area = a.id_area', 'LEFT')
+            ->join('periodo p', 'p.periodo = a.periodo', 'LEFT')
+            ->join('tipo_actividad ta', 'ta.id_tipo_actividad = a.id_tipo_actividad', 'LEFT')
+            ->join('responsable r', 'r.rfc_responsable = a.rfc_responsable', 'LEFT')
+            ->orderBy("p.fecha_inicio", "ASC")
+            ->orderBy("a.nombre_actividad", "ASC")
+            ->where("a.periodo", $periodo)
+            ->get()->getResult();
+    }
+    
+    public function getPeriodo()
+    {
+        return $this->db->table('periodo')
+        ->select("*")
+        ->orderBy("periodo", "ASC")
+        ->get()->getResult();
+    }
+    
     public function getActividadesPorEstatus($estatus)
 	{   
         return $this->db->table("actividad a")

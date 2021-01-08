@@ -33,14 +33,16 @@ class ActividadController extends BaseController
 			$areas = $this->areaService->getAreasPorEstatus(true);
 			$periodos = $this->periodoService->getPeriodosPorEstatus(true);
 			$tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
-			$responsables = $this->responsableService->getResponsablesPorEstatus(true);
+            $responsables = $this->responsableService->getResponsablesPorEstatus(true);
+            $periodo = $this->actividadService->getPeriodo();
 
 			echo view('Includes/header');
 			echo view('Division/navbar', ["activo" => "actividades"]);
 			echo view('Division/Actividades/listar', [
 				'actividades' => $actividades,
 				'areas' => $areas,
-				'periodos' => $periodos,
+                'periodos' => $periodos,
+                'periodo' => $periodo,
 				'tipos_actividades' => $tipos_actividades,
 				'responsables' => $responsables
 			]);
@@ -50,6 +52,36 @@ class ActividadController extends BaseController
 		{
 			return redirect("/");
 		}
+    }
+    
+    public function periodo()
+	{
+		$periodoPost =  $this->request->getPost("periodo");
+
+		// if ( empty($periodoPost)
+
+        if ( empty($periodoPost) || $periodoPost == '0') return redirect('division/actividades');
+        
+        $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
+        $responsables = $this->responsableService->getResponsablesPorEstatus(true);
+        $areas = $this->areaService->getAreasPorEstatus(true);
+        $periodos = $this->periodoService->getPeriodosPorEstatus(true);
+		$actividades = $this->actividadService->getActividadPorIdareaPeriodo( $periodoPost);
+		$periodo = $this->actividadService->getPeriodo();
+
+		
+		
+		echo view('Includes/header');
+		echo view('Division/navbar', ["activo" => "actividades"]);
+		echo view('Division/Actividades/listar', [				
+			'actividades' => $actividades,
+            'areas' => $areas,
+            'periodos' => $periodos,
+			'tipos_actividades' => $tipos_actividades,
+				'responsables' => $responsables,
+			'periodo' => $periodo
+		]);
+		echo view('Includes/footer');
 	}
 
 	//--------------------------------------------------------------------

@@ -1,14 +1,14 @@
 <!-- Modal -->
 <div class="modal fade" id="nuevaInscripcionModal" tabindex="-1" aria-labelledby="nuevaInscripcionModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
-      <div class="modal-header bg-color-tec-blue text-white text-uppercase">
+        <div class="modal-header bg-color-tec-blue text-white text-uppercase">
         <h5 class="modal-title" id="nuevaInscripcionModalLabel">NUEVA INSCRIPCIÓN</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="text-white">&times;</span>
+            <span aria-hidden="true" class="text-white">&times;</span>
         </button>
-      </div>
-      <div class="modal-body pb-0 text-center">
+        </div>
+        <div class="modal-body pb-0 text-center">
         <form action="<?= base_url("division/inscripciones/agregar") ?>" method="POST" class="needs-validation" novalidate>
             <div class="row">
                 <div class="col-md-3">
@@ -60,7 +60,7 @@
             </div>
                     <div class="form-group" >
                         <label for="nota">NOTA</label>
-                        <textarea class="form-control" id="nota" name="nota" rows="3" value="<?= old("nota") ?>"></textarea>
+                        <textarea class="form-control" id="nota" name="nota" rows="2" value="<?= old("nota") ?>"></textarea>
                     </div>
             <small>Los campos marcados con (*) son obligatorios.</small>
             <div class="modal-footer">
@@ -68,7 +68,7 @@
                 <button type="submit" class="btn bg-color-tec-blue text-white" id="btnGuardar"><i class="fas fa-check"></i> Guardar</button>
             </div>
         </form>
-      </div>
+        </div>
     </div>
-  </div>
+    </div>
 </div>

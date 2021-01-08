@@ -17,8 +17,19 @@ class ActividadService
      */
     public function getActividades()
 	{   
-       return $this->actividadModel->getActividades();
+        return $this->actividadModel->getActividades();
     }
+
+    public function getPeriodo()
+	{   
+    return $this->actividadModel->getPeriodo();
+    }
+
+    public function getActividadPorIdareaPeriodo($perido)
+	{   
+        return $this->actividadModel->getActividadPorIdareaPeriodo($perido);
+    }
+    
 
     /**
      * Obtiene las actividades por estatus de la BD
