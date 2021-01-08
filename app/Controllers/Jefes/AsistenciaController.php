@@ -107,17 +107,17 @@ class AsistenciaController extends BaseController
 
 				$dompdf->stream("Lista Asistencia - ".$id_actividad.".pdf", array("Attachment" => false));
 				exit();
-			}
-	 	    else
-			{
-				$this->session->setFlashdata('error', 'Ningun Alumno Inscrito En Esta Actividad');
-				return redirect('jefes/actividades');
-			}
-		}
-		else
-		{
-			return redirect('/');
-		}
+				}
+				else
+				{
+					$this->session->setFlashdata('error', 'Ningun Alumno Inscrito En Esta Actividad');
+					return redirect('jefes/actividades');
+				}
+	}
+	else
+	{
+	return redirect('/');
+	}
 	}
 
 }

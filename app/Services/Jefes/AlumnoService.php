@@ -16,6 +16,12 @@ class AlumnoService
 	{   
     return $this->alumnoModel->get_actividad_alumno($id_actividad);
     }
+
+    public function get_actividad($id_actividad)
+	{   
+    return $this->alumnoModel->get_actividad($id_actividad);
+    }
+    
     
 
     public function total_hombres_mujeres( $id_actividad)

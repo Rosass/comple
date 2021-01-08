@@ -10,14 +10,7 @@
       </div>
       <div class="modal-body pb-0 text-center">
           <form action="<?= base_url("admin/tipos-usuarios/agregar") ?>" method="POST" class="needs-validation" novalidate>
-          <div class="form-group">
-              <label for="tipo_usuario">ID TIPO USUARIO (*)</label>
-                <input type="text" class="form-control text-uppercase" id="tipo_usuario" name="id_tipo_usuario" required value="<?= old("tipo_usuario") ?>">
-                <div class="invalid-feedback">
-					      Por favor, rellena este campo
-			          </div>
-            </div>
-           <div class="form-group">
+            <div class="form-group">
               <label for="nombre">NOMBRE DEL TIPO (*)</label>
                 <input type="text" class="form-control text-uppercase" id="nombre" name="nombre_tipo" required value="<?= old("nombre") ?>">
                 <div class="invalid-feedback">

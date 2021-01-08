@@ -16,6 +16,16 @@ class TipoUsuarioModel extends Model
         return $this->db->table($this->table)->select("*")->get()->getResult();
     }
 
+    public function getTipo()
+	{   
+        return $this->db->table($this->table)
+        ->select("id_tipo_usuario")
+        ->orderBy("id_tipo_usuario", 'DESC' )
+        ->limit(1)
+        ->get()->getRow()->id_tipo_usuario;
+        
+    }
+
     public function getTiposPorEstatus($estatus)
 	{   
         return $this->db->table($this->table)->select("*")->where("estatus", $estatus)->get()->getResult();
@@ -25,6 +35,7 @@ class TipoUsuarioModel extends Model
     {
         return $this->db->table($this->table)->select("*")->where("id_tipo_usuario", $id_tipo_usuario)->get()->getRow();
     }
+
 
     public function guardar($datos)
     {
@@ -37,5 +48,8 @@ class TipoUsuarioModel extends Model
         $this->db->table($this->table)->where("id_tipo_usuario", $id_tipo_usuario)->update($datos);
         return $this->db->affectedRows();
     }
+
+    
+
 
 }

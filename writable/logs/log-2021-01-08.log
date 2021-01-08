@@ -1,635 +1,20 @@
-CRITICAL - 2021-01-08 00:44:21 --> Use of undefined constant USUARIO_ADMINISTRADOR - assumed 'USUARIO_ADMINISTRADOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\AreaController.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 18, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\AreaController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AreaController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 00:46:44 --> Use of undefined constant USUARIO_ADMINISTRADOR - assumed 'USUARIO_ADMINISTRADOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\AreaController.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 18, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\AreaController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AreaController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 00:46:46 --> Use of undefined constant USUARIO_ADMINISTRADOR - assumed 'USUARIO_ADMINISTRADOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 00:46:56 --> Use of undefined constant USUARIO_ADMINISTRADOR - assumed 'USUARIO_ADMINISTRADOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 00:50:54 --> Use of undefined constant USUARIO_D - assumed 'USUARIO_D' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 00:51:48 --> Use of undefined constant USUARIO_administrador - assumed 'USUARIO_administrador' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 00:53:54 --> Use of undefined constant USUARIO_ADMINISTRADOR - assumed 'USUARIO_ADMINISTRADOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 00:55:47 --> Use of undefined constant USUARIO_ADMINISTRADOR - assumed 'USUARIO_ADMINISTRADOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 00:56:11 --> Use of undefined constant ADMINISTRADOR - assumed 'ADMINISTRADOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 01:01:08 --> Use of undefined constant USUARIO_ADMINISTRATOR - assumed 'USUARIO_ADMINISTRATOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 01:04:54 --> Use of undefined constant USUARIO_ADMINISTRATOR - assumed 'USUARIO_ADMINISTRATOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 01:05:08 --> Use of undefined constant USUARIO_ADMINISTRATOR - assumed 'USUARIO_ADMINISTRATOR' (this will throw an Error in a future version of PHP)
-#0 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 15, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 02:29:55 --> Undefined variable: alumno
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 02:42:11 --> Too few arguments to function App\Models\Alumno\HistorialModel::getActividadesPorCalificacion(), 0 passed in C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php on line 20 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(20): App\Models\Alumno\HistorialModel->getActividadesPorCalificacion()
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorCalificacion()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
+CRITICAL - 2021-01-08 03:03:37 --> syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(25): view('Responsable/Cal...', Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
 #4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #6 {main}
-CRITICAL - 2021-01-08 02:44:30 --> Too few arguments to function App\Services\Alumno\HistorialService::getActividadesPorCalificacion(), 0 passed in C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php on line 26 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorCalificacion()
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
+CRITICAL - 2021-01-08 03:16:58 --> Illegal string offset 'nombre_actividad'
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
 #3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
-CRITICAL - 2021-01-08 02:46:11 --> Too few arguments to function App\Models\Alumno\HistorialModel::getActividadesPorAlumno(), 0 passed in C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php on line 26 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(26): App\Models\Alumno\HistorialModel->getActividadesPorAlumno()
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 02:46:23 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 02:47:12 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorCalificacion()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 02:47:39 --> Too few arguments to function App\Services\Alumno\HistorialService::getActividadesPorCalificacion(), 0 passed in C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php on line 26 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorCalificacion()
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 02:48:12 --> Undefined variable: alumno
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 02:48:48 --> Too few arguments to function App\Models\Alumno\HistorialModel::getActividadesPorCalificacion(), 0 passed in C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php on line 20 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(20): App\Models\Alumno\HistorialModel->getActividadesPorCalificacion()
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorCalificacion()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 02:49:36 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 02:50:14 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 02:54:27 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 03:00:27 --> Too few arguments to function App\Models\Alumno\HistorialModel::getActividadesPorCalificacion(), 0 passed in C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php on line 25 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): App\Models\Alumno\HistorialModel->getActividadesPorCalificacion()
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 03:01:29 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 03:01:56 --> Too few arguments to function App\Models\Alumno\HistorialModel::getActividadesPorCalificacion(), 0 passed in C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php on line 25 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): App\Models\Alumno\HistorialModel->getActividadesPorCalificacion()
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 03:02:10 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 03:02:29 --> Too few arguments to function App\Services\Alumno\HistorialService::getActividadesPorCalificacion(), 0 passed in C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php on line 26 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorCalificacion()
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:15:54 --> Undefined variable: alumno
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:16:46 --> Undefined variable: alumno
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:17:17 --> Undefined variable: alumno
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:17:30 --> Too few arguments to function App\Services\Alumno\HistorialService::getActividadesPorCalificacion(), 0 passed in C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php on line 26 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorCalificacion()
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:18:03 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:18:35 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:19:08 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:19:34 --> Too few arguments to function App\Services\Alumno\HistorialService::getActividadesPorCalificacion(), 0 passed in C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php on line 26 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorCalificacion()
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:20:11 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(27): App\Services\Alumno\HistorialService->getActividades_no_calificadas(true)
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 03:21:42 --> Undefined property: stdClass::$loginalumno
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:22:13 --> Object of class stdClass could not be converted to string
-#0 C:\xampp\htdocs\comple\system\Database\Query.php(443): strtr('SELECT `a`.`per...', Array)
-#1 C:\xampp\htdocs\comple\system\Database\Query.php(404): CodeIgniter\Database\Query->matchNamedBinds('SELECT `a`.`per...', Array)
-#2 C:\xampp\htdocs\comple\system\Database\Query.php(197): CodeIgniter\Database\Query->compileBinds()
-#3 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\Query->getQuery()
-#4 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`per...', Array, false)
-#5 C:\xampp\htdocs\comple\app\Models\Alumno\HistorialModel.php(29): CodeIgniter\Database\BaseBuilder->get()
-#6 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(20): App\Models\Alumno\HistorialModel->getActividadesPorCalificacion(Object(stdClass))
-#7 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): App\Services\Alumno\HistorialService->getActividadesPorCalificacion(Object(stdClass))
-#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#10 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#12 {main}
-CRITICAL - 2021-01-08 03:22:42 --> Trying to get property 'num_control' of non-object
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 24, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:23:09 --> Trying to get property 'usuario_logueado' of non-object
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 24, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:23:51 --> Trying to get property 'usuario_logueado' of non-object
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 24, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:24:06 --> Trying to get property 'num_control' of non-object
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 24, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:30:39 --> Undefined property: App\Controllers\Alumno\HistorialController::$num_control
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 03:31:07 --> Undefined property: App\Controllers\Alumno\HistorialController::$usuario_logueado
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 04:18:15 --> Unknown column 'p.descripcion' in 'field list'
-#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`per...')
-#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`per...')
-#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`per...')
-#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`per...', Array, false)
-#4 C:\xampp\htdocs\comple\app\Models\Alumno\HistorialModel.php(54): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): App\Models\Alumno\HistorialModel->getActividades()
-#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(32): App\Services\Alumno\HistorialService->getActividades()
-#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#11 {main}
-CRITICAL - 2021-01-08 04:21:27 --> Cannot use object of type stdClass as array
-#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
-#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#2 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#7 {main}
-CRITICAL - 2021-01-08 04:21:50 --> Cannot use object of type stdClass as array
-#0 C:\xampp\htdocs\comple\system\View\View.php(246): include()
-#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#2 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#7 {main}
-CRITICAL - 2021-01-08 04:29:03 --> Undefined property: stdClass::$calificacion
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(31): App\Services\Alumno\HistorialService->getActividades_no_calificadas('161160163 ')
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 04:30:01 --> Undefined property: stdClass::$calificacion
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(31): App\Services\Alumno\HistorialService->getActividades_no_calificadas('161160163 ')
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 04:39:26 --> Too few arguments to function App\Models\Alumno\HistorialModel::getActividades(), 0 passed in C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php on line 25 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): App\Models\Alumno\HistorialModel->getActividades()
-#1 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(32): App\Services\Alumno\HistorialService->getActividades()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
-CRITICAL - 2021-01-08 04:39:56 --> Too few arguments to function App\Services\Alumno\HistorialService::getActividades(), 0 passed in C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php on line 32 and exactly 1 expected
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(32): App\Services\Alumno\HistorialService->getActividades()
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 04:40:10 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 04:55:02 --> Undefined variable: alumnos
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 04:55:22 --> count(): Parameter must be an array or an object that implements Countable
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 21, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 04:57:09 --> Object of class stdClass could not be converted to int
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 21, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 04:57:42 --> Undefined property: stdClass::$evaluacion
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 04:58:01 --> count(): Parameter must be an array or an object that implements Countable
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 21, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 04:58:34 --> count(): Parameter must be an array or an object that implements Countable
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 21, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 05:22:06 --> Trying to get property 'calificacion' of non-object
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 19, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 05:26:23 --> Undefined property: stdClass::$creditos
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 05:27:05 --> Unknown column 'a.credito e.valor_numerico' in 'field list'
-#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`per...')
-#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`per...')
-#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`per...')
-#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`per...', Array, false)
-#4 C:\xampp\htdocs\comple\app\Models\Alumno\HistorialModel.php(56): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): App\Models\Alumno\HistorialModel->getActividades('161160163 ')
-#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(32): App\Services\Alumno\HistorialService->getActividades('161160163 ')
-#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#11 {main}
-CRITICAL - 2021-01-08 05:27:18 --> Unknown column 'a.credito' in 'field list'
-#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`per...')
-#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`per...')
-#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`per...')
-#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`per...', Array, false)
-#4 C:\xampp\htdocs\comple\app\Models\Alumno\HistorialModel.php(56): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\xampp\htdocs\comple\app\Services\Alumno\HistorialService.php(25): App\Models\Alumno\HistorialModel->getActividades('161160163 ')
-#6 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(32): App\Services\Alumno\HistorialService->getActividades('161160163 ')
-#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#11 {main}
-CRITICAL - 2021-01-08 05:45:05 --> Undefined variable: id_actividad
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 10:49:21 --> Undefined variable: id_actividad
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 10:55:44 --> Undefined variable: id_actividad
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 10:56:14 --> Undefined variable: id_actividad
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\HistorialController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\HistorialController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\HistorialController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 11:14:03 --> Undefined variable: actividad
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(43): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 11:17:26 --> Trying to get property 'calificacion' of non-object
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 38, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 11:18:12 --> Undefined index: calificacion
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 38, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 11:21:55 --> Undefined index: evaluacion_desempeno
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 38, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 11:22:53 --> Undefined index: nivel_desempeno
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 38, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 11:25:37 --> Trying to get property 'credito' of non-object
-#0 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 38, Array)
-#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#5 {main}
-CRITICAL - 2021-01-08 11:30:15 --> Undefined variable: actividad
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(46): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 11:30:21 --> Undefined variable: actividad
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(46): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 11:31:17 --> Undefined variable: actividad
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(46): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 11:31:42 --> Undefined variable: actividad
-#0 C:\xampp\htdocs\comple\app\Views\Alumno\Inicio\Actividades.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
-#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Alumno/Inicio/A...', Array, true)
-#3 C:\xampp\htdocs\comple\app\Controllers\Alumno\InicioController.php(46): view('Alumno/Inicio/A...', Array)
-#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Alumno\InicioController->index()
-#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno\InicioController))
-#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
-#8 {main}
-CRITICAL - 2021-01-08 11:44:51 --> Undefined variable: actividad
-#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 56, Array)
+CRITICAL - 2021-01-08 03:20:48 --> Undefined index: nombre_actividad
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 22, Array)
 #1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
 #2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
 #3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(25): view('Responsable/Cal...', Array)
@@ -638,13 +23,174 @@ CRITICAL - 2021-01-08 11:44:51 --> Undefined variable: actividad
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
-CRITICAL - 2021-01-08 11:45:18 --> Array to string conversion
-#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 56, Array)
+CRITICAL - 2021-01-08 03:21:30 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 22, Array)
 #1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
 #2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
 #3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(25): view('Responsable/Cal...', Array)
 #4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
 #5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 03:22:14 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(25): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 03:23:45 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(25): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 03:24:30 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(25): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 03:24:54 --> Undefined variable: actividad
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(25): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 03:25:41 --> Undefined variable: act
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(25): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 03:26:07 --> Undefined variable: actividad
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(25): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 03:26:46 --> Illegal string offset 'actividad'
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-08 03:27:11 --> Illegal string offset 'nombre_actividad'
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-08 03:28:44 --> Array to string conversion
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\Calificaciones\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(27): view('Responsable/Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 03:36:10 --> Unknown column 'act.id_actividad' in 'where clause'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Responsable\CalificacionModel.php(84): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Responsable\CalificacionService.php(21): App\Models\Responsable\CalificacionModel->get_actividad('14')
+#6 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(17): App\Services\Responsable\CalificacionService->get_actividad('14')
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-08 10:21:20 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Controllers\Responsable\InicioController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\InicioController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\InicioController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-08 10:21:38 --> Trying to get property 'rfc_responsable' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Responsable\navbar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Responsable/nav...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Responsable\CalificacionController.php(21): view('Responsable/nav...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Responsable\CalificacionController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsable\CalificacionController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 10:27:07 --> Undefined variable: actividad
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Alumnos\lista.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Alumnos/l...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AlumnoController.php(30): view('Jefes/Alumnos/l...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AlumnoController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AlumnoController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 10:29:31 --> Undefined property: App\Controllers\Jefes\AlumnoController::$calificacionService
+#0 C:\xampp\htdocs\comple\app\Controllers\Jefes\AlumnoController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AlumnoController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AlumnoController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-08 11:25:37 --> Undefined variable: act
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Lista-Asistencia\listar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Lista-Asi...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(40): view('Jefes/Lista-Asi...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 11:26:17 --> Undefined variable: a
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Lista-Asistencia\listar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Lista-Asi...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(40): view('Jefes/Lista-Asi...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-08 11:50:27 --> Undefined variable: act
+#0 C:\xampp\htdocs\comple\app\Views\Jefes\Lista-Calificacion\listar.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 58, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Lista-Cal...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(92): view('Jefes/Lista-Cal...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaCalificacion()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}

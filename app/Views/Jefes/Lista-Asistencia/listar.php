@@ -44,25 +44,27 @@
    <body>
       <header>
 
-         <table  style="width:100%">
+         <table >
             <tr>
-               <th><?php
+               <th  rowspan="3" style="width:25%;"><?php
                $path = 'public/img/ISO.png'; 
                $type = pathinfo($path, PATHINFO_EXTENSION);
                $data = file_get_contents($path);
                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
                ?>
-               <img " style="width:8%; "  src="<?= $base64 ?>"></th>
-               <th>Formato para Registro de Participantes de actividades complementarias</th>
+               <img " style="width:38%; "  src="<?= $base64 ?>"></th>
+               <th class="border" style="width:40%;">Formato para el Registro de Participantes de Actividades <?php foreach($actividad as  $a) : ?> <?php if ($a->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
+               if ($a->tipo_actividad == 'CULTURAL') echo 'Cultural y/o Deportiva';
+               if ($a->tipo_actividad == 'ACADEMICA') echo 'ACADEMICA'; ?></th><?php endforeach ?>
                <th>Código: TecNM-VI-PO-003-01</th>
             </tr>
             <tr>
-               <td></td>
+            
                <td>Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>
                <td>Revisión: 0</td>
             </tr>
             <tr>
-               <td></td>
+               
                <td></td>
                <td>Página </td>
             </tr>

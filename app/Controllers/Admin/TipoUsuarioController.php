@@ -14,8 +14,8 @@ class TipoUsuarioController extends BaseController
 	{
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_ADMIN)
         {
-			$tipos_usuarios = $this->tipoUsuarioService->getTipos();
-
+            $tipos_usuarios = $this->tipoUsuarioService->getTipos();
+            
 			echo view('Includes/header');
 			echo view('Admin/navbar', ["activo" => "tipos-usuarios", "tipos_usuarios" => $tipos_usuarios]);
 			echo view('Admin/TiposUsuarios/listar');
@@ -40,7 +40,7 @@ class TipoUsuarioController extends BaseController
         {   
             $datos = [
                 "nombre_tipo" => mb_strtoupper($this->request->getPost("nombre_tipo"), 'utf-8'),
-                "id_tipo_usuario" => $this->request->getPost("id_tipo_usuario"),
+                "id_tipo_usuario" => (int) $this->tipoUsuarioService->getTipo() + 1
         
         ];
 
@@ -118,7 +118,7 @@ class TipoUsuarioController extends BaseController
 	
 	public function cambiarEstatus()
     {
-       
+    
         $id_tipo_usuario = $this->request->getPost('id_tipo_usuario');
         $respuesta = $this->tipoUsuarioService->cambiarEstatus($id_tipo_usuario);
 
@@ -128,7 +128,7 @@ class TipoUsuarioController extends BaseController
         }
         else
         {
-             $this->session->setFlashdata('error', $respuesta['msj']);
+            $this->session->setFlashdata('error', $respuesta['msj']);
         }
         return redirect('admin/tipos-usuarios');
     }

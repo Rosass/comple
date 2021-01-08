@@ -59,4 +59,12 @@ class AlumnoModel extends Model
         return $newArray;
     }
 
+    public function get_actividad( $id_actividad)
+    {
+        return $this->db->table('actividad')
+        ->select('*')
+        ->where('id_actividad', $id_actividad)
+        ->get()->getResult();
+    }
+
 }

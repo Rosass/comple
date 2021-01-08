@@ -14,6 +14,7 @@ class CalificacionController extends BaseController
 	{
         $id_actividad = urldecode($this->request->uri->getSegment(3));
         $alumnos = $this->calificacionService->get_actividad_alumno( $id_actividad );
+        $actividad = $this->calificacionService->get_actividad( $id_actividad );
         $HM = $this->calificacionService->total_hombres_mujeres( $id_actividad );
 
         echo view('Includes/header');
@@ -23,6 +24,7 @@ class CalificacionController extends BaseController
             'id_actividad' => $id_actividad,
             'hombres' => $HM['hombres'],
             'mujeres' => $HM['mujeres'],
+            'actividad' =>$actividad
             ]);
         echo view('Includes/footer');
 	}

@@ -17,7 +17,11 @@ class TipoUsuarioService
      */
     public function getTipos()
 	{   
-       return $this->tipoUsuarioModel->getTipos();
+    return $this->tipoUsuarioModel->getTipos();
+    }
+    public function getTipo()
+	{   
+    return $this->tipoUsuarioModel->getTipo();
     }
 
     /**
@@ -26,9 +30,16 @@ class TipoUsuarioService
      */
     public function getTiposPorEstatus($estatus)
 	{   
-       return $this->tipoUsuarioModel->getTiposPorEstatus($estatus);
+    return $this->tipoUsuarioModel->getTiposPorEstatus($estatus);
     }
 
+    public function getTipoUsuario_Id($id_tipo_usuario)
+	{   
+    return $this->tipoUsuarioModel->getTipoUsuario_Id($id_tipo_usuario);
+    
+    }
+
+    
     /**
      * Guarda un nuevo tipo de actividad en la BD
      * @param array $datos
