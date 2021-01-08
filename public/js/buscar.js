@@ -77,11 +77,11 @@ const imprimirAlumno = alumno => {
 
 	
 	if ( promedioAlumno > 0 && promedioAlumno < 5 ) {
-		divAlerta.appendChild( botonModal( num_control.trim(),  'Constancia Parcial' ) );
+		divAlerta.appendChild( botonModal( num_control.trim(),  'Generar Constancia Parcial' ) );
 		datosAlimno.appendChild( modal( num_control.trim(), 'escolares/generar-parcial' ) );
 		validaCampos();
 	} else if ( promedioAlumno >= 5 ) {
-		divAlerta.appendChild( botonModal( num_control.trim(), 'Constancia De Liberación' ) );
+		divAlerta.appendChild( botonModal( num_control.trim(), 'Generar Constancia De Liberación' ) );
 		datosAlimno.appendChild( modal( num_control.trim(), 'escolares/generar-liberacion' ) );
 		validaCampos();
 		
@@ -116,7 +116,7 @@ const imprimirActividades = actividades => {
 }
 
 
-// HACER TETICION A ACTIVIDADcONTROLLER 
+// HACER PETICION A ACTIVIDAD CONTROLLER 
 const consultaFetch = async (data) => {
 	try {
 		const resp = await fetch(BASE_URL + 'buscar',{

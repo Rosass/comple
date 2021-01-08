@@ -68,13 +68,22 @@ class CalificacionModel extends Model
                     'valor_numerico' =>$act->valor_numerico,
                     'nivel_desempeno' =>$act->nivel_desempeno,
                     
-                   
+                
                 );
                 array_push($newArray, $resp);
             }
         }
         return $newArray;
     }
+
+    public function get_actividad( $id_actividad)
+    {
+        return $this->db->table('actividad')
+        ->select('*')
+        ->where('id_actividad', $id_actividad)
+        ->get()->getResult();
+    }
+
 
 
     

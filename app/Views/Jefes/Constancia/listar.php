@@ -92,11 +92,11 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 ?>
 <?php foreach($areas as $ar) : ?>
     <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br/>
-    <p style="text-align:right; margin-top:1px; font-size:80%;">Instituto Tecnológico de Pochutla<br/><?=  $ar->nombre_area ?> <?php
+    <p style="margin-left:505px; margin-top:1px; font-size:80%;">Instituto Tecnológico de Pochutla<br/><?=  $ar->nombre_area ?> <?php
         if ( $ar->id_area == '2') echo '(Formación Integral)';
     ?></p><br>
 <p style="text-align: center;"><?php foreach($actividad as $act) : ?><?= $act->frase_decreto ?><?php endforeach; ?></p><br>
-    <p style=" margin-left:400px;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?><br/><strong style="font-size:72%;"><?=  $ar->nombre_area ?></strong><br/>  <strong> Folio:</strong> 
+    <p style=" margin-left:456px; text-align: justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?><strong style="font-size:78%; "><?=  $ar->nombre_area ?></strong><br/>  <strong> Folio:</strong> 
     <?php
             if ( $ar->id_area == '2') echo '11V.1.1.4.0.0/EXT/';
             if ( $ar->id_area == '1') echo '11V.0.0.0.0.0/ING/';
@@ -125,7 +125,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
                 $date1 = date("Y")
                 ?>
 
-            <p >Se extiende la presente en la <strong><u>Cd. De San Pedro Pochutla</u></strong> a los<strong><u> <?=$date?> </u></strong> dias del mes de  <strong><u><?php echo $meses[date('n')-1];?></u></strong> del <?=$date1?>.</p></div><br/><br><br><br><br>
+            <p style="text-align: justify;">Se extiende la presente en la <strong><u>Cd. De San Pedro Pochutla</u></strong> a los<strong><u> <?=$date?> </u></strong> dias del mes de  <strong><u><?php echo $meses[date('n')-1];?></u></strong> del <?=$date1?>.</p></div><br/><br><br><br><br>
         </div>
 <P style=" text-align:center;  font-family: Montserrat; font-weight:800; font-size:10pt;"><strong>A T E N T A M E N T E</strong><br/>
 <strong style =" font-family: Montserrat; font-weight:200; font-style:italic; font-size:9pt;">Excelencia en Educación Tecnológica</strong><br/></P><br/><br><br>
@@ -134,12 +134,12 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     <p style="font-family: Montserrat; font-weight:800; font-size:10pt; text-align:center; margin-right:430px;  margin-top:58px; "><strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?><hr color="black" size="2.3"></strong>
     NOMBRE Y FIRMA DEL (DE LA) RESPONSABLE</p>
     <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-left:430px; text-align:center; margin-top:-99px; "><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?><hr color="black" size="2.3"></strong>JEFE(A) DEL <?=  $ar->nombre_area ?></p>
-</div><br><br><br>
+</div><br>
 
 <p style=" font-family: Montserrat; font-weight:500; font-size:8pt;">C.c.p. Jefe (a) de Departamento Correspondiente <br> estudiante.</p><br>
 <footer id="piedepagina">
     <div>
-        <p style="font-family: Montserrat; font-weight:500; font-size:8pt; margin-top:-18px;">TecNM-VI-PO-003-05 <strong style="margin-left:110px;">Esta constancia es oficial y la puede validar en: https://constancias.pochutla.tecnm.mx/</strong></p>
+        <p style="font-family: Montserrat; font-weight:500; font-size:8pt; margin-top:-18px;">TecNM-VI-PO-003-03 <strong style="margin-left:110px;">Esta constancia es oficial y la puede validar en: https://constancias.pochutla.tecnm.mx/</strong></p>
         <p style="font-family: Montserrat; font-weight:500; font-size:8pt; margin-left:650px; text-align:center; margin-top:-900%;">Rev. 0</p>
     </div>
     <hr size="2.3">
@@ -183,7 +183,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     
     <table  class="border tabla-border" >
     <tr >
-    <th class="border" rowspan="3" style="width:33%;"><?php
+    <th class="border" rowspan="3" style="width:28%;"><?php
         $path = 'public/img/ISO.png'; 
         $type = pathinfo($path, PATHINFO_EXTENSION);
         $data = file_get_contents($path);
@@ -191,8 +191,10 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
         ?>
         <img " style="width:36%;  height:90px; "  src="<?= $base64 ?>">
     </th>
-        <th class="border">Formato para Registro de Participantes de actividades complementarias</th>
-        <th class="border">Código: TecNM-VI-PO-003-01</th>
+        <th class="border" style="width:40%;">Evaluación al desempeño de la actividad Promoción <?php if ($act->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
+          if ($act->tipo_actividad == 'CULTURAL') echo 'Cultural y/o Deportiva';
+          if ($act->tipo_actividad == 'ACADEMICA') echo 'ACADEMICA'; ?></th>
+        <th class="border">Código: TecNM-VI-PO-003-03</th>
     </tr>
     <tr>
         <td class="border">Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>

@@ -19,7 +19,7 @@
                             <input type="hidden" class="form-control disabled" id="id_tipo_usuario" name="id_tipo_usuario" value="<?= $tipo_usuario->id_tipo_usuario ?>">
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label for="nombre_tipo">NOMBRE DEL USUARIO(*)</label>
+                                        <label for="nombre_tipo">NOMBRE DEL TIPO DE USUARIO(*)</label>
                                         <input type="text" class="form-control text-uppercase" id="nombre_tipo" name="nombre_tipo" required value="<?= $tipo_usuario->nombre_tipo ?>">
                                     </div>
                                 </div>                                

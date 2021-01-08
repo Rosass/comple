@@ -19,9 +19,12 @@
             <div class="form-group text-left mt-0 mb-3">
             <a href="<?= base_url('responsables/inicio') ?>" class="btn btn-primary" class="text-muted text-decoration-none"><i class="far fa-arrow-alt-circle-left"></i> Regresar</a>
             </div>
-            <div class="alert alert-success">
-                <p>Hombres: <span class="font-weight-bold"><?= $hombres?></span></p>
-                <p>Mujeres: <span class="font-weight-bold"><?= $mujeres?></span></p>
+            <div>
+                <p style="text-align: center;"><strong>Actividad:</strong> <span class="font-weight-bold"><?php foreach($actividad as  $act) : ?> <u><?= $act->nombre_actividad ?></u><?php endforeach ?></span></p>
+            </div>
+            <div class="alert alert-success"><br>
+                <p style="text-align: center; text-align: justify;">Hombres: <span class="font-weight-bold"><?= $hombres?></span></p>
+                <p style="text-align: center; text-align: justify;">Mujeres: <span class="font-weight-bold"><?= $mujeres?></span></p>
             </div>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
@@ -51,7 +54,10 @@
                                 <td><?= $alumno['semestre'] ?></td>
                                 <td><?= $alumno['valor_numerico'] ?></td> 
                                 <td><?= $alumno['nivel_desempeno'] ?></td> 
-                                <td style="width:8%;">
+                                
+                                <?php if($alumno['valor_numerico'] < 0)  ?>                   
+                                <td style="width:8%;">             
+                                
                                     <div class="d-flex flex-column">
                                         <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/evaluacion/$alumno[num_control]/$alumno[id_inscripcion]/$id_actividad") ?>"><i class="fas fa-file-alt"></i> Evaluacion Desempeño</a>                                   
                                     </div>

@@ -90,7 +90,7 @@
             <?php foreach($alumnos as $key => $alumno) : ?>
                <tr>
                   <th scope="row" style="font-size:80%; width: 4%;"><?= $key + 1 ?></th>
-                  <td class="a" style="text-align: left; width: 50%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
+                  <td class="a" style="text-align: left; width: 36%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
                   <td style="width: 15%;font-size:85%;"><?= $alumno['num_control']?></td>
                   <td><?= $alumno['carrera']?></td>
                   <td><?= $alumno['semestre']?></td>
@@ -102,7 +102,7 @@
                         else if ( $alumno['nivel_desempeno'] == 'Insuficiente' ) echo 'NO ACREDITADO';
                         ?>
                   </td>
-                  <td></td>
+                  <td style="width: 20%;"></td>
                </tr>
                <?php endforeach ?>
             </tbody>

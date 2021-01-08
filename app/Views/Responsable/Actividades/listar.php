@@ -17,9 +17,9 @@
                 </div>
             <?php endif ?>
             <form method="POST" action="<?= base_url("responsables/inicio/periodo") ?>">
-                <div class="row mb-3 mt-2 justify-content-end">
+                <div class="row mb-3 mt-0 justify-content-end">
                     <div class="col-md-5 text-right d-flex align-items-center">
-                        <span class="mr-2">Filtro </span>
+                        <span class="mr-1">Filtro </span>
                         <select class="custom-select"  name="periodo">
                             <option selected disabled value="">Elige el periodo</option>
                             <option value="0">ACTIVO</option>
@@ -27,8 +27,10 @@
                                 <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
                             <?php endforeach ?>
                         </select>
+                        <div>
+                            <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
+                        </div>
                     </div>
-                    <button type="submit"  class="btn bg-color-tec-blue text-white"><i class="fas fa-check"></i>buscar</button>
                 </div>
             </form>
             <div class="table-responsive-sm text-center">
@@ -71,9 +73,9 @@
                                 </td> 
                                 <td style="width:8%;">  
                                     <div class="d-flex flex-column">
-                                    <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/calificaciones/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i> Asignar calificaciones</a>
-                                    <a class="btn btn-warning btn-sm btn-block mb-0"  href="<?= base_url("responsables/lista-asistencia/$actividad->id_actividad") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de asistencia</a>
-                                    <a class="btn btn-secondary btn-sm btn-block mb-0"  href="<?= base_url("responsables/lista-calificacion/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i> Acta de calificaciones</a>
+                                    <a class="btn btn-info btn-sm btn-block mb-0" target="_blank" href="<?= base_url("responsables/calificaciones/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i> Asignar calificaciones</a>
+                                    <a class="btn btn-warning btn-sm btn-block mb-0" target="_blank"  href="<?= base_url("responsables/lista-asistencia/$actividad->id_actividad") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de asistencia</a>
+                                    <a class="btn btn-secondary btn-sm btn-block mb-0" target="_blank" href="<?= base_url("responsables/lista-calificacion/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i> Acta de calificaciones</a>
                                     </div>
                                 </td>
                             </tr>
