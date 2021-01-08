@@ -1,0 +1,31 @@
+CRITICAL - 2021-01-06 15:06:28 --> Undefined property: App\Controllers\Division\ActividadController::$actvidadService
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-06 15:08:49 --> Call to undefined method App\Services\AreaService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-06 15:10:33 --> Call to undefined method App\Services\AreaService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-06 15:10:37 --> Call to undefined method App\Services\AreaService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-06 15:12:53 --> Call to undefined method App\Services\AreaService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
