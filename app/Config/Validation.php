@@ -1,5 +1,10 @@
 <?php namespace Config;
 
+use CodeIgniter\Validation\Rules;
+use CodeIgniter\Validation\FileRules;
+use CodeIgniter\Validation\FormatRules;
+use CodeIgniter\Validation\CreditCardRules;
+
 class Validation
 {
 	//--------------------------------------------------------------------
@@ -60,12 +65,13 @@ class Validation
 	];
 
 	public $periodoReglas = [
-		'periodo'     => 'required|numeric',
+		'periodo'     => 'required',
+		'descripcion'     => 'required',
 		'fecha_inicio'     => 'required|valid_date',
 		'fecha_final'     => 'required|valid_date',
 		'fecha_inicio_inscripcion'     => 'required|valid_date',
 		'fecha_final_inscripcion'     => 'required|valid_date',
-		'frase_decreto'     => 'required',
+		
 	];
 
 	public $actividadReglas = [

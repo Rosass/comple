@@ -18,11 +18,11 @@
                         <div class="form-group">
                             <label for="nombre">PERIODO (*)</label>
                             <?php if($periodo->periodo == ENE_JUN) : ?>
-                                <?php $descripcion = "ENE-JUN/".substr($periodo, 1,4); ?>
+                                <?php $descripcion = "ENE-JUN/".substr($periodo, 1, 4) ?>
                             <?php elseif($periodo->periodo == VERANO) : ?>
-                                <?php $descripcion = "VERANO/".substr($periodo, 1,4); ?>
+                                <?php $descripcion = "VERANO/".substr($periodo, 1, 4) ?>
                             <?php else : ?> 
-                                <?php $descripcion = "AGO-DIC/".substr($periodo, 1,4); ?>
+                                <?php $descripcion = "AGO-DIC/".substr($periodo, 1, 4) ?>
                             <?php endif ?>
                             <input type="text" class="form-control" value="<?= $periodo->periodo . " - " . $descripcion ?>"  readonly>
                             <input type="hidden" name="periodo" id="periodo" value="<?= $periodo->periodo ?>" required>
