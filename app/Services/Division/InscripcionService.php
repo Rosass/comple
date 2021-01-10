@@ -52,49 +52,29 @@ class InscripcionService
         
         foreach ($inscripciones_aux as $key => $inscripcion)
         {
-            if($inscripcion->estatus == 1)
-            {
-                $estatus= '<span class="bg-warning p-1 rounded small">Solicitada</span>';
-            }    
-            if($inscripcion->estatus == 2) 
-            {
-                $estatus= '<span class="bg-success p-1 rounded small">Aceptada</span>';  
-            }
-            if($inscripcion->estatus == 0) 
-            {
-                $estatus= '<span class="bg-danger p-1 rounded small">Rechazada</span>';
-            }
+       
 
             $inscripciones_html .= '<tr>' .
-                                        '<th scope="row">' . ($key + 1) . '</th>' .
-                                        '<td>' . $inscripcion->num_control . '</td>' .
-                                        '<td style="width:15%;">' . $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno . '</td>' .
-                                        '<td>' . $inscripcion->carrera . '</td>' .
-                                        '<td>' . $inscripcion->semestre . '</td>' .
-                                        '<td>' . $inscripcion->descripcion_periodo . '</td>' .
-                                        '<td>' . $inscripcion->nombre_actividad . '</td>' .
-                                        '<td>' . $inscripcion->telefono . '</td>' .
-                                        '<td>' . $inscripcion->fecha_inscripcion . '</td>' .
-                                        '<td>' . $inscripcion->nota . '</td>' .  
-                                         '<td class="text-white">' . $estatus . '</td>'. 
-                                '<td style="width:20%;">'.
-                                '<div class="d-flex flex-column">'.
-                                    '<!--  Editar inscripciÃ³n -->'.
-                                    '<?php if($inscripcion->estatus == true) : ?>'.
-                                    '<a class="btn btn-warning btn-sm btn-block mb-1" href="' . base_url("division/inscripciones/editar/". $inscripcion->id_inscripcion) . '"><i class="fas fa-pen"></i> Editar</a>'.
-                                    '<?php endif ?>'.
-                                    '<!-- Aceptar inscripciÃ³n -->'.
-                                        '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'.
-                                            '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">'.
-                                            '<button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Aceptar</button>'.
-                                        '</form>'.
-                                    '<!-- Rechazar inscripciÃ³n -->'.
-                                        '<form action="'. base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'.
-                                            '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion . '">'.
-                                            '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Rechazar</button>'.
-                                        '</form>'.
-                                '</div>'.
-                            '</td>'.
+            '<th scope="row">' . ($key + 1) . '</th>' .
+            '<td>' . $inscripcion->num_control . '</td>' .
+            '<td style="width:30%;">' . $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno . '</td>' .
+            '<td>' . $inscripcion->carrera . '</td>' .
+            '<td>' . $inscripcion->semestre . '</td>' .
+            '<td>' . $inscripcion->descripcion_periodo . '</td>' .
+            '<td>' . $inscripcion->nombre_actividad . '</td>' .
+            '<td>' . $inscripcion->telefono . '</td>' .
+            '<td>' . $inscripcion->fecha_inscripcion . '</td>' .
+            '<td style="width:15%;">' .
+                '<div class="d-flex flex-column">' .
+                    '<!--  Editar inscripción -->' .
+                    '<a class="btn btn-warning btn-sm btn-block mb-1" href="' . base_url("division/inscripciones/editar/" . $inscripcion->id_inscripcion) . '"><i class="fas fa-pen"></i> Editar</a>' .
+                    '<!-- Eliminar inscripción -->' .
+                    '<form action="' . base_url('division/inscripciones/cambiar-estatus') . '" method="POST">' .
+                        '<input type="hidden" name="id_inscripcion" value="' . $inscripcion->id_inscripcion . '">' .
+                        '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-trash"></i> Eliminar</button>' .
+                    '</form>' .
+            '</td>' .
+        '</tr>';
                                     '</tr>';
         }
         return $inscripciones_html;
