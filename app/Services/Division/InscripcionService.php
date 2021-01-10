@@ -14,7 +14,7 @@ class InscripcionService
     }
 
     /**
-     * Obtiene las inscripciónes por estatus de la BD
+     * Obtiene las inscripciÃ³nes por estatus de la BD
      * @return object
      */
     public function getInscripciones()
@@ -23,7 +23,7 @@ class InscripcionService
     }
     
     /**
-     * Esta función obtiene inscripciones filtradas por actividad
+     * Esta funciÃ³n obtiene inscripciones filtradas por actividad
      * 
      * @param int $id_actividad
      * @param bool $estatus
@@ -54,7 +54,7 @@ class InscripcionService
         {
             if($inscripcion->estatus == 1)
             {
-                $estatus= '<span class="bg-warning p-1 rounded small">Solicitada</span>';     
+                $estatus= '<span class="bg-warning p-1 rounded small">Solicitada</span>';
             }    
             if($inscripcion->estatus == 2) 
             {
@@ -64,7 +64,6 @@ class InscripcionService
             {
                 $estatus= '<span class="bg-danger p-1 rounded small">Rechazada</span>';
             }
-
 
             $inscripciones_html .= '<tr>' .
                                         '<th scope="row">' . ($key + 1) . '</th>' .
@@ -80,16 +79,16 @@ class InscripcionService
                                          '<td class="text-white">' . $estatus . '</td>'. 
                                 '<td style="width:20%;">'.
                                 '<div class="d-flex flex-column">'.
-                                    '<!--  Editar inscripción -->'.
+                                    '<!--  Editar inscripciÃ³n -->'.
                                     '<?php if($inscripcion->estatus == true) : ?>'.
                                     '<a class="btn btn-warning btn-sm btn-block mb-1" href="' . base_url("division/inscripciones/editar/". $inscripcion->id_inscripcion) . '"><i class="fas fa-pen"></i> Editar</a>'.
                                     '<?php endif ?>'.
-                                    '<!-- Aceptar inscripción -->'.
-                                        '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar'). '" method="POST">' .
+                                    '<!-- Aceptar inscripciÃ³n -->'.
+                                        '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'.
                                             '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">'.
                                             '<button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Aceptar</button>'.
                                         '</form>'.
-                                    '<!-- Rechazar inscripción -->'.
+                                    '<!-- Rechazar inscripciÃ³n -->'.
                                         '<form action="'. base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'.
                                             '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion . '">'.
                                             '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Rechazar</button>'.
@@ -102,7 +101,7 @@ class InscripcionService
     }
 
     /**
-     * Guarda una nueva inscripción en la BD
+     * Guarda una nueva inscripciÃ³n en la BD
      * @param array $datos
      * @return array
      */
@@ -117,24 +116,24 @@ class InscripcionService
             if($inscripcion == NULL)
             {
                 if ($this->inscripcionModel->guardar($datos))
-                    return ["exito" => true, "msj" => "Inscripción agregada con exito."];
+                    return ["exito" => true, "msj" => "InscripciÃ³n agregada con exito."];
                 else
                     return ["exito" => false, "msj" => "Algo salio mal, intentalo de nuevo."];
             }
             else 
             {
-                return ["exito" => false, "msj" => "Ya se encuentra registrada una inscripción con la actividad selecionada!."];
+                return ["exito" => false, "msj" => "Ya se encuentra registrada una inscripciÃ³n con la actividad selecionada!."];
             }
         }
         else
         {
-            return ["exito" => false, "msj" => "No se encontro el número de control proporcionado."];
+            return ["exito" => false, "msj" => "No se encontro el nÃºmero de control proporcionado."];
         }
 
     }
 
     /**
-     * Actualiza los datos de una inscripción en la BD
+     * Actualiza los datos de una inscripciÃ³n en la BD
      * @param array $datos
      * @return array
      */
@@ -145,7 +144,7 @@ class InscripcionService
         if($inscripcion != NULL)
         {
             
-            // Si la actividad sigue siendo la misma (que no se cambió) se elimina de los datos a actualizar
+            // Si la actividad sigue siendo la misma (que no se cambiÃ³) se elimina de los datos a actualizar
             /* if ($inscripcion->id_actividad == $datos['id_actividad'])
             {
                 unset($datos['id_actividad']);
@@ -156,7 +155,7 @@ class InscripcionService
 
                 if($inscripcion_aux != NULL)
                 {   
-                    return ["exito" => false, "msj" => "Ya se encuentra registrada una inscripción con la actividad selecionada!."];
+                    return ["exito" => false, "msj" => "Ya se encuentra registrada una inscripciÃ³n con la actividad selecionada!."];
                 }
             } */
 
@@ -167,13 +166,13 @@ class InscripcionService
             }
             else
             {
-                return ["exito" => false, "msj" => "No se actualizó ningun campo."];
+                return ["exito" => false, "msj" => "No se actualizÃ³ ningun campo."];
             }
             
         }
         else 
         {
-            return ["exito" => false, "msj" => "Id de actividad no válido!."];
+            return ["exito" => false, "msj" => "Id de actividad no vÃ¡lido!."];
         }
     
     }
@@ -202,7 +201,7 @@ class InscripcionService
     }
 
     /**
-     * Esta función une registros de 2 BD mediante el numero de control del alumno
+     * Esta funciÃ³n une registros de 2 BD mediante el numero de control del alumno
      * @param $array1
      * @param $array2
      * @return array
