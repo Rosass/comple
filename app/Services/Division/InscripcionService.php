@@ -65,10 +65,7 @@ class InscripcionService
                 $estatus= '<span class="bg-danger p-1 rounded small">Rechazada</span>';
             }
 
-            if($inscripcion->estatus == true) 
-            {
-                $editar;
-            }
+         
 
             $inscripciones_html .= '<tr>' .
                                         '<th scope="row">' . ($key + 1) . '</th>' .
@@ -83,7 +80,7 @@ class InscripcionService
                                         '<td>' . $inscripcion->nota . '</td>' .  
                                          '<td class="text-white">' . $estatus . '</td>'. 
                                 '<td style="width:20%;">'.
-                                '<div class="d-flex flex-column">'. $editar .
+                                '<div class="d-flex flex-column">'. 
                                     
                                    
                                     '<a class="btn btn-warning btn-sm btn-block mb-1" href="' . base_url("division/inscripciones/editar/". $inscripcion->id_inscripcion) . '"><i class="fas fa-pen"></i> Editar</a>'.
