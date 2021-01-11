@@ -184,7 +184,10 @@ class InscripcionService
 
         $nuevo_estatus = ($inscripcion->estatus == 1) ? 2 : 2;
         $datos = [ 'estatus' => $nuevo_estatus ];
-        return $this->inscripcionModel->actualizar($id_inscripcion, $datos);  
+        if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
+            return ["exito" => true, "msj" => "Datos actualizados con exito."];
+        else
+            return ["exito" => false, "msj" => "No se actualizó ningun campo."]; 
     }
 
     public function cambiarEstatusRechazar($id_inscripcion)
@@ -193,8 +196,10 @@ class InscripcionService
 
         $nuevo_estatus = ($inscripcion->estatus == 1) ? 0 : 0;
         $datos = [ 'estatus' => $nuevo_estatus ];
-        return $this->inscripcionModel->actualizar($id_inscripcion, $datos);  
-           
+        if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
+            return ["exito" => true, "msj" => "Datos actualizados con exito."];
+        else
+            return ["exito" => false, "msj" => "No se actualizó ningun campo."]; 
     }
 
     public function getInscripcionPorId($id_inscripcion)
