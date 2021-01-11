@@ -66,7 +66,7 @@ class InscripcionService
             }
             if($inscripcion->estatus == true) 
             {
-                $editar;
+                $editar = '<a class="btn btn-warning btn-sm btn-block mb-1" href="' . base_url("division/inscripciones/editar/". $inscripcion->id_inscripcion) . '"><i class="fas fa-pen"></i> Editar</a>';
             }
 
             $inscripciones_html .= '<tr>' .
@@ -85,7 +85,6 @@ class InscripcionService
                                 '<div class="d-flex flex-column">'.
                                     '<!--  Editar inscripción -->'. $editar .
                                    
-                                    '<a class="btn btn-warning btn-sm btn-block mb-1" href="' . base_url("division/inscripciones/editar/". $inscripcion->id_inscripcion) . '"><i class="fas fa-pen"></i> Editar</a>'.
                                    
                                     '<!-- Aceptar inscripción -->'.
                                         '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'.
