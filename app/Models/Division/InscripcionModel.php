@@ -52,7 +52,7 @@ class InscripcionModel extends Model
     {
         $this->db->table($this->table)
         ->where("id_inscripcion", $id_inscripcion)
-       // ->where("estatus", true)
+       ->where("estatus", true)
         ->update($datos);
         return $this->db->affectedRows();
     }
@@ -62,7 +62,7 @@ class InscripcionModel extends Model
         return $this->db->table($this->table)
         ->select("*")
         ->where("id_inscripcion", $id_inscripcion)
-       // ->where("estatus", true)
+        ->where("estatus", true)
         ->get()->getRow();
     }
 
@@ -73,7 +73,7 @@ class InscripcionModel extends Model
         ->where("num_control", $num_control)
         ->where("periodo", $periodo)
         ->where("id_actividad", $id_actividad)
-       // ->where("estatus", true)
+        ->where("estatus", true)
         ->get()->getResult();
     }
 
