@@ -26,7 +26,7 @@ class InscripcionModel extends Model
         ->join("actividad act", "act.id_actividad = i.id_actividad")
         ->orderBy("p.fecha_inicio", "ASC")
         ->orderBy("i.fecha_inscripcion", "DESC")
-        ->where("p.estatus", true)
+       
         ->get()->getResult();
     }
     
