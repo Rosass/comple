@@ -92,7 +92,7 @@ class InscripcionService
                                     '<!-- Rechazar inscripción -->'.
                                         '<form action="'. base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'.
                                             '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion . '">'.
-                                            '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Rechazar</button>'.
+                                            '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-ban"></i> Rechazar</button>'.
                                         '</form>'.
                                 '</div>'.
                             '</td>'.
