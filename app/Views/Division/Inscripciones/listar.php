@@ -24,7 +24,7 @@
                     <span class="mr-2">Filtro </span>
                     <select class="custom-select" id="selectActividad">
                         <option selected disabled value="">Elige la actividad</option>
-                        <option value="0">TODAS LAS ACTIVIDADES</option>
+                        <option value="0"></option>
                         <?php foreach($actividades as $key => $actividad) : ?>
                             <option value="<?= $actividad->id_actividad ?>"><?= $actividad->nombre_actividad ?></option>
                         <?php endforeach ?>
