@@ -184,7 +184,7 @@ class InscripcionService
 
         $nuevo_estatus = ($inscripcion->estatus == 1) ? 2 : 2;
         $datos = [ 'estatus' => $nuevo_estatus ];
-        return $this->actualizar($inscripcion->id_inscripcion, $datos);  
+        return $this->actualizar($inscripcionModel->id_inscripcion, $datos);  
     }
 
     public function cambiarEstatusRechazar($id_inscripcion)
@@ -193,7 +193,7 @@ class InscripcionService
 
         $nuevo_estatus = ($inscripcion->estatus == 1) ? 0 : 0;
         $datos = [ 'estatus' => $nuevo_estatus ];
-        return $this->actualizar($inscripcion->id_inscripcion, $datos);  
+        return $this->actualizar($inscripcionModel->id_inscripcion, $datos);    
     }
 
     public function getInscripcionPorId($id_inscripcion)
