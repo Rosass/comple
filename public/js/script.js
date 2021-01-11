@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
 	// DECLARACIÓN DE VARIABLES
-	const URL_BASE = 'http://192.168.0.125/comple/';
+	const URL_BASE = 'https://ac.pochutla.tecnm.mx/';
 	const selectActividad = document.getElementById('selectActividad');
 	const tbodyTablaInscripciones = document.getElementById('tbodyTablaInscripciones');
+	
 	
     const traduccion_datatable_esp = {
 		"sProcessing": "Procesando...",
@@ -27,7 +28,7 @@ $(document).ready(function(){
 		
     };
     
-    // Se asigna el idioma español al plugin Datatable
+    // Se asigna el idioma español al plugin Datatables
     $('#tablaActividades, #tablaInscripciones, #tablaPeriodos, #tablaTiposActividades, #tablaResponsables, #tablaJefes, #tablaAreas, #tablaTiposUsuarios, #tablaUsuarios').DataTable({ "language": traduccion_datatable_esp });
 	
 	// Listener para filtrar las inscripciones por actividad mediante fetch
@@ -39,13 +40,13 @@ $(document).ready(function(){
 		$('#tablaInscripciones').DataTable().clear().destroy();
 
 		// Se añade el spinner de cargando
-		tbodyTablaInscripciones.innerHTML = `<tr>
-												<td colspan="9">
-													<div class="text-center"><div class="spinner-border text-primary" role="status"></div></div>
-												</td>
-                            				</tr>`;
-
-		// Se hace la consulta al servidor mediante Fetch
+		tbodyTablaInscripciones.innerHTML = 
+		`<tr>
+			<td colspan="9">
+			<div class="text-center"><div class="spinner-border text-primary" role="status"></div></div>
+			</td>
+        </tr>`;
+        // Se hace la consulta al servidor mediante Fetch
 		fetch(URL_BASE + 'division/inscripciones',{method: "POST", headers:{"X-Requested-With": "XMLHttpRequest"}, body: data})
 		.then(function (response)
 		{
@@ -62,4 +63,7 @@ $(document).ready(function(){
 		})
 		.catch(error => console.log(error));
 	});
+
+	
 })
+
