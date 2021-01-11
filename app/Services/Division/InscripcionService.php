@@ -84,8 +84,6 @@ class InscripcionService
                                 '<td style="width:20%;">'.
                                 '<div class="d-flex flex-column">'.
                                     '<!--  Editar inscripción -->'. $editar .
-                                   
-                                   
                                     '<!-- Aceptar inscripción -->'.
                                         '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'.
                                             '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">'.
@@ -148,7 +146,7 @@ class InscripcionService
         {
             
             // Si la actividad sigue siendo la misma (que no se cambió) se elimina de los datos a actualizar
-            /* if ($inscripcion->id_actividad == $datos['id_actividad'])
+            if ($inscripcion->id_actividad == $datos['id_actividad'])
             {
                 unset($datos['id_actividad']);
             }
@@ -160,7 +158,7 @@ class InscripcionService
                 {   
                     return ["exito" => false, "msj" => "Ya se encuentra registrada una inscripción con la actividad selecionada!."];
                 }
-            } */
+            } 
 
             // Se actualizan los datos
             if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
@@ -186,7 +184,11 @@ class InscripcionService
 
         $nuevo_estatus = ($inscripcion->estatus == 1) ? 2 : 2;
         $datos = [ 'estatus' => $nuevo_estatus ];
-        return $this->actualizar($inscripcion->id_inscripcion, $datos);  
+        
+        if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
+        return ["exito" => true, "msj" => "Datos actualizados con exito."];
+    else
+        return ["exito" => false, "msj" => "No se actualizó ningun campo."];  
     }
 
     public function cambiarEstatusRechazar($id_inscripcion)
@@ -195,7 +197,11 @@ class InscripcionService
 
         $nuevo_estatus = ($inscripcion->estatus == 1) ? 0 : 0;
         $datos = [ 'estatus' => $nuevo_estatus ];
-        return $this->actualizar($inscripcion->id_inscripcion, $datos);  
+        
+        if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
+        return ["exito" => true, "msj" => "Datos actualizados con exito."];
+    else
+        return ["exito" => false, "msj" => "No se actualizó ningun campo."];   
     }
 
     public function getInscripcionPorId($id_inscripcion)
