@@ -17,9 +17,9 @@ class InscripcionService
      * Obtiene las inscripciónes por estatus de la BD
      * @return object
      */
-    public function getInscripcionesPorEstatus($estatus)
+    public function getInscripciones()
 	{   
-       return $this->inscripcionModel->getInscripcionesPorEstatus($estatus);
+       return $this->inscripcionModel->getInscripciones();
     }
 
     /**
@@ -36,7 +36,7 @@ class InscripcionService
         if($id_actividad == 0)
         {
             // Se obtienen las inscripciones
-            $inscripciones = $this->inscripcionModel->getInscripcionesPorEstatus($estatus);
+            $inscripciones = $this->inscripcionModel->getInscripcionesPorEstatus();
         }
         else
         {
