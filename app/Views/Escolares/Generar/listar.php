@@ -197,13 +197,13 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
             <th colspan="7">Actividades</th>
             </tr>
             <tr>
-            <th>No</th>
-            <th>Periodo</th>
-            <th>Nombre</th>
-            <th>Tipo</th>
-            <th>Creditos</th>
-            <th>Valor Numerico</th>
-            <th>Nivel Desempeño</th>  
+            <th style="font-size:80%;">No</th>
+            <th style="font-size:80%;">Periodo</th>
+            <th style="font-size:80%;">Nombre</th>
+            <th style="font-size:80%;">Tipo</th>
+            <th style="font-size:80%;">Creditos</th>
+            <th style="font-size:80%;">Valor Numerico</th>
+            <th style="font-size:80%;">Nivel Desempeño</th>  
             </tr>
         </thead>
         <tbody> 
