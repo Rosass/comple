@@ -59,7 +59,7 @@ $routes->post('logout', 'UsuarioController::logout');
 
 // Rutas [DIVISION-ACTIVIDADES]
 $routes->get('division/actividades', 'Division/ActividadController::index');
-$routes->post('division/actividades/periodo', 'Division/ActividadController::periodo');
+$routes->get('division/actividades/periodo', 'Division/ActividadController::periodo');
 $routes->post('division/actividades/agregar', 'Division/ActividadController::guardar');
 $routes->get('division/actividades/editar/(:any)', 'Division/ActividadController::editar');
 $routes->post('division/actividades/editar', 'Division/ActividadController::actualizar');
@@ -68,6 +68,7 @@ $routes->get('division/lista-alumnos/(:any)', 'Division/ActividadController::lis
 
 // Rutas [DIVISION-INSCRIPCIONES]
 $routes->get('division/inscripciones', 'Division/InscripcionController::index');
+$routes->get('division/inscripciones/periodo', 'Division/InscripcionController::periodo');
 $routes->post('division/inscripciones', 'Division/InscripcionController::getInscripcionesPorActividadYEstatus');
 $routes->post('division/inscripciones/agregar', 'Division/InscripcionController::guardar');
 $routes->get('division/inscripciones/editar/(:any)', 'Division/InscripcionController::editar');
@@ -133,7 +134,7 @@ $routes->post('responsable/logout', 'ResponsableLoginController::logout');
 
 // Rutas [Responsables]
 $routes->get('responsables/inicio', 'Responsable/InicioController::index');
-$routes->post('responsables/inicio/periodo', 'Responsable/InicioController::periodo');
+$routes->get('responsables/inicio/periodo', 'Responsable/InicioController::periodo');
 $routes->get('responsables/calificaciones/(:any)', 'Responsable/CalificacionController::index');
 $routes->get('responsables/evaluacion/(:any)', 'Responsable/EvaluacionController::index');
 $routes->post('responsables/evaluacion/agregar', 'Responsable/EvaluacionController::guardar');
@@ -164,7 +165,7 @@ $routes->post('escolares/generar-liberacion', 'Escolares/GenerarController::cons
 
 //Rutas [Jefes Area actividades]
 $routes->get('jefes/actividades', 'Jefes/AreaController::index');
-$routes->post('jefes/actividades/periodo', 'Jefes/AreaController::periodo');
+$routes->get('jefes/actividades/periodo', 'Jefes/AreaController::periodo');
 $routes->post('jefes/actividades/agregar', 'Jefes/AreaController::guardar');
 $routes->get('jefes/lista-asistencia/(:any)', 'Jefes/AsistenciaController::listaAsistencia');
 $routes->get('jefes/lista-calificacion/(:any)', 'Jefes/AsistenciaController::listaCalificacion');

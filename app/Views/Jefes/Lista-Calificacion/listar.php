@@ -9,6 +9,7 @@
       table ,th,td{
       border:1.5px solid black;
       border-collapse:collapse;
+      
       }
       h3{
       text-align: center;
@@ -39,6 +40,10 @@
 
          text-transform: capitalize;
       }
+
+      #alto{
+         height: 2.4%;
+      }
    </style>
 
 </head>
@@ -47,27 +52,27 @@
 
          <table  style="width:100%">
          <tr >
-    <th class="border" rowspan="3" style="width:25%;"><?php
-        $path = 'public/img/ISO.png'; 
-        $type = pathinfo($path, PATHINFO_EXTENSION);
-        $data = file_get_contents($path);
-        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-        ?>
-        <img " style="width:36%;  height:90px; "  src="<?= $base64 ?>">
-    </th>
-      <th class="border" style="width:40%;">Formato de Resultado de Actividades <?php foreach($actividad as  $a) : ?> <?php if ($a->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
+      <th class="border" rowspan="3" style="width:25%;"><?php
+         $path = 'public/img/ISO.png'; 
+         $type = pathinfo($path, PATHINFO_EXTENSION);
+         $data = file_get_contents($path);
+         $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+         ?>
+         <img " style="width:36%;  height:90px; "  src="<?= $base64 ?>">
+      </th>
+      <th class="border" style="width:40%;" rowspan="2">Formato de Resultado de Actividades <?php foreach($actividad as  $a) : ?> <?php if ($a->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
          if ($a->tipo_actividad == 'CULTURAL') echo 'Cultural y/o Deportiva';
          if ($a->tipo_actividad == 'ACADEMICA') echo 'ACADEMICA'; ?></th>
       <th class="border">Código: TecNM-VI-PO-003-03</th> <?php endforeach ?>
-    </tr>
-    <tr>
-        <td class="border">Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>
-        <td class="border">Revisión: 0</td>
-    </tr>
-    <tr>
-        <td class="border"></td>
-        <td class="border">Página </td>
-    </tr>
+      </tr>
+      <tr>
+         
+         <td class="border">Revisión: 0</td>
+      </tr>
+      <tr>
+      <td class="border">Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>
+         <td class="border">Página </td>
+      </tr>
          </table>
       
       <h4 style="text-align: center;">INSTITUTO TECNOLÓGICO DE POCHUTLA</h4>
@@ -94,12 +99,12 @@
          <tbody>
             <?php foreach($alumnos as $key => $alumno) : ?>
                <tr>
-                  <th scope="row" style="font-size:80%; width: 4%;"><?= $key + 1 ?></th>
-                  <td class="a" style="text-align: left; width: 36%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
-                  <td style="width: 15%;font-size:85%;"><?= $alumno['num_control']?></td>
-                  <td><?= $alumno['carrera']?></td>
-                  <td><?= $alumno['semestre']?></td>
-                  <td><?php
+                  <th id="alto" scope="row" style="font-size:80%; width: 4%;"><?= $key + 1 ?></th>
+                  <td id="alto" class="a" style="text-align: left; width: 36%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
+                  <td id="alto" style="width: 15%;font-size:85%;"><?= $alumno['num_control']?></td>
+                  <td id="alto"><?= $alumno['carrera']?></td>
+                  <td id="alto"><?= $alumno['semestre']?></td>
+                  <td id="alto" style="font-size:80%;"><?php
                         if ( $alumno['nivel_desempeno'] == 'Suficiente') echo 'ACREDITADO';
                         elseif ( $alumno['nivel_desempeno'] == 'Bueno') echo 'ACREDITADO';
                         elseif ( $alumno['nivel_desempeno'] == 'Notable') echo 'ACREDITADO';
@@ -107,7 +112,7 @@
                         else if ( $alumno['nivel_desempeno'] == 'Insuficiente' ) echo 'NO ACREDITADO';
                      ?>
                   </td>
-                  <td style="width: 20%;"></td>
+                  <td id="alto" style="width: 20%;"></td>
                </tr>
             <?php endforeach ?>
          </tbody>
@@ -119,7 +124,7 @@
          $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
          ?><br><br><br><br>
             <p style="font-size: 90%;">Lugar y fecha: San Pedro Pochutla a <?= $fecha ?> de <?php echo $meses[date('n')-1];?> del <?= $fecha1 ?></p>
-      </table>
+      </table >
       </main>
    <?php foreach($areas as $ar) : ?>
    <footer id="piedepagina">
@@ -130,7 +135,7 @@
             <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-left:420px;  text-align:center;  margin-top:-160px;"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?> <hr width="68%"></strong> Jefe de Departamento de <br> <?php
             if ( $ar->id_area == '2') echo ' Actividades Extraescolares';
             if ( $ar->id_area == '1') echo ' Ingenierias';?></p> <br><br><br><br>
-            <p style="font-family: Montserrat;  font-size:10pt; text-align:left; margin-right:550px;  margin-top:20px;">TecNM-VI-PO-003-05</p>
+            <p style="font-family: Montserrat;  font-size:10pt; text-align:left; margin-right:550px;  margin-top:20px;">TecNM-VI-PO-003-03</p>
             <p style=" font-family: Montserrat;  font-size:10pt;  margin-left:690px; text-align:left; margin-top:-400px;">Rev. 0</p>
          </div>
          <?php endforeach ?>

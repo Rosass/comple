@@ -21,6 +21,16 @@ class InscripcionService
 	{   
     return $this->inscripcionModel->getInscripciones();
     }
+
+    public function getPeriodo()
+	{   
+    return $this->inscripcionModel->getPeriodo();
+    }
+
+    public function getActividadPorIdareaPeriodo($perido)
+	{   
+        return $this->inscripcionModel->getActividadPorIdareaPeriodo($perido);
+    }
     
     /**
      * Esta función obtiene inscripciones filtradas por actividad

@@ -39,7 +39,7 @@ class InicioController extends BaseController
 
     public function periodo()
 	{
-		$periodoPost =  $this->request->getPost("periodo");
+        $periodoPost =  $this->request->getGet("periodo");
 
 		// if ( empty($periodoPost)
 

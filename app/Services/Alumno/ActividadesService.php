@@ -17,7 +17,8 @@ class ActividadesService
      */
     public function getActividadesPorAlumno($alumnos)
 	{   
-       return $this->alumnoModel->getActividadesPorAlumno($alumnos);
+        return $this->alumnoModel->getActividadesPorAlumno($alumnos);
     }
+
 
 }

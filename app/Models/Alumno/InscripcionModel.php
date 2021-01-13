@@ -11,6 +11,22 @@ class InscripcionModel extends Model
     protected $returnType   = 'object';
     protected $table = 'actividad';
 
+    public function getActividadesPorCalificacion( $num_control )
+//     SELECT inscripcion.id_inscripcion FROM inscripcion
+// LEFT JOIN evaluacion_desempenio
+// ON inscripcion.id_inscripcion = evaluacion_desempenio.id_inscripcion
+// WHERE inscripcion.num_control = '161160176'
+// AND evaluacion_desempenio.valor_numerico >= 1
+    {
+        return $this->db->table('inscripcion')
+                        ->selectSum('actividad.creditos')
+                        ->join('actividad', 'inscripcion.id_actividad = actividad.id_actividad', 'LEFT')
+                        ->join('evaluacion_desempenio', 'inscripcion.id_inscripcion  = evaluacion_desempenio.id_inscripcion', 'LEFT')
+                        ->where("inscripcion.num_control", $num_control)
+                        ->where('evaluacion_desempenio.valor_numerico >= 1')
+                        ->get()->getRow();
+    }
+
     public function getActividadesPorAlumno(  $true)
     {
         return $this->db->table('actividad a')

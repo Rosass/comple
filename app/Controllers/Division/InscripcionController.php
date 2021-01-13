@@ -23,11 +23,17 @@ class InscripcionController extends BaseController
 			$inscripciones = $this->inscripcionService->getInscripciones();
 			$periodos = $this->periodoService->getPeriodosPorEstatus(true);
 			$actividades = $this->actividadService->getActividadesPorEstatus(true);
-			$inscripciones_aux = $this->inscripcionService->unirRegistros($inscripciones);
+            $inscripciones_aux = $this->inscripcionService->unirRegistros($inscripciones);
+            $periodo = $this->actividadService->getPeriodo();
 
 			echo view('Includes/header');
 			echo view('Division/navbar', ["activo" => "inscripciones"]);
-			echo view('Division/Inscripciones/listar', ["inscripciones" => $inscripciones_aux, "periodos" => $periodos, "actividades" => $actividades]);
+			echo view('Division/Inscripciones/listar', [
+                "inscripciones" => $inscripciones_aux, 
+                "periodos" => $periodos, 
+                'periodo' => $periodo,
+                "actividades" => $actividades
+                ]);
 			echo view('Includes/footer');
 		}
 		else
@@ -49,6 +55,35 @@ class InscripcionController extends BaseController
 		// Se devuelve el resultado en formato JSON
 		return json_encode($inscripciones);
     }
+
+    public function periodo()
+	{
+		$periodoPost =  $this->request->getGet("periodo");
+
+		// if ( empty($periodoPost)
+
+        if ( empty($periodoPost) || $periodoPost == '0') return redirect('division/inscripciones');
+
+        $inscripciones = $this->inscripcionService->getInscripciones();
+        $periodos = $this->periodoService->getPeriodosPorEstatus(true);
+        $actividades = $this->actividadService->getActividadesPorEstatus(true);
+		$inscripciones = $this->inscripcionService->getActividadPorIdareaPeriodo( $periodoPost);
+        $periodo = $this->inscripcionService->getPeriodo();
+        $inscripciones_aux = $this->inscripcionService->unirRegistros($inscripciones);
+
+		
+		
+		echo view('Includes/header');
+		echo view('Division/navbar', ["activo" => "inscripciones"]);
+		echo view('Division/Inscripciones/listar', [				
+			    "inscripciones" => $inscripciones_aux, 
+                "periodos" => $periodos, 
+                'periodo' => $periodo,
+                "inscripcion" => $inscripciones,
+                "actividades" => $actividades
+		]);
+		echo view('Includes/footer');
+	}
 
 	//--------------------------------------------------------------------
 	

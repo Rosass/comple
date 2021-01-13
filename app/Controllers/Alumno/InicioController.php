@@ -23,8 +23,9 @@ class InicioController extends BaseController
 	{  
         if($alumno = $this->session->usuario_logueado->num_control)
         {
-              
-            $actividades = $this->HistorialService->getActividades_no_calificadas($alumno); 
+            $num_control2 = $this->session->usuario_logueado->num_control;
+            $actividades = $this->HistorialService->getActividades_no_calificadas($alumno);
+            $numeroActividades = $this->HistorialService-> getActividadesCalificacion( $num_control2 ); 
             //var_dump($actividades);
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
 			$responsables = $this->responsableService->getResponsablesPorEstatus(true);
@@ -34,15 +35,16 @@ class InicioController extends BaseController
             echo view('Alumno/Inicio/Actividades', [				
                 'actividades' => $actividades,
                 'tipos_actividades' => $tipos_actividades,
+                "numeroActividades" => $numeroActividades->creditos,
 				'responsables' => $responsables				           			
                 ]);
             echo view('Includes/footer');
 		
         }
-       else
+        else
 
-       {
-         return redirect("/");
-       }
+        {
+            return redirect("/");
+        }
     }
 }

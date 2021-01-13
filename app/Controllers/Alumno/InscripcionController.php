@@ -17,18 +17,17 @@ class InscripcionController extends BaseController
 	{  
         if($num_control = $this->session->usuario_logueado->num_control)
         {
-        // $fecha = '2020-01-13';
-        // $newFecha = array();
-        // // 2020-01-13
-        // $dia = substr( $fecha, 8, 2);
-        // $mes = substr( $fecha, 5, 2);
-        // $anio = substr( $fecha, 0, 4);
-        // array_push( $newFecha, $anio, $mes, $dia);
-        // var_dump( $newFecha);
-        // return $newFecha;
-            $num_control = $this->inscripcionService->getInscripcionPorAlumno($num_control);
+        
+            $num_control2 = $this->session->usuario_logueado->num_control;
+            $num_control = $this->inscripcionService->getInscripcionPorAlumno($num_control2); 
             $actividades = $this->inscripcionService->getActividadesPorAlumno(true);           
             $periodos = $this->inscripcionService->getPeriodosPorEstatus(true);
+
+            $numeroActividades = $this->inscripcionService-> getActividadesPorCalificacion( $num_control2 );
+
+            // echo $numeroActividades->creditos;
+
+
 
 
             echo view('Includes/header');
@@ -36,7 +35,8 @@ class InscripcionController extends BaseController
             echo view('Alumno/Inscripciones/listar', [
                 'alumnos' => $num_control,				
                 'actividades' => $actividades,	
-                "periodos" => $periodos		           			
+                "periodos" => $periodos,
+                "numeroActividades" => $numeroActividades->creditos           			
                 ]);
             echo view('Includes/footer');
 		

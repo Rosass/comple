@@ -15,6 +15,11 @@ class InscripcionService
 	{   
     return $this->inscripcionModel->getInscripcionPorAlumno($num_control);
     }
+
+    public function  getActividadesPorCalificacion( $num_control )
+	{   
+    return $this->inscripcionModel->getActividadesPorCalificacion( $num_control );
+    }
     
     /**
      * Obtiene las actividades de la BD
@@ -30,12 +35,12 @@ class InscripcionService
      */
     public function getPeriodosPorEstatus($true)
 	{   
-       return $this->inscripcionModel->getPeriodosPorEstatus($true);
+        return $this->inscripcionModel->getPeriodosPorEstatus($true);
     }
 
     /* public function periodo_activo()
 	{   
-       return $this->inscripcionModel->get_periodo_activo();
+        return $this->inscripcionModel->get_periodo_activo();
     } */
 
 
@@ -136,6 +141,16 @@ class InscripcionService
             if ( $anioServer < $fecha_incripcion_fin[0])
             {
                 return true;
+            }
+            if ( $anioServer > $fecha_incripcion_inicio[0] )
+            {
+                if ( $mesServer <= $fecha_incripcion_fin[1] )
+                {
+                    if ( $diaServer <= $fecha_incripcion_fin[2] )
+                    {
+                        return true;
+                    }
+                }
             }
             if ( ( $mesServer >= $fecha_incripcion_inicio[1] ) && ( $mesServer <= $fecha_incripcion_fin[1] ) )
             {

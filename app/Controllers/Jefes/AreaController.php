@@ -41,9 +41,9 @@ class AreaController extends BaseController
 
 	public function periodo()
 	{
-		$periodoPost =  $this->request->getPost("periodo");
-
-		// if ( empty($periodoPost)
+		$periodoPost =  $this->request->getGet("periodo");
+		// echo $periodoPost;
+		// // if ( empty($periodoPost)
 
 		if ( empty($periodoPost) || $periodoPost == '0') return redirect('jefes/actividades');
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Constancia Parcial</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;800&display=swap" rel="stylesheet">
     <style type="text/css">
     .border {
     border: 1.5px solid black;
@@ -46,7 +46,50 @@
         
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 13px;
+        font-size: 9pt;
+        float: none;
+    }
+    #regular{
+        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 8pt;
+        float: none;
+    }
+    #light{
+        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 7pt;
+        float: none;
+    }
+    #regular8{
+        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 7pt;
+    }
+    #medium{
+        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 9pt;
+    }
+    #medium8{
+        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 8pt;
+    }
+    #extrabold{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 10pt;
+    }
+    #extralight{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 9pt;
     }
 
     #watermar{
@@ -54,21 +97,23 @@
 
         bottom: 26cm;
         left: -5cm;
-        
-        width: 1040px;
-        height: 33;
+        width: 990px;
         opacity: 0.08;
-        
-
         z-index: -1000;
-
     }
+
+    #tabla{
+	
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed;/* Hacemos que la cabecera tenga una posición fija */
+}
+    
 
     
 </style>
 </head>
 <body>
-
 <?php
     $path = 'public/img/sepp.jpg'; 
     $type = pathinfo($path, PATHINFO_EXTENSION);
@@ -92,24 +137,27 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 ?>
 <?php foreach($areas as $ar) : ?>
     <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br/>
-    <p style="margin-left:505px; margin-top:1px; font-size:80%;">Instituto Tecnológico de Pochutla<br/><?=  $ar->nombre_area ?> <?php
+    <p style="margin-left:528px; margin-top:1px; text-align: justify;" id="regular"><strong>Instituto Tecnológico de Pochutla</strong></p>
+    <p style="margin-left:522px; margin-top:1px; text-align: justify;" id="regular8">Subdirección de Planeación y Vinculación</p>
+    <p style="margin-left:522px; text-align: justify;" id="light"><?=  $ar->nombre_area ?> <?php
         if ( $ar->id_area == '2') echo '(Formación Integral)';
     ?></p><br>
-<p style="text-align: center;"><?php foreach($actividad as $act) : ?><?= $act->frase_decreto ?><?php endforeach; ?></p><br>
-    <p style=" margin-left:456px; text-align: justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?><strong style="font-size:78%; "><?=  $ar->nombre_area ?></strong><br/>  <strong> Folio:</strong> 
+<p style="text-align: center;"><?php foreach($actividad as $act) : ?>"<?= $act->frase_decreto ?>"<?php endforeach; ?></p><br>
+    <p style=" margin-left:473px; text-align: justify;" id="medium" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?><strong style="font-size:78%; "><?=  $ar->nombre_area ?></strong><br/></p>  
+    <p  style=" margin-left:473px; text-align: justify;" id="medium"><strong> Oficio:</strong> 
     <?php
             if ( $ar->id_area == '2') echo '11V.1.1.4.0.0/EXT/';
             if ( $ar->id_area == '1') echo '11V.0.0.0.0.0/ING/';
             
         ?><?php echo $folio ?>/<?= $fecha1 ?></p><br>
 
-    <p style="text-align:center; font-size:85%; margin-top:-5px;"><strong>CONSTANCIA DE CUMPLIMIENTO DE ACTIVIDADES COMPLEMENTARIAS</strong></p><br>
-    <div  style="font-family: Montserrat; font-weight:800; font-size:10pt;">
+    <p style="text-align:center; margin-top:-5px;" id="medium"><strong>CONSTANCIA DE CUMPLIMIENTO DE ACTIVIDADES COMPLEMENTARIAS</strong></p><br>
+    <div id="extrabold" >
     <P><strong>ALBERTO SALINAS SÁNCHEZ </strong><br/>
     <strong>JEFE(A) DEL DEPARTAMENTO DE SERVICIOS ESCOLARES  </strong><br><strong>P R E S E N T E</strong></P></div><br>
 
         <div id="letra">
-            <P style =" text-align:justify; ">El que suscribe <strong><u><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?></u></strong>,<?php endforeach; ?> por este medio se permite hacer de su conocimiento que el (la) estudiante  <?php foreach ( $alumno as $a ):?> <strong><u><?= $a->nombre?> <?=$a->ap_paterno?>
+            <P style ="text-align:center; text-align:justify; ">El que suscribe <strong><u><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?></u></strong>,<?php endforeach; ?> por este medio se permite hacer de su conocimiento que el (la) estudiante  <?php foreach ( $alumno as $a ):?> <strong><u><?= $a->nombre?> <?=$a->ap_paterno?>
                 <?=$a->ap_materno?></u></strong>, con número de control
             <strong><u><?= $control?></u></strong> de la carrera de <strong><u><?php
                     if ( $a->carrera == 'ISC') echo 'INGENIERIA EN SISTEMAS COMPUTACIONALES';
@@ -127,20 +175,20 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 
             <p style="text-align: justify;">Se extiende la presente en la <strong><u>Cd. De San Pedro Pochutla</u></strong> a los<strong><u> <?=$date?> </u></strong> dias del mes de  <strong><u><?php echo $meses[date('n')-1];?></u></strong> del <?=$date1?>.</p></div><br/><br><br><br><br>
         </div>
-<P style=" text-align:center;  font-family: Montserrat; font-weight:800; font-size:10pt;"><strong>A T E N T A M E N T E</strong><br/>
-<strong style =" font-family: Montserrat; font-weight:200; font-style:italic; font-size:9pt;">Excelencia en Educación Tecnológica</strong><br/></P><br/><br><br>
+<P style=" text-align:center;" id="extrabold"><strong>A T E N T A M E N T E</strong><br/>
+<strong style ="  font-style:italic;" id="extralight">Excelencia en Educación Tecnológica</strong><br/></P><br/><br><br>
 
 <div>
-    <p style="font-family: Montserrat; font-weight:800; font-size:10pt; text-align:center; margin-right:430px;  margin-top:58px; "><strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?><hr color="black" size="2.3"></strong>
+    <p style="text-align:center; margin-right:430px;  margin-top:58px; " id="extrabold"><strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?><hr color="black" size="2.3"></strong>
     NOMBRE Y FIRMA DEL (DE LA) RESPONSABLE</p>
-    <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-left:430px; text-align:center; margin-top:-99px; "><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?><hr color="black" size="2.3"></strong>JEFE(A) DEL <?=  $ar->nombre_area ?></p>
+    <p style="margin-left:430px; text-align:center; margin-top:-99px; " id="extrabold"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?><hr color="black" size="2.3"></strong>JEFE(A) DEL <?=  $ar->nombre_area ?></p>
 </div><br>
 
-<p style=" font-family: Montserrat; font-weight:500; font-size:8pt;">C.c.p. Jefe (a) de Departamento Correspondiente <br> estudiante.</p><br>
+<p id="medium8">C.c.p. Jefe (a) de Departamento Correspondiente <br> estudiante.</p><br><br>
 <footer id="piedepagina">
     <div>
-        <p style="font-family: Montserrat; font-weight:500; font-size:8pt; margin-top:-18px;">TecNM-VI-PO-003-03 <strong style="margin-left:110px;">Esta constancia es oficial y la puede validar en: https://constancias.pochutla.tecnm.mx/</strong></p>
-        <p style="font-family: Montserrat; font-weight:500; font-size:8pt; margin-left:650px; text-align:center; margin-top:-900%;">Rev. 0</p>
+        <p style="margin-top:-18px;" id="medium8">TecNM-VI-PO-003-05 <strong style="margin-left:110px;">Esta constancia es oficial y la puede validar en: https://constancias.pochutla.tecnm.mx/</strong></p>
+        <p style="margin-left:650px; text-align:center; margin-top:-900%;" id="medium8">Rev. 0</p>
     </div>
     <hr size="2.3">
 
@@ -175,46 +223,43 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 ?>
 <img " style="width:80%;" src="<?= $base64 ?>"> 
 
-</div> <br><br><br><br><br><br>
+</div> <br><br><br><br><br><br><br>
+
 <!-- tabla de calificacion -->
-<body>
-    
-    <header>
-    
-    <table  class="border tabla-border" >
-    <tr >
-    <th class="border" rowspan="3" style="width:28%;"><?php
-        $path = 'public/img/ISO.png'; 
-        $type = pathinfo($path, PATHINFO_EXTENSION);
-        $data = file_get_contents($path);
-        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-        ?>
-        <img " style="width:36%;  height:90px; "  src="<?= $base64 ?>">
-    </th>
-        <th class="border" style="width:40%;">Evaluación al desempeño de la actividad Promoción <?php if ($act->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
-          if ($act->tipo_actividad == 'CULTURAL') echo 'Cultural y/o Deportiva';
-          if ($act->tipo_actividad == 'ACADEMICA') echo 'ACADEMICA'; ?></th>
-        <th class="border">Código: TecNM-VI-PO-003-03</th>
-    </tr>
-    <tr>
+    <table id="tabla"  class="border tabla-border ">
+        <tr >
+        <th class="border" rowspan="3" style="width:36%;"><?php
+            $path = 'public/img/ISO.png'; 
+            $type = pathinfo($path, PATHINFO_EXTENSION);
+            $data = file_get_contents($path);
+            $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+            ?>
+            <img " style="width:42%;  height:88px; "  src="<?= $base64 ?>">
+        </th>
+            <th rowspan="2" class="border" style="width:37%;">Evaluación al desempeño de la actividad Promoción <?php if ($act->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
+                if ($act->tipo_actividad == 'CULTURAL') echo 'Cultural y/o Deportiva';
+                if ($act->tipo_actividad == 'ACADEMICA') echo 'Academica'; ?></th>
+            <th class="border" style="width:36%;">Código: TecNM-VI-PO-003-04</th>
+        </tr>
+        <tr>
+            
+            <td class="border" style="width:36%;" >Revisión: 0</td>
+        </tr>
+        <tr>
         <td class="border">Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>
-        <td class="border">Revisión: 0</td>
-    </tr>
-    <tr>
-        <td class="border"></td>
-        <td class="border">Página </td>
-    </tr>
-    </table><br>
+            <td class="border" style="width:36%;">Página </td>
+        </tr>
+    </table><br><br><br><br><br><br>
     
     <p style="text-align: center;"><strong> INSTITUTO TECNOLÓGICO DE POCHUTLA</strong><br>
     <strong style="text-align:center; font-size:70%;">SUBDIRECCION DE PLANEACIÓN Y VINCULACION</strong><br></p><br>
-
-    <p style="font-size: 80%; text-align:center;"> <strong> <?=  $ar->nombre_area ?> <br> OFICINA DE PROMOCIÓN <?php foreach($actividad as $act) : ?> <strong><u><?= $act->tipo_actividad ?></u></strong></strong></p>
-    <p style="font-size: 80%; text-align:center;"><strong>Nombre del estudiante: <?php foreach ( $alumno as $a ):?> <strong><u><?= $a->nombre?> <?=$a->ap_paterno?> <?=$a->ap_materno?><?php endforeach ?></strong><br>
-    <strong>Actividad:<strong><u><?= $act->actividad ?></u></strong><br>
-    <strong>Periodo de realización:<strong><strong><u><?= $act->periodo_descripcion ?></u></strong></p><br>
-        <?php endforeach ?>
-    </header>
+    
+    <p style="font-size: 80%; text-align:center;"> <strong> <?=  $ar->nombre_area ?> <br> OFICINA DE PROMOCIÓN <?php foreach($actividad as $act) : ?> <strong><u><?= $act->tipo_actividad ?></u></strong></strong></p><br>
+        
+        <p style="font-size: 80%; text-align:justify;"><strong>Nombre del estudiante: <?php foreach ( $alumno as $a ):?> <strong><u><?= $a->nombre?> <?=$a->ap_paterno?> <?=$a->ap_materno?><?php endforeach ?></strong><br>
+            <strong>Actividad:<strong><u><?= $act->actividad ?></u></strong><br>
+            <strong>Periodo de realización:<strong><strong><u><?= $act->periodo_descripcion ?></u></strong></p><br>
+            <?php endforeach ?>
     <table  class="border tabla-border" style="width:100%">
         <thead>
             <tr>
@@ -310,7 +355,6 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
         </tbody>
 
     </table>
-</body>
 
 </body>
 </html>

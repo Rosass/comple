@@ -19,7 +19,7 @@
             <div class="text-right">
                 <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevaActividadModal"><i class="fas fa-plus"></i> Nueva actividad</button>
             </div>
-            <form method="POST" action="<?= base_url("division/actividades/periodo") ?>">
+            <form method="get" action="<?= base_url("division/actividades/periodo") ?>">
                 <div class="row mb-3 mt-2 justify-content-end">
                     <div class="col-md-5 text-right d-flex align-items-center">
                         <span class="mr-2">Filtro </span>
@@ -30,8 +30,10 @@
                                 <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
                             <?php endforeach ?>
                         </select>
+                        <div>
+                            <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
+                        </div>
                     </div>
-                    <button type="submit"  class="btn bg-color-tec-blue text-white"><i class="fas fa-check"></i>buscar</button>
                 </div>
             </form>
             <div class="table-responsive-sm text-center">

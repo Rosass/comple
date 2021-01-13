@@ -35,6 +35,9 @@
          bottom:0 !important;
          bottom: -1px;
       }
+      #alto{
+         height: 2.1%;
+      }
    </style>
 
 </head>
@@ -43,28 +46,26 @@
 
          <table  style="width:100%">
             <tr>
-               <th><?php
+               <th rowspan="3"><?php
                $path = 'public/img/ISO.png'; 
                $type = pathinfo($path, PATHINFO_EXTENSION);
                $data = file_get_contents($path);
                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
                ?>
                <img " style="width:8%; "  src="<?= $base64 ?>"></th>
-               <th>Formato para Registro de Participantes de actividades complementarias</th>
+               <th rowspan="2">Formato para Registro de Participantes de actividades<?php foreach($actividad as  $ar) : ?> <?php  if ( $ar->id_area == '1') echo 'Academica';
+               if ( $ar->id_area == '2') echo 'Cultural y/o Deportiva';?></th><?php endforeach ?>
                <th>Código: TecNM-VI-PO-003-01</th>
             </tr>
             <tr>
-               <td></td>
-               <td>Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>
+               
                <td>Revisión: 0</td>
             </tr>
             <tr>
-               <td></td>
-               <td></td>
-               <td>Página 2 de 2</td>
+            <td>Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>
+               <td>Página 1</td>
             </tr>
          </table>
-        
       <h4 style="text-align: center;">INSTITUTO TECNOLÓGICO DE POCHUTLA</h4>
       <p style="text-align:center; font-size:70%;"><strong>SUBDIRECCION DE PLANEACIÓN Y VINCULACION</strong><br>
       <?php foreach($actividad as  $act) : ?> 
@@ -87,12 +88,12 @@
          <tbody>
             <?php foreach($alumnos as $key => $alumno) : ?>
             <tr>
-               <th scope="row" style="font-size:80%; width: 4%;"><?= $key + 1 ?></th>
-               <td class="a" style="text-align: left; width: 50%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
-               <td style="width: 15%;font-size:85%;"><?= $alumno['num_control']?></td>
-               <td><?= $alumno['carrera']?></td>
-               <td><?= $alumno['semestre']?></td>
-               <td></td>
+               <th id="alto" scope="row" style="font-size:80%; width: 4%;"><?= $key + 1 ?></th>
+               <td id="alto" class="a" style="text-align: left; width: 50%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
+               <td id="alto" style="width: 15%;font-size:85%;"><?= $alumno['num_control']?></td>
+               <td id="alto"><?= $alumno['carrera']?></td>
+               <td id="alto"><?= $alumno['semestre']?></td>
+               <td id="alto"></td>
             </tr>
             <?php endforeach ?>
          </tbody>
@@ -113,7 +114,7 @@
             <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-left:420px;  text-align:center;  margin-top:-160px;"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?> <hr width="68%"></strong> Jefe de Departamento de <br> <?php
             if ( $ar->id_area == '2') echo ' Actividades Extraescolares';
             if ( $ar->id_area == '1') echo ' Ingenierias';?></p> <br><br><br><br>
-            <p style="font-family: Montserrat;  font-size:10pt; text-align:left; margin-right:550px;  margin-top:20px;">TecNM-VI-PO-003-05</p>
+            <p style="font-family: Montserrat;  font-size:10pt; text-align:left; margin-right:550px;  margin-top:20px;">TecNM-VI-PO-003-01</p>
             <p style=" font-family: Montserrat;  font-size:10pt;  margin-left:690px; text-align:left; margin-top:-400px;">Rev. 0</p>
             <?php endforeach ?>
          </div>

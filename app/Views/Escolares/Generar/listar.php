@@ -46,20 +46,14 @@
 </head>
 <body >
 <div>
-
 <?php
-    $path = 'public/img/sepp.jpg'; 
+    $path = 'public/img/logonew.png'; 
     $type = pathinfo($path, PATHINFO_EXTENSION);
     $data = file_get_contents($path);
     $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
 ?>
-<img " style="width:35%;"  src="<?= $base64 ?>">    
-<?php
-$path = 'public/img/logo_tecnm.gif';
-$type = pathinfo($path, PATHINFO_EXTENSION);
-$data = file_get_contents($path);
-$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-?>
+<img " style="width:80%;"  src="<?= $base64 ?>">    
+
 <?php date_default_timezone_set('America/Mexico_city');
     $fecha = date("d/");
     $fecha1 = date("Y");
@@ -69,9 +63,8 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 
 ?>
 
-    <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br/>
     <p style="margin-left:505px; margin-top:1px;">Instituto Tecnológico de Pochutla</p>
-    <p style=" margin-left:454px; text-align:justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?> <strong>Folio:</strong> <?php echo $folio ?></p>
+    <p style=" margin-left:454px; text-align:justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?> <strong>Folio:</strong>  llV.1.1.5.0.0/SE/<?php echo $folio ?>/<?= $fecha1 ?></p>
 </div>
 <div id="watermar">
 <?php
@@ -110,7 +103,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 <p style="font-size:80%;"><strong> ING.ALBERTO SALINAS SÁNCHEZ</strong><br/>
 <strong>JEFE DEL DEPTO. DE SERVICIOS ESCOLARES</strong></p><br><br>
 
-    <p>c.c.p. Archivo.</p><br/><br><br><br><br><br>
+    <p>c.c.p. Archivo.</p><br/><br><br><br><br>
 
 <div id="piedepagina">
 
@@ -120,26 +113,56 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
         $data = file_get_contents($path);
         $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
     ?>
-<img  style="width:11%;" align="left" src="<?= $base64 ?>">
-<p style=" text-align:center;">k.m 5.35 Carretera San Pedro Pochutla-Puerto Ángel, Localidad El Colorado, C.P. 70902, San Pedro Pochutla, Oaxaca. E-mail: se_pochutla@tecnm.mx<br/>www.itpochutla.edu.mx</p>
+<img  style="width:9%;" align="left" src="<?= $base64 ?>">
+<div >
+        <?php
+                $path = 'public/img/s.png';
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+            ?>
+        <img  style=" width:13%;" align="left" src="<?= $base64 ?>">
+    </div>
+<div >
+        <?php
+                $path = 'public/img/3logos.jpeg';
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+            ?>
+        <img  style=" width:18%;" align="left" src="<?= $base64 ?>">
+    </div>
+    <div >
+            <?php
+                    $path = 'public/img/d.png';
+                    $type = pathinfo($path, PATHINFO_EXTENSION);
+                    $data = file_get_contents($path);
+                    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                ?>
+            <img  style=" width:13%;" align="right" src="<?= $base64 ?>">
+        </div>
+<p style=" text-align:center; text-align: justify; font-size:90%;">k.m 5.35 Carretera San Pedro Pochutla-Puerto Ángel, Localidad El Colorado, C.P. 70902, San Pedro Pochutla, Oaxaca. Tel. 01 (958) 5878050. e-mail: dir pochutla@tecnm.mx</p>
+<div >
+        <?php
+                $path = 'public/img/hr.png';
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+            ?>
+        <img  style=" width:86%;" align="left" src="<?= $base64 ?>">
+    </div>
 </div>
 <!-- constancia parcial -->
 <header>
 
-    <div>
-    <?php
-        $path = 'public/img/sepp.jpg'; 
-        $type = pathinfo($path, PATHINFO_EXTENSION);
-        $data = file_get_contents($path);
-        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-    ?>
-    <img " style="width:35%;"  src="<?= $base64 ?>">    
-    <?php
-    $path = 'public/img/logo_tecnm.gif';
+<?php
+    $path = 'public/img/logonew.png'; 
     $type = pathinfo($path, PATHINFO_EXTENSION);
     $data = file_get_contents($path);
     $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-    ?>
+?>
+<img " style="width:80%;"  src="<?= $base64 ?>">    
+
     <?php date_default_timezone_set('America/Mexico_city');
         $fecha = date("d/");
         $fecha1 = date("Y");
@@ -148,10 +171,9 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
     
     ?>
-        <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br>
 </header>
     <p style="margin-left:505px; margin-top:1px;">Instituto Tecnológico de Pochutla</p>
-    <p style=" margin-left:454px;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?>  <strong> Folio:</strong> <?php echo $folio ?></p>
+    <p style=" margin-left:454px;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?>  <strong> Folio:</strong> llV.1.1.5.0.0/SE/<?php echo $folio ?>/<?= $fecha1 ?></p>
 </div>
     <h5><strong>A QUIEN CORRESPONDA:</strong></h5>
     <P style="text-align: justify;">Por este medio se hace constar que según documentos que existen en el archivo del Instituto Tecnólogico de Pochutla, clave 20DIT0011V el (la) C.</P>
@@ -210,16 +232,52 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 <strong>JEFE DEL DEPTO. DE SERVICIOS ESCOLARES</strong></p>
 
     <p>c.c.p. Archivo.</p><br>
-    <div id="piedepagina">
+<div id="piedepagina">
 
-<?php
-    $path = 'public/img/logotec.png';
-    $type = pathinfo($path, PATHINFO_EXTENSION);
-    $data = file_get_contents($path);
-    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-?>
-<img  style="width:11%;" align="left" src="<?= $base64 ?>">
-<p style=" text-align:center;">k.m 5.35 Carretera San Pedro Pochutla-Puerto Ángel, Localidad El Colorado, C.P. 70902, San Pedro Pochutla, Oaxaca. E-mail: se_pochutla@tecnm.mx<br/>www.itpochutla.edu.mx</p>
+            <?php
+                $path = 'public/img/logotec.png';
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+            ?>
+        <img  style="width:9%;" align="left" src="<?= $base64 ?>">
+        <div >
+                <?php
+                        $path = 'public/img/s.png';
+                        $type = pathinfo($path, PATHINFO_EXTENSION);
+                        $data = file_get_contents($path);
+                        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                    ?>
+                <img  style=" width:13%;" align="left" src="<?= $base64 ?>">
+            </div>
+        <div >
+                <?php
+                        $path = 'public/img/3logos.jpeg';
+                        $type = pathinfo($path, PATHINFO_EXTENSION);
+                        $data = file_get_contents($path);
+                        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                    ?>
+                <img  style=" width:18%;" align="left" src="<?= $base64 ?>">
+            </div>
+            <div >
+                    <?php
+                            $path = 'public/img/d.png';
+                            $type = pathinfo($path, PATHINFO_EXTENSION);
+                            $data = file_get_contents($path);
+                            $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                        ?>
+                    <img  style=" width:13%;" align="right" src="<?= $base64 ?>">
+                </div>
+        <p style=" text-align:center; text-align: justify; font-size:90%;">k.m 5.35 Carretera San Pedro Pochutla-Puerto Ángel, Localidad El Colorado, C.P. 70902, San Pedro Pochutla, Oaxaca. Tel. 01 (958) 5878050. e-mail: dir pochutla@tecnm.mx</p>
+        <div >
+                <?php
+                        $path = 'public/img/hr.png';
+                        $type = pathinfo($path, PATHINFO_EXTENSION);
+                        $data = file_get_contents($path);
+                        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                    ?>
+                <img  style=" width:86%;" align="left" src="<?= $base64 ?>">
+            </div>
 </div>
 </body>
 </html>

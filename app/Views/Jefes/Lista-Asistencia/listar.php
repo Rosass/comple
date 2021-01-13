@@ -34,9 +34,12 @@
          position: absolute;
          bottom:0 !important;
          bottom: -1px;
-
+         float: none;
 
          text-transform: capitalize;
+      }
+      #alto{
+         height: 2%;
       }
    </style>
 
@@ -53,19 +56,17 @@
                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
                ?>
                <img " style="width:38%; "  src="<?= $base64 ?>"></th>
-               <th class="border" style="width:40%;">Formato para el Registro de Participantes de Actividades <?php foreach($actividad as  $a) : ?> <?php if ($a->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
+               <th class="border" style="width:40%;" rowspan="2">Formato para el Registro de Participantes de Actividades <?php foreach($actividad as  $a) : ?> <?php if ($a->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
                if ($a->tipo_actividad == 'CULTURAL') echo 'Cultural y/o Deportiva';
                if ($a->tipo_actividad == 'ACADEMICA') echo 'ACADEMICA'; ?></th><?php endforeach ?>
                <th>Código: TecNM-VI-PO-003-01</th>
             </tr>
             <tr>
-            
-               <td>Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>
                <td>Revisión: 0</td>
             </tr>
             <tr>
                
-               <td></td>
+            <td>Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>
                <td>Página </td>
             </tr>
          </table>
@@ -79,7 +80,7 @@
          <?php endforeach ?>
       </header>
          <main>
-      <table style="width:100%; font-size:90%;" >
+      <table style="width:100%; font-size:90%;">
          <thead>
             <tr>
                <th>No</th>
@@ -90,15 +91,15 @@
                <th>OBSERVACIONES</th>
             </tr>
          </thead>
-         <tbody>
+         <tbody >
             <?php foreach($alumnos as $key => $alumno) : ?>
             <tr>
-               <th scope="row" style="font-size:80%; width: 4%;"><?= $key + 1 ?></th>
-               <td class="a" style="text-align: left; width: 50%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
-               <td style="width: 15%;font-size:85%;"><?= $alumno['num_control']?></td>
-               <td><?= $alumno['carrera']?></td>
-               <td><?= $alumno['semestre']?></td>
-               <td></td>
+               <th id="alto" scope="row" style="font-size:80%; width: 4%;"><?= $key + 1 ?></th>
+               <td id="alto" class="a" style="text-align: left; width: 50%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
+               <td id="alto" style="width: 15%;font-size:85%;"><?= $alumno['num_control']?></td>
+               <td id="alto"><?= $alumno['carrera']?></td>
+               <td id="alto"><?= $alumno['semestre']?></td>
+               <td id="alto"></td>
             </tr>
             <?php endforeach ?>
          </tbody>
@@ -122,7 +123,7 @@
             <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-left:420px;  text-align:center;  margin-top:-160px;"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?> <hr width="68%"></strong> Jefe de Departamento de <br> <?php
             if ( $ar->id_area == '2') echo ' Actividades Extraescolares';
             if ( $ar->id_area == '1') echo ' Ingenierias';?></p> <br><br><br><br>
-            <p style="font-family: Montserrat;  font-size:10pt; text-align:left; margin-right:550px;  margin-top:20px;">TecNM-VI-PO-003-05</p>
+            <p style="font-family: Montserrat;  font-size:10pt; text-align:left; margin-right:550px;  margin-top:20px;">TecNM-VI-PO-003-01</p>
             <p style=" font-family: Montserrat;  font-size:10pt;  margin-left:690px; text-align:left; margin-top:-400px;">Rev. 0</p>
          </div>
          <?php endforeach ?>
