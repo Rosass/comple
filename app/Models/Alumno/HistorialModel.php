@@ -45,6 +45,16 @@ class HistorialModel extends Model
                         ->get()->getResult();
     }
 
+    public function getActividadesCalificacion( $num_control )
+        {
+            return $this->db->table('inscripcion')
+                            ->selectSum('actividad.creditos')
+                            ->join('actividad', 'inscripcion.id_actividad = actividad.id_actividad', 'LEFT')
+                            ->join('evaluacion_desempenio', 'inscripcion.id_inscripcion  = evaluacion_desempenio.id_inscripcion', 'LEFT')
+                            ->where("inscripcion.num_control", $num_control)
+                            ->where('evaluacion_desempenio.valor_numerico >= 1')
+                            ->get()->getRow();
+        }
     public function getActividades($alumnos)
     {
         return $this->db->table('inscripcion a')

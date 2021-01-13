@@ -20,6 +20,11 @@ class HistorialService
         return $this->historialModel->getActividadesPorCalificacion($alumnos); // este muestra los calificados
     }
 
+    public function  getActividadesCalificacion( $num_control )
+	{   
+    return $this->historialModel->getActividadesCalificacion( $num_control );
+    }
+
       public function get_actividad_alumno($id_actividad, $true)
 	{   
        return $this->historialModel->get_actividad_alumno($id_actividad, $true);
