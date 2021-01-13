@@ -112,6 +112,7 @@ class PeriodoController extends BaseController
 			$periodo = $this->request->getPost("periodo");
 
 			$datos = [
+                "periodo" => strtoupper($this->request->getPost("periodo")),
 				"fecha_inicio" => $this->request->getPost("fecha_inicio"),
                 "fecha_final" => $this->request->getPost("fecha_final"),
                 "fecha_inicio_inscripcion" => $this->request->getPost("fecha_inicio_inscripcion"),

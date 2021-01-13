@@ -11,7 +11,7 @@ class ActividadesModel extends Model
     protected $returnType   = 'object';
     protected $table = 'inscripcion';
 
-     public function getActividadesPorAlumno( $alumnos )
+/*      public function getActividadesPorAlumno( $alumnos )
     {
         return $this->db->table('inscripcion a')
                         ->select('a.periodo, a.id_inscripcion, a.id_actividad, p.descripcion as periodo_descripcion, 
@@ -22,6 +22,11 @@ class ActividadesModel extends Model
                         ->join('tipo_actividad tac', 'tac.id_tipo_actividad = ta.id_tipo_actividad', 'LEFT')
                         ->where('num_control', $alumnos)                      
                         ->get()->getResult();
+<<<<<<< HEAD
     }  
+=======
+    }
+    */
+>>>>>>> 432087bf7288a049b0e587601b264f1e6545661b
 
 }

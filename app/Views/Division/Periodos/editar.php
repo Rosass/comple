@@ -16,15 +16,8 @@
 					</div>
 					<div class="card-body">
                         <div class="form-group">
-                            <label for="nombre">PERIODO (*)</label>
-                            <?php if($periodo->periodo == ENE_JUN) : ?>
-                                <?php $descripcion = "ENE-JUN/".date('Y'); ?>
-                            <?php elseif($periodo->periodo == VERANO) : ?>
-                                <?php $descripcion = "VERANO/".date('Y'); ?>
-                            <?php else : ?> 
-                                <?php $descripcion = "AGO-DIC/".date('Y'); ?>
-                            <?php endif ?>
-                            <input type="text" class="form-control" value="<?= $periodo->periodo . " - " . $descripcion ?>"  readonly>
+                            <label for="periodo">PERIODO (*)</label>
+                            <input type="text" class="form-control" value="<?= $periodo->descripcion ?>"  readonly>
                             <input type="hidden" name="periodo" id="periodo" value="<?= $periodo->periodo ?>" required>
                         </div>
                         <div class="form-group">
@@ -42,6 +35,10 @@
                         <div class="form-group">
                             <label for="fecha_final">FECHA FINAL INSCRIPCION (*)</label>
                             <input type="date" name="fecha_final_inscripcion" id="fecha_final_inscripcion" class="form-control" required value="<?= $periodo->fecha_final_inscripcion ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="frase_decreto">FRASE DECRETO </label>
+                            <input type="text" name="frase_decreto" id="frase_decreto" class="form-control" required value="<?= $periodo->frase_decreto ?>">
                         </div>
                         <small class="text-center">Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">

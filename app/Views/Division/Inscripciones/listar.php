@@ -95,25 +95,23 @@
 								<?php endif ?>                                 
 							    </td>
                                 <td style="width:20%;">
-                                    <div class="d-flex flex-column">
+                                    <div class="d-flex flex-column btn-toolbar">
                                         <!--  Editar inscripción -->
                                         <?php if($inscripcion->estatus == true) : ?>
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/inscripciones/editar/".$inscripcion->id_inscripcion) ?>"><i class="fas fa-pen"></i> Editar</a>
                                         <?php endif ?>
                                         <!-- Aceptar inscripción -->
-                                        
+                                                                                             
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-aceptar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
-                                                <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Aceptar</button>
-                                            </form>
-                                          
-                                        <!-- Rechazar inscripción -->
-                                       
+                                                <button type="submit" class="btn btn-success btn-sm btn-block  btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-check"></i> Aceptar</button>
+                                            </form>                                                        
+                                        <!-- Rechazar inscripción -->            
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-rechazar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
-                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Rechazar</button>
+                                                <button type="submit" class="btn btn-danger btn-sm btn-block  btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-ban"></i> Rechazar</button>
                                             </form>
-                                            
+                                                                                 
                                     </div>
                                 </td>
                             </tr>

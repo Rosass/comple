@@ -50,7 +50,7 @@ class InscripcionController extends BaseController
     public function getInscripcionesPorActividadYEstatus()
     {
         $id_actividad = $this->request->getPost("id_actividad");
-        $inscripciones = $this->inscripcionService->getInscripcionesPorActividadYEstatus($id_actividad, true);
+        $inscripciones = $this->inscripcionService->getInscripcionesPorActividadYEstatus($id_actividad);
     
 		// Se devuelve el resultado en formato JSON
 		return json_encode($inscripciones);

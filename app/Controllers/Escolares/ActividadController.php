@@ -12,12 +12,19 @@ class ActividadController extends BaseController
 
 	public function index()
 	{
+        if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_ESCOLARES)
+        {
 		
                 echo view('Includes/header');
                 echo view('Escolares/navbar', ["activo" => "inicio"]);
                 echo view('Escolares/Inicio/listar');
-                echo view('Includes/footer');         
-		
+                echo view('Includes/footer');
+
+		}
+		else
+		{
+			return redirect("/");
+		}
 		
     }
     

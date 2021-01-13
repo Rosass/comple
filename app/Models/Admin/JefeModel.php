@@ -13,7 +13,11 @@ class JefeModel extends Model
 
     public function getJefes()
 	{   
-        return $this->db->table($this->table)->select("*")->get()->getResult();
+        return $this->db->table("jefe j")
+        ->select("j.rfc_jefe, j.nombre_jefe, j.apaterno_jefe, j.amaterno_jefe, j.telefono_jefe, j.correo_jefe, j.estatus, a.nombre_area AS nombre")
+        ->join('area a', 'a.rfc_jefe = j.rfc_jefe')
+        ->orderBy("j.nombre_jefe", "ASC")
+        ->get()->getResult();
     }
 
     public function getJefesPorEstatus($estatus)

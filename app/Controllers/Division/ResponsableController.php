@@ -101,7 +101,7 @@ class ResponsableController extends BaseController
         }
         else
         {   
-            $rfc_responsable = $this->request->getPost("rfc");
+            $rfc_responsable = $this->request->getPost("rfc_responsable");
 
             $datos = [
                 "rfc_responsable" => mb_strtoupper($this->request->getPost("rfc_responsable"), 'utf-8'),
@@ -138,7 +138,7 @@ class ResponsableController extends BaseController
         }
         else
         {   
-            $rfc_responsable = $this->request->getPost("rfc");
+            $rfc_responsable = $this->request->getPost("rfc_responsable");
 
             $datos = [
                 "clave" => password_hash($this->request->getPost("clave") , PASSWORD_DEFAULT, ['cost' => 10]),

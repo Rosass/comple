@@ -57,8 +57,9 @@
 							</td>
 							<td style="width:12%;">
 								<div class="d-flex flex-column">
-								  	<!--  Editar jefe-->
+								<!--  Editar jefe-->
 									<a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("admin/jefes/editar/".$jefe->rfc_jefe) ?>"><i class="fas fa-pen"></i> Editar</a>
+									<?php if ( $jefe->nombre !== 'ADMINISTRADOR' ):?>
 									<?php if($jefe->estatus == true) : ?>
 									    <form action="<?= base_url('admin/jefes/cambiar-estatus') ?>" method="POST">
 											<input type="hidden" name="rfc" value="<?= $jefe->rfc_jefe ?>">
@@ -73,6 +74,7 @@
 								</div>
 							</td>
 						</tr>
+						<?php endif ?>
 						<?php endforeach ?>
 					</tbody>
 				</table>

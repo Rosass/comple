@@ -39,7 +39,7 @@ class InscripcionService
      * @param bool $estatus
      * @return string
      */
-    public function getInscripcionesPorActividadYEstatus($id_actividad, $estatus)
+    public function getInscripcionesPorActividadYEstatus($id_actividad)
     {
         
         // El id_actividad 0 significa que se selecciono "TODAS LAS ACTIVIDADES"
@@ -51,7 +51,7 @@ class InscripcionService
         else
         {
             // Se obtienen las inscripciones
-            $inscripciones = $this->inscripcionModel->getInscripcionesPorActividadYEstatus($id_actividad, $estatus);
+            $inscripciones = $this->inscripcionModel->getInscripcionesPorActividadYEstatus($id_actividad);
         }
         
         // Se unen las inscripciones con los datos del alumno obtenidos de la BD "alumnos"
@@ -62,6 +62,22 @@ class InscripcionService
         
         foreach ($inscripciones_aux as $key => $inscripcion)
         {
+            if($inscripcion->estatus == 1)
+            {
+                $estatus= '<span class="bg-warning p-1 rounded small">Solicitada</span>';
+            }    
+            if($inscripcion->estatus == 2) 
+            {
+                $estatus= '<span class="bg-success p-1 rounded small">Aceptada</span>';  
+            }
+            if($inscripcion->estatus == 0) 
+            {
+                $estatus= '<span class="bg-danger p-1 rounded small">Rechazada</span>';
+            }
+            if($inscripcion->estatus == true) 
+            {
+                $editar = '<a class="btn btn-warning btn-sm btn-block mb-1" href="' . base_url("division/inscripciones/editar/". $inscripcion->id_inscripcion) . '"><i class="fas fa-pen"></i> Editar</a>';
+            }
 
             $inscripciones_html .= '<tr>' .
                                         '<th scope="row">' . ($key + 1) . '</th>' .
@@ -73,33 +89,20 @@ class InscripcionService
                                         '<td>' . $inscripcion->nombre_actividad . '</td>' .
                                         '<td>' . $inscripcion->telefono . '</td>' .
                                         '<td>' . $inscripcion->fecha_inscripcion . '</td>' .
-                                        '<td>' . $inscripcion->nota . '</td>' .
-                              /*           '<td class="text-white">'.
-								'<?php if($inscripcion->estatus == 1):  ?>'.
-								'<span class="bg-warning p-1 rounded small">Solicitada</span>'.
-                                    '<?php endif ?>'.
-                                '<?php if($inscripcion->estatus == 2) : ?>'.
-								'<span class="bg-success p-1 rounded small">Aceptada</span>'.
-                                    '<?php endif ?>'.
-                                '<?php if($inscripcion->estatus == 0) : ?>'.
-								'<span class="bg-danger p-1 rounded small">Rechazada</span>'.
-								'<?php endif ?>'.
-                                '</td>'. */
+                                        '<td>' . $inscripcion->nota . '</td>' .  
+                                         '<td class="text-white">' . $estatus . '</td>'. 
                                 '<td style="width:20%;">'.
                                 '<div class="d-flex flex-column">'.
-                                    '<!--  Editar inscripción -->'.
-                                    '<?php if($inscripcion->estatus == true) : ?>'.
-                                    '<a class="btn btn-warning btn-sm btn-block mb-1" href="' . base_url("division/inscripciones/editar/". $inscripcion->id_inscripcion) . '"><i class="fas fa-pen"></i> Editar</a>'.
-                                    '<?php endif ?>'.
+                                    '<!--  Editar inscripción -->'. $editar .
                                     '<!-- Aceptar inscripción -->'.
                                         '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'.
                                             '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">'.
-                                            '<button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Aceptar</button>'.
+                                            '<button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-check"></i> Aceptar</button>'.
                                         '</form>'.
                                     '<!-- Rechazar inscripción -->'.
                                         '<form action="'. base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'.
                                             '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion . '">'.
-                                            '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Rechazar</button>'.
+                                            '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-ban"></i> Rechazar</button>'.
                                         '</form>'.
                                 '</div>'.
                             '</td>'.
@@ -153,7 +156,7 @@ class InscripcionService
         {
             
             // Si la actividad sigue siendo la misma (que no se cambió) se elimina de los datos a actualizar
-            /* if ($inscripcion->id_actividad == $datos['id_actividad'])
+            if ($inscripcion->id_actividad == $datos['id_actividad'])
             {
                 unset($datos['id_actividad']);
             }
@@ -165,7 +168,7 @@ class InscripcionService
                 {   
                     return ["exito" => false, "msj" => "Ya se encuentra registrada una inscripción con la actividad selecionada!."];
                 }
-            } */
+            } 
 
             // Se actualizan los datos
             if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
@@ -191,7 +194,10 @@ class InscripcionService
 
         $nuevo_estatus = ($inscripcion->estatus == 1) ? 2 : 2;
         $datos = [ 'estatus' => $nuevo_estatus ];
-        return $this->actualizar($inscripcion->id_inscripcion, $datos);  
+        if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
+            return ["exito" => true, "msj" => "Datos actualizados con exito."];
+        else
+            return ["exito" => false, "msj" => "No se actualizó ningun campo."]; 
     }
 
     public function cambiarEstatusRechazar($id_inscripcion)
@@ -200,7 +206,10 @@ class InscripcionService
 
         $nuevo_estatus = ($inscripcion->estatus == 1) ? 0 : 0;
         $datos = [ 'estatus' => $nuevo_estatus ];
-        return $this->actualizar($inscripcion->id_inscripcion, $datos);  
+        if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
+            return ["exito" => true, "msj" => "Datos actualizados con exito."];
+        else
+            return ["exito" => false, "msj" => "No se actualizó ningun campo."]; 
     }
 
     public function getInscripcionPorId($id_inscripcion)

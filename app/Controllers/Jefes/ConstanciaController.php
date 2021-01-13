@@ -18,7 +18,9 @@ class ConstanciaController extends BaseController
 
 	public function constancia()
 	{
-        
+        if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
+            {
+
         $control = $this->request->getPost("ncontrol");
         $folio = $this->request->getPost('folio');
         $id_actividad = $this->request->getPost('id_actividad');
@@ -52,6 +54,11 @@ class ConstanciaController extends BaseController
         $dompdf->stream("Constancia Parcial -  ".$control." .pdf", array("Attachment" => 0));
         exit();
 
-	}
+            }
+            else
+            {
+                return redirect("/");
+            }
+    }
 
 }

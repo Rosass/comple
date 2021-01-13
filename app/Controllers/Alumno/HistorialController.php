@@ -21,14 +21,20 @@ class HistorialController extends BaseController
 
     public function index()
 	{  
-        if($alumno = $this->session->usuario_logueado->num_control)
+        if($this->session->loginalumno && $this->session->usuario_logueado)
         {
+             if($alumno =  $this->session->usuario_logueado->num_control)
+            {
+
+               
             $actividades = $this->HistorialService->getActividadesPorCalificacion($alumno); 
             $actividadesNoCalificadas = $this->HistorialService->getActividades_no_calificadas($alumno); 
+            
             //var_dump( $actividadesNoCalificadas );
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
-			$responsables = $this->responsableService->getResponsablesPorEstatus(true);
-
+            $responsables = $this->responsableService->getResponsablesPorEstatus(true);
+            
+               
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "Historial"]);
             echo view('Alumno/Historial/listar', [				
@@ -37,13 +43,18 @@ class HistorialController extends BaseController
                 'tipos_actividades' => $tipos_actividades,
 				'responsables' => $responsables				           			
                 ]);
-            echo view('Includes/footer'); 
-		
-        }
-       else
+            echo view('Includes/footer');
+                
+            }
+            else
+            {
+            return redirect("/");
+            }
 
-       {
-         return redirect("/");
-       }
+        }
+        else
+        {
+        return redirect("/");
+        }
     }
 }

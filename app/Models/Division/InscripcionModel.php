@@ -40,7 +40,7 @@ class InscripcionModel extends Model
     }
 
     
-    public function getInscripcionesPorActividadYEstatus($id_actividad, $estatus)
+    public function getInscripcionesPorActividadYEstatus($id_actividad)
 	{   
         return $this->db->table("inscripcion i")
         ->select("i.id_inscripcion, i.estatus, i.num_control, i.periodo, p.descripcion AS 'descripcion_periodo', i.telefono, i.fecha_inscripcion, i.nota,
@@ -48,7 +48,7 @@ class InscripcionModel extends Model
         ->join("periodo p", "p.periodo = i.periodo")
         ->join("actividad act", "act.id_actividad = i.id_actividad")
         ->where(" i.id_actividad", $id_actividad)
-        ->where("i.estatus", $estatus)
+       
         ->get()->getResult();
     }
 
@@ -80,7 +80,7 @@ class InscripcionModel extends Model
         return $this->db->table($this->table)
         ->select("*")
         ->where("id_inscripcion", $id_inscripcion)
-       // ->where("estatus", true)
+        //->where("estatus", true)
         ->get()->getRow();
     }
 
