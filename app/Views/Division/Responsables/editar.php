@@ -18,8 +18,8 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="nombre">NOMBRE (*)</label>
-									<input type="text" class="form-control text-uppercase" name="nombre" required value="<?= $responsable->nombre ?>">
+									<label for="rfc_responsable">RFC </label>
+									<input type="text" class="form-control" name="rfc_responsable" value="<?= $responsable->rfc_responsable ?>" readonly>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -38,8 +38,8 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="rfc_responsable">RFC (*)</label>
-									<input type="text" class="form-control" name="rfc_responsable" value="<?= $responsable->rfc_responsable ?>">
+									<label for="nombre">NOMBRE (*)</label>
+									<input type="text" class="form-control text-uppercase" name="nombre" required  value="<?= $responsable->nombre ?>">
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -82,7 +82,7 @@
 					</div>
 					<div class="card-body">
                         <div class="row">
-                            <input type="hidden" class="form-control disabled" id="rfc" name="rfc" value="<?= $responsable->rfc_responsable ?>">
+                            <input type="hidden" class="form-control disabled" id="rfc_responsable" name="rfc_responsable" value="<?= $responsable->rfc_responsable ?>">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="clave">NUEVA CLAVE (*)</label>
