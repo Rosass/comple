@@ -66,7 +66,7 @@ class Validation
 
 	public $periodoReglas = [
 		'periodo'     => 'required',
-		'descripcion'     => 'required',
+		//'descripcion'     => 'required',
 		'fecha_inicio'     => 'required|valid_date',
 		'fecha_final'     => 'required|valid_date',
 		'fecha_inicio_inscripcion'     => 'required|valid_date',

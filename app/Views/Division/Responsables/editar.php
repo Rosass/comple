@@ -38,8 +38,8 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="rfc">RFC (*)</label>
-									<input type="text" class="form-control disabled" name="rfc" value="<?= $responsable->rfc_responsable ?>">
+									<label for="rfc_responsable">RFC (*)</label>
+									<input type="text" class="form-control" name="rfc_responsable" value="<?= $responsable->rfc_responsable ?>">
 								</div>
 							</div>
 							<div class="col-md-4">

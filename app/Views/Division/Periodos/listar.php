@@ -44,8 +44,8 @@
                                 <th scope="row"><?= $key + 1 ?></th>
                                 <td><?= $periodo->periodo ?></td>
                                 <td><?= $periodo->descripcion ?></td>
-                                <td><?= $periodo->fecha_inicio ?></td>
-                                <td><?= $periodo->fecha_final ?></td>
+                                <td style="width:9%;"><?= $periodo->fecha_inicio ?></td>
+                                <td style="width:9%;"><?= $periodo->fecha_final ?></td>
                                 <td><?= $periodo->fecha_inicio_inscripcion ?></td>
                                 <td><?= $periodo->fecha_final_inscripcion ?></td>
                                 <td><?= $periodo->frase_decreto ?></td>
@@ -59,16 +59,13 @@
                                 <td style="width:12%;">
                                     <div class="d-flex flex-column">
                                         <!--  Editar tipo-->
+                                        <?php if($periodo->estatus == true) : ?>
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/periodos/editar/".$periodo->periodo) ?>"><i class="fas fa-pen"></i> Editar</a>
+                                        <?php endif ?>
                                         <?php if($periodo->estatus == true) : ?>
                                             <form action="<?= base_url('division/periodos/cambiar-estatus') ?>" method="POST">
                                                 <input type="hidden" name="periodo" value="<?= $periodo->periodo ?>">
                                                 <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Inhabilitar</button>
-                                            </form>
-                                        <?php else : ?>
-                                            <form action="<?= base_url('division/periodos/cambiar-estatus') ?>" method="POST">
-                                                <input type="hidden" name="periodo" value="<?= $periodo->periodo ?>">
-                                                <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
                                             </form>
                                         <?php endif ?>
                                     </div>

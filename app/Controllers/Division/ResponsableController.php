@@ -101,7 +101,7 @@ class ResponsableController extends BaseController
         }
         else
         {   
-            $rfc_responsable = $this->request->getPost("rfc");
+            $rfc_responsable = $this->request->getPost("rfc_responsable");
 
             $datos = [
                 "rfc_responsable" => mb_strtoupper($this->request->getPost("rfc_responsable"), 'utf-8'),
