@@ -74,7 +74,7 @@ function valida_fecha( $fecha_inicio, $fecha_fin )
                         <p><i class="fas fa-check-circle text-success"></i> ¡Has terminado tus Actividades Complementarias !!</p>
                     </div>
                 <?php elseif ( !valida_fecha( $periodos->fecha_inicio_inscripcion, $periodos->fecha_final_inscripcion)) :?>
-                    <div class="alert alert-info">
+                    <div class="alert alert-danger">
                         <p><i class="fas fa-exclamation-triangle"></i> Ha terminado la fecha de inscripciones! Más información acudir con Division de Estudios Profesionales...</p>
                     </div>
                 <?php else: ?>
