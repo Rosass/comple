@@ -1,0 +1,8 @@
+CRITICAL - 2021-01-14 03:18:30 --> syntax error, unexpected '?>', expecting '('
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Period...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\PeriodoController.php(22): view('Division/Period...', Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\PeriodoController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\PeriodoController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

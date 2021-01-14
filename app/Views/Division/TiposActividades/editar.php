@@ -17,7 +17,7 @@
 					<div class="card-body">
                         <input type="hidden" class="form-control disabled" id="id_tipo_actividad" name="id_tipo_actividad" value="<?= $tipo_actividad->id_tipo_actividad ?>">
                         <div class="form-group">
-                            <label for="nombre">NOMBRE DE LA ACTIVIDAD(*)</label>
+                            <label for="nombre">NOMBRE DEL TIPO ACTIVIDAD(*)</label>
                             <input type="text" class="form-control text-uppercase" id="nombre" name="nombre" required value="<?= $tipo_actividad->nombre ?>">
                         </div>
                         <small>Los campos marcados con (*) son obligatorios.</small>

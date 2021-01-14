@@ -17,10 +17,13 @@
                 </div>
             <?php endif ?>   
             <?php if (  $numeroActividades >= 5 ) : ?>
-                    <div class="alert alert-success">
-                        <p><i class="fas fa-check-circle text-success"></i> ¡Has terminado tus Actividades Complementarias !!</p>
+                    <div class="alert alert-success" role="alert">
+                        <i class="fas fa-check-circle text-success"></i> ¡Has terminado tus Actividades Complementarias!</i>
                     </div>
-                <?php else: ?>  
+                <?php else: ?> 
+                    <div class="alert alert-info" role="alert">
+                        <i class="fas fa-book-reader text-info"></i> ¡Actividades Cursando!</i>
+                    </div>    
                 <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">

@@ -9,7 +9,7 @@
 				ÁREA: <span class="font-weight-bold"> <?= $session->usuario_logueado->nombre_area ?></span>
 			</div>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-				<p class="navbar-brand text-wrap text-light" href="<?= base_url('admin/jefes') ?>" style="font-size:15px !important;"><img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="" style="max-width: 35px;"> Sistema de Gestión de Actividades Complementarias</p>
+				<span class="navbar-brand text-wrap text-light" href="<?= base_url('admin/jefes') ?>" style="font-size:15px !important;"><img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="" style="max-width: 35px;"> Sistema de Gestión de Actividades Complementarias</span>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>

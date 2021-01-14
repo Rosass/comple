@@ -24,8 +24,8 @@
 					<div class="row">
 						<div class="col-md-3">
 							<div class="form-group">
-								<label for="apaterno">DICTAMEN</label>
-								<input type="text" class="form-control text-uppercase" id="dictamen" name="dictamen" value="<?= old("dictamen") ?>">
+								<label for="apaterno">DICTAMEN (*)</label>
+								<input type="text" class="form-control text-uppercase" id="dictamen" name="dictamen" value="<?= old("dictamen") ?>" required>
 							</div>
 						</div>
 						<div class="col-md-3">
@@ -98,21 +98,10 @@
 						</div>
 					</div>
 					<div class="row justify-content-center">
-						<div class="col-md-4">
-							<div class="form-group">
-								<label for="confirmar_clave">RESPONSABLE</label>
-								<select class="custom-select" name="rfc_responsable">
-									<option selected disabled>Elige un responsable</option>
-									<?php foreach($responsables as $key => $responsable) : ?>
-									<option value="<?= $responsable->rfc_responsable ?>"><?= $responsable->nombre . " " . $responsable->apaterno . " (". $responsable->rfc_responsable . ")" ?></option>
-									<?php endforeach ?>
-								</select>
-							</div>
-						</div>
 						<div class="col-md-8">
 							<div class="form-group">
 								<label for="horario">HORARIO</label>
-								<input type="horario" class="form-control text-uppercase" id="horario" name="horario"  value="<?= old("horario") ?>">
+								<input type="horario" class="form-control text-uppercase" id="horario" name="horario" placeholder="LUN 13:00-15:00; MAR 13:00-15:00; VIE 07:00-09:00"  value="<?= old("horario") ?>">
 								<small>Los horarios debes separarlos por punto y coma ';'.</small>
 							</div>
 						</div>

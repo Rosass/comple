@@ -134,11 +134,11 @@ class ResponsableController extends BaseController
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('division/responsables')->withInput();
+            return redirect()->back()->withInput();
         }
         else
         {   
-            $rfc_responsable = $this->request->getPost("rfc_responsable");
+            $rfc_responsable = $this->request->getPost("rfc");
 
             $datos = [
                 "clave" => password_hash($this->request->getPost("clave") , PASSWORD_DEFAULT, ['cost' => 10]),

@@ -5,7 +5,8 @@
                 <div class="col-md-12 text-center">
                     <div class="p-3 shadow justify-content-between text-white rounded" style="background-image: url(<?= base_url('public/img/imagen-footer.jpg') ?>); background-repeat: repeat; background-position: bottom; background-size: cover; margin-top:5rem;">
                         <div class="mb-2">¿Dudas?</div>
-                        <a href="https://wa.me/529711371401" class="text-decoration-none text-white"><i class="fab fa-whatsapp"></i> 971 137 1401</a>    
+                        <div class="mb-2">DIVISIÓN DE ESTUDIOS PROFESIONALES</div>
+                        <a href="https://wa.me/529711371401" target="_blank" class="text-decoration-none text-white"><i class="fab fa-whatsapp"></i> 971 137 1401</a>    
                     </div>
                 </div>
             </div>
