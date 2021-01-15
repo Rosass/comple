@@ -109,4 +109,9 @@ class ActividadService
 	{   
        return $this->inicioModel->getAlumnos($num_control);
     }
+
+    public function get_inscripcionesPorEstatus()
+	{   
+       return $this->actividadModel->get_inscripcionesPorEstatus();
+    }
 }

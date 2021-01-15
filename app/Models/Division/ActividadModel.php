@@ -116,6 +116,13 @@ class ActividadModel extends Model
         ->get()->getResult();
     }
 
+    public function get_inscripcionesPorEstatus()
+	{   
+        return $this->db->table('inscripcion')
+        ->select('*')
+        ->get()->getResult();
+    }
+
     public function get_actividadd( $id_actividad )
     {
         return $this->db->table('actividad a')

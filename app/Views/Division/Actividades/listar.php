@@ -19,23 +19,25 @@
             <div class="text-right">
                 <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevaActividadModal"><i class="fas fa-plus"></i> Nueva actividad</button>
             </div>
-            <form method="get" action="<?= base_url("division/actividades/periodo") ?>">
-                <div class="row mb-3 mt-2 justify-content-end">
-                    <div class="col-md-5 text-right d-flex align-items-center">
-                        <span class="mr-2">Filtro </span>
-                        <select class="custom-select"  name="periodo">
-                            <option selected disabled value="">Elige el periodo</option>
-                            <option value="0"> PERIODO ACTIVO</option>
-                            <?php foreach($periodo as $key => $periodo) : ?>
-                                <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
-                            <?php endforeach ?>
-                        </select>
-                        <div>
-                            <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
+           
+                <form method="get" action="<?= base_url("division/actividades/periodo") ?>">
+                    <div class="row mb-3 mt-2 justify-content-end">
+                        <div class="col-md-5 text-right d-flex align-items-center">
+                            <span class="mr-2">Filtro </span>
+                            <select class="custom-select"  name="periodo">
+                                <option selected disabled value="">Elige el periodo</option>
+                                <option value="0"> PERIODO ACTIVO</option>
+                                <?php foreach($periodo as $key => $periodo) : ?>
+                                    <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
+                                <?php endforeach ?>
+                            </select>
+                            
+                                <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
+                        
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
@@ -74,8 +76,13 @@
                                 <td><?= $actividad->horario ?></td>
                                
                                 <td style="width:9%;">
-                                    <div class="d-flex flex-column">
-                                    <a class="btn btn-info btn-sm btn-block mb-0"  href="<?= base_url("division/lista-alumnos/$actividad->id_actividad") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de Alumnos</a>
+                                    <div class="d-flex flex-column" >
+                                    
+                                    <?php foreach($inscripciones as $key => $ins) : ?>  
+                                    <?php endforeach ?>
+                                    <?php if($ins->estatus == 1) : ?>
+                                    <a class="btn btn-info btn-sm btn-block mb-0" target="_blank" href="<?= base_url("division/lista-alumnos/$actividad->id_actividad") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de Alumnos</a>
+                                    <?php endif ?> 
                                         <!--  Editar responsable-->
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/actividades/editar/".$actividad->id_actividad) ?>"><i class="fas fa-pen"></i> Editar</a>
                                         <?php if($actividad->estatus == true) : ?>
@@ -89,9 +96,11 @@
                                                 <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
                                             </form>
                                         <?php endif ?> 
+                                        
                                     </div>
 							    </td>
                             </tr>
+                        
                         <?php endforeach ?>
                     </tbody>
                 </table>

@@ -35,6 +35,7 @@ class ActividadController extends BaseController
 			$tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
             $responsables = $this->responsableService->getResponsablesPorEstatus(true);
             $periodo = $this->actividadService->getPeriodo();
+            $inscripciones = $this->actividadService->get_inscripcionesPorEstatus();
 
 			echo view('Includes/header');
 			echo view('Division/navbar', ["activo" => "actividades"]);
@@ -44,7 +45,8 @@ class ActividadController extends BaseController
                 'periodos' => $periodos,
                 'periodo' => $periodo,
 				'tipos_actividades' => $tipos_actividades,
-				'responsables' => $responsables
+                'responsables' => $responsables,
+                'inscripciones' => $inscripciones
 			]);
 			echo view('Includes/footer');
 		}
@@ -67,7 +69,8 @@ class ActividadController extends BaseController
         $areas = $this->areaService->getAreasPorEstatus(true);
         $periodos = $this->periodoService->getPeriodosPorEstatus(true);
 		$actividades = $this->actividadService->getActividadPorIdareaPeriodo( $periodoPost);
-		$periodo = $this->actividadService->getPeriodo();
+        $periodo = $this->actividadService->getPeriodo();
+        $inscripciones = $this->actividadService->get_inscripcionesPorEstatus();
 
 		
 		
@@ -78,8 +81,9 @@ class ActividadController extends BaseController
             'areas' => $areas,
             'periodos' => $periodos,
 			'tipos_actividades' => $tipos_actividades,
-				'responsables' => $responsables,
-			'periodo' => $periodo
+			'responsables' => $responsables,
+            'periodo' => $periodo,
+            'inscripciones' => $inscripciones,
 		]);
 		echo view('Includes/footer');
 	}
@@ -183,7 +187,6 @@ class ActividadController extends BaseController
                 "id_area" => $this->request->getPost("id_area"),
                 "periodo" => $this->request->getPost("periodo"),
 				"id_tipo_actividad" => $this->request->getPost("id_tipo_actividad"),
-				"rfc_responsable" => $this->request->getPost("rfc_responsable"),
 				"horas" => $this->request->getPost("horas"),
                 "horario" =>  mb_strtoupper($this->request->getPost("horario"), 'utf-8')
             ];
