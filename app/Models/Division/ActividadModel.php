@@ -62,18 +62,6 @@ class ActividadModel extends Model
         ->get()->getResult();
     }
 
-    //para select de periodo
-
-/*     public function getPeriodoPorEstatus($estatus)
-	{   
-        return $this->db->table("periodo p")
-        ->select("*")
-       
-        ->where("estatus", $estatus)
-        ->get()->getResult();
-    } */
-
-
     public function guardar($datos)
     {
         $this->db->table($this->table)->insert($datos);
@@ -113,13 +101,6 @@ class ActividadModel extends Model
         ->join('evaluacion_desempenio e', 'e.id_inscripcion = insc.id_inscripcion', 'LEFT')
         ->where('act.id_actividad', $id_actividad)
         ->where('insc.estatus', $estatus)
-        ->get()->getResult();
-    }
-
-    public function get_inscripcionesPorEstatus()
-	{   
-        return $this->db->table('inscripcion')
-        ->select('*')
         ->get()->getResult();
     }
 

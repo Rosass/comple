@@ -38,3 +38,17 @@ CRITICAL - 2021-01-15 05:04:32 --> Undefined variable: inscripcioones
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2021-01-15 19:19:05 --> Too few arguments to function App\Services\Division\ActividadService::get_inscripcionesPorEstatus(), 0 passed in C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php on line 38 and exactly 1 expected
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(38): App\Services\Division\ActividadService->get_inscripcionesPorEstatus()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-15 19:33:13 --> Undefined variable: id_actividad
+#0 C:\xampp\htdocs\comple\app\Controllers\Division\ActividadController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ActividadController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ActividadController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

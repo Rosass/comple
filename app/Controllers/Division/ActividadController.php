@@ -28,25 +28,23 @@ class ActividadController extends BaseController
 	{
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_DIVISION)
         {
-            
-			$actividades = $this->actividadService->getActividades();
+
+            $actividades = $this->actividadService->getActividades();
 			$areas = $this->areaService->getAreasPorEstatus(true);
 			$periodos = $this->periodoService->getPeriodosPorEstatus(true);
 			$tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
             $responsables = $this->responsableService->getResponsablesPorEstatus(true);
             $periodo = $this->actividadService->getPeriodo();
-            $inscripciones = $this->actividadService->get_inscripcionesPorEstatus();
 
 			echo view('Includes/header');
 			echo view('Division/navbar', ["activo" => "actividades"]);
 			echo view('Division/Actividades/listar', [
-				'actividades' => $actividades,
+                'actividades' => $actividades,
 				'areas' => $areas,
                 'periodos' => $periodos,
                 'periodo' => $periodo,
 				'tipos_actividades' => $tipos_actividades,
                 'responsables' => $responsables,
-                'inscripciones' => $inscripciones
 			]);
 			echo view('Includes/footer');
 		}
@@ -63,27 +61,25 @@ class ActividadController extends BaseController
 		// if ( empty($periodoPost)
 
         if ( empty($periodoPost) || $periodoPost == '0') return redirect('division/actividades');
-        
+
+       
         $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
         $responsables = $this->responsableService->getResponsablesPorEstatus(true);
         $areas = $this->areaService->getAreasPorEstatus(true);
         $periodos = $this->periodoService->getPeriodosPorEstatus(true);
 		$actividades = $this->actividadService->getActividadPorIdareaPeriodo( $periodoPost);
         $periodo = $this->actividadService->getPeriodo();
-        $inscripciones = $this->actividadService->get_inscripcionesPorEstatus();
-
 		
 		
 		echo view('Includes/header');
 		echo view('Division/navbar', ["activo" => "actividades"]);
 		echo view('Division/Actividades/listar', [				
-			'actividades' => $actividades,
+            'actividades' => $actividades,
             'areas' => $areas,
             'periodos' => $periodos,
 			'tipos_actividades' => $tipos_actividades,
 			'responsables' => $responsables,
             'periodo' => $periodo,
-            'inscripciones' => $inscripciones,
 		]);
 		echo view('Includes/footer');
 	}
@@ -231,6 +227,7 @@ class ActividadController extends BaseController
 			$id_actividad = ($this->request->uri->getSegment(3));
 			$alumnos = $this->actividadModel->get_actividad_alumno( $id_actividad, 1);
             $actividad = $this->actividadModel->get_actividadd( $id_actividad );
+            
 			if(count($alumnos) > 0)
 			{
 

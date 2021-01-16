@@ -73,16 +73,11 @@
                                 <td><?= $actividad->tipo_actividad ?></td>
                                 <td><?= $actividad->rfc_responsable ?></td>
                                 <td><?= $actividad->horas ?></td>
-                                <td><?= $actividad->horario ?></td>
+                                <td><?= $actividad->horario ?></td> 
                                
                                 <td style="width:9%;">
                                     <div class="d-flex flex-column" >
-                                    
-                                    <?php foreach($inscripciones as $key => $ins) : ?>  
-                                    <?php endforeach ?>
-                                    <?php if($ins->estatus == 1) : ?>
                                     <a class="btn btn-info btn-sm btn-block mb-0" target="_blank" href="<?= base_url("division/lista-alumnos/$actividad->id_actividad") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de Alumnos</a>
-                                    <?php endif ?> 
                                         <!--  Editar responsable-->
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/actividades/editar/".$actividad->id_actividad) ?>"><i class="fas fa-pen"></i> Editar</a>
                                         <?php if($actividad->estatus == true) : ?>
@@ -100,7 +95,6 @@
                                     </div>
 							    </td>
                             </tr>
-                        
                         <?php endforeach ?>
                     </tbody>
                 </table>
