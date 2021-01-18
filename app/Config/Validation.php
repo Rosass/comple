@@ -110,7 +110,7 @@ class Validation
 		'rfc_jefe'     => 'min_length[13]|max_length[13]',
 		'nombre_jefe'     => 'required',
 		'apaterno_jefe'     => 'required',
-		'telefono_jefe'     => 'min_length[10]|max_length[10]',
+		//'telefono_jefe'     => 'min_length[10]|max_length[10]',
        
 	];
 

@@ -173,7 +173,7 @@ class InscripcionService
             // Se actualizan los datos
             if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
             {
-                return ["exito" => true, "msj" => "Datos actualizados con exito."];
+                return ["exito" => true, "msj" => "Inscripción actualizada con exito."];
             }
             else
             {

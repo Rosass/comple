@@ -49,7 +49,7 @@
                                     <?php endif ?>
                                 
                                 </td>
-                                <td style="width:8%;">
+                                <td style="width:10%;">
                                 <div class="d-flex flex-column">
                                       <!--  Editar responsable-->
                                     <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("admin/usuarios/editar/".$usuario->usuario) ?>"><i class="fas fa-pen"></i> Editar</a>

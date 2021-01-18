@@ -1,7 +1,7 @@
 <?php $session = session(); ?>
 <div class="container text-center">
-	<div class="row mt-5">
-		<div class="col-md-12 ">
+	<div class="row mt-5 justify-content-center">
+		<div class="col-md-9 ">
 		    <!-- Mensajes de error -->
 			<?php if($session->getFlashdata('error')) : ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -17,7 +17,7 @@
 					<div class="card-body">
 						<div class="row justify-content-center">
                             <input type="hidden" class="form-control disabled" id="id_tipo_usuario" name="id_tipo_usuario" value="<?= $tipo_usuario->id_tipo_usuario ?>">
-                                <div class="col-md-8">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="nombre_tipo">NOMBRE DEL TIPO DE USUARIO(*)</label>
                                         <input type="text" class="form-control text-uppercase" id="nombre_tipo" name="nombre_tipo" required value="<?= $tipo_usuario->nombre_tipo ?>">

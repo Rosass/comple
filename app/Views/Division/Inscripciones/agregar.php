@@ -60,7 +60,7 @@
             </div>
                     <div class="form-group">
                         <label for="nota">OBSERVACIÓN</label>
-                        <textarea class="form-control" id="nota" name="nota" rows="2" value="<?= old("nota") ?>"></textarea>
+                        <textarea class="form-control text-uppercase" id="nota" name="nota" rows="2" value="<?= old("nota") ?>"></textarea>
                     </div>
             <small>Los campos marcados con (*) son obligatorios.</small>
             <div class="modal-footer">
