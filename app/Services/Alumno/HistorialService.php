@@ -25,9 +25,9 @@ class HistorialService
     return $this->historialModel->getActividadesCalificacion( $num_control );
     }
 
-      public function get_actividad_alumno($id_actividad, $true)
+      public function get_actividad_alumno($id_actividad, $estatus)
 	{   
-       return $this->historialModel->get_actividad_alumno($id_actividad, $true);
+       return $this->historialModel->get_actividad_alumno($id_actividad, $estatus);
     }
 
     public function getActividades($alumnos)
