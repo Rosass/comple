@@ -14,7 +14,7 @@ class InicioController extends BaseController
 
     public function index()
 	{  
-        if($rfc_responsable = $this->session->usuario_logueado->rfc_responsable)
+        if($this->session->loginresponsable && $this->session->usuario_logueado->rfc_responsable)
         {
             $rfc_responsable = $this->session->usuario_logueado->rfc_responsable;
             $actividades = $this->inicioService->getActividadesPorResponsable( $rfc_responsable, true );
@@ -29,33 +29,41 @@ class InicioController extends BaseController
             echo view('Includes/footer');
 		
         }
-    else
-
-    {
-        return redirect("/");
-    }
+        else
+        {
+            return redirect("/");
+        }
     
     }
 
     public function periodo()
 	{
-        $periodoPost =  $this->request->getGet("periodo");
+        
+        if($this->session->loginresponsable && $this->session->usuario_logueado->rfc_responsable)
+        {
 
-		// if ( empty($periodoPost)
+            $periodoPost =  $this->request->getGet("periodo");
 
-		if ( empty($periodoPost) || $periodoPost == '0') return redirect('responsables/inicio');
+            // if ( empty($periodoPost)
 
-		$rfc_responsable = $this->session->usuario_logueado->rfc_responsable;
-		$actividades = $this->inicioService->getActividadPorIdareaPeriodo($rfc_responsable, $periodoPost);
-		$periodo = $this->inicioService->getPeriodo();
-		
-		echo view('Includes/header');
-		echo view('Responsable/navbar', ["activo" => "actividades"]);
-		echo view('Responsable/Actividades/listar', [				
-			'actividades' => $actividades,
-			'responsables' => $rfc_responsable,
-			'periodos' => $periodo
-		]);
-		echo view('Includes/footer');
+            if ( empty($periodoPost) || $periodoPost == '0') return redirect('responsables/inicio');
+
+            $rfc_responsable = $this->session->usuario_logueado->rfc_responsable;
+            $actividades = $this->inicioService->getActividadPorIdareaPeriodo($rfc_responsable, $periodoPost);
+            $periodo = $this->inicioService->getPeriodo();
+            
+            echo view('Includes/header');
+            echo view('Responsable/navbar', ["activo" => "actividades"]);
+            echo view('Responsable/Actividades/listar', [				
+                'actividades' => $actividades,
+                'responsables' => $rfc_responsable,
+                'periodos' => $periodo
+            ]);
+            echo view('Includes/footer');
+        }
+        else
+        {
+            return redirect("/");
+        }    
 	}
 }

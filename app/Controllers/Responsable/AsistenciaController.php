@@ -14,17 +14,16 @@ class AsistenciaController extends BaseController
 		helper('utilerias');
 	}
 
-
 	public function listaAsistencia()
 	{
         
-		if($rfc_responsable = $this->session->usuario_logueado->rfc_responsable)
+		if($this->session->loginresponsable && $this->session->usuario_logueado->rfc_responsable)
 		{
+			$rfc_responsable = $this->session->usuario_logueado->rfc_responsable;
 			$id_actividad = urldecode($this->request->uri->getSegment(3));
 			$alumnos = $this->asistenciaService->get_actividad_alumno( $id_actividad, true);
 			$actividad = $this->asistenciaService->get_actividad( $id_actividad );
 			$responsable = $this->asistenciaService->get_responsable( $rfc_responsable );
-			
 		
 			if(count($alumnos) > 0)
 			{
@@ -65,14 +64,13 @@ class AsistenciaController extends BaseController
 		}
 	}
 
-
-
-
 	public function listaCalificacion()
 	{
 	
-		if($rfc_responsable = $this->session->usuario_logueado->rfc_responsable)
+		if($this->session->loginresponsable && $this->session->usuario_logueado->rfc_responsable)
 		{
+			
+			$rfc_responsable = $this->session->usuario_logueado->rfc_responsable;
 			$id_actividad = urldecode($this->request->uri->getSegment(3));
 			$alumnos = $this->asistenciaService->get_actividad_alumno( $id_actividad, 1 );
 			$actividad = $this->asistenciaService->get_actividad( $id_actividad );

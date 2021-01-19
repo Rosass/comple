@@ -68,7 +68,7 @@
                                     <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#actividad-<?=$actividad->id_actividad?>">Asignar</button></td>
                                     <!-- Modal -->
                                         <div class="modal fade" id="actividad-<?=$actividad->id_actividad?>" tabindex="-1" aria-labelledby="nuevaActividadModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-dialog modal modal-dialog-centered modal-dialog-scrollable">
                                                 <div class="modal-content">
                                                     <div class="modal-header bg-color-tec-blue text-white text-uppercase">
                                                         <h5 class="modal-title" id="nuevaActividadModalLabel">ASIGNAR RESPONSABLE</h5>
@@ -78,7 +78,6 @@
                                                     </div>
                                                     <div class="modal-body pb-0 text-center">
                                                         <form action="<?= base_url("jefes/actividades/agregar") ?>" method="POST" class="needs-validation" novalidate>
-                                                            <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label for="confirmar_clave">RESPONSABLE</label>
                                                                     <select class="custom-select" name="rfc_responsable">
@@ -89,7 +88,6 @@
                                                                     </select>
                                                                     <input type="hidden" name="id_actividad" value="<?=$actividad->id_actividad?>">
                                                                 </div>
-                                                            </div>
                                                             <small>Los campos marcados con (*) son obligatorios.</small>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
@@ -110,7 +108,7 @@
                                 </td> 
                                 <td style="width:8%;">  
                                     <div class="d-flex flex-column">
-                                    <a class="btn btn-info btn-sm btn-block mb-0" target="_blank" href="<?= base_url("jefes/alumnos/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i>Alumnos Registrados</a>
+                                    <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("jefes/alumnos/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i>Alumnos Registrados</a>
                                     <a class="btn btn-warning btn-sm btn-block mb-0" target="_blank" href="<?= base_url("jefes/lista-asistencia/$actividad->id_actividad") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de asistencia</a>
                                     <a class="btn btn-secondary btn-sm btn-block mb-0" target="_blank" href="<?= base_url("jefes/lista-calificacion/$actividad->id_actividad") ?>"><i class="fas fa-file-alt"></i> Acta de calificaciones</a>
                                     </div>

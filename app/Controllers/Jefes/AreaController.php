@@ -20,7 +20,6 @@ class AreaController extends BaseController
 			$id_area = $this->session->usuario_logueado->id_area;
 			$actividades = $this->areaService->getActividadPorIdarea($id_area, true);
 			$periodo = $this->areaService->getPeriodo();
-
 			$responsables = $this->areaService->get_responsable_area_y_sin_asignar($id_area);
 			
 			echo view('Includes/header');

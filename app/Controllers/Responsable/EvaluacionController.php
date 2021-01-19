@@ -14,25 +14,32 @@ class EvaluacionController extends BaseController
 
 
     public function index()
-
 	{
 
-        $num_control = urldecode($this->request->uri->getSegment(3));
-        $id_inscripcion = urldecode($this->request->uri->getSegment(4));
-        $id_actividad = urldecode($this->request->uri->getSegment(5));
-        $actividad = $this->evaluacionModel-> get_actividad( $id_actividad );
-        $alumno = $this->evaluacionModel->get_alumno( $num_control );
-       
+        if($this->session->loginresponsable && $this->session->usuario_logueado->rfc_responsable)
+		{
 
-            echo view('Includes/header');
-            echo view('Responsable/navbar', ["activo" => "actividades"]);
-            echo view('Responsable/Evaluacion/listar', [
-                'alumno' => $alumno,
-                'id_inscripcion' => $id_inscripcion,
-                'id_actividad' => $id_actividad,
-                'actividad' => $actividad
-                ]);
-            echo view('Includes/footer');
+            $num_control = urldecode($this->request->uri->getSegment(3));
+            $id_inscripcion = urldecode($this->request->uri->getSegment(4));
+            $id_actividad = urldecode($this->request->uri->getSegment(5));
+            $actividad = $this->evaluacionModel-> get_actividad( $id_actividad );
+            $alumno = $this->evaluacionModel->get_alumno( $num_control );
+        
+
+                echo view('Includes/header');
+                echo view('Responsable/navbar', ["activo" => "actividades"]);
+                echo view('Responsable/Evaluacion/listar', [
+                    'alumno' => $alumno,
+                    'id_inscripcion' => $id_inscripcion,
+                    'id_actividad' => $id_actividad,
+                    'actividad' => $actividad
+                    ]);
+                echo view('Includes/footer');
+        }
+        else
+        {
+            return redirect('/');
+        }        
     }
 
 /**
