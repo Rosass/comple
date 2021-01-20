@@ -71,7 +71,7 @@
                             <th scope="col" class="border-top-0"></th>
                         </tr>
                     </thead>
-                    <tbody class="text-center table-sm" id="tbodyTablaInscripciones">
+                    <tbody class="text-center table-sm">
                         <?php foreach($inscripciones as $key => $inscripcion) : ?>
                             <tr>
                                 <th scope="row"><?= $key +1 ?></th>
@@ -95,7 +95,7 @@
 								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
 							    </td>
-                                <td style="width:20%;">
+                                <td style="width:9%;">
                                     <div class="d-flex flex-column btn-toolbar">
                                         <!--  Editar inscripción -->
                                         <?php if($inscripcion->estatus == true) : ?>
