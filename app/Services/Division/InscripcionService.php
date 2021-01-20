@@ -97,7 +97,7 @@ class InscripcionService
                                     '<!-- Aceptar inscripción -->'.
                                         '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'.
                                             '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">'.
-                                            '<button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-check"></i> Aceptar</button>'.
+                                            '<button type="submit" class="btn btn-success btn-sm btn-block mb-1 btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-check"></i> Aceptar</button>'.
                                         '</form>'.
                                     '<!-- Rechazar inscripción -->'.
                                         '<form action="'. base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'.
