@@ -95,7 +95,7 @@
 								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
 							    </td>
-                                <td style="width:15%;">
+                                <td>
                                     <div class="d-flex flex-column">
                                         <!--  Editar inscripción -->
                                         <?php if($inscripcion->estatus == true) : ?>
