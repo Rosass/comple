@@ -80,11 +80,11 @@ class InscripcionService
             }
             if($inscripcion->estatus == 1 || $inscripcion->estatus ==  0) 
             {
-                $aceptar = '<button type="submit" class="btn btn-success btn-sm btn-block mb-1 btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-check"></i> Aceptar</button>';
+                $aceptar = '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">' . '<button type="submit" class="btn btn-success btn-sm btn-block mb-1 btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-check"></i> Aceptar</button>';
             }
             if($inscripcion->estatus == true) 
             {
-                $rechazar = '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-ban"></i> Rechazar</button>';
+                $rechazar = '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion . '">' . '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-ban"></i> Rechazar</button>';
             }
 
             $inscripciones_html .= '<tr>' .
@@ -103,12 +103,10 @@ class InscripcionService
                                 '<div class="d-flex flex-column">'.
                                     '<!--  Editar inscripción -->'. $editar .
                                     '<!-- Aceptar inscripción -->'. 
-                                        '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'.
-                                            '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">'. $aceptar .
+                                        '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'. $aceptar .
                                         '</form>'.
                                     '<!-- Rechazar inscripción -->'.
-                                        '<form action="'. base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'.
-                                            '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion . '">'. $rechazar .
+                                        '<form action="'. base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'. $rechazar .
                                         '</form>'.
                                 '</div>'.
                             '</td>'.
