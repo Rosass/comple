@@ -80,11 +80,15 @@ class InscripcionService
             }
             if($inscripcion->estatus == 1 || $inscripcion->estatus ==  0) 
             {
-                $aceptar = '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">' . '<button type="submit" class="btn btn-success btn-sm btn-block mb-1 btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-check"></i> Aceptar</button>';
+                $aceptar =  base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'.
+                            '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">'.
+                            '<button type="submit" class="btn btn-success btn-sm btn-block mb-1 btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-check"></i> Aceptar</button>' ;
             }
-            if($inscripcion->estatus == true) 
+             if($inscripcion->estatus == true) 
             {
-                $rechazar = '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion . '">' . '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-ban"></i> Rechazar</button>';
+                $rechazar = base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'.
+                '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion . '">'.
+                '<button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-ban"></i> Rechazar</button>' ;
             }
 
             $inscripciones_html .= '<tr>' .
@@ -102,11 +106,11 @@ class InscripcionService
                                 '<td style="width:9%;">'.
                                 '<div class="d-flex flex-column">'.
                                     '<!--  Editar inscripción -->'. $editar .
-                                    '<!-- Aceptar inscripción -->'. 
-                                        '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'. $aceptar .
+                                    '<!-- Aceptar inscripción -->'.
+                                        '<form action="' . $aceptar . 
                                         '</form>'.
                                     '<!-- Rechazar inscripción -->'.
-                                        '<form action="'. base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'. $rechazar .
+                                        '<form action="'. $rechazar .
                                         '</form>'.
                                 '</div>'.
                             '</td>'.
