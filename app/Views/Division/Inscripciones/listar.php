@@ -68,7 +68,7 @@
                             <th scope="col" class="border-top-0">FECHA DE INSCRIPCIÓN</th>
                             <th scope="col" class="border-top-0">OBSERVACION</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
-                            <th scope="col" class="border-top-0"></th>
+                            <th scope="col" class="border-top-0">ACCIONES</th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
@@ -95,7 +95,7 @@
 								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
 							    </td>
-                                <td style="width:9%;">
+                                <td>
                                     <div class="d-flex flex-column btn-toolbar">
                                         <!--  Editar inscripción -->
                                         <?php if($inscripcion->estatus == true) : ?>
