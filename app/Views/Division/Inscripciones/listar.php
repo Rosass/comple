@@ -71,7 +71,7 @@
                             <th scope="col" class="border-top-0"></th>
                         </tr>
                     </thead>
-                    <tbody class="text-center table-sm">
+                    <tbody class="text-center table-sm" id="tbodyTablaInscripciones">
                         <?php foreach($inscripciones as $key => $inscripcion) : ?>
                             <tr>
                                 <th scope="row"><?= $key +1 ?></th>
