@@ -76,7 +76,7 @@
                             <tr>
                                 <th scope="row"><?= $key +1 ?></th>
                                 <td><?= $inscripcion->num_control ?></td>
-                                <td style="width:15%;"><?= $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno ?></td>
+                                <td><?= $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno ?></td>
                                 <td><?= $inscripcion->carrera?></td>
                                 <td><?= $inscripcion->semestre?></td>
                                 <td><?= $inscripcion->descripcion_periodo?></td>
@@ -95,7 +95,7 @@
 								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
 							    </td>
-                                <td>
+                                <td style="width:9%;">
                                     <div class="d-flex flex-column">
                                         <!--  Editar inscripción -->
                                         <?php if($inscripcion->estatus == true) : ?>
