@@ -68,7 +68,7 @@
                             <th scope="col" class="border-top-0">FECHA DE INSCRIPCIÓN</th>
                             <th scope="col" class="border-top-0">OBSERVACION</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
-                            <th scope="col" class="border-top-0">ACCIONES</th>
+                            <th scope="col" class="border-top-0"></th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
@@ -95,8 +95,8 @@
 								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
 							    </td>
-                                <td>
-                                    <div class="d-flex flex-column btn-toolbar">
+                                <td style="width:15%;">
+                                    <div class="d-flex flex-column">
                                         <!--  Editar inscripción -->
                                         <?php if($inscripcion->estatus == true) : ?>
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/inscripciones/editar/".$inscripcion->id_inscripcion) ?>"><i class="fas fa-pen"></i> Editar</a>
