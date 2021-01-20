@@ -82,7 +82,7 @@ class InscripcionService
             $inscripciones_html .= '<tr>' .
                                         '<th scope="row">' . ($key + 1) . '</th>' .
                                         '<td>' . $inscripcion->num_control . '</td>' .
-                                        '<td style="width:15%;">' . $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno . '</td>' .
+                                        '<td>' . $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno . '</td>' .
                                         '<td>' . $inscripcion->carrera . '</td>' .
                                         '<td>' . $inscripcion->semestre . '</td>' .
                                         '<td>' . $inscripcion->descripcion_periodo . '</td>' .
@@ -91,7 +91,7 @@ class InscripcionService
                                         '<td>' . $inscripcion->fecha_inscripcion . '</td>' .
                                         '<td>' . $inscripcion->nota . '</td>' .  
                                          '<td class="text-white">' . $estatus . '</td>'. 
-                                '<td style="width:20%;">'.
+                                '<td style="width:9%;">'.
                                 '<div class="d-flex flex-column">'.
                                     '<!--  Editar inscripción -->'. $editar .
                                     '<!-- Aceptar inscripción -->'.
