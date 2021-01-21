@@ -17,21 +17,21 @@
                 </div>
             <?php endif ?>
             <form method="get" action="<?= base_url("jefes/actividades/periodo") ?>">
-                <div class="row mb-3 mt-2 justify-content-end">
-                    <div class="col-md-5 text-right d-flex align-items-center">
-                        <span class="mr-2">Filtro </span>
-                        <select class="custom-select"  name="periodo">
-                            <option selected disabled value="">Elige el periodo</option>
-                            <option value="0">ACTIVO</option>
-                            <?php foreach($periodos as $key => $periodo) : ?>
-                                <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
-                            <?php endforeach ?>
-                        </select>
-                        <div>
-                            <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
-                        </div>
+                    <div class="row mb-0 mt-0 justify-content-end">
+                        <span class="mr-1">Filtro </span>
+                            <div class="col-md-5 text-right d-flex align-items-center">
+                                <div class="input-group">
+                                    <select class="custom-select"  name="periodo">
+                                        <option selected disabled value="">Elige el periodo</option>
+                                        <option value="0">ACTIVO</option>
+                                        <?php foreach($periodos as $key => $periodo) : ?>
+                                            <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
+                                        <?php endforeach ?>
+                                    </select>
+                                    <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
+                                </div>
+                            </div>  
                     </div>
-                </div>
             </form>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">

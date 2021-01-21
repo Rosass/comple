@@ -19,43 +19,23 @@
             <div class="text-right">
                 <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevaActividadModal"><i class="fas fa-plus"></i> Nueva actividad</button>
             </div>
-<<<<<<< HEAD
-                <div class="input-group mb-2 mt-2  justify-content-end">
-                        <form method="get" action="<?= base_url("division/actividades/periodo") ?>">
-                        <div class=" text-right d-flex align-items-center">
-                            <span class="mr-2">Filtro </span>
-                                <select class="custom-select" name="periodo" style="width:474px;">
-                                    <option selected disabled value="">Elige el periodo</option>
-                                    <option value="0"> PERIODO ACTIVO</option>
-                                    <?php foreach($periodo as $key => $periodo) : ?>
-                                        <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
-                                    <?php endforeach ?>
-                                </select>
-                                    <button class="btn bg-color-tec-blue text-white"  type="submit">Buscar</button>
-                            </div>
-                        </form> 
-                </div>
-=======
-           
-                <form method="get" action="<?= base_url("division/actividades/periodo") ?>">
+            <form method="get" action="<?= base_url("division/actividades/periodo") ?>">
                     <div class="row mb-3 mt-2 justify-content-end">
-                        <div class="col-md-5 text-right d-flex align-items-center">
-                            <span class="mr-2">Filtro </span>
-                            <select class="custom-select"  name="periodo">
-                                <option selected disabled value="">Elige el periodo</option>
-                                <option value="0"> PERIODO ACTIVO</option>
-                                <?php foreach($periodo as $key => $periodo) : ?>
-                                    <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
-                                <?php endforeach ?>
-                            </select>
-                            
-                                <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
-                        
-                        </div>
+                            <div class="col-md-5 text-right d-flex align-items-center">
+                                <span class="mr-2">Filtro </span>
+                                <div class="input-group">
+                                    <select class="custom-select"  name="periodo">
+                                        <option selected disabled value="">Elige el periodo</option>
+                                        <option value="0">ACTIVO</option>
+                                        <?php foreach($periodo as $key => $periodo) : ?>
+                                            <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
+                                        <?php endforeach ?>
+                                    </select>
+                                    <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
+                                </div>
+                            </div>  
                     </div>
-                </form>
-            
->>>>>>> a7997306c3288419492a85ef82624baa1c387095
+            </form>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
@@ -73,8 +53,7 @@
                             <th scope="col" class="border-top-0">TIPO</th>
                             <th scope="col" class="border-top-0">RESPONSABLE</th>
                             <th scope="col" class="border-top-0">HORAS</th>
-                            <th scope="col" class="border-top-0">HORARIO</th>
-                          
+                            <th scope="col" class="border-top-0">HORARIO</th>                         
                             <th scope="col" class="border-top-0"></th>
                         </tr>
                     </thead>
