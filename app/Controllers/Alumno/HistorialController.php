@@ -5,8 +5,8 @@ class HistorialController extends BaseController
 {
     protected $HistorialService;
     protected $tipoActividadService;
-    protected $responsableService;   
-    
+    protected $responsableService;
+   
     function __construct()
     {      
         $this->HistorialService =  new \App\Services\Alumno\HistorialService();	
@@ -17,14 +17,12 @@ class HistorialController extends BaseController
 
     public function index()
 	{  
-        if($this->session->loginalumno && $this->session->usuario_logueado)
+        if($this->session->loginalumno && $this->session->usuario_logueado->num_control)
         {
-            if($alumno =  $this->session->usuario_logueado->num_control)
-            {
-
+            
+            $alumno = $this->session->usuario_logueado->num_control;
             $actividades = $this->HistorialService->getActividadesPorCalificacion($alumno); 
             $actividadesNoCalificadas = $this->HistorialService->getActividades_no_calificadas($alumno); 
-            
             //var_dump( $actividadesNoCalificadas );
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
             $responsables = $this->responsableService->getResponsablesPorEstatus(true);
@@ -39,11 +37,6 @@ class HistorialController extends BaseController
                 ]);
             echo view('Includes/footer');
                 
-            }
-            else
-            {
-            return redirect("/");
-            }
 
         }
         else

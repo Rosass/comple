@@ -18,28 +18,28 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
+									<label for="jefe">RFC (*)</label>
+									<input type="text" class="form-control text-uppercase" name="rfc_jefe" value="<?= $jefe->rfc_jefe ?>" readonly>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
 									<label for="nombre">NOMBRE (*)</label>
 									<input type="text" class="form-control text-uppercase" name="nombre_jefe" required value="<?= $jefe->nombre_jefe ?>">
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="apaterno">APELLIDO PATERNO (*)</label>
-									<input type="text" class="form-control text-uppercase" name="apaterno_jefe" required value="<?= $jefe->apaterno_jefe ?>">
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<label for="amaterno">APELLIDO MATERNO (*)</label>
-									<input type="text" class="form-control text-uppercase" name="amaterno_jefe"  value="<?= $jefe->amaterno_jefe ?>">
+								<label for="apaterno">APELLIDO PATERNO (*)</label>
+								<input type="text" class="form-control text-uppercase" name="apaterno_jefe" required value="<?= $jefe->apaterno_jefe ?>">
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="jefe">RFC (*)</label>
-									<input type="text" class="form-control text-uppercase" name="rfc_jefe" value="<?= $jefe->rfc_jefe ?>">
+								<label for="amaterno">APELLIDO MATERNO (*)</label>
+								<input type="text" class="form-control text-uppercase" name="amaterno_jefe"  value="<?= $jefe->amaterno_jefe ?>">
 								</div>
 							</div>
 							<div class="col-md-4">

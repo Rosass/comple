@@ -59,7 +59,6 @@ class ResponsableService
         {
             return ["exito" => false, "msj" => "El responsable <strong>" . $datos['rfc_responsable'] . "</strong> ya se encuentra registrado!."];
         }
-       
     }
 
     /**

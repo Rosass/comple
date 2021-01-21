@@ -8,7 +8,6 @@ class InicioController extends BaseController
     protected $tipoActividadService;
     protected $responsableService;
     
-    
     function __construct()
     {      
         $this->HistorialService =  new \App\Services\Alumno\HistorialService();
@@ -20,20 +19,20 @@ class InicioController extends BaseController
     public function index()
 	{  
 
-        if($this->session->loginalumno && $this->session->usuario_logueado)
-        {
-            if($alumno = $this->session->usuario_logueado->num_control)
-            {
+        if($this->session->loginalumno && $this->session->usuario_logueado->num_control)
+
+        { 
+            
             $num_control2 = $this->session->usuario_logueado->num_control;
+            $alumno = $this->session->usuario_logueado->num_control;
             $actividades = $this->HistorialService->getActividades_no_calificadas($alumno);
-            $numeroActividades = $this->HistorialService-> getActividadesCalificacion( $num_control2 );  
+            $numeroActividades = $this->HistorialService-> getActividadesCalificacion( $num_control2 ); 
             $act = $this->HistorialService->getActividades($alumno); 
             $alumnos = $this->HistorialService->get_actividad_alumno( $alumno, true); 
             //var_dump($actividades);
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
             $responsables = $this->responsableService->getResponsablesPorEstatus(true);
             
-
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "actividades"]);
             echo view('Alumno/Inicio/Actividades', [				
@@ -45,11 +44,6 @@ class InicioController extends BaseController
                 ]);
             echo view('Includes/footer');
 		
-            }
-            else
-            {
-                return redirect("/");
-            }
         }   
         else
         {

@@ -24,13 +24,16 @@
 					<div class="row">
 						<div class="col-md-3">
 							<div class="form-group">
-								<label for="apaterno">DICTAMEN</label>
-								<input type="text" class="form-control text-uppercase" id="dictamen" name="dictamen" value="<?= old("dictamen") ?>">
+								<label for="dictamen">DICTAMEN (*)</label>
+								<input type="text" class="form-control text-uppercase" id="dictamen" name="dictamen" value="<?= old("dictamen") ?>" required>
+								<div class="invalid-feedback">
+									Por favor, rellena este campo
+								</div>
 							</div>
 						</div>
 						<div class="col-md-3">
 							<div class="form-group">
-								<label for="amaterno">NÚMERO DE CREDITOS (*)</label>
+								<label for="creditos">NÚMERO DE CREDITOS (*)</label>
 								<input type="number" class="form-control text-uppercase" id="creditos" name="creditos" required value="<?= old("creditos") ?>" required>
 								<div class="invalid-feedback">
 									Por favor, rellena este campo
@@ -45,7 +48,7 @@
 						</div>
 						<div class="col-md-3">
 							<div class="form-group">
-								<label for="rfc">CAPACIDAD (*)</label>
+								<label for="capacidad">CAPACIDAD (*)</label>
 								<input type="number" class="form-control text-uppercase" id="capacidad" name="capacidad" required value="<?= old("capacidad") ?>" required>
 								<div class="invalid-feedback">
 									Por favor, rellena este campo
@@ -56,7 +59,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="form-group">
-								<label for="telefono">ÁREA (*)</label>
+								<label for="id_area">ÁREA (*)</label>
 								<select class="custom-select" name="id_area" required id="area">
 									<option selected disabled value="">Elige una área</option>
 									<?php foreach($areas as $key => $area) : ?>
@@ -70,7 +73,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
-								<label for="correo">PERIODO (*)</label>
+								<label for="periodo">PERIODO (*)</label>
 								<select class="custom-select" name="periodo" required id="periodo">
 									<option selected disabled value="">Elige un periodo</option>
 									<?php foreach($periodos as $key => $periodo) : ?>
@@ -84,7 +87,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
-								<label for="clave">TIPO (*)</label>
+								<label for="id_tipo_actividad">TIPO (*)</label>
 								<select class="custom-select" name="id_tipo_actividad" id="tipo" required>
 									<option selected disabled value="">Elige el tipo de actividad</option>
 									<?php foreach($tipos_actividades as $key => $tipo) : ?>
@@ -98,21 +101,10 @@
 						</div>
 					</div>
 					<div class="row justify-content-center">
-						<div class="col-md-4">
-							<div class="form-group">
-								<label for="confirmar_clave">RESPONSABLE</label>
-								<select class="custom-select" name="rfc_responsable">
-									<option selected disabled>Elige un responsable</option>
-									<?php foreach($responsables as $key => $responsable) : ?>
-									<option value="<?= $responsable->rfc_responsable ?>"><?= $responsable->nombre . " " . $responsable->apaterno . " (". $responsable->rfc_responsable . ")" ?></option>
-									<?php endforeach ?>
-								</select>
-							</div>
-						</div>
 						<div class="col-md-8">
 							<div class="form-group">
 								<label for="horario">HORARIO</label>
-								<input type="horario" class="form-control text-uppercase" id="horario" name="horario"  value="<?= old("horario") ?>">
+								<input type="horario" class="form-control text-uppercase" id="horario" name="horario" placeholder="LUN 13:00-15:00; MAR 13:00-15:00; VIE 07:00-09:00"  value="<?= old("horario") ?>">
 								<small>Los horarios debes separarlos por punto y coma ';'.</small>
 							</div>
 						</div>

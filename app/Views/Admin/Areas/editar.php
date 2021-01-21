@@ -1,7 +1,7 @@
 <?php $session = session(); ?>
 <div class="container text-center justify-content-center">
-	<div class="row mt-5">
-		<div class="col-md-12 ">
+	<div class="row mt-5 justify-content-center">
+		<div class="col-md-9 ">
 		     <!-- Mensajes de error -->
 			<?php if($session->getFlashdata('error')) : ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -17,7 +17,7 @@
 					<div class="card-body">
 					<div class="row justify-content-center">
                             <input type="hidden" name="id_area" value="<?= $area->id_area ?>">
-							<div class="col-md-8">
+							<div class="col-md-9">
 								<div class="form-group">
 									<label for="nombre">NOMBRE (*)</label>
 									<input type="text" class="form-control text-uppercase" id="nombre" name="nombre_area" required value="<?= $area->nombre_area ?>" required>
@@ -26,7 +26,7 @@
 						</div>
 						</div>
 						<div class="row justify-content-center">
-							<div class="col-md-8">
+							<div class="col-md-7">
 								<div class="form-group">
 									<label for="telefono">JEFE</label>
 									<select class="custom-select" name="rfc_jefe">

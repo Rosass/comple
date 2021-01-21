@@ -10,7 +10,7 @@
 			<div class="modal-body pb-0 text-muted">
 				<form action="<?= base_url("division/responsables/editar-clave") ?>" method="POST">
 					<div class="row">
-						<input type="hidden" class="form-control disabled" id="rfc_responsable" name="rfc_responsable" value="<?= $responsable->rfc_responsable ?>">
+						<input type="hidden" class="form-control disabled" id="rfc" name="rfc" value="<?= $responsable->rfc_responsable ?>">
 						<div class="col">
 							<div class="form-group">
 								<label for="clave">NUEVA CLAVE (*)</label>

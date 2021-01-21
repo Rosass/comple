@@ -70,12 +70,12 @@ function valida_fecha( $fecha_inicio, $fecha_fin )
                 </div>
                 <?php endif ?>
                 <?php if (  $numeroActividades >= 5 ) : ?>
-                    <div class="alert alert-success">
-                        <p><i class="fas fa-check-circle text-success"></i> ¡Has terminado tus Actividades Complementarias !!</p>
+                    <div class="alert alert-success" role="alert">
+                        <i class="fas fa-check-circle text-success"></i> ¡Has terminado tus Actividades Complementarias!</i>
                     </div>
                 <?php elseif ( !valida_fecha( $periodos->fecha_inicio_inscripcion, $periodos->fecha_final_inscripcion)) :?>
-                    <div class="alert alert-info">
-                        <p><i class="fas fa-exclamation-triangle"></i> Ha terminado la fecha de inscripciones! Más información acudir con Division de Estudios Profesionales...</p>
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-exclamation-triangle"></i> Ha terminado la fecha de inscripciones, Para más información acudir con Division de Estudios Profesionales.</i>
                     </div>
                 <?php else: ?>
                 

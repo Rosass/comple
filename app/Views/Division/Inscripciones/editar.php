@@ -25,7 +25,7 @@
                             </div>
 							<div class="col-md-3">
 								<div class="form-group">
-									<label for="correo">PERIODO (*)</label>
+									<label for="periodo">PERIODO (*)</label>
 									<select class="custom-select" name="periodo" required>
 										<?php foreach($periodos as $key => $periodo) : ?>
 										    <option value="<?= $periodo->periodo ?>" <?= ($periodo->periodo == $inscripcion->periodo) ? 'selected' : '' ?>><?= $periodo->descripcion ?></option>
@@ -35,7 +35,7 @@
 							</div>
                             <div class="col-md-3">
 								<div class="form-group">
-									<label for="clave">ACTIVIDAD (*)</label>
+									<label for="id_actividad">ACTIVIDAD (*)</label>
 									<select class="custom-select" name="id_actividad" required>
 										<?php foreach($actividades as $key => $actividad) : ?>
 										    <option value="<?= $actividad->id_actividad ?>" <?= ($actividad->id_actividad == $inscripcion->id_actividad) ? 'selected' : '' ?>><?= $actividad->nombre_actividad ?></option>

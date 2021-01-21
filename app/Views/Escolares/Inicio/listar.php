@@ -22,7 +22,7 @@
                         <div class="input-group mb-2 col-md-5">
                             <input type="text" class="form-control" id="inputNoControl" placeholder="No control">
                             <div class="input-group-append">
-                            <button class="input-group-text text-white btn bg-success"  id="btnBuscar"><i class="fas fa-search"></i>Buscar</button>
+                            <button class="input-group-text text-white btn bg-success"  id="btnBuscar"><i class="fas mr-1 fa-search"></i> Buscar</button>
                             </div>
                         </div>
                     </form>

@@ -39,13 +39,6 @@ class ActividadService
 	{   
        return $this->actividadModel->getActividadesPorEstatus($estatus, true);
     }
-
-    //para el sexelc de periodo
-/*     public function getPeriodoPorEstatus($estatus)
-	{   
-       return $this->actividadModel->getPeriodoPorEstatus($estatus, true);
-    } */
-
     /**
      * Guarda una nueva actividad en la BD
      * @param array $datos

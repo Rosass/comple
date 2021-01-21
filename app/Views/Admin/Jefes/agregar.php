@@ -13,7 +13,16 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="nombre_jefe">NOMBRE (*)</label>
+                    <label for="rfc_jefe">RFC (*)</label>
+                        <input type="text" class="form-control text-uppercase" id="rfc_jefe" name="rfc_jefe" required value="<?= old("rfc_jefe") ?>">
+                        <div class="invalid-feedback">
+				            Por favor, rellena este campo
+				        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                    <label for="nombre_jefe">NOMBRE (*)</label>
                         <input type="text" class="form-control text-uppercase" id="nombre_jefe" name="nombre_jefe" required value="<?= old("nombre_jefe") ?>">
                         <div class="invalid-feedback">
 				            Por favor, rellena este campo
@@ -22,17 +31,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="apaterno_jefe">APELLIDO PATERNO (*)</label>
+                    <label for="apaterno_jefe">APELLIDO PATERNO (*)</label>
                         <input type="text" class="form-control text-uppercase" id="apaterno_jefe" name="apaterno_jefe" required value="<?= old("apaterno_jefe") ?>">
-                        <div class="invalid-feedback">
-				            Por favor, rellena este campo
-				        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="amaterno_jefe">APELLIDO MATERNO (*)</label>
-                        <input type="text" class="form-control text-uppercase" id="amaterno_jefe" name="amaterno_jefe"  value="<?= old("amaterno_jefe") ?>">
                         <div class="invalid-feedback">
 				            Por favor, rellena este campo
 				        </div>
@@ -42,8 +42,8 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="rfc_jefe">RFC (*)</label>
-                        <input type="text" class="form-control text-uppercase" id="rfc_jefe" name="rfc_jefe" required value="<?= old("rfc_jefe") ?>">
+                    <label for="amaterno_jefe">APELLIDO MATERNO (*)</label>
+                        <input type="text" class="form-control text-uppercase" id="amaterno_jefe" name="amaterno_jefe"  value="<?= old("amaterno_jefe") ?>">
                         <div class="invalid-feedback">
 				            Por favor, rellena este campo
 				        </div>

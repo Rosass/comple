@@ -22,9 +22,9 @@
             <div>
                 <p style="text-align: center;"><strong>Actividad:</strong> <span class="font-weight-bold"><?php foreach($actividad as  $act) : ?> <u><?= $act->nombre_actividad ?></u><?php endforeach ?></span></p>
             </div>
-            <div class="alert alert-success"><br>
-                <p style="text-align: center; text-align: justify;">Hombres: <span class="font-weight-bold"><?= $hombres?></span></p>
-                <p style="text-align: center; text-align: justify;">Mujeres: <span class="font-weight-bold"><?= $mujeres?></span></p>
+            <div class="alert alert-success">
+                <div style="text-align: center; text-align: justify;">Hombres: <span class="font-weight-bold"><?= $hombres?></span></div>
+                <div  style="text-align: center; text-align: justify;">Mujeres: <span  class="font-weight-bold"><?= $mujeres?></span></div>
             </div>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">

@@ -12,16 +12,22 @@ class AlumnoController extends BaseController
 
 	public function index()
 	{  
-        if($rfc_responsable = $this->session->usuario_logueado->rfc_responsable)
-        {
+        if($this->session->loginresponsable && $this->session->usuario_logueado->rfc_responsable)
+        {   
+
+            $rfc_responsable = $this->session->usuario_logueado->rfc_responsable;
             $responsable = $this->alumnoService->getResponsablePorRfc( $rfc_responsable ); 
 
             echo view('Includes/header');
             echo view('Responsable/navbar',  ["activo" => "cambiar clave"]);
             echo view('Responsable/Cambiar-Clave/editar', ["responsable" => $responsable]);
             echo view('Includes/footer');
-		}
-    
+            
+        }
+        else
+        {
+            return redirect('/');
+        }
     }
     
     public function actualizarClave()

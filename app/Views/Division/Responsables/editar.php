@@ -82,7 +82,7 @@
 					</div>
 					<div class="card-body">
                         <div class="row">
-                            <input type="hidden" class="form-control disabled" id="rfc_responsable" name="rfc_responsable" value="<?= $responsable->rfc_responsable ?>">
+                            <input type="hidden" class="form-control disabled" id="rfc" name="rfc" value="<?= $responsable->rfc_responsable ?>">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="clave">NUEVA CLAVE (*)</label>

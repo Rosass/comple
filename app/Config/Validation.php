@@ -46,7 +46,7 @@ class Validation
 		'amaterno'     => 'required',
         'clave'     => 'required|min_length[8]',
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
-		'telefono'     => 'min_length[9]',
+		'telefono'     => 'min_length[10]|max_length[10]',
         'correo'        => 'valid_email'
 	];
 
@@ -55,7 +55,7 @@ class Validation
 		'nombre'     => 'required',
 		'apaterno'     => 'required',
 		'amaterno'     => 'required',
-		'telefono'     => 'min_length[9]',
+		'telefono'     => 'min_length[10]|max_length[10]',
         'correo'        => 'valid_email'
 	];
 
@@ -77,6 +77,7 @@ class Validation
 	public $actividadReglas = [
 		'nombre'     => 'required',
 		'creditos'     => 'required|numeric',
+		'dictamen'     => 'required',
 		'capacidad'     => 'required|numeric',
 		'id_area'     => 'required|numeric',
         'periodo'     => 'required|numeric',
@@ -84,17 +85,17 @@ class Validation
 	];
 
 	public $inscripcionReglas = [
-		'num_control'     => 'required|numeric|min_length[8]|max_length[9]',
+		'num_control'     => 'required',
 		'periodo'     => 'required|numeric',
 		'id_actividad'     => 'required|numeric',
-		'telefono'     => 'required|min_length[10]|max_length[15]',
+		'telefono'     => 'required|min_length[10]|max_length[10]',
 	];
 
 	public $editarInscripcionReglas = [
 		'id_inscripcion'     => 'required|numeric',
 		'periodo'     => 'required|numeric',
 		'id_actividad'     => 'required|numeric',
-		'telefono'     => 'required|min_length[10]|max_length[15]',
+		'telefono'     => 'required|min_length[10]|max_length[10]',
 	];
 
 	public $jefeReglas = [
@@ -109,7 +110,7 @@ class Validation
 		'rfc_jefe'     => 'min_length[13]|max_length[13]',
 		'nombre_jefe'     => 'required',
 		'apaterno_jefe'     => 'required',
-		'telefono_jefe'     => 'min_length[10]|max_length[10]',
+		//'telefono_jefe'     => 'min_length[10]|max_length[10]',
        
 	];
 
@@ -153,7 +154,7 @@ class Validation
 
 	public $inscripcionesReglas = [
 		'id_actividad'     => 'required|numeric',
-		'telefono'     => 'required|min_length[10]|max_length[15]',
+		'telefono'     => 'required|min_length[10]|max_length[10]',
 	];
 
 	public $editarClave12Reglas = [
@@ -168,7 +169,7 @@ class Validation
 		'amaterno'     => 'required',
         'clave'     => 'required|min_length[8]',
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
-		'telefono'     => 'min_length[9]',
+		'telefono'     => 'min_length[10]|max_length[10]',
         'correo'        => 'valid_email'
 	];
 
@@ -176,7 +177,7 @@ class Validation
 		'nombre'     => 'required',
 		'apaterno'     => 'required',
 		'amaterno'     => 'required',
-		'telefono'     => 'min_length[9]',
+		'telefono'     => 'min_length[10]|max_length[10]',
         'correo'        => 'valid_email'
 	];
 

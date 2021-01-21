@@ -27,19 +27,19 @@
 						<div class="row">
 							<div class="col-md-3">
 								<div class="form-group">
-									<label for="apaterno">DICTAMEN</label>
+									<label for="dictamen">DICTAMEN (*)</label>
 									<input type="text" class="form-control text-uppercase" id="dictamen" name="dictamen" required value="<?= $actividad->numero_dictamen ?>">
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="form-group">
-									<label for="amaterno">NÚMERO DE CREDITOS (*)</label>
+									<label for="creditos">NÚMERO DE CREDITOS (*)</label>
 									<input type="text" class="form-control text-uppercase" id="creditos" name="creditos" required value="<?= $actividad->creditos ?>" required>
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="form-group">
-									<label for="rfc">CAPACIDAD (*)</label>
+									<label for="capacidad">CAPACIDAD (*)</label>
 									<input type="text" class="form-control text-uppercase" id="capacidad" name="capacidad" required value="<?= $actividad->capacidad ?>" required>
 								</div>
 							</div>
@@ -54,7 +54,7 @@
 							
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="telefono">ÁREA (*)</label>
+									<label for="id_area">ÁREA (*)</label>
 									<select class="custom-select" name="id_area" required>
 										<?php foreach($areas as $key => $area) : ?>
 										    <option value="<?= $area->id_area ?>" <?= ($area->id_area == $actividad->id_area) ? 'selected' : '' ?>><?= $area->nombre_area ?></option>
@@ -64,7 +64,7 @@
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="correo">PERIODO (*)</label>
+									<label for="periodo">PERIODO (*)</label>
 									<select class="custom-select" name="periodo" required>
 										<?php foreach($periodos as $key => $periodo) : ?>
 										    <option value="<?= $periodo->periodo ?>" <?= ($periodo->periodo == $actividad->periodo) ? 'selected' : '' ?>><?= $periodo->descripcion ?></option>
@@ -74,7 +74,7 @@
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="clave">TIPO (*)</label>
+									<label for="id_tipo_actividad">TIPO (*)</label>
 									<select class="custom-select" name="id_tipo_actividad" required>
 										<?php foreach($tipos_actividades as $key => $tipo) : ?>
 										<option value="<?= $tipo->id_tipo_actividad ?>" <?= ($tipo->id_tipo_actividad == $actividad->id_tipo_actividad) ? 'selected' : '' ?>><?= $tipo->nombre ?></option>
@@ -84,19 +84,6 @@
 							</div>
 						</div>
 						<div class="row justify-content-center">
-							<div class="col-md-4">
-								<div class="form-group">
-									<label for="confirmar_clave">RESPONSABLE</label>
-									<select class="custom-select" name="rfc_responsable">
-                                        <?php if($actividad->rfc_responsable == null) : ?>
-                                            <option selected disabled>Elige un responsable</option>
-                                        <?php endif ?>
-                                        <?php foreach($responsables as $key => $responsable) : ?>
-										    <option value="<?= $responsable->rfc_responsable ?>" <?= ($responsable->rfc_responsable == $actividad->rfc_responsable) ? 'selected' : '' ?>><?= $responsable->nombre . " " . $responsable->apaterno . " (". $responsable->rfc_responsable . ")" ?></option>
-										<?php endforeach ?>
-									</select>
-								</div>
-							</div>
 							<div class="col-md-8">
 								<div class="form-group">
 									<label for="horario">HORARIO</label>

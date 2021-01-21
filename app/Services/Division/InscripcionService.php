@@ -82,7 +82,7 @@ class InscripcionService
             $inscripciones_html .= '<tr>' .
                                         '<th scope="row">' . ($key + 1) . '</th>' .
                                         '<td>' . $inscripcion->num_control . '</td>' .
-                                        '<td style="width:15%;">' . $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno . '</td>' .
+                                        '<td>' . $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno . '</td>' .
                                         '<td>' . $inscripcion->carrera . '</td>' .
                                         '<td>' . $inscripcion->semestre . '</td>' .
                                         '<td>' . $inscripcion->descripcion_periodo . '</td>' .
@@ -91,13 +91,13 @@ class InscripcionService
                                         '<td>' . $inscripcion->fecha_inscripcion . '</td>' .
                                         '<td>' . $inscripcion->nota . '</td>' .  
                                          '<td class="text-white">' . $estatus . '</td>'. 
-                                '<td style="width:20%;">'.
+                                '<td style="width:9%;">'.
                                 '<div class="d-flex flex-column">'.
                                     '<!--  Editar inscripción -->'. $editar .
                                     '<!-- Aceptar inscripción -->'.
                                         '<form action="' . base_url('division/inscripciones/cambiar-estatus-aceptar').'" method="POST">'.
                                             '<input type="hidden" name="id_inscripcion" value="'. $inscripcion->id_inscripcion .'">'.
-                                            '<button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-check"></i> Aceptar</button>'.
+                                            '<button type="submit" class="btn btn-success btn-sm btn-block mb-1 btnEnviarFormulario" data-no_control="' . $inscripcion->num_control . '" ><i class="fas fa-check"></i> Aceptar</button>'.
                                         '</form>'.
                                     '<!-- Rechazar inscripción -->'.
                                         '<form action="'. base_url('division/inscripciones/cambiar-estatus-rechazar') . '" method="POST">'.
@@ -173,7 +173,7 @@ class InscripcionService
             // Se actualizan los datos
             if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
             {
-                return ["exito" => true, "msj" => "Datos actualizados con exito."];
+                return ["exito" => true, "msj" => "Inscripción actualizada con exito."];
             }
             else
             {

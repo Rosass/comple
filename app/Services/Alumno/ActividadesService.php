@@ -15,9 +15,9 @@ class ActividadesService
      * Obtiene las actividades de la BD
      * @return object
      */
-    public function getActividadesPorAlumno()
+    public function getActividadesPorAlumno($alumnos)
 	{   
-        return $this->alumnoModel->getActividadesPorAlumno();
+        return $this->alumnoModel->getActividadesPorAlumno($alumnos);
     }
 
 

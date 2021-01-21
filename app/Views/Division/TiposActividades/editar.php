@@ -1,7 +1,7 @@
 <?php $session = session(); ?>
 <div class="container text-center">
-	<div class="row mt-5">
-		<div class="col-md-12 ">
+	<div class="row mt-5 justify-content-center">
+		<div class="col-md-7">
 		    <!-- Mensajes de error -->
 			<?php if($session->getFlashdata('error')) : ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -17,7 +17,7 @@
 					<div class="card-body">
                         <input type="hidden" class="form-control disabled" id="id_tipo_actividad" name="id_tipo_actividad" value="<?= $tipo_actividad->id_tipo_actividad ?>">
                         <div class="form-group">
-                            <label for="nombre">NOMBRE DE LA ACTIVIDAD(*)</label>
+                            <label for="nombre">NOMBRE DEL TIPO DE ACTIVIDAD(*)</label>
                             <input type="text" class="form-control text-uppercase" id="nombre" name="nombre" required value="<?= $tipo_actividad->nombre ?>">
                         </div>
                         <small>Los campos marcados con (*) son obligatorios.</small>

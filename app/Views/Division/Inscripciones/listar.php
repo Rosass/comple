@@ -19,13 +19,14 @@
             <div class="text-right">
                 <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevaInscripcionModal"><i class="fas fa-plus"></i> Nueva inscripción</button>
             </div> 
+
             <form method="get" action="<?= base_url("division/inscripciones/periodo") ?>">
                 <div class="row mb-3 mt-2 justify-content-end">
                     <div class="col-md-5 text-right d-flex align-items-center">
                         <span class="mr-2">Filtro </span>
                         <select class="custom-select"  name="periodo">
                             <option selected disabled value="">Elige el periodo</option>
-                            <option value="0">ACTIVO</option>
+                            <option value="0"> PERIODO ACTIVO</option>
                             <?php foreach($periodo as $key => $periodo) : ?>
                                 <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
                             <?php endforeach ?>
@@ -48,7 +49,7 @@
                     </select>
                 </div>
             </div>
-
+                        
             <div class="table-responsive-sm text-center"> 
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaInscripciones">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
@@ -75,7 +76,7 @@
                             <tr>
                                 <th scope="row"><?= $key +1 ?></th>
                                 <td><?= $inscripcion->num_control ?></td>
-                                <td style="width:15%;"><?= $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno ?></td>
+                                <td><?= $inscripcion->nombre . " " . $inscripcion->ap_paterno . " " . $inscripcion->ap_materno ?></td>
                                 <td><?= $inscripcion->carrera?></td>
                                 <td><?= $inscripcion->semestre?></td>
                                 <td><?= $inscripcion->descripcion_periodo?></td>
@@ -94,24 +95,26 @@
 								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
 							    </td>
-                                <td style="width:20%;">
-                                    <div class="d-flex flex-column btn-toolbar">
+                                <td style="width:9%;">
+                                    <div class="d-flex flex-column">
                                         <!--  Editar inscripción -->
                                         <?php if($inscripcion->estatus == true) : ?>
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/inscripciones/editar/".$inscripcion->id_inscripcion) ?>"><i class="fas fa-pen"></i> Editar</a>
                                         <?php endif ?>
                                         <!-- Aceptar inscripción -->
-                                                                                             
+                                        <?php if($inscripcion->estatus == 1 || $inscripcion->estatus ==  0) : ?>                                   
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-aceptar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
-                                                <button type="submit" class="btn btn-success btn-sm btn-block  btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-check"></i> Aceptar</button>
-                                            </form>                                                        
+                                                <button type="submit" class="btn btn-success btn-sm btn-block mb-1 btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-check"></i> Aceptar</button>
+                                            </form>
+                                            <?php endif ?>
+                                        <?php if($inscripcion->estatus == true) : ?>                                                        
                                         <!-- Rechazar inscripción -->            
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-rechazar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
                                                 <button type="submit" class="btn btn-danger btn-sm btn-block  btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-ban"></i> Rechazar</button>
                                             </form>
-                                                                                 
+                                        <?php endif ?>                                             
                                     </div>
                                 </td>
                             </tr>

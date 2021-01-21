@@ -18,7 +18,7 @@ class JefeService
      */
     public function getJefes()
 	{   
-       return $this->jefeModel->getJefes();
+        return $this->jefeModel->getJefes();
     }
 
     /**

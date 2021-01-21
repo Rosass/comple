@@ -62,18 +62,6 @@ class ActividadModel extends Model
         ->get()->getResult();
     }
 
-    //para select de periodo
-
-/*     public function getPeriodoPorEstatus($estatus)
-	{   
-        return $this->db->table("periodo p")
-        ->select("*")
-       
-        ->where("estatus", $estatus)
-        ->get()->getResult();
-    } */
-
-
     public function guardar($datos)
     {
         $this->db->table($this->table)->insert($datos);

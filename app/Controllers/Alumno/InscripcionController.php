@@ -5,8 +5,6 @@ class InscripcionController extends BaseController
 {
     protected $inscripcionService;
 	
-    
-    
     function __construct()
     {      
         $this->inscripcionService =  new \App\Services\Alumno\InscripcionService();
@@ -15,21 +13,15 @@ class InscripcionController extends BaseController
 
     public function index()
 	{  
-        if($num_control = $this->session->usuario_logueado->num_control)
+        if($this->session->loginalumno && $this->session->usuario_logueado->num_control)
         {
         
             $num_control2 = $this->session->usuario_logueado->num_control;
             $num_control = $this->inscripcionService->getInscripcionPorAlumno($num_control2); 
             $actividades = $this->inscripcionService->getActividadesPorAlumno(true);           
             $periodos = $this->inscripcionService->getPeriodosPorEstatus(true);
-
             $numeroActividades = $this->inscripcionService-> getActividadesPorCalificacion( $num_control2 );
-
             // echo $numeroActividades->creditos;
-
-
-
-
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "inscripciones"]);
             echo view('Alumno/Inscripciones/listar', [
@@ -41,10 +33,10 @@ class InscripcionController extends BaseController
             echo view('Includes/footer');
 		
         }
-    else
-    {
-        return redirect("/");
-    }
+        else
+        {
+            return redirect("/");
+        }
     }
 
     public function guardar()

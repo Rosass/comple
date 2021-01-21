@@ -90,7 +90,7 @@ class HistorialModel extends Model
     public function get_actividad_alumno( $id_actividad, $estatus)
     {
         $newArray = array();
-        $actividad = $this->get_inscripciones( $id_actividad,$estatus );
+        $actividad = $this->get_inscripciones( $id_actividad, $estatus );
         foreach( $actividad as $act ) {
             $num_control = $act->num_control;
             $id_inscripcion = $act->id_inscripcion;

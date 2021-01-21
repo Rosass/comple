@@ -23,8 +23,8 @@
                 <div class="col-md-3">
                     <div class="form-group">
                         <label for="periodo">PERIODO (*)</label>
-                        <select class="custom-select" name="periodo"  required>
-                            <option selected disabled zise="1">Elige un periodo</option>
+                        <select class="custom-select" name="periodo" required>
+                            <option selected disabled value="">Elige un periodo</option>
                             <?php foreach($periodos as $key => $periodo) : ?>
                                 <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
                             <?php endforeach ?>
@@ -50,17 +50,17 @@
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="telefono">TELEFONO</label>
-                        <input type="text" class="form-control" id="telefono" name="telefono" value="<?= old("telefono") ?>">
-                    </div>
-                    <div class="invalid-feedback">
+                        <label for="telefono">TELEFONO (*)</label>
+                        <input type="number" class="form-control" id="telefono" name="telefono" required value="<?= old("telefono") ?>"  required>
+                        <div class="invalid-feedback">
                             Por favor, rellena este campo
+                        </div>
                     </div>
                 </div>     
             </div>
-                    <div class="form-group" >
-                        <label for="nota">NOTA</label>
-                        <textarea class="form-control" id="nota" name="nota" rows="2" value="<?= old("nota") ?>"></textarea>
+                    <div class="form-group">
+                        <label for="nota">OBSERVACIÓN</label>
+                        <textarea class="form-control text-uppercase" id="nota" name="nota" rows="2" value="<?= old("nota") ?>"></textarea>
                     </div>
             <small>Los campos marcados con (*) son obligatorios.</small>
             <div class="modal-footer">

@@ -9,7 +9,7 @@
 				CARRERA: <span class="font-weight-bold"> <?= $session->usuario_logueado->carrera?></span><br>
 			</div>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom shadow-lg">
-				<p class="navbar-brand text-wrap text-light" href="<?= base_url('alumno/inicio') ?>" style="font-size:15px !important;"><img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="" style="max-width: 30px;"> Sistema de Gestión de Actividades Complementarias</p>
+				<span class="navbar-brand text-wrap text-light" href="<?= base_url('alumno/inicio') ?>" style="font-size:15px !important;"><img src="<?= base_url('public/img/logotec_blanco.png') ?>" alt="" style="max-width: 30px;"> Sistema de Gestión de Actividades Complementarias</span>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>

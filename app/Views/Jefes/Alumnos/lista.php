@@ -24,8 +24,13 @@ $session = session(); ?>
                 <p style="text-align: center;"><strong>Actividad:</strong> <span class="font-weight-bold"><?php foreach($actividad as  $act) : ?> <u><?= $act->nombre_actividad ?></u><?php endforeach ?></span></p>
             </div>
             <div class="alert alert-success">
+<<<<<<< HEAD
                 <p style="text-align: center; text-align: justify;" class="mb-0">Hombres: <span class="font-weight-bold"><?= $hombres?></span></p>
                 <p style="text-align: center; text-align: justify;" class="mb-0">Mujeres: <span class="font-weight-bold"><?= $mujeres?></span></p>
+=======
+                <div style="text-align: center; text-align: justify;">Hombres: <span class="font-weight-bold"><?= $hombres?></span></div>
+                <div style="text-align: center; text-align: justify;">Mujeres: <span class="font-weight-bold"><?= $mujeres?></span></div>
+>>>>>>> a7997306c3288419492a85ef82624baa1c387095
             </div>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
