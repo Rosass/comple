@@ -1,54 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Lista de asistencia</title>
-   </head>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Lista de Asistencia</title>
    <style type="text/css">
-      table ,th,td{
-      border:1.5px solid black;
-      border-collapse:collapse;
-      }
-      h3{
+   table,th,td{
+      border: 1.5px solid black;
+      border-collapse: collapse;
+   }
+   td,th{
       text-align: center;
-      }
-      td, th {
-      text-align: center;
-      }
-      td.a{
+   }
+   td.a{
       text-indent: 10px;
-      }
-      th{
-      font-size:85%;
-      }
-      p, i.a{
+   }
+   h3{
+      text-align: center;
+   }
+   th{
+      font-size: 85%;
+   }
+   p,i.a{
       font-style: Arial;
-      }
-
-      p{
-      font-size:85%";
-      }
-      #piedepagina{
-         width: 800px;
-         position: absolute;
-         bottom:0 !important;
-         bottom: -1px;
-         float: none;
-
-         text-transform: capitalize;
-      }
-      #alto{
-         height: 2%;
-      }
+   }
+   p{
+      font-size: 85%;
+   }
+   #piedepagina{
+      width: 800px;
+      position: static;
+      bottom: 0 !important;
+      bottom: -1px;
+      height: 4rem;
+   }
+   #principal{
+   size:A4 landscape;
+   size:auto;
+   page-break-before: auto;
+   page-break-after:avoid ;
+   }
+   #alto{
+      height: 2%;
+   }
+   #m{
+      margin-top: -18px;
+   }
+   #m2{
+      margin-top: -900px;
+   }
    </style>
-
 </head>
-   <body>
-      <header>
-
-         <table >
-            <tr>
+<body>
+   <header>
+      <table>
+         <tr>
                <th  rowspan="3" style="width:25%;"><?php
                $path = 'public/img/ISO.png'; 
                $type = pathinfo($path, PATHINFO_EXTENSION);
@@ -70,7 +75,7 @@
                <td>Página </td>
             </tr>
          </table>
-         <?php foreach($areas as $ar) : ?>
+      <?php foreach($areas as $ar) : ?>
       <h4 style="text-align: center;">INSTITUTO TECNOLÓGICO DE POCHUTLA</h4>
       <p style="text-align:center; font-size:70%;"><strong>SUBDIRECCION DE PLANEACIÓN Y VINCULACION</strong><br>
       <strong><?=  $ar->nombre_area ?></strong><br> <?php endforeach ?>
@@ -78,9 +83,10 @@
       <strong >OFICINA DE PROMOCIÓN:</strong> <?= $a->tipo_actividad?><br>
       <strong>ACTIVIDAD: </strong> <?= $a->nombre_actividad?></P>
          <?php endforeach ?>
-      </header>
-         <main>
-      <table style="width:100%; font-size:90%;">
+      </table>
+   </header>
+   <div id="principal">
+   <table style="width:100%; font-size:90%;">
          <thead>
             <tr>
                <th>No</th>
@@ -112,22 +118,21 @@
       ?><br><br><br><br>
          <p style="font-size: 90%;">Lugar y fecha: San Pedro Pochutla a <?= $fecha ?> de <?php echo $meses[date('n')-1];?> del <?= $fecha1 ?></p>
       </table>
-
-</main>
-<?php foreach($areas as $ar) : ?>
+   </div><br><break>
+   <?php foreach($areas as $ar) : ?>
    <footer id="piedepagina">
-      <div> 
-         <p style="font-family: Montserrat; font-weight:800; font-size:10pt; text-align:center; margin-right:600px; margin-top:55px;"><?php foreach($actividad as  $act) : ?> <strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?> <hr width="93%"> </strong> promotor</p> <?php endforeach ?>
+         <div> 
+            <p style="font-family: Montserrat; font-weight:800; font-size:10pt; text-align:center; margin-right:600px; margin-top:55px;"><?php foreach($actividad as  $act) : ?> <strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?> <hr width="93%"> </strong> promotor</p> <?php endforeach ?>
             <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-right:120px;  text-align:center; margin-top:-99px;"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?> <hr width="38%"></strong>jefe de oficina de promocion <br><?php  if ( $ar->id_area == '2') echo ' Cultural o Deportiva';
             if ( $ar->id_area == '1') echo 'Academica';?> </p>
             <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-left:420px;  text-align:center;  margin-top:-160px;"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?> <hr width="68%"></strong> Jefe de Departamento de <br> <?php
             if ( $ar->id_area == '2') echo ' Actividades Extraescolares';
-            if ( $ar->id_area == '1') echo ' Ingenierias';?></p> <br><br><br><br>
-            <p style="font-family: Montserrat;  font-size:10pt; text-align:left; margin-right:550px;  margin-top:20px;">TecNM-VI-PO-003-01</p>
-            <p style=" font-family: Montserrat;  font-size:10pt;  margin-left:690px; text-align:left; margin-top:-400px;">Rev. 0</p>
+            if ( $ar->id_area == '1') echo ' Ingenierias';?></p> <br><br><br><br><br><br>
+            <p style="font-family: Montserrat;  font-size:10pt; text-align:left; margin-right:550px;  " id="m">TecNM-VI-PO-003-01</p>
+            <p style=" font-family: Montserrat;  font-size:10pt;  margin-left:690px; text-align:left;" id="m2">Rev. 0</p>
          </div>
          <?php endforeach ?>
-      </footer>
-
+   </footer> 
+   </break>
 </body>
 </html>

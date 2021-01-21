@@ -13,10 +13,10 @@ class ResponsableModel extends Model
 
     public function getResponsables($id_area)
 	{   
-        return $this->db->table('actividad a')
-        ->select('a.id_area, r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
-        ->join('responsable r', 'r.rfc_responsable = a.rfc_responsable', 'INNER')
-        ->where('a.id_area', $id_area)->get()->getResultArray();
+        return $this->db->table('responsable r')
+        ->select('r.id_area_fk, r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
+        ->join('area a', 'a.id_area = a.id_area', 'INNER')
+        ->where('r.id_area_fk', $id_area)->get()->getResultArray();
     }
 
     /* public function getResponsables()

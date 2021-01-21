@@ -3,10 +3,10 @@ use App\Controllers\BaseController;
 
 class ActividadController extends BaseController
 {
-    protected $actividadService;
+protected $actividadService;
 
-     function __construct()
-    {
+function __construct()
+{
         $this->actividadService = new \App\Services\Escolares\ActividadService();
 	} 
 
@@ -26,9 +26,8 @@ class ActividadController extends BaseController
 			return redirect("/");
 		}
 		
-    }
-    
-    public function buscar()
+        }
+        public function buscar()
 	{
         $data = array();
         $no_control = $this->request->getPost("no_control");

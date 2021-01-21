@@ -22,11 +22,7 @@ class ActividadesModel extends Model
                         ->join('tipo_actividad tac', 'tac.id_tipo_actividad = ta.id_tipo_actividad', 'LEFT')
                         ->where('num_control', $alumnos)                      
                         ->get()->getResult();
-<<<<<<< HEAD
-    }  
-=======
     }
     */
->>>>>>> 432087bf7288a049b0e587601b264f1e6545661b
 
 }

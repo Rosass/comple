@@ -82,5 +82,6 @@ class ResponsableService
         $nuevo_estatus = ($responsable->estatus == true) ? false : true;
         $datos = [ 'estatus' => $nuevo_estatus ];
         return $this->actualizar($responsable->rfc_responsable, $datos);
+        
     }
 }

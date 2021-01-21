@@ -54,6 +54,7 @@ class ResponsableController extends BaseController
                 "amaterno" => mb_strtoupper($this->request->getPost("amaterno"),'utf-8'),
                 "clave" => password_hash($this->request->getPost("clave") , PASSWORD_DEFAULT, ['cost' => 10]),
                 "telefono" => $this->request->getPost("telefono"),
+                "id_area_fk" => trim($this->session->usuario_logueado->id_area),
                 "correo" => $this->request->getPost("correo")
             ];
 
@@ -167,7 +168,6 @@ class ResponsableController extends BaseController
 
     public function cambiarEstatus()
     {
-       
         $rfc_responsable = $this->request->getPost('rfc');
         $respuesta = $this->responsableService->cambiarEstatus($rfc_responsable);
 
@@ -177,7 +177,7 @@ class ResponsableController extends BaseController
         }
         else
         {
-             $this->session->setFlashdata('error', $respuesta['msj']);
+            $this->session->setFlashdata('error', $respuesta['msj']);
         }
         return redirect('jefes/responsables');
     }

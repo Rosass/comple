@@ -8,8 +8,6 @@ class InicioController extends BaseController
     protected $tipoActividadService;
     protected $responsableService;
     
-	
-    
     
     function __construct()
     {      
@@ -24,24 +22,17 @@ class InicioController extends BaseController
 
         if($this->session->loginalumno && $this->session->usuario_logueado)
         {
-<<<<<<< HEAD
-            $num_control2 = $this->session->usuario_logueado->num_control;
-            $actividades = $this->HistorialService->getActividades_no_calificadas($alumno);
-            $numeroActividades = $this->HistorialService-> getActividadesCalificacion( $num_control2 ); 
-=======
-
             if($alumno = $this->session->usuario_logueado->num_control)
             {
-              
+            $num_control2 = $this->session->usuario_logueado->num_control;
             $actividades = $this->HistorialService->getActividades_no_calificadas($alumno);
+            $numeroActividades = $this->HistorialService-> getActividadesCalificacion( $num_control2 );  
             $act = $this->HistorialService->getActividades($alumno); 
             $alumnos = $this->HistorialService->get_actividad_alumno( $alumno, true); 
->>>>>>> 432087bf7288a049b0e587601b264f1e6545661b
             //var_dump($actividades);
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
             $responsables = $this->responsableService->getResponsablesPorEstatus(true);
             
-           
 
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "actividades"]);
@@ -64,13 +55,5 @@ class InicioController extends BaseController
         {
         return redirect("/");
         }
-<<<<<<< HEAD
-        else
-
-        {
-            return redirect("/");
-        }
-=======
->>>>>>> 432087bf7288a049b0e587601b264f1e6545661b
     }
 }

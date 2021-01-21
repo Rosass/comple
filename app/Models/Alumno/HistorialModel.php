@@ -45,7 +45,6 @@ class HistorialModel extends Model
                         ->get()->getResult();
     }
 
-<<<<<<< HEAD
     public function getActividadesCalificacion( $num_control )
         {
             return $this->db->table('inscripcion')
@@ -56,7 +55,6 @@ class HistorialModel extends Model
                             ->where('evaluacion_desempenio.valor_numerico >= 1')
                             ->get()->getRow();
         }
-=======
     public function getActividades($alumnos)
     {
         return $this->db->table('inscripcion a')
@@ -124,7 +122,6 @@ class HistorialModel extends Model
         }
         return $newArray;
     }
->>>>>>> 432087bf7288a049b0e587601b264f1e6545661b
 
 
 }

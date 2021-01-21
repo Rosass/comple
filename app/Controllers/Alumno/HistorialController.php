@@ -5,28 +5,23 @@ class HistorialController extends BaseController
 {
     protected $HistorialService;
     protected $tipoActividadService;
-    protected $responsableService;
-   
-    
-	
-    
+    protected $responsableService;   
     
     function __construct()
     {      
         $this->HistorialService =  new \App\Services\Alumno\HistorialService();	
         $this->tipoActividadService =  new \App\Services\Division\TipoActividadService();
 		$this->responsableService =  new \App\Services\Division\ResponsableService();
-       
+
 	}
 
     public function index()
 	{  
         if($this->session->loginalumno && $this->session->usuario_logueado)
         {
-             if($alumno =  $this->session->usuario_logueado->num_control)
+            if($alumno =  $this->session->usuario_logueado->num_control)
             {
 
-               
             $actividades = $this->HistorialService->getActividadesPorCalificacion($alumno); 
             $actividadesNoCalificadas = $this->HistorialService->getActividades_no_calificadas($alumno); 
             
@@ -34,7 +29,6 @@ class HistorialController extends BaseController
             $tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
             $responsables = $this->responsableService->getResponsablesPorEstatus(true);
             
-               
             echo view('Includes/header');
             echo view('Alumno/navbar', ["activo" => "Historial"]);
             echo view('Alumno/Historial/listar', [				

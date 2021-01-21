@@ -23,9 +23,9 @@ $session = session(); ?>
             <div>
                 <p style="text-align: center;"><strong>Actividad:</strong> <span class="font-weight-bold"><?php foreach($actividad as  $act) : ?> <u><?= $act->nombre_actividad ?></u><?php endforeach ?></span></p>
             </div>
-            <div class="alert alert-success"><br>
-                <p style="text-align: center; text-align: justify;">Hombres: <span class="font-weight-bold"><?= $hombres?></span></p>
-                <p style="text-align: center; text-align: justify;">Mujeres: <span class="font-weight-bold"><?= $mujeres?></span></p>
+            <div class="alert alert-success">
+                <p style="text-align: center; text-align: justify;" class="mb-0">Hombres: <span class="font-weight-bold"><?= $hombres?></span></p>
+                <p style="text-align: center; text-align: justify;" class="mb-0">Mujeres: <span class="font-weight-bold"><?= $mujeres?></span></p>
             </div>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
@@ -53,9 +53,16 @@ $session = session(); ?>
                                 <td><?= $alumno['carrera'] ?></td>
                                 <td><?= $alumno['semestre'] ?></td>
                                 <td><?= $alumno['valor_numerico'] ?></td> 
-                                <td><?= $alumno['nivel_desempeno'] ?></td> 
+                                <td><?= $alumno['nivel_desempeno'] ?></td>  
                                 <td style="width:8%;">  
-                                <?php 
+                                <?php $url = "";
+                                if ( substr($alumno['periodo'], 0, -1 ) == '2020')
+                                {
+                                    $url = "jefes/constancia";
+                                } else if ( substr($alumno['periodo'], 0, -1 ) == '2021')
+                                {
+                                    $url = "jefes/constancia-2021";
+                                }
                                 if ( $alumno['valor_numerico'] >= 1)
                                     :?>
                                     <div class="d-flex flex-column">
@@ -69,8 +76,8 @@ $session = session(); ?>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
-                                                </div>
-                                                <form action="<?= base_url("jefes/constancia") ?>" method="POST" target="_blank">
+                                                </div>                                          
+                                                <form action="<?= base_url( $url ) ?>" method="POST" target="_blank">                                              
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label for="recipient-name" class="col-form-label">* N° control</label>
@@ -85,7 +92,6 @@ $session = session(); ?>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                                                         <button type="submit"  target="_blank" href="" class="btn btn-primary"><i class="fas fa-file-pdf"></i>PDF</button>
-                                                        <!-- <a type="button" class="btn btn-"  target="_blank" href=""><i class="fas fa-file-pdf"></i>Generar PDF</a>  -->
                                                     </div>
                                                 </form>
                                             </div>

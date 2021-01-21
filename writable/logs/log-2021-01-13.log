@@ -1,0 +1,8 @@
+CRITICAL - 2021-01-13 02:07:32 --> editarClaveReglas no es un grupo de reglas de validación.
+#0 C:\xampp\htdocs\comple\system\Validation\Validation.php(501): CodeIgniter\Validation\Exceptions\ValidationException::forGroupNotFound('editarClaveRegl...')
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\ResponsableController.php(132): CodeIgniter\Validation\Validation->getRuleGroup('editarClaveRegl...')
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\ResponsableController->actualizarClave()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\ResponsableController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

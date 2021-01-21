@@ -15,7 +15,7 @@ class AreaModel extends Model
 	{   
         return $this->db->table("area a")
             ->select("a.id_area, a.nombre_area, 
-                      a.rfc_jefe, j.nombre_jefe AS 'nombre_jefe', j.apaterno_jefe AS 'apaterno_jefe', a.estatus")
+                    a.rfc_jefe, j.nombre_jefe AS 'nombre_jefe', j.apaterno_jefe AS 'apaterno_jefe', a.estatus")
             ->join('jefe j', 'j.rfc_jefe = a.rfc_jefe', 'LEFT')
             ->orderBy("a.nombre_area", "ASC")
             ->get()->getResult();

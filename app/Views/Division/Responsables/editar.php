@@ -86,13 +86,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="clave">NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control" name="clave" required>
+                                    <input type="password" class="form-control" name="clave" >
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="confirmar_clave">REPETIR NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control"  name="confirmar_clave" required>
+                                    <input type="password" class="form-control"  name="confirmar_clave" >
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,6 @@
                         </div>
 					</div>
 				</div>
-				
 			</form>
 		</div>
 	</div>

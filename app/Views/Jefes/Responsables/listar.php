@@ -36,6 +36,7 @@
 							<th scope="col" class="border-top-0">NOMBRE</th>
 							<th scope="col" class="border-top-0">TELÉFONO</th>
 							<th scope="col" class="border-top-0">CORREO</th>
+							<th scope="col" class="border-top-0">ID AREA</th>
 							<th scope="col" class="border-top-0">FECHA REGISTRO</th>
 							<th scope="col" class="border-top-0">ESTATUS</th>
 							<th scope="col" class="border-top-0"></th>
@@ -49,6 +50,7 @@
 							<td><?= mb_strtoupper($responsable['nombre'] . " " . $responsable['apaterno'] . " " . $responsable['amaterno'],'utf-8'); ?></td> 
 							<td><?= $responsable['telefono']  ?></td>
 							<td><?= $responsable['correo'] ?></td>
+							<td><?= $responsable['id_area_fk'] ?></td>
 							<td><?= $responsable['fecha_registro'] ?></td>
 							<td class="text-white">
 								<?php if($responsable['estatus'] == true) : ?>

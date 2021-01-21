@@ -134,7 +134,7 @@ class ResponsableController extends BaseController
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('division/responsables')->withInput();
+            return redirect()->back()->withInput();
         }
         else
         {   
@@ -161,7 +161,7 @@ class ResponsableController extends BaseController
 
     public function cambiarEstatus()
     {
-       
+
         $rfc_responsable = $this->request->getPost('rfc');
         $respuesta = $this->responsableService->cambiarEstatus($rfc_responsable);
 
@@ -171,7 +171,7 @@ class ResponsableController extends BaseController
         }
         else
         {
-             $this->session->setFlashdata('error', $respuesta['msj']);
+            $this->session->setFlashdata('error', $respuesta['msj']);
         }
         return redirect('division/responsables');
     }

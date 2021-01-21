@@ -171,6 +171,7 @@ $routes->get('jefes/lista-asistencia/(:any)', 'Jefes/AsistenciaController::lista
 $routes->get('jefes/lista-calificacion/(:any)', 'Jefes/AsistenciaController::listaCalificacion');
 $routes->get('jefes/alumnos/(:any)', 'Jefes/AlumnoController::index');
 $routes->post('jefes/constancia', 'Jefes/ConstanciaController::constancia');
+$routes->post('jefes/constancia-2021', 'Jefes/ConstanciaController::constancia2021');
 
 
 

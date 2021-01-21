@@ -46,7 +46,7 @@
         
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 9pt;
+        font-size: 9.3pt;
         float: none;
     }
     #regular{
@@ -137,19 +137,21 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 ?>
 <?php foreach($areas as $ar) : ?>
     <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br/>
-    <p style="margin-left:528px; margin-top:1px; text-align: justify;" id="regular"><strong>Instituto Tecnológico de Pochutla</strong></p>
-    <p style="margin-left:522px; margin-top:1px; text-align: justify;" id="regular8">Subdirección de Planeación y Vinculación</p>
-    <p style="margin-left:522px; text-align: justify;" id="light"><?=  $ar->nombre_area ?> <?php
+    <p style="margin-left:549px; float:none; margin-top:1px; text-align:justify;" id="regular"><strong>Instituto Tecnológico de Pochutla</strong></p>
+    <p style="margin-left:549px; float:none; margin-top:1px; text-align: justify;" id="regular8">Subdirección de Planeación y Vinculación</p>
+    <p style="margin-left:379px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?> <?php
         if ( $ar->id_area == '2') echo '(Formación Integral)';
-    ?></p><br>
+    ?></p>
+    <P  style="margin-left:560px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERIAS'?></P><br>
 <p style="text-align: center;"><?php foreach($actividad as $act) : ?>"<?= $act->frase_decreto ?>"<?php endforeach; ?></p><br>
-    <p style=" margin-left:473px; text-align: justify;" id="medium" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?><strong style="font-size:78%; "><?=  $ar->nombre_area ?></strong><br/></p>  
-    <p  style=" margin-left:473px; text-align: justify;" id="medium"><strong> Oficio:</strong> 
+    <p style=" margin-left:515px; text-align: justify;" id="medium" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p><p style="font-size:70%;  margin-left:417px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?></p>
+    <p style="font-size:70%;  margin-left:530px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERIAS'?></p>  
+    <p  style=" margin-left:540px; text-align: justify;" id="medium"><strong> Oficio:</strong> 
     <?php
             if ( $ar->id_area == '2') echo '11V.1.1.4.0.0/EXT/';
             if ( $ar->id_area == '1') echo '11V.0.0.0.0.0/ING/';
             
-        ?><?php echo $folio ?>/<?= $fecha1 ?></p><br>
+        ?><?=  $folio  ?>/<?= $fecha1 ?></p><br>
 
     <p style="text-align:center; margin-top:-5px;" id="medium"><strong>CONSTANCIA DE CUMPLIMIENTO DE ACTIVIDADES COMPLEMENTARIAS</strong></p><br>
     <div id="extrabold" >

@@ -36,11 +36,10 @@ class AreaModel extends Model
     }
     public function get_responsable_area_y_sin_asignar($id_area)
 	{   
-        return $this->db->table('responsable res')
-                        ->select('rfc_responsable, nombre, apaterno, amaterno')
-                        ->where('estatus', 1)
-                        ->where("res.rfc_responsable NOT IN(SELECT rfc_responsable FROM actividad WHERE id_area != $id_area AND rfc_responsable !='')", null, false)
-                        ->get()->getResult();
+        return $this->db->table('responsable r')
+        ->select('r.id_area_fk, r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
+        ->join('area a', 'a.id_area = r.id_area_fk', 'INNER')
+        ->where('a.id_area', $id_area)->get()->getResult();
     }
 
     public function actualizar( $id_actividad, $datos)
