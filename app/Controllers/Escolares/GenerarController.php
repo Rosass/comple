@@ -31,7 +31,7 @@ class GenerarController extends BaseController
     
         $dompdf->loadHtml (view('Escolares/Generar/index', [
             'alumno' => $alumno,
-            'folio' => $folio,
+            'folio' =>  $this->folio_final($folio),
             'control' => $control,
             'actividades' => $actividades
             ]));
@@ -69,6 +69,19 @@ class GenerarController extends BaseController
         }
 
     }
+
+    public function folio_final( $folio )
+    {
+
+        switch ( strlen( (string)$folio ) ) {
+            case 1:
+                return "00$folio";
+            case 2:
+                return "0$folio";
+            default:
+                return $folio;
+        }
+    }
     
 	public function constanciaLiberacion()
 	{
@@ -88,7 +101,7 @@ class GenerarController extends BaseController
         
             $dompdf->loadHtml (view('Escolares/Generar/listar', [
                 'alumno' => $alumno,
-                'folio' => $folio,
+                'folio' =>  $this->folio_final($folio),
                 'control' => $control,
                 'actividades' => $actividades,
                 'calificacion' => $promedio,

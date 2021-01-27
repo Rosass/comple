@@ -17,7 +17,7 @@
                 </div>
             <?php endif ?>
             <form method="get" action="<?= base_url("jefes/actividades/periodo") ?>">
-                    <div class="row mb-0 mt-0 justify-content-end">
+                    <div class="row mb-3 mt-2 justify-content-end">
                         <span class="mr-1">Filtro </span>
                             <div class="col-md-5 text-right d-flex align-items-center">
                                 <div class="input-group">
