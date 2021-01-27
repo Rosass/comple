@@ -60,7 +60,7 @@ class ConstanciaController extends BaseController
                 return redirect("/");
             }
     }
-    function folio_final( $folio )
+    public function folio_final( $folio )
     {
 
         switch ( strlen( (string)$folio ) ) {

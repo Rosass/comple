@@ -339,7 +339,7 @@
                     <p id="calificacion">Calificación: </p>
                     <p id="nivel-desempeno">Nivel de desempeño alcanzado de la actividad: </p>
 
-                    <button type="submit" class="btn btn-success">Enviar</button>
+                    <button type="submit" class="btn btn-success">Guardar</button>
                 </form>
             </div>
         </div>

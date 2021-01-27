@@ -16,24 +16,23 @@
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
             <?php endif ?>
-            
-                <form method="get" action="<?= base_url("jefes/actividades/periodo") ?>">
-                        <div class="row mb-3 mt-2 justify-content-end">
-                                <div class="col-md-5 text-right d-flex align-items-center">
-                                <span class="mr-1">Filtro </span>
-                                    <div class="input-group">
-                                        <select class="custom-select"  name="periodo">
-                                            <option selected disabled value="">Elige el periodo</option>
-                                            <option value="0">ACTIVO</option>
-                                            <?php foreach($periodos as $key => $periodo) : ?>
-                                                <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
-                                            <?php endforeach ?>
-                                        </select>
-                                        <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
-                                    </div>
-                                </div>  
-                        </div>
-                </form>
+            <form method="get" action="<?= base_url("jefes/actividades/periodo") ?>">
+                    <div class="row mb-3 mt-2 justify-content-end">
+                        <span class="mr-1">Filtro </span>
+                            <div class="col-md-5 text-right d-flex align-items-center">
+                                <div class="input-group">
+                                    <select class="custom-select"  name="periodo">
+                                        <option selected disabled value="">Elige el periodo</option>
+                                        <option value="0">ACTIVO</option>
+                                        <?php foreach($periodos as $key => $periodo) : ?>
+                                            <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
+                                        <?php endforeach ?>
+                                    </select>
+                                    <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
+                                </div>
+                            </div>  
+                    </div>
+            </form>
             <div class="table-responsive-sm text-center">
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
