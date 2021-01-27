@@ -21,7 +21,7 @@ class CalificacionController extends BaseController
             $alumnos = $this->calificacionService->get_actividad_alumno( $id_actividad );
             $actividad = $this->calificacionService->get_actividad( $id_actividad );
             $HM = $this->calificacionService->total_hombres_mujeres( $id_actividad );
-            $alumno = $this->asistenciaService->get_actividad_alumno( $id_actividad, true);
+            $alumno = $this->asistenciaService->get_actividad_alumno( $id_actividad, 2);
 
             if(count($alumno) > 0)
             {

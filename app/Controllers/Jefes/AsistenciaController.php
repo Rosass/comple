@@ -21,7 +21,7 @@ class AsistenciaController extends BaseController
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
 		{
 			$id_actividad = urldecode($this->request->uri->getSegment(3));
-			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad, 1);
+			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad, 2);
 			$actividad = $this->asistenciaModel->get_actividad( $id_actividad );
 			$id_area = $this->session->usuario_logueado->id_area;
 		    $area = $this->asistenciaModel->getArea($id_area);
@@ -76,7 +76,7 @@ class AsistenciaController extends BaseController
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
 		{
 			$id_actividad = urldecode($this->request->uri->getSegment(3));
-			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad, 1 );
+			$alumnos = $this->asistenciaModel->get_actividad_alumno( $id_actividad, 2);
 			$actividad = $this->asistenciaModel->get_actividad( $id_actividad );
 			$id_area = $this->session->usuario_logueado->id_area;
 		    $area = $this->asistenciaModel->getArea($id_area);

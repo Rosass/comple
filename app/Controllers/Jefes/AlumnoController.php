@@ -22,7 +22,7 @@ class AlumnoController extends BaseController
             $alumnos = $this->alumnoService->get_actividad_alumno( $id_actividad );
             $actividad = $this->alumnoService->get_actividad( $id_actividad );
             $HM = $this->alumnoService->total_hombres_mujeres( $id_actividad );
-            $alumno = $this->asistenciaService->get_actividad_alumno( $id_actividad, true);
+            $alumno = $this->asistenciaService->get_actividad_alumno( $id_actividad, 2);
             
 
             if(count($alumno) > 0)

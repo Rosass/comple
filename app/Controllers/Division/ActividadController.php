@@ -225,7 +225,7 @@ class ActividadController extends BaseController
         
         {
 			$id_actividad = ($this->request->uri->getSegment(3));
-			$alumnos = $this->actividadModel->get_actividad_alumno( $id_actividad, 1);
+			$alumnos = $this->actividadModel->get_actividad_alumno( $id_actividad, 2);
             $actividad = $this->actividadModel->get_actividadd( $id_actividad );
             
 			if(count($alumnos) > 0)

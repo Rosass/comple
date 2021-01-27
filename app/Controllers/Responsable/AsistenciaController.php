@@ -21,7 +21,7 @@ class AsistenciaController extends BaseController
 		{
 			$rfc_responsable = $this->session->usuario_logueado->rfc_responsable;
 			$id_actividad = urldecode($this->request->uri->getSegment(3));
-			$alumnos = $this->asistenciaService->get_actividad_alumno( $id_actividad, true);
+			$alumnos = $this->asistenciaService->get_actividad_alumno( $id_actividad, 2);
 			$actividad = $this->asistenciaService->get_actividad( $id_actividad );
 			$responsable = $this->asistenciaService->get_responsable( $rfc_responsable );
 		
@@ -72,7 +72,7 @@ class AsistenciaController extends BaseController
 			
 			$rfc_responsable = $this->session->usuario_logueado->rfc_responsable;
 			$id_actividad = urldecode($this->request->uri->getSegment(3));
-			$alumnos = $this->asistenciaService->get_actividad_alumno( $id_actividad, 1 );
+			$alumnos = $this->asistenciaService->get_actividad_alumno( $id_actividad, 2);
 			$actividad = $this->asistenciaService->get_actividad( $id_actividad );
 			$responsable = $this->asistenciaService->get_responsable( $rfc_responsable );
 
