@@ -48,7 +48,6 @@ class InscripcionModel extends Model
         ->join("periodo p", "p.periodo = i.periodo")
         ->join("actividad act", "act.id_actividad = i.id_actividad")
         ->where(" i.id_actividad", $id_actividad)
-        ->where("i.estatus", $estatus)
         ->get()->getResult();
     }
 
