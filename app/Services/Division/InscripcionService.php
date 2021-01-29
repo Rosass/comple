@@ -39,7 +39,7 @@ class InscripcionService
      * @param bool $estatus
      * @return string
      */
-    public function getInscripcionesPorActividadYEstatus($id_actividad)
+    public function getInscripcionesPorActividadYEstatus($id_actividad, $estatus)
     {
         
         // El id_actividad 0 significa que se selecciono "TODAS LAS ACTIVIDADES"
@@ -51,7 +51,7 @@ class InscripcionService
         else
         {
             // Se obtienen las inscripciones
-            $inscripciones = $this->inscripcionModel->getInscripcionesPorActividadYEstatus($id_actividad);
+            $inscripciones = $this->inscripcionModel->getInscripcionesPorActividadYEstatus($id_actividad, $estatus);
         }
         
         // Se unen las inscripciones con los datos del alumno obtenidos de la BD "alumnos"
