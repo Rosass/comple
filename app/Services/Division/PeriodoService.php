@@ -17,7 +17,7 @@ class PeriodoService
      */
     public function getPeriodos()
 	{   
-       return $this->periodoModel->getPeriodos();
+        return $this->periodoModel->getPeriodos();
     }
 
     /**
@@ -26,7 +26,7 @@ class PeriodoService
      */
     public function getPeriodosPorEstatus($estatus)
 	{   
-       return $this->periodoModel->getPeriodosPorEstatus($estatus);
+        return $this->periodoModel->getPeriodosPorEstatus($estatus);
     }
 
     /**
@@ -91,5 +91,6 @@ class PeriodoService
         $datos = [ 'estatus' => $nuevo_estatus ];
         return $this->actualizar($periodo->periodo, $datos);
     }
+
 
 }

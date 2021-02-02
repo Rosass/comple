@@ -1,3 +1,19 @@
+<script type="text/javascript">
+                function confirmar()
+                {
+                    const respuesta = confirm("Estas seguro que deseas inhabilitar el periodo");
+
+                    if (respuesta == true)
+                    {
+                        return true;
+                    }
+                    else 
+                    {
+                        return false;
+                    }
+
+                } 
+</script>
 <?php $session = session(); ?>
 <div class="container">
     <div class="row mt-5">
@@ -53,6 +69,7 @@
                                     <?php if($periodo->estatus == true) : ?>
                                         <span class="bg-success p-1 rounded small">Activo</span>
                                     <?php else : ?>
+                                    <?php if($periodo->fecha_final > 'valida_fecha')?>
                                         <span class="bg-danger p-1 rounded small">Inactivo</span>
                                     <?php endif ?>
                                 </td>
@@ -65,7 +82,7 @@
                                         <?php if($periodo->estatus == true) : ?>
                                             <form action="<?= base_url('division/periodos/cambiar-estatus') ?>" method="POST">
                                                 <input type="hidden" name="periodo" value="<?= $periodo->periodo ?>">
-                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Inhabilitar</button>
+                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" onclick="return confirmar();"><i class="fas fa-ban"></i> Inhabilitar</button>
                                             </form>
                                         <?php endif ?>
                                     </div>

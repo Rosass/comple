@@ -38,13 +38,6 @@ class InscripcionService
         return $this->inscripcionModel->getPeriodosPorEstatus($true);
     }
 
-    /* public function periodo_activo()
-	{   
-        return $this->inscripcionModel->get_periodo_activo();
-    } */
-
-
-
     /**
      * Guarda una nueva inscripción en la BD
      * @param array $datos

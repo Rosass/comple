@@ -15,11 +15,13 @@ class PeriodoController extends BaseController
 	{
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_DIVISION)
         {
-			$periodos = $this->periodoService->getPeriodos();
+            $periodos = $this->periodoService->getPeriodos();
 
 			echo view('Includes/header');
 			echo view('Division/navbar', ["activo" => "periodos"]);
-			echo view('Division/Periodos/listar', ["periodos" => $periodos]);
+            echo view('Division/Periodos/listar', [
+                "periodos" => $periodos
+            ]);
 			echo view('Includes/footer');
 		}
 		else

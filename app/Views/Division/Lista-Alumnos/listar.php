@@ -75,16 +75,13 @@
             <tr>
                <th colspan="6">LISTA DE ASISTENCIA</th>
             </tr>
-           
             <tr>
                <th>No</th>
                <th>No. CONTROL</th>
                <th>NOMBRE DEL ALUMNO</th>
                <th>CARRERA</th>
                <th>SEMESTRE</th>
-               <th>TELEFONO</th>
-              
-               
+               <th>TELEFONO</th> 
             </tr>
          </thead>
          <tbody>
