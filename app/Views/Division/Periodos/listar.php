@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<!-- <script type="text/javascript">
                 function confirmar()
                 {
                     const respuesta = confirm("Estas seguro que deseas inhabilitar el periodo");
@@ -13,7 +13,7 @@
                     }
 
                 } 
-</script>
+</script> -->
 <?php $session = session(); ?>
 <div class="container">
     <div class="row mt-5">
@@ -69,20 +69,22 @@
                                     <?php if($periodo->estatus == true) : ?>
                                         <span class="bg-success p-1 rounded small">Activo</span>
                                     <?php else : ?>
-                                    <?php if($periodo->fecha_final > 'valida_fecha')?>
                                         <span class="bg-danger p-1 rounded small">Inactivo</span>
                                     <?php endif ?>
                                 </td>
                                 <td style="width:12%;">
                                     <div class="d-flex flex-column">
                                         <!--  Editar tipo-->
-                                        <?php if($periodo->estatus == true) : ?>
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/periodos/editar/".$periodo->periodo) ?>"><i class="fas fa-pen"></i> Editar</a>
-                                        <?php endif ?>
                                         <?php if($periodo->estatus == true) : ?>
+                                        <form action="<?= base_url('division/periodos/cambiar-estatus') ?>" method="POST">
+                                                <input type="hidden" name="periodo" value="<?= $periodo->periodo ?>">
+                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario"><i class="fas fa-ban"></i> Inhabilitar</button>
+                                            </form>
+                                        <?php else : ?>
                                             <form action="<?= base_url('division/periodos/cambiar-estatus') ?>" method="POST">
                                                 <input type="hidden" name="periodo" value="<?= $periodo->periodo ?>">
-                                                <button type="submit" class="btn btn-danger btn-sm btn-block btnEnviarFormulario" onclick="return confirmar();"><i class="fas fa-ban"></i> Inhabilitar</button>
+                                                <button type="submit" class="btn btn-success btn-sm btn-block btnEnviarFormulario"><i class="fas fa-check"></i> Habilitar</button>
                                             </form>
                                         <?php endif ?>
                                     </div>
