@@ -70,8 +70,7 @@
                                 <td><?= $actividad->tipo_actividad ?></td>
                                 <td><?= $actividad->rfc_responsable ?></td>
                                 <td><?= $actividad->horas ?></td>
-                                <td><?= $actividad->horario ?></td> 
-                               
+                                <td><?= $actividad->horario ?></td>                                
                                 <td style="width:9%;">
                                     <div class="d-flex flex-column" >
                                     <a class="btn btn-info btn-sm btn-block mb-0" target="_blank" href="<?= base_url("division/lista-alumnos/$actividad->id_actividad") ?>"><i class="fas fa-file-pdf"></i> (PDF) Lista de Alumnos</a>

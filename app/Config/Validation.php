@@ -83,6 +83,9 @@ class Validation
         'periodo'     => 'required|numeric',
 		'id_tipo_actividad' => 'required|numeric'
 	];
+	public $actividadrReglas = [
+		'rfc_responsable'     => 'required|min_length[13]|max_length[13]',
+	];
 
 	public $inscripcionReglas = [
 		'num_control'     => 'required',

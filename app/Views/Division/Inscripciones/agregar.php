@@ -29,7 +29,7 @@
                         <label for="periodo">PERIODO (*)</label>
                         <select class="custom-select" name="periodo" required>
                             <option selected disabled value="">Elige un periodo</option>
-                            <?php foreach($periodos as $key => $periodo) : ?>
+                            <?php foreach($periodo as $key => $periodo) : ?>
                                 <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
                             <?php endforeach ?>
                         </select>

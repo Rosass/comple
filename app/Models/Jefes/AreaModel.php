@@ -65,6 +65,11 @@ class AreaModel extends Model
         ->orderBy("periodo", "ASC")
         ->get()->getResult();
     }
+
+    public function getActividadId($id_actividad)
+	{   
+        return $this->db->table($this->table)->select("*")->where("id_actividad", $id_actividad)->get()->getRow();
+    }
     
 
 }

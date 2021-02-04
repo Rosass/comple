@@ -80,8 +80,7 @@ class ActividadService
         else 
         {
             return ["exito" => false, "msj" => "Id de actividad no válido!."];
-        }
-       
+        } 
     }
 
     public function cambiarEstatus($id_actividad)

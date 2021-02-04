@@ -51,4 +51,26 @@ class AreaService
 	{   
     return $this->areaModel->getPeriodo();
     }
+
+    public function actualiza($id_actividad, $datos)
+    {
+        $rfc_responsable = $this->areaModel->getActividadId($id_actividad);
+
+        if($rfc_responsable != NULL)
+        {
+            if ($this->areaModel->actualizar($rfc_responsable, $datos))
+                return ["exito" => true, "msj" => "Datos actualizados con exito."];
+            else
+                return ["exito" => false, "msj" => "No se actualizó ningun campo."];
+        }
+        else 
+        {
+            return ["exito" => false, "msj" => "Responsable no valido!."];
+        } 
+    }
+
+    public function getActividadPorId($id_actividad)
+    {
+        return $this->areaModel->getActividadId($id_actividad);
+    }
 }
