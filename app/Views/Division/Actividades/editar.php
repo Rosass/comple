@@ -66,7 +66,7 @@
 								<div class="form-group">
 									<label for="periodo">PERIODO (*)</label>
 									<select class="custom-select" name="periodo" required>
-										<?php foreach($periodos as $key => $periodo) : ?>
+										<?php foreach($periodo as $key => $periodo) : ?>
 										    <option value="<?= $periodo->periodo ?>" <?= ($periodo->periodo == $actividad->periodo) ? 'selected' : '' ?>><?= $periodo->descripcion ?></option>
 										<?php endforeach ?>
 									</select>

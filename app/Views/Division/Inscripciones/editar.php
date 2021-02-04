@@ -27,8 +27,8 @@
 								<div class="form-group">
 									<label for="periodo">PERIODO (*)</label>
 									<select class="custom-select" name="periodo" required>
-										<?php foreach($periodos as $key => $periodo) : ?>
-										    <option value="<?= $periodo->periodo ?>" <?= ($periodo->periodo == $inscripcion->periodo) ? 'selected' : '' ?>><?= $periodo->descripcion ?></option>
+										<?php foreach($periodo as $key => $periodo) : ?>
+										<option value="<?= $periodo->periodo ?>" <?= ($periodo->periodo == $inscripcion->periodo) ? 'selected' : '' ?>><?= $periodo->descripcion ?></option>
 										<?php endforeach ?>
 									</select>
 								</div>
@@ -38,7 +38,7 @@
 									<label for="id_actividad">ACTIVIDAD (*)</label>
 									<select class="custom-select" name="id_actividad" required>
 										<?php foreach($actividades as $key => $actividad) : ?>
-										    <option value="<?= $actividad->id_actividad ?>" <?= ($actividad->id_actividad == $inscripcion->id_actividad) ? 'selected' : '' ?>><?= $actividad->nombre_actividad ?></option>
+										<option value="<?= $actividad->id_actividad ?>" <?= ($actividad->id_actividad == $inscripcion->id_actividad) ? 'selected' : '' ?>><?= $actividad->nombre_actividad ?></option>
 										<?php endforeach ?>
 									</select>
 								</div>

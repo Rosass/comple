@@ -179,6 +179,7 @@ $routes->post('jefes/constancia-2021', 'Jefes/ConstanciaController::constancia20
 
 //Rutas [Jefes Area responsables]
 $routes->get('jefes/responsables', 'Jefes/ResponsableController::index');
+$routes->get('jefes/responsables/periodo', 'Jefes/ResponsableController::periodo');
 $routes->post('jefes/responsables/agregar', 'Jefes/ResponsableController::guardar');
 $routes->get('jefes/responsables/editar/(:any)', 'Jefes/ResponsableController::editar');
 $routes->post('jefes/responsables/editar', 'Jefes/ResponsableController::actualizar');

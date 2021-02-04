@@ -16,9 +16,9 @@ class ResponsableService
      * Obtiene los responsables de la BD
      * @return object
      */
-    public function getResponsables($id_area)
+    public function getResponsables($id_area, $true)
 	{   
-        $responsables = $this->responsableModel->getResponsables($id_area);
+        $responsables = $this->responsableModel->getResponsables($id_area, $true);
         $newResponsable = array();
             foreach( $responsables as $key => $responsable )
             {
@@ -30,14 +30,26 @@ class ResponsableService
         return $newResponsable;
     }
 
+
     /**
      * Obtiene los responsables por estatus de la BD
      * @return object
      */
     public function getResponsablesPorEstatus($estatus)
 	{   
-       return $this->responsableModel->getResponsablesPorEstatus($estatus);
+        return $this->responsableModel->getResponsablesPorEstatus($estatus);
     }
+
+    public function getActividadPorIdareaPeriodo($id_area, $perido)
+	{   
+        return $this->responsableModel->getActividadPorIdareaPeriodo($id_area, $perido);
+    }
+
+    public function getPeriodo()
+	{   
+    return $this->responsableModel->getPeriodo();
+    }
+
 
     /**
      * Guarda un nuevo responsable en la BD

@@ -14,18 +14,17 @@ class ResponsableController extends BaseController
 	{  
         if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
         {
-			$id_area  = $this->session->usuario_logueado->id_area;
-            $responsables = $this->responsableService->getResponsables($id_area);
+            $id_area  = $this->session->usuario_logueado->id_area;
+            $responsables = $this->responsableService->getResponsables($id_area, true);
+            $periodo = $this->responsableService->getPeriodo();
 
-            
-            
-            // echo '<pre>';
-            // var_dump( ($responsables) );
-            // echo '</pre>';
 
             echo view('Includes/header');
             echo view('Jefes/navbar', ["activo" => "responsables"]);
-            echo view('Jefes/Responsables/listar', ["responsables" => $responsables]);
+            echo view('Jefes/Responsables/listar', [
+                "responsables" => $responsables,
+                "periodos" => $periodo
+                ]);
             echo view('Includes/footer');
 		}
         else
@@ -72,6 +71,42 @@ class ResponsableController extends BaseController
             }
         }
     }
+
+    public function periodo()
+	{
+		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
+        {
+
+		$periodoPost =  $this->request->getGet("periodo");
+		// echo $periodoPost;
+		// // if ( empty($periodoPost)
+		if ( empty($periodoPost) || $periodoPost == '0') return redirect('jefes/responsables');
+
+		$id_area = $this->session->usuario_logueado->id_area;
+		$responsables = $this->responsableService->getActividadPorIdareaPeriodo($id_area, $periodoPost);
+		$periodo = $this->responsableService->getPeriodo();
+
+		//$responsables = $this->areaService->get_responsable_area_y_sin_asignar($id_area);
+		
+		echo view('Includes/header');
+		echo view('Jefes/navbar', ["activo" => "responsables"]);
+		echo view('Jefes/Responsables/listar', [				
+			'areas' => $id_area,
+			'responsables' => $responsables,
+			'periodos' => $periodo
+		]);
+		echo view('Includes/footer');
+	
+			}
+			else
+			{
+				return 
+				redirect('/');
+				
+			}
+
+    }
+
 
     public function editar()
     {

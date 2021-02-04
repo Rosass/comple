@@ -21,19 +21,7 @@
     th{
     font-size:90%;
     }
-    #watermar{
-        position: fixed;
-
-        bottom: 18cm;
-        left: 1.5cm;
-        
-        width: 850px;
-        height: 70;
-        opacity: 0.09;
-        
-
-        z-index: -1000;
-    }
+    
     #piedepagina{
     
     position: absolute;
@@ -66,16 +54,6 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     <p style="margin-left:505px; margin-top:1px;">Instituto Tecnológico de Pochutla</p>
     <p style=" margin-left:447px; text-align:justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p> 
     <p style=" margin-left:510px; text-align:justify;"> <strong>Folio:</strong>  llV.1.1.5.0.0/SE/<?php echo $folio ?>/<?= $fecha1 ?></p>
-</div>
-<div id="watermar">
-<?php
-    $path = 'public/img/estado.png'; 
-    $type = pathinfo($path, PATHINFO_EXTENSION);
-    $data = file_get_contents($path);
-    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-?>
-<img " style="width:70%;" src="<?= $base64 ?>"> 
-
 </div>
     <h5><strong>A QUIEN CORRESPONDA:</strong></h5>
     <P style="text-align: justify;">Por este medio se hace constar que según documentos que existen en el archivo del Instituto Tecnólogico de Pochutla, clave 20DIT0011V el (la) C.</P>

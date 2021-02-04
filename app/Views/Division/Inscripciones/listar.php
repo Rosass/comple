@@ -68,7 +68,7 @@
                             <th scope="col" class="border-top-0">FECHA DE INSCRIPCIÓN</th>
                             <th scope="col" class="border-top-0">OBSERVACION</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
-                            <th scope="col" class="border-top-0"></th>
+                            <th scope="col" class="border-top-0">ACCION</th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm" id="tbodyTablaInscripciones">

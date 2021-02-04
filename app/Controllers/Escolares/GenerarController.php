@@ -39,21 +39,6 @@ class GenerarController extends BaseController
 		// Se renderiza el HTML como PDF
 		$dompdf->render();
         // Se muestra el PDF generado en el Browser
-        $canvas = $dompdf->getCanvas();
-
-        $w = $canvas->get_width();
-        $h = $canvas->get_height();
-
-        $imageURL = 'public/img/estado.png';
-        $imgWidth = 450;
-        $imgHeight = 440;
-
-        $canvas->set_opacity(0.09);
-
-        $x = (($w-$imgWidth)/2);
-        $y = (($h-$imgHeight)/2);
-
-        $canvas->image($imageURL,$x,$y,$imgWidth,$imgHeight);
     
         header('Content-type: application/pdf');
         header('Content-Disposition: inline; filename="document.pdf"');

@@ -130,14 +130,16 @@ class InscripcionController extends BaseController
 
             if($inscripcion != NULL)
             {
-				$periodos = $this->periodoService->getPeriodosPorEstatus(true);
+                $periodos = $this->periodoService->getPeriodosPorEstatus(true);
+                $periodo = $this->inscripcionService->getPeriodo();
 				$actividades = $this->actividadService->getActividadesPorEstatus(true);
 
                 echo view('Includes/header');
                 echo view('Division/navbar', ["activo" => "inscripciones"]);
                 echo view('Division/Inscripciones/editar', [
 					"inscripcion" => $inscripcion, 
-					"periodos" => $periodos, 
+                    "periodos" => $periodos,
+                    "periodo" => $periodo, 
 					"actividades" => $actividades
 				]);
                 echo view('Includes/footer');

@@ -137,7 +137,8 @@ class ActividadController extends BaseController
 				$areas = $this->areaService->getAreasPorEstatus(true);
 				$periodos = $this->periodoService->getPeriodosPorEstatus(true);
 				$tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
-				$responsables = $this->responsableService->getResponsablesPorEstatus(true);
+                $responsables = $this->responsableService->getResponsablesPorEstatus(true);
+                $periodo = $this->actividadService->getPeriodo();
 
 
                 echo view('Includes/header');
@@ -145,7 +146,8 @@ class ActividadController extends BaseController
                 echo view('Division/Actividades/editar', [
 					"actividad" => $actividad,
 					'areas' => $areas,
-					'periodos' => $periodos,
+                    'periodos' => $periodos,
+                    'periodo' => $periodo,
 					'tipos_actividades' => $tipos_actividades,
 					'responsables' => $responsables
 				]);
