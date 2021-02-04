@@ -14,7 +14,11 @@
                 <div class="col-md-3">
                     <div class="form-group">
                         <label for="num_control">NO CONTROL (*)</label>
-                        <input type="text" class="form-control text-uppercase" id="num_control" name="num_control" required value="<?= old("num_control") ?>" required>
+                        <select class="custom-select" name="num_control" required>
+                            <?php foreach($alumnos as $key => $alumno) : ?>
+                                <option value="<?= $alumno->num_control ?>"> <?= $alumno->num_control . " (" . $alumno->nombre . " " . $alumno->ap_paterno . " ". $alumno->ap_materno . " )" ?></option>
+                            <?php endforeach ?>
+                        </select>
                         <div class="invalid-feedback">
                             Por favor, rellena este campo
                         </div>
@@ -50,11 +54,8 @@
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="telefono">TELEFONO (*)</label>
-                        <input type="number" class="form-control" id="telefono" name="telefono" required value="<?= old("telefono") ?>"  required>
-                        <div class="invalid-feedback">
-                            Por favor, rellena este campo
-                        </div>
+                        <label for="telefono">TELEFONO </label>
+                        <input type="number" class="form-control" id="telefono" name="telefono" value="<?= old("telefono") ?>">
                     </div>
                 </div>     
             </div>

@@ -94,4 +94,13 @@ class InscripcionModel extends Model
         ->get()->getResult();
     }
 
+    public function get_alumno( )
+    {
+        $db_alumnos = db_connect('alumnos_db');
+        return $db_alumnos->table('alumnos')
+                    ->select('*')
+                 
+                    ->get()->getResult();
+    }
+
 }

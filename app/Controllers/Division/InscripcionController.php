@@ -25,6 +25,7 @@ class InscripcionController extends BaseController
 			$actividades = $this->actividadService->getActividadesPorEstatus(true);
             $inscripciones_aux = $this->inscripcionService->unirRegistros($inscripciones);
             $periodo = $this->actividadService->getPeriodo();
+            $alumnos = $this->inscripcionService->get_alumno();
 
 			echo view('Includes/header');
 			echo view('Division/navbar', ["activo" => "inscripciones"]);
@@ -32,7 +33,8 @@ class InscripcionController extends BaseController
                 "inscripciones" => $inscripciones_aux, 
                 "periodos" => $periodos, 
                 'periodo' => $periodo,
-                "actividades" => $actividades
+                "actividades" => $actividades,
+                "alumnos" => $alumnos
                 ]);
 			echo view('Includes/footer');
 		}

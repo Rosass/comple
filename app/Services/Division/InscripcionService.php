@@ -22,6 +22,11 @@ class InscripcionService
     return $this->inscripcionModel->getInscripciones();
     }
 
+    public function get_alumno()
+	{   
+    return $this->inscripcionModel->get_alumno();
+    }
+
     public function getPeriodo()
 	{   
     return $this->inscripcionModel->getPeriodo();
