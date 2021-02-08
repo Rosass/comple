@@ -78,6 +78,7 @@
 
 <script>
     const URL_BASE = "http://localhost/comple/";
+    //const URL_BASE = 'https://ac.pochutla.tecnm.mx/';
     const inputNoControl = document.getElementById("num_control");
     const labelNombreAlumno = document.getElementById("labelNombreAlumno");
 

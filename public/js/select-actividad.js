@@ -6,7 +6,7 @@
 
     const selectPeriodoHTML = document.querySelector('#periodo9293');
     const BASE_URL = "http://localhost/comple/";
-
+    //const URL_BASE = 'https://ac.pochutla.tecnm.mx/';
     //* LIMPIAR HTML ANTES DE INSERTAR
     const limpiarHTML = elemento => {
         while ( elemento.firstChild ) {
