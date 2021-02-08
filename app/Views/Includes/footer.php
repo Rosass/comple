@@ -28,6 +28,14 @@
     <script src="<?= base_url("public/js/buscar.js") ?>"></script>
     <script src="<?= base_url("public/js/consulta.js") ?>"></script>
     <script src="<?= base_url("public/js/validateForms.js") ?>"></script>
+    <script src="<?= base_url("public/js/select2.js") ?>"></script>
+    <!-- ================================================================================================ -->
+    //* ------------- Select------Script--------------
+    <script src="<?= base_url("public/js/select-actividad.js") ?>"></script> 
+    <script src="<?= base_url("public/js/select-actividad1.js") ?>"></script> 
+    <script src="<?= base_url("public/js/select-editar.js") ?>"></script> 
+    <script src="<?= base_url("public/js/select-editarac.js") ?>"></script> 
+    <script src="<?= base_url("public/js/select-tipo.js") ?>"></script> 
     
 </body>
 </html>

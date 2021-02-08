@@ -23,11 +23,12 @@
                                     <input type="number" class="form-control text-uppercase" id="num_control" name="num_control" required value="<?= $inscripcion->num_control ?>" required readonly>
                                 </div>
                             </div>
+							<!-- ========================================================================================================== -->
 							<div class="col-md-3">
 								<div class="form-group">
 									<label for="periodo">PERIODO (*)</label>
-									<select class="custom-select" name="periodo" required>
-										<?php foreach($periodo as $key => $periodo) : ?>
+									<select class="custom-select" name="periodo" id="periodo3531" required>
+										<?php foreach($periodoss as $key => $periodo) : ?>
 										<option value="<?= $periodo->periodo ?>" <?= ($periodo->periodo == $inscripcion->periodo) ? 'selected' : '' ?>><?= $periodo->descripcion ?></option>
 										<?php endforeach ?>
 									</select>
@@ -36,13 +37,14 @@
                             <div class="col-md-3">
 								<div class="form-group">
 									<label for="id_actividad">ACTIVIDAD (*)</label>
-									<select class="custom-select" name="id_actividad" required>
+									<select class="custom-select" name="id_actividad" id="actividad3531" required>
 										<?php foreach($actividades as $key => $actividad) : ?>
 										<option value="<?= $actividad->id_actividad ?>" <?= ($actividad->id_actividad == $inscripcion->id_actividad) ? 'selected' : '' ?>><?= $actividad->nombre_actividad ?></option>
 										<?php endforeach ?>
 									</select>
 								</div>
 							</div>
+							<!-- ================================================================================================ -->
 							<div class="col-md-3">
 								<div class="form-group">
 									<label for="telefono">TELEFONO</label>

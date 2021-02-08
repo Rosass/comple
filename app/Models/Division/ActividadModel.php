@@ -145,5 +145,23 @@ class ActividadModel extends Model
         }
         return $newArray;
     }
+    
+    //* ====================================================
+    //* consulta de select area por tipo de actividad
+    public function get_tipo_actividad_por_area( $id_area )
+    {
+        return $this->db->table("tipo_actividad")
+        ->select("id_tipo_actividad, nombre")
+        ->where("id_area", $id_area)
+        ->get()->getResult();
+    }
+
+    public function getArea()
+    {
+        return $this->db->table('area')
+        ->select("*")
+        ->orderBy("nombre_area", "ASC")
+        ->get()->getResult();
+    }
 
 }

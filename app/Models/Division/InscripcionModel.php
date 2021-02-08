@@ -94,4 +94,33 @@ class InscripcionModel extends Model
         ->get()->getResult();
     }
 
+    public function get_alumno( $no_control)
+    {
+        $db_alumnos = db_connect('alumnos_db');
+        return $db_alumnos->table('alumnos')
+                    ->select('num_control, nombre, ap_paterno, ap_materno')
+                    ->where("num_control", $no_control)
+                    ->get()->getRow();
+    }
+
+    //* ====================================================
+    //* consulta de select periodo por actividad-------para modal de agregar 
+    public function get_actividad_por_periodo( $periodo )
+    {
+        return $this->db->table("actividad")
+        ->select("id_actividad, nombre_actividad")
+        ->where("periodo", $periodo)
+        ->get()->getResult();
+    }
+
+    //* ====================================================
+    //* consulta de select periodo por actividad-----para select de lista
+    public function get_actividad_por_periodo1( $periodo )
+    {
+        return $this->db->table("actividad")
+        ->select("id_actividad, nombre_actividad")
+        ->where("periodo", $periodo)
+        ->get()->getResult();
+    }
+
 }

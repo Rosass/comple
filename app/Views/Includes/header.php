@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.21/css/jquery.datatables.min.css">
     <link rel="stylesheet" href="<?= base_url('public/css/style.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/select2.css') ?>">
     <title>Complementarias</title>
 
   </head>

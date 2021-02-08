@@ -99,6 +99,19 @@ class ActividadService
 
     public function getAlumnos($num_control)
 	{   
-       return $this->inicioModel->getAlumnos($num_control);
+        return $this->inicioModel->getAlumnos($num_control);
     }
+//*---------------------------------------------
+    public function getArea()
+	{   
+        return $this->actividadModel->getArea();
+    }
+
+     //* -------------------------------------------------------
+    //* select de area por tipo de actividad
+    public function get_tipo_actividad_por_area( $id_area )
+    {
+        return $this->actividadModel->get_tipo_actividad_por_area( $id_area );
+    }
+
 }

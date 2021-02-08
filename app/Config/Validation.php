@@ -91,14 +91,14 @@ class Validation
 		'num_control'     => 'required',
 		'periodo'     => 'required|numeric',
 		'id_actividad'     => 'required|numeric',
-		'telefono'     => 'required|min_length[10]|max_length[10]',
+		//'telefono'     => 'required|min_length[10]|max_length[10]',
 	];
 
 	public $editarInscripcionReglas = [
 		'id_inscripcion'     => 'required|numeric',
 		'periodo'     => 'required|numeric',
 		'id_actividad'     => 'required|numeric',
-		'telefono'     => 'required|min_length[10]|max_length[10]',
+		//'telefono'     => 'required|min_length[10]|max_length[10]',
 	];
 
 	public $jefeReglas = [

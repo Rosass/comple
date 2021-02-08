@@ -140,12 +140,16 @@ class ActividadController extends BaseController
                 $responsables = $this->responsableService->getResponsablesPorEstatus(true);
                 $periodo = $this->actividadService->getPeriodo();
 
+                //* SELECT PARA EDITAR TIPO DE ACTIVIDADES POR AREA
+                $area = $this->actividadService->getArea(); 
+
 
                 echo view('Includes/header');
                 echo view('Division/navbar', ["activo" => "actividades"]);
                 echo view('Division/Actividades/editar', [
 					"actividad" => $actividad,
-					'areas' => $areas,
+                    'areas' => $areas,
+                    'area' => $area,//* ESTE ES DEL SELECT
                     'periodos' => $periodos,
                     'periodo' => $periodo,
 					'tipos_actividades' => $tipos_actividades,
@@ -262,7 +266,14 @@ class ActividadController extends BaseController
 
 		}
 	
-	}
+    }
 
+    public function get_tipo_actividad_por_area()
+    {
+        $id_area = $this->request->getPost('id_area');
+        $respuesta = $this->actividadService->get_tipo_actividad_por_area( $id_area );
+
+        echo json_encode($respuesta);
+    }
     
 }

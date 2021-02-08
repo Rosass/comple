@@ -22,9 +22,23 @@ class InscripcionService
     return $this->inscripcionModel->getInscripciones();
     }
 
+    public function get_alumno($no_control)
+	{   
+        $alumno =  $this->inscripcionModel->get_alumno($no_control);
+        
+        if (!empty($alumno))
+        {
+            return ["alumno" => $alumno, "encontrado" => true];
+        }
+        else
+        {
+            return ["msj" => "Alumno no encontrado", "encontrado" => false];
+        }
+    }
+
     public function getPeriodo()
 	{   
-    return $this->inscripcionModel->getPeriodo();
+        return $this->inscripcionModel->getPeriodo();
     }
 
     public function getActividadPorIdareaPeriodo($perido)
@@ -240,4 +254,19 @@ class InscripcionService
             return $inscripciones;
         }
     }
+
+    //* -------------------------------------------------------
+//* select de actividades por periodo----en agregar
+public function get_actividad_por_periodo( $periodo )
+{
+    return $this->inscripcionModel->get_actividad_por_periodo( $periodo );
+}
+
+  //* -------------------------------------------------------
+//* select de actividades por periodo-----en lista
+public function get_actividad_por_periodo1( $periodo )
+{
+    return $this->inscripcionModel->get_actividad_por_periodo1( $periodo );
+}
+
 }

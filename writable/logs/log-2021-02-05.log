@@ -1,0 +1,11 @@
+CRITICAL - 2021-02-05 00:36:12 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `id_acti...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(262): App\Models\Division\InscripcionModel->get_actividad_por_periodo('20202')
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(247): App\Services\Division\InscripcionService->get_actividad_por_periodo('20202')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->get_actividades_periodo()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

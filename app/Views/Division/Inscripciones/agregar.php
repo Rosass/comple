@@ -18,12 +18,15 @@
                         <div class="invalid-feedback">
                             Por favor, rellena este campo
                         </div>
+                        <small id="labelNombreAlumno" class="font-weight-bold"></small>
                     </div>
                 </div>
+                <!-- ============================================================================================================= -->
+                <!-- PERIODO QUEDA DE ESTA MANERA -->
                 <div class="col-md-3">
                     <div class="form-group">
                         <label for="periodo">PERIODO (*)</label>
-                        <select class="custom-select" name="periodo" required>
+                        <select class="custom-select" name="periodo" id="periodo9293" required>
                             <option selected disabled value="">Elige un periodo</option>
                             <?php foreach($periodo as $key => $periodo) : ?>
                                 <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
@@ -34,20 +37,20 @@
                         </div>
                     </div>
                 </div>
+                <!-- ACTIVIADEDES QUEDA DE ESTA FORMA PARA EL SELECT -->
                 <div class="col-md-3">
                     <div class="form-group">
                         <label for="id_actividad">ACTIVIDAD (*)</label>
-                        <select class="custom-select" name="id_actividad" required>
+                        <select class="custom-select" name="id_actividad" id="select-actividad9293" required>
                             <option selected disabled value="">Elige la actividad</option>
-                            <?php foreach($actividades as $key => $actividad) : ?>
-                                <option value="<?= $actividad->id_actividad ?>"><?= $actividad->nombre_actividad ?></option>
-                            <?php endforeach ?>
+
                         </select>
                         <div class="invalid-feedback">
                             Por favor, rellena este campo
                         </div>
                     </div>
                 </div>
+                <!-- =========================================================================== -->
                 <div class="col-md-3">
                     <div class="form-group">
                         <label for="telefono">TELEFONO (*)</label>
@@ -72,3 +75,36 @@
     </div>
     </div>
 </div>
+
+<script>
+    const URL_BASE = "http://localhost/comple/";
+    const inputNoControl = document.getElementById("num_control");
+    const labelNombreAlumno = document.getElementById("labelNombreAlumno");
+
+    inputNoControl.addEventListener("blur", function (){
+        // Se hace la consulta al servidor mediante Fetch
+        let no_control = this.value;
+        const form = new FormData();
+        form.append("no_control", no_control);
+
+		fetch(URL_BASE + 'division/alumnos/getAlumno',{method: "POST", headers:{"X-Requested-With": "XMLHttpRequest"}, body: form})
+		.then(function (response)
+		{
+			if (response.ok) return response.json();
+			else throw "Woops, Algo salio mal!";
+		})
+		.then(function (data)
+		{
+            if(data.encontrado)
+            {
+                labelNombreAlumno.innerText = data.alumno.nombre + " " + data.alumno.ap_paterno + " " + data.alumno.ap_materno;
+            }
+            else
+            {
+                labelNombreAlumno.innerText = data.msj;
+            }
+			// Se añaden los nuevos datos a la tabla
+		})
+		.catch(error => console.log(error));
+    })
+</script>

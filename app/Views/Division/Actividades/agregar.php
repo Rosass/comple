@@ -60,7 +60,7 @@
 						<div class="col-md-4">
 							<div class="form-group">
 								<label for="id_area">ÁREA (*)</label>
-								<select class="custom-select" name="id_area" required id="area">
+								<select class="custom-select" name="id_area" id="area21"  required>
 									<option selected disabled value="">Elige una área</option>
 									<?php foreach($areas as $key => $area) : ?>
 									<option value="<?= $area->id_area ?>"><?= $area->nombre_area ?></option>
@@ -88,11 +88,9 @@
 						<div class="col-md-4">
 							<div class="form-group">
 								<label for="id_tipo_actividad">TIPO (*)</label>
-								<select class="custom-select" name="id_tipo_actividad" id="tipo" required>
+								<select class="custom-select" name="id_tipo_actividad" id="select-tipo21" required>
 									<option selected disabled value="">Elige el tipo de actividad</option>
-									<?php foreach($tipos_actividades as $key => $tipo) : ?>
-									<option value="<?= $tipo->id_tipo_actividad ?>"><?= $tipo->nombre ?></option>
-									<?php endforeach ?>
+									
 								</select>
 								<div class="invalid-feedback">
 									Por favor, rellena este campo

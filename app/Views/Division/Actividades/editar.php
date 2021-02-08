@@ -55,8 +55,8 @@
 							<div class="col-md-4">
 								<div class="form-group">
 									<label for="id_area">ÁREA (*)</label>
-									<select class="custom-select" name="id_area" required>
-										<?php foreach($areas as $key => $area) : ?>
+									<select class="custom-select" name="id_area" id="area2110" required>
+										<?php foreach($area as $key => $area) : ?>
 										    <option value="<?= $area->id_area ?>" <?= ($area->id_area == $actividad->id_area) ? 'selected' : '' ?>><?= $area->nombre_area ?></option>
 										<?php endforeach ?>
 									</select>
@@ -75,7 +75,7 @@
 							<div class="col-md-4">
 								<div class="form-group">
 									<label for="id_tipo_actividad">TIPO (*)</label>
-									<select class="custom-select" name="id_tipo_actividad" required>
+									<select class="custom-select" name="id_tipo_actividad" id="select-tipo2110" required>
 										<?php foreach($tipos_actividades as $key => $tipo) : ?>
 										<option value="<?= $tipo->id_tipo_actividad ?>" <?= ($tipo->id_tipo_actividad == $actividad->id_tipo_actividad) ? 'selected' : '' ?>><?= $tipo->nombre ?></option>
 										<?php endforeach ?>

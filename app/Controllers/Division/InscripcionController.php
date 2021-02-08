@@ -32,7 +32,7 @@ class InscripcionController extends BaseController
                 "inscripciones" => $inscripciones_aux, 
                 "periodos" => $periodos, 
                 'periodo' => $periodo,
-                "actividades" => $actividades
+                "actividades" => $actividades,
                 ]);
 			echo view('Includes/footer');
 		}
@@ -41,7 +41,16 @@ class InscripcionController extends BaseController
 			return redirect("/");
 		}
 	}
-	
+    
+    
+    public function get_alumno()
+    {
+        $no_control = $this->request->getPost("no_control");
+        
+        $alumno = $this->inscripcionService->get_alumno($no_control);
+
+        return json_encode($alumno);
+    }
 	/**
      * Esta función obtiene inscripciones filtradas por actividad
      * 
@@ -131,15 +140,16 @@ class InscripcionController extends BaseController
             if($inscripcion != NULL)
             {
                 $periodos = $this->periodoService->getPeriodosPorEstatus(true);
-                $periodo = $this->inscripcionService->getPeriodo();
 				$actividades = $this->actividadService->getActividadesPorEstatus(true);
+               //* select para editar actividades por periodo
+                $periodoss = $this->inscripcionService->getPeriodo();
 
                 echo view('Includes/header');
                 echo view('Division/navbar', ["activo" => "inscripciones"]);
                 echo view('Division/Inscripciones/editar', [
 					"inscripcion" => $inscripcion, 
                     "periodos" => $periodos,
-                    "periodo" => $periodo, 
+                    "periodoss" => $periodoss, //* ESTO ES DEL SELECT
 					"actividades" => $actividades
 				]);
                 echo view('Includes/footer');
@@ -191,10 +201,10 @@ class InscripcionController extends BaseController
 
 	public function cambiarEstatusAceptar()
     {
-       
+    
 		$id_inscripcion = $this->request->getPost('id_inscripcion');
 		
-       	$respuesta = $this->inscripcionService->cambiarEstatusAceptar($id_inscripcion);
+        $respuesta = $this->inscripcionService->cambiarEstatusAceptar($id_inscripcion);
 
         if($respuesta['exito'])
         {
@@ -202,17 +212,17 @@ class InscripcionController extends BaseController
         }
         else
         {
-             $this->session->setFlashdata('error', $respuesta['msj']);
+            $this->session->setFlashdata('error', $respuesta['msj']);
         }
         return redirect('division/inscripciones');
     }
 
 	public function cambiarEstatusRechazar()
     {
-       
+    
 		$id_inscripcion = $this->request->getPost('id_inscripcion');
 		
-       	$respuesta = $this->inscripcionService->cambiarEstatusRechazar ($id_inscripcion);
+    $respuesta = $this->inscripcionService->cambiarEstatusRechazar ($id_inscripcion);
 
         if($respuesta['exito'])
         {
@@ -220,8 +230,40 @@ class InscripcionController extends BaseController
         }
         else
         {
-             $this->session->setFlashdata('error', $respuesta['msj']);
+            $this->session->setFlashdata('error', $respuesta['msj']);
         }
         return redirect('division/inscripciones');
     }
+
+    //* -----------------------------------------------
+    //* actividades por periodo---en agregar
+        /**
+         * Esta funcion retorna un json de las actividades por periodo
+         * @return json
+        */
+
+        public function get_actividades_periodo()
+        {
+            $periodo = $this->request->getPost('id_periodo');
+            $respuesta = $this->inscripcionService->get_actividad_por_periodo( $periodo );
+
+            echo json_encode($respuesta);
+        }
+
+         //* -----------------------------------------------
+    //* actividades por periodo----en lista
+        /**
+         * Esta funcion retorna un json de las actividades por periodo
+         * @return json
+        */
+
+        public function get_actividades_periodo1()
+        {
+            $periodo = $this->request->getPost('id_periodo');
+            $respuesta = $this->inscripcionService->get_actividad_por_periodo1( $periodo );
+
+            echo json_encode($respuesta);
+        }
+
+    
 }

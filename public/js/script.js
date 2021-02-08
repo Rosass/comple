@@ -64,6 +64,6 @@ $(document).ready(function(){
 		.catch(error => console.log(error));
 	});
 
-	
+	$('.select-alumno').select2();
 })
 

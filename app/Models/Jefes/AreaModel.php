@@ -18,7 +18,7 @@ class AreaModel extends Model
         ->join('tipo_actividad ta', 'ta.id_tipo_actividad = a.id_tipo_actividad', 'INNER')
         ->join('periodo p', 'p.periodo = a.periodo', 'INNER')
         ->join('responsable r', 'r.rfc_responsable = a.rfc_responsable', 'LEFT')
-        ->where('id_area', $id_area)
+        //->where('id_area', $id_area)
         ->where('p.estatus', $true)
         ->get()->getResult();
     }

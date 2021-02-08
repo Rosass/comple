@@ -65,16 +65,27 @@ $routes->get('division/actividades/editar/(:any)', 'Division/ActividadController
 $routes->post('division/actividades/editar', 'Division/ActividadController::actualizar');
 $routes->post('division/actividades/cambiar-estatus', 'Division/ActividadController::cambiarEstatus');
 $routes->get('division/lista-alumnos/(:any)', 'Division/ActividadController::listaAlumnos');
+//cambiar de tipo de actividad dependiendo del area
+$routes->post('division/actividades/actividad', 'Division/ActividadController::get_tipo_actividad_por_area');
+//---------------------------------------------------
 
 // Rutas [DIVISION-INSCRIPCIONES]
 $routes->get('division/inscripciones', 'Division/InscripcionController::index');
 $routes->get('division/inscripciones/periodo', 'Division/InscripcionController::periodo');
 $routes->post('division/inscripciones', 'Division/InscripcionController::getInscripcionesPorActividadYEstatus');
 $routes->post('division/inscripciones/agregar', 'Division/InscripcionController::guardar');
+//cambiar actividades dependiendo del periodo en el select
+$routes->post('division/inscripciones/actividad', 'Division/InscripcionController::get_actividades_periodo');
+//---------------------------------------------------
+//cambiar actividades dependiendo del periodo en el select
+$routes->post('division/inscripciones/actividad1', 'Division/InscripcionController::get_actividades_periodo1');
+//---------------------------------------------------
 $routes->get('division/inscripciones/editar/(:any)', 'Division/InscripcionController::editar');
 $routes->post('division/inscripciones/editar', 'Division/InscripcionController::actualizar');
 $routes->post('division/inscripciones/cambiar-estatus-aceptar', 'Division/InscripcionController::cambiarEstatusAceptar');
 $routes->post('division/inscripciones/cambiar-estatus-rechazar', 'Division/InscripcionController::cambiarEstatusRechazar');
+$routes->post('division/alumnos/getAlumno', 'Division/InscripcionController::get_alumno');
+
 
 // Rutas [DIVISION-PERIODOS]
 $routes->get('division/periodos', 'Division/PeriodoController::index');
@@ -97,6 +108,7 @@ $routes->post('division/tipos-actividades/agregar', 'Division/TipoActividadContr
 $routes->get('division/tipos-actividades/editar/(:any)', 'Division/TipoActividadController::editar');
 $routes->post('division/tipos-actividades/editar', 'Division/TipoActividadController::actualizar');
 $routes->post('division/tipos-actividades/cambiar-estatus', 'Division/TipoActividadController::cambiarEstatus');
+
 
 // Rutas [ADMIN-Jefes]
 $routes->get('admin/jefes', 'Admin/JefeController::index');

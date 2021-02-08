@@ -25,7 +25,7 @@
                         <form method="get" action="<?= base_url("division/inscripciones/periodo") ?>">
                             <label>Filtro por Periodo </label>
                             <div class="input-group">
-                                <select class="custom-select"  name="periodo">
+                                <select class="custom-select"  name="periodo" id="periodo21">
                                     <option selected disabled value="">Elige el periodo</option>
                                     <option value="0">ACTIVO</option>
                                     <?php foreach($periodo as $key => $periodo) : ?>

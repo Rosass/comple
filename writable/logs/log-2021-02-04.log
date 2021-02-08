@@ -818,3 +818,298 @@ CRITICAL - 2021-02-04 13:44:19 --> Unknown column 'r.periodo' in 'on clause'
 #9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}
+CRITICAL - 2021-02-04 12:23:50 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-04 12:23:50 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-04 12:23:50 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-04 12:36:21 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:36:37 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:37:07 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:37:42 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:38:33 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:39:14 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:39:59 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:40:43 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:41:15 --> Call to undefined method App\Services\Division\ActividadService::get_alumno()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-04 12:41:38 --> Call to undefined method App\Services\Division\ActividadService::get_alumno()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-02-04 12:42:13 --> Too few arguments to function App\Models\Division\InscripcionModel::get_alumno(), 0 passed in C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php on line 27 and exactly 1 expected
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(27): App\Models\Division\InscripcionModel->get_alumno()
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(28): App\Services\Division\InscripcionService->get_alumno()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-02-04 12:43:09 --> Trying to get property 'nombre' of non-object
+#0 C:\xampp\htdocs\comple\app\Views\Division\Inscripciones\agregar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Views\Division\Inscripciones\listar.php(130): view('Division/Inscri...')
+#4 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/Inscri...', Array, true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(37): view('Division/Inscri...', Array)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-02-04 12:52:25 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:54:18 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:54:47 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:55:04 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:55:28 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:56:11 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:56:31 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:56:44 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:56:48 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:57:03 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:58:08 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:58:25 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:58:40 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\InscripcionModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(22): App\Models\Division\InscripcionModel->getInscripciones()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(23): App\Services\Division\InscripcionService->getInscripciones()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:58:56 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-04 12:59:45 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`usu...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\UsuarioModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\UsuarioService.php(22): App\Models\UsuarioModel->getUsuarioPorUsuario('dep_pochutla')
+#4 C:\xampp\htdocs\comple\app\Controllers\UsuarioController.php(33): App\Services\UsuarioService->login('dep_pochutla', 'admin2020')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\UsuarioController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

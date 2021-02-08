@@ -1,0 +1,13 @@
+CRITICAL - 2021-02-07 23:50:38 --> Column 'id_area' in where clause is ambiguous
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`id_...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`id_...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`id_...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Jefes\AreaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Jefes\AreaService.php(20): App\Models\Jefes\AreaModel->getActividadPorIdarea('1', true)
+#6 C:\xampp\htdocs\comple\app\Controllers\Jefes\AreaController.php(21): App\Services\Jefes\AreaService->getActividadPorIdarea('1', true)
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AreaController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AreaController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
