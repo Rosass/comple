@@ -26,7 +26,7 @@ class ResponsableModel extends Model
         return $this->db->table('responsable r')
         ->select('r.id_area_fk,r.periodo,rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus, p.descripcion as periodo')
         ->join('periodo p', 'p.periodo = r.periodo', 'INNER')
-        //->join('responsable r', 'r.rfc_responsable = r.rfc_responsable', 'LEFT')
+        //->join('responsable r', 'r.rfc_responsable = r.rfc_responsable', 'LEFT')---
         ->where('r.id_area_fk', $id_area)
         ->where('r.periodo', $periodo)
         ->get()->getResult();
