@@ -71,7 +71,6 @@ class AreaService
         {
             return ["exito" => false, "msj" => "Id de area no válido!."];
         }
-       
     }
 
     public function cambiarEstatus($id_area)

@@ -136,7 +136,7 @@ class AreaController extends BaseController
 	
 	public function cambiarEstatus()
     {
-       
+
         $id_area = $this->request->getPost('id_area');
         $respuesta = $this->areaService->cambiarEstatus($id_area);
 
@@ -146,7 +146,7 @@ class AreaController extends BaseController
         }
         else
         {
-             $this->session->setFlashdata('error', $respuesta['msj']);
+            $this->session->setFlashdata('error', $respuesta['msj']);
         }
         return redirect('admin/areas');
     }

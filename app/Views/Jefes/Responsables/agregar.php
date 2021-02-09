@@ -67,6 +67,20 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4">
+					<div class="form-group">
+						<label for="periodo">PERIODO (*)</label>
+						<select class="custom-select" name="periodo" required id="periodo">
+							<option selected disabled value="">Elige un periodo</option>
+							<?php foreach($periodos as $key => $periodo) : ?>
+							<option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
+							<?php endforeach ?>
+						</select>
+						<div class="invalid-feedback">
+							Por favor, rellena este campo
+						</div>
+					</div>
+				</div>
+                <div class="col-md-4">
                     <div class="form-group">
                         <label for="clave">CLAVE (*)</label>
                         <input type="password" class="form-control" id="clave" name="clave" required value="<?= old("clave") ?>">

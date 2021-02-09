@@ -18,7 +18,7 @@ class AreaModel extends Model
         ->join('tipo_actividad ta', 'ta.id_tipo_actividad = a.id_tipo_actividad', 'INNER')
         ->join('periodo p', 'p.periodo = a.periodo', 'INNER')
         ->join('responsable r', 'r.rfc_responsable = a.rfc_responsable', 'LEFT')
-        //->where('id_area', $id_area)
+        ->where('a.id_area', $id_area)
         ->where('p.estatus', $true)
         ->get()->getResult();
     }
@@ -30,15 +30,27 @@ class AreaModel extends Model
         ->join('tipo_actividad ta', 'ta.id_tipo_actividad = a.id_tipo_actividad', 'INNER')
         ->join('periodo p', 'p.periodo = a.periodo', 'INNER')
         ->join('responsable r', 'r.rfc_responsable = a.rfc_responsable', 'LEFT')
-        ->where('id_area', $id_area)
+        ->where('a.id_area', $id_area)
         ->where('a.periodo', $periodo)
         ->get()->getResult();
     }
-    public function get_responsable_area_y_sin_asignar($id_area)
+    public function get_responsable_area_y_sin_asignar($id_area, $true)
 	{   
         return $this->db->table('responsable r')
         ->select('r.id_area_fk, r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
         ->join('area a', 'a.id_area = r.id_area_fk', 'INNER')
+        ->join('periodo p', 'p.periodo = r.periodo', 'INNER')
+        ->where('p.estatus', $true)
+        ->where('a.id_area', $id_area)->get()->getResult();
+    }
+
+    public function get_responsable_area_y_sin_asignar1($id_area)
+	{   
+        return $this->db->table('responsable r')
+        ->select('r.id_area_fk, r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
+        ->join('area a', 'a.id_area = r.id_area_fk', 'INNER')
+        ->join('periodo p', 'p.periodo = r.periodo', 'INNER')
+        //->where('p.estatus', $periodo)
         ->where('a.id_area', $id_area)->get()->getResult();
     }
 
@@ -47,6 +59,14 @@ class AreaModel extends Model
         $this->db->table('actividad')->where("id_actividad", $id_actividad)->update($datos);
         return $this->db->affectedRows();
     }
+
+    public function actualiza( $rfc_responsable, $datos)
+    {
+        $this->db->table('responsable')
+        ->where("rfc_responsable", $rfc_responsable)->update($datos);
+        return $this->db->affectedRows();
+    }
+
 
     public function getActividadPorId($id_actividad, $id_area)
 	{   

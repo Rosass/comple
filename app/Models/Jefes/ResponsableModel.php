@@ -14,24 +14,24 @@ class ResponsableModel extends Model
     public function getResponsables($id_area, $true)
 	{   
         return $this->db->table('responsable r')
-        ->select('r.id_area_fk,r.periodo_fk ,r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
+        ->select('r.id_area_fk,r.periodo ,r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus, p.descripcion as periodo')
         ->join('area a', 'a.id_area = a.id_area', 'INNER')
-        ->join('periodo p', 'p.periodo = r.periodo_fk', 'INNER')
+        ->join('periodo p', 'p.periodo = r.periodo', 'INNER')
         ->where('p.estatus', $true)
-        ->where('r.id_area_fk', $id_area)->get()->getResultArray();
+        ->where('r.id_area_fk', $id_area)->get()->getResult();
     }
 
     public function getActividadPorIdareaPeriodo($id_area, $periodo)
 	{   
         return $this->db->table('responsable r')
-        ->select('r.id_area_fk,r.periodo_fk, r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
-        ->join('area a', 'a.id_area = a.id_area', 'INNER')
-        ->join('periodo p', 'p.periodo = p.periodo', 'INNER')
+        ->select('r.id_area_fk,r.periodo,rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus, p.descripcion as periodo')
+        ->join('periodo p', 'p.periodo = r.periodo', 'INNER')
+        //->join('responsable r', 'r.rfc_responsable = r.rfc_responsable', 'LEFT')
         ->where('r.id_area_fk', $id_area)
-        ->where('p.periodo', $periodo)
-        ->get()->getResultArray();
-        
+        ->where('r.periodo', $periodo)
+        ->get()->getResult();
     }
+
 
     public function getResponsablesPorEstatus($estatus)
 	{   
