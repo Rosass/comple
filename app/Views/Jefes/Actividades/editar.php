@@ -31,7 +31,7 @@
 								</div>
 							</div>				
 						</div>
-						<!------------------------------------------------ -->
+						<!---------------------------------------------------- -->
 						<small>Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">
                             <div class="dropdown-divider"></div>

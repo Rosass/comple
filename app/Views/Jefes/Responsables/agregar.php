@@ -5,7 +5,7 @@
       <div class="modal-header bg-color-tec-blue text-white text-uppercase">
         <h5 class="modal-title" id="nuevoResponsableModalLabel">Nuevo responsable</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="text-white">&times;</span>
+        <span aria-hidden="true" class="text-white">&times;</span>
         </button>
       </div>
       <div class="modal-body pb-0 text-center">

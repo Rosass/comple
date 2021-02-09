@@ -2,7 +2,7 @@
 <div class="container text-center">
 	<div class="row mt-5">
 		<div class="col-md-12 ">
-		    <!-- Mensajes de error -->
+		<!-- Mensajes de error -->
 			<?php if($session->getFlashdata('error')) : ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     <?= $session->getFlashdata('error') ?>

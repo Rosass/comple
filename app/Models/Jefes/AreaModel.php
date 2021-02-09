@@ -62,8 +62,7 @@ class AreaModel extends Model
 
     public function actualiza( $rfc_responsable, $datos)
     {
-        $this->db->table('responsable')
-        ->where("rfc_responsable", $rfc_responsable)->update($datos);
+        $this->db->table('responsable')->where("rfc_responsable", $rfc_responsable)->update($datos);
         return $this->db->affectedRows();
     }
 

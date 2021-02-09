@@ -78,7 +78,7 @@
 							</td>
 							<td style="width:12%;">
 								<div class="d-flex flex-column">
-								<!--  Editar responsable-->
+									<!--  Editar responsable-->
 									<a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("jefes/responsables/editar/".$responsable->rfc_responsable) ?>"><i class="fas fa-pen"></i> Editar</a>
 									<?php if($responsable->estatus == true) : ?>
 									<form action="<?= base_url('jefes/responsables/cambiar-estatus') ?>" method="POST">
