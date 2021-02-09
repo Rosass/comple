@@ -58,7 +58,7 @@ class AreaService
     }
 
    /**
-     * este es para editar el selct de responsable
+     * este es para editar el selct de responsable--
      * @param array $datos
      * @return array
      */

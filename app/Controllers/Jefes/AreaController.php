@@ -50,7 +50,7 @@ class AreaController extends BaseController
         {
 
 		$periodoPost =  $this->request->getGet("periodo");
-		// echo $periodoPost;
+		// echo $periodoPost;---
 		// // if ( empty($periodoPost)
 		if ( empty($periodoPost) || $periodoPost == '0') return redirect('jefes/actividades');
 

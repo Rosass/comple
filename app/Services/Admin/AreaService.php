@@ -52,7 +52,7 @@ class AreaService
     }
 
     /**
-     * Actualiza los datos de un responsable en la BD
+     * Actualiza los datos de un responsable en la BD ---
      * @param array $datos
      * @return array
      */
