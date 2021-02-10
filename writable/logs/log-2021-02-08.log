@@ -159,3 +159,11 @@ CRITICAL - 2021-02-08 02:14:55 --> Undefined index: periodo_fk
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2021-02-08 05:20:47 --> Undefined variable: id_inscripcion
+#0 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 136, Array)
+#1 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(118): App\Services\Division\InscripcionService->guardar(Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->guardar()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

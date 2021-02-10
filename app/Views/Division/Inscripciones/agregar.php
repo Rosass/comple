@@ -53,11 +53,8 @@
                 <!-- =========================================================================== -->
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="telefono">TELEFONO (*)</label>
-                        <input type="number" class="form-control" id="telefono" name="telefono" required value="<?= old("telefono") ?>"  required>
-                        <div class="invalid-feedback">
-                            Por favor, rellena este campo
-                        </div>
+                        <label for="telefono">TELEFONO</label>
+                        <input type="number" class="form-control" id="telefono" name="telefono" value="<?= old("telefono") ?>">
                     </div>
                 </div>     
             </div>

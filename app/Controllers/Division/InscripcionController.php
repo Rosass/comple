@@ -112,7 +112,8 @@ class InscripcionController extends BaseController
                 "periodo" => $this->request->getPost("periodo"),
                 "id_actividad" => $this->request->getPost("id_actividad"),
                 "telefono" => $this->request->getPost("telefono"),
-                "nota" => $this->request->getPost("nota") 
+                "nota" => $this->request->getPost("nota"),
+                "estatus" => 2
             ];
 
             $respuesta =  $this->inscripcionService->guardar($datos);

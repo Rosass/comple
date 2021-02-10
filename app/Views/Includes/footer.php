@@ -30,7 +30,7 @@
     <script src="<?= base_url("public/js/validateForms.js") ?>"></script>
     <script src="<?= base_url("public/js/select2.js") ?>"></script>
     <!-- ================================================================================================ -->
-    //* ------------- Select------Script--------------
+    <!-- ------------- Select------Script-------------- -->
     <script src="<?= base_url("public/js/select-actividad.js") ?>"></script> 
     <script src="<?= base_url("public/js/select-actividad1.js") ?>"></script> 
     <script src="<?= base_url("public/js/select-editar.js") ?>"></script> 
