@@ -137,7 +137,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     ?></p>
     <P  style="margin-left:560px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERIAS'?></P><br>
 <p style="text-align: center;"><?php foreach($actividad as $act) : ?>"<?= $act->frase_decreto ?>"<?php endforeach; ?></p><br>
-    <p style=" margin-left:505px; text-align: justify;" id="medium" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p><p style="font-size:70%;  margin-left:417px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?></p>
+    <p style=" text-align:right;" id="medium text-align:justify;"  >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p><p style="font-size:70%;  margin-left:417px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?></p>
     <p style="font-size:70%;  margin-left:530px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERIAS'?></p>  
     <p  style=" margin-left:540px; text-align: justify;" id="medium"><strong> Oficio:</strong> 
     <?php
@@ -171,7 +171,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
             <p style="text-align: justify;">Se extiende la presente en la <strong><u>Cd. De San Pedro Pochutla</u></strong> a los<strong><u> <?=$date?> </u></strong> dias del mes de  <strong><u><?php echo $meses[date('n')-1];?></u></strong> del <?=$date1?>.</p></div><br/><br><br><br><br>
         </div>
 <P style=" text-align:center;" id="extrabold"><strong>A T E N T A M E N T E</strong><br/>
-<strong style ="  font-style:italic;" id="extralight">Excelencia en Educación Tecnológica</strong><br/></P><br/><br><br>
+<strong style ="  font-style:italic;" id="extralight">"Excelencia en Educación Tecnológica"</strong><br/></P><br/><br><br>
 
 <div>
     <p style="text-align:center; margin-right:430px;  margin-top:58px; " id="extrabold"><strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?><hr color="black" size="2.3"></strong>

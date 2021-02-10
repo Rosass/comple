@@ -60,9 +60,9 @@ class AreaModel extends Model
         return $this->db->affectedRows();
     }
 
-    public function actualiza( $rfc_responsable, $datos)
+    public function actualiza( $rfc_responsable, $id_actividad )
     {
-        $this->db->table('responsable')->where("rfc_responsable", $rfc_responsable)->update($datos);
+        $this->db->table('actividad')->where("id_actividad", $id_actividad)->update(['rfc_responsable' => $rfc_responsable]);
         return $this->db->affectedRows();
     }
 

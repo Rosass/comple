@@ -116,15 +116,13 @@ class AreaController extends BaseController
             {
 				$id_area = $this->session->usuario_logueado->id_area;
 				$responsable = $this->areaService->get_responsable_area_y_sin_asignar1($id_area);
-				
-				//var_dump($actividad);
 
                 echo view('Includes/header');
                 echo view('Jefes/navbar', ["activo" => "actividades"]);
                 echo view('Jefes/Actividades/editar', [
 					"actividad" => $actividad,
-					'responsable' => $responsable
-
+					'responsable' => $responsable,
+					'id_actividad' => $id_actividad
 				]);
                 echo view('Includes/footer');
             }
@@ -149,19 +147,12 @@ class AreaController extends BaseController
             return redirect()->back()->withInput();
         }
         else
-        {   
-			
+        {
+
 			$rfc_responsable = $this->request->getPost("rfc_responsable");
+			$id_actividad = $this->request->getPost("id_actividad");
 
-			$datos = [
-				"rfc_responsable" => $this->request->getPost("rfc_responsable"),
-				"nombre" => mb_strtoupper($this->request->getPost("nombre"), 'utf-8'),
-                "apaterno" => mb_strtoupper($this->request->getPost("apaterno"), 'utf-8'),
-                "amaterno" => mb_strtoupper($this->request->getPost("amaterno"),'utf-8'),
-			];
-			
-
-            $respuesta =  $this->areaService->actualiza($rfc_responsable, $datos);
+            $respuesta = $this->areaService->actualiza($rfc_responsable, $id_actividad);
 
             if($respuesta["exito"])
             {

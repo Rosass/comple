@@ -1,0 +1,44 @@
+CRITICAL - 2021-02-10 11:02:59 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('151160204', '26')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(84): App\Services\Jefes\ConstanciaService->getActividad('151160204', '26')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia2021()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-10 11:07:34 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('151160204', '26')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(84): App\Services\Jefes\ConstanciaService->getActividad('151160204', '26')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia2021()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-10 11:07:50 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('151160204', '26')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(84): App\Services\Jefes\ConstanciaService->getActividad('151160204', '26')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia2021()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-10 11:10:17 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\ConstanciaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Jefes\ConstanciaService.php(35): App\Models\Jefes\ConstanciaModel->getActividad('151160204', '26')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\ConstanciaController.php(84): App\Services\Jefes\ConstanciaService->getActividad('151160204', '26')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ConstanciaController->constancia2021()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ConstanciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

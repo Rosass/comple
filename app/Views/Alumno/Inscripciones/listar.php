@@ -1,51 +1,13 @@
 <?php $session = session(); 
-function sub_string_fecha( $fecha )
-{
-    $newFecha = array();
-    $dia = substr( $fecha, 8, 2);
-    $mes = substr( $fecha, 5, 2);
-    $anio = substr( $fecha, 0, 4);
-    array_push( $newFecha, $anio, $mes, $dia);
-    return $newFecha;
-}
 function valida_fecha( $fecha_inicio, $fecha_fin )
 {
     date_default_timezone_set('America/Mexico_City');
-    $fecha = getdate();
-    $mesServer = $fecha['mon'];
-    $anioServer = $fecha['year'];
-    $diaServer = $fecha['mday'];
+    $fecha_servidor = date('Y-m-d');
 
-    // fecha in array = [0] = año, [1] = mes, [2] = dia
-    $fecha_incripcion_inicio = sub_string_fecha( $fecha_inicio);
-    $fecha_incripcion_fin = sub_string_fecha( $fecha_fin);
-
-
-    if ( ( $anioServer >= $fecha_incripcion_inicio[0] ) && ( $anioServer <= $fecha_incripcion_fin[0] ) )
-    {
-        if ( $anioServer < $fecha_incripcion_fin[0])
-        {
-            return true;
-        }
-        if ( $anioServer > $fecha_incripcion_inicio[0] )
-        {
-            if ( $mesServer <= $fecha_incripcion_fin[1] )
-            {
-                if ( $diaServer <= $fecha_incripcion_fin[2] )
-                {
-                    return true;
-                }
-            }
-        }
-        if ( ( $mesServer >= $fecha_incripcion_inicio[1] ) && ( $mesServer <= $fecha_incripcion_fin[1] ) )
-        {
-            if ( ( $diaServer >= $fecha_incripcion_inicio[2] ) && ( $diaServer <= $fecha_incripcion_fin[2] ) )
-            {
-                return true;
-            }
-        }
+    //* Para la comparación las fechas deben tener el mismo formato
+    if (( $fecha_servidor >= $fecha_inicio) && ($fecha_servidor <= $fecha_fin) ) {
+        return true;
     }
-
     return false;
 }
 

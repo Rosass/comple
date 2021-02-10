@@ -62,10 +62,10 @@ class AreaService
      * @param array $datos
      * @return array
      */
-    public function actualiza($rfc_responsable, $datos)
+    public function actualiza($rfc_responsable, $id_actividad)
     {
         {
-            if ($this->areaModel->actualiza($rfc_responsable, $datos))
+            if ($this->areaModel->actualiza($rfc_responsable, $id_actividad))
                 return ["exito" => true, "msj" => "Datos actualizados con exito."];
             else
                 return ["exito" => false, "msj" => "No se actualizó ningun campo."];

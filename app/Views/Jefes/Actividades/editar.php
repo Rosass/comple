@@ -19,6 +19,7 @@
 					<div class="row justify-content-center">
 							<div class="col-md-4">
 								<div class="form-group">
+									<input type="hidden" name="id_actividad" value="<?= $id_actividad ?>">
 									<label for="confirmar_clave">RESPONSABLE</label>
 									<select class="custom-select" name="rfc_responsable">
                                         <?php if($actividad->rfc_responsable == null) : ?>

@@ -39,6 +39,8 @@ class InscripcionModel extends Model
         ->get()->getResult();
     }
 
+   
+
     
     public function getInscripcionesPorActividadYEstatus($id_actividad)
 	{   
@@ -90,7 +92,6 @@ class InscripcionModel extends Model
         ->where("num_control", $num_control)
         ->where("periodo", $periodo)
         ->where("id_actividad", $id_actividad)
-       // ->where("estatus", true)
         ->get()->getResult();
     }
 

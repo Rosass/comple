@@ -12,11 +12,6 @@ class InscripcionModel extends Model
     protected $table = 'actividad';
 
     public function getActividadesPorCalificacion( $num_control )
-//     SELECT inscripcion.id_inscripcion FROM inscripcion
-// LEFT JOIN evaluacion_desempenio
-// ON inscripcion.id_inscripcion = evaluacion_desempenio.id_inscripcion
-// WHERE inscripcion.num_control = '161160176'
-// AND evaluacion_desempenio.valor_numerico >= 1
     {
         return $this->db->table('inscripcion')
                         ->selectSum('actividad.creditos')
@@ -34,7 +29,7 @@ class InscripcionModel extends Model
                         ->join("periodo p", "p.periodo = a.periodo")
                         ->join('tipo_actividad t' , 't.id_tipo_actividad = a.id_tipo_actividad','LEFT')
                         ->join('responsable r' , 'r.rfc_responsable = a.rfc_responsable','LEFT')
-                        ->where("p.estatus", true)
+                        ->where("p.estatus", $true)
                         ->orderBy("nombre_actividad", "ASC")
                         ->get()->getResult();
     }
