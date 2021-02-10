@@ -52,8 +52,8 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 ?>
 
     <p style="margin-left:505px; margin-top:1px;">Instituto Tecnológico de Pochutla</p>
-    <p style=" margin-left:447px; text-align:justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p> 
-    <p style=" margin-left:510px; text-align:justify;"> <strong>Folio:</strong>  llV.1.1.5.0.0/SE/<?php echo $folio ?>/<?= $fecha1 ?></p>
+    <p style="text-align:right;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p> 
+    <p style=" margin-left:510px; text-align:justify; margin-top:-1.5%;"> <strong>Folio:</strong>  llV.1.1.5.0.0/SE/<?php echo $folio ?>/<?= $fecha1 ?></p>
 </div>
     <h5><strong>A QUIEN CORRESPONDA:</strong></h5>
     <P style="text-align: justify;">Por este medio se hace constar que según documentos que existen en el archivo del Instituto Tecnólogico de Pochutla, clave 20DIT0011V el (la) C.</P>
@@ -152,8 +152,8 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     ?>
 </header>
     <p style="margin-left:505px; margin-top:1px;">Instituto Tecnológico de Pochutla</p>
-    <p style=" margin-left:447px;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p> 
-    <p style=" margin-left:510px;">  <strong> Folio:</strong> llV.1.1.5.0.0/SE/<?php echo $folio ?>/<?= $fecha1 ?></p>
+    <p style="text-align:right;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p> 
+    <p style=" margin-left:510px; text-align:justify; margin-top:-1.5%">  <strong> Folio:</strong> llV.1.1.5.0.0/SE/<?php echo $folio ?>/<?= $fecha1 ?></p>
 </div>
     <h5><strong>A QUIEN CORRESPONDA:</strong></h5>
     <P style="text-align: justify;">Por este medio se hace constar que según documentos que existen en el archivo del Instituto Tecnólogico de Pochutla, clave 20DIT0011V el (la) C.</P>

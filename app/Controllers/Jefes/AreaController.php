@@ -5,11 +5,14 @@ class AreaController extends BaseController
 {
 
 	protected $areaService;
-	//protected $actividadService;
+	protected $responsableService;
+
 
     function __construct()
     {
 		$this->areaService =  new \App\Services\Jefes\AreaService();
+		$this->responsableService =  new \App\Services\Jefes\ResponsableService();
+
 		
 	}
 	
@@ -20,7 +23,8 @@ class AreaController extends BaseController
 			$id_area = $this->session->usuario_logueado->id_area;
 			$actividades = $this->areaService->getActividadPorIdarea($id_area, true);
 			$periodo = $this->areaService->getPeriodo();
-			$responsables = $this->areaService->get_responsable_area_y_sin_asignar($id_area);
+			$responsables = $this->areaService->get_responsable_area_y_sin_asignar($id_area, true);
+			$responsable = $this->responsableService->getResponsablesPorEstatus(true);
 			
 			
 			echo view('Includes/header');
@@ -29,6 +33,7 @@ class AreaController extends BaseController
 				'actividades' => $actividades,
 				'areas' => $id_area,
 				'responsables' => $responsables,
+				'responsable' => $responsable,
 				'periodos' => $periodo
 			]);
 			echo view('Includes/footer');
@@ -45,7 +50,7 @@ class AreaController extends BaseController
         {
 
 		$periodoPost =  $this->request->getGet("periodo");
-		// echo $periodoPost;
+		// echo $periodoPost;---
 		// // if ( empty($periodoPost)
 		if ( empty($periodoPost) || $periodoPost == '0') return redirect('jefes/actividades');
 
@@ -53,7 +58,7 @@ class AreaController extends BaseController
 		$actividades = $this->areaService->getActividadPorIdareaPeriodo($id_area, $periodoPost);
 		$periodo = $this->areaService->getPeriodo();
 
-		$responsables = $this->areaService->get_responsable_area_y_sin_asignar($id_area);
+		$responsables = $this->areaService->get_responsable_area_y_sin_asignar($id_area, true);
 		
 		echo view('Includes/header');
 		echo view('Jefes/navbar', ["activo" => "actividades"]);
@@ -106,18 +111,18 @@ class AreaController extends BaseController
         {
             $id_actividad = urldecode($this->request->uri->getSegment(4));
 			$actividad = $this->areaService->getActividadPorId($id_actividad);
-
+			
             if($actividad != NULL)
             {
 				$id_area = $this->session->usuario_logueado->id_area;
-				$responsables = $this->areaService->get_responsable_area_y_sin_asignar($id_area);
-
+				$responsable = $this->areaService->get_responsable_area_y_sin_asignar1($id_area);
 
                 echo view('Includes/header');
                 echo view('Jefes/navbar', ["activo" => "actividades"]);
                 echo view('Jefes/Actividades/editar', [
 					"actividad" => $actividad,
-					'responsables' => $responsables
+					'responsable' => $responsable,
+					'id_actividad' => $id_actividad
 				]);
                 echo view('Includes/footer');
             }
@@ -139,19 +144,15 @@ class AreaController extends BaseController
         if (!$this->validate($reglas))
         {
             $this->session->setFlashData("error", $this->validator->listErrors());
-            return redirect('jefes/actividades')->withInput();
+            return redirect()->back()->withInput();
         }
         else
-        {   
-            $id_actividad = $this->request->getPost("id_actividad");
+        {
 
-			$datos = [
-                
-				"rfc_responsable" => $this->request->getPost("rfc_responsable"),
-				
-            ];
+			$rfc_responsable = $this->request->getPost("rfc_responsable");
+			$id_actividad = $this->request->getPost("id_actividad");
 
-            $respuesta =  $this->areaService->actualiza($id_actividad, $datos);
+            $respuesta = $this->areaService->actualiza($rfc_responsable, $id_actividad);
 
             if($respuesta["exito"])
             {

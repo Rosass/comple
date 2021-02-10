@@ -2,7 +2,7 @@
 <div class="container text-center">
 	<div class="row mt-5">
 		<div class="col-md-12 ">
-		    <!-- Mensajes de error -->
+		<!-- Mensajes de error -->
 			<?php if($session->getFlashdata('error')) : ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     <?= $session->getFlashdata('error') ?>
@@ -55,6 +55,16 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-md-4">
+								<div class="form-group">
+									<label for="periodo">PERIODO (*)</label>
+									<select class="custom-select" name="periodo" required>
+										<?php foreach($periodos as $key => $periodo) : ?>
+										    <option value="<?= $periodo->periodo ?>" <?= ($periodo->periodo == $responsable->periodo) ? 'selected' : '' ?>><?= $periodo->descripcion ?></option>
+										<?php endforeach ?>
+									</select>
+								</div>
+							</div>
 						<small>Los campos marcados con (*) son obligatorios.</small>
 						<div class="text-center">
 							<div class="dropdown-divider"></div>

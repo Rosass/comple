@@ -83,9 +83,6 @@ class Validation
         'periodo'     => 'required|numeric',
 		'id_tipo_actividad' => 'required|numeric'
 	];
-	public $actividadrReglas = [
-		'rfc_responsable'     => 'required|min_length[13]|max_length[13]',
-	];
 
 	public $inscripcionReglas = [
 		'num_control'     => 'required',
@@ -173,7 +170,8 @@ class Validation
         'clave'     => 'required|min_length[8]',
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
 		'telefono'     => 'min_length[10]|max_length[10]',
-        'correo'        => 'valid_email'
+		'correo'        => 'valid_email',
+		'periodo'       => 'required|numeric',
 	];
 
 	public $editarResponsable1Reglas = [
@@ -181,11 +179,17 @@ class Validation
 		'apaterno'     => 'required',
 		'amaterno'     => 'required',
 		'telefono'     => 'min_length[10]|max_length[10]',
-        'correo'        => 'valid_email'
+		'correo'        => 'valid_email'
+		
 	];
 
 	public $editarClave1Reglas = [
 		'clave'     => 'required|min_length[8]',
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
+	];
+
+	public $actividadrReglas = [
+		
+		'rfc_responsable'     => 'required|min_length[13]|max_length[13]',
 	];
 }

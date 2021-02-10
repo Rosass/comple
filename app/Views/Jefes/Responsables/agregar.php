@@ -5,7 +5,7 @@
       <div class="modal-header bg-color-tec-blue text-white text-uppercase">
         <h5 class="modal-title" id="nuevoResponsableModalLabel">Nuevo responsable</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="text-white">&times;</span>
+        <span aria-hidden="true" class="text-white">&times;</span>
         </button>
       </div>
       <div class="modal-body pb-0 text-center">
@@ -66,6 +66,20 @@
                 </div>
             </div>
             <div class="row justify-content-center">
+                <div class="col-md-4">
+					<div class="form-group">
+						<label for="periodo">PERIODO (*)</label>
+						<select class="custom-select" name="periodo" required id="periodo">
+							<option selected disabled value="">Elige un periodo</option>
+							<?php foreach($periodos as $key => $periodo) : ?>
+							<option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
+							<?php endforeach ?>
+						</select>
+						<div class="invalid-feedback">
+							Por favor, rellena este campo
+						</div>
+					</div>
+				</div>
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="clave">CLAVE (*)</label>

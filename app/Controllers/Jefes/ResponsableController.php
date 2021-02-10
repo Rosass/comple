@@ -33,7 +33,7 @@ class ResponsableController extends BaseController
 		}
 	}
 
-    //--------------------------------------------------------------------
+    //-----------------------------------------------------------------------
     
     public function guardar()
     {
@@ -53,6 +53,7 @@ class ResponsableController extends BaseController
                 "amaterno" => mb_strtoupper($this->request->getPost("amaterno"),'utf-8'),
                 "clave" => password_hash($this->request->getPost("clave") , PASSWORD_DEFAULT, ['cost' => 10]),
                 "telefono" => $this->request->getPost("telefono"),
+                "periodo" => $this->request->getPost("periodo"),
                 "id_area_fk" => trim($this->session->usuario_logueado->id_area),
                 "correo" => $this->request->getPost("correo")
             ];
@@ -72,54 +73,22 @@ class ResponsableController extends BaseController
         }
     }
 
-    public function periodo()
-	{
-		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
-        {
-
-		$periodoPost =  $this->request->getGet("periodo");
-		// echo $periodoPost;
-		// // if ( empty($periodoPost)
-		if ( empty($periodoPost) || $periodoPost == '0') return redirect('jefes/responsables');
-
-		$id_area = $this->session->usuario_logueado->id_area;
-		$responsables = $this->responsableService->getActividadPorIdareaPeriodo($id_area, $periodoPost);
-		$periodo = $this->responsableService->getPeriodo();
-
-		//$responsables = $this->areaService->get_responsable_area_y_sin_asignar($id_area);
-		
-		echo view('Includes/header');
-		echo view('Jefes/navbar', ["activo" => "responsables"]);
-		echo view('Jefes/Responsables/listar', [				
-			'areas' => $id_area,
-			'responsables' => $responsables,
-			'periodos' => $periodo
-		]);
-		echo view('Includes/footer');
-	
-			}
-			else
-			{
-				return 
-				redirect('/');
-				
-			}
-
-    }
-
-
     public function editar()
     {
         if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
         {
             $rfc_responsable = urldecode($this->request->uri->getSegment(4));
-			$responsable = $this->responsableService->getResponsablePorRfc($rfc_responsable);
+            $responsable = $this->responsableService->getResponsablePorRfc($rfc_responsable);
+            $periodo = $this->responsableService->getPeriodo();
 
             if($responsable != NULL)
             {
                 echo view('Includes/header');
                 echo view('Jefes/navbar', ["activo" => "responsables"]);
-                echo view('Jefes/Responsables/editar', ["responsable" => $responsable]);
+                echo view('Jefes/Responsables/editar', [
+                    "responsable" => $responsable,
+                    "periodos" => $periodo
+                    ]);
                 echo view('Includes/footer');
             }
             else
@@ -151,6 +120,7 @@ class ResponsableController extends BaseController
                 "apaterno" => mb_strtoupper($this->request->getPost("apaterno"), 'utf-8'),
                 "amaterno" => mb_strtoupper($this->request->getPost("amaterno"),'utf-8'),
                 "telefono" => $this->request->getPost("telefono"),
+                "periodo" => $this->request->getPost("periodo"),
                 "correo" => $this->request->getPost("correo")
             ];
 
@@ -215,6 +185,42 @@ class ResponsableController extends BaseController
             $this->session->setFlashdata('error', $respuesta['msj']);
         }
         return redirect('jefes/responsables');
+    }
+
+    public function periodo()
+	{
+		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
+        {
+
+		$periodoPost =  $this->request->getGet("periodo");
+		// echo $periodoPost;
+		// // if ( empty($periodoPost)
+		if ( empty($periodoPost) || $periodoPost == '0') return redirect('jefes/responsables');
+
+		$id_area = $this->session->usuario_logueado->id_area;
+		$responsables = $this->responsableService->getActividadPorIdareaPeriodo($id_area, $periodoPost);
+		$periodo = $this->responsableService->getPeriodo();
+
+		//$responsables = $this->areaService->get_responsable_area_y_sin_asignar($id_area);
+		
+		echo view('Includes/header');
+		echo view('Jefes/navbar', ["activo" => "responsables"]);
+		echo view('Jefes/Responsables/listar', [				
+			//'actividades' => $actividades,
+			'areas' => $id_area,
+			'responsables' => $responsables,
+			'periodos' => $periodo
+		]);
+		echo view('Includes/footer');
+	
+			}
+			else
+			{
+				return 
+				redirect('/');
+				
+			}
+
     }
 
 

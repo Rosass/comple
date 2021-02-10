@@ -52,7 +52,7 @@ class AreaService
     }
 
     /**
-     * Actualiza los datos de un responsable en la BD
+     * Actualiza los datos de un responsable en la BD ---
      * @param array $datos
      * @return array
      */
@@ -71,7 +71,6 @@ class AreaService
         {
             return ["exito" => false, "msj" => "Id de area no válido!."];
         }
-       
     }
 
     public function cambiarEstatus($id_area)

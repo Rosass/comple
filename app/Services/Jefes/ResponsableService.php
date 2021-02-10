@@ -29,7 +29,10 @@ class ResponsableService
             }
         return $newResponsable;
     }
-
+    public function getActividadPorIdareaPeriodo($id_area, $periodo)
+	{   
+        return $this->responsableModel->getActividadPorIdareaPeriodo($id_area, $periodo);
+    }
 
     /**
      * Obtiene los responsables por estatus de la BD
@@ -38,11 +41,6 @@ class ResponsableService
     public function getResponsablesPorEstatus($estatus)
 	{   
         return $this->responsableModel->getResponsablesPorEstatus($estatus);
-    }
-
-    public function getActividadPorIdareaPeriodo($id_area, $perido)
-	{   
-        return $this->responsableModel->getActividadPorIdareaPeriodo($id_area, $perido);
     }
 
     public function getPeriodo()
@@ -74,7 +72,7 @@ class ResponsableService
     }
 
     /**
-     * Actualiza los datos de un responsable en la BD
+     * Actualiza los datos de un responsable en la BD --
      * @param array $datos
      * @return array
      */

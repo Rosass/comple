@@ -15,21 +15,24 @@
 						<i class="fas fa-pen"></i>  EDICIÓN DE ACTIVIDAD
 					</div>
 					<div class="card-body">	
+						<!---------es este select ---------- -->
 					<div class="row justify-content-center">
 							<div class="col-md-4">
 								<div class="form-group">
+									<input type="hidden" name="id_actividad" value="<?= $id_actividad ?>">
 									<label for="confirmar_clave">RESPONSABLE</label>
 									<select class="custom-select" name="rfc_responsable">
                                         <?php if($actividad->rfc_responsable == null) : ?>
                                             <option selected disabled>Elige un responsable</option>
                                         <?php endif ?>
-                                        <?php foreach($responsables as $key => $responsable) : ?>
-										    <option value="<?= $responsable->rfc_responsable ?>" <?= ($responsable->rfc_responsable == $actividad->rfc_responsable) ? 'selected' : '' ?>><?= $responsable->nombre . " " . $responsable->apaterno . " (". $responsable->rfc_responsable . ")" ?></option>
-										<?php endforeach ?>
+                                        <?php foreach($responsable as $key => $responsable) : ?>
+										    <option value="<?= $responsable->rfc_responsable ?>" <?= ($responsable->rfc_responsable == $actividad->rfc_responsable) ? 'selected' : '' ?>><?= $responsable->nombre . " " . $responsable->apaterno . " ". $responsable->amaterno . "" ?></option>
+										<?php endforeach ?>>
 									</select>
 								</div>
 							</div>				
 						</div>
+						<!---------------------------------------------------- -->
 						<small>Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">
                             <div class="dropdown-divider"></div>

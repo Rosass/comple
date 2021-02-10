@@ -12,7 +12,7 @@
             </div>
         </div>
     </footer>
-    <!-- FIN DEL FOOTER -->
+    <!-- FIN DEL FOOTER----- -->
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -99,6 +99,7 @@ class InscripcionController extends BaseController
 	public function guardar()
     {
         $reglas = $this->validation->getRuleGroup('inscripcionReglas');
+        
 
         if (!$this->validate($reglas))
         {
@@ -115,6 +116,7 @@ class InscripcionController extends BaseController
                 "nota" => $this->request->getPost("nota"),
                 "estatus" => 2
             ];
+
 
             $respuesta =  $this->inscripcionService->guardar($datos);
 
