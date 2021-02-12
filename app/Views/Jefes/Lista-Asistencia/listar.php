@@ -1,138 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <title>Lista de Asistencia</title>
-   <style type="text/css">
-   table,th,td{
-      border: 1.5px solid black;
-      border-collapse: collapse;
-   }
-   td,th{
-      text-align: center;
-   }
-   td.a{
-      text-indent: 10px;
-   }
-   h3{
-      text-align: center;
-   }
-   th{
-      font-size: 85%;
-   }
-   p,i.a{
-      font-style: Arial;
-   }
-   p{
-      font-size: 85%;
-   }
-   #piedepagina{
-      width: 800px;
-      position: static;
-      bottom: 0 !important;
-      bottom: -1px;
-      height: 4rem;
-   }
-   #principal{
-   size:A4 landscape;
-   size:auto;
-   page-break-before: auto;
-   page-break-after:avoid ;
-   }
-   #alto{
-      height: 2%;
-   }
-   #m{
-      margin-top: -18px;
-   }
-   #m2{
-      margin-top: -900px;
-   }
-   </style>
-</head>
-<body>
-   <header>
-      <table>
-         <tr>
-               <th  rowspan="3" style="width:25%;"><?php
+<html>
+   <head>
+      <style>
+            /** Define the margins of your page **/
+            @page {
+               margin: 120px 35px;
+            }
+
+            header {
+               position: fixed;
+               top: -90px;
+               left: 0px;
+               right: 0px;
+               height: 40px;
+               margin-top: -26px;
+
+                /** Extra personal styles **/
+               text-align: center;
+            }
+
+            footer {
+               position: fixed; 
+               bottom: 0px; 
+               left: 0px; 
+               right: 0px;
+               height:100px; 
+
+                /** Extra personal styles **/
+               text-align: center;
+            }
+            #div{
+               float: left;
+            }
+
+            table,th,td{
+               border: 1.5px solid black;
+               border-collapse: collapse;
+
+            }
+            td,th{
+            text-align: center;
+         }
+         td.a{
+            text-indent: 10px;
+         }
+         h3{
+            text-align: center;
+         }
+         th{
+            font-size: 85%;
+         }
+         p,i.a{
+            font-style: Arial;
+         }
+         p{
+            font-size: 85%;
+         }   
+         #alto{
+            height: 2.5%;
+         }
+         #m{
+            margin-top: 15px;
+         }
+         #m2{
+            margin-top: -88px;
+         }
+         #tabla2{
+            margin: 99px 0px;
+            min-height: 50px;
+            max-height: 50pc;
+         }
+         
+      </style>
+   </head>
+   <body>
+      <!-- Define header and footer blocks before your content -->
+      <header>
+            <table style="width:100%;">
+               <tr >
+                  <th rowspan="3" style="width:20%; height:auto;"> <?php
                $path = 'public/img/ISO.png'; 
                $type = pathinfo($path, PATHINFO_EXTENSION);
                $data = file_get_contents($path);
                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
                ?>
-               <img " style="width:38%; "  src="<?= $base64 ?>"></th>
-               <th class="border" style="width:40%;" rowspan="2">Formato para el Registro de Participantes de Actividades <?php foreach($actividad as  $a) : ?> <?php if ($a->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
+               <img " style="width:50%; "  src="<?= $base64 ?>"></th>
+                  <th class="border" style="width: 40%;" rowspan="2">Formato para el Registro de Participantes de Actividades <?php foreach($actividad as  $a) : ?> <?php if ($a->tipo_actividad == 'DEPORTIVA') echo 'Cultural y/o Deportiva';
                if ($a->tipo_actividad == 'CULTURAL') echo 'Cultural y/o Deportiva';
                if ($a->tipo_actividad == 'ACADEMICA') echo 'ACADEMICA'; ?></th><?php endforeach ?>
-               <th>Código: TecNM-VI-PO-003-01</th>
-            </tr>
-            <tr>
-               <td>Revisión: 0</td>
-            </tr>
-            <tr>
-               
-            <td>Referencia a la Norma ISO 9001:2015: 8.1, 8.2.1, 8.2.2</td>
-               <td>Página </td>
-            </tr>
-         </table>
-      <?php foreach($areas as $ar) : ?>
-      <h4 style="text-align: center;">INSTITUTO TECNOLÓGICO DE POCHUTLA</h4>
-      <p style="text-align:center; font-size:70%;"><strong>SUBDIRECCION DE PLANEACIÓN Y VINCULACION</strong><br>
-      <strong><?=  $ar->nombre_area ?></strong><br> <?php endforeach ?>
-      <?php foreach($actividad as  $a) : ?> 
-      <strong >OFICINA DE PROMOCIÓN:</strong> <?= $a->tipo_actividad?><br>
-      <strong>ACTIVIDAD: </strong> <?= $a->nombre_actividad?></P>
-         <?php endforeach ?>
-      </table>
-   </header>
-   <div id="principal">
-   <table style="width:100%; font-size:90%;">
-         <thead>
-            <tr>
-               <th>No</th>
-               <th>NOMBRE</th>
-               <th>CONTROL</th>
-               <th>ESP</th>
-               <th>SEM</th>
-               <th>OBSERVACIONES</th>
-            </tr>
-         </thead>
-         <tbody >
-            <?php foreach($alumnos as $key => $alumno) : ?>
-            <tr>
-               <th id="alto" scope="row" style="font-size:80%; width: 4%;"><?= $key + 1 ?></th>
-               <td id="alto" class="a" style="text-align: left; width: 50%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
-               <td id="alto" style="width: 15%;font-size:85%;"><?= $alumno['num_control']?></td>
-               <td id="alto"><?= $alumno['carrera']?></td>
-               <td id="alto"><?= $alumno['semestre']?></td>
-               <td id="alto"></td>
-            </tr>
-            <?php endforeach ?>
-         </tbody>
-      <?php date_default_timezone_set('America/Mexico_city');
-      $fecha = date("d");
-      $fecha1 = date("Y");
-      ?>
-      <?php
-      $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-      ?><br><br><br><br>
-         <p style="font-size: 90%;">Lugar y fecha: San Pedro Pochutla a <?= $fecha ?> de <?php echo $meses[date('n')-1];?> del <?= $fecha1 ?></p>
-      </table>
-   </div><br><break>
-   <?php foreach($areas as $ar) : ?>
-   <footer id="piedepagina">
+                  <th>Código:TecNM-VI-PO-003-01</th>
+               </tr>
+               <tr>
+                  <td style="width: 30%;">Revisión: 0</td>
+               </tr>
+               <tr>
+                  <td style="width: 30%;">Referencia a la Norma ISO 9001:2015:8.1, 8.2.1, 8.2.2</td>
+                  <td style="width: 30%;">Página</td>
+               </tr>
+
+            </table>
+      </header>
+
+      <footer>
          <div> 
-            <p style="font-family: Montserrat; font-weight:800; font-size:10pt; text-align:center; margin-right:600px; margin-top:55px;"><?php foreach($actividad as  $act) : ?> <strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?> <hr width="93%"> </strong> promotor</p> <?php endforeach ?>
-            <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-right:120px;  text-align:center; margin-top:-99px;"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?> <hr width="38%"></strong>jefe de oficina de promocion <br><?php  if ( $ar->id_area == '2') echo ' Cultural o Deportiva';
+            <?php date_default_timezone_set('America/Mexico_city');
+            $fecha = date("d");
+            $fecha1 = date("Y");
+            ?>
+            <?php
+            $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+            ?>
+               <p style="font-size: 90%; text-align:left;">Lugar y fecha: San Pedro Pochutla a <?= $fecha ?> de <?php echo $meses[date('n')-1];?> del <?= $fecha1 ?></p>
+            <?php foreach($areas as $ar) : ?>
+               <p style="font-family: Montserrat; font-weight:800; font-size:10pt; text-align:center; margin-right:530px; margin-top:55px;"><?php foreach($actividad as  $act) : ?> <strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?> <hr width="98%"> </strong> promotor</p> <?php endforeach ?>
+            <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-right:45px;  text-align:center; margin-top:-99px;"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?> <hr width="36%"></strong>jefe de oficina de promocion <br><?php  if ( $ar->id_area == '2') echo ' Cultural o Deportiva';
             if ( $ar->id_area == '1') echo 'Academica';?> </p>
-            <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-left:420px;  text-align:center;  margin-top:-160px;"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?> <hr width="68%"></strong> Jefe de Departamento de <br> <?php
+            <p style=" font-family: Montserrat; font-weight:800; font-size:10pt;  margin-left:482px;  text-align:center;  margin-top:-160px;"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?> <hr width="96%"></strong> Jefe de Departamento de <br> <?php
             if ( $ar->id_area == '2') echo ' Actividades Extraescolares';
-            if ( $ar->id_area == '1') echo ' Ingenierias';?></p> <br><br><br><br><br><br>
+            if ( $ar->id_area == '1') echo ' Ingenierias';?></p>
             <p style="font-family: Montserrat;  font-size:10pt; text-align:left; margin-right:550px;  " id="m">TecNM-VI-PO-003-01</p>
             <p style=" font-family: Montserrat;  font-size:10pt;  margin-left:690px; text-align:left;" id="m2">Rev. 0</p>
          </div>
-         <?php endforeach ?>
-   </footer> 
-   </break>
-</body>
+         <?php endforeach ?> 
+      </footer>
+
+      <!-- Wrap the content of your PDF inside a main tag --> 
+      <main>
+      <div class="container">
+               <?php foreach($areas as $ar) : ?>
+                  <h5 style="text-align: center; margin-top:-17;">INSTITUTO TECNOLÓGICO DE POCHUTLA</h5>
+                  <p style="text-align:center; font-size:70%; margin-top:-4;"><strong>SUBDIRECCION DE PLANEACIÓN Y VINCULACION</strong><br>
+                  <strong><?=  $ar->nombre_area ?></strong><br> <?php endforeach ?>
+                  <?php foreach($actividad as  $a) : ?> 
+                  <strong >OFICINA DE PROMOCIÓN:</strong> <?= $a->tipo_actividad?><br>
+                  <strong>ACTIVIDAD: </strong> <?= $a->nombre_actividad?></P>
+               <?php endforeach ?>
+               <table style="width:100%; font-size:90%; margin-top:0%;" id="tabla2" >
+               <thead>
+                  <tr>
+                     <th>No</th>
+                     <th>NOMBRE</th>
+                     <th>CONTROL</th>
+                     <th>ESP</th>
+                     <th>SEM</th>
+                     <th>OBSERVACIONES</th>
+                  </tr>
+               </thead>
+               <tbody >
+                  <?php foreach($alumnos as $key => $alumno) : ?>
+                  <tr>
+                     <th id="alto" scope="row" style="font-size:80%; width: 4%;"><?= $key + 1 ?></th>
+                     <td id="alto" class="a" style="text-align: left; width: 50%; font-size:80%;"><?= $alumno['ap_paterno'] . ' ' . $alumno['ap_materno'] .' '. $alumno['nombre']?></td>
+                     <td id="alto" style="width: 15%;font-size:85%;"><?= $alumno['num_control']?></td>
+                     <td id="alto"><?= $alumno['carrera']?></td>
+                     <td id="alto"><?= $alumno['semestre']?></td>
+                     <td id="alto"></td>
+                  </tr>
+                  <?php endforeach ?>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      </main><br><br>
+   </body>
 </html>

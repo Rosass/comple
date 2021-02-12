@@ -1,0 +1,135 @@
+CRITICAL - 2021-02-11 15:18:38 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Jefes/Lista-Asi...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(40): view('Jefes/Lista-Asi...', Array)
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-02-11 16:16:47 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('14')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('14', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 16:23:47 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('14')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('14', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 16:24:00 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('14')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('14', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 16:31:17 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('14')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('14', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 16:31:30 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('14')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('14', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 19:00:04 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('11')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('11', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 19:01:15 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('11')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('11', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 19:10:07 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('11')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('11', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 19:23:07 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-11 21:23:02 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-11 22:52:58 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('9')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('9', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 23:00:01 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('9')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('9', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-11 23:42:04 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `insc`.`...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Models\Jefes\AsistenciaModel.php(55): App\Models\Jefes\AsistenciaModel->get_inscripciones('9')
+#4 C:\xampp\htdocs\comple\app\Controllers\Jefes\AsistenciaController.php(24): App\Models\Jefes\AsistenciaModel->get_actividad_alumno('9', 2)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\AsistenciaController->listaAsistencia()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\AsistenciaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
