@@ -112,9 +112,9 @@ class InscripcionController extends BaseController
                 "num_control" => mb_strtoupper($this->request->getPost("num_control"), 'utf-8'),
                 "periodo" => $this->request->getPost("periodo"),
                 "id_actividad" => $this->request->getPost("id_actividad"),
-                "telefono" => $this->request->getPost("telefono"), 
+                "telefono" => $this->request->getPost("telefono"),
                 "nota" => $this->request->getPost("nota"),
-                "estatus" => 2, 
+                "estatus" => 2
             ];
 
 
