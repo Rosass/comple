@@ -10,11 +10,11 @@
       </div>
       <div class="modal-body pb-0 text-center">
         <form action="<?= base_url("admin/usuarios/agregar") ?>" method="POST" class="needs-validation" novalidate>
-           <div class="row">
+          <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="usuario">USUARIO (*)</label>
-                        <input type="text" class="form-control text-uppercase" id="usuario" name="usuario" required value="<?= old("usuario") ?>">
+                        <input type="text" class="form-control" placeholder="usuario en minuscula" id="usuario" name="usuario" required value="<?= old("usuario") ?>">
                         <div class="invalid-feedback">
 				                  Por favor, rellena este campo
 				                </div>

@@ -37,8 +37,13 @@ class ActividadService
      */
     public function getActividadesPorEstatus($estatus)
 	{   
-       return $this->actividadModel->getActividadesPorEstatus($estatus, true);
+        return $this->actividadModel->getActividadesPorEstatus($estatus, true);
     }
+    public function getTiposPorEstatus($id_area)
+	{   
+        return $this->actividadModel->getTiposPorEstatus($id_area);
+    }
+    
     /**
      * Guarda una nueva actividad en la BD
      * @param array $datos

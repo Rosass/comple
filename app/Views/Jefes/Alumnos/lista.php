@@ -54,15 +54,8 @@ $session = session(); ?>
                                 <td><?= $alumno['semestre'] ?></td>
                                 <td><?= $alumno['valor_numerico'] ?></td> 
                                 <td><?= $alumno['nivel_desempeno'] ?></td>  
-                                <td style="width:8%;">  
-                                <?php $url = "";
-                                if ( substr($alumno['periodo'], 0, -1 ) == '2020')
-                                {
-                                    $url = "jefes/constancia";
-                                } else if ( substr($alumno['periodo'], 0, -1 ) == '2021')
-                                {
-                                    $url = "jefes/constancia-2021";
-                                }
+                                <td style="width:8%;">
+                                <?php
                                 if ( $alumno['valor_numerico'] >= 1)
                                     :?>
                                     <div class="d-flex flex-column">
@@ -76,12 +69,13 @@ $session = session(); ?>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
-                                                </div>                                          
-                                                <form action="<?= base_url( $url ) ?>" method="POST" target="_blank">                                              
+                                                </div>
+                                                <form action="<?= base_url( 'jefes/constancia' ) ?>" method="POST" target="_blank">
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label for="recipient-name" class="col-form-label">* N° control</label>
                                                             <input type="text" class="form-control" id="ncontrol" name="ncontrol" value="<?=$alumno['num_control']?>" placeholder="No. Control" readonly>
+                                                            <input type="hidden" name="periodo" value=<?= substr($alumno['periodo'], 0, -1 ) ?> >
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="message-text" class="col-form-label">*Agrega el folio</label>
@@ -97,11 +91,11 @@ $session = session(); ?>
                                             </div>
                                         </div>
                                     </div>
-                                <?php endif;?> 
-                                <?php 
+                                <?php endif;?>
+                                <?php
                                 if ( $alumno['nivel_desempeno'] == 'Insuficiente') echo "<strong style='color: red;'>No Acreditado</strong>";
                                 ?>
-                                
+
                                 </td>
                             </tr>
                         <?php endforeach ?>

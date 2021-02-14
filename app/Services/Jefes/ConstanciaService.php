@@ -39,5 +39,4 @@ class ConstanciaService
 	{   
     return $this->constanciaModel->getArea($id_area);
     }
-   
 } 

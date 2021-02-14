@@ -156,6 +156,14 @@ class ActividadModel extends Model
         ->get()->getResult();
     }
 
+    public function getTiposPorEstatus( $id_area )
+    {
+        return $this->db->table("tipo_actividad")
+        ->select("id_tipo_actividad, nombre")
+        ->where("id_area", $id_area)
+        ->get()->getResult();
+    }
+
     public function getArea()
     {
         return $this->db->table('area')

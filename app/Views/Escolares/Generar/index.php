@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Constancia Parcial</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;800&display=swap" rel="stylesheet">
     <style type="text/css">
     table ,th,td{
     border:1.5px solid black;
@@ -25,8 +27,30 @@
     position: absolute;
     bottom:0 !important;
     bottom: -1px;
-
 }
+
+#regular{
+        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 11pt;
+        float: none;
+    }
+    #extrabold{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 12pt;
+    }
+    #extrabold1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 10pt;
+    }
+    #extralight{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 9pt;
+    }
 </style>
 </head>
 <body>
@@ -50,17 +74,17 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     <p style=" text-align:right;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p>  
     <p  style=" margin-left:510px; text-align:justify; margin-top:-1.5%;"><strong> Folio:</strong> llV.1.1.5.0.0/SE/<?php echo $folio ?>/<?= $fecha1 ?></p>
 </div>
-    <h5><strong>A QUIEN CORRESPONDA:</strong></h5>
-    <P style="text-align: justify;">Por este medio se hace constar que según documentos que existen en el archivo del Instituto Tecnólogico de Pochutla, clave 20DIT0011V el (la) C.</P>
+    <h5 id="extrabold1"><strong>A QUIEN CORRESPONDA:</strong></h5>
+    <P style="text-align: justify;" id="regular">Por este medio se hace constar que según documentos que existen en el archivo del Instituto Tecnólogico de Pochutla, clave 20DIT0011V el (la) C.</P>
     <div>
     <?php foreach ( $alumno as $a ):?>
-        <p style="text-align:center;"><strong> 
+        <p style="text-align:center;" id="extrabold"><strong> 
         <?=$a->nombre?>
         <?=$a->ap_paterno?>
         <?=$a->ap_materno?></strong><br/>
         <strong>NUM. DE CONTROL: <?= $control?></strong></p>
     </div>
-<p style="text-align: justify;">Alumno de la carrera de <strong> <?php
+<p style="text-align: justify;"  id="regular">Alumno de la carrera de <strong> <?php
         if ( $a->carrera == 'ISC') echo 'INGENIERIA EN SISTEMAS COMPUTACIONALES';
         if ( $a->carrera == 'ICI') echo 'INGENIERIA CIVIL';
         if ( $a->carrera == 'IGE') echo 'INGENIERIA EN GESTION EMPRESARIAL';
@@ -99,10 +123,10 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     $date = date("d");
     $date1 = date("Y")
 ?>
-<p style="text-align: justify;">A petición del interesado y para los efectos a que haya lugar, se extiende la presente en la ciudad de San Pedro Pochutla, Oaxaca, a los <?=$date?> dias del mes de  <?php echo $meses[date('n')-1];?> del  <?=$date1?>.</p><br/>
+<p style="text-align: justify;"  id="regular">A petición del interesado y para los efectos a que haya lugar, se extiende la presente en la ciudad de San Pedro Pochutla, Oaxaca, a los <?=$date?> dias del mes de  <?php echo $meses[date('n')-1];?> del  <?=$date1?>.</p><br/>
 <P style="font-size:80%;"><strong>ATENTAMENTE</strong><br/>
 <strong> EXCELENCIA EN EDUCACIÓN TECNOLÓGICA</strong><br/>
-<strong>"Tecnologia y Ciencia como medios de independencia"</strong></P><br/><br/>
+<strong style =" font-style:italic;">"Tecnologia y Ciencia como medios de independencia"</strong></P><br/><br/>
 <p style="font-size:80%;"><strong> ING.ALBERTO SALINAS SÁNCHEZ</strong><br/>
 <strong>JEFE DEL DEPTO. DE SERVICIOS ESCOLARES</strong></p>
 

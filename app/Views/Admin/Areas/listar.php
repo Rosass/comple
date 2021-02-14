@@ -28,7 +28,7 @@
                         <tr>
                             <th scope="col" class="border-top-0">#</th>
                             <th scope="col" class="border-top-0">NOMBRE</th>
-                            <th scope="col" class="border-top-0">RFC JEFE</th>
+                            <th scope="col" class="border-top-0">NOMBRE JEFE</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
                             <th scope="col" class="border-top-0"></th>
                         </tr>
@@ -38,7 +38,7 @@
                             <tr>
                                 <th scope="row"><?= $key + 1 ?></th>
                                 <td><?= $area->nombre_area ?></td>
-                                <td><?= $area->rfc_jefe ?></td>
+                                <td><?= $area->nombre_jefe. " " .$area->apaterno_jefe. " " .$area->amaterno_jefe ?></td>
                                 <td>
                                     <?php if($area->estatus == true) : ?>
                                         <span class="bg-success p-1 rounded small text-white">Activo</span>
