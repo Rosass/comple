@@ -105,7 +105,7 @@ class AsistenciaController extends BaseController
 				header('Content-Disposition: inline; filename="document.pdf"');
 				header('Content-Transfer-Encoding: binary');
 
-				$dompdf->stream("Lista Asistencia - ".$id_actividad.".pdf", array("Attachment" => false));
+				$dompdf->stream("Lista Calificacion - ".$id_actividad.".pdf", array("Attachment" => false));
 				exit();
 				}
 				else
