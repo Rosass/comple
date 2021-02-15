@@ -27,7 +27,8 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text"><i class="fas fa-key"></i></div>
                     </div>
-                    <input type="password" class="form-control" id="clave" placeholder="CLAVE" name="clave" required>
+                    <input type="password" class="form-control" placeholder="CLAVE" name="clave" required>
+                    <span id="campoOK"></span>
                 </div>
                 <button type="submit" class="btn bg-color-tec-blue btn-lg btn-block text-white btnEnviarFormulario">Iniciar sesión <i class="far fa-arrow-alt-circle-right small"></i></button>
                 <div class="form-group text-center mt-4 mb-0">

@@ -48,12 +48,12 @@
                     </div>
 							    </div>
 						    </div>
-				     </div>         
-             <div class="row justify-content-center">
+				    </div>         
+            <div class="row justify-content-center">
                   <div class="col-md-6">
                     <div class="form-group">
-                        <label for="clave">CLAVE (*)</label>
-                        <input type="password" class="form-control" id="clave" name="clave" required value="<?= old("clave") ?>">
+                        <label for="clave">CLAVE(*)</label>
+                        <input type="password" class="form-control" id="clave" name="clave" placeholder="contraseña" required value="<?= old("clave") ?>">
                         <div class="invalid-feedback">
 				                Por favor, rellena este campo
 				                </div>
@@ -62,7 +62,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="confirmar_clave">REPETIR CLAVE (*)</label>
-                        <input type="password" class="form-control" id="confirmar_clave" name="confirmar_clave" required value="<?= old("confirmar_clave") ?>">
+                        <input type="password" class="form-control" id="confirmar_clave" placeholder="contraseña" name="confirmar_clave" required value="<?= old("confirmar_clave") ?>">
                         <div class="invalid-feedback">
 				            Por favor, rellena este campo
 				        </div>

@@ -29,6 +29,7 @@
     <script src="<?= base_url("public/js/consulta.js") ?>"></script>
     <script src="<?= base_url("public/js/validateForms.js") ?>"></script>
     <script src="<?= base_url("public/js/select2.js") ?>"></script>
+    <script src="<?= base_url("public/js/clave.js") ?>"></script>
     <!-- ================================================================================================ -->
     <!-- ------------- Select------Script-------------- -->
     <script src="<?= base_url("public/js/select-actividad.js") ?>"></script> 

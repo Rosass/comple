@@ -197,5 +197,8 @@ $routes->get('jefes/responsables/editar/(:any)', 'Jefes/ResponsableController::e
 $routes->post('jefes/responsables/editar', 'Jefes/ResponsableController::actualizar');
 $routes->post('jefes/responsables/editar-clave', 'Jefes/ResponsableController::actualizarClave');
 $routes->post('jefes/responsables/cambiar-estatus', 'Jefes/ResponsableController::cambiarEstatus');
-
+//cambiar clave de jefes
+$routes->get('jefes/cambiar-clave', 'Jefes/CambiarController::index');
+$routes->get('jefes/cambiar-clave/editar(:any)', 'Jefes/CambiarController::editar');
+$routes->post('jefes/cambiar-clave/editar-clave', 'Jefes/CambiarController::actualizarClave');
 

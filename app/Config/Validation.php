@@ -63,6 +63,10 @@ class Validation
 		'clave'     => 'required|min_length[8]',
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
 	];
+	public $editar11ClaveReglas = [
+		'clave'     => 'required|min_length[8]',
+		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
+	];
 
 	public $periodoReglas = [
 		'periodo'     => 'required',
