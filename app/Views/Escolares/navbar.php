@@ -18,7 +18,9 @@
 						<li class="nav-item <?= ($activo == 'inicio') ? 'active' : '' ?>">
         					<a class="nav-link" href="<?= base_url('escolares/inicio') ?>">Consultas</a>
       					</li> 
-      					
+						<li class="nav-item <?= ($activo == 'cambiar clave') ? 'active' : '' ?>">
+        		    	<a class="nav-link" href="<?= base_url('escolares/cambiar-clave') ?>">Cambiar Clave</a>
+      	        		</li>
 					</ul>
 					<span class="navbar-text">
 						<form action="<?= base_url("logout") ?>" method="POST">
