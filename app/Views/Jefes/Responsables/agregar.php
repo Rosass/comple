@@ -31,11 +31,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="amaterno">APELLIDO MATERNO (*)</label>
-                        <input type="text" class="form-control text-uppercase" id="amaterno" name="amaterno" required value="<?= old("amaterno") ?>">
-                        <div class="invalid-feedback">
-				            Por favor, rellena este campo
-				        </div>
+                        <label for="amaterno">APELLIDO MATERNO </label>
+                        <input type="text" class="form-control text-uppercase" id="amaterno" name="amaterno" value="<?= old("amaterno") ?>">
                     </div>
                 </div>
             </div>
@@ -52,16 +49,13 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="telefono">TELEFONO</label>
-                        <input type="text" class="form-control" id="telefono" name="telefono" value="<?= old("telefono") ?>">
+                        <input type="number" class="form-control" id="telefono" name="telefono"  value="<?= old("telefono") ?>">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="correo">CORREO</label>
                         <input type="email" class="form-control" id="correo" name="correo" value="<?= old("correo") ?>">
-                        <div class="invalid-feedback">
-				            Por favor, introduce un correo válido
-				        </div>
                     </div>
                 </div>
             </div>
