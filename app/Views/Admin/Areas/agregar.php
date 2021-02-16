@@ -24,16 +24,13 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="form-group">
-                        <label for="rfc_jefe">RFC (*)</label>
-                        <select class="custom-select" name="rfc_jefe" required>
+                        <label for="rfc_jefe">RFC </label>
+                        <select class="custom-select" name="rfc_jefe">
                             <option selected disabled value="">Elige un jefe</option>
                             <?php foreach($jefes as $key => $jefe) : ?>
                                 <option value="<?= $jefe->rfc_jefe ?>"><?= $jefe->rfc_jefe ?> : <?= $jefe->nombre_jefe . " " . $jefe->apaterno_jefe ?></option>
                             <?php endforeach ?>
                         </select>
-                        <div class="invalid-feedback">
-                            Por favor, rellena este campo
-                        </div>
                     </div>
                 </div>
             </div>

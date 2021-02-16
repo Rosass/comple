@@ -120,12 +120,12 @@ class Validation
 
 	public $areaReglas = [
 		'nombre_area'     => 'required',
-		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
+		//'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
 	];
 	
 	public $editarAreaReglas = [
 		'nombre_area'     => 'required',
-		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
+		//'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
 	];
 
 	public $usuarioReglas = [
