@@ -88,15 +88,17 @@
                             <input type="hidden" class="form-control disabled" id="rfc" name="rfc" value="<?= $responsable->rfc_responsable ?>">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="clave">NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control" name="clave" required>
+                                    <label for="clave210">NUEVA CLAVE (*)</label>
+                                    <input type="password" class="form-control" name="clave210" id="clave210" required>
+									<small id="edi"></small>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="confirmar_clave">REPETIR NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control"  name="confirmar_clave" required>
-                                </div>
+                                    <label for="confirmar_clave210">REPETIR NUEVA CLAVE (*)</label>
+                                    <input type="password" class="form-control"  name="confirmar_clave210" id="confirmar_clave210" required>
+									<small id="ed"></small>
+								</div>
                             </div>
                         </div>
                         <small>Los campos marcados con (*) son obligatorios.</small>

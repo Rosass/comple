@@ -30,6 +30,13 @@
     <script src="<?= base_url("public/js/validateForms.js") ?>"></script>
     <script src="<?= base_url("public/js/select2.js") ?>"></script>
     <script src="<?= base_url("public/js/clave.js") ?>"></script>
+    <script src="<?= base_url("public/js/clave1.js") ?>"></script>
+    <script src="<?= base_url("public/js/clave2.js") ?>"></script>
+    <script src="<?= base_url("public/js/clave3.js") ?>"></script>
+    <script src="<?= base_url("public/js/clave4.js") ?>"></script>
+    <script src="<?= base_url("public/js/clave5.js") ?>"></script>
+    <script src="<?= base_url("public/js/clave6.js") ?>"></script>
+    <script src="<?= base_url("public/js/clave7.js") ?>"></script>
     <!-- ================================================================================================ -->
     <!-- ------------- Select------Script-------------- -->
     <script src="<?= base_url("public/js/select-actividad.js") ?>"></script> 

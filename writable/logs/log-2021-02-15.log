@@ -165,3 +165,9 @@ CRITICAL - 2021-02-15 13:56:18 --> Trying to get property 'usuario' of non-objec
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2021-02-15 14:59:25 --> Class 'App\Services\Escolares\CambiarService' not found
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(890): App\Controllers\Escolares\CambiarController->__construct()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

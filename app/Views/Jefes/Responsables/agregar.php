@@ -83,7 +83,8 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="clave">CLAVE (*)</label>
-                        <input type="password" class="form-control" id="clave" name="clave" required value="<?= old("clave") ?>">
+                        <input type="password" class="form-control" id="clave21" name="clave21" required value="<?= old("clave") ?>">
+                        <small id="camp"></small>
                         <div class="invalid-feedback">
 				            Por favor, rellena este campo
 				        </div>
@@ -92,7 +93,8 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="confirmar_clave">REPETIR CLAVE (*)</label>
-                        <input type="password" class="form-control" id="confirmar_clave" name="confirmar_clave" required value="<?= old("confirmar_clave") ?>">
+                        <input type="password" class="form-control" id="confirmar_clave1" name="confirmar_clave" required value="<?= old("confirmar_clave") ?>">
+                        <small id="cam"></small>
                         <div class="invalid-feedback">
 				            Por favor, rellena este campo
 				        </div>

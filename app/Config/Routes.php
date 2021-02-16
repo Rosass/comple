@@ -109,6 +109,11 @@ $routes->get('division/tipos-actividades/editar/(:any)', 'Division/TipoActividad
 $routes->post('division/tipos-actividades/editar', 'Division/TipoActividadController::actualizar');
 $routes->post('division/tipos-actividades/cambiar-estatus', 'Division/TipoActividadController::cambiarEstatus');
 
+//cambiar clave de division
+$routes->get('division/cambiar-clave', 'Division/CambiarController::index');
+$routes->get('division/cambiar-clave/editar(:any)', 'Division/CambiarController::editar');
+$routes->post('division/cambiar-clave/editar-clave', 'Division/CambiarController::actualizarClave');
+
 
 // Rutas [ADMIN-Jefes]
 $routes->get('admin/jefes', 'Admin/JefeController::index');
@@ -173,6 +178,10 @@ $routes->get('escolares/inicio', 'Escolares/ActividadController::index');
 $routes->post('buscar', 'Escolares/ActividadController::buscar');
 $routes->post('escolares/generar-parcial', 'Escolares/GenerarController::constanciaParcial');
 $routes->post('escolares/generar-liberacion', 'Escolares/GenerarController::constanciaLiberacion');
+//cambiar clave de escolares
+$routes->get('escolares/cambiar-clave', 'Escolares/CambiarController::index');
+$routes->get('escolares/cambiar-clave/editar(:any)', 'Escolares/CambiarController::editar');
+$routes->post('escolares/cambiar-clave/editar-clave', 'Escolares/CambiarController::actualizarClave');
 
 
 //Rutas [Jefes Area actividades]

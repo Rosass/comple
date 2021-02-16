@@ -52,8 +52,10 @@
             <div class="row justify-content-center">
                   <div class="col-md-6">
                     <div class="form-group">
-                        <label for="clave">CLAVE(*)</label>
-                        <input type="password" class="form-control" id="clave" name="clave" placeholder="contraseña" required value="<?= old("clave") ?>">
+                        <label for="clave1">CLAVE(*)</label>
+                        <input type="password" class="form-control" id="clave1" name="clave" pattern="(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ].*"
+                        title="Debe tener al menos una mayúscula, una minúscula y un dígito" placeholder="contraseña" required value="<?= old("clave") ?>">
+                        <small id="campoOK"></small>
                         <div class="invalid-feedback">
 				                Por favor, rellena este campo
 				                </div>
@@ -63,6 +65,7 @@
                     <div class="form-group">
                         <label for="confirmar_clave">REPETIR CLAVE (*)</label>
                         <input type="password" class="form-control" id="confirmar_clave" placeholder="contraseña" name="confirmar_clave" required value="<?= old("confirmar_clave") ?>">
+                        <small id="campo"></small>
                         <div class="invalid-feedback">
 				            Por favor, rellena este campo
 				        </div>

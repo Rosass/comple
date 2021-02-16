@@ -1,13 +1,13 @@
 document
-.getElementById('clave1')
+.getElementById('clave2110981')
 .addEventListener('input', function(evt) {
-    const clave1 = evt.target,
-        valido = document.getElementById('campoOK'),
+    const clave2110981 = evt.target,
+        valido = document.getElementById('msj5'),
         
         regex = /^(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ].*[0-9].*[!@#$%&*]/;
 
     //Se muestra un texto válido/inválido a modo de ejemplo
-    if (regex.test(clave1.value)) {
+    if (regex.test(clave2110981.value)) {
     valido.innerText = "válido";
     } else {
     valido.innerText = "Debe tener al menos una  minúscula, una mayúscula, un número y un simbolo";
@@ -15,15 +15,15 @@ document
 });
 
 document
-.getElementById('confirmar_clave')
+.getElementById('confirmar_clave2110981')
 .addEventListener('input', function(evt) {
-    const confirmar_clave = evt.target,
-        valido = document.getElementById('campo'),
+    const confirmar_clave2110981 = evt.target,
+        valido = document.getElementById('msj6'),
         
         regex = /^(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ].*[0-9].*[!@#$%&*]/;
 
     //Se muestra un texto válido/inválido a modo de ejemplo
-    if (regex.test(confirmar_clave.value)) {
+    if (regex.test(confirmar_clave2110981.value)) {
     valido.innerText = "válido";
     } else {
     valido.innerText = "Debe tener al menos una  minúscula, una mayúscula, un número y un simbolo";

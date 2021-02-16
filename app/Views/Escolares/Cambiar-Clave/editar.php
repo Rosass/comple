@@ -17,7 +17,7 @@
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                 <?php endif ?>
-                <form action="<?= base_url("jefes/cambiar-clave/editar-clave") ?>" method="POST">
+                <form action="<?= base_url("escolares/cambiar-clave/editar-clave") ?>" method="POST">
                 <div class="card border-0 shadow-lg">
 					<div class="card-header bg-color-tec-blue text-white">
                         <i class="fas fa-pen"></i>  ACTUALIZACIÓN DE CLAVE
@@ -27,23 +27,23 @@
                             <input type="hidden" class="form-control disabled" id="usuario" name="usuario" value="<?= $usuario->usuario ?>">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="clave2110">NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control" name="clave2110" id="clave2110" required>
-                                    <small id="clav"></small>
+                                    <label for="clave211098">NUEVA CLAVE (*)</label>
+                                    <input type="password" class="form-control" name="clave211098" id="clave211098" required>
+                                    <small id="msj3"></small>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="confirmar_clave2110">REPETIR NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control"  name="confirmar_clave2110" id="confirmar_clave2110" required>
-                                    <small id="conf"></small>
+                                    <label for="confirmar_clave211098">REPETIR NUEVA CLAVE (*)</label>
+                                    <input type="password" class="form-control"  name="confirmar_clave211098" id="confirmar_clave211098" required>
+                                    <small id="msj4"></small>
                                 </div>
                             </div>
                         </div>
                         <small>Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">
                             <div class="dropdown-divider"></div>
-							<a href="<?= base_url("jefes/cambiar-clave") ?>" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
+							<a href="<?= base_url("escolares/cambiar-clave") ?>" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
                             <button type="submit" class="btn bg-color-tec-blue text-white btnEnviarFormulario"><i class="fas fa-check"></i> Guardar</button>
                         </div>
 					</div>

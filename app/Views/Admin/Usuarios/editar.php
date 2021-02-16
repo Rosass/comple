@@ -65,15 +65,17 @@
                             <input type="hidden" class="form-control disabled" id="usuario" name="usuario" value="<?= $usuario->usuario ?>">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="clave">NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control" name="clave" required>
-                                </div>
+                                    <label for="clave10">NUEVA CLAVE (*)</label>
+                                    <input type="password" class="form-control" name="clave10" id="clave10" required>
+                                    <small id="edita"></small>
+								</div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="confirmar_clave">REPETIR NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control"  name="confirmar_clave" required>
-                                </div>
+                                    <label for="confirmar_clave10">REPETIR NUEVA CLAVE (*)</label>
+                                    <input type="password" class="form-control"  name="confirmar_clave10" id="confirmar_clave10" required>
+                                    <small id="edit"></small>
+								</div>
                             </div>
                         </div>
                         <small>Los campos marcados con (*) son obligatorios.</small>
@@ -84,7 +86,6 @@
                         </div>
 					</div>
 				</div>
-				
 			</form>
 		</div>
 	</div>

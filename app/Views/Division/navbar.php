@@ -30,6 +30,9 @@
 						<li class="nav-item <?= ($activo == 'inscripciones') ? 'active' : '' ?>">
         					<a class="nav-link" href="<?= base_url('division/inscripciones') ?>">Inscripciones</a>
       					</li>
+						<li class="nav-item <?= ($activo == 'cambiar clave') ? 'active' : '' ?>">
+        		    	<a class="nav-link" href="<?= base_url('division/cambiar-clave') ?>">Cambiar Clave</a>
+      	        		</li>
 					</ul>
 					<span class="navbar-text">
 						<form action="<?= base_url("logout") ?>" method="POST">
