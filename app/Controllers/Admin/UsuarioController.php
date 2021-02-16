@@ -51,7 +51,7 @@ class UsuarioController extends BaseController
         else
         {   
             $datos = [
-                "usuario" => strtoupper($this->request->getPost("usuario")),
+                "usuario" => ($this->request->getPost("usuario")),
                 "clave" => password_hash($this->request->getPost("clave") , PASSWORD_DEFAULT, ['cost' => 10]),
                 "id_tipo_usuario" => $this->request->getPost("id_tipo_usuario"),
                 "id_area" => $this->request->getPost("id_area"),
