@@ -3,7 +3,7 @@
 ( () => {
     const selectActividadHTML = document.querySelector('#select-actividad9293');
     if ( !selectActividadHTML ) return;
-
+    
     const selectPeriodoHTML = document.querySelector('#periodo9293');
     const BASE_URL = "http://localhost/comple/";
     //const URL_BASE = 'https://ac.pochutla.tecnm.mx/';
@@ -48,6 +48,7 @@
         const actividades = await consultaFetch( periodo  );
 
         if ( actividades.length <= 0 ) {
+            limpiarHTML( selectActividadHTML );
             selectActividadHTML.add( crearOption('', 'No hay actividades'));
             return;
         }
