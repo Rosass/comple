@@ -49,6 +49,7 @@
         const actividades = await consultaFetch( periodo  );
 
         if ( actividades.length <= 0 ) {
+            limpiarHTML( selectActividadHTML );
             selectActividadHTML.add( crearOption('', 'No hay actividades'));
             return;
         }

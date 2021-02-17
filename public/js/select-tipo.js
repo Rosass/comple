@@ -49,7 +49,8 @@
         const actividades = await consultaFetch( id_area  );
 
         if ( actividades.length <= 0 ) {
-            selectActividadHTML.add( crearOption('', 'No hay actividades'));
+            limpiarHTML( selectActividadHTML );
+            selectActividadHTML.add( crearOption('', 'No hay tipo de actividades'));
             return;
         }
 
