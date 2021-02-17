@@ -1,0 +1,14 @@
+CRITICAL - 2021-02-16 14:13:30 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\comple\system\Database\Query.php(437): implode(',', Array)
+#1 C:\xampp\htdocs\comple\system\Database\Query.php(404): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#2 C:\xampp\htdocs\comple\system\Database\Query.php(197): CodeIgniter\Database\Query->compileBinds()
+#3 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\Query->getQuery()
+#4 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\comple\app\Models\Admin\JefeModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\comple\app\Services\Admin\JefeService.php(76): App\Models\Admin\JefeModel->getJefePorRfc(Array)
+#7 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(18): App\Services\Admin\JefeService->getJefePorRfc(Array)
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
+#10 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
