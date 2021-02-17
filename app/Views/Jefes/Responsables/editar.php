@@ -30,7 +30,7 @@
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="amaterno">APELLIDO MATERNO (*)</label>
+									<label for="amaterno">APELLIDO MATERNO </label>
 									<input type="text" class="form-control text-uppercase" name="amaterno" required value="<?= $responsable->amaterno ?>">
 								</div>
 							</div>
@@ -39,7 +39,7 @@
 							<div class="col-md-4">
 								<div class="form-group">
 									<label for="rfc">RFC (*)</label>
-									<input type="text" class="form-control disabled" name="rfc" value="<?= $responsable->rfc_responsable ?>">
+									<input type="text" class="form-control disabled" name="rfc" value="<?= $responsable->rfc_responsable ?>" readonly>
 								</div>
 							</div>
 							<div class="col-md-4">

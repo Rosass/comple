@@ -39,7 +39,7 @@ class Validation
 	// Rules
 	//--------------------------------------------------------------------
 
-	public $responsableReglas = [
+/* 	public $responsableReglas = [
 		'rfc'     => 'required|min_length[13]|max_length[13]',
 		'nombre'     => 'required',
 		'apaterno'     => 'required',
@@ -48,16 +48,16 @@ class Validation
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
 		'telefono'     => 'min_length[10]|max_length[10]',
         'correo'        => 'valid_email'
-	];
+	]; */
 
-	public $editarResponsableReglas = [
+/* 	public $editarResponsableReglas = [
 		'rfc_responsable' => 'required',
 		'nombre'     => 'required',
 		'apaterno'     => 'required',
 		'amaterno'     => 'required',
 		'telefono'     => 'min_length[10]|max_length[10]',
         'correo'        => 'valid_email'
-	];
+	]; */
 
 	public $editarClaveReglas = [
 		'clave'     => 'required|min_length[8]',
@@ -120,12 +120,12 @@ class Validation
 
 	public $areaReglas = [
 		'nombre_area'     => 'required',
-		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
+		//'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
 	];
 	
 	public $editarAreaReglas = [
 		'nombre_area'     => 'required',
-		'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
+		//'rfc_jefe'     => 'required|min_length[13]|max_length[13]',
 	];
 
 	public $usuarioReglas = [
@@ -170,20 +170,20 @@ class Validation
 		'rfc'     => 'required|min_length[13]|max_length[13]',
 		'nombre'     => 'required',
 		'apaterno'     => 'required',
-		'amaterno'     => 'required',
         'clave'     => 'required|min_length[8]',
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
-		'telefono'     => 'min_length[10]|max_length[10]',
-		'correo'        => 'valid_email',
+	//	'telefono'     => 'min_length[10]|max_length[10]',
+	//	'correo'        => 'valid_email', */
 		'periodo'       => 'required|numeric',
 	];
 
 	public $editarResponsable1Reglas = [
 		'nombre'     => 'required',
 		'apaterno'     => 'required',
-		'amaterno'     => 'required',
+		'periodo'       => 'required|numeric',
+/* 		'amaterno'     => 'required',
 		'telefono'     => 'min_length[10]|max_length[10]',
-		'correo'        => 'valid_email'
+		'correo'        => 'valid_email'  */
 		
 	];
 

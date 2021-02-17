@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2021-02-16 14:13:30 --> Object of class stdClass could not be converted to string
 #0 C:\xampp\htdocs\comple\system\Database\Query.php(437): implode(',', Array)
 #1 C:\xampp\htdocs\comple\system\Database\Query.php(404): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
@@ -12,3 +13,28 @@ CRITICAL - 2021-02-16 14:13:30 --> Object of class stdClass could not be convert
 #10 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #12 {main}
+=======
+CRITICAL - 2021-02-16 14:14:20 --> Unknown column 'a.nombre_area' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `j`.`rfc...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `j`.`rfc...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `j`.`rfc...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `j`.`rfc...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Admin\JefeModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Admin\JefeService.php(21): App\Models\Admin\JefeModel->getJefes()
+#6 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(17): App\Services\Admin\JefeService->getJefes()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-02-16 14:14:35 --> Undefined property: stdClass::$nombre
+#0 C:\xampp\htdocs\comple\app\Views\Admin\Jefes\listar.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Admin/Jefes/lis...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Admin\JefeController.php(21): view('Admin/Jefes/lis...', Array)
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\JefeController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\JefeController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+>>>>>>> 9065a8025d1781808ea98a00d70922bbd7569948

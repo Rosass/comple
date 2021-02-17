@@ -1,9 +1,4 @@
 <?php $session = session(); ?>
-
-<pre>
-    <?php var_dump( $fecha_valida ) ?>
-</pre>
-
 <div class="container">
     <div class="row mt-5">
         <div class="col-md-12">

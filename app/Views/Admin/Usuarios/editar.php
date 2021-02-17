@@ -19,7 +19,7 @@
 							<div class="col-md-5">
 								<div class="form-group">
 									<label for="usuario">USUARIO (*)</label>
-									<input type="text" class="form-control text-uppercase" name="usuario" required value="<?= $usuario->usuario ?>">
+									<input type="text" class="form-control" name="usuario" required value="<?= $usuario->usuario ?>" readonly>
 								</div>
 							</div>
 						</div>
