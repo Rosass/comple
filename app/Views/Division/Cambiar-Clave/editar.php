@@ -27,15 +27,15 @@
                             <input type="hidden" class="form-control disabled" id="usuario" name="usuario" value="<?= $usuario->usuario ?>">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="clave2110981">NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control" name="clave2110981" id="clave2110981" required>
+                                    <label for="clave">NUEVA CLAVE (*)</label>
+                                    <input type="password" class="form-control" name="clave" id="clave2110981" required>
                                     <small id="msj5"></small>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="confirmar_clave2110981">REPETIR NUEVA CLAVE (*)</label>
-                                    <input type="password" class="form-control"  name="confirmar_clave2110981" id="confirmar_clave2110981" required>
+                                    <label for="confirmar_clave">REPETIR NUEVA CLAVE (*)</label>
+                                    <input type="password" class="form-control"  name="confirmar_clave" id="confirmar_clave2110981" required>
                                     <small id="msj6"></small>
                                 </div>
                             </div>
