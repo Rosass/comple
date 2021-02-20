@@ -50,7 +50,6 @@ class Database extends \CodeIgniter\Database\Config
 		'failover' => [],
 		'port'     => 3306,
 	];
-
 	/**
 	 * Base de datos de alumnos
 	 *
