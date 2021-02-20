@@ -26,7 +26,7 @@ class UsuarioService
             return ['exito' => false, 'msj' => 'Usuario o clave inválidos.', 'redirigir_a' => 'login'];
         }
         // si el usuario esta desactivado su estatus no dejara loguearse
-        if ( $usuario_aux->estatus_tipo_usuario == 0 )
+        if ( $usuario_aux->estatus == 0 )
         {
             return ['exito' => false, 'msj' => 'Acceso denegado [USUARIO INHABILITADO].', 'redirigir_a' => 'login'];
         }
