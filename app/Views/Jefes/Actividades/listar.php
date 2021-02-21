@@ -18,12 +18,12 @@
             <?php endif ?>
             <form method="get" action="<?= base_url("jefes/actividades/periodo") ?>">
                     <div class="row mb-3 mt-2 justify-content-end">
-                        <span class="mr-1">Filtro </span>
                             <div class="col-md-5 text-right d-flex align-items-center">
+                            <span class="mr-1">Filtro </span>
                                 <div class="input-group">
                                     <select class="custom-select"  name="periodo">
                                         <option selected disabled value="">Elige el periodo</option>
-                                        <option value="0">ACTIVO</option>
+                                        <option value="0"> PERIODO ACTIVO</option>
                                         <?php foreach($periodos as $key => $periodo) : ?>
                                             <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
                                         <?php endforeach ?>
