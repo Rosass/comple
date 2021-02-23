@@ -27,7 +27,7 @@
                             <div class="input-group">
                                 <select class="custom-select"  name="periodo" id="periodo21">
                                     <option selected disabled value="">Elige el periodo</option>
-                                    <option value="0">ACTIVO</option>
+                                    <option value="0">PERIODO ACTIVO</option>
                                     <?php foreach($periodo as $key => $periodo) : ?>
                                         <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
                                     <?php endforeach ?>
