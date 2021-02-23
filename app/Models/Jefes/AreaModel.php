@@ -20,6 +20,7 @@ class AreaModel extends Model
         ->join('responsable r', 'r.rfc_responsable = a.rfc_responsable', 'LEFT')
         ->where('a.id_area', $id_area)
         ->where('p.estatus', $true)
+        ->orderBy('a.id_actividad', 'DESC')
         ->get()->getResult();
     }
 
@@ -32,6 +33,7 @@ class AreaModel extends Model
         ->join('responsable r', 'r.rfc_responsable = a.rfc_responsable', 'LEFT')
         ->where('a.id_area', $id_area)
         ->where('a.periodo', $periodo)
+        ->orderBy('a.id_actividad', 'DESC')
         ->get()->getResult();
     }
     public function get_responsable_area_y_sin_asignar($id_area, $true)
