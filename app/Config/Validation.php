@@ -158,7 +158,7 @@ class Validation
 
 	public $inscripcionesReglas = [
 		'id_actividad'     => 'required|numeric',
-		'telefono'     => 'required|min_length[10]|max_length[10]',
+		//'telefono'     => 'required|min_length[10]|max_length[10]',
 	];
 
 	public $editarClave12Reglas = [

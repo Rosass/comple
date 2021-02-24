@@ -30,9 +30,6 @@
                         <label for="telefono">TELEFONO</label>
                         <input type="text" class="form-control" id="telefono" name="telefono" value="<?= old("telefono") ?>">
                     </div>
-                    <div class="invalid-feedback">
-                            Por favor, rellena este campo
-                    </div>
                 </div>
             </div>
             <small>Los campos marcados con (*) son obligatorios.</small>

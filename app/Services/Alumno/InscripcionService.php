@@ -68,7 +68,7 @@ class InscripcionService
                     return ["exito" => false, "msj" => "No puedes reunir más de dos creditos por semestre."];
 
                 if ( $this->esta_incrito_en_cultural_o_deportiva( $datos['num_control'], $datos['periodo'], $datos['id_actividad']) )
-                    return ["exito" => false, "msj" => "Es posible que el alumno ya está inscrito en una actividad CULTURAL o DEPORTIVA."];
+                    return ["exito" => false, "msj" => "Ya se encuentra inscrito en una actividad de Tipo CULTURAL o DEPORTIVA."];
                     
                 if ($this->inscripcionModel->guardar($datos))
                     return ["exito" => true, "msj" => "Inscripción agregada con exito."];
