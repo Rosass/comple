@@ -15,9 +15,10 @@ class TipoActividadController extends BaseController
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_DIVISION)
         {
 			$tipos_actividades = $this->tipoActividadService->getTipos();
+            $areas = $this->tipoActividadService->getAreasPorEstatus(true);
 
 			echo view('Includes/header');
-			echo view('Division/navbar', ["activo" => "tipos-actividades", "tipos_actividades" => $tipos_actividades]);
+			echo view('Division/navbar', ["activo" => "tipos-actividades", "tipos_actividades" => $tipos_actividades, 'areas' => $areas,]);
 			echo view('Division/TiposActividades/listar');
 			echo view('Includes/footer');
 		}
@@ -38,7 +39,10 @@ class TipoActividadController extends BaseController
         }
         else
         {   
-            $datos = ["nombre" => mb_strtoupper($this->request->getPost("nombre"), 'utf-8'),];
+            $datos = [
+                "nombre" => mb_strtoupper($this->request->getPost("nombre"), 'utf-8'),
+                "id_area" => $this->request->getPost("id_area"),
+            ];
 
             $respuesta =  $this->tipoActividadService->guardar($datos);
 
@@ -61,12 +65,16 @@ class TipoActividadController extends BaseController
         {
             $id_tipo_actividad = urldecode($this->request->uri->getSegment(4));
 			$tipo_actividad = $this->tipoActividadService->getTipoActividadPorId($id_tipo_actividad);
+            $areas = $this->tipoActividadService->getAreasPorEstatus(true);
 
             if($tipo_actividad != NULL)
             {
                 echo view('Includes/header');
                 echo view('Division/navbar', ["activo" => "tipos-actividades"]);
-                echo view('Division/TiposActividades/editar', ["tipo_actividad" => $tipo_actividad]);
+                echo view('Division/TiposActividades/editar', [
+                    "tipo_actividad" => $tipo_actividad,
+                    'areas' => $areas
+                    ]);
                 echo view('Includes/footer');
             }
             else
@@ -94,6 +102,7 @@ class TipoActividadController extends BaseController
 
             $datos = [
                 "nombre" => mb_strtoupper($nombre, 'utf-8'),
+                "id_area" => $this->request->getPost("id_area"),
             ];
 
             $respuesta =  $this->tipoActividadService->actualizar($id_tipo_actividad, $datos);

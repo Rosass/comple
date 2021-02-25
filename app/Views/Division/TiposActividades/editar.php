@@ -20,6 +20,21 @@
                             <label for="nombre">NOMBRE DEL TIPO DE ACTIVIDAD(*)</label>
                             <input type="text" class="form-control text-uppercase" id="nombre" name="nombre" required value="<?= $tipo_actividad->nombre ?>">
                         </div>
+                        <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="id_area">ÁREA (*)</label>
+                                    <select class="custom-select" name="id_area" id="area21"  required>
+                                        <option selected disabled value="">Elige una área</option>
+                                        <?php foreach($areas as $key => $area) : ?>
+                                        <option value="<?= $area->id_area ?>"><?= $area->nombre_area ?></option>
+                                        <?php endforeach ?>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Por favor, rellena este campo
+                                    </div>
+                                </div>
+						</div>
+                        </div>
                         <small>Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">
                             <div class="dropdown-divider"></div>
