@@ -102,7 +102,7 @@ class InscripcionService
         /** 
          ** 1 ES EL ID DEL TIPO DE ACTIVIDAD ACADEMICA 
         */
-        if ( $actividad->id_tipo_actividad == 1 )
+        if ( $actividad->id_area == 1 )
         {
             return false;
         }

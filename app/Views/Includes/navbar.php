@@ -13,6 +13,3 @@
         </div>
     </div>
 </div>
-<div class= "float-right pt-3 mr-5">
-<a href= "public\manual alumno\MANUAL MODULO ALUMNO.pdf" target="_blank"><i class="fas fa-file-pdf"></i> (PDF) MANUAL DE ALUMNO</a>
-</div>

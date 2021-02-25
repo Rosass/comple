@@ -100,7 +100,7 @@ class InscripcionModel extends Model
     public function get_id_tipo_actividad( $id_actividad )
     {
         return $this->db->table('actividad')
-                        ->select('id_tipo_actividad')
+                        ->select('id_area')
                         ->where('id_actividad', $id_actividad)
                         ->get()->getRow();
     }
@@ -108,14 +108,12 @@ class InscripcionModel extends Model
     public function get_actividad_alumno_cultura_deportiva( $num_control, $periodo)
     {
         return $this->db->table('inscripcion i')
-                        ->select('ta.id_tipo_actividad, ta.nombre')
+                        ->select('ta.id_area, ta.nombre')
                         ->join('actividad act', 'act.id_actividad = i.id_actividad', 'INNER')
                         ->join('tipo_actividad ta', 'act.id_tipo_actividad = ta.id_tipo_actividad', 'INNER')
                         ->where('i.num_control', $num_control)
                         ->where('i.periodo', $periodo)
-                        ->where('(act.id_tipo_actividad = 2 OR act.id_tipo_actividad = 3)')
+                        ->where('act.id_area = 2')
                         ->get()->getResult();
     }
-
-
 }
