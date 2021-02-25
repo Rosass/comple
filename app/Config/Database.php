@@ -32,9 +32,9 @@ class Database extends \CodeIgniter\Database\Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'ac.pochutla.tecnm.mx',
-		'username' => 'acitp_actividades_complementarias_usr',
+		'username' => 'acitp_complementarias_usr',
 		'password' => 'P1c2a3smx@',
-		'database' => 'acitp_complementarias',
+		'database' => 'acitp_actividades_complementarias',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
