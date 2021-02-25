@@ -42,7 +42,7 @@ class Database extends \CodeIgniter\Database\Config
 		'cacheOn'  => false,
 		'cacheDir' => '',
 		'charset'  => 'utf8',
-		'DBCollat' => 'utf8_spanish_ci',
+		'DBCollat' => 'utf8_general_ci',
 		'swapPre'  => '',
 		'encrypt'  => false,
 		'compress' => false,
