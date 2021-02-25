@@ -1,0 +1,77 @@
+CRITICAL - 2021-02-24 18:38:43 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(19): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#4 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(30): App\Services\AlumnoLoginService->login('161160163', '6336')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-24 18:40:25 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(19): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#4 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(30): App\Services\AlumnoLoginService->login('161160163', '6336')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-24 18:43:37 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(19): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#4 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(30): App\Services\AlumnoLoginService->login('161160163', '6336')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-24 18:46:38 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `num_con...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(248): App\Models\AlumnoModel->getAlumnoPorNoControl('161160163')
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(26): App\Services\Division\InscripcionService->unirRegistros(Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-24 18:52:48 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(19): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#4 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(30): App\Services\AlumnoLoginService->login('161160163', '6336')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-24 18:59:20 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(19): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#4 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(30): App\Services\AlumnoLoginService->login('161160163', '6336')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-24 19:02:10 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`num...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\AlumnoLoginModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\AlumnoLoginService.php(19): App\Models\AlumnoLoginModel->getAlumnoPorUsuario('161160163')
+#4 C:\xampp\htdocs\comple\app\Controllers\AlumnoLoginController.php(30): App\Services\AlumnoLoginService->login('161160163', '6336')
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\AlumnoLoginController->login()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoLoginController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
