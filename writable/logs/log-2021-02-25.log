@@ -1,0 +1,10 @@
+CRITICAL - 2021-02-25 00:21:17 --> Undefined variable: actividad
+#0 C:\xampp\htdocs\comple\app\Views\Includes\navbar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Includes/navbar', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\InicioController.php(8): view('Includes/navbar')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\InicioController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InicioController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
