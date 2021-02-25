@@ -1,3 +1,22 @@
+CRITICAL - 2021-02-25 03:14:31 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 244, Array)
+#1 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(244): count(NULL)
+#2 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(26): App\Services\Division\InscripcionService->unirRegistros(NULL)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-02-25 03:15:40 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 244, Array)
+#1 C:\xampp\htdocs\comple\app\Services\Division\InscripcionService.php(244): count(NULL)
+#2 C:\xampp\htdocs\comple\app\Controllers\Division\InscripcionController.php(26): App\Services\Division\InscripcionService->unirRegistros(NULL)
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\InscripcionController->index()
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\InscripcionController))
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+
 CRITICAL - 2021-02-25 00:21:17 --> Undefined variable: actividad
 #0 C:\xampp\htdocs\comple\app\Views\Includes\navbar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
 #1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
@@ -8,6 +27,7 @@ CRITICAL - 2021-02-25 00:21:17 --> Undefined variable: actividad
 #6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+
 CRITICAL - 2021-02-25 01:50:55 --> Undefined property: stdClass::$id_area
 #0 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 105, Array)
 #1 C:\xampp\htdocs\comple\app\Services\Alumno\InscripcionService.php(70): App\Services\Alumno\InscripcionService->esta_incrito_en_cultural_o_deportiva('161160163', '20211', Object(stdClass))
