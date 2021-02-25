@@ -13,7 +13,8 @@ class TipoActividadModel extends Model
 
     public function getTipos()
 	{   
-        return $this->db->table($this->table)->select("*")->get()->getResult();
+        return $this->db->table($this->table)->select("*")
+        ->get()->getResult();
     }
 
     public function getTiposPorEstatus($estatus)
@@ -36,6 +37,14 @@ class TipoActividadModel extends Model
     {
         $this->db->table($this->table)->where("id_tipo_actividad", $id_tipo_actividad)->update($datos);
         return $this->db->affectedRows();
+    }
+
+    public function getAreasPorEstatus()
+    {
+        return $this->db->table('area')
+        ->select("*")
+        ->orderBy("nombre_area", "ASC")
+        ->get()->getResult();
     }
 
 }

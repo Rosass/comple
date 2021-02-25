@@ -16,7 +16,22 @@
                 <div class="invalid-feedback">
 					Por favor, rellena este campo
 			    </div>
-            </div>
+        <div class="row justify-content-center">  
+          <div class="col-md-7">
+							<div class="form-group">
+								<label for="id_area">ÁREA (*)</label>
+								<select class="custom-select" name="id_area" id="area21"  required>
+									<option selected disabled value="">Elige una área</option>
+									<?php foreach($areas as $key => $area) : ?>
+									<option value="<?= $area->id_area ?>"><?= $area->nombre_area ?></option>
+									<?php endforeach ?>
+								</select>
+                  <div class="invalid-feedback">
+                    Por favor, rellena este campo
+                  </div>
+							</div>
+						</div>
+        </div>    
             <small class="text-center">Los campos marcados con (*) son obligatorios.</small>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

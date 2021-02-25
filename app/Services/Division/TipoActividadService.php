@@ -73,4 +73,9 @@ class TipoActividadService
         return $this->actualizar($tipo_actividad->id_tipo_actividad, $datos);
     }
 
+    public function getAreasPorEstatus($id_area)
+	{   
+        return $this->tipoActividadModel->getAreasPorEstatus($id_area);
+    }
+
 }

@@ -28,6 +28,7 @@
                         <tr>
                             <th scope="col" class="border-top-0">#</th>
                             <th scope="col" class="border-top-0">NOMBRE</th>
+                            <th scope="col" class="border-top-0">ÁREA</th>
                             <th scope="col" class="border-top-0">REGISTRO</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
                             <th scope="col" class="border-top-0"></th>
@@ -38,6 +39,8 @@
                             <tr>
                                 <th scope="row"><?= $key + 1 ?></th>
                                 <td><?= $tipo->nombre ?></td>
+                                <td><?php if ( $tipo->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES';
+                                if ( $tipo->id_area == '1') echo 'DEPARTAMENTO DE INGENIERÍAS';?></td>
                                 <td><?= $tipo->fecha_registro ?></td>
                                 <td class="text-white">
                                     <?php if($tipo->estatus == true) : ?>
