@@ -37,7 +37,10 @@ class PeriodoService
     public function guardar($datos)
     {
 
-        if($datos['periodo'] == ENE_JUN || $datos['periodo'] == VERANO || $datos['periodo'] == AGO_DIC)
+         /* PROVISIONALMENTE SE INSERTARAN CAMPOS "PERIODOS Y DESCRIPCION" DE MANERA MANUAL POR MOTIVOS DE ALIMENTAR SISTEMAS 
+             una vez terminado el proceso se descomenta todo y queda como antes*/
+             
+       // if($datos['periodo'] == ENE_JUN || $datos['periodo'] == VERANO || $datos['periodo'] == AGO_DIC)
         {
             $existe = $this->periodoModel->getPeriodoPorPeriodo($datos['periodo']);
 
@@ -55,10 +58,10 @@ class PeriodoService
                 return ["exito" => false, "msj" => "Algo salio mal, intentalo de nuevo."];
             }
         }
-        else
-        {
-            return ["exito" => false, "msj" => "Periodo no válido!."];
-        }
+      //  else
+        //{
+         //   return ["exito" => false, "msj" => "Periodo no válido!."];
+       // }
     }
 
     /**
