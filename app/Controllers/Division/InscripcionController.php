@@ -215,9 +215,9 @@ class InscripcionController extends BaseController
         }
         else
         {
-            $this->session->setFlashdata('error', $respuesta['msj']);
+            $this->session->setFlashdata('error', $respuesta['msj']);  
         }
-        return redirect('division/inscripciones');
+        return redirect()->back();
     }
 
 	public function cambiarEstatusRechazar()
@@ -235,7 +235,7 @@ class InscripcionController extends BaseController
         {
             $this->session->setFlashdata('error', $respuesta['msj']);
         }
-        return redirect('division/inscripciones');
+        return redirect()->back();
     }
 
     //* -----------------------------------------------
