@@ -10,7 +10,31 @@
       </div>
         <div class="modal-body pb-0 text-center">
           <form action="<?= base_url("division/periodos/agregar") ?>" method="POST" class="needs-validation" novalidate>
-                    <div class="form-group">
+
+
+             <!-- PROVISIONALMENTE SE INSERTARAN CAMPOS "PERIODOS Y DESCRIPCION" DE MANERA MANUAL POR MOTIVOS DE ALIMENTAR SISTEMAS 
+             una vez terminado el proceso se descomenta todo y queda como antes  -->
+             <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="nombre">PERIODO (*)</label>
+                      <input type="text" name="periodo" id="periodo" class="form-control text-uppercase" placeholder="20201-20202-20203" required>
+                      <div class="invalid-feedback">
+                        Por favor, rellena este campo
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">  
+                  <div class="form-group">
+                      <label for="nombre">DESCRIPCIÓN (*)</label>
+                      <input type="text" name="descripcion" id="descripcion" class="form-control text-uppercase" placeholder="'ENE-JUN/2020' 'VERANO/2020' 'AGO-DIC/2020'" required>
+                      <div class="invalid-feedback">
+                        Por favor, rellena este campo
+                      </div>
+                  </div>
+                </div>  
+            </div>   
+<!--                     <div class="form-group">
                         <label for="nombre">PERIODO (*)</label>
                         <select class="custom-select" name="periodo" required>
                           <option selected disabled value="">SELECIONA UN PERIODO</option>
@@ -19,9 +43,10 @@
                             <option value="<?= date('Y') . "3"?>"><?= "AGO-DIC/". date('Y') ?></option>
                         </select>
                         <div class="invalid-feedback">
-                  Por favor, rellena este campo
-                </div>
-                </div>
+                          Por favor, rellena este campo
+                        </div>
+                    </div> -->
+                    
               <div class="row">
 					        <div class="col-md-6">
 							        <div class="form-group">

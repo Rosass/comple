@@ -43,16 +43,20 @@ class PeriodoController extends BaseController
         }
         else
         {   
-			if($this->request->getPost("periodo") == ENE_JUN)
+             /* PROVISIONALMENTE SE INSERTARAN CAMPOS "PERIODOS Y DESCRIPCION" DE MANERA MANUAL POR MOTIVOS DE ALIMENTAR SISTEMAS 
+             una vez terminado el proceso se descomenta todo y queda como antes*/
+
+/* 			if($this->request->getPost("periodo") == ENE_JUN)
 				$descripcion = "ENE-JUN/".date('Y');
 			else if($this->request->getPost("periodo") == VERANO)
 				$descripcion = "VERANO/".date('Y');
 			else 
-				$descripcion = "AGO-DIC/".date('Y');
+				$descripcion = "AGO-DIC/".date('Y'); */
 
             $datos = [
 				"periodo" => strtoupper($this->request->getPost("periodo")),
-                "descripcion" => $descripcion,
+                "descripcion" =>strtoupper($this->request->getPost("descripcion")),
+                //"descripcion" => $descripcion,
 				"fecha_inicio" => $this->request->getPost("fecha_inicio"),
                 "fecha_final" => $this->request->getPost("fecha_final"),
                 "fecha_inicio_inscripcion" => $this->request->getPost("fecha_inicio_inscripcion"),
