@@ -37,6 +37,29 @@ class InscripcionService
 	{   
         return $this->inscripcionModel->getPeriodosPorEstatus($true);
     }
+    public function get_numero_alumnos_inscriptos($true)
+	{   
+        return $this->inscripcionModel->get_numero_alumnos_inscriptos($true);
+    }
+
+    ///* -> AQUI <-
+    protected function numero_alumnos_inscritos_menor_igual_capacidad($periodo, $id_actividad) {
+        $totalInscritos = $this->inscripcionModel->get_numero_alumno_inscritos($periodo, $id_actividad);
+        //capacidad de alumnos permitidos por actividad
+        $capacidad_alumnos = $this->inscripcionModel->get_numero_capacidad_alumnos_permitidos_por_activiadad($id_actividad);
+
+
+        if ( $totalInscritos->num_control < $capacidad_alumnos->capacidad )
+        {
+            // Puede inscribirse
+            return true;
+        }
+        else
+        {
+            // No Puede inscribirse
+            return false;
+        }
+    }
 
     /**
      * Guarda una nueva inscripción en la BD
@@ -46,7 +69,12 @@ class InscripcionService
     public function guardar($datos)
     {
         $periodo = $this->inscripcionModel->getPeriodosPorEstatus(true);
-
+        
+        ///* -> AQUI <-
+        if ( !$this->numero_alumnos_inscritos_menor_igual_capacidad( $periodo->periodo,$datos['id_actividad'] ) )
+        {
+            return ["exito" => false, "msj" => "El grupo esta completo, ya no es posible inscrirse."];
+        }
         if ( !$this->valida_fecha( $periodo->fecha_inicio_inscripcion, $periodo->fecha_final_inscripcion) )
         {
             return ["exito" => false, "msj" => "Usted no puede inscribirse! La fecha de inscripciones expiró."];

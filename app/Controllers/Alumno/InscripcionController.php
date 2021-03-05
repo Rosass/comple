@@ -21,7 +21,7 @@ class InscripcionController extends BaseController
             $actividades = $this->inscripcionService->getActividadesPorAlumno(true);
             $periodos = $this->inscripcionService->getPeriodosPorEstatus(true);
             $numeroActividades = $this->inscripcionService-> getActividadesPorCalificacion( $num_control2 );
-
+            
             if ( $periodos )
             {
                 $fecha_inicio = $periodos->fecha_inicio_inscripcion;
