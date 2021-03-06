@@ -21,6 +21,8 @@ class InscripcionModel extends Model
         ->join("periodo p", "p.periodo = i.periodo")
         ->join("actividad act", "act.id_actividad = i.id_actividad")
         ->orderBy("p.fecha_inicio", "ASC")
+        ->orderBy("i.estatus")
+        ->orderBy("act.nombre_actividad")
         ->orderBy("i.fecha_inscripcion", "DESC")
         ->where("p.estatus", true)
         ->get()->getResult();
@@ -34,6 +36,8 @@ class InscripcionModel extends Model
         ->join("periodo p", "p.periodo = i.periodo")
         ->join("actividad act", "act.id_actividad = i.id_actividad")
         ->orderBy("p.fecha_inicio", "ASC")
+        ->orderBy("i.estatus")
+        ->orderBy("act.nombre_actividad")
         ->orderBy("i.fecha_inscripcion", "DESC")
         ->where("i.periodo", $periodo)
         ->get()->getResult();

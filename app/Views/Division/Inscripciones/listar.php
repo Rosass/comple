@@ -91,7 +91,7 @@
                                 <?php if($inscripcion->estatus == 2) : ?>
 								<span class="bg-success p-1 rounded small">Aceptada</span>
                                     <?php endif ?>
-                                <?php if($inscripcion->estatus == 0) : ?>
+                                <?php if($inscripcion->estatus == 3) : ?>
 								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
 							    </td>
@@ -102,13 +102,13 @@
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/inscripciones/editar/".$inscripcion->id_inscripcion) ?>"><i class="fas fa-pen"></i> Editar</a>
                                         <?php endif ?>
                                         <!-- Aceptar inscripción -->
-                                        <?php if($inscripcion->estatus == 1 || $inscripcion->estatus ==  0) : ?>                                   
+                                        <?php if($inscripcion->estatus == 1 || $inscripcion->estatus ==  3) : ?>                                   
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-aceptar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
                                                 <button type="submit" class="btn btn-success btn-sm btn-block mb-1 btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-check"></i> Aceptar</button>
                                             </form>
                                             <?php endif ?>
-                                        <?php if($inscripcion->estatus == true) : ?>                                                        
+                                        <?php if($inscripcion->estatus == 1 || $inscripcion->estatus ==  2) : ?>                                                        
                                         <!-- Rechazar inscripción -->            
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-rechazar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
