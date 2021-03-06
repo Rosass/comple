@@ -268,5 +268,23 @@ class InscripcionController extends BaseController
             echo json_encode($respuesta);
         }
 
+        public function listaAlumnos()
+        {
+            
+            if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_DIVISION)
+            {
+                $inscripciones = $this->inscripcionService->getListaInscripciones();
+                $inscripciones_aux = $this->inscripcionService->unirRegistros($inscripciones);
+
+                
+                echo view('Division/Inscripciones/listarinscripciones', [
+                    "inscripciones" => $inscripciones_aux, 
+                    ]);
+                }
+            else
+            {
+                return redirect('/');
+            }
+        }
     
 }

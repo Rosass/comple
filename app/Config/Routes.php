@@ -85,6 +85,7 @@ $routes->post('division/inscripciones/editar', 'Division/InscripcionController::
 $routes->post('division/inscripciones/cambiar-estatus-aceptar', 'Division/InscripcionController::cambiarEstatusAceptar');
 $routes->post('division/inscripciones/cambiar-estatus-rechazar', 'Division/InscripcionController::cambiarEstatusRechazar');
 $routes->post('division/alumnos/getAlumno', 'Division/InscripcionController::get_alumno');
+$routes->get('division/alumnos-inscritos', 'Division/InscripcionController::listaAlumnos');
 
 
 // Rutas [DIVISION-PERIODOS]
