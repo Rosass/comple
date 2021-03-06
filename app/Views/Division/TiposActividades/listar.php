@@ -40,7 +40,7 @@
                                 <th scope="row"><?= $key + 1 ?></th>
                                 <td><?= $tipo->nombre ?></td>
                                 <td><?php if ( $tipo->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES';
-                                if ( $tipo->id_area == '1') echo 'DEPARTAMENTO DE INGENIERÍAS';?></td>
+                                        if ( $tipo->id_area == '1') echo 'DEPARTAMENTO DE INGENIERÍAS';?></td>
                                 <td><?= $tipo->fecha_registro ?></td>
                                 <td class="text-white">
                                     <?php if($tipo->estatus == true) : ?>
@@ -74,6 +74,5 @@
         </div>
     </div>
 </div>
-
 <!-- Modal para agregar tipo de actividad-->
 <?= view("Division/TiposActividades/agregar"); ?>

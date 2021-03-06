@@ -116,4 +116,22 @@ class InscripcionModel extends Model
                         ->where('act.id_area = 2')
                         ->get()->getResult();
     }
+
+   ///* -> AQUI <-
+   public function get_numero_alumno_inscritos( $periodo, $id_actividad ) {
+    return $this->db->table('inscripcion')
+                    ->selectCount('num_control')
+                    ->where('id_actividad', $id_actividad )
+                    ->where('periodo', $periodo)
+                    ->get()->getRow();
+}
+
+
+///* -> AQUI <-
+public function get_numero_capacidad_alumnos_permitidos_por_activiadad( $id_actividad ) {
+    return $this->db->table('actividad')
+                    ->select('capacidad')
+                    ->where('id_actividad', $id_actividad )
+                    ->get()->getRow();
+}
 }
