@@ -236,9 +236,7 @@ class ActividadController extends BaseController
             
 			if(count($alumnos) > 0)
 			{
-
 				$dompdf = new Dompdf();
-
 				//Se carga el html
 				$dompdf->loadHtml (view('Division/Lista-Alumnos/listar', [
 					'alumnos' => $alumnos,
@@ -264,6 +262,10 @@ class ActividadController extends BaseController
 				return redirect('division/actividades');
 			}
 
+        }
+		else
+		{
+			return redirect("/");
 		}
 	
     }

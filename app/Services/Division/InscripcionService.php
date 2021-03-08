@@ -41,6 +41,11 @@ class InscripcionService
         return $this->inscripcionModel->getPeriodo();
     }
 
+    public function getListaInscripciones()
+	{   
+        return $this->inscripcionModel->getListaInscripciones();
+    }
+
     public function getActividadPorIdareaPeriodo($perido)
 	{   
         return $this->inscripcionModel->getActividadPorIdareaPeriodo($perido);
@@ -220,7 +225,7 @@ class InscripcionService
     {
         $inscripcion = $this->inscripcionModel->getInscripcionPorId($id_inscripcion);
 
-        $nuevo_estatus = ($inscripcion->estatus == 1) ? 0 : 0;
+        $nuevo_estatus = ($inscripcion->estatus == 1) ? 3 : 3;
         $datos = [ 'estatus' => $nuevo_estatus ];
         if ($this->inscripcionModel->actualizar($id_inscripcion, $datos))
             return ["exito" => true, "msj" => "Datos actualizados con exito."];

@@ -16,6 +16,9 @@
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
             <?php endif ?>
+            <div class= "float-left ml-5">
+	        <a class="btn btn-info btn-sm btn-block mb-0" target="_blank" href="<?= base_url("division/alumnos-inscritos") ?>"></i> Lista Alumnos (completa)</a>
+	        </div> 
             <div class="text-right">
                 <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevaInscripcionModal"><i class="fas fa-plus"></i> Nueva inscripción</button>
             </div> 
@@ -49,7 +52,7 @@
                         </select>  
                     </div>        
                 </div>
-            </div>          
+            </div>         
             <div class="table-responsive-sm text-center"> 
                 <table class="table table-hover table-light table-striped shadow-lg" id="tablaInscripciones">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
@@ -91,7 +94,7 @@
                                 <?php if($inscripcion->estatus == 2) : ?>
 								<span class="bg-success p-1 rounded small">Aceptada</span>
                                     <?php endif ?>
-                                <?php if($inscripcion->estatus == 0) : ?>
+                                <?php if($inscripcion->estatus == 3) : ?>
 								<span class="bg-danger p-1 rounded small">Rechazada</span>
 								<?php endif ?>                                 
 							    </td>
@@ -102,13 +105,13 @@
                                         <a class="btn btn-warning btn-sm btn-block mb-1" href="<?= base_url("division/inscripciones/editar/".$inscripcion->id_inscripcion) ?>"><i class="fas fa-pen"></i> Editar</a>
                                         <?php endif ?>
                                         <!-- Aceptar inscripción -->
-                                        <?php if($inscripcion->estatus == 1 || $inscripcion->estatus ==  0) : ?>                                   
+                                        <?php if($inscripcion->estatus == 1 || $inscripcion->estatus ==  3) : ?>                                   
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-aceptar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">
                                                 <button type="submit" class="btn btn-success btn-sm btn-block mb-1 btnEnviarFormulario" data-no_control="<?= $inscripcion->num_control ?>" ><i class="fas fa-check"></i> Aceptar</button>
                                             </form>
                                             <?php endif ?>
-                                        <?php if($inscripcion->estatus == true) : ?>                                                        
+                                        <?php if($inscripcion->estatus == 1 || $inscripcion->estatus ==  2) : ?>                                                        
                                         <!-- Rechazar inscripción -->            
                                             <form action="<?= base_url('division/inscripciones/cambiar-estatus-rechazar') ?>" method="POST">
                                                 <input type="hidden" name="id_inscripcion" value="<?= $inscripcion->id_inscripcion ?>">

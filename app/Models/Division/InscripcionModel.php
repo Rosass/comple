@@ -21,6 +21,8 @@ class InscripcionModel extends Model
         ->join("periodo p", "p.periodo = i.periodo")
         ->join("actividad act", "act.id_actividad = i.id_actividad")
         ->orderBy("p.fecha_inicio", "ASC")
+        ->orderBy("i.estatus")
+        ->orderBy("act.nombre_actividad")
         ->orderBy("i.fecha_inscripcion", "DESC")
         ->where("p.estatus", true)
         ->get()->getResult();
@@ -34,14 +36,13 @@ class InscripcionModel extends Model
         ->join("periodo p", "p.periodo = i.periodo")
         ->join("actividad act", "act.id_actividad = i.id_actividad")
         ->orderBy("p.fecha_inicio", "ASC")
+        ->orderBy("i.estatus")
+        ->orderBy("act.nombre_actividad")
         ->orderBy("i.fecha_inscripcion", "DESC")
         ->where("i.periodo", $periodo)
         ->get()->getResult();
     }
 
-   
-
-    
     public function getInscripcionesPorActividadYEstatus($id_actividad)
 	{   
         return $this->db->table("inscripcion i")
@@ -124,4 +125,17 @@ class InscripcionModel extends Model
         ->get()->getResult();
     }
 
+    public function getListaInscripciones()
+	{   
+        return $this->db->table("inscripcion i")
+        ->select("i.id_inscripcion, i.estatus, i.num_control, i.periodo, i.fecha_inscripcion, i.id_actividad, act.nombre_actividad, act.creditos")
+        ->join("periodo p", "p.periodo = i.periodo")
+        ->join("actividad act", "act.id_actividad = i.id_actividad")
+        ->orderBy("act.nombre_actividad")
+        ->orderBy("i.num_control")
+        ->orderBy("i.fecha_inscripcion", "DESC")
+        ->where("p.estatus", true)
+        ->where("i.estatus", 2)
+        ->get()->getResult();
+    }
 }
