@@ -46,7 +46,7 @@
 							<div class="col-md-3">
 								<div class="form-group">
 									<label for="horas">NÚMERO DE HORAS</label>
-									<input type="number" class="form-control" id="horas" name="horas" required value="<?= $actividad->horas ?>" min="0">
+									<input type="number" class="form-control" id="horas" name="horas" value="<?= $actividad->horas ?>" min="0">
 								</div>
 							</div>
 						</div>
