@@ -87,7 +87,7 @@
 							<div class="col-md-8">
 								<div class="form-group">
 									<label for="horario">HORARIO</label>
-									<input type="horario" class="form-control text-uppercase" id="horario" name="horario" required value="<?= $actividad->horario ?>">
+									<input type="horario" class="form-control text-uppercase" id="horario" name="horario" value="<?= $actividad->horario ?>">
 									<small>Los horarios debes separarlos por punto y coma ';'.</small>
 								</div>
 							</div>
