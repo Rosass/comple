@@ -79,9 +79,13 @@ class ActividadModel extends Model
         return $this->db->table($this->table)->select("*")->where("id_actividad", $id_actividad)->get()->getRow();
     }
 
-    public function getActividadPorNombre($nombre)
+    public function getActividadPorNombre($nombre,$periodo)
     {
-        return $this->db->table($this->table)->select("*")->where("nombre_actividad", $nombre)->get()->getRow();
+        return $this->db->table($this->table)
+        ->select("*")
+        ->where("nombre_actividad", $nombre)
+        ->where("periodo", $periodo)
+        ->get()->getResult();
     }
 
     public function get_alumno( $num_control )
