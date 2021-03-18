@@ -52,7 +52,7 @@
             <div class="row justify-content-center">
                   <div class="col-md-6">
                     <div class="form-group">
-                        <label for="clave1">CLAVE(*)</label>
+                        <label for="clave">CLAVE(*)</label>
                         <input type="password" class="form-control" id="clave1" name="clave" pattern="(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ].*"
                         title="Debe tener al menos una mayúscula, una minúscula y un dígito" placeholder="contraseña" required value="<?= old("clave") ?>">
                         <small id="campoOK"></small>

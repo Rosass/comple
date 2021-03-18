@@ -77,7 +77,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="clave">CLAVE (*)</label>
-                        <input type="password" class="form-control" id="clave21" name="clave21" required value="<?= old("clave") ?>">
+                        <input type="password" class="form-control" id="clave21" name="clave" required value="<?= old("clave") ?>">
                         <small id="camp"></small>
                         <div class="invalid-feedback">
 				            Por favor, rellena este campo
