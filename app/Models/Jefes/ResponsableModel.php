@@ -28,7 +28,7 @@ class ResponsableModel extends Model
         ->join('periodo p', 'p.periodo = r.periodo', 'INNER')
         //->join('responsable r', 'r.rfc_responsable = r.rfc_responsable', 'LEFT')---
         ->where('r.id_area_fk', $id_area)
-        ->where('r.periodo', $periodo)
+        ->where('p.periodo', $periodo)
         ->get()->getResult();
     }
 
@@ -55,7 +55,7 @@ class ResponsableModel extends Model
         return $this->db->table($this->table)->select("*")
         ->where("rfc_responsable", $rfc)
         ->where("periodo", $periodo)
-        ->get()->getRow();
+        ->get()->getResult();
     }
 
     public function getPeriodo()
