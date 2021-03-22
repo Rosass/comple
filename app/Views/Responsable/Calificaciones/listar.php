@@ -55,14 +55,13 @@
                                 <td><?= $alumno['valor_numerico'] ?></td> 
                                 <td><?= $alumno['nivel_desempeno'] ?></td>                    
                                 <td style="width:8%;">             
-                                    <?php if($alumno['valor_numerico'] <= 0) : ?>
-                                        <div class="d-flex flex-column">
-                                            <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/evaluacion/$alumno[num_control]/$alumno[id_inscripcion]/$id_actividad") ?>"><i class="fas fa-file-alt"></i> Evaluacion Desempeño</a>                                   
-                                        <?php elseif ( $alumno['valor_numerico'] >= 1) :?>
+                                        <?php if ( $alumno['valor_numerico'] >= 1) :?>
                                             <span> CALIFICACIÓN ASIGNADA</span> 
                                         <?php elseif ( $alumno['nivel_desempeno'] == 'Insuficiente') :?>
                                             <span> CALIFICACIÓN NA</span>
                                         <?php else: ?>
+                                        <div class="d-flex flex-column">
+                                            <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/evaluacion/$alumno[num_control]/$alumno[id_inscripcion]/$id_actividad") ?>"><i class="fas fa-file-alt"></i> Evaluacion Desempeño</a>                                   
                                     <?php endif ?>  
                                     </div>
                                 </td>
