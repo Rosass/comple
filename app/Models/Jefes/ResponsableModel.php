@@ -18,7 +18,8 @@ class ResponsableModel extends Model
         ->join('area a', 'a.id_area = a.id_area', 'INNER')
         ->join('periodo p', 'p.periodo = r.periodo', 'INNER')
         ->where('p.estatus', $true)
-        ->where('r.id_area_fk', $id_area)->get()->getResult();
+        ->where('r.id_area_fk', $id_area)
+        ->get()->getResult();
     }
 
     public function getActividadPorIdareaPeriodo($id_area, $periodo)
@@ -50,12 +51,20 @@ class ResponsableModel extends Model
         return $this->db->affectedRows();
     }
 
+    public function getResponsablePorRfcYPeriodo($rfc, $periodo)
+    {
+        return $this->db->table($this->table)
+        ->select("*")
+        ->where("rfc_responsable", $rfc)
+        ->where("periodo", $periodo)
+        ->get()->getResult();
+    }
+
     public function getResponsablePorRfc($rfc)
     {
         return $this->db->table($this->table)
         ->select("*")
         ->where("rfc_responsable", $rfc)
-       
         ->get()->getResult();
     }
 
