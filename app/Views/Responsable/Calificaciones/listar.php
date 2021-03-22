@@ -63,6 +63,7 @@
                                         <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/evaluacion/$alumno[num_control]/$alumno[id_inscripcion]/$id_actividad") ?>"><i class="fas fa-file-alt"></i> Evaluacion Desempeño</a>                                   
                                     <?php endif ?>
                                     <?php if ( $alumno['valor_numerico'] > 0) echo 'CALIFICACIÓN ASIGNADA';?>
+                                    <?php if ( $alumno['nivel_desempeno'] == 'Insuficiente') echo 'NO APROBADO';?>
                                     </div>
                                 </td>
                             </tr>
