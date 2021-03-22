@@ -58,6 +58,8 @@ class ResponsableController extends BaseController
                 "correo" => $this->request->getPost("correo")
             ];
 
+            var_dump($datos);
+
             $respuesta =  $this->responsableService->guardar($datos);
 
             if($respuesta["exito"])
