@@ -65,7 +65,7 @@ class ResponsableModel extends Model
         return $this->db->table($this->table)
         ->select("*")
         ->where("rfc_responsable", $rfc)
-        ->get()->getResult();
+        ->get()->getRow();
     }
 
     public function getPeriodo()
