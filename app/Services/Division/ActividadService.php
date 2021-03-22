@@ -51,7 +51,7 @@ class ActividadService
      */
     public function guardar($datos)
     {
-        $actividad = $this->actividadModel->getActividadPorNombre($datos['nombre_actividad']);
+        $actividad = $this->actividadModel->getActividadPorNombre($datos['nombre_actividad'],$datos['periodo']);
 
         if($actividad == NULL)
         {
@@ -62,7 +62,7 @@ class ActividadService
         }
         else 
         {
-            return ["exito" => false, "msj" => "La actividad <strong>" . $datos['nombre_actividad'] . "</strong> ya se encuentra registrada!."];
+            return ["exito" => false, "msj" => "La actividad <strong>" . $datos['nombre_actividad'] . "</strong> ya se encuentra registrada en este periodo!."];
         }
     }
 
