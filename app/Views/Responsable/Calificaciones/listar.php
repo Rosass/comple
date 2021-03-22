@@ -58,7 +58,7 @@
                                         <?php if ( $alumno['valor_numerico'] >= 1) :?>
                                             <span> CALIFICACIÓN ASIGNADA</span> 
                                         <?php elseif ( $alumno['nivel_desempeno'] == 'Insuficiente') :?>
-                                            <span> CALIFICACIÓN NA</span>
+                                            <span style="color:red;">NO ACREDITADO</span>
                                         <?php else: ?>
                                         <div class="d-flex flex-column">
                                             <a class="btn btn-info btn-sm btn-block mb-0" href="<?= base_url("responsables/evaluacion/$alumno[num_control]/$alumno[id_inscripcion]/$id_actividad") ?>"><i class="fas fa-file-alt"></i> Evaluacion Desempeño</a>                                   
