@@ -15,7 +15,7 @@ class ResponsableController extends BaseController
         if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
         {
             $id_area  = $this->session->usuario_logueado->id_area;
-            $responsables = $this->responsableService->getResponsables($id_area, true);
+            $responsables = $this->responsableService->getResponsables($id_area);
             $periodo = $this->responsableService->getPeriodo();
 
 
@@ -53,7 +53,7 @@ class ResponsableController extends BaseController
                 "amaterno" => mb_strtoupper($this->request->getPost("amaterno"),'utf-8'),
                 "clave" => password_hash($this->request->getPost("clave") , PASSWORD_DEFAULT, ['cost' => 10]),
                 "telefono" => $this->request->getPost("telefono"),
-                "periodo" => $this->request->getPost("periodo"),
+              /*   "periodo" => $this->request->getPost("periodo"), */
                 "id_area_fk" => trim($this->session->usuario_logueado->id_area),
                 "correo" => $this->request->getPost("correo")
             ];
@@ -122,7 +122,7 @@ class ResponsableController extends BaseController
                 "apaterno" => mb_strtoupper($this->request->getPost("apaterno"), 'utf-8'),
                 "amaterno" => mb_strtoupper($this->request->getPost("amaterno"),'utf-8'),
                 "telefono" => $this->request->getPost("telefono"),
-                "periodo" => $this->request->getPost("periodo"),
+             /*    "periodo" => $this->request->getPost("periodo"), */
                 "correo" => $this->request->getPost("correo")
             ];
 
@@ -188,7 +188,7 @@ class ResponsableController extends BaseController
         }
         return redirect('jefes/responsables');
     }
-
+/* 
     public function periodo()
 	{
 		if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
@@ -223,7 +223,7 @@ class ResponsableController extends BaseController
 				
 			}
 
-    }
+    } */
 
 
 }

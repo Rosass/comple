@@ -11,17 +11,16 @@ class ResponsableModel extends Model
     protected $returnType   = 'object';
     protected $table = 'responsable';
 
-    public function getResponsables($id_area, $true)
+    public function getResponsables($id_area)
 	{   
         return $this->db->table('responsable r')
-        ->select('r.id_area_fk,r.periodo ,r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus, p.descripcion as periodo')
+        ->select('r.id_area_fk,r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
         ->join('area a', 'a.id_area = a.id_area', 'INNER')
-        ->join('periodo p', 'p.periodo = r.periodo', 'INNER')
-        ->where('p.estatus', $true)
         ->where('r.id_area_fk', $id_area)
+        ->orderBy('r.estatus',"DESC")
         ->get()->getResult();
     }
-
+/* 
     public function getActividadPorIdareaPeriodo($id_area, $periodo)
 	{   
         return $this->db->table('responsable r')
@@ -31,7 +30,7 @@ class ResponsableModel extends Model
         ->where('r.id_area_fk', $id_area)
         ->where('r.periodo', $periodo)
         ->get()->getResult();
-    }
+    } */
 
 
     public function getResponsablesPorEstatus($estatus)
@@ -51,14 +50,14 @@ class ResponsableModel extends Model
         return $this->db->affectedRows();
     }
 
-    public function getResponsablePorRfcYPeriodo($rfc, $periodo)
+/*     public function getResponsablePorRfcYPeriodo($rfc, $periodo)
     {
         return $this->db->table($this->table)
         ->select("*")
         ->where("rfc_responsable", $rfc)
         ->where("periodo", $periodo)
         ->get()->getResult();
-    }
+    } */
 
     public function getResponsablePorRfc($rfc)
     {

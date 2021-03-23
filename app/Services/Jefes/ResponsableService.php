@@ -5,7 +5,6 @@ class ResponsableService
 {
 
     protected $responsableModel;
-    protected $session;
 
     function __construct()
     {
@@ -16,9 +15,9 @@ class ResponsableService
      * Obtiene los responsables de la BD
      * @return object
      */
-    public function getResponsables($id_area, $true)
+    public function getResponsables($id_area)
 	{   
-        $responsables = $this->responsableModel->getResponsables($id_area, $true);
+        $responsables = $this->responsableModel->getResponsables($id_area);
         $newResponsable = array();
             foreach( $responsables as $key => $responsable )
             {
@@ -29,10 +28,11 @@ class ResponsableService
             }
         return $newResponsable;
     }
-    public function getActividadPorIdareaPeriodo($id_area, $periodo)
+
+/*     public function getActividadPorIdareaPeriodo($id_area, $periodo)
 	{   
         return $this->responsableModel->getActividadPorIdareaPeriodo($id_area, $periodo);
-    }
+    } */
 
     /**
      * Obtiene los responsables por estatus de la BD
@@ -56,7 +56,7 @@ class ResponsableService
      */
     public function guardar($datos)
     {
-        $responsable = $this->responsableModel->getResponsablePorRfcYPeriodo($datos['rfc_responsable'],$datos['periodo']);
+        $responsable = $this->responsableModel->getResponsablePorRfc($datos['rfc_responsable']);
 
         if($responsable == NULL)
         {

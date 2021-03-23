@@ -22,7 +22,7 @@
 				<i class="fas fa-plus"></i> Nuevo responsable
 				</button>
 			</div>
-			<form method="get" action="<?= base_url("jefes/responsables/periodo") ?>">
+<!-- 			<form method="get" action="<?= base_url("jefes/responsables/periodo") ?>">
                     <div class="row mb-3 mt-2 justify-content-end">
                             <div class="col-md-5 text-right d-flex align-items-center">
 							<span class="mr-1">Filtro </span>
@@ -38,7 +38,7 @@
                                 </div>
                             </div>  
                     </div>
-            </form>
+            </form> -->
 			<div class="table-responsive-sm text-center">
 				<table class="table table-hover table-light table-striped shadow-lg" id="tablaActividades">
 					<thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">

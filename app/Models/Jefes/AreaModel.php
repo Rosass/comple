@@ -42,7 +42,7 @@ class AreaModel extends Model
         ->select('r.id_area_fk, r.rfc_responsable, r.nombre, r.apaterno, r.amaterno, r.telefono, r.correo, r.fecha_registro, r.estatus')
         ->join('area a', 'a.id_area = r.id_area_fk', 'INNER')
         ->join('periodo p', 'p.periodo = r.periodo', 'INNER')
-        ->where('p.estatus', $true)
+        ->where('r.estatus', $true)
         ->where('a.id_area', $id_area)->get()->getResult();
     }
 

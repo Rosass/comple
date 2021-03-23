@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4">
+             <!--    <div class="col-md-4">
 					<div class="form-group">
 						<label for="periodo">PERIODO (*)</label>
 						<select class="custom-select" name="periodo" required id="periodo">
@@ -73,7 +73,7 @@
 							Por favor, rellena este campo
 						</div>
 					</div>
-				</div>
+				</div> -->
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="clave">CLAVE (*)</label>

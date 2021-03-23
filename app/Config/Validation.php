@@ -174,14 +174,14 @@ class Validation
 		'confirmar_clave' => 'required|min_length[8]|matches[clave]',
 	//	'telefono'     => 'min_length[10]|max_length[10]',
 	//	'correo'        => 'valid_email', */
-		'periodo'       => 'required|numeric',
+	//	'periodo'       => 'required|numeric',
 	];
 
 	public $editarResponsable1Reglas = [
 		'nombre'     => 'required',
 		'apaterno'     => 'required',
-		'periodo'       => 'required|numeric',
-/* 		'amaterno'     => 'required',
+/*		'periodo'       => 'required|numeric',
+ 		'amaterno'     => 'required',
 		'telefono'     => 'min_length[10]|max_length[10]',
 		'correo'        => 'valid_email'  */
 		

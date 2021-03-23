@@ -1,0 +1,30 @@
+CRITICAL - 2021-03-23 14:12:15 --> Call to undefined method App\Services\Jefes\ResponsableService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ResponsableController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ResponsableController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-23 14:12:31 --> Call to undefined method App\Services\Jefes\ResponsableService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ResponsableController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ResponsableController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-23 14:12:45 --> Call to undefined method App\Services\Jefes\ResponsableService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ResponsableController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ResponsableController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-23 14:13:06 --> Call to undefined method App\Services\Jefes\ResponsableService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ResponsableController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ResponsableController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-23 14:13:10 --> Call to undefined method App\Services\Jefes\ResponsableService::getPeriodo()
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Jefes\ResponsableController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jefes\ResponsableController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
