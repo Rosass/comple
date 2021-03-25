@@ -63,7 +63,7 @@
 						<?php foreach($responsables as $key => $responsable) : ?>
 						<tr>
 							<th scope="row"><?= $key + 1 ?></th>
-							<!-- <td><?= $responsable->periodo ?></td> -->
+							
 							<td><?= $responsable->rfc_responsable ?></td>
 							<td><?= mb_strtoupper($responsable->nombre . " " . $responsable->apaterno . " " . $responsable->amaterno,'utf-8'); ?></td> 
 							<td><?= $responsable->telefono  ?></td>
