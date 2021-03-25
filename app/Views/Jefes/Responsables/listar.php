@@ -49,7 +49,7 @@
 						</tr>
 						<tr>
 							<th scope="col" class="border-top-0">#</th>
-							<th scope="col" class="border-top-0">PERIODO</th>
+							<!-- <th scope="col" class="border-top-0">PERIODO</th> -->
 							<th scope="col" class="border-top-0">RFC</th>
 							<th scope="col" class="border-top-0">NOMBRE</th>
 							<th scope="col" class="border-top-0">TELÉFONO</th>
@@ -63,7 +63,7 @@
 						<?php foreach($responsables as $key => $responsable) : ?>
 						<tr>
 							<th scope="row"><?= $key + 1 ?></th>
-							<td><?= $responsable->periodo ?></td>
+							<!-- <td><?= $responsable->periodo ?></td> -->
 							<td><?= $responsable->rfc_responsable ?></td>
 							<td><?= mb_strtoupper($responsable->nombre . " " . $responsable->apaterno . " " . $responsable->amaterno,'utf-8'); ?></td> 
 							<td><?= $responsable->telefono  ?></td>
