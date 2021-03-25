@@ -124,7 +124,7 @@ class EvaluacionController extends BaseController
     { $desempeno = '';
         if($calificacion<1){
             $desempeno = 'Insuficiente';
-        }else if ($calificacion>1 && $calificacion < 1.50){
+        }else if ($calificacion >= 1 && $calificacion < 1.50){
             $desempeno = 'Suficiente';
         }else if($calificacion >= 1.50 && $calificacion<2.50){
             $desempeno = 'Bueno';
