@@ -39,7 +39,7 @@ $session = session(); ?>
                             <th scope="col" class="border-top-0">NOMBRE</th>
                             <th scope="col" class="border-top-0">CARRERA</th>
                             <th scope="col" class="border-top-0">SEMESTRE</th>
-                            <th scope="col" class="border-top-0">CALIFICAÓN</th>
+                            <th scope="col" class="border-top-0">CALIFICACIÓN</th>
                             <th scope="col" class="border-top-0">NIVEL DESEMPEÑO</th>
                             <th scope="col" class="border-top-0">ACCIÓN</th>
                         </tr>
