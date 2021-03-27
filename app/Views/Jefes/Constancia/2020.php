@@ -129,13 +129,13 @@ $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
     $fecha1 = date("Y");
 ?>
 <?php
-$meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+$meses = array("enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre");
 
 ?>
 <?php foreach($areas as $ar) : ?>
     <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br/>
     <p style="margin-left:549px; float:none; margin-top:1px; text-align:justify;" id="regular"><strong>Instituto Tecnológico de Pochutla</strong></p>
-    <p style="margin-left:549px; float:none; margin-top:1px; text-align: justify;" id="regular8">Subdirección de Planeación y Vinculación</p>
+    <p style="margin-left:549px; float:none; margin-top:1px; text-align: justify;" id="regular8"><?php  if ( $ar->id_area == '2') echo 'Subdirección de Planeación y Vinculación'?></p>
     <p style="margin-left:379px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?> <?php
         if ( $ar->id_area == '2') echo '(Formación Integral)';
     ?></p>
@@ -143,7 +143,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 <p style="text-align: center;"><?php foreach($actividad as $act) : ?>"<?= $act->frase_decreto ?>"<?php endforeach; ?></p><br>
     <p style=" text-align:right;" id="medium text-align:justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p><p style="font-size:70%;  margin-left:417px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?></p>
     <p style="font-size:70%;  margin-left:530px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERIAS'?></p>  
-    <p  style=" margin-left:540px; text-align: justify;" id="medium"><strong> Oficio:</strong> 
+    <p  style=" margin-left:540px; text-align: justify;" id="medium"><strong> Folio:</strong> 
     <?php
             if ( $ar->id_area == '2') echo '11V.1.1.4.0.0/EXT/';
             if ( $ar->id_area == '1') echo '11V.0.0.0.0.0/ING/';
@@ -172,7 +172,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
                 $date1 = date("Y")
                 ?>
 
-            <p style="text-align: justify;">Se extiende la presente en la <strong><u>Cd. De San Pedro Pochutla</u></strong> a los<strong><u> <?=$date?> </u></strong> dias del mes de  <strong><u><?php echo $meses[date('n')-1];?></u></strong> del <?=$date1?>.</p></div><br/><br><br><br><br>
+            <p style="text-align: justify;">Se extiende la presente en la <strong><u>Cd. de San Pedro Pochutla</u></strong> a los<strong><u> <?=$date?> </u></strong> dias del mes de  <strong><u><?php echo $meses[date('n')-1];?></u></strong> del <?=$date1?>.</p></div><br/><br><br><br><br>
         </div>
 <P style=" text-align:center;" id="extrabold"><strong>A T E N T A M E N T E</strong><br/>
 <strong style =" font-style:italic;" id="extralight">"Excelencia en Educación Tecnológica"</strong><br/></P><br/><br><br>
