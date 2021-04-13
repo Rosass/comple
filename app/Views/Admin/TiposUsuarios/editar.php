@@ -36,7 +36,7 @@
 			</form>
 		</div>
 	</div>
-
+</div>
 <script>
     const btnEnviarFormulario = document.querySelectorAll(".btnEnviarFormulario");
 
