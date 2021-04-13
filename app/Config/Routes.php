@@ -137,6 +137,13 @@ $routes->get('admin/tipos-usuarios/editar/(:any)', 'Admin/TipoUsuarioController:
 $routes->post('admin/tipos-usuarios/editar', 'Admin/TipoUsuarioController::actualizar');
 $routes->post('admin/tipos-usuarios/cambiar-estatus', 'Admin/TipoUsuarioController::cambiarEstatus');
 
+// Rutas [ADMIN-TIPOS-DEPARTAMENTO]
+$routes->get('admin/tipo-departamento', 'Admin/TipoDepartamentoController::index');
+$routes->post('admin/tipo-departamento/agregar', 'Admin/TipoDepartamentoController::guardar');
+$routes->get('admin/tipo-departamento/editar/(:any)', 'Admin/TipoDepartamentoController::editar');
+$routes->post('admin/tipo-departamento/editar', 'Admin/TipoDepartamentoController::actualizar');
+$routes->post('admin/tipo-departamento/cambiar-estatus', 'Admin/TipoDepartamentoController::cambiarEstatus');
+
 // Rutas [ADMIN-USUARIOS]
 $routes->get('admin/usuarios', 'Admin/UsuarioController::index');
 $routes->post('admin/usuarios/agregar', 'Admin/UsuarioController::guardar');

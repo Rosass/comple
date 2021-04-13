@@ -23,9 +23,12 @@
 						</li>
 						<li class="nav-item <?= ($activo == 'tipos-usuarios') ? 'active' : '' ?>">
         					<a class="nav-link" href="<?= base_url('admin/tipos-usuarios') ?>">Tipos usuarios</a>
-						  </li> 
-						  <li class="nav-item <?= ($activo == 'usuarios') ? 'active' : '' ?>">
-        					<a class="nav-link" href="<?= base_url('admin/usuarios') ?>"> Usuarios</a>
+						</li> 
+						<li class="nav-item <?= ($activo == 'tipo-departamento') ? 'active' : '' ?>">
+        					<a class="nav-link" href="<?= base_url('admin/tipo-departamento') ?>">Tipos departamentos</a>
+						</li>
+						<li class="nav-item <?= ($activo == 'usuarios') ? 'active' : '' ?>">
+        				<a class="nav-link" href="<?= base_url('admin/usuarios') ?>"> Usuarios</a>
       					</li>
 					</ul>
 					<span class="navbar-text">
