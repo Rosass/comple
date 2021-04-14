@@ -159,7 +159,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
                     if ( $a->carrera == 'ICI') echo 'INGENIERIA CIVIL';
                     if ( $a->carrera == 'IGE') echo 'INGENIERIA EN GESTION EMPRESARIAL';
                 ?></u></strong>, <?php endforeach; ?> ha cumplido su actividad  <?php foreach($actividad as $act) : ?> <strong><u><?= $act->tipo_actividad ?></u></strong>: <strong><u><?= $act->actividad ?></u></strong> con el nivel de desempeño<strong>
-            <u><?= $act->nivel ?></u></strong> y un valor numérico de <strong><u><?= $act->valor_numerico ?></u></strong> durante el periodo escolar <strong><u><?= $act->periodo_descripcion ?></u></strong> con un valor curricular de <strong><u><?= $act->credito ?></u></strong> crédito.</P> <br>
+            <u><?= $act->nivel ?></u></strong> y un valor numérico de <strong><u><?= $act->valor_numerico ?></u></strong> durante el periodo escolar <strong><u><?= $act->periodo_descripcion ?></u></strong> con un valor curricular de <strong><u><?= $act->credito ?></u></strong> créditos.</P> <br>
 
             
                 <?php endforeach ?>
