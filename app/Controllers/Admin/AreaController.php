@@ -6,11 +6,13 @@ class AreaController extends BaseController
 
 	protected $areaService;
 	protected $jefeService;
+    protected $tipoDepartamentoService;
 
     function __construct()
     {
 		$this->areaService =  new \App\Services\Admin\AreaService();
 		$this->jefeService =  new \App\Services\Admin\JefeService();
+        $this->tipoDepartamentoService =  new \App\Services\Admin\TipoDepartamentoService();
 	}
 	
 	public function index()
@@ -19,12 +21,14 @@ class AreaController extends BaseController
         {
 			$areas = $this->areaService->getAreas();
 			$jefes = $this->jefeService->getJefesPorEstatus(true);
+            $tipo_departamento = $this->tipoDepartamentoService->getTipos();
 
 			echo view('Includes/header');
 			echo view('Admin/navbar', ["activo" => "areas"]);
 			echo view('Admin/Areas/listar', [				
 				'areas' => $areas,
-				'jefes' => $jefes
+				'jefes' => $jefes,
+                'tipo_departamento' => $tipo_departamento
 			]);
 			echo view('Includes/footer');
 		}
@@ -50,6 +54,7 @@ class AreaController extends BaseController
             $datos = [
                 "nombre_area" => mb_strtoupper($this->request->getPost("nombre_area"), 'utf-8'),
 				"rfc_jefe" => $this->request->getPost("rfc_jefe"),
+                "tipo_departamento" => $this->request->getPost("tipo_departamento"),
 				
             ];
 

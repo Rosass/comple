@@ -21,3 +21,48 @@ CRITICAL - 2021-04-20 01:48:09 --> Unknown column 'a.id' in 'on clause'
 #9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}
+CRITICAL - 2021-04-20 15:14:19 --> Call to a member function getipos() on null
+#0 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\AreaController->index()
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AreaController))
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-20 15:14:41 --> Undefined property: App\Controllers\Admin\AreaController::$tipoDepartamentoService
+#0 C:\xampp\htdocs\comple\app\Controllers\Admin\AreaController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\AreaController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AreaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-20 15:15:34 --> Undefined property: App\Controllers\Admin\AreaController::$TipoDepartamentoService
+#0 C:\xampp\htdocs\comple\app\Controllers\Admin\AreaController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\AreaController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AreaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-20 15:17:34 --> Undefined property: App\Controllers\Admin\AreaController::$TipoDepartamentoService
+#0 C:\xampp\htdocs\comple\app\Controllers\Admin\AreaController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\AreaController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AreaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-20 15:18:13 --> Undefined property: App\Controllers\Admin\AreaController::$tipoDepartamentoService
+#0 C:\xampp\htdocs\comple\app\Controllers\Admin\AreaController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\AreaController->index()
+#2 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AreaController))
+#3 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-20 15:18:49 --> syntax error, unexpected ':', expecting :: (T_PAAMAYIM_NEKUDOTAYIM)
+#0 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Admin/Areas/agr...', Array, true)
+#1 C:\xampp\htdocs\comple\app\Views\Admin\Areas\listar.php(80): view('Admin/Areas/agr...')
+#2 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Admin/Areas/lis...', Array, true)
+#4 C:\xampp\htdocs\comple\app\Controllers\Admin\AreaController.php(31): view('Admin/Areas/lis...', Array)
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Admin\AreaController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AreaController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -34,6 +34,19 @@
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="id">TIPO DEPARTAMENTO </label>
+                        <select class="custom-select" name="id">
+                            <option selected disabled value="">Elige un tipo</option>
+                            <?php foreach($tipo_departamento as $key => $tipo) : ?>
+                                <option value="<?= $tipo->id ?>"><?= $tipo->id ?> : <?= $tipo->tipo_departamento ?></option>
+                            <?php endforeach ?>
+                        </select>
+                    </div>
+                </div>
+            </div>
             <small>Los campos marcados con (*) son obligatorios.</small>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

@@ -17,8 +17,10 @@ class AreaService
      */
     public function getAreas()
 	{   
-       return $this->areaModel->getAreas();
+        return $this->areaModel->getAreas();
     }
+    
+    
 
     /**
      * Obtiene las actividades por estatus de la BD

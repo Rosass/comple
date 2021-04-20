@@ -38,7 +38,7 @@
                         </div>
                         <div class="form-group">
                             <label for="frase_decreto">FRASE DECRETO </label>
-                            <input type="text" name="frase_decreto" id="frase_decreto" class="form-control" required value="<?= $periodo->frase_decreto ?>">
+                            <input type="text" name="frase_decreto" id="frase_decreto" class="form-control" value="<?= $periodo->frase_decreto ?>">
                         </div>
                         <small class="text-center">Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">
