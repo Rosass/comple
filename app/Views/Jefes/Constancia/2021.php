@@ -135,10 +135,10 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     <p style="margin-left:379px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?> <?php
         if ( $ar->id_area == '2') echo '(Formación Integral)';
     ?></p>
-    <P  style="margin-left:560px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERIAS'?></P><br>
-<p style="text-align: center;"><?php foreach($actividad as $act) : ?>"<?= $act->frase_decreto ?>"<?php endforeach; ?></p><br>
+    <P  style="margin-left:560px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERÍAS'?></P><br>
+<p style="text-align: center;"><?php foreach($actividad as $act) : ?><?= $act->frase_decreto ?><?php endforeach; ?></p><br>
     <p style=" text-align:right;" id="medium text-align:justify;"  >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p><p style="font-size:70%;  margin-left:417px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?></p>
-    <p style="font-size:70%;  margin-left:530px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERIAS'?></p>  
+    <p style="font-size:70%;  margin-left:530px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERÍAS'?></p>  
     <p  style=" margin-left:540px; text-align: justify;" id="medium"><strong> Oficio:</strong> 
     <?php
             if ( $ar->id_area == '2') echo '11V.1.1.4.0.0/EXT/';
@@ -155,9 +155,9 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
             <P style ="text-align:center; text-align:justify; ">El que suscribe <strong><u><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?></u></strong>,<?php endforeach; ?> por este medio se permite hacer de su conocimiento que el (la) estudiante  <?php foreach ( $alumno as $a ):?> <strong><u><?= $a->nombre?> <?=$a->ap_paterno?>
                 <?=$a->ap_materno?></u></strong>, con número de control
             <strong><u><?= $control?></u></strong> de la carrera de <strong><u><?php
-                    if ( $a->carrera == 'ISC') echo 'INGENIERIA EN SISTEMAS COMPUTACIONALES';
-                    if ( $a->carrera == 'ICI') echo 'INGENIERIA CIVIL';
-                    if ( $a->carrera == 'IGE') echo 'INGENIERIA EN GESTION EMPRESARIAL';
+                    if ( $a->carrera == 'ISC') echo 'INGENIERÍA EN SISTEMAS COMPUTACIONALES';
+                    if ( $a->carrera == 'ICI') echo 'INGENIERÍA CIVIL';
+                    if ( $a->carrera == 'IGE') echo 'INGENIERÍA EN GESTIÓN EMPRESARIAL';
                 ?></u></strong>, <?php endforeach; ?> ha cumplido su actividad  <?php foreach($actividad as $act) : ?> <strong><u><?= $act->tipo_actividad ?></u></strong>: <strong><u><?= $act->actividad ?></u></strong> con el nivel de desempeño<strong>
             <u><?= $act->nivel ?></u></strong> y un valor numérico de <strong><u><?= $act->valor_numerico ?></u></strong> durante el periodo escolar <strong><u><?= $act->periodo_descripcion ?></u></strong> con un valor curricular de <strong><u><?= $act->credito ?></u></strong> créditos.</P> <br>
 
