@@ -21,10 +21,10 @@ class ConstanciaController extends BaseController
         
         if($this->session->login && $this->session->usuario_logueado->id_tipo_usuario == USUARIO_AREA)
             {
-
+            
             $control = $this->request->getPost("ncontrol");
             $periodo = $this->request->getPost('periodo');
-
+           
             $folio = $this->request->getPosT('folio');
             $id_actividad = $this->request->getPost('id_actividad');
             $actividades = $this->constanciaService->getActividad($control, $id_actividad);

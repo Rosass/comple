@@ -112,18 +112,13 @@
 </head>
 <body>
 <?php
-    $path = 'public/img/sepp.jpg'; 
+    $path = 'public/img/logonew.png'; 
     $type = pathinfo($path, PATHINFO_EXTENSION);
     $data = file_get_contents($path);
     $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
 ?>
-<img " style="width:35%;"  src="<?= $base64 ?>">    
-<?php
-$path = 'public/img/logo_tecnm.gif';
-$type = pathinfo($path, PATHINFO_EXTENSION);
-$data = file_get_contents($path);
-$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-?>
+<img " style="width:80%;"  src="<?= $base64 ?>">
+
 <?php date_default_timezone_set('America/Mexico_city');
     $fecha = date("d/");
     $fecha1 = date("Y");
@@ -133,7 +128,6 @@ $meses = array("enero","febrero","marzo","abril","mayo","junio","julio","agosto"
 
 ?>
 <?php foreach($areas as $ar) : ?>
-    <img  style="width:34%;" align="right" src="<?= $base64 ?>"><br/>
     <p style="margin-left:549px; float:none; margin-top:1px; text-align:justify;" id="regular"><strong>Instituto Tecnológico de Pochutla</strong></p>
     <p style="margin-left:549px; float:none; margin-top:1px; text-align: justify;" id="regular8"><?php  if ( $ar->id_area == '2') echo 'Subdirección de Planeación y Vinculación'?></p>
     <p style="margin-left:379px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?> <?php
@@ -191,38 +185,54 @@ $meses = array("enero","febrero","marzo","abril","mayo","junio","julio","agosto"
         <p style="margin-top:-18px;" id="medium8">TecNM-VI-PO-003-05 <strong style="margin-left:110px;">Esta constancia es oficial y la puede validar en: https://constancias.pochutla.tecnm.mx/</strong></p>
         <p style="margin-left:650px; text-align:center; margin-top:-900%;" id="medium8">Rev. 0</p>
     </div>
-    <hr size="2.3">
+    <div>
 
-    
+<?php
+        $path = 'public/img/logotec.png';
+        $type = pathinfo($path, PATHINFO_EXTENSION);
+        $data = file_get_contents($path);
+        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+    ?>
+<img  style="width:9%;" align="left" src="<?= $base64 ?>">
+<div >
         <?php
-            $path = 'public/img/logotec.png';
-            $type = pathinfo($path, PATHINFO_EXTENSION);
-            $data = file_get_contents($path);
-            $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-        ?>
-    <img  style="width:10%;" align="left" src="<?= $base64 ?>">
-    <div id="logos">
+                $path = 'public/img/s.png';
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+            ?>
+        <img  style=" width:13%;" align="left" src="<?= $base64 ?>">
+    </div>
+<div >
         <?php
                 $path = 'public/img/3logos.jpeg';
                 $type = pathinfo($path, PATHINFO_EXTENSION);
                 $data = file_get_contents($path);
                 $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
             ?>
-        <img  style=" width:20%;" align="right" src="<?= $base64 ?>">
+        <img  style=" width:18%;" align="left" src="<?= $base64 ?>">
     </div>
+    <div >
+            <?php
+                    $path = 'public/img/d.png';
+                    $type = pathinfo($path, PATHINFO_EXTENSION);
+                    $data = file_get_contents($path);
+                    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                ?>
+            <img  style=" width:13%;" align="right" src="<?= $base64 ?>">
+        </div>
+<p style=" text-align:center; text-align:justify; font-size:85%;">k.m 5.35 Carretera San Pedro Pochutla-Puerto Ángel, Localidad El Colorado, C.P. 70902, San Pedro Pochutla, Oaxaca. Tel. 01 (958) 5878050. e-mail: dir pochutla@tecnm.mx</p>
 
-    <p style=" text-align:center; float:none; font-size:50%; ">Instituto Tecnológico certificado conforme a la NMX-CC-9001-IMNC-2015 ISO 9001:2015<br/>
-    "Número de registro: RSGC-928, fecha de inicio:2015-06-22 y término de la certificación 2021-06-22" <br/>El Alcance de la certificación: Proceso Educativo; que comprende desde la inscripción<br/>
-    hasta la entrega del Titulo y la Cedula Profesional de licenciatura.<br/> Instituto Tecnológico certificado conforme a la NMX-R-025-SCFI-2015 en igualdad Laboral y No Discriminación<br/> k.m 5.35 Carretera San Pedro Pochutla-Puerto Ángel, Localidad El Colorado,<br/> C.P. 70902, San Pedro Pochutla, Oaxaca, México.<br/>Tel. 01(958) 5878050, e-mail:dir_pochutla@tecnm.mx<br>www.tecnm.mx | www.pochutla.tecnm.mx</p>
+        <?php
+                $path = 'public/img/hr.png';
+                $type = pathinfo($path, PATHINFO_EXTENSION);
+                $data = file_get_contents($path);
+                $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+            ?>
+        <img  style=" width:80%;" align="right" src="<?= $base64 ?>">
+    </div>
+</div>
 </footer>
-<div id="watermar">
-<?php
-    $path = 'public/img/image.png'; 
-    $type = pathinfo($path, PATHINFO_EXTENSION);
-    $data = file_get_contents($path);
-    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-?>
-<img " style="width:80%;" src="<?= $base64 ?>"> 
 
 </div> <br><br><br><br><br><br><br>
 

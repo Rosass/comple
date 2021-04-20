@@ -39,4 +39,10 @@ class ConstanciaService
 	{   
     return $this->constanciaModel->getArea($id_area);
     }
+
+    
+    public function getPeriodo()
+	{   
+    return $this->constanciaModel->getPeriodo();
+    }
 } 

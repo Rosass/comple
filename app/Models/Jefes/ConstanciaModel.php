@@ -45,6 +45,14 @@ class ConstanciaModel extends Model
             ->get()->getResult();
     }
 
+    public function getPeriodo()
+    {
+        return $this->db->table('periodo')
+        ->select("*")
+        ->orderBy("periodo", "ASC")
+        ->get()->getResult();
+    }
+
     
     
     
