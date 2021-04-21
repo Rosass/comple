@@ -40,6 +40,21 @@
 								</div>
 							</div>
 						</div>
+						<div class="row justify-content-center">
+							<div class="col-md-7">
+								<div class="form-group">
+									<label for="id">TIPO DEPARTAMENTO</label>
+									<select class="custom-select" name="id">
+                                        <?php if($area->id == null) : ?>
+                                            <option selected disabled>Elige un tipo</option>
+                                        <?php endif ?>
+                                        <?php foreach($tipo_departamento as $key => $tipo) : ?>
+										    <option value="<?= $tipo->id ?>" <?= ($tipo->id == $area->id) ? 'selected' : '' ?>><?= $tipo->tipo_departamento ?></option>
+										<?php endforeach ?>
+									</select>
+								</div>
+							</div>
+						</div>
 						<small>Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">
                             <div class="dropdown-divider"></div>

@@ -54,9 +54,10 @@ class AreaController extends BaseController
             $datos = [
                 "nombre_area" => mb_strtoupper($this->request->getPost("nombre_area"), 'utf-8'),
 				"rfc_jefe" => $this->request->getPost("rfc_jefe"),
-                "tipo_departamento" => $this->request->getPost("tipo_departamento"),
+                "id" => $this->request->getPost("id"),
 				
             ];
+            
 
             $respuesta =  $this->areaService->guardar($datos);
 
@@ -79,6 +80,7 @@ class AreaController extends BaseController
         {
             $id_area = urldecode($this->request->uri->getSegment(4));
 			$area = $this->areaService->getAreaPorId($id_area);
+            $tipo_departamento = $this->tipoDepartamentoService->getTipos();
 
             if($area != NULL)
             {
@@ -90,7 +92,8 @@ class AreaController extends BaseController
                 echo view('Admin/navbar', ["activo" => "areas"]);
                 echo view('Admin/Areas/editar', [
 					'area' => $area,
-					'jefes' => $jefes
+					'jefes' => $jefes,
+                    'tipo_departamento' => $tipo_departamento
 				]);
                 echo view('Includes/footer');
             }
@@ -121,6 +124,7 @@ class AreaController extends BaseController
 			$datos = [
                 "nombre_area" => mb_strtoupper($this->request->getPost("nombre_area"), 'utf-8'),
 				"rfc_jefe" => $this->request->getPost("rfc_jefe"),
+                "id" => $this->request->getPost("id"),
 				
             ];
 
