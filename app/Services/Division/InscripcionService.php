@@ -91,7 +91,7 @@ class InscripcionService
                 $estatus= '<span class="bg-success p-1 rounded small">Aceptada</span>';  
             }
             
-            if($inscripcion->estatus == 0) 
+            if($inscripcion->estatus == 3) 
             {
                 $estatus= '<span class="bg-danger p-1 rounded small">Rechazada</span>';
             }
