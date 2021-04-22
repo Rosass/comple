@@ -20,7 +20,7 @@
                 <button class="btn btn-success mb-2" data-toggle="modal" data-target="#nuevoTipoModal"><i class="fas fa-plus"></i> Nuevo tipo</button>
             </div>
             <div class="table-responsive-sm text-center">
-                <table class="table table-hover table-light table-striped shadow-lg" id="tablaTiposActividades">
+                <table class="table table-hover table-white table-striped shadow-lg" id="tablaTiposUsuarios">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
                         <tr>
                             <th scope="col" colspan="13" class="border-top-0 p-3"><h3 class="mb-0">TIPOS DE ACTIVIDADES</h3></th>
@@ -31,16 +31,15 @@
                             <th scope="col" class="border-top-0">ÁREA</th>
                             <th scope="col" class="border-top-0">REGISTRO</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
-                            <th scope="col" class="border-top-0"></th>
+                            <th scope="col" class="border-top-0">ACCIONES</th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
                         <?php foreach($tipos_actividades as $key => $tipo) : ?>
                             <tr>
                                 <th scope="row"><?= $key + 1 ?></th>
-                                <td><?= $tipo->nombre ?></td>
-                                <td><?php if ( $tipo->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES';
-                                        if ( $tipo->id_area == '1') echo 'DEPARTAMENTO DE INGENIERÍAS';?></td>
+                                <td><?= $tipo->nombre ?></td>  
+                                <td><?= $tipo->area ?></td>                                   
                                 <td><?= $tipo->fecha_registro ?></td>
                                 <td class="text-white">
                                     <?php if($tipo->estatus == true) : ?>

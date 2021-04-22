@@ -144,3 +144,84 @@ CRITICAL - 2021-04-21 13:01:33 --> Unknown column 'a.tipo_departamento' in 'on c
 #9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}
+CRITICAL - 2021-04-21 13:55:20 --> Undefined variable: tipo_departamento
+#0 C:\xampp\htdocs\comple\app\Views\Division\TiposActividades\listar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/TiposA...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Division\TipoActividadController.php(22): view('Division/TiposA...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\TipoActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\TipoActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-21 13:56:11 --> Undefined variable: tipo_actividades
+#0 C:\xampp\htdocs\comple\app\Views\Division\TiposActividades\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/TiposA...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Division\TipoActividadController.php(22): view('Division/TiposA...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\TipoActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\TipoActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-21 14:04:29 --> Archivo inválido: Division/tipos-actividades/agregar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Division/tipos-...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/tipos-...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Views\Division\TiposActividades\listar.php(76): view('Division/tipos-...')
+#3 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/TiposA...', Array, true)
+#5 C:\xampp\htdocs\comple\app\Controllers\Division\TipoActividadController.php(22): view('Division/TiposA...')
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\TipoActividadController->index()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\TipoActividadController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-21 14:07:14 --> Archivo inválido: Division/TipoActividades/agregar.php
+#0 C:\xampp\htdocs\comple\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Division/TipoAc...')
+#1 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/TipoAc...', Array, true)
+#2 C:\xampp\htdocs\comple\app\Views\Division\TiposActividades\listar.php(77): view('Division/TipoAc...')
+#3 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/TiposA...', Array, true)
+#5 C:\xampp\htdocs\comple\app\Controllers\Division\TipoActividadController.php(22): view('Division/TiposA...')
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\TipoActividadController->index()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\TipoActividadController))
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-21 14:50:06 --> Undefined variable: periodos
+#0 C:\xampp\htdocs\comple\app\Views\Division\TiposActividades\listar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 42, Array)
+#1 C:\xampp\htdocs\comple\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\comple\system\Common.php(1119): CodeIgniter\View\View->render('Division/TiposA...', Array, true)
+#3 C:\xampp\htdocs\comple\app\Controllers\Division\TipoActividadController.php(22): view('Division/TiposA...')
+#4 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\TipoActividadController->index()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\TipoActividadController))
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-21 14:51:00 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\comple\app\Models\Division\TipoActividadModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\comple\app\Services\Division\TipoActividadService.php(20): App\Models\Division\TipoActividadModel->getTipos()
+#4 C:\xampp\htdocs\comple\app\Controllers\Division\TipoActividadController.php(17): App\Services\Division\TipoActividadService->getTipos()
+#5 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\TipoActividadController->index()
+#6 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\TipoActividadController))
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-21 17:24:18 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-21 17:47:59 --> Unknown column 'ta.id_tipo_actividad' in 'field list'
+#0 C:\xampp\htdocs\comple\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `ta`.`id...')
+#1 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ta`.`id...')
+#2 C:\xampp\htdocs\comple\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ta`.`id...')
+#3 C:\xampp\htdocs\comple\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `ta`.`id...', Array, false)
+#4 C:\xampp\htdocs\comple\app\Models\Division\TipoActividadModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\comple\app\Services\Division\TipoActividadService.php(20): App\Models\Division\TipoActividadModel->getTipos()
+#6 C:\xampp\htdocs\comple\app\Controllers\Division\TipoActividadController.php(17): App\Services\Division\TipoActividadService->getTipos()
+#7 C:\xampp\htdocs\comple\system\CodeIgniter.php(918): App\Controllers\Division\TipoActividadController->index()
+#8 C:\xampp\htdocs\comple\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Division\TipoActividadController))
+#9 C:\xampp\htdocs\comple\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\comple\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

@@ -8,14 +8,15 @@
           <span aria-hidden="true" class="text-white">&times;</span>
         </button>
       </div>
-      <div class="modal-body pb-0 text-center">
-          <form action="<?= base_url("division/tipos-actividades/agregar") ?>" method="POST" class="needs-validation" novalidate>
-            <div class="form-group">
-              <label for="nombre">NOMBRE DEL TIPO DE ACTIVIDAD (*)</label>
-                <input type="text" class="form-control text-uppercase" id="nombre" name="nombre" required value="<?= old("nombre") ?>">
-                <div class="invalid-feedback">
-					Por favor, rellena este campo
-			    </div>
+        <div class="modal-body pb-0 text-center">
+            <form action="<?= base_url("division/tipos-actividades/agregar") ?>" method="POST" class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="nombre">NOMBRE DEL TIPO DE ACTIVIDAD (*)</label>
+                  <input type="text" class="form-control text-uppercase" id="nombre" name="nombre" required value="<?= old("nombre") ?>">
+                  <div class="invalid-feedback">
+            Por favor, rellena este campo
+            </div>
+        </div>
         <div class="row justify-content-center">  
           <div class="col-md-7">
 							<div class="form-group">

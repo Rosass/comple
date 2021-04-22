@@ -13,7 +13,9 @@ class TipoActividadModel extends Model
 
     public function getTipos()
 	{   
-        return $this->db->table($this->table)->select("*")
+        return $this->db->table("tipo_actividad ta")
+        ->select("ta.id_tipo_actividad, ta.nombre, ta.fecha_registro, ta.id_area, ta.estatus, a.nombre_area as area")
+        ->join("area a", "a.id_area = ta.id_area")
         ->get()->getResult();
     }
 

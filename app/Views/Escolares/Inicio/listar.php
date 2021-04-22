@@ -48,10 +48,8 @@
                             <th scope="col" class="border-top-0">Calificacion</th>                                   
                         </tr>
                     </thead>
-                    <tbody id="tbodyResult">
-                    
-                        
-                    </tbody>
+                    <tbody id="tbodyResult"></tbody>
+                    <tfoot id="extra-info"></tfoot>
                 </table>
             </div>
         </div>

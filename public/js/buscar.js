@@ -1,9 +1,42 @@
 (() => {
-
+	const escalaDePromedios = [
+		{ promedio: 1.0, calificacion: 70},
+		{ promedio: 1.1, calificacion: 71},
+		{ promedio: 1.2, calificacion: 72},
+		{ promedio: 1.3, calificacion: 73},
+		{ promedio: 1.4, calificacion: 74},
+		{ promedio: 1.5, calificacion: 75},
+		{ promedio: 1.6, calificacion: 76},
+		{ promedio: 1.7, calificacion: 77},
+		{ promedio: 1.8, calificacion: 78},
+		{ promedio: 1.9, calificacion: 79},
+		{ promedio: 2.0, calificacion: 80},
+		{ promedio: 2.1, calificacion: 81},
+		{ promedio: 2.2, calificacion: 82},
+		{ promedio: 2.3, calificacion: 83},
+		{ promedio: 2.4, calificacion: 84},
+		{ promedio: 2.5, calificacion: 85},
+		{ promedio: 2.6, calificacion: 86},
+		{ promedio: 2.7, calificacion: 87},
+		{ promedio: 2.8, calificacion: 88},
+		{ promedio: 2.9, calificacion: 89},
+		{ promedio: 3.0, calificacion: 90},
+		{ promedio: 3.1, calificacion: 91},
+		{ promedio: 3.2, calificacion: 92},
+		{ promedio: 3.3, calificacion: 93},
+		{ promedio: 3.4, calificacion: 94},
+		{ promedio: 3.5, calificacion: 95},
+		{ promedio: 3.6, calificacion: 96},
+		{ promedio: 3.7, calificacion: 97},
+		{ promedio: 3.8, calificacion: 98},
+		{ promedio: 3.9, calificacion: 99},
+		{ promedio: 4.0, calificacion: 100},
+	];
 	const inputNoControl = document.getElementById("inputNoControl");
 	const BASE_URL = "http://localhost/comple/";
 	//const URL_BASE = 'https://ac.pochutla.tecnm.mx/';
 	const tbodyResult = document.getElementById("tbodyResult");
+	const tfoot = document.querySelector('#extra-info');
 
 
 	const datosAlimno = document.querySelector('#datos-alumno');
@@ -11,12 +44,14 @@
 	if ( !formularioBuscarAalumno ) return;
 
 	let promedioAlumno;
+	let totalCalificacion;
 
 
 	// FUNCIONES
 	const buscarAlumno = async (e) => {
 		e.preventDefault();
-		promedioAlumno = 0;
+		promedioAlumno = 0; 
+		totalCalificacion = 0; 
 
 		if ( inputNoControl.value === '' ) {
 			alertaError('Ingresa el numero de control del alumno...');
@@ -97,13 +132,26 @@
 	// IMRPIMIR DATOS DE ACTIVIDADES EN HTML 
 	const imprimirActividades = actividades => {
 		limpiarHTML( tbodyResult );
-		let index = 1;
+		limpiarHTML( tfoot );
+		let index = 0;
 		actividades.data.forEach( activ => {
 			const tr = document.createElement('tr');
-			const { credito, actividad, nombre, apaterno, amaterno, calificacion, horario, tipo_actividad, periodo_descripcion, hora} = activ;
+			const {
+				credito,
+				actividad,
+				nombre,
+				apaterno,
+				amaterno,
+				calificacion,
+				horario,
+				tipo_actividad,
+				periodo_descripcion,
+				hora
+			} = activ;
 			promedioAlumno += Number(credito);
+			totalCalificacion += Number(calificacion);
 			tr.innerHTML = `
-				<td>${ index }</td>
+				<td>${ ++index }</td>
 				<td>${ periodo_descripcion }</td>
 				<td>${ actividad }</td>
 				<td>${tipo_actividad }</td>
@@ -114,8 +162,36 @@
 				<td>${ ( calificacion >= 1 ) ? calificacion : "" }</td>
 			`;
 			tbodyResult.appendChild( tr );
-			index++;
+			// index++;
 		});
+		// totalCalificacion = totalCalificacion / index;
+
+		if ( promedioAlumno >= 5 ) {
+			const tr = document.createElement('tr');
+			const promedioEscala = totalCalificacion / index ;
+			let promedio = 0;
+			escalaDePromedios.forEach( escala => {
+				if ( escala.promedio.toString() === tratarNumeros( promedioEscala ) ) {
+					promedio = escala.calificacion
+				}
+			});
+
+			if ( promedioEscala < '1' ) {
+				promedio = 'NA';
+			}
+
+			tr.innerHTML = `
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Promedio aritmético: </td>
+			<td>${ promedio }</td>
+		`;
+			tfoot.appendChild( tr );
+		}
+
+	}
+
+
+	const tratarNumeros = numero => {
+		return numero.toFixed(3).substring().slice(0, -2);
 	}
 
 
