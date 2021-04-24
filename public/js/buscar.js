@@ -179,9 +179,9 @@
 			if ( promedioEscala < '1' ) {
 				promedio = 'NA';
 			}
-
-			tr.innerHTML = `
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Promedio aritmético: </td>
+			
+			tr.innerHTML =  `
+			<td></td><td></td><td></td><td></td><td></td><td>Valor Numerico:</td><td>${tratarNumeros( promedioEscala )}</td><td>Promedio aritmético: </td>
 			<td>${ promedio }</td>
 		`;
 			tfoot.appendChild( tr );
