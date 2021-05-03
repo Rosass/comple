@@ -67,7 +67,7 @@
                                 <td><?= $actividad->creditos ?></td>
                                 <td><?= $actividad->capacidad ?></td>
                                 <td><?= $actividad->nombre_area ?></td>
-                                <td><?= $actividad->nombre_jefe. " " .$actividad->apaterno_jefe?></td>
+                                <td><?= $actividad->nombre_jefe. " " .$actividad->apaterno_jefe. " " .$actividad->amaterno_jefe ?></td>
                                 <td><?= $actividad->periodo_descripcion ?></td>
                                 <td><?= $actividad->tipo_actividad ?></td>
                                 <td><?= $actividad->nombre_responsable. " " .$actividad->apaterno_responsable. " " .$actividad->amaterno_responsable ?></td>
