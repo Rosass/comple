@@ -57,7 +57,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-3">
 							<div class="form-group">
 								<label for="id_area">ÁREA (*)</label>
 								<select class="custom-select" name="id_area" id="area21"  required>
@@ -71,7 +71,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-3">
 							<div class="form-group">
 								<label for="periodo">PERIODO (*)</label>
 								<select class="custom-select" name="periodo" required id="periodo">
@@ -85,12 +85,26 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-3">
 							<div class="form-group">
 								<label for="id_tipo_actividad">TIPO (*)</label>
 								<select class="custom-select" name="id_tipo_actividad" id="select-tipo21" required>
 									<option selected disabled value="">Elige el tipo de actividad</option>
 									
+								</select>
+								<div class="invalid-feedback">
+									Por favor, rellena este campo
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="rfc_jefe_nofk">JEFE DE AREA (*)</label>
+								<select class="custom-select" name="rfc_jefe_nofk">
+									<option selected disabled>Elige un jefe</option>
+									<?php foreach($jefe as $key => $jefe) : ?>
+                                    <option value="<?= $jefe->rfc_jefe ?>"><?= $jefe->nombre_jefe . " " . $jefe->apaterno_jefe . " (". $jefe->rfc_jefe . ")" ?></option>
+                                    <?php endforeach ?>
 								</select>
 								<div class="invalid-feedback">
 									Por favor, rellena este campo
