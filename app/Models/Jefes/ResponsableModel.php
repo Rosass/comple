@@ -59,11 +59,12 @@ class ResponsableModel extends Model
         ->get()->getResult();
     } */
 
-    public function getResponsablePorRfc($rfc)
+    public function getResponsablePorRfc($rfc, $id_area_fk)
     {
         return $this->db->table($this->table)
         ->select("*")
         ->where("rfc_responsable", $rfc)
+        ->where("id_area_fk", $id_area_fk)
         ->get()->getRow();
     }
 
