@@ -56,7 +56,7 @@ class ResponsableService
      */
     public function guardar($datos)
     {
-        $responsable = $this->responsableModel->getResponsablePorRfc($datos['rfc_responsable'], $datos['id_area_fk']);
+        $responsable = $this->responsableModel->getResponsablePorRfcYPeriodo($datos['rfc_responsable'],$datos['id_area_fk']);
 
         if($responsable == NULL)
         {
@@ -67,7 +67,7 @@ class ResponsableService
         }
         else 
         {
-            return ["exito" => false, "msj" => "El responsable <strong>" . $datos['rfc_responsable'] . $datos['id_area_fk'] . "</strong> ya se encuentra registrado!."];
+            return ["exito" => false, "msj" => "El responsable <strong>" . $datos['rfc_responsable'] . "</strong> ya se encuentra registrado!."];
         }
     }
 

@@ -50,22 +50,21 @@ class ResponsableModel extends Model
         return $this->db->affectedRows();
     }
 
-/*     public function getResponsablePorRfcYPeriodo($rfc, $periodo)
-    {
-        return $this->db->table($this->table)
-        ->select("*")
-        ->where("rfc_responsable", $rfc)
-        ->where("periodo", $periodo)
-        ->get()->getResult();
-    } */
-
-    public function getResponsablePorRfc($rfc, $id_area_fk)
+     public function getResponsablePorRfcYPeriodo($rfc, $id_area_fk)
     {
         return $this->db->table($this->table)
         ->select("*")
         ->where("rfc_responsable", $rfc)
         ->where("id_area_fk", $id_area_fk)
-        ->get()->getRow();
+        ->get()->getResult();
+    } 
+
+    public function getResponsablePorRfc($rfc)
+    {
+        return $this->db->table($this->table)
+        ->select("*")
+        ->where("rfc_responsable", $rfc)
+        ->get()->getResult();
     }
 
     public function getPeriodo()
