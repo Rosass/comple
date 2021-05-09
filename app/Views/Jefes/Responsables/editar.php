@@ -59,9 +59,7 @@
 							<div class="col-md-4">
 								<label for="periodo">PERIODO (*)</label>
 									<select class="custom-select" name="periodo" required>
-										<?php foreach($periodos as $key => $periodo) : ?>
-										    <option value="<?= $periodo->periodo ?>" <?= ($periodo->periodo == $responsable->periodo) ? 'selected' : '' ?>><?= $periodo->descripcion ?></option>
-										<?php endforeach ?>
+									
 									</select>
 							</div>
 						</div> -->
