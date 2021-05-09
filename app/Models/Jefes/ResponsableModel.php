@@ -50,12 +50,13 @@ class ResponsableModel extends Model
         return $this->db->affectedRows();
     }
 
+    //prueba para agregar responsable por area, todavia no funciona
      public function getResponsablePorRfcYPeriodo($rfc, $id_area_fk)
     {
         return $this->db->table($this->table)
         ->select("*")
         ->where("rfc_responsable", $rfc)
-        ->where("id_area_fk", $id_area_fk)
+        ->where("telefono", $id_area_fk)
         ->get()->getResult();
     } 
 

@@ -56,7 +56,7 @@ class ResponsableService
      */
     public function guardar($datos)
     {
-        $responsable = $this->responsableModel->getResponsablePorRfcYPeriodo($datos['rfc_responsable'],$datos['id_area_fk']);
+        $responsable = $this->responsableModel->getResponsablePorRfcYPeriodo($datos['rfc_responsable'],$datos['telefono']);
 
         if($responsable == NULL)
         {
