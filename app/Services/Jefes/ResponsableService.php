@@ -43,11 +43,11 @@ class ResponsableService
         return $this->responsableModel->getResponsablesPorEstatus($estatus);
     }
 
-    public function getPeriodo()
+ /*    public function getPeriodo()
 	{   
     return $this->responsableModel->getPeriodo();
     }
-
+ */
 
     /**
      * Guarda un nuevo responsable en la BD
