@@ -30,9 +30,7 @@
                                     <select class="custom-select"  name="periodo">
                                         <option selected disabled value="">Elige el periodo</option>
                                         <option value="0">PERIODO ACTIVO</option>
-                                        <?php foreach($periodos as $key => $periodo) : ?>
-                                            <option value="<?= $periodo->periodo ?>"><?= $periodo->descripcion ?></option>
-                                        <?php endforeach ?>
+                                     
                                     </select>
                                     <button type="submit"  class="btn bg-color-tec-blue text-white">Buscar</button>
                                 </div>
