@@ -35,7 +35,7 @@ class ActividadModel extends Model
         
         return $this->db->table("actividad a")
             ->select("a.id_actividad, a.nombre_actividad, a.numero_dictamen, a.creditos, a.capacidad, ar.nombre_area, p.descripcion AS 'periodo_descripcion', p.estatus, ta.nombre AS 'tipo_actividad',
-            a.rfc_jefe_nofk, j.nombre_jefe, j.apaterno_jefe,
+                        a.rfc_jefe_nofk, j.nombre_jefe, j.apaterno_jefe, j.amaterno_jefe,
             a.rfc_responsable, r.nombre AS 'nombre_responsable', r.apaterno AS 'apaterno_responsable', r.amaterno AS 'amaterno_responsable', a.horas, a.horario, a.estatus")
             ->join('area ar', 'ar.id_area = a.id_area', 'LEFT')
             ->join('periodo p', 'p.periodo = a.periodo', 'LEFT')
