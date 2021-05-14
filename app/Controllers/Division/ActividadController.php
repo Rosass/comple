@@ -35,6 +35,7 @@ class ActividadController extends BaseController
 			$tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
             $responsables = $this->responsableService->getResponsablesPorEstatus(true);
             $periodo = $this->actividadService->getPeriodo();
+            $jefe = $this->actividadService->getJefePorEstatus(true);
 
 			echo view('Includes/header');
 			echo view('Division/navbar', ["activo" => "actividades"]);
@@ -45,6 +46,8 @@ class ActividadController extends BaseController
                 'periodo' => $periodo,
 				'tipos_actividades' => $tipos_actividades,
                 'responsables' => $responsables,
+                'jefe' => $jefe,
+
 			]);
 			echo view('Includes/footer');
 		}
@@ -69,6 +72,7 @@ class ActividadController extends BaseController
         $periodos = $this->periodoService->getPeriodosPorEstatus(true);
 		$actividades = $this->actividadService->getActividadPorIdareaPeriodo( $periodoPost);
         $periodo = $this->actividadService->getPeriodo();
+        $jefe = $this->actividadService->getJefePorEstatus(true);
 		
 		
 		echo view('Includes/header');
@@ -80,6 +84,7 @@ class ActividadController extends BaseController
 			'tipos_actividades' => $tipos_actividades,
 			'responsables' => $responsables,
             'periodo' => $periodo,
+            'jefe' => $jefe,
 		]);
 		echo view('Includes/footer');
 	}
@@ -107,7 +112,9 @@ class ActividadController extends BaseController
 				"id_tipo_actividad" => $this->request->getPost("id_tipo_actividad"),
 				"rfc_responsable" => $this->request->getPost("rfc_responsable"),
 				"horas" => $this->request->getPost("horas"),
-                "horario" =>  mb_strtoupper($this->request->getPost("horario"), 'utf-8')
+                "horario" =>  mb_strtoupper($this->request->getPost("horario"), 'utf-8'),
+                "rfc_jefe_nofk" => $this->request->getPost("rfc_jefe_nofk"),
+
             ];
 
             $respuesta =  $this->actividadService->guardar($datos);
@@ -139,6 +146,7 @@ class ActividadController extends BaseController
 				$tipos_actividades = $this->tipoActividadService->getTiposPorEstatus(true);
                 $responsables = $this->responsableService->getResponsablesPorEstatus(true);
                 $periodo = $this->actividadService->getPeriodo();
+                $jefe = $this->actividadService->getJefePorEstatus(true);
 
                 //* SELECT PARA EDITAR TIPO DE ACTIVIDADES POR AREA
                 $area = $this->actividadService->getArea(); 
@@ -153,7 +161,8 @@ class ActividadController extends BaseController
                     'periodos' => $periodos,
                     'periodo' => $periodo,
 					'tipos_actividades' => $tipos_actividades,
-					'responsables' => $responsables
+					'responsables' => $responsables,
+                    'jefe' => $jefe,
 				]);
                 echo view('Includes/footer');
             }
@@ -190,7 +199,8 @@ class ActividadController extends BaseController
                 "periodo" => $this->request->getPost("periodo"),
 				"id_tipo_actividad" => $this->request->getPost("id_tipo_actividad"),
 				"horas" => $this->request->getPost("horas"),
-                "horario" =>  mb_strtoupper($this->request->getPost("horario"), 'utf-8')
+                "horario" =>  mb_strtoupper($this->request->getPost("horario"), 'utf-8'),
+                "rfc_jefe_nofk" => $this->request->getPost("rfc_jefe_nofk"),
             ];
 
             $respuesta =  $this->actividadService->actualizar($id_actividad, $datos);

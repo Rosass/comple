@@ -152,7 +152,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     <strong>JEFE(A) DEL DEPARTAMENTO DE SERVICIOS ESCOLARES  </strong><br><strong>P R E S E N T E</strong></P></div><br>
 
         <div id="letra">
-            <P style ="text-align:center; text-align:justify; ">El que suscribe <strong><u><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?></u></strong>,<?php endforeach; ?> por este medio se permite hacer de su conocimiento que el (la) estudiante  <?php foreach ( $alumno as $a ):?> <strong><u><?= $a->nombre?> <?=$a->ap_paterno?>
+            <P style ="text-align:center; text-align:justify; ">El que suscribe <strong><u><?= $act->nombre_jefe ?> <?= $act->apaterno_jefe?> <?= $act->amaterno_jefe ?></u></strong>,<?php endforeach; ?> por este medio se permite hacer de su conocimiento que el (la) estudiante  <?php foreach ( $alumno as $a ):?> <strong><u><?= $a->nombre?> <?=$a->ap_paterno?>
                 <?=$a->ap_materno?></u></strong>, con número de control
             <strong><u><?= $control?></u></strong> de la carrera de <strong><u><?php
                     if ( $a->carrera == 'ISC') echo 'INGENIERIA EN SISTEMAS COMPUTACIONALES';
@@ -176,7 +176,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
 <div>
     <p style="text-align:center; margin-right:430px;  margin-top:58px; " id="extrabold"><strong><?= $act->nombre_responsable ?>  <?= $act->apaterno?> <?= $act->amaterno ?><hr color="black" size="2.3"></strong>
     NOMBRE Y FIRMA DEL (DE LA) RESPONSABLE</p>
-    <p style="margin-left:430px; text-align:center; margin-top:-99px; " id="extrabold"><strong><?= $ar->nombre_jefe ?> <?= $ar->apaterno_jefe?> <?= $ar->amaterno_jefe ?><hr color="black" size="2.3"></strong>JEFE(A) DEL <?=  $ar->nombre_area ?></p>
+    <p style="margin-left:430px; text-align:center; margin-top:-99px; " id="extrabold"><strong><?= $act->nombre_jefe ?> <?= $act->apaterno_jefe?> <?= $act->amaterno_jefe ?><hr color="black" size="2.3"></strong>JEFE(A) DEL <?=  $ar->nombre_area ?></p>
 </div><br>
 
 <p id="medium8">C.c.p. Jefe (a) de Departamento Correspondiente <br> estudiante.</p><br>

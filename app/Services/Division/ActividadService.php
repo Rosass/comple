@@ -102,6 +102,11 @@ class ActividadService
         return $this->actividadModel->getActividadPorId($id_actividad);
     }
 
+    public function getJefePorEstatus($estatus)
+    {
+        return $this->actividadModel->getJefePorEstatus($estatus);
+    }
+    
     public function getAlumnos($num_control)
 	{   
         return $this->inicioModel->getAlumnos($num_control);

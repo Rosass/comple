@@ -43,11 +43,11 @@ class ResponsableService
         return $this->responsableModel->getResponsablesPorEstatus($estatus);
     }
 
-    public function getPeriodo()
+ /*    public function getPeriodo()
 	{   
     return $this->responsableModel->getPeriodo();
     }
-
+ */
 
     /**
      * Guarda un nuevo responsable en la BD
@@ -56,7 +56,7 @@ class ResponsableService
      */
     public function guardar($datos)
     {
-        $responsable = $this->responsableModel->getResponsablePorRfc($datos['rfc_responsable']);
+        $responsable = $this->responsableModel->getResponsablePorRfcYPeriodo($datos['rfc_responsable'],$datos['telefono']);
 
         if($responsable == NULL)
         {

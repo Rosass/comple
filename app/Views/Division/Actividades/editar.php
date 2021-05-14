@@ -81,16 +81,30 @@
 										<?php endforeach ?>
 									</select>
 								</div>
-							</div>
+							</div>	
 						</div>
 						<div class="row justify-content-center">
-							<div class="col-md-8">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="rfc_jefe_nofk">JEFE DE ÁREA</label>
+									<select class="custom-select" name="rfc_jefe_nofk">
+									<?php if($actividad->rfc_jefe_nofk == null) : ?>
+                                        <option selected disabled>Elige un jefe</option>
+										<?php endif ?>
+                                        <?php foreach($jefe as $key => $jefe) : ?>
+										    <option value="<?= $jefe->rfc_jefe ?>" <?= ($jefe->rfc_jefe == $actividad->rfc_jefe_nofk) ? 'selected' : '' ?>><?= $jefe->nombre_jefe . " " . $jefe->apaterno_jefe . " ". $jefe->amaterno_jefe . "" ?></option>
+										<?php endforeach ?>>
+									</select>
+								</div>
+							</div>	
+							<div class="col-md-6">
 								<div class="form-group">
 									<label for="horario">HORARIO</label>
 									<input type="horario" class="form-control text-uppercase" id="horario" name="horario" value="<?= $actividad->horario ?>">
 									<small>Los horarios debes separarlos por punto y coma ';'.</small>
 								</div>
 							</div>
+						
 						</div>
 						<small>Los campos marcados con (*) son obligatorios.</small>
                         <div class="text-center">

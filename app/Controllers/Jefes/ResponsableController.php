@@ -16,14 +16,14 @@ class ResponsableController extends BaseController
         {
             $id_area  = $this->session->usuario_logueado->id_area;
             $responsables = $this->responsableService->getResponsables($id_area);
-            $periodo = $this->responsableService->getPeriodo();
+           // $periodo = $this->responsableService->getPeriodo();
 
 
             echo view('Includes/header');
             echo view('Jefes/navbar', ["activo" => "responsables"]);
             echo view('Jefes/Responsables/listar', [
                 "responsables" => $responsables,
-                "periodos" => $periodo
+             //   "periodos" => $periodo
                 ]);
             echo view('Includes/footer');
 		}
@@ -81,7 +81,7 @@ class ResponsableController extends BaseController
         {
             $rfc_responsable = urldecode($this->request->uri->getSegment(4));
             $responsable = $this->responsableService->getResponsablePorRfc($rfc_responsable);
-            $periodo = $this->responsableService->getPeriodo();
+            //$periodo = $this->responsableService->getPeriodo();
 
             if($responsable != NULL)
             {
@@ -89,7 +89,7 @@ class ResponsableController extends BaseController
                 echo view('Jefes/navbar', ["activo" => "responsables"]);
                 echo view('Jefes/Responsables/editar', [
                     "responsable" => $responsable,
-                    "periodos" => $periodo
+                   // "periodos" => $periodo
                     ]);
                 echo view('Includes/footer');
             }

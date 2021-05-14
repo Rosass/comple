@@ -50,14 +50,15 @@ class ResponsableModel extends Model
         return $this->db->affectedRows();
     }
 
-/*     public function getResponsablePorRfcYPeriodo($rfc, $periodo)
+    //prueba para agregar responsable por area, todavia no funciona
+     public function getResponsablePorRfcYPeriodo($rfc, $id_area_fk)
     {
         return $this->db->table($this->table)
         ->select("*")
         ->where("rfc_responsable", $rfc)
-        ->where("periodo", $periodo)
+        ->where("telefono", $id_area_fk)
         ->get()->getResult();
-    } */
+    } 
 
     public function getResponsablePorRfc($rfc)
     {
@@ -67,12 +68,12 @@ class ResponsableModel extends Model
         ->get()->getRow();
     }
 
-    public function getPeriodo()
+/*     public function getPeriodo()
     {
         return $this->db->table('periodo')
         ->select("*")
         ->orderBy("periodo", "ASC")
         ->get()->getResult();
-    }
+    } */
 
 }
