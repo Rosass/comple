@@ -34,18 +34,18 @@
                 <table class="table table-hover table-light table-striped shadow-lg">
                     <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
                         <tr>
-                            <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">Historial</h3></th>
+                            <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">HISTORIAL</h3></th>
                         </tr>
                         <tr>
                             <th scope="col" class="border-top-0">#</th>
-                            <th scope="col" class="border-top-0">Periodo</th>
-                            <th scope="col" class="border-top-0">Nombre Actividad</th>
-                            <th scope="col" class="border-top-0">Tipo Actividad</th>
-                            <th scope="col" class="border-top-0">Creditos</th>
-                            <th scope="col" class="border-top-0">Horas</th>
-                            <th scope="col" class="border-top-0">Horario</th>
-                            <th scope="col" class="border-top-0">Responsable</th>
-                            <th scope="col" class="border-top-0">Calificacion</th>                                   
+                            <th scope="col" class="border-top-0">PERIODO</th>
+                            <th scope="col" class="border-top-0">NOMBRE ACTIVIDAD</th>
+                            <th scope="col" class="border-top-0">TIPO ACTIVIDAD</th>
+                            <th scope="col" class="border-top-0">CRÉDITOS</th>
+                            <th scope="col" class="border-top-0">HORAS</th>
+                            <th scope="col" class="border-top-0">HORARIO</th>
+                            <th scope="col" class="border-top-0">RESPONSABLE</th>
+                            <th scope="col" class="border-top-0">CALIFICACIÓN</th>                                   
                         </tr>
                     </thead>
                     <tbody id="tbodyResult"></tbody>

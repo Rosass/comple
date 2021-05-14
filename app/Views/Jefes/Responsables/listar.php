@@ -54,9 +54,9 @@
 							<th scope="col" class="border-top-0">NOMBRE</th>
 							<th scope="col" class="border-top-0">TELÉFONO</th>
 							<th scope="col" class="border-top-0">CORREO</th>
-							<th scope="col" class="border-top-0">FECHA REGISTRO</th>
+							<th scope="col" class="border-top-0">FECHA REGISTRÓ</th>
 							<th scope="col" class="border-top-0">ESTATUS</th>
-							<th scope="col" class="border-top-0">ACCION</th>
+							<th scope="col" class="border-top-0">ACCIÓN</th>
 						</tr>
 					</thead>
 					<tbody class="text-center table-sm">

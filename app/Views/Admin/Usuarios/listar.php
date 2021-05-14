@@ -31,7 +31,7 @@
                             <th scope="col" class="border-top-0">TIPO</th>
                             <th scope="col" class="border-top-0">AREA</th>                            
                             <th scope="col" class="border-top-0">ESTATUS</th>
-                            <th scope="col" class="border-top-0"></th>
+                            <th scope="col" class="border-top-0">ACCIÓN</th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">

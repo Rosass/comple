@@ -44,13 +44,13 @@
                             <th scope="col" class="border-top-0">#</th>
                             <th scope="col" class="border-top-0">NOMBRE</th>
                             <th scope="col" class="border-top-0">DICTAMEN</th>
-                            <th scope="col" class="border-top-0">CREDITOS</th>
+                            <th scope="col" class="border-top-0">CRÉDITOS</th>
                             <th scope="col" class="border-top-0">PERIODO</th>
                             <th scope="col" class="border-top-0">TIPO ACTIVIDAD</th>
                             <th scope="col" class="border-top-0">HORAS</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
-                            <th scope="col" class="border-top-0">ACCIONES</th>
+                            <th scope="col" class="border-top-0">ACCIÓN</th>
                             <th scope="col" class="border-top-0"></th>
                         </tr>
                     </thead>

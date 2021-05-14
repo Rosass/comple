@@ -41,7 +41,7 @@
                             <th scope="col" class="border-top-0">PERIODO</th>
                             <th scope="col" class="border-top-0">ACTIVIDAD</th>
                             <th scope="col" class="border-top-0">TIPO DE ACTIVIDAD</th>
-                            <th scope="col" class="border-top-0">CREDITOS</th>
+                            <th scope="col" class="border-top-0">CRÉDITOS</th>
                             <th scope="col" class="border-top-0">HORAS</th>
                             <th scope="col" class="border-top-0">HORARIO</th>
                             <th scope="col" class="border-top-0">RESPONSABLE</th>                       

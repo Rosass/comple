@@ -60,17 +60,17 @@
                         <table class="table table-hover  table-bordered table-light table-striped shadow-lg" id="tablaEvaluacion">
                             <thead class="bg-color-tec-blue border-top-0 table-sm text-center text-white">
                                 <tr>
-                                    <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">Evaluacion de desempeño del criterio</h3></th>
+                                    <th scope="col" colspan="13" class="border-top-0 p-2"><h3 class="mb-0">EVALUACIÓN DESEMPEÑO DEL CRITERIO</h3></th>
                                 </tr>
                                 <tr>
-                                    <th scope="col" class="border-top-0">No</th>
-                                    <th scope="col" class="border-top-0">Criterios a evaluar</th>
-                                    <th scope="col" class="border-top-0">insuficiente</th>
-                                    <th scope="col" class="border-top-0">suficiente</th>
-                                    <th scope="col" class="border-top-0">Bueno</th>
-                                    <th scope="col" class="border-top-0">Notable</th>
-                                    <th scope="col" class="border-top-0">Excelente</th>
-                                    <th scope="col" class="border-top-0">criterio total</th>
+                                    <th scope="col" class="border-top-0">#</th>
+                                    <th scope="col" class="border-top-0">CRITERIOS A EVALUAR</th>
+                                    <th scope="col" class="border-top-0">INSUFICIENTE</th>
+                                    <th scope="col" class="border-top-0">SUFICIENTE</th>
+                                    <th scope="col" class="border-top-0">BUENO</th>
+                                    <th scope="col" class="border-top-0">NOTABLE</th>
+                                    <th scope="col" class="border-top-0">EXCELENTE</th>
+                                    <th scope="col" class="border-top-0">CRITERIO TOTAL</th>
                                 </tr>
                             </thead>
                             <tbody class="text-center table-sm">

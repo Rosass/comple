@@ -47,11 +47,11 @@
                             <th scope="col" class="border-top-0">DESCRIPCIÓN</th>
                             <th scope="col" class="border-top-0">FECHA INICIO</th>
                             <th scope="col" class="border-top-0">FECHA FIN</th>
-                            <th scope="col" class="border-top-0">FECHA INICIO INSCRIPCION</th>
-                            <th scope="col" class="border-top-0">FECHA FINAL INSCRIPCION</th>
+                            <th scope="col" class="border-top-0">FECHA INICIO INSCRIPCIÓN</th>
+                            <th scope="col" class="border-top-0">FECHA FINAL INSCRIPCIÓN</th>
                             <th scope="col" class="border-top-0">FRASE DECRETO</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
-                            <th scope="col" class="border-top-0"></th>
+                            <th scope="col" class="border-top-0">ACCIÓN</th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">

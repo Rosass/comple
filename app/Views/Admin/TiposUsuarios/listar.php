@@ -29,7 +29,7 @@
                             <th scope="col" class="border-top-0">#</th>
                             <th scope="col" class="border-top-0">NOMBRE</th>
                             <th scope="col" class="border-top-0">ESTATUS</th>
-                            <th scope="col" class="border-top-0"></th>
+                            <th scope="col" class="border-top-0">ACCIÓN</th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">

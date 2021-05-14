@@ -22,7 +22,7 @@
         			<a class="nav-link" href="<?= base_url('alumno/historial') ?>">Historial</a>
 					</li> 
 					<li class="nav-item <?= ($activo == 'inscripciones') ? 'active' : '' ?>">
-        			<a class="nav-link" href="<?= base_url('alumno/inscripciones') ?>">Inscripcion</a>
+        			<a class="nav-link" href="<?= base_url('alumno/inscripciones') ?>">Inscripción</a>
       				</li>
 					</ul>
 					<span class="navbar-text">

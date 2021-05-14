@@ -46,15 +46,15 @@
                             <th scope="col" class="border-top-0">#</th>
                             <th scope="col" class="border-top-0">NOMBRE</th>
                             <th scope="col" class="border-top-0">DICTAMEN</th>
-                            <th scope="col" class="border-top-0">CRED.</th>
+                            <th scope="col" class="border-top-0">CRÉDITOS</th>
                             <th scope="col" class="border-top-0">CAPACIDAD</th>
-                            <th scope="col" class="border-top-0">AREA</th>
+                            <th scope="col" class="border-top-0">ÁREA</th>
                             <th scope="col" class="border-top-0">PERIODO</th>
                             <th scope="col" class="border-top-0">TIPO</th>
                             <th scope="col" class="border-top-0">RESPONSABLE</th>
                             <th scope="col" class="border-top-0">HORAS</th>
                             <th scope="col" class="border-top-0">HORARIO</th>                         
-                            <th scope="col" class="border-top-0"></th>
+                            <th scope="col" class="border-top-0">ACCIÓN</th>
                         </tr>
                     </thead>
                     <tbody class="text-center table-sm">
