@@ -141,12 +141,7 @@ $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"
     ?></p>
 <p style="text-align: center;"><?php foreach($actividad as $act) : ?>"<?= $act->frase_decreto ?>"<?php endforeach; ?></p><br>
     <p style=" text-align:right;" id="medium text-align:justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p><p style="font-size:70%; text-align:right;" id="medium"> <?= $ar->nombre_area?></p>  
-    <p  style=" margin-left:540px; text-align: justify;" id="medium"><strong> Folio:</strong> 
-    <?php
-            if ( $ar->id_area == '2') echo '11V.1.1.4.0.0/EXT/';
-            if ( $ar->id_area == '1') echo '11V.0.0.0.0.0/ING/';
-            
-        ?><?=  $folio  ?>/<?= $fecha1 ?></p><br>
+    <p  style=" margin-left:540px; text-align: justify;" id="medium"><strong> Folio:</strong> <?= $ar->folio_minutario?><?=  $folio  ?>/<?= $fecha1 ?></p><br>
 
     <p style="text-align:center; margin-top:-5px;" id="medium"><strong>CONSTANCIA DE CUMPLIMIENTO DE ACTIVIDADES COMPLEMENTARIAS</strong></p><br>
     <div id="extrabold" >
