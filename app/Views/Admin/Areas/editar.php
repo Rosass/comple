@@ -15,18 +15,15 @@
 						<i class="fas fa-pen"></i>  EDICIÓN DE AREA
 					</div>
 					<div class="card-body">
-					<div class="row justify-content-center">
+						<div class="row justify-content-center">
                             <input type="hidden" name="id_area" value="<?= $area->id_area ?>">
-							<div class="col-md-9">
+							<div class="col-md-6">
 								<div class="form-group">
 									<label for="nombre">NOMBRE (*)</label>
 									<input type="text" class="form-control text-uppercase" id="nombre" name="nombre_area" required value="<?= $area->nombre_area ?>" required>
 								</div>
 							</div>
-						</div>
-						</div>
-						<div class="row justify-content-center">
-							<div class="col-md-7">
+							<div class="col-md-6">
 								<div class="form-group">
 									<label for="telefono">JEFE</label>
 									<select class="custom-select" name="rfc_jefe">
@@ -41,7 +38,7 @@
 							</div>
 						</div>
 						<div class="row justify-content-center">
-							<div class="col-md-7">
+							<div class="col-md-6">
 								<div class="form-group">
 									<label for="id">TIPO DEPARTAMENTO</label>
 									<select class="custom-select" name="id">
@@ -52,6 +49,12 @@
 										    <option value="<?= $tipo->id ?>" <?= ($tipo->id == $area->id) ? 'selected' : '' ?>><?= $tipo->tipo_departamento ?></option>
 										<?php endforeach ?>
 									</select>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="nombre">FOLIO</label>
+									<input type="text" class="form-control text-uppercase" id="folio" name="folio"  value="<?= $area->folio ?>" >
 								</div>
 							</div>
 						</div>

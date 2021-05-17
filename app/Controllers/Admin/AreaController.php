@@ -55,6 +55,7 @@ class AreaController extends BaseController
                 "nombre_area" => mb_strtoupper($this->request->getPost("nombre_area"), 'utf-8'),
 				"rfc_jefe" => $this->request->getPost("rfc_jefe"),
                 "id" => $this->request->getPost("id"),
+                "folio" => mb_strtoupper($this->request->getPost("folio"), 'utf-8'),
 				
             ];
             
@@ -125,6 +126,7 @@ class AreaController extends BaseController
                 "nombre_area" => mb_strtoupper($this->request->getPost("nombre_area"), 'utf-8'),
 				"rfc_jefe" => $this->request->getPost("rfc_jefe"),
                 "id" => $this->request->getPost("id"),
+                "folio" => mb_strtoupper($this->request->getPost("folio"), 'utf-8'),
 				
             ];
 

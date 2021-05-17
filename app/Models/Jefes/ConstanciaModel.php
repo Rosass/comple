@@ -40,7 +40,7 @@ class ConstanciaModel extends Model
     public function getArea($id_area)
 	{   
         return $this->db->table("area a")
-            ->select("a.id_area, a.nombre_area")
+            ->select("a.id_area, a.nombre_area, a.folio as folio_minutario")
             ->where("id_area", $id_area)
         ->get()->getResult();
     }

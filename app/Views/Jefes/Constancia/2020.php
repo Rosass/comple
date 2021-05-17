@@ -128,21 +128,14 @@ $meses = array("enero","febrero","marzo","abril","mayo","junio","julio","agosto"
 
 ?>
 <?php foreach($areas as $ar) : ?>
-    <p style="margin-left:549px; float:none; margin-top:1px; text-align:justify;" id="regular"><strong>Instituto Tecnológico de Pochutla</strong></p>
-    <p style="margin-left:549px; float:none; margin-top:1px; text-align: justify;" id="regular8"><?php  if ( $ar->id_area == '2') echo 'Subdirección de Planeación y Vinculación'?></p>
-    <p style="margin-left:379px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?> <?php
-        if ( $ar->id_area == '2') echo '(Formación Integral)';
-    ?></p>
-    <P  style="margin-left:560px; float:none; text-align:justify;" id="light"><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERÍAS'?></P><br>
+    <p style="text-align:right; float:none; margin-top:1px; " id="regular"><strong>Instituto Tecnológico de Pochutla</strong></p>
+    <p style="text-align:right; float:none; margin-top:1px;" id="regular8"><?php  if ( $ar->id_area == '2') echo 'Subdirección de Planeación y Vinculación'?></p>
+    <p style="text-align:right; float:none; " id="light"> <?= $ar->nombre_area?> <?php
+            if ( $ar->id_area == '2') echo '(Formacion Integral)';            
+        ?></p>
 <p style="text-align: center;"><?php foreach($actividad as $act) : ?><?= $act->frase_decreto ?><?php endforeach; ?></p><br>
-    <p style=" text-align:right;" id="medium text-align:justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p><p style="font-size:70%;  margin-left:417px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '2') echo 'DEPARTAMENTO DE ACTIVIDADES EXTRAESCOLARES'?></p>
-    <p style="font-size:70%;  margin-left:530px; text-align: justify;" id="medium""><?php  if ( $ar->id_area == '1') echo 'DEPARTAMENTO DE INGENIERÍAS'?></p>  
-    <p  style=" margin-left:540px; text-align: justify;" id="medium"><strong> Folio:</strong> 
-    <?php
-            if ( $ar->id_area == '2') echo '11V.1.1.4.0.0/EXT/';
-            if ( $ar->id_area == '1') echo '11V.0.0.0.0.0/ING/';
-            
-        ?><?=  $folio  ?>/<?= $fecha1 ?></p><br>
+    <p style=" text-align:right;" id="medium text-align:justify;" >San Pedro Pochutla, Oax.,<?= $fecha ?><?php echo $meses[date('n')-1];?>/<?= $fecha1 ?></p><p style="font-size:70%; text-align:right;" id="medium"><?= $ar->nombre_area?></p>  
+    <p  style=" margin-left:540px; text-align: justify;" id="medium"><strong> Folio:</strong> <?= $ar->folio_minutario?><?=  $folio  ?>/<?= $fecha1 ?></p><br>
 
     <p style="text-align:center; margin-top:-5px;" id="medium"><strong>CONSTANCIA DE CUMPLIMIENTO DE ACTIVIDADES COMPLEMENTARIAS</strong></p><br>
     <div id="extrabold" >
