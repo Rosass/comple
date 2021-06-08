@@ -115,7 +115,6 @@ class Validation
 		'nombre_jefe'     => 'required',
 		'apaterno_jefe'     => 'required',
 		//'telefono_jefe'     => 'min_length[10]|max_length[10]',
-       
 	];
 
 	public $areaReglas = [

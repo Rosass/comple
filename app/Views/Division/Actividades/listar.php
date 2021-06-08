@@ -45,18 +45,10 @@
                         <tr>
                             <th scope="col" class="border-top-0">#</th>
                             <th scope="col" class="border-top-0">NOMBRE</th>
-<<<<<<< HEAD
                             <th scope="col" class="border-top-0">DICTAMEN</th>
                             <th scope="col" class="border-top-0">CRÉDITOS</th>
                             <th scope="col" class="border-top-0">CAPACIDAD</th>
                             <th scope="col" class="border-top-0">ÁREA</th>
-=======
-                            <th scope="col" class="border-top-0">DIC.</th>
-                            <th scope="col" class="border-top-0">CRED.</th>
-                            <th scope="col" class="border-top-0">CAP.</th>
-                            <th scope="col" class="border-top-0">ÁREA</th>
-                            <th scope="col" class="border-top-0">JEFE ÁREA</th>
->>>>>>> c339e12d1e283cc3a603d54c40c7548f2bbd4691
                             <th scope="col" class="border-top-0">PERIODO</th>
                             <th scope="col" class="border-top-0">TIPO</th>
                             <th scope="col" class="border-top-0">RESPONSABLE</th>
